@@ -112,7 +112,7 @@ def format_text_list(leader: dict, cache: dict, consensus: dict) -> str:
     rows = [f"1x{leader['id']}"]
     for card in cards:
         rows.append(f"{int(card['count'])}x{card['id']}")
-    header = f"{leader['name']} consensus — {SITE_URL}{leader['page']}"
+    header = f"{leader['name']} consensus - {SITE_URL}{leader['page']}"
     block = header + "\n" + "\n".join(rows)
     if len(block) > 1900:
         block = block[:1890] + "\n…"

@@ -34,27 +34,27 @@ STRATEGY_PAGES = {
     "OP09-062": (
         "/guides/nico-robin-strategy.html",
         "Nico Robin strategy",
-        "OP17 curve, Big Mom splash, Mihawk matchup",
+        "Friendly OP17 curve, Big Mom splash, Mihawk matchup",
     ),
     "OP14-020": (
         "/guides/op17-mihawk-matchups.html",
         "Which decks beat OP17 Mihawk",
-        "Limitless pairings · Robin, Ace, Sabo",
+        "Pairings: Robin, Ace, and Sabo",
     ),
     "OP13-004": (
         "/guides/sabo-strategy.html",
         "Sabo strategy",
-        "OP17 Elbaph curve, mulligan, 52.1% vs Mihawk",
+        "Elbaph curve, keeps, 52.1% vs Mihawk",
     ),
     "OP17-039": (
         "/guides/rocks-d-xebec-strategy.html",
         "Rocks D. Xebec strategy",
-        "Even/odd Rocks Pirates curve · 33.6% vs Mihawk",
+        "Even and odd Rocks Pirates curve, 33.6% vs Mihawk",
     ),
     "OP16-001": (
         "/guides/portgas-d-ace-strategy.html",
         "Portgas D. Ace strategy",
-        "Rush Whitebeard curve, mulligan, 57.8% vs Mihawk",
+        "Rush Whitebeard curve, keeps, 57.8% vs Mihawk",
     ),
 }
 

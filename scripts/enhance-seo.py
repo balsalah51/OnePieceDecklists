@@ -327,112 +327,55 @@ def character_related_extra(slug: str) -> str:
     return seo.related_section("Related character guides", "Same crew or constructed family", rows)
 
 
+STRATEGY_RELATED = {
+    "nico-robin-strategy": [
+        ("/decklists/nico-robin.html", "Nico Robin decklists", "Every hosted 50-card Robin list"),
+        ("/guides/op17-mihawk-matchups.html", "Which decks beat OP17 Mihawk", "Robin is 58.8% in 80 games"),
+        ("/guides/sabo-strategy.html", "Sabo strategy", "Elbaph midrange"),
+        ("/guides/rocks-d-xebec-strategy.html", "Rocks D. Xebec strategy", "Blue Rocks Pirates"),
+        ("/guides/portgas-d-ace-strategy.html", "Portgas D. Ace strategy", "Red Whitebeard Rush"),
+    ],
+    "sabo-strategy": [
+        ("/decklists/sabo.html", "Sabo decklists", "Every hosted 50-card Sabo list"),
+        ("/guides/op17-mihawk-matchups.html", "Which decks beat OP17 Mihawk", "Sabo is 52.1% in 165 games"),
+        ("/guides/nico-robin-strategy.html", "Nico Robin strategy", "Yellow ramp into Linlin"),
+        ("/guides/rocks-d-xebec-strategy.html", "Rocks D. Xebec strategy", "The other Tier 1 midrange"),
+        ("/guides/portgas-d-ace-strategy.html", "Portgas D. Ace strategy", "Rush that races a slow Saul"),
+    ],
+    "rocks-d-xebec-strategy": [
+        ("/decklists/op17/rocks-d-xebec.html", "Rocks D. Xebec decklists", "Every hosted 50-card Rocks list"),
+        ("/guides/op17-mihawk-matchups.html", "Which decks beat OP17 Mihawk", "Rocks is 33.6% in 149 games"),
+        ("/guides/sabo-strategy.html", "Sabo strategy", "The other Tier 1 midrange"),
+        ("/guides/portgas-d-ace-strategy.html", "Portgas D. Ace strategy", "Rush Newgate"),
+        ("/guides/nico-robin-strategy.html", "Nico Robin strategy", "Yellow 10-costs"),
+    ],
+    "portgas-d-ace-strategy": [
+        ("/decklists/portgas-d-ace.html", "Portgas D. Ace decklists", "Every hosted 50-card Ace list"),
+        ("/guides/op17-mihawk-matchups.html", "Which decks beat OP17 Mihawk", "Ace is 57.8% in 45 games"),
+        ("/guides/sabo-strategy.html", "Sabo strategy", "The midrange Ace races"),
+        ("/guides/rocks-d-xebec-strategy.html", "Rocks D. Xebec strategy", "A tough midrange seat"),
+        ("/guides/nico-robin-strategy.html", "Nico Robin strategy", "Yellow 10-costs Ace would rather not see"),
+    ],
+    "op17-mihawk-matchups": [
+        ("/guides/nico-robin-strategy.html", "Nico Robin strategy", "The volume hawk hunter"),
+        ("/guides/sabo-strategy.html", "Sabo strategy", "52.1% vs Mihawk"),
+        ("/guides/portgas-d-ace-strategy.html", "Portgas D. Ace strategy", "57.8% vs Mihawk"),
+        ("/guides/rocks-d-xebec-strategy.html", "Rocks D. Xebec strategy", "The hard Slash seat"),
+        ("/decklists/mihawk.html", "Mihawk decklists", "The rest/control list itself"),
+    ],
+}
+
+
 def topic_related_extra(slug: str) -> str:
-    rows = topic_siblings(slug)
-    if slug == "nico-robin-strategy":
-        rows.insert(
-            0,
-            seo.list_row(
-                "/decklists/nico-robin.html",
-                "Nico Robin decklists",
-                "OP09-062 hub · consensus list and every hosted 50",
-            ),
-        )
-        rows.insert(
-            1,
-            seo.list_row(
-                "/guides/op17-mihawk-matchups.html",
-                "Which decks beat OP17 Mihawk",
-                "Robin 58.8% in 80 pairings",
-            ),
-        )
-    if slug == "op17-mihawk-matchups":
-        rows.insert(
-            0,
-            seo.list_row(
-                "/guides/nico-robin-strategy.html",
-                "Nico Robin strategy",
-                "The volume hawk hunter in this sample",
-            ),
-        )
-        rows.insert(
-            1,
-            seo.list_row(
-                "/guides/sabo-strategy.html",
-                "Sabo strategy",
-                "52.1% vs Mihawk · 165 pairings",
-            ),
-        )
-        rows.insert(
-            2,
-            seo.list_row(
-                "/guides/portgas-d-ace-strategy.html",
-                "Portgas D. Ace strategy",
-                "57.8% vs Mihawk · 45 pairings",
-            ),
-        )
-        rows.insert(
-            3,
-            seo.list_row(
-                "/guides/rocks-d-xebec-strategy.html",
-                "Rocks D. Xebec strategy",
-                "33.6% vs Mihawk · 149 pairings",
-            ),
-        )
-    if slug == "sabo-strategy":
-        rows.insert(
-            0,
-            seo.list_row(
-                "/decklists/sabo.html",
-                "Sabo decklists",
-                "OP13-004 hub · 124 OP17 lists",
-            ),
-        )
-        rows.insert(
-            1,
-            seo.list_row(
-                "/guides/op17-mihawk-matchups.html",
-                "Which decks beat OP17 Mihawk",
-                "Sabo 52.1% in 165 pairings",
-            ),
-        )
-    if slug == "rocks-d-xebec-strategy":
-        rows.insert(
-            0,
-            seo.list_row(
-                "/decklists/op17/rocks-d-xebec.html",
-                "Rocks D. Xebec decklists",
-                "OP17-039 hub · 169 OP17 lists",
-            ),
-        )
-        rows.insert(
-            1,
-            seo.list_row(
-                "/guides/op17-mihawk-matchups.html",
-                "Which decks beat OP17 Mihawk",
-                "Rocks 33.6% in 149 pairings",
-            ),
-        )
-    if slug == "portgas-d-ace-strategy":
-        rows.insert(
-            0,
-            seo.list_row(
-                "/decklists/portgas-d-ace.html",
-                "Portgas D. Ace decklists",
-                "OP16-001 hub · 143 lists, 67 OP17",
-            ),
-        )
-        rows.insert(
-            1,
-            seo.list_row(
-                "/guides/op17-mihawk-matchups.html",
-                "Which decks beat OP17 Mihawk",
-                "Ace 57.8% in 45 pairings",
-            ),
-        )
-    rows.append(seo.list_row("/guides/characters/", "Character guides", "Names from the manga mapped to OPTCG lists"))
+    curated = STRATEGY_RELATED.get(slug)
+    if curated:
+        rows = [seo.list_row(href, title, note) for href, title, note in curated]
+        rows.append(seo.list_row("/guides/", "All guides", "Strategy, colors, and the two primers"))
+        return seo.related_section("Keep reading", "Other strategy pages and lists", rows)
+    rows = topic_siblings(slug, limit=4)
+    rows.append(seo.list_row("/guides/", "All guides", "Strategy, colors, and the two primers"))
     rows.append(seo.list_row("/decklists/op17.html", "All leader pages", "Constructed OPTCG hubs"))
-    return seo.related_section("More guides", "Same series of One Piece TCG pages", rows)
+    return seo.related_section("Keep reading", "Nearby guide pages", rows)
 
 
 def insert_related(text: str, block: str) -> str:

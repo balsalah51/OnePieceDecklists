@@ -771,28 +771,62 @@ def character_body(name: str, blurb: str, related: list[int]) -> str:
         <p class="muted" style="margin-top:18px"><a href="/guides/characters/">All character guides</a> · <a href="/guides/">One Piece TCG guides</a></p>"""
 
 
-def guides_index(topic_links: list[tuple[str, str]], char_links: list[tuple[str, str]]) -> str:
-    topics = "\n".join(
-        f'            <li><a class="item" href="{html.escape(href)}"><div style="font-weight:700">{html.escape(label)}</div><div class="link">Open →</div></a></li>'
-        for label, href in topic_links
-    )
-    chars = "\n".join(
-        f'            <li><a class="item" href="{html.escape(href)}"><div style="font-weight:700">{html.escape(label)}</div><div class="link">Open →</div></a></li>'
-        for label, href in char_links
-    )
+INDEX_STRATEGY = [
+    ("Nico Robin strategy", "/guides/nico-robin-strategy.html", "Ramp into yellow Big Mom"),
+    ("Sabo strategy", "/guides/sabo-strategy.html", "Elbaph Straw Hats plus Loki"),
+    ("Rocks D. Xebec strategy", "/guides/rocks-d-xebec-strategy.html", "Blue Rocks Pirates curve"),
+    ("Portgas D. Ace strategy", "/guides/portgas-d-ace-strategy.html", "Red Whitebeard Rush"),
+    ("Which decks beat OP17 Mihawk", "/guides/op17-mihawk-matchups.html", "Pairings for the deck to beat"),
+]
+INDEX_COLORS = [
+    ("Red OPTCG", "/guides/red-optcg.html"),
+    ("Green OPTCG", "/guides/green-optcg.html"),
+    ("Blue OPTCG", "/guides/blue-optcg.html"),
+    ("Purple OPTCG", "/guides/purple-optcg.html"),
+    ("Black OPTCG", "/guides/black-optcg.html"),
+    ("Yellow OPTCG", "/guides/yellow-optcg.html"),
+]
+INDEX_BASICS = [
+    ("One Piece", "/guides/one-piece.html", "What this site is"),
+    ("One Piece TCG", "/guides/one-piece-tcg.html", "The game, in one page"),
+]
+
+
+def _index_rows(rows: list[tuple[str, ...]]) -> str:
+    lines = []
+    for row in rows:
+        label, href = row[0], row[1]
+        note = row[2] if len(row) > 2 else ""
+        note_html = (
+            f'<div class="muted" style="font-size:13px">{html.escape(note)}</div>' if note else ""
+        )
+        lines.append(
+            f'            <li><a class="item" href="{html.escape(href)}"><div><div style="font-weight:700">{html.escape(label)}</div>{note_html}</div><div class="link">Open →</div></a></li>'
+        )
+    return "\n".join(lines)
+
+
+def guides_index(topic_links: list[tuple[str, str]] | None = None, char_links: list[tuple[str, str]] | None = None) -> str:
+    del topic_links, char_links
     return f"""        <div class="crumb"><a href="/">Home</a> / Guides</div>
         <h2>One Piece TCG guides</h2>
-        <p>Topic and character pages that link to the 50-card lists on this site.</p>
+        <p>How the popular OP17 lists actually play, plus a color index if you just want to browse.</p>
         <section style="margin-top:18px">
-          <div class="section-title"><h3>Topics</h3><div class="muted">Bandai / OPTCG</div></div>
+          <div class="section-title"><h3>Strategy</h3><div class="muted">Curve, keeps, matchups</div></div>
           <ul class="list">
-{topics}
+{_index_rows(INDEX_STRATEGY)}
           </ul>
         </section>
         <section style="margin-top:18px">
-          <div class="section-title"><h3>Characters</h3><div class="muted">{len(char_links)} names</div></div>
+          <div class="section-title"><h3>Colors</h3><div class="muted">Jump a leader by color</div></div>
           <ul class="list">
-{chars}
+{_index_rows(INDEX_COLORS)}
+          </ul>
+        </section>
+        <section style="margin-top:18px">
+          <div class="section-title"><h3>The game</h3><div class="muted">Two short primers</div></div>
+          <ul class="list">
+{_index_rows(INDEX_BASICS)}
           </ul>
         </section>"""
 
@@ -885,7 +919,7 @@ def main() -> None:
     write_page(
         "guides/index.html",
         "One Piece TCG guides | OPTCG | Bandai",
-        "Guides for One Piece TCG, OPTCG, Bandai, and character names, linking to real decklists.",
+        "OP17 strategy guides for Nico Robin, Sabo, Rocks, and Ace, plus color indexes and a short One Piece TCG primer.",
         guides_index(topic_links, char_links),
     )
     write_page(
