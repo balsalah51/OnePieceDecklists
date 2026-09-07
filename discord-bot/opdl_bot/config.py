@@ -185,7 +185,7 @@ LEADERS: list[dict] = [
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-001_EN.webp",
         "search": ["ace", "portgas"],
         "take": (
-            "Red OP16 Portgas D. Ace is Whitebeard rush — not the red/blue OP13 Ace. "
+            "Red OP16 Portgas D. Ace is Whitebeard rush - not the red/blue OP13 Ace. "
             "Lists lock Monkey D. Luffy, Edward Newgate, Vista, and Moby Dick."
         ),
     },
@@ -200,7 +200,7 @@ LEADERS: list[dict] = [
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-002_EN.webp",
         "search": ["ace", "portgas"],
         "take": (
-            "OP13 Ace is red/blue Portgas D. Ace — 3 life, 6000 power — not the red OP16 Ace rush deck. "
+            "OP13 Ace is red/blue Portgas D. Ace - 3 life, 6000 power - not the red OP16 Ace rush deck. "
             "Trash a card to give −2000, then draw when you take damage or a 6000-power body dies."
         ),
     },
@@ -388,14 +388,14 @@ def planned_channel_names() -> list[str]:
 
 WELCOME_BODY = """**One Piece Decklists**
 
-This is the Discord for [onepiecedecklists.com]({site}) — OPTCG decklists, consensus 50-card lists, and fan gear.
+This is the Discord for [onepiecedecklists.com]({site}) - OPTCG decklists, consensus 50-card lists, and fan gear.
 
 **Where to go**
-- {rules} — how we talk in here
-- {announcements} — site and meta updates
-- {flair} — pick your favorite leader (one face, one role)
-- Leader rooms under **OP17** and **Format staples** — each site leader has a channel with the current consensus list pinned
-- {shop} — playmats, dice, sleeves, custom leaders
+- {rules} - how we talk in here
+- {announcements} - site and meta updates
+- {flair} - pick your favorite leader (one face, one role)
+- Leader rooms under **OP17** and **Format staples** - each site leader has a channel with the current consensus list pinned
+- {shop} - playmats, dice, sleeves, custom leaders
 
 Not affiliated with Bandai or Shueisha. Fan site.
 """
@@ -419,8 +419,8 @@ ANNOUNCEMENTS_BODY = """**Welcome to the OPDL Discord**
 The bot laid out this server from the site:
 
 - Generic rooms: welcome, rules, announcements, flair, general, deck help, tournaments, shop, off-topic
-- **OP17** — one channel per OP17 leader, plus an OP17 meta room
-- **Format staples** — every other leader page on the site (RG Luffy, Nami, Mihawk, both Aces, Imu, Enel, Katakuri)
+- **OP17** - one channel per OP17 leader, plus an OP17 meta room
+- **Format staples** - every other leader page on the site (RG Luffy, Nami, Mihawk, both Aces, Imu, Enel, Katakuri)
 
 Each leader channel has a **pinned consensus list** averaged from the lists on that page. Use `/opdl-consensus` (admins) after the site refresh to update them.
 
@@ -429,7 +429,7 @@ Grab a leader flair in {flair}.
 
 FLAIR_BODY = """**Leader flair**
 
-Pick the OPTCG leader you actually play — or the one you like looking at. One favorite at a time.
+Pick the OPTCG leader you actually play - or the one you like looking at. One favorite at a time.
 
 Buttons use a little One Piece face cropped from that leader's card (the same Limitless art as the site). Click again on another leader to swap. Clear flair drops the role.
 """

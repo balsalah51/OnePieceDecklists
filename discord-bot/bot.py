@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OPDL Discord bot — channels, leader rooms, consensus posts, and flair."""
+"""OPDL Discord bot - channels, leader rooms, consensus posts, and flair."""
 
 from __future__ import annotations
 
@@ -37,11 +37,11 @@ def print_plan() -> None:
         print(f"# {spec['name']}")
         for ch in spec["channels"]:
             flag = " [page]" if ch.get("readonly") else ""
-            print(f"  #{ch['name']}{flag} — {ch['topic']}")
+            print(f"  #{ch['name']}{flag} - {ch['topic']}")
         print()
     for meta in METAS:
         print(f"# {meta['category']}")
-        print(f"  #{meta['discussion']} — {meta['topic']}")
+        print(f"  #{meta['discussion']} - {meta['topic']}")
         for leader in leaders_for_meta(meta["key"]):
             entry = consensus.get(leader["id"]) or {}
             n = entry.get("lists") or 0
@@ -137,7 +137,7 @@ async def run_bot() -> None:
         log = await setup_guild(interaction.guild, post_lists=True)
         bot.add_view(FlairView())
         await interaction.followup.send(
-            f"Setup complete. {len(log)} records. Re-run anytime — it updates in place.",
+            f"Setup complete. {len(log)} records. Re-run anytime - it updates in place.",
             ephemeral=True,
         )
 

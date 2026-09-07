@@ -11,7 +11,7 @@ Invite the bot, run `/opdl-setup` once, then `/opdl-consensus` whenever the site
 - `#welcome`
 - `#rules`
 - `#announcements`
-- `#flair` — button picker, one favorite leader at a time
+- `#flair` - button picker, one favorite leader at a time
 
 **Community**
 
@@ -61,10 +61,10 @@ python bot.py             # connect
 
 In the server, as an admin:
 
-- `/opdl-setup` — categories, channels, roles, emojis, welcome/rules/announcements/flair, consensus pins
-- `/opdl-consensus` — rewrite the pinned lists from the current site data
-- `/opdl-flair` — rebuild the flair page
-- `/opdl-leader shanks` — pin one list in the current channel
+- `/opdl-setup` - categories, channels, roles, emojis, welcome/rules/announcements/flair, consensus pins
+- `/opdl-consensus` - rewrite the pinned lists from the current site data
+- `/opdl-flair` - rebuild the flair page
+- `/opdl-leader shanks` - pin one list in the current channel
 
 Re-running setup is safe: existing channels are reused and pins are edited in place.
 

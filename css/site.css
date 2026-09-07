@@ -185,6 +185,9 @@ main.single{grid-template-columns:1fr}
 .section-title{display:flex;align-items:end;justify-content:space-between;margin-bottom:10px;gap:12px;flex-wrap:wrap;min-width:0}
 .section-title h3{margin:0;font-size:18px;color:var(--text);min-width:0;overflow-wrap:anywhere}
 .list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.guide-list{margin:10px 0 0;padding:0 0 0 1.2em;display:flex;flex-direction:column;gap:8px;line-height:1.55;font-size:15px}
+.guide-list li{padding:0}
+.guide-list strong{font-weight:800}
 .item{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent);border:1px solid rgba(0,0,0,0.04);gap:12px;text-decoration:none;color:inherit;min-width:0;max-width:100%}
 .item > div:first-child{min-width:0;flex:1}
 .item > div:first-child > div{overflow-wrap:anywhere}
