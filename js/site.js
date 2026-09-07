@@ -1,5 +1,65 @@
 (function () {
   var COPY_LABEL = "Copy to OP TCG SIM";
+  var THEME_COOKIE = "opdl-theme";
+  var THEME_MAX_AGE = 60 * 60 * 24 * 365;
+
+  function readCookie(name) {
+    var parts = ("; " + document.cookie).split("; " + name + "=");
+    if (parts.length < 2) return "";
+    return decodeURIComponent(parts.pop().split(";").shift() || "");
+  }
+
+  function writeCookie(name, value) {
+    document.cookie =
+      name + "=" + encodeURIComponent(value) +
+      "; Max-Age=" + THEME_MAX_AGE + "; Path=/; SameSite=Lax";
+  }
+
+  function currentTheme() {
+    var attr = document.documentElement.getAttribute("data-theme");
+    if (attr === "dark" || attr === "light") return attr;
+    var cookie = readCookie(THEME_COOKIE);
+    if (cookie === "dark" || cookie === "light") return cookie;
+    return "light";
+  }
+
+  function applyTheme(theme, persist) {
+    theme = theme === "dark" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", theme);
+    if (persist) writeCookie(THEME_COOKIE, theme);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", theme === "dark" ? "#121316" : "#b71c1c");
+    document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-theme-set") === theme ? "true" : "false");
+    });
+  }
+
+  function ensureToggle() {
+    if (document.querySelector("[data-theme-set]")) return;
+    var header = document.querySelector("header");
+    if (!header) return;
+    var wrap = document.createElement("div");
+    wrap.className = "theme-toggle";
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", "Color theme");
+    wrap.innerHTML =
+      '<button type="button" class="theme-toggle-btn" data-theme-set="light">Light</button>' +
+      '<button type="button" class="theme-toggle-btn" data-theme-set="dark">Dark</button>';
+    var nav = header.querySelector('nav[aria-label="Primary"]');
+    header.insertBefore(wrap, nav || null);
+  }
+
+  function initTheme() {
+    ensureToggle();
+    applyTheme(currentTheme(), Boolean(readCookie(THEME_COOKIE)));
+    document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+      if (btn.dataset.bound) return;
+      btn.dataset.bound = "1";
+      btn.addEventListener("click", function () {
+        applyTheme(btn.getAttribute("data-theme-set"), true);
+      });
+    });
+  }
 
   function textList(root) {
     return Array.prototype.map.call(root.querySelectorAll(".text-line"), function (line) {
@@ -184,6 +244,7 @@
   }
 
   function ready() {
+    initTheme();
     ensureCopyButtons();
     initCopy();
     initFilters();

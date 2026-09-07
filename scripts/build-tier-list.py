@@ -17,7 +17,6 @@ from pathlib import Path
 
 ROOT = Path("/workspace")
 RECENT_FROM = "2026-08-20"
-CSS_VER = "tier-home"
 TIER_PTS = {"S": 5.0, "A": 3.5, "B": 2.0, "C": 1.0, "D": 0.4}
 COLOR_NAMES = {
     "color-red": "Red",
@@ -64,6 +63,7 @@ spec.loader.exec_module(gen)
 sspec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts/seo_common.py")
 seo = importlib.util.module_from_spec(sspec)
 sspec.loader.exec_module(seo)
+CSS_VER = seo.CSS_VER
 
 LEADERS = gen.LEADERS
 BY_ID = {L["id"]: L for L in LEADERS}
@@ -726,6 +726,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         "  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n"
         f"  <title>{html.escape(title)}</title>\n"
         f"  <meta name=\"description\" content=\"{html.escape(desc)}\" />\n"
+        f"{seo.THEME_BOOT_SCRIPT}"
         f"  <link rel=\"stylesheet\" href=\"/css/site.css?v={CSS_VER}\" />\n"
         f"  <link rel=\"canonical\" href=\"{html.escape(url, quote=True)}\" />\n"
         f"{seo.google_head_tags(url)}"
@@ -745,7 +746,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
           <div class="subtitle">OPTCG decklists</div>
         </div>
       </a>
-{seo.primary_nav_html(current="tier")}
+{seo.THEME_TOGGLE_HTML}{seo.primary_nav_html(current="tier")}
     </header>
     <main class="single">
       <div class="card hero">

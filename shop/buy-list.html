@@ -6,7 +6,10 @@
   <title>Mass Entry list | One Piece Decklists</title>
   <meta name="description" content="Copy this list and paste it into TCGplayer Mass Entry." />
   <meta name="robots" content="noindex, nofollow" />
-  <link rel="stylesheet" href="/css/site.css?v=tier-home" />
+    <script id="opdl-theme-boot">
+    (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+  </script>
+<link rel="stylesheet" href="/css/site.css?v=theme" />
   <style>
     .mass-box{width:100%;min-height:280px;margin:12px 0;padding:12px;border:1px solid var(--line,#333);border-radius:8px;background:#111;color:#eee;font:14px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace}
     .mass-actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 4px}
@@ -22,6 +25,10 @@
           <div class="subtitle">OPTCG decklists</div>
         </div>
       </a>
+      <div class="theme-toggle" role="group" aria-label="Color theme">
+        <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
+        <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
+      </div>
       <nav aria-label="Primary">
         <a href="/#recent">Recent lists</a>
         <a href="/decklists/op17.html">Leaders</a>
@@ -88,6 +95,6 @@
   <script src="/js/tcgplayer-ids.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer.js?v=tcg-quiet"></script>
-  <script src="/js/site.js?v=amazon-shop"></script>
+  <script src="/js/site.js?v=theme"></script>
 </body>
 </html>

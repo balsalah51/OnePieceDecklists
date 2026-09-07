@@ -6,7 +6,10 @@
   <title>Custom leaders | One Piece Decklists shop</title>
   <meta name="description" content="Custom OPTCG leader prints. Not currently in the public shop." />
   <meta name="robots" content="noindex, nofollow" />
-  <link rel="stylesheet" href="/css/site.css?v=tier-home" />
+    <script id="opdl-theme-boot">
+    (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+  </script>
+<link rel="stylesheet" href="/css/site.css?v=theme" />
 </head>
 <body>
   <div class="wrap">
@@ -18,6 +21,10 @@
           <div class="subtitle">OPTCG decklists</div>
         </div>
       </a>
+      <div class="theme-toggle" role="group" aria-label="Color theme">
+        <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
+        <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
+      </div>
       <nav aria-label="Primary">
         <a href="/#recent">Recent lists</a>
         <a href="/decklists/op17.html">Leaders</a>
@@ -41,6 +48,6 @@
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/js/site.js?v=amazon-shop"></script>
+  <script src="/js/site.js?v=theme"></script>
 </body>
 </html>

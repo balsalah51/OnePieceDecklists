@@ -599,8 +599,7 @@ def patch_nav_footer(text: str) -> str:
         )
     else:
         text = re.sub(r'<img class="logo"[^>]*>', seo.BRAND_LOGO_HTML, text, count=1)
-    text = re.sub(r'href="/css/site\.css(?:\?[^"]*)?"', f'href="/css/site.css?v={seo.CSS_VER}"', text)
-    text = re.sub(r'src="/js/site\.js(?:\?[^"]*)?"', f'src="/js/site.js?v={seo.JS_VER}"', text)
+    text = seo.apply_theme_chrome(text)
     text = text.replace(
         '<a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/search.html">Search</a>',
         '<a href="/search.html">Search</a> · <a href="/shop/">Shop</a>',
@@ -1100,7 +1099,7 @@ def write_search_page(index: dict) -> None:
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Search OPTCG decklists | One Piece Decklists</title>
   <meta name="description" content="Search One Piece TCG decklists, leaders, characters, and events on One Piece Decklists." />
-  <link rel="stylesheet" href="/css/site.css?v={seo.CSS_VER}" />
+{seo.THEME_BOOT_SCRIPT}  <link rel="stylesheet" href="/css/site.css?v={seo.CSS_VER}" />
 {seo.ADSENSE_SCRIPT.rstrip()}
 </head>
 <body>
@@ -1113,7 +1112,7 @@ def write_search_page(index: dict) -> None:
           <div class="subtitle">OPTCG decklists</div>
         </div>
       </a>
-{seo.primary_nav_html(current="search")}
+{seo.THEME_TOGGLE_HTML}{seo.primary_nav_html(current="search")}
     </header>
     <main class="single">
       <div class="card hero">
