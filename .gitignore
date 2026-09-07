@@ -1,0 +1,13 @@
+
+__pycache__/
+*.pyc
+.env
+data/x-media/
+data/reddit-media/
+data/reddit-rss.json
+data/reddit-image-manifest.json
+data/reddit-comments-log.json
+discord-bot/.env
+discord-bot/.venv/
+discord-bot/state.json
+.venv/

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>OPDL</ShortName>
+  <LongName>One Piece Decklists</LongName>
+  <Description>Search OPTCG decklists on One Piece Decklists</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="48" height="48" type="image/png">https://onepiecedecklists.com/img/opdl-logo-48.png</Image>
+  <Url type="text/html" method="get" template="https://onepiecedecklists.com/search.html?q={searchTerms}"/>
+</OpenSearchDescription>
