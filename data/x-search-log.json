@@ -1,0 +1,1862 @@
+{
+  "window": {
+    "start": "2026-09-04",
+    "end": "2026-09-06",
+    "tz": "UTC"
+  },
+  "profiles": [
+    {
+      "handle": "MarinefordTCG",
+      "url": "https://r.jina.ai/https://x.com/MarinefordTCG",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "StrawHatPecan",
+      "url": "https://r.jina.ai/https://x.com/StrawHatPecan",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "BenSchumi7",
+      "url": "https://r.jina.ai/https://x.com/BenSchumi7",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "CardKaizoku",
+      "url": "https://r.jina.ai/https://x.com/CardKaizoku",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "BlaisePlays",
+      "url": "https://r.jina.ai/https://x.com/BlaisePlays",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "BlaisePlaysTCG",
+      "url": "https://r.jina.ai/https://x.com/BlaisePlaysTCG",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "NightingaleTCG",
+      "url": "https://r.jina.ai/https://x.com/NightingaleTCG",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "michaelartress",
+      "url": "https://r.jina.ai/https://x.com/michaelartress",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "ONEPIECE_tcg_EN",
+      "url": "https://r.jina.ai/https://x.com/ONEPIECE_tcg_EN",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "Silvers_D_Foxy",
+      "url": "https://r.jina.ai/https://x.com/Silvers_D_Foxy",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "LimitlessTCG",
+      "url": "https://r.jina.ai/https://x.com/LimitlessTCG",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "OPtopdecks",
+      "url": "https://r.jina.ai/https://x.com/OPtopdecks",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "OPTCGAlert",
+      "url": "https://r.jina.ai/https://x.com/OPTCGAlert",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "The_Egman",
+      "url": "https://r.jina.ai/https://x.com/The_Egman",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "Yonxlj",
+      "url": "https://r.jina.ai/https://x.com/Yonxlj",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "KuroKumaTCG",
+      "url": "https://r.jina.ai/https://x.com/KuroKumaTCG",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "Chinoize_",
+      "url": "https://r.jina.ai/https://x.com/Chinoize_",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "sormiltcg",
+      "url": "https://r.jina.ai/https://x.com/sormiltcg",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "EgmanEvents",
+      "url": "https://r.jina.ai/https://x.com/EgmanEvents",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "JohnnyTCG",
+      "url": "https://r.jina.ai/https://x.com/JohnnyTCG",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "CapiamoOP",
+      "url": "https://r.jina.ai/https://x.com/CapiamoOP",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "LeeZ_1111",
+      "url": "https://r.jina.ai/https://x.com/LeeZ_1111",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "NBAPR",
+      "url": "https://r.jina.ai/https://x.com/NBAPR",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "BCGFest",
+      "url": "https://r.jina.ai/https://x.com/BCGFest",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "BandaiTCG",
+      "url": "https://r.jina.ai/https://x.com/BandaiTCG",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    },
+    {
+      "handle": "BandaiCardGames",
+      "url": "https://r.jina.ai/https://x.com/BandaiCardGames",
+      "status": 403,
+      "chars": 539,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0,
+      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+    }
+  ],
+  "searches": [
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"4xOP17\" since:2026-09-04",
+      "status": 202,
+      "chars": 14272,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"1xOP17-001\" since:2026-09-04",
+      "status": 202,
+      "chars": 14274,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"1xOP17-039\" since:2026-09-04",
+      "status": 202,
+      "chars": 14286,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"1xOP17-079\" since:2026-09-04",
+      "status": 202,
+      "chars": 14279,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"1xOP11-040\" since:2026-09-04",
+      "status": 202,
+      "chars": 14280,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"1xOP08-058\" since:2026-09-04",
+      "status": 202,
+      "chars": 14298,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"1xOP16-001\" since:2026-09-04",
+      "status": 202,
+      "chars": 14274,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com OP17 decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14262,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com OPTCG decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14270,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com ChinoizeCup since:2026-09-04",
+      "status": 202,
+      "chars": 14258,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com The_Egman decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14272,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com Yonxlj deck-list since:2026-09-04",
+      "status": 202,
+      "chars": 14255,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com MarinefordTCG since:2026-09-04",
+      "status": 202,
+      "chars": 14250,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com CardKaizoku since:2026-09-04",
+      "status": 202,
+      "chars": 14252,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com ChinoizeCup #103 since:2026-09-04",
+      "status": 202,
+      "chars": 14280,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com ChinoizeCup #102 since:2026-09-04",
+      "status": 202,
+      "chars": 14268,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com NightingaleTCG decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14282,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com StrawHatPecan decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14280,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com BlaisePlays decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14288,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"4xOP17\"",
+      "status": 202,
+      "chars": 14250,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:twitter.com \"4xOP17-040\"",
+      "status": 202,
+      "chars": 14258,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com ChinoizeCup #101 Winner",
+      "status": 202,
+      "chars": 14242,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com ChinoizeCup #100 Winner",
+      "status": 202,
+      "chars": 14254,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com ワンピカード デッキ since:2026-09-04",
+      "status": 202,
+      "chars": 14256,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com Flame Flame decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14276,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"Flame-Flame Fruit\" Utrecht since:2026-09-04",
+      "status": 202,
+      "chars": 14308,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com BCG Fest Utrecht decklist since:2026-09-04",
+      "status": 202,
+      "chars": 14286,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com Flame Flame Winner Robin since:2026-09-04",
+      "status": 202,
+      "chars": 14301,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com \"4xOP17\" since:2026-09-04",
+      "status": 202,
+      "chars": 14284,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com ワンピカード 優勝 デッキ since:2026-09-04",
+      "status": 202,
+      "chars": 14268,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "ddg",
+      "query": "site:x.com 紫黄ロビン デッキ since:2026-09-04",
+      "status": 202,
+      "chars": 14248,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "bing",
+      "query": "site:x.com \"4xOP17\" since:2026-09-04",
+      "status": 200,
+      "chars": 98921,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "jina-google",
+      "query": "site:x.com \"4xOP17\" since:2026-09-04",
+      "status": 200,
+      "chars": 2838,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "bing",
+      "query": "site:x.com \"1xOP17-001\" since:2026-09-04",
+      "status": 200,
+      "chars": 118156,
+      "tweet_ids": [],
+      "card_lines": 22,
+      "complete_lists": 0
+    },
+    {
+      "kind": "jina-google",
+      "query": "site:x.com \"1xOP17-001\" since:2026-09-04",
+      "status": 200,
+      "chars": 2866,
+      "tweet_ids": [],
+      "card_lines": 7,
+      "complete_lists": 0
+    },
+    {
+      "kind": "bing",
+      "query": "site:x.com \"1xOP17-039\" since:2026-09-04",
+      "status": 200,
+      "chars": 115820,
+      "tweet_ids": [],
+      "card_lines": 22,
+      "complete_lists": 0
+    },
+    {
+      "kind": "jina-google",
+      "query": "site:x.com \"1xOP17-039\" since:2026-09-04",
+      "status": 200,
+      "chars": 2859,
+      "tweet_ids": [],
+      "card_lines": 7,
+      "complete_lists": 0
+    },
+    {
+      "kind": "bing",
+      "query": "site:x.com \"1xOP17-079\" since:2026-09-04",
+      "status": 200,
+      "chars": 116943,
+      "tweet_ids": [],
+      "card_lines": 18,
+      "complete_lists": 0
+    },
+    {
+      "kind": "jina-google",
+      "query": "site:x.com \"1xOP17-079\" since:2026-09-04",
+      "status": 200,
+      "chars": 1316,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "bing",
+      "query": "site:x.com \"1xOP11-040\" since:2026-09-04",
+      "status": 200,
+      "chars": 115419,
+      "tweet_ids": [],
+      "card_lines": 22,
+      "complete_lists": 0
+    },
+    {
+      "kind": "jina-google",
+      "query": "site:x.com \"1xOP11-040\" since:2026-09-04",
+      "status": 200,
+      "chars": 2866,
+      "tweet_ids": [],
+      "card_lines": 7,
+      "complete_lists": 0
+    },
+    {
+      "kind": "bing",
+      "query": "site:x.com \"1xOP08-058\" since:2026-09-04",
+      "status": 200,
+      "chars": 116386,
+      "tweet_ids": [],
+      "card_lines": 22,
+      "complete_lists": 0
+    },
+    {
+      "kind": "jina-google",
+      "query": "site:x.com \"1xOP08-058\" since:2026-09-04",
+      "status": 200,
+      "chars": 1317,
+      "tweet_ids": [],
+      "card_lines": 2,
+      "complete_lists": 0
+    },
+    {
+      "kind": "fx-user",
+      "query": "Chinoize_",
+      "status": 200,
+      "chars": 1489,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "xcancel",
+      "query": "Chinoize_",
+      "status": 200,
+      "chars": 321,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "fx-user",
+      "query": "MarinefordTCG",
+      "status": 200,
+      "chars": 908,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "xcancel",
+      "query": "MarinefordTCG",
+      "status": 200,
+      "chars": 321,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "fx-user",
+      "query": "NightingaleTCG",
+      "status": 404,
+      "chars": 39,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "xcancel",
+      "query": "NightingaleTCG",
+      "status": 200,
+      "chars": 321,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "fx-user",
+      "query": "The_Egman",
+      "status": 200,
+      "chars": 1002,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "xcancel",
+      "query": "The_Egman",
+      "status": 200,
+      "chars": 321,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "fx-user",
+      "query": "CardKaizoku",
+      "status": 200,
+      "chars": 1262,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "xcancel",
+      "query": "CardKaizoku",
+      "status": 200,
+      "chars": 321,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "yt-desc",
+      "query": "Iy8USsETmBk",
+      "status": 200,
+      "chars": 1165562,
+      "tweet_ids": [],
+      "card_lines": 45,
+      "complete_lists": 3
+    },
+    {
+      "kind": "yt-desc",
+      "query": "x1bRKDLBD28",
+      "status": 200,
+      "chars": 1218007,
+      "tweet_ids": [],
+      "card_lines": 48,
+      "complete_lists": 3
+    },
+    {
+      "kind": "yt-desc",
+      "query": "-8n9oqREEYE",
+      "status": 200,
+      "chars": 1273519,
+      "tweet_ids": [],
+      "card_lines": 51,
+      "complete_lists": 3
+    }
+  ],
+  "tweets": [
+    {
+      "handle": "OPtopdecks",
+      "id": "2090634341244432826",
+      "url": "https://x.com/OPtopdecks/status/2090634341244432826",
+      "http": 200,
+      "text": "Just sharing from David Lee post.\nThis is pulls from 3 English cases (equals to 6 JP Cases I think)\n#optcg",
+      "created": "2026-08-21",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HQNsyi4boAAoe6d.jpg?name=orig",
+        "https://pbs.twimg.com/media/HQNsyi6bYAAC3yF.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "OPTCGAlert",
+      "id": "2090450093782532258",
+      "url": "https://x.com/OPTCGAlert/status/2090450093782532258",
+      "http": 200,
+      "text": "📝 Bandai just edited the OP-17 4th Anniversary event page\n\nNew line added this morning: a SECOND P-110 Luffy winner card (silver foil + gold stamp)\n\nYou might not have to win to take one home.\n\nEvery player also gets the 4th Anniversary Tournament Pack (75 types) and the P-110 Luffy leader card\nhttps://en.onepiece-cardgame.com/events/store-tournament-op17.html\n 👉 http://discord.gg/7K3sK6kwmM\n#OneP",
+      "created": "2026-08-20",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HQLFR82WkAAsss4.jpg?name=orig",
+        "https://pbs.twimg.com/media/HQLFR8vW8AA-UCR.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Silvers_D_Foxy",
+      "id": "2090197490913902734",
+      "url": "https://x.com/Silvers_D_Foxy/status/2090197490913902734",
+      "http": 200,
+      "text": "The “Elite Four” of the OP17 Meta",
+      "created": "2026-08-19",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HQHfipKXwAAClLi.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "The_Egman",
+      "id": "2089838271522320522",
+      "url": "https://x.com/The_Egman/status/2089838271522320522",
+      "http": 200,
+      "text": "My One Piece OP17 Meta Deck Lists: https://deckbuilder.egmanevents.com/optcg/tournaments?format=OP17&tab=team\n\nWent 6-1/Got 4th Place at today's @Chinoize_ Cup!\n\nVideo Breakdown tomorrow but some quick notes:\n\n- I did get Round 1 bye\n- Round 4 loss was my game to lose/very winnable\n- We dodged Mihawk\n- @FenoHS was our only Sabo/we high-rolled. \n- 1st Image is the exact 50\n- 2nd Image is what I wou",
+      "created": "2026-08-18",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HQCWsT2a4AEGLKZ.jpg?name=orig",
+        "https://pbs.twimg.com/media/HQCYopWbEAEhdan.jpg?name=orig",
+        "https://pbs.twimg.com/media/HQCYpqjbgAANTTI.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2089835508901810310",
+      "url": "https://x.com/Chinoize_/status/2089835508901810310",
+      "http": 200,
+      "text": "TCGLIVE ChinoizeCup #98 Winner [OP17]\n\nWinner: @TomKaiser119162 - Rocks\nPlayers: 128\n\n🟩Mihawk\n🟩Elbaf Luffy\n🟩Kaido\n🟩ST14 Luffy\n🟩RB Sabo\n🟩Rocks\n🟩Rocks\n\n8 Rocks in top11 (!!!) and the event came in clutch in finals! Also @The_Egman getting top 4 I see👀",
+      "created": "2026-08-18",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HQCWMrZWgAA4W0B.jpg?name=orig",
+        "https://pbs.twimg.com/media/HQCWNf9XUAAVM5A.jpg?name=orig",
+        "https://pbs.twimg.com/media/HQCWOdAWcAAZ_93.jpg?name=orig",
+        "https://pbs.twimg.com/media/HQCWPmzWkAA92P7.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "MarinefordTCG",
+      "id": "2089448508684189741",
+      "url": "https://x.com/MarinefordTCG/status/2089448508684189741",
+      "http": 200,
+      "text": "",
+      "created": "2026-08-17",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HP82V-lX0AEsnnW.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "MarinefordTCG",
+      "id": "2088771006592663815",
+      "url": "https://x.com/MarinefordTCG/status/2088771006592663815",
+      "http": 200,
+      "text": "Removing 6c Newgate with this shit is like crack",
+      "created": "2026-08-15",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HPzOJ0NXQAEIwOn.jpg?name=orig",
+        "https://pbs.twimg.com/media/HPzOJ0MXQAAMa-H.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2089597170316144997",
+      "url": "https://x.com/cardkaizoku/status/2089597170316144997",
+      "http": 200,
+      "text": "Top 8 TCG channels for constipated players",
+      "created": "2026-08-18",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HP-9ZMLbkAAosNU.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2089491621176029306",
+      "url": "https://x.com/cardkaizoku/status/2089491621176029306",
+      "http": 200,
+      "text": "Sabo and Rocks continue to climb! The meta is getting more hostile towards Mihawk if all the power down in Sabo, Ace, and Kaido remains. Speaking of Kaido, being pretty decent into the Rocks and Mihawk has given him some meta relevance! And people remembered PEnel existed again",
+      "created": "2026-08-17",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HP855eBbkAAfPkO.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2088505853402108192",
+      "url": "https://x.com/cardkaizoku/status/2088505853402108192",
+      "http": 200,
+      "text": "You can now make Match History reports by clicking the Match Report button in your match history!\n\nYou can also save them to where you normally save your Tournament Reports!",
+      "created": "2026-08-15",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HPvcDfWasAA9fdz.jpg?name=orig",
+        "https://pbs.twimg.com/media/HPvcWh9akAARdEu.png?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2088365415928127503",
+      "url": "https://x.com/cardkaizoku/status/2088365415928127503",
+      "http": 200,
+      "text": "Got my first manga rare and it only took 22 sets",
+      "created": "2026-08-14",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HPtdR3wacAAt1TX.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2086926321696076196",
+      "url": "https://x.com/cardkaizoku/status/2086926321696076196",
+      "http": 200,
+      "text": "Super early Red Ace data. Looks like that new 10 drop and getting a 2nd Whitebeard 2k with 8k power was enough to push him over the edge\n\nLoses to moms and dads though",
+      "created": "2026-08-10",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HPY_3b7asAArTos.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2086756739634909242",
+      "url": "https://x.com/Yonxlj/status/2086756739634909242",
+      "http": 200,
+      "text": "OP-17 Red Ace Current Deck-list! \n\nI think Red Ace will make his way into the top 5 decks next set due to the aggro and protection that the new 10c provides. \n\nWill be streaming on twitch today, follow me and check out the discord / guide in my profile 🔥\n\n#optcg #redace #op17",
+      "created": "2026-08-10",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HPWmMJCXAAE_rzB.jpg?name=orig",
+        "https://pbs.twimg.com/media/HPWmMI6WUAAfIXX.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2086495197781770492",
+      "url": "https://x.com/Yonxlj/status/2086495197781770492",
+      "http": 200,
+      "text": "Edward Newgate OP-17 Deck-list!\n\nHave done a decent amount of ranked games on stream in the discord, been performing above expectations.\n\nHard to beat down with good tools for the  META.\n\nDrop me a follow, check out the discord in bio, dropping Red Ace List soon!\n\n#optcg #op17",
+      "created": "2026-08-09",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HPS4UEYWoAIlEVg.jpg?name=orig",
+        "https://pbs.twimg.com/media/HPS4UEaWgAA4b9u.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2084950563146330449",
+      "url": "https://x.com/Yonxlj/status/2084950563146330449",
+      "http": 200,
+      "text": "Predicted Tier List for OP17 Meta!\n\nWe are heading into the biggest jungle yet.\n\nSo many strong leaders and matchups to explore!\n\nThe list is premature, don't expect too much accuracy.\n\nBlue Luffy is OP17 Rocks, let me know if i forgot anyone & give me your own opinions!\n\n#optcg",
+      "created": "2026-08-05",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HO87eucXoAA9qCR.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "KuroKumaTCG",
+      "id": "2084578215536816418",
+      "url": "https://x.com/KuroKumaTCG/status/2084578215536816418",
+      "http": 200,
+      "text": "Sim got updated with OP17 today so here's the Rocks.D.Xebec list I've been grinding.\n\nCaptain John might be the most underrated card in the set btw, that thing is pure glue.\n\nOnly slot I'm not sold on: Ganzui. John already does his job better. Thinking Barbell there instead — am I wrong?",
+      "created": "2026-08-04",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HO3oSyrW0AEY3H-.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "ALA9250",
+      "id": "2088502410603815064",
+      "url": "https://x.com/ALA9250/status/2088502410603815064",
+      "http": 200,
+      "text": "@h10342717 1xOP09-061\n4xOP09-078\n2xOP09-077\n4xOP15-085\n2xOP17-087\n1xOP17-091\n2xOP17-096\n4xPRB02-012\n4xOP08-074\n4xOP17-074\n4xST26-003\n4xOP09-072\n4xOP15-088\n2xOP12-087\n4xST26-005\n4xOP15-086\n1xOP05-119\n\n画像が取れなくてすみません。\n構成こんな感じです。",
+      "created": "2026-08-15",
+      "in_window": false,
+      "card_lines": 34,
+      "complete_lists": 2,
+      "photos": []
+    },
+    {
+      "handle": "EgmanEvents",
+      "id": "2088039197521408457",
+      "url": "https://x.com/EgmanEvents/status/2088039197521408457",
+      "http": 200,
+      "text": "Deck Lists: https://deckbuilder.egmanevents.com/optcg/tournaments?format=OP17&tab=ranked\n\nEgman Events has been updated with @TCGMatchMaking Preview Power Rankings for the OP17 Meta of the One Piece Card Game!\n\nCheck it out!",
+      "created": "2026-08-13",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HPo0j8UagAAGMSr.jpg?name=orig",
+        "https://pbs.twimg.com/media/HPo0kfbakAAUxH7.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2089403698724184399",
+      "url": "https://x.com/NBAPR/status/2089403698724184399",
+      "http": 200,
+      "text": "NBA Chief Communications Officer Mike Bass issued the following statement:",
+      "created": "2026-08-17",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HP8NhcMWQAAmVVe.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "sormiltcg",
+      "id": "2076068504843735235",
+      "url": "https://x.com/sormiltcg/status/2076068504843735235",
+      "http": 200,
+      "text": "OP17 Luffy decklist based on all the support cards we have seen so far.",
+      "created": "2026-07-11",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HM-tTXvXAAAp8ia.jpg?name=orig"
+      ]
+    }
+  ],
+  "in_window_tweets": [],
+  "in_window_photos": [],
+  "complete_lists": [
+    {
+      "source": "Iy8USsETmBk",
+      "leader": "OP17-039",
+      "cards": 50,
+      "raw": "1xOP17-039 3xOP17-052 3xOP08-051 3xOP17-042 2xOP17-044 3xOP17-050 4xOP17-040 4xOP17-045 4xOP17-046 4xOP17-048 4xOP17-049 4xOP17-054 4xOP17-055 4xOP17-056 4xOP17-118"
+    },
+    {
+      "source": "Iy8USsETmBk",
+      "leader": "OP17-039",
+      "cards": 50,
+      "raw": "1xOP17-039 3xOP17-052 3xOP08-051 3xOP17-042 2xOP17-044 3xOP17-050 4xOP17-040 4xOP17-045 4xOP17-046 4xOP17-048 4xOP17-049 4xOP17-054 4xOP17-055 4xOP17-056 4xOP17-118"
+    },
+    {
+      "source": "Iy8USsETmBk",
+      "leader": "OP17-039",
+      "cards": 50,
+      "raw": "1xOP17-039 3xOP17-052 3xOP08-051 3xOP17-042 2xOP17-044 3xOP17-050 4xOP17-040 4xOP17-045 4xOP17-046 4xOP17-048 4xOP17-049 4xOP17-054 4xOP17-055 4xOP17-056 4xOP17-118"
+    },
+    {
+      "source": "x1bRKDLBD28",
+      "leader": "OP17-079",
+      "cards": 50,
+      "raw": "1xOP17-079 2xOP17-084 4xOP17-086 4xOP17-094 3xOP05-081 4xOP17-080 4xOP17-081 3xOP17-082 3xOP17-087 3xOP17-091 4xOP15-088 4xOP17-119 3xOP15-092 4xOP17-093 2xOP07-096 3xOP17-098"
+    },
+    {
+      "source": "x1bRKDLBD28",
+      "leader": "OP17-079",
+      "cards": 50,
+      "raw": "1xOP17-079 2xOP17-084 4xOP17-086 4xOP17-094 3xOP05-081 4xOP17-080 4xOP17-081 3xOP17-082 3xOP17-087 3xOP17-091 4xOP15-088 4xOP17-119 3xOP15-092 4xOP17-093 2xOP07-096 3xOP17-098"
+    },
+    {
+      "source": "x1bRKDLBD28",
+      "leader": "OP17-079",
+      "cards": 50,
+      "raw": "1xOP17-079 2xOP17-084 4xOP17-086 4xOP17-094 3xOP05-081 4xOP17-080 4xOP17-081 3xOP17-082 3xOP17-087 3xOP17-091 4xOP15-088 4xOP17-119 3xOP15-092 4xOP17-093 2xOP07-096 3xOP17-098"
+    },
+    {
+      "source": "-8n9oqREEYE",
+      "leader": "ST30-001",
+      "cards": 50,
+      "raw": "1xST30-001 3xEB04-002 4xOP01-016 4xOP12-015 4xST21-014 4xST31-001 4xEB02-017 3xST30-012 1xOP15-032 3xOP04-016 3xOP12-018 4xOP14-019 2xOP06-018 3xOP12-037 2xOP12-038 2xOP13-040 4xST31-005"
+    },
+    {
+      "source": "-8n9oqREEYE",
+      "leader": "ST30-001",
+      "cards": 50,
+      "raw": "1xST30-001 3xEB04-002 4xOP01-016 4xOP12-015 4xST21-014 4xST31-001 4xEB02-017 3xST30-012 1xOP15-032 3xOP04-016 3xOP12-018 4xOP14-019 2xOP06-018 3xOP12-037 2xOP12-038 2xOP13-040 4xST31-005"
+    },
+    {
+      "source": "-8n9oqREEYE",
+      "leader": "ST30-001",
+      "cards": 50,
+      "raw": "1xST30-001 3xEB04-002 4xOP01-016 4xOP12-015 4xST21-014 4xST31-001 4xEB02-017 3xST30-012 1xOP15-032 3xOP04-016 3xOP12-018 4xOP14-019 2xOP06-018 3xOP12-037 2xOP12-038 2xOP13-040 4xST31-005"
+    }
+  ],
+  "partial_id_hits": [
+    {
+      "source": "ddg:site:x.com \"1xOP17-001\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP17-001"
+        ],
+        [
+          1,
+          "OP17-001"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP17-039\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          1,
+          "OP17-039"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP17-079\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          1,
+          "OP17-079"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP11-040\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP11-040"
+        ],
+        [
+          1,
+          "OP11-040"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP08-058\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP08-058"
+        ],
+        [
+          1,
+          "OP08-058"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP16-001\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP16-001"
+        ],
+        [
+          1,
+          "OP16-001"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:twitter.com \"4xOP17-040\"",
+      "hits": [
+        [
+          4,
+          "OP17-040"
+        ],
+        [
+          4,
+          "OP17-040"
+        ]
+      ]
+    },
+    {
+      "source": "bing:site:x.com \"1xOP17-001\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP17-001"
+        ],
+        [
+          1,
+          "OP17-001"
+        ],
+        [
+          1,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          1,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          1,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          1,
+          "OP17-001"
+        ]
+      ]
+    },
+    {
+      "source": "jina-google:site:x.com \"1xOP17-001\" since:2026-09-04",
+      "hits": [
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ],
+        [
+          221,
+          "OP17-001"
+        ]
+      ]
+    },
+    {
+      "source": "bing:site:x.com \"1xOP17-039\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          1,
+          "OP17-039"
+        ]
+      ]
+    },
+    {
+      "source": "jina-google:site:x.com \"1xOP17-039\" since:2026-09-04",
+      "hits": [
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ],
+        [
+          221,
+          "OP17-039"
+        ]
+      ]
+    },
+    {
+      "source": "bing:site:x.com \"1xOP17-079\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ],
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ],
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ]
+      ]
+    },
+    {
+      "source": "jina-google:site:x.com \"1xOP17-079\" since:2026-09-04",
+      "hits": [
+        [
+          221,
+          "OP17-079"
+        ],
+        [
+          221,
+          "OP17-079"
+        ]
+      ]
+    },
+    {
+      "source": "bing:site:x.com \"1xOP11-040\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP11-040"
+        ],
+        [
+          1,
+          "OP11-040"
+        ],
+        [
+          1,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          1,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          1,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          1,
+          "OP11-040"
+        ]
+      ]
+    },
+    {
+      "source": "jina-google:site:x.com \"1xOP11-040\" since:2026-09-04",
+      "hits": [
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ],
+        [
+          221,
+          "OP11-040"
+        ]
+      ]
+    },
+    {
+      "source": "bing:site:x.com \"1xOP08-058\" since:2026-09-04",
+      "hits": [
+        [
+          1,
+          "OP08-058"
+        ],
+        [
+          1,
+          "OP08-058"
+        ],
+        [
+          1,
+          "OP08-058"
+        ],
+        [
+          221,
+          "OP08-058"
+        ],
+        [
+          221,
+          "OP08-058"
+        ],
+        [
+          1,
+          "OP08-058"
+        ],
+        [
+          221,
+          "OP08-058"
+        ],
+        [
+          1,
+          "OP08-058"
+        ],
+        [
+          221,
+          "OP08-058"
+        ],
+        [
+          221,
+          "OP08-058"
+        ],
+        [
+          221,
+          "OP08-058"
+        ],
+        [
+          1,
+          "OP08-058"
+        ]
+      ]
+    },
+    {
+      "source": "jina-google:site:x.com \"1xOP08-058\" since:2026-09-04",
+      "hits": [
+        [
+          221,
+          "OP08-058"
+        ],
+        [
+          221,
+          "OP08-058"
+        ]
+      ]
+    },
+    {
+      "source": "yt-desc:Iy8USsETmBk",
+      "hits": [
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          3,
+          "OP17-052"
+        ],
+        [
+          3,
+          "OP08-051"
+        ],
+        [
+          3,
+          "OP17-042"
+        ],
+        [
+          2,
+          "OP17-044"
+        ],
+        [
+          3,
+          "OP17-050"
+        ],
+        [
+          4,
+          "OP17-040"
+        ],
+        [
+          4,
+          "OP17-045"
+        ],
+        [
+          4,
+          "OP17-046"
+        ],
+        [
+          4,
+          "OP17-048"
+        ],
+        [
+          4,
+          "OP17-049"
+        ],
+        [
+          4,
+          "OP17-054"
+        ]
+      ]
+    },
+    {
+      "source": "yt-desc:x1bRKDLBD28",
+      "hits": [
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          2,
+          "OP17-084"
+        ],
+        [
+          4,
+          "OP17-086"
+        ],
+        [
+          4,
+          "OP17-094"
+        ],
+        [
+          3,
+          "OP05-081"
+        ],
+        [
+          4,
+          "OP17-080"
+        ],
+        [
+          4,
+          "OP17-081"
+        ],
+        [
+          3,
+          "OP17-082"
+        ],
+        [
+          3,
+          "OP17-087"
+        ],
+        [
+          3,
+          "OP17-091"
+        ],
+        [
+          4,
+          "OP15-088"
+        ],
+        [
+          4,
+          "OP17-119"
+        ]
+      ]
+    },
+    {
+      "source": "yt-desc:-8n9oqREEYE",
+      "hits": [
+        [
+          1,
+          "ST30-001"
+        ],
+        [
+          3,
+          "EB04-002"
+        ],
+        [
+          4,
+          "OP01-016"
+        ],
+        [
+          4,
+          "OP12-015"
+        ],
+        [
+          4,
+          "ST21-014"
+        ],
+        [
+          4,
+          "ST31-001"
+        ],
+        [
+          4,
+          "EB02-017"
+        ],
+        [
+          3,
+          "ST30-012"
+        ],
+        [
+          1,
+          "OP15-032"
+        ],
+        [
+          3,
+          "OP04-016"
+        ],
+        [
+          3,
+          "OP12-018"
+        ],
+        [
+          4,
+          "OP14-019"
+        ]
+      ]
+    }
+  ],
+  "photo_only_outside_window": [
+    {
+      "handle": "The_Egman",
+      "id": "2089838271522320522",
+      "url": "https://x.com/The_Egman/status/2089838271522320522",
+      "created": "2026-08-18",
+      "photos": 3,
+      "text": "My One Piece OP17 Meta Deck Lists: https://deckbuilder.egmanevents.com/optcg/tournaments?format=OP17&tab=team\n\nWent 6-1/Got 4th Place at today's @Chinoize_ Cup!\n\nVideo Breakdown to"
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2086756739634909242",
+      "url": "https://x.com/Yonxlj/status/2086756739634909242",
+      "created": "2026-08-10",
+      "photos": 2,
+      "text": "OP-17 Red Ace Current Deck-list! \n\nI think Red Ace will make his way into the top 5 decks next set due to the aggro and protection that the new 10c provides. \n\nWill be streaming on"
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2086495197781770492",
+      "url": "https://x.com/Yonxlj/status/2086495197781770492",
+      "created": "2026-08-09",
+      "photos": 2,
+      "text": "Edward Newgate OP-17 Deck-list!\n\nHave done a decent amount of ranked games on stream in the discord, been performing above expectations.\n\nHard to beat down with good tools for the "
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2084950563146330449",
+      "url": "https://x.com/Yonxlj/status/2084950563146330449",
+      "created": "2026-08-05",
+      "photos": 1,
+      "text": "Predicted Tier List for OP17 Meta!\n\nWe are heading into the biggest jungle yet.\n\nSo many strong leaders and matchups to explore!\n\nThe list is premature, don't expect too much accur"
+    },
+    {
+      "handle": "KuroKumaTCG",
+      "id": "2084578215536816418",
+      "url": "https://x.com/KuroKumaTCG/status/2084578215536816418",
+      "created": "2026-08-04",
+      "photos": 1,
+      "text": "Sim got updated with OP17 today so here's the Rocks.D.Xebec list I've been grinding.\n\nCaptain John might be the most underrated card in the set btw, that thing is pure glue.\n\nOnly "
+    },
+    {
+      "handle": "EgmanEvents",
+      "id": "2088039197521408457",
+      "url": "https://x.com/EgmanEvents/status/2088039197521408457",
+      "created": "2026-08-13",
+      "photos": 2,
+      "text": "Deck Lists: https://deckbuilder.egmanevents.com/optcg/tournaments?format=OP17&tab=ranked\n\nEgman Events has been updated with @TCGMatchMaking Preview Power Rankings for the OP17 Met"
+    },
+    {
+      "handle": "sormiltcg",
+      "id": "2076068504843735235",
+      "url": "https://x.com/sormiltcg/status/2076068504843735235",
+      "created": "2026-07-11",
+      "photos": 1,
+      "text": "OP17 Luffy decklist based on all the support cards we have seen so far."
+    }
+  ],
+  "notes": [
+    "Zero in-window tweet IDs were discovered. ChinoizeCup #101 (Limitless, 2026-08-25) and #100 (2026-08-24) almost certainly have winner posts on @Chinoize_, but those status IDs are not in public search indexes from this environment."
+  ],
+  "hosted": [
+    {
+      "slug": "x-chinoize-101-mage-mihawk",
+      "leader": "OP14-020",
+      "player": "MaGe",
+      "date": "2026-08-25",
+      "source_url": "https://x.com/Chinoize_/status/2092357744921612794",
+      "raw": "1xOP14-020 4xOP07-022 4xOP12-034 4xST32-001 4xOP06-033 4xOP12-023 4xST32-002 4xOP17-031 4xOP13-031 1xOP06-035 4xOP17-022 4xOP01-055 3xOP06-038 2xOP14-037 2xOP08-036 2xOP14-039"
+    },
+    {
+      "slug": "x-chinoize-101-dearcan-mihawk",
+      "leader": "OP14-020",
+      "player": "Dearcan",
+      "date": "2026-08-25",
+      "source_url": "https://x.com/Chinoize_/status/2092357744921612794",
+      "raw": "1xOP14-020 4xOP07-022 4xOP12-034 4xST32-001 4xOP06-033 4xOP12-023 4xOP14-033 4xST32-002 4xST32-003 2xOP06-035 4xOP17-022 4xOP01-055 4xOP06-038 1xOP13-040 1xOP08-036 2xOP14-039"
+    },
+    {
+      "slug": "x-chinoize-101-corentin33-rocks",
+      "leader": "OP17-039",
+      "player": "Corentin33",
+      "date": "2026-08-25",
+      "source_url": "https://x.com/Chinoize_/status/2092357744921612794",
+      "raw": "1xOP17-039 4xOP08-051 2xOP17-050 3xOP17-045 4xOP17-054 4xOP17-044 4xOP17-046 3xOP17-042 4xOP17-049 4xOP17-040 4xOP17-048 4xOP17-118 4xOP17-055 4xOP17-056 2xEB02-030"
+    },
+    {
+      "slug": "x-chinoize-101-wortaxx-enel",
+      "leader": "OP15-058",
+      "player": "Wortaxx",
+      "date": "2026-08-25",
+      "source_url": "https://x.com/Chinoize_/status/2092357744921612794",
+      "raw": "1xOP15-058 4xOP12-071 4xOP15-061 4xOP15-067 4xOP15-071 3xOP12-063 2xOP09-072 2xOP10-067 4xOP15-118 4xOP15-075 4xOP15-076 4xOP15-077 4xOP15-078 3xOP15-074 1xOP13-076 3xOP05-077"
+    }
+  ]
+}

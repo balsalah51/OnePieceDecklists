@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mass Entry list | One Piece Decklists</title>
+  <meta name="description" content="Copy this list and paste it into TCGplayer Mass Entry." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="/css/site.css?v=tier-home" />
+  <style>
+    .mass-box{width:100%;min-height:280px;margin:12px 0;padding:12px;border:1px solid var(--line,#333);border-radius:8px;background:#111;color:#eee;font:14px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace}
+    .mass-actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 4px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">
+        <div class="logo">OP</div>
+        <div>
+          <h1>One Piece Decklists</h1>
+          <div class="subtitle">OPTCG decklists</div>
+        </div>
+      </a>
+      <nav aria-label="Primary">
+        <a href="/#recent">Recent lists</a>
+        <a href="/decklists/op17.html">Leaders</a>
+        <a href="/format.html">Format</a>
+        <a href="/shop/">Shop</a>
+        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+      </nav>
+    </header>
+    <main class="single">
+      <div class="card hero">
+        <div class="crumb"><a href="/">Home</a> / Mass Entry list</div>
+        <h2>TCGplayer Mass Entry list</h2>
+        <p>Open Mass Entry to load this list. Each line is TCGPlayer’s documented format: quantity, name, [set], number within the set — like <code>1 Lightning Bolt [SLD] 84</code>.</p>
+        <div class="mass-actions">
+          <button type="button" class="copy-sim" id="copy-mass">Copy list</button>
+          <a class="buy-tcg" id="open-mass" href="https://www.tcgplayer.com/massentry?productline=One%20Piece%20Card%20Game" target="_blank" rel="noopener nofollow sponsored">Open TCGplayer Mass Entry</a>
+        </div>
+        <textarea id="mass-text" class="mass-box" readonly></textarea>
+        <p class="muted" id="mass-status">Loading card names…</p>
+      </div>
+    </main>
+    <footer>
+      © <span id="year"></span> One Piece Decklists - Fan site, not affiliated with Bandai or Shueisha.
+      <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a> · <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    window.OPDL_onTcgReady = function () {
+      var api = window.OPDL_TCG || {};
+      var raw = (location.hash || "").replace(/^#/, "");
+      try { raw = decodeURIComponent(raw); } catch (e) {}
+      if (!raw) {
+        var q = new URLSearchParams(location.search).get("sim") || "";
+        raw = q;
+      }
+      var cards = api.parseSim ? api.parseSim(raw) : [];
+      var text = api.massText ? api.massText(cards) : raw;
+      var box = document.getElementById("mass-text");
+      var status = document.getElementById("mass-status");
+      var open = document.getElementById("open-mass");
+      box.value = text;
+      if (api.massBoxUrl) open.href = api.massBoxUrl(cards);
+      status.textContent = cards.length
+        ? "Open TCGplayer Mass Entry to load this list."
+        : "No list in this link. Open a deck page and use Buy list on TCGplayer.";
+      document.getElementById("copy-mass").addEventListener("click", function () {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(box.value).then(function () {
+            status.textContent = "Copied. Paste into TCGplayer Mass Entry.";
+          }).catch(function () { box.select(); });
+        } else {
+          box.select();
+        }
+      });
+      open.addEventListener("click", function (e) {
+        if (api.openMassEntry && cards.length) api.openMassEntry(cards, e);
+      });
+      box.focus();
+      box.select();
+    };
+  </script>
+  <script src="/js/tcgplayer-config.js?v=tcg-quiet"></script>
+  <script src="/js/tcgplayer-ids.js?v=tcg-quiet"></script>
+  <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>
+  <script src="/js/tcgplayer.js?v=tcg-quiet"></script>
+  <script src="/js/site.js?v=amazon-shop"></script>
+</body>
+</html>

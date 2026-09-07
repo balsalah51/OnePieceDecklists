@@ -1,0 +1,426 @@
+{
+  "since": "2026-08-28",
+  "events_with_mihawk": 16,
+  "mihawk_lists": 243,
+  "decided_games": 832,
+  "vs": [
+    {
+      "id": "OP07-059",
+      "wins": 0,
+      "losses": 1,
+      "games": 1,
+      "win_pct": 0.0
+    },
+    {
+      "id": "ST10-002",
+      "wins": 0,
+      "losses": 1,
+      "games": 1,
+      "win_pct": 0.0
+    },
+    {
+      "id": "OP06-022",
+      "wins": 0,
+      "losses": 1,
+      "games": 1,
+      "win_pct": 0.0
+    },
+    {
+      "id": "ST21-001",
+      "wins": 0,
+      "losses": 1,
+      "games": 1,
+      "win_pct": 0.0
+    },
+    {
+      "id": "OP09-061",
+      "wins": 0,
+      "losses": 1,
+      "games": 1,
+      "win_pct": 0.0
+    },
+    {
+      "id": "OP14-079",
+      "wins": 0,
+      "losses": 2,
+      "games": 2,
+      "win_pct": 0.0
+    },
+    {
+      "id": "OP16-080",
+      "wins": 0,
+      "losses": 2,
+      "games": 2,
+      "win_pct": 0.0
+    },
+    {
+      "id": "OP17-099",
+      "wins": 2,
+      "losses": 7,
+      "games": 9,
+      "win_pct": 22.2
+    },
+    {
+      "id": "EB04-001",
+      "wins": 1,
+      "losses": 3,
+      "games": 4,
+      "win_pct": 25.0
+    },
+    {
+      "id": "OP17-001",
+      "wins": 2,
+      "losses": 6,
+      "games": 8,
+      "win_pct": 25.0
+    },
+    {
+      "id": "OP11-040",
+      "wins": 3,
+      "losses": 9,
+      "games": 12,
+      "win_pct": 25.0
+    },
+    {
+      "id": "OP09-081",
+      "wins": 4,
+      "losses": 9,
+      "games": 13,
+      "win_pct": 30.8
+    },
+    {
+      "id": "OP11-062",
+      "wins": 1,
+      "losses": 2,
+      "games": 3,
+      "win_pct": 33.3
+    },
+    {
+      "id": "OP16-079",
+      "wins": 2,
+      "losses": 4,
+      "games": 6,
+      "win_pct": 33.3
+    },
+    {
+      "id": "OP09-062",
+      "wins": 33,
+      "losses": 47,
+      "games": 80,
+      "win_pct": 41.2
+    },
+    {
+      "id": "OP16-001",
+      "wins": 19,
+      "losses": 26,
+      "games": 45,
+      "win_pct": 42.2
+    },
+    {
+      "id": "ST30-001",
+      "wins": 8,
+      "losses": 10,
+      "games": 18,
+      "win_pct": 44.4
+    },
+    {
+      "id": "OP13-004",
+      "wins": 79,
+      "losses": 86,
+      "games": 165,
+      "win_pct": 47.9
+    },
+    {
+      "id": "OP05-002",
+      "wins": 1,
+      "losses": 1,
+      "games": 2,
+      "win_pct": 50.0
+    },
+    {
+      "id": "OP11-041",
+      "wins": 3,
+      "losses": 3,
+      "games": 6,
+      "win_pct": 50.0
+    },
+    {
+      "id": "OP17-079",
+      "wins": 30,
+      "losses": 29,
+      "games": 59,
+      "win_pct": 50.8
+    },
+    {
+      "id": "OP17-058",
+      "wins": 62,
+      "losses": 51,
+      "games": 113,
+      "win_pct": 54.9
+    },
+    {
+      "id": "OP08-058",
+      "wins": 5,
+      "losses": 4,
+      "games": 9,
+      "win_pct": 55.6
+    },
+    {
+      "id": "OP15-058",
+      "wins": 23,
+      "losses": 18,
+      "games": 41,
+      "win_pct": 56.1
+    },
+    {
+      "id": "OP14-041",
+      "wins": 9,
+      "losses": 7,
+      "games": 16,
+      "win_pct": 56.2
+    },
+    {
+      "id": "OP11-001",
+      "wins": 4,
+      "losses": 3,
+      "games": 7,
+      "win_pct": 57.1
+    },
+    {
+      "id": "OP13-001",
+      "wins": 4,
+      "losses": 3,
+      "games": 7,
+      "win_pct": 57.1
+    },
+    {
+      "id": "OP14-080",
+      "wins": 11,
+      "losses": 6,
+      "games": 17,
+      "win_pct": 64.7
+    },
+    {
+      "id": "OP17-039",
+      "wins": 99,
+      "losses": 50,
+      "games": 149,
+      "win_pct": 66.4
+    },
+    {
+      "id": "OP17-020",
+      "wins": 7,
+      "losses": 3,
+      "games": 10,
+      "win_pct": 70.0
+    },
+    {
+      "id": "OP05-098",
+      "wins": 5,
+      "losses": 2,
+      "games": 7,
+      "win_pct": 71.4
+    },
+    {
+      "id": "OP12-081",
+      "wins": 3,
+      "losses": 1,
+      "games": 4,
+      "win_pct": 75.0
+    },
+    {
+      "id": "OP12-061",
+      "wins": 4,
+      "losses": 1,
+      "games": 5,
+      "win_pct": 80.0
+    },
+    {
+      "id": "OP15-001",
+      "wins": 1,
+      "losses": 0,
+      "games": 1,
+      "win_pct": 100.0
+    },
+    {
+      "id": "ST13-001",
+      "wins": 1,
+      "losses": 0,
+      "games": 1,
+      "win_pct": 100.0
+    },
+    {
+      "id": "OP09-001",
+      "wins": 1,
+      "losses": 0,
+      "games": 1,
+      "win_pct": 100.0
+    },
+    {
+      "id": "ST13-003",
+      "wins": 1,
+      "losses": 0,
+      "games": 1,
+      "win_pct": 100.0
+    },
+    {
+      "id": "OP16-022",
+      "wins": 1,
+      "losses": 0,
+      "games": 1,
+      "win_pct": 100.0
+    },
+    {
+      "id": "OP16-060",
+      "wins": 1,
+      "losses": 0,
+      "games": 1,
+      "win_pct": 100.0
+    },
+    {
+      "id": "OP10-099",
+      "wins": 2,
+      "losses": 0,
+      "games": 2,
+      "win_pct": 100.0
+    }
+  ],
+  "events": [
+    {
+      "id": "6a8847835a30714095575f05",
+      "name": "Win a box OP17 | Rumble league #7 | OP17",
+      "date": "2026-09-03",
+      "players": 32,
+      "hawks": 9,
+      "games": 26
+    },
+    {
+      "id": "6a95a6b0629039f77d8a681e",
+      "name": "Liga Phoenix 2026 -  ONE PIECE - MANA 34°",
+      "date": "2026-09-01",
+      "players": 17,
+      "hawks": 3,
+      "games": 0
+    },
+    {
+      "id": "6a8f06390580a332c84204b0",
+      "name": "[OP17] ChinoizeCup #105 Wednesday",
+      "date": "2026-09-02",
+      "players": 64,
+      "hawks": 12,
+      "games": 38
+    },
+    {
+      "id": "6a93fc26abb9482237503ba6",
+      "name": "[GER] Dressrosa Tournament-OP17",
+      "date": "2026-08-31",
+      "players": 12,
+      "hawks": 3,
+      "games": 8
+    },
+    {
+      "id": "6a8f03677a62de813013f933",
+      "name": "[OP17] ChinoizeCup #104 Tuesday",
+      "date": "2026-09-01",
+      "players": 64,
+      "hawks": 20,
+      "games": 57
+    },
+    {
+      "id": "6a8f02a77a62de813013f92f",
+      "name": "[OP17] ChinoizeCup #103 Monday",
+      "date": "2026-08-31",
+      "players": 64,
+      "hawks": 16,
+      "games": 52
+    },
+    {
+      "id": "6a86f0435a30714095575150",
+      "name": "[GER] Dressrosa Tournament-OP17",
+      "date": "2026-08-27",
+      "players": 17,
+      "hawks": 3,
+      "games": 6
+    },
+    {
+      "id": "6a86a68678baaa6d1c224215",
+      "name": "Rumble league #6|OP17 | FREE",
+      "date": "2026-08-27",
+      "players": 18,
+      "hawks": 5,
+      "games": 13
+    },
+    {
+      "id": "6a85a27278baaa6d1c2237c8",
+      "name": "[OP17] ChinoizeCup #102 Wednesday",
+      "date": "2026-08-26",
+      "players": 58,
+      "hawks": 19,
+      "games": 43
+    },
+    {
+      "id": "6a438fca83fd320299bd49ef",
+      "name": "ROAD TO FINALS UTRECHT - WIN A CASE",
+      "date": "2026-08-30",
+      "players": 240,
+      "hawks": 88,
+      "games": 300
+    },
+    {
+      "id": "6a85a15c5a30714095574481",
+      "name": "[OP17] ChinoizeCup #101 Tuesday",
+      "date": "2026-08-25",
+      "players": 64,
+      "hawks": 8,
+      "games": 37
+    },
+    {
+      "id": "6a859fd478baaa6d1c2237a9",
+      "name": "[OP17] ChinoizeCup #100 Monday",
+      "date": "2026-08-24",
+      "players": 64,
+      "hawks": 6,
+      "games": 22
+    },
+    {
+      "id": "6a6f17112b308b6067b47957",
+      "name": "[GER] Dressrosa Tournament-OP17",
+      "date": "2026-08-20",
+      "players": 10,
+      "hawks": 2,
+      "games": 6
+    },
+    {
+      "id": "6a6f174acdc0391d7fa5a075",
+      "name": "[GER] Dressrosa Tournament-OP17",
+      "date": "2026-08-24",
+      "players": 16,
+      "hawks": 1,
+      "games": 4
+    },
+    {
+      "id": "6a7d7ed32b308b6067b529d0",
+      "name": "[OP17] ChinoizeCup #99 Wednesday",
+      "date": "2026-08-19",
+      "players": 128,
+      "hawks": 18,
+      "games": 74
+    },
+    {
+      "id": "6a7d7b64cdc0391d7fa65402",
+      "name": "[OP17] ChinoizeCup #98 Tuesday",
+      "date": "2026-08-18",
+      "players": 121,
+      "hawks": 16,
+      "games": 70
+    },
+    {
+      "id": "6a7d793c2b308b6067b529c9",
+      "name": "[OP17] ChinoizeCup #97 Monday",
+      "date": "2026-08-17",
+      "players": 128,
+      "hawks": 17,
+      "games": 76
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /shop/custom-leaders.html
+Disallow: /ballkeep/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /discord-bot/
+Disallow: /.github/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /shop/custom-leaders.html
+Disallow: /ballkeep/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /discord-bot/
+Disallow: /.github/
+
+User-agent: Googlebot-Image
+Allow: /favicon.ico
+Allow: /img/
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://onepiecedecklists.com/sitemap.xml

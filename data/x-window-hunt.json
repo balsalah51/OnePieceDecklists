@@ -1,0 +1,862 @@
+{
+  "searches": [
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/Chinoize_",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/Chinoize_",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/Chinoize_",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/Chinoize_",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/Chinoize_",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/MarinefordTCG",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/MarinefordTCG",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/MarinefordTCG",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/MarinefordTCG",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/MarinefordTCG",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/StrawHatPecan",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/StrawHatPecan",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/StrawHatPecan",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/StrawHatPecan",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/StrawHatPecan",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/NightingaleTCG",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/NightingaleTCG",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/NightingaleTCG",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/NightingaleTCG",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/NightingaleTCG",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/BenSchumi7",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/BenSchumi7",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/BenSchumi7",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/BenSchumi7",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/BenSchumi7",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/CardKaizoku",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/CardKaizoku",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/CardKaizoku",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/CardKaizoku",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/CardKaizoku",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/BlaisePlays",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/BlaisePlays",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/BlaisePlays",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/BlaisePlays",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/BlaisePlays",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/JohnnyTCG",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/JohnnyTCG",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/JohnnyTCG",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/JohnnyTCG",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/JohnnyTCG",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/The_Egman",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/The_Egman",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/The_Egman",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/The_Egman",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/The_Egman",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/Yonxlj",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/Yonxlj",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/Yonxlj",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/Yonxlj",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/Yonxlj",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/OPtopdecks",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/OPtopdecks",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/OPtopdecks",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/OPtopdecks",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/OPtopdecks",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/OPTCGAlert",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/OPTCGAlert",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/OPTCGAlert",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/OPTCGAlert",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/OPTCGAlert",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/NBAPR",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/NBAPR",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/NBAPR",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/NBAPR",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/NBAPR",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/CapiamoOP",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/CapiamoOP",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/CapiamoOP",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/CapiamoOP",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/CapiamoOP",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "fx",
+      "url": "https://api.fxtwitter.com/LeeZ_1111",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "vx",
+      "url": "https://api.vxtwitter.com/LeeZ_1111",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "nitter",
+      "url": "https://nitter.poast.org/LeeZ_1111",
+      "status": 0,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xcancel",
+      "url": "https://xcancel.com/LeeZ_1111",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "rsshub",
+      "url": "https://rsshub.app/twitter/user/LeeZ_1111",
+      "status": 404,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Ax.com+ChinoizeCup+%23103",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Ax.com+ChinoizeCup+%23103",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Ax.com+ChinoizeCup+%23103",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Ax.com+ChinoizeCup+%23102",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Ax.com+ChinoizeCup+%23102",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Ax.com+ChinoizeCup+%23102",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Ax.com+%22Road+to+Finals+Utrecht%22",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Ax.com+%22Road+to+Finals+Utrecht%22",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Ax.com+%22Road+to+Finals+Utrecht%22",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Ax.com+%224xOP17%22+2026",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Ax.com+%224xOP17%22+2026",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Ax.com+%224xOP17%22+2026",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Ax.com+NightingaleTCG+decklist",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Ax.com+NightingaleTCG+decklist",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Ax.com+NightingaleTCG+decklist",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Ax.com+%221xOP17-039%22",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 2
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Ax.com+%221xOP17-039%22",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 22
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Ax.com+%221xOP17-039%22",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 7
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Ax.com+%221xST30-001%22",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 2
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Ax.com+%221xST30-001%22",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 22
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Ax.com+%221xST30-001%22",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 7
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=ChinoizeCup+103+winner+decklist",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=ChinoizeCup+103+winner+decklist",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=ChinoizeCup+103+winner+decklist",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "ddg",
+      "url": "https://html.duckduckgo.com/html/?q=site%3Atwitter.com+ChinoizeCup+103",
+      "status": 202,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "bing",
+      "url": "https://www.bing.com/search?q=site%3Atwitter.com+ChinoizeCup+103",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "jina",
+      "url": "https://r.jina.ai/http://www.google.com/search?q=site%3Atwitter.com+ChinoizeCup+103",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "syn",
+      "url": "https://cdn.syndication.twimg.com/timeline/profile?screen_name=Chinoize_",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "xsearch",
+      "url": "https://r.jina.ai/https://x.com/search?q=ChinoizeCup%20%23103&f=live",
+      "status": 403,
+      "ids": 0,
+      "window": [],
+      "lines": 0
+    },
+    {
+      "kind": "yt1",
+      "url": "https://www.youtube.com/watch?v=Iy8USsETmBk",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 45
+    },
+    {
+      "kind": "yt2",
+      "url": "https://www.youtube.com/watch?v=x1bRKDLBD28",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 48
+    },
+    {
+      "kind": "yt3",
+      "url": "https://www.youtube.com/watch?v=-8n9oqREEYE",
+      "status": 200,
+      "ids": 0,
+      "window": [],
+      "lines": 51
+    }
+  ],
+  "window_tweets": [],
+  "complete": []
+}
