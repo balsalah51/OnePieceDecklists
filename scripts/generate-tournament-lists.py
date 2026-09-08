@@ -1182,7 +1182,10 @@ def page_chrome(
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}" />
-  <link rel="stylesheet" href="/css/site.css?v=utrecht-x" />
+  <script id="opdl-theme-boot">
+    (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
+  </script>
+  <link rel="stylesheet" href="/css/site.css?v=theme" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
 <body class="{html.escape(color)}">
@@ -1195,6 +1198,10 @@ def page_chrome(
           <div class="subtitle">OPTCG decklists</div>
         </div>
       </a>
+      <div class="theme-toggle" role="group" aria-label="Color theme">
+        <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
+        <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
+      </div>
       <nav aria-label="Primary">
         <a href="/tier-list.html">Tier List</a>
         <a href="/#recent">Recent lists</a>
@@ -1269,7 +1276,7 @@ def page_chrome(
       }});
     }})();
   </script>
-  <script src="/js/site.js?v=utrecht-x"></script>
+  <script src="/js/site.js?v=theme"></script>
 {tcg_scripts}</body>
 </html>
 """

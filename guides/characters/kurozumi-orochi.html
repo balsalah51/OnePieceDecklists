@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kurozumi Orochi One Piece TCG | OPTCG decklists</title>
   <meta name="description" content="Kurozumi Orochi in the One Piece TCG (OPTCG, Bandai ONE PIECE CARD GAME). Open related 50-card decklists." />
-  <link rel="stylesheet" href="/css/site.css?v=tier-home" />
+    <script id="opdl-theme-boot">
+    (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+  </script>
+<link rel="stylesheet" href="/css/site.css?v=theme" />
   <link rel="canonical" href="https://onepiecedecklists.com/guides/characters/kurozumi-orochi.html" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -42,6 +45,10 @@
           <div class="subtitle">OPTCG decklists</div>
         </div>
       </a>
+      <div class="theme-toggle" role="group" aria-label="Color theme">
+        <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
+        <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
+      </div>
       <nav aria-label="Primary">
         <a href="/tier-list.html">Tier List</a>
         <a href="/#recent">Recent lists</a>
@@ -176,6 +183,6 @@
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/js/site.js?v=utrecht-x"></script>
+  <script src="/js/site.js?v=theme"></script>
 </body>
 </html>

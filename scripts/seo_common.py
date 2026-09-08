@@ -16,10 +16,24 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "tier-home"
-JS_VER = "utrecht-x"
+CSS_VER = "theme"
+JS_VER = "theme"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
+)
+THEME_BOOT_SCRIPT = (
+    '  <script id="opdl-theme-boot">\n'
+    "    (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);"
+    "var t=m&&decodeURIComponent(m[1]);"
+    'if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);'
+    "}catch(e){}})();\n"
+    "  </script>\n"
+)
+THEME_TOGGLE_HTML = (
+    '      <div class="theme-toggle" role="group" aria-label="Color theme">\n'
+    '        <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>\n'
+    '        <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>\n'
+    "      </div>\n"
 )
 
 ROBOTS_TXT = """User-agent: *
@@ -486,6 +500,27 @@ FOOTER_LINKS = (
     '<a href="/shop/">Shop</a> · '
     '<a href="/privacy.html">Privacy</a>'
 )
+
+
+def apply_theme_chrome(text: str) -> str:
+    """Add the theme boot script and header toggle. Safe to re-run."""
+    text = re.sub(r'href="/css/site\.css(?:\?[^"]*)?"', f'href="/css/site.css?v={CSS_VER}"', text)
+    text = re.sub(r'src="/js/site\.js(?:\?[^"]*)?"', f'src="/js/site.js?v={JS_VER}"', text)
+    if 'id="opdl-theme-boot"' not in text:
+        text = re.sub(
+            r'(<link rel="stylesheet" href="/css/site\.css[^"]*"\s*/>)',
+            THEME_BOOT_SCRIPT + r"\1",
+            text,
+            count=1,
+        )
+    if "data-theme-set" not in text:
+        text = re.sub(
+            r'(</a>\s*\n)(\s*<nav aria-label="Primary">)',
+            r"\1" + THEME_TOGGLE_HTML + r"\2",
+            text,
+            count=1,
+        )
+    return text
 
 
 def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
