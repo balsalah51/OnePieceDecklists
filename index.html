@@ -9,7 +9,7 @@
     <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-<link rel="stylesheet" href="/css/site.css?v=theme" />
+<link rel="stylesheet" href="/css/site.css?v=home-pro" />
   <link rel="canonical" href="https://onepiecedecklists.com/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -39,7 +39,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"One Piece TCG Decklists (OPTCG) | One Piece Decklists","description":"OPTCG decklists for the Bandai ONE PIECE CARD GAME. Leader pictures and recent 50-card lists.","url":"https://onepiecedecklists.com/","inLanguage":"en","isPartOf":{"@id":"https://onepiecedecklists.com/#website"},"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Edward Newgate","url":"https://onepiecedecklists.com/decklists/op17/edward-newgate.html"},{"@type":"ListItem","position":2,"name":"Shanks","url":"https://onepiecedecklists.com/decklists/op17/shanks.html"},{"@type":"ListItem","position":3,"name":"Rocks D. Xebec","url":"https://onepiecedecklists.com/decklists/op17/rocks-d-xebec.html"},{"@type":"ListItem","position":4,"name":"Kaido","url":"https://onepiecedecklists.com/decklists/op17/kaido.html"},{"@type":"ListItem","position":5,"name":"Monkey D. Luffy","url":"https://onepiecedecklists.com/decklists/op17/monkey-d-luffy.html"},{"@type":"ListItem","position":6,"name":"Charlotte Linlin","url":"https://onepiecedecklists.com/decklists/op17/charlotte-linlin.html"},{"@type":"ListItem","position":7,"name":"RG Luffy","url":"https://onepiecedecklists.com/decklists/rg-luffy.html"},{"@type":"ListItem","position":8,"name":"Nami","url":"https://onepiecedecklists.com/decklists/nami.html"},{"@type":"ListItem","position":9,"name":"Mihawk","url":"https://onepiecedecklists.com/decklists/mihawk.html"},{"@type":"ListItem","position":10,"name":"Portgas D. Ace","url":"https://onepiecedecklists.com/decklists/portgas-d-ace.html"},{"@type":"ListItem","position":11,"name":"Enel","url":"https://onepiecedecklists.com/decklists/enel.html"},{"@type":"ListItem","position":12,"name":"Charlotte Katakuri","url":"https://onepiecedecklists.com/decklists/charlotte-katakuri.html"},{"@type":"ListItem","position":13,"name":"Imu","url":"https://onepiecedecklists.com/decklists/imu.html"},{"@type":"ListItem","position":14,"name":"OP13 Ace","url":"https://onepiecedecklists.com/decklists/op13-ace.html"},{"@type":"ListItem","position":15,"name":"GB Luffy","url":"https://onepiecedecklists.com/decklists/gb-luffy.html"},{"@type":"ListItem","position":16,"name":"Blackbeard","url":"https://onepiecedecklists.com/decklists/blackbeard.html"},{"@type":"ListItem","position":17,"name":"Rosinante","url":"https://onepiecedecklists.com/decklists/rosinante.html"},{"@type":"ListItem","position":18,"name":"Lucy","url":"https://onepiecedecklists.com/decklists/lucy.html"},{"@type":"ListItem","position":19,"name":"Yamato","url":"https://onepiecedecklists.com/decklists/yamato.html"},{"@type":"ListItem","position":20,"name":"Koby","url":"https://onepiecedecklists.com/decklists/koby.html"}],"numberOfItems":20}}</script>
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap wrap-home">
     <header>
       <a class="brand" href="/">
         <img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />
@@ -68,21 +68,31 @@
     <main class="single home" role="main">
         <!-- HOME_BODY -->
         <section class="home-splash" aria-label="One Piece Decklists">
-          <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" width="1400" height="636" fetchpriority="high" decoding="async">
-          <a class="home-splash-luffy" href="/decklists/nico-robin.html">
-            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
-          </a>
-          <div class="home-splash-bar">
-            <h2>One Piece Decklists</h2>
-            <p>OPTCG decklists. Jump a section, or keep scrolling into the leaders.</p>
+          <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" width="1400" height="636" fetchpriority="high" decoding="async" />
+          <div class="home-hero-copy">
+            <p class="home-hero-kicker">One Piece Card Game</p>
+            <h2>Tournament decklists</h2>
+            <p class="home-hero-lede">Complete 50-card OPTCG lists, leader hubs, and a weekly meta snapshot.</p>
+            <div class="home-hero-actions">
+              <a class="home-hero-btn" href="#home-search">Search lists</a>
+              <a class="home-hero-btn home-hero-btn-ghost" href="#leaders">Browse leaders</a>
+            </div>
           </div>
         </section>
 
+        <form class="site-search home-search" id="home-search" method="get" action="/search.html" role="search">
+          <label class="site-search-label" for="home-q">Search OPTCG decklists</label>
+          <div class="site-search-row">
+            <input id="home-q" type="search" name="q" placeholder="Leader, player, character, or event" aria-label="Search OPTCG decklists" />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+
         <a class="events-banner" id="events" href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">
           <div>
-            <div class="kicker">Official Bandai site</div>
+            <div class="kicker">Official calendar</div>
             <div class="title">ONE PIECE CARD GAME events</div>
-            <div class="muted" style="color:rgba(255,255,255,0.82);margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
+            <div class="muted" style="margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
           </div>
           <div class="go">Official events →</div>
         </a>
@@ -108,7 +118,7 @@
               </svg>
             </span>
             <span class="home-big-title">Recent Lists</span>
-            <span class="home-big-note">Newest 50-card results from every leader</span>
+            <span class="home-big-note">Newest complete 50-card results</span>
           </a>
           <a class="home-big home-big-leaders" href="#leaders">
             <span class="home-big-icon" aria-hidden="true">
@@ -118,7 +128,7 @@
               </svg>
             </span>
             <span class="home-big-title">Leaders</span>
-            <span class="home-big-note">Every leader picture on this site</span>
+            <span class="home-big-note">Hubs for every leader on OPDL</span>
           </a>
           <a class="home-big home-big-shop" href="/shop/">
             <span class="home-big-icon" aria-hidden="true">
@@ -137,25 +147,17 @@
               </svg>
             </span>
             <span class="home-big-title">Discord</span>
-            <span class="home-big-note">Talk lists, flair, and the crew</span>
+            <span class="home-big-note">Share lists and talk the meta</span>
           </a>
         </nav>
 
-        <form class="site-search home-search" method="get" action="/search.html" role="search">
-          <label class="site-search-label" for="home-q">Search OPTCG decklists</label>
-          <div class="site-search-row">
-            <input id="home-q" type="search" name="q" placeholder="Leader, player, character, or event" aria-label="Search OPTCG decklists" />
-            <button type="submit">Search</button>
-          </div>
-        </form>
-
         <section class="home-leaders-flow" id="leaders">
           <div class="home-leaders-intro">
-            <p class="home-leaders-kicker">The crew</p>
+            <p class="home-leaders-kicker">Browse</p>
             <div class="home-leaders-intro-row">
               <div>
                 <h3>Leaders</h3>
-                <p>Pick a picture. Each page has lists for that leader. Character names live in the <a href="/guides/">guides</a>.</p>
+                <p>Open a hub for lists, analysis, and recent results. Character names live in the <a href="/guides/">guides</a>.</p>
               </div>
               <a href="/decklists/op17.html">All leader pages →</a>
             </div>
@@ -370,20 +372,28 @@
           </div>
         </section>
 
-        <section class="card home-panel" id="recent">
+        <section class="card home-panel home-recent" id="recent">
+          <p class="home-leaders-kicker">Results</p>
           <div class="section-title">
             <h3>Recent lists</h3>
             <div class="muted">100 lists</div>
           </div>
-          <p class="muted">Newest first. At least one list from each leader, then the latest results.</p>
+          <p class="muted home-recent-lede">Newest first. At least one list from each leader, then the latest complete results.</p>
+          <div class="recent-cols" aria-hidden="true">
+            <span></span>
+            <span>List</span>
+            <span>Event</span>
+            <span>Date</span>
+          </div>
           <ul class="recent-list" aria-label="Recent decklists">
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/1st-snorlax1cynda-egb-chinoizecup-108-wednesday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">snorlax1cynda - Luffy &amp; Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 1st · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -392,8 +402,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Captivat3 - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2nd · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -402,8 +413,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">tinnoy - Rocks D. Xebec</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 3rd · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -412,8 +424,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Dissonance075 - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 4th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -422,8 +435,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">luzsnikov - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 5th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -432,8 +446,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-001_EN.webp" alt="Edward Newgate" />
                 <div class="recent-copy">
                   <div class="who">HashtagEMB - Edward Newgate</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 6th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -442,8 +457,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">Roronoah - Rocks D. Xebec</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 7th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -452,8 +468,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">filipipirat - Nico Robin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 8th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">8th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -462,8 +479,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Daeyang - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 9th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -472,8 +490,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">Cakey_TCG - Luffy &amp; Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 10th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">10th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -482,8 +501,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">fuat - Rocks D. Xebec</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 11th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">11th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -492,8 +512,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">Simpiii - Charlotte Linlin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 12th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">12th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -502,8 +523,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">zockerdima - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 13th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">13th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -512,8 +534,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">Pavlo - Enel</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 14th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">14th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -522,8 +545,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">Tadomari - Luffy &amp; Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 16th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">16th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -532,8 +556,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">DerBosch - Nico Robin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 17th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">17th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -542,8 +567,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-001_EN.webp" alt="Portgas D. Ace" />
                 <div class="recent-copy">
                   <div class="who">Anacleto - Portgas D. Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 18th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">18th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -552,8 +578,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-040_EN.webp" alt="UP Luffy" />
                 <div class="recent-copy">
                   <div class="who">Doffyy - UP Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 19th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">19th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -562,8 +589,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-081_EN.webp" alt="Koala" />
                 <div class="recent-copy">
                   <div class="who">Cudder04 - Koala</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 20th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">20th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -572,8 +600,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-041_EN.webp" alt="Sanji" />
                 <div class="recent-copy">
                   <div class="who">NinjaTrain - Sanji</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 21st · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">21st</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -582,8 +611,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-001_EN.webp" alt="Edward Newgate" />
                 <div class="recent-copy">
                   <div class="who">PlaZe777 - Edward Newgate</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 22nd · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">22nd</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -592,8 +622,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">KaanKaaneki - Nico Robin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 23rd · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">23rd</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -602,8 +633,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-040_EN.webp" alt="UP Luffy" />
                 <div class="recent-copy">
                   <div class="who">ewinrivers - UP Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 24th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">24th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -612,8 +644,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-041_EN.webp" alt="Sanji" />
                 <div class="recent-copy">
                   <div class="who">Solmyr - Sanji</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 25th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">25th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -622,8 +655,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-081_EN.webp" alt="Koala" />
                 <div class="recent-copy">
                   <div class="who">pixelmel - Koala</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 26th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">26th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -632,8 +666,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Smoki - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 28th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">28th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -642,8 +677,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="Sabo" />
                 <div class="recent-copy">
                   <div class="who">StrawHatFalky92 - Sabo</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 29th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">29th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -652,8 +688,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">lordRafa - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 30th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">30th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -662,8 +699,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-079_EN.webp" alt="Yamato" />
                 <div class="recent-copy">
                   <div class="who">Gornik2201 - Yamato</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 31st · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">31st</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -672,8 +710,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">Vinsmoke - Nico Robin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 33rd · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">33rd</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -682,8 +721,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido" />
                 <div class="recent-copy">
                   <div class="who">SoulKingg - Kaido</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -692,8 +732,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-041_EN.webp" alt="Nami" />
                 <div class="recent-copy">
                   <div class="who">selimakaselo - Nami</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -702,8 +743,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-058_EN.webp" alt="Charlotte Pudding" />
                 <div class="recent-copy">
                   <div class="who">Kettensaege - Charlotte Pudding</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -712,8 +754,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" />
                 <div class="recent-copy">
                   <div class="who">volkiso - Boa Hancock</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -722,8 +765,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-060_EN.webp" alt="OP05 Luffy" />
                 <div class="recent-copy">
                   <div class="who">Traich - OP05 Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -732,8 +776,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-001_EN.webp" alt="Edward Newgate" />
                 <div class="recent-copy">
                   <div class="who">UPS_Employee - Edward Newgate</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -742,8 +787,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido" />
                 <div class="recent-copy">
                   <div class="who">Thiccolo7 - Kaido</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -752,8 +798,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido" />
                 <div class="recent-copy">
                   <div class="who">blippuz - Kaido</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -762,8 +809,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Orudin - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -772,8 +820,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Patpat - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -782,8 +831,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">nztcg - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -792,8 +842,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">tadrich101 - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -802,8 +853,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">igot2staydown - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -812,8 +864,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Systam - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -822,8 +875,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">Mrlegoface - Charlotte Linlin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -832,8 +886,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">petemess - Charlotte Linlin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -842,8 +897,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">Yorozuya - Charlotte Linlin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -852,8 +908,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">prootipie - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -862,8 +919,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Redbeard36 - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -872,8 +930,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">troru - Enel</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -882,8 +941,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-079_EN.webp" alt="Yamato" />
                 <div class="recent-copy">
                   <div class="who">schumifoxx - Yamato</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -892,8 +952,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-058_EN.webp" alt="Charlotte Pudding" />
                 <div class="recent-copy">
                   <div class="who">cranberryvanillepudding - Charlotte Pudding</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -902,8 +963,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="Sabo" />
                 <div class="recent-copy">
                   <div class="who">Selo81 - Sabo</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -912,8 +974,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="Sabo" />
                 <div class="recent-copy">
                   <div class="who">Willerd7 - Sabo</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -922,8 +985,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">JF0419 - Nico Robin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -932,8 +996,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">PhilipTCG - Luffy &amp; Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -942,8 +1007,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Jose Laaz - Mihawk</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 35° · 1st · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -952,8 +1018,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">NikolayBaydanov - Nico Robin</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 1st · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -962,8 +1029,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">José Cuevas [SouthBlue] - Rocks D. Xebec</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 35° · 2nd · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -972,8 +1040,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" />
                 <div class="recent-copy">
                   <div class="who">LilyKei - Boa Hancock</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 2nd · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -982,8 +1051,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-080_EN.webp" alt="Blackbeard" />
                 <div class="recent-copy">
                   <div class="who">Javier Ludueña - Blackbeard</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 35° · 3rd · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -992,8 +1062,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido" />
                 <div class="recent-copy">
                   <div class="who">SoulKingg - Kaido</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 3rd · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1002,8 +1073,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">Patpat - Nico Robin</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 4th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1012,8 +1084,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">Tomás Larrondo - Nico Robin</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 35° · 4th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1022,8 +1095,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-061_EN.webp" alt="Rosinante" />
                 <div class="recent-copy">
                   <div class="who">Julián Cassano ghio - Rosinante</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 35° · 5th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1032,8 +1106,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Captivat3 - Mihawk</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 5th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1042,8 +1117,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Nightingale - Monkey D. Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 6th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1052,8 +1128,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-001_EN.webp" alt="Portgas D. Ace" />
                 <div class="recent-copy">
                   <div class="who">Tiago Klimavicius - Portgas D. Ace</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 35° · 6th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1062,8 +1139,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">trocheesy - Monkey D. Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 7th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1072,8 +1150,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Imanol Calvo - Mihawk</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 35° · 7th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 35°</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1082,8 +1161,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-060_EN.webp" alt="Doffy" />
                 <div class="recent-copy">
                   <div class="who">Roko Zoric - Doffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 24th · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-place">24th</span><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1092,8 +1172,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">ricmasterflash - RG Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1102,8 +1183,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-079_EN.webp" alt="Imu" />
                 <div class="recent-copy">
                   <div class="who">Roronoah - Imu</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #107 Tuesday · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #107 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #107 Tuesday</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -1112,8 +1194,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" />
                 <div class="recent-copy">
                   <div class="who">Slodea - OP05 Enel</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #106 Monday · 2nd · 2026-09-07</div>
+                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">[OP17] ChinoizeCup #106 Monday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #106 Monday</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1122,8 +1205,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST10/ST10-002_EN.webp" alt="ST10 Luffy" />
                 <div class="recent-copy">
                   <div class="who">LilyKei - ST10 Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #106 Monday · 4th · 2026-09-07</div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">[OP17] ChinoizeCup #106 Monday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #106 Monday</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1132,8 +1216,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-080_EN.webp" alt="Gecko Moria" />
                 <div class="recent-copy">
                   <div class="who">Gecko Moria (Format OP17) Flagship Battle Battle Winner</div>
-                  <div class="muted meta">Cardshop · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Cardshop · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Cardshop · public list from OPDeckGuide</div>
                 <div class="when">2026-09-06</div>
               </a>
             </li>
@@ -1142,8 +1227,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-020_EN.webp" alt="Shanks" />
                 <div class="recent-copy">
                   <div class="who">Shanks (Format OP17) 3vs3 Winner</div>
-                  <div class="muted meta">LimitedCup · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">LimitedCup · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">LimitedCup · public list from OPDeckGuide</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -1152,8 +1238,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-022_EN.webp" alt="GB Luffy" />
                 <div class="recent-copy">
                   <div class="who">Shapa - GB Luffy</div>
-                  <div class="muted meta">OP TCG UA weekly RANDOM webcam tournament · 6th · 2026-09-03</div>
+                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">OP TCG UA weekly RANDOM webcam tournament</span></div>
                 </div>
+                <div class="recent-event">OP TCG UA weekly RANDOM webcam tournament</div>
                 <div class="when">2026-09-03</div>
               </a>
             </li>
@@ -1162,8 +1249,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-001_EN.webp" alt="Koby" />
                 <div class="recent-copy">
                   <div class="who">Squalo8 - Koby</div>
-                  <div class="muted meta">Win a box OP17 | Rumble league #7 | OP17 · 18th · 2026-09-03</div>
+                  <div class="muted meta"><span class="recent-place">18th</span><span class="recent-meta-event">Win a box OP17 | Rumble league #7 | OP17</span></div>
                 </div>
+                <div class="recent-event">Win a box OP17 | Rumble league #7 | OP17</div>
                 <div class="when">2026-09-03</div>
               </a>
             </li>
@@ -1172,8 +1260,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-062_EN.webp" alt="Charlotte Katakuri" />
                 <div class="recent-copy">
                   <div class="who">ShanksAlSole - Charlotte Katakuri</div>
-                  <div class="muted meta">Win a box OP17 | Rumble league #7 | OP17 · 20th · 2026-09-03</div>
+                  <div class="muted meta"><span class="recent-place">20th</span><span class="recent-meta-event">Win a box OP17 | Rumble league #7 | OP17</span></div>
                 </div>
+                <div class="recent-event">Win a box OP17 | Rumble league #7 | OP17</div>
                 <div class="when">2026-09-03</div>
               </a>
             </li>
@@ -1182,8 +1271,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB04/EB04-001_EN.webp" alt="Jewelry Bonney" />
                 <div class="recent-copy">
                   <div class="who">Appelmoes - Jewelry Bonney</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #104 Tuesday · 13th · 2026-09-01</div>
+                  <div class="muted meta"><span class="recent-place">13th</span><span class="recent-meta-event">[OP17] ChinoizeCup #104 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #104 Tuesday</div>
                 <div class="when">2026-09-01</div>
               </a>
             </li>
@@ -1192,8 +1282,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP10/OP10-099_EN.webp" alt="Eustass Kid" />
                 <div class="recent-copy">
                   <div class="who">Ssjrose - Eustass Kid</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #104 Tuesday · 2026-09-01</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #104 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #104 Tuesday</div>
                 <div class="when">2026-09-01</div>
               </a>
             </li>
@@ -1202,8 +1293,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB02/EB02-010_EN.webp" alt="EB02 Luffy" />
                 <div class="recent-copy">
                   <div class="who">DennisWgr - EB02 Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #104 Tuesday · 2026-09-01</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #104 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #104 Tuesday</div>
                 <div class="when">2026-09-01</div>
               </a>
             </li>
@@ -1212,8 +1304,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-040_EN.webp" alt="Kuzan" />
                 <div class="recent-copy">
                   <div class="who">FrekThor - Kuzan</div>
-                  <div class="muted meta">[GER] Dressrosa Tournament-OP17 · 7th · 2026-08-31</div>
+                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">[GER] Dressrosa Tournament-OP17</span></div>
                 </div>
+                <div class="recent-event">[GER] Dressrosa Tournament-OP17</div>
                 <div class="when">2026-08-31</div>
               </a>
             </li>
@@ -1222,8 +1315,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST13/ST13-001_EN.webp" alt="ST13 Sabo" />
                 <div class="recent-copy">
                   <div class="who">Tauntech - ST13 Sabo</div>
-                  <div class="muted meta">ROAD TO FINALS UTRECHT - WIN A CASE · 2026-08-30</div>
+                  <div class="muted meta"><span class="recent-meta-event">ROAD TO FINALS UTRECHT - WIN A CASE</span></div>
                 </div>
+                <div class="recent-event">ROAD TO FINALS UTRECHT - WIN A CASE</div>
                 <div class="when">2026-08-30</div>
               </a>
             </li>
@@ -1232,8 +1326,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-060_EN.webp" alt="Sengoku" />
                 <div class="recent-copy">
                   <div class="who">Sengoku locals test - r/OnePieceTCG</div>
-                  <div class="muted meta">List read from the public CardKaizoku screenshot · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">List read from the public CardKaizoku screenshot · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">List read from the public CardKaizoku screenshot · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -1242,8 +1337,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-002_EN.webp" alt="Lucy" />
                 <div class="recent-copy">
                   <div class="who">Squalo8 - Lucy</div>
-                  <div class="muted meta">Rumble league #6|OP17 | FREE · 9th · 2026-08-27</div>
+                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">Rumble league #6|OP17 | FREE</span></div>
                 </div>
+                <div class="recent-event">Rumble league #6|OP17 | FREE</div>
                 <div class="when">2026-08-27</div>
               </a>
             </li>
@@ -1252,8 +1348,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP07/OP07-059_EN.webp" alt="Foxy" />
                 <div class="recent-copy">
                   <div class="who">Rhaexo - Foxy</div>
-                  <div class="muted meta">[GER] Dressrosa Tournament-OP17 · 9th · 2026-08-27</div>
+                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">[GER] Dressrosa Tournament-OP17</span></div>
                 </div>
+                <div class="recent-event">[GER] Dressrosa Tournament-OP17</div>
                 <div class="when">2026-08-27</div>
               </a>
             </li>
@@ -1262,8 +1359,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-002_EN.webp" alt="Belo Betty" />
                 <div class="recent-copy">
                   <div class="who">Meid - Belo Betty</div>
-                  <div class="muted meta">Rumble league #6|OP17 | FREE · 11th · 2026-08-27</div>
+                  <div class="muted meta"><span class="recent-place">11th</span><span class="recent-meta-event">Rumble league #6|OP17 | FREE</span></div>
                 </div>
+                <div class="recent-event">Rumble league #6|OP17 | FREE</div>
                 <div class="when">2026-08-27</div>
               </a>
             </li>
@@ -1272,8 +1370,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-041_EN.webp" alt="Sakazuki" />
                 <div class="recent-copy">
                   <div class="who">nytrex - Sakazuki</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #101 Tuesday · 2026-08-25</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #101 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #101 Tuesday</div>
                 <div class="when">2026-08-25</div>
               </a>
             </li>
@@ -1282,8 +1381,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP07/OP07-079_EN.webp" alt="Rob Lucci" />
                 <div class="recent-copy">
                   <div class="who">gmoc04 - Rob Lucci</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #101 Tuesday · 2026-08-25</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #101 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #101 Tuesday</div>
                 <div class="when">2026-08-25</div>
               </a>
             </li>
@@ -1292,8 +1392,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-001_EN.webp" alt="OP09 Shanks" />
                 <div class="recent-copy">
                   <div class="who">gmoc04 - OP09 Shanks</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #100 Monday · 2026-08-24</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #100 Monday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #100 Monday</div>
                 <div class="when">2026-08-24</div>
               </a>
             </li>
@@ -1302,8 +1403,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-061_EN.webp" alt="OP09 Luffy" />
                 <div class="recent-copy">
                   <div class="who">Simpiii - OP09 Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #100 Monday · 2026-08-24</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #100 Monday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #100 Monday</div>
                 <div class="when">2026-08-24</div>
               </a>
             </li>
@@ -1312,8 +1414,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP06/OP06-022_EN.webp" alt="OP06 Yamato" />
                 <div class="recent-copy">
                   <div class="who">Stic - OP06 Yamato</div>
-                  <div class="muted meta">[GER] Dressrosa Tournament-OP17 · 9th · 2026-08-20</div>
+                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">[GER] Dressrosa Tournament-OP17</span></div>
                 </div>
+                <div class="recent-event">[GER] Dressrosa Tournament-OP17</div>
                 <div class="when">2026-08-20</div>
               </a>
             </li>
@@ -1322,8 +1425,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP10/OP10-022_EN.webp" alt="Trafalgar Law" />
                 <div class="recent-copy">
                   <div class="who">Mangu46 - Trafalgar Law</div>
-                  <div class="muted meta">Rumble league #5|OP17 | FREE · 18th · 2026-08-20</div>
+                  <div class="muted meta"><span class="recent-place">18th</span><span class="recent-meta-event">Rumble league #5|OP17 | FREE</span></div>
                 </div>
+                <div class="recent-event">Rumble league #5|OP17 | FREE</div>
                 <div class="when">2026-08-20</div>
               </a>
             </li>
@@ -1332,8 +1436,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST14/ST14-001_EN.webp" alt="ST14 Luffy" />
                 <div class="recent-copy">
                   <div class="who">Beton1996 - ST14 Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #98 Tuesday · 3rd · 2026-08-18</div>
+                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">[OP17] ChinoizeCup #98 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #98 Tuesday</div>
                 <div class="when">2026-08-18</div>
               </a>
             </li>
@@ -1342,8 +1447,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST13/ST13-003_EN.webp" alt="ST13 Luffy" />
                 <div class="recent-copy">
                   <div class="who">Maciasoptcg - ST13 Luffy</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #98 Tuesday · 2026-08-18</div>
+                  <div class="muted meta"><span class="recent-meta-event">[OP17] ChinoizeCup #98 Tuesday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #98 Tuesday</div>
                 <div class="when">2026-08-18</div>
               </a>
             </li>
@@ -1352,8 +1458,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-040_EN.webp" alt="Jinbe" />
                 <div class="recent-copy">
                   <div class="who">HashtagEMB - Jinbe</div>
-                  <div class="muted meta">[OP17] ChinoizeCup #97 Monday · 44th · 2026-08-17</div>
+                  <div class="muted meta"><span class="recent-place">44th</span><span class="recent-meta-event">[OP17] ChinoizeCup #97 Monday</span></div>
                 </div>
+                <div class="recent-event">[OP17] ChinoizeCup #97 Monday</div>
                 <div class="when">2026-08-17</div>
               </a>
             </li>
@@ -1362,8 +1469,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-041_EN.webp" alt="Buggy" />
                 <div class="recent-copy">
                   <div class="who">Askatt - Buggy</div>
-                  <div class="muted meta">MINIATURE METROPOLIS BOX TOURNAMENT · 16th · 2026-08-09</div>
+                  <div class="muted meta"><span class="recent-place">16th</span><span class="recent-meta-event">MINIATURE METROPOLIS BOX TOURNAMENT</span></div>
                 </div>
+                <div class="recent-event">MINIATURE METROPOLIS BOX TOURNAMENT</div>
                 <div class="when">2026-08-09</div>
               </a>
             </li>
@@ -1372,8 +1480,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-002_EN.webp" alt="OP13 Ace" />
                 <div class="recent-copy">
                   <div class="who">José Cuevas [SouthBlue] - OP13 Ace</div>
-                  <div class="muted meta">Liga Phoenix 2026 -  ONE PIECE - MANA 29° · 4th · 2026-07-28</div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">Liga Phoenix 2026 -  ONE PIECE - MANA 29°</span></div>
                 </div>
+                <div class="recent-event">Liga Phoenix 2026 -  ONE PIECE - MANA 29°</div>
                 <div class="when">2026-07-28</div>
               </a>
             </li>
