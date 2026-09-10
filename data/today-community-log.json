@@ -1,0 +1,20 @@
+{
+  "found": [
+    {
+      "leader": "OP11-041",
+      "kind": "web",
+      "player": "Reddit",
+      "title": "Nami Reddit list",
+      "subtitle": "Public r/OnePieceTCG list · 2026-09-08",
+      "source_url": "https://www.reddit.com/r/OnePieceTCG/comments/1walgzo/momi_on_the_rocks/",
+      "slug": "reddit-onepiecetcg-r-onepiecetcg-comments-1walgzo-momi-on-the-rocks",
+      "raw": "4xOP17-046 4xOP17-049 3xOP17-043 4xOP17-054 4xOP17-107 4xOP17-106 4xOP17-102 2xOP17-116 4xOP14-102 3xOP12-112 3xOP14-110 4xOP14-111 4xOP17-109 3xOP13-042 1xOP11-041",
+      "cards": 50,
+      "date": "2026-09-08"
+    }
+  ],
+  "window": {
+    "start": "2026-09-08",
+    "end": "2026-09-10"
+  }
+}
