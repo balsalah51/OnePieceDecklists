@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Host 100+ complete 50-card lists from today and the newest uningested days.
 
-Sources: OPDeckGuide, Limitless, TCG PORTAL, Reddit, and public X posts.
+Sources: OPDeckGuide, OPTCG.GG, Limitless, TCG PORTAL, Reddit, and public X posts.
 Only writes a page when the source is 1 leader + 50 cards with no bans.
 Does not invent cards from photos. Does not wipe existing list pages.
 """
@@ -45,6 +45,7 @@ def main() -> None:
     more = load("morelists", "/workspace/scripts/add-more-tournament-lists.py")
     opdeck = load("opdeck", "/workspace/scripts/add-opdeckguide-lists.py")
     portal = load("portal", "/workspace/scripts/add-tcgportal-lists.py")
+    optcggg = load("optcggg", "/workspace/scripts/add-optcggg-lists.py")
     hunt = load("hunt", "/workspace/scripts/hunt-window-lists.py")
     xmod = load("xlists", "/workspace/scripts/scrape-x-lists.py")
     analysis = load("analysis", "/workspace/scripts/add-leader-analysis.py")
@@ -56,6 +57,8 @@ def main() -> None:
     xmod.DATE_START = SINCE
     xmod.DATE_END = UNTIL
     portal.SINCE = SINCE
+    optcggg.SINCE = SINCE
+    optcggg.UNTIL = UNTIL
     found: list[dict] = []
     seen: set[str] = set()
 
@@ -77,6 +80,13 @@ def main() -> None:
             commsrc.record(found, item, seen)
         else:
             print("skip old portal", item.get("slug"), item.get("date"), flush=True)
+
+    print("=== OPTCG.GG (not ChinoizeCup) ===", flush=True)
+    for item in optcggg.collect_lists(gen, commsrc):
+        if dated(item):
+            commsrc.record(found, item, seen)
+        else:
+            print("skip old optcg.gg", item.get("slug"), item.get("date"), flush=True)
 
     print("=== X ===", flush=True)
     xmod.main()
