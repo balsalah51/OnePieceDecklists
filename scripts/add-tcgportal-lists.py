@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Host complete OP17-splash lists from public TCG PORTAL shop-battle pages.
+"""Host complete 50-card lists from public TCG PORTAL shop-battle pages.
 
 Only writes a page when the public recipe is 1 leader + 50 cards and has no bans.
 Does not invent cards. Does not wipe existing pages.
