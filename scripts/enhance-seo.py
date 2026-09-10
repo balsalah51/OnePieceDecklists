@@ -50,6 +50,10 @@ ADSENSE_RE = re.compile(
     r"\s*<script[^>]*adsbygoogle\.js[^>]*>\s*</script>",
     re.I,
 )
+ADSENSE_META_RE = re.compile(
+    r'\s*<meta\s+name="google-adsense-account"[^>]*/?>',
+    re.I,
+)
 IMG_RE = re.compile(r"<img\b([^>]*)>", re.I)
 SKIP_PARTS = {".git", "scripts", "node_modules", "discord-bot", "ballkeep"}
 SKIP_FILES = {"shop/custom-leaders.html", "shop/buy-list.html"}
@@ -534,6 +538,7 @@ def ensure_head(text: str, rel: str, title: str, desc: str, by_href: dict) -> st
     text = ICON_RE.sub("", text)
     text = THEME_RE.sub("", text)
     text = ADSENSE_RE.sub("", text)
+    text = ADSENSE_META_RE.sub("", text)
     text = re.sub(r'(<link rel="stylesheet"[^>]*>)(?=<)', r"\1\n", text)
     if TITLE_RE.search(text):
         text = TITLE_RE.sub(f"<title>{html.escape(title)}</title>", text, count=1)
@@ -1100,7 +1105,7 @@ def write_search_page(index: dict) -> None:
   <title>Search OPTCG decklists | One Piece Decklists</title>
   <meta name="description" content="Search One Piece TCG decklists, leaders, characters, and events on One Piece Decklists." />
 {seo.THEME_BOOT_SCRIPT}  <link rel="stylesheet" href="/css/site.css?v={seo.CSS_VER}" />
-{seo.ADSENSE_SCRIPT.rstrip()}
+{seo.ADSENSE_HEAD.rstrip()}
 </head>
 <body>
   <div class="wrap">
