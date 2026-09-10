@@ -504,9 +504,13 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
   .home-big,.home-big-recent,.home-big-leaders,.home-big-discord,.home-big-shop,.home-big-tier{
     min-height:128px;padding:16px 14px
   }
+  .home-big-discord{
+    grid-column:1/-1;min-height:72px;flex-direction:row;align-items:center;gap:12px
+  }
   .home-hero-copy{padding:22px 18px 88px}
   .home-hero-lede{font-size:14px}
-  .home-search{margin:-36px 8px 0}
+  .home-search{margin:-36px 0 0}
+  .home-search .site-search-row{flex-wrap:wrap}
   .home-flow{margin:16px 0 10px}
   .home-flow p{white-space:normal;text-align:center}
   .home-leaders-intro-row{flex-direction:column;align-items:flex-start}
@@ -588,13 +592,15 @@ a.shop-card:hover{border-color:rgba(183,28,28,0.28);box-shadow:var(--shadow)}
 }
 .site-search button:hover{filter:brightness(1.06)}
 .home-search{
-  margin:-28px 24px 0;position:relative;z-index:3;
+  margin:-28px 0 0;position:relative;z-index:3;width:100%;
   background:var(--surface);padding:16px 18px 18px;border-radius:14px;
   border:1px solid var(--line);box-shadow:0 18px 40px rgba(16,22,26,.12)
 }
 .home-search .site-search-label{
   font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:800
 }
+.home-search .site-search-row{flex-wrap:nowrap}
+.home-search input[type="search"]{flex:1;min-width:0}
 .tier-board{display:flex;flex-direction:column;gap:10px;margin-top:18px}
 .tier-row{
   display:grid;grid-template-columns:64px minmax(0,1fr);
