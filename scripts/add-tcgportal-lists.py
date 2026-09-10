@@ -20,7 +20,7 @@ UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list s
 API = "https://tcg-portal.jp/api/onepiece/tournament-results"
 ALT_RE = re.compile(r'alt="[^"]*\(((?:OP|ST|EB|PRB)\d{2}-\d{3})\)"')
 HREF_RE = re.compile(r'href="/onepiece/cards/((?:OP|ST|EB|PRB)\d{2}-\d{3})"')
-SINCE = "2026-09-04"
+SINCE = "2026-08-15"
 
 
 def load(name: str, path: str):
@@ -45,7 +45,7 @@ def fetch(url: str) -> str:
 def collect_rows() -> list[dict]:
     rows = []
     page = 1
-    while page <= 8:
+    while page <= 12:
         data = get_json(f"{API}?page={page}&limit=50")
         batch = data.get("tournamentDecks") or []
         if not batch:
@@ -103,7 +103,7 @@ def collect_lists(gen, commsrc) -> list[dict]:
         has_op17 = any(cid.startswith("OP17-") for cid in counts)
         banned = [cid for cid in counts if cid in gen.BANNED_CARDS]
         print(pid, (row.get("date") or "")[:10], lid, "cards", main_n, "op17", has_op17, "banned", banned, flush=True)
-        if not lid or counts.get(lid) != 1 or main_n != 50 or banned or not has_op17:
+        if not lid or counts.get(lid) != 1 or main_n != 50 or banned:
             time.sleep(0.1)
             continue
         if lid not in hosted:

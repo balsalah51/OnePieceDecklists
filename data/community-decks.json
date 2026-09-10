@@ -361,6 +361,33 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rocks-op17-west-eu-final-sep06-ssl-blank/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "optcggg-5th-nic-barnes-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/op17/rocks-d-xebec/optcggg-5th-nic-barnes-egman-events-op17-triple-win-a-box.html",
+      "title": "Nic Barnes - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/eda9b26a-254a-472d-9a42-2cc38732878d",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "optcggg-8th-nathan-coddington-ikailacup-op17-1",
+      "href": "/decklists/op17/rocks-d-xebec/optcggg-8th-nathan-coddington-ikailacup-op17-1.html",
+      "title": "Nathan Coddington - iKailaCup OP17 #1",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #1 · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/7b50b174-565d-435d-8cd8-fbd3d0cb56dd",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-26-card-domino-n15azd",
+      "href": "/decklists/op17/rocks-d-xebec/tcgportal-2026-08-26-card-domino-n15azd.html",
+      "title": "青ロックス スタンダードバトル winner - Card DOMINO",
+      "subtitle": "Public TCG PORTAL list · 2026-08-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtaabr7d0039l204pmn15azd",
+      "kind": "web",
+      "date": "2026-08-26"
     }
   ],
   "OP17-058": [
@@ -501,6 +528,51 @@
       "title": "Kaido (Format OP17) Flame-Flame+LCQ",
       "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/kaido-op17-west-bandai-utrecht-sep05-decnop/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-4th-jacob-tak-games-brisbane-regionals",
+      "href": "/decklists/op17/kaido/optcggg-4th-jacob-tak-games-brisbane-regionals.html",
+      "title": "Jacob - TAK Games Brisbane Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/c73c85a6-5313-4aa0-999e-2c87a000aafc",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-6th-benson-panga-ikailacup-op17-1",
+      "href": "/decklists/op17/kaido/optcggg-6th-benson-panga-ikailacup-op17-1.html",
+      "title": "Benson Panga - iKailaCup OP17 #1",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #1 · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/c4b8ccb3-a4ae-47bd-82e9-7da8d842baae",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "opdeck-kaido-op17-east-cardshops-sep09-kyon",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-east-cardshops-sep09-kyon.html",
+      "title": "Kaido (Format OP17) Standard Battle",
+      "subtitle": "Cardshops · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/kaido-op17-east-cardshops-sep09-kyon/",
+      "kind": "web",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "opdeck-kaido-op17-east-cardshop-sep03-ulza",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-east-cardshop-sep03-ulza.html",
+      "title": "Kaido (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/kaido-op17-east-cardshop-sep03-ulza/",
+      "kind": "web",
+      "date": "2026-09-03"
+    },
+    {
+      "slug": "opdeck-kaido-op17-west-bandai-utrecht-sep05-fedemeco",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-west-bandai-utrecht-sep05-fedemeco.html",
+      "title": "Kaido (Format OP17) Flame-Flame FC",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/kaido-op17-west-bandai-utrecht-sep05-fedemeco/",
       "kind": "web",
       "date": "2026-09-05"
     }
@@ -664,6 +736,114 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-tak-games-sep06-dom-d-russ/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "optcggg-1th-svinci-utrecht-regionals",
+      "href": "/decklists/op17/monkey-d-luffy/optcggg-1th-svinci-utrecht-regionals.html",
+      "title": "Svinci - Utrecht Regionals",
+      "subtitle": "Public OPTCG.GG list · Utrecht Regionals · 2026-09-07",
+      "source_url": "https://www.optcg.gg/deck-lists/42b94deb-7ac4-4af1-9fe4-b211e4feef61",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "optcggg-6th-nightingale-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/op17/monkey-d-luffy/optcggg-6th-nightingale-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "Nightingale_ - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/fa4df6aa-1622-4d2f-9ca4-53dbb06c54c0",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-8th-fury-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/op17/monkey-d-luffy/optcggg-8th-fury-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "Fury - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/9c0de7c6-38dc-4da7-b372-a85e04c79173",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-3th-lily-long-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/op17/monkey-d-luffy/optcggg-3th-lily-long-egman-events-op17-triple-win-a-box.html",
+      "title": "Lily Long - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/8a17eba2-7bad-47db-8e6f-8b5911988b7c",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "optcggg-1th-edeer-vazquez-ikailacup-op17-2",
+      "href": "/decklists/op17/monkey-d-luffy/optcggg-1th-edeer-vazquez-ikailacup-op17-2.html",
+      "title": "Edeer Vazquez - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/65adfff7-3ffb-47fc-95ff-77591f700728",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-2th-louigi-braga-crimson-guild-double-case-tournament",
+      "href": "/decklists/op17/monkey-d-luffy/optcggg-2th-louigi-braga-crimson-guild-double-case-tournament.html",
+      "title": "Louigi Braga - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/7db70c27-78c1-4c73-88cb-84465de39727",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "tcgportal-2026-08-26-8z10or",
+      "href": "/decklists/op17/monkey-d-luffy/tcgportal-2026-08-26-8z10or.html",
+      "title": "黒ルフィ（OP17） スタンダードバトル winner - ファイブカード 坂戸店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtaai5aj001xl5041q8z10or",
+      "kind": "web",
+      "date": "2026-08-26"
+    },
+    {
+      "slug": "opdeck-luffy-op17-east-bee-sep03-enthusiast",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-east-bee-sep03-enthusiast.html",
+      "title": "Monkey.D.Luffy (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Bee · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-bee-sep03-enthusiast/",
+      "kind": "web",
+      "date": "2026-09-03"
+    },
+    {
+      "slug": "opdeck-luffy-op17-east-twice-aug26-pokka",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-east-twice-aug26-pokka.html",
+      "title": "Monkey.D.Luffy (Format OP17) SB Winner",
+      "subtitle": "Twice · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-twice-aug26-pokka/",
+      "kind": "web",
+      "date": "2026-08-26"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-bandai-utrecht-sep07-stefano-vinci",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-west-bandai-utrecht-sep07-stefano-vinci.html",
+      "title": "Monkey.D.Luffy (Format OP17) Regional",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-bandai-utrecht-sep07-stefano-vinci/",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-bandai-utrecht-sep07-luca-c",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-west-bandai-utrecht-sep07-luca-c.html",
+      "title": "Monkey.D.Luffy (Format OP17) Regional",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-bandai-utrecht-sep07-luca-c/",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-bandai-utrecht-sep07-kevin-troru",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-west-bandai-utrecht-sep07-kevin-troru.html",
+      "title": "Monkey.D.Luffy (Format OP17) Regional",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-bandai-utrecht-sep07-kevin-troru/",
+      "kind": "web",
+      "date": "2026-09-07"
     }
   ],
   "OP17-099": [
@@ -718,6 +898,24 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/linlin-op17-west-monte-ronin-sep05-lestevej/",
       "kind": "web",
       "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-4th-merrytcg-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/op17/charlotte-linlin/optcggg-4th-merrytcg-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "MerryTCG - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/b5cd0468-1c56-49b0-be04-01658a0bf5de",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "opdeck-linlin-op17-west-bandai-utrecht-sep05-merrytcg",
+      "href": "/decklists/op17/charlotte-linlin/opdeck-linlin-op17-west-bandai-utrecht-sep05-merrytcg.html",
+      "title": "Charlotte Linlin (Format OP17) Flame-Flame FC",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/linlin-op17-west-bandai-utrecht-sep05-merrytcg/",
+      "kind": "web",
+      "date": "2026-09-05"
     }
   ],
   "OP13-001": [
@@ -745,6 +943,105 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-asucs-aug30-tamagoegg/",
       "kind": "web",
       "date": "2026-08-30"
+    },
+    {
+      "slug": "opdeck-luffy-op17-east-cardshop-sep07-gokuu",
+      "href": "/decklists/rg-luffy/opdeck-luffy-op17-east-cardshop-sep07-gokuu.html",
+      "title": "Monkey.D.Luffy (Format OP17) Flagship Battle Battle",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-cardshop-sep07-gokuu/",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "optcggg-7th-kz-ppg-games-orlando-regionals",
+      "href": "/decklists/rg-luffy/optcggg-7th-kz-ppg-games-orlando-regionals.html",
+      "title": "KZ - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/0c6b7650-6b07-40d9-b511-85ddff7ac685",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-9th-cpp-slate-ppg-games-orlando-regionals",
+      "href": "/decklists/rg-luffy/optcggg-9th-cpp-slate-ppg-games-orlando-regionals.html",
+      "title": "CPP SLaTe - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/4c20a10f-8965-42b7-904e-d93faca9ed69",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-2th-isaac-tak-games-auckland-regionals",
+      "href": "/decklists/rg-luffy/optcggg-2th-isaac-tak-games-auckland-regionals.html",
+      "title": "Isaac - TAK Games Auckland Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Auckland Regionals · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/214a1c11-3222-49e0-bf50-0a5d8859d6b3",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-2th-blizzard-playlatam-26-27-championship-latin-american-final",
+      "href": "/decklists/rg-luffy/optcggg-2th-blizzard-playlatam-26-27-championship-latin-american-final.html",
+      "title": "Blizzard - PlayLATAM 26-27 Championship Latin American Finals",
+      "subtitle": "Public OPTCG.GG list · PlayLATAM 26-27 Championship Latin American Finals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/da1525d7-c47c-410c-8cf9-1f76ef964c01",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-3th-julius-schurhoff-magic-omen-s-zagreb-regionals",
+      "href": "/decklists/rg-luffy/optcggg-3th-julius-schurhoff-magic-omen-s-zagreb-regionals.html",
+      "title": "Julius Schurhoff - Magic Omen's Zagreb Regionals",
+      "subtitle": "Public OPTCG.GG list · Magic Omen's Zagreb Regionals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/88c882cd-ddc1-4c54-a8cd-e18556c1fc38",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-8th-flavio-villanueva-playlatam-26-27-championship-latin-ameri",
+      "href": "/decklists/rg-luffy/optcggg-8th-flavio-villanueva-playlatam-26-27-championship-latin-ameri.html",
+      "title": "Flavio Villanueva - PlayLATAM 26-27 Championship Latin American Finals",
+      "subtitle": "Public OPTCG.GG list · PlayLATAM 26-27 Championship Latin American Finals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/cae677a3-f7d3-485b-951b-6a4de5f0a682",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-26-2-mg2gtg",
+      "href": "/decklists/rg-luffy/tcgportal-2026-08-26-2-mg2gtg.html",
+      "title": "赤緑ルフィ（OP13） エクストラグランドバトル winner - カードボックス横浜西口2号店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtabmq7l004pl204c2mg2gtg",
+      "kind": "web",
+      "date": "2026-08-26"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-7yh2by",
+      "href": "/decklists/rg-luffy/tcgportal-2026-08-23-7yh2by.html",
+      "title": "赤緑ルフィ（OP13） フラッグシップバトル winner - バトロコミニ苫小牧バイパス店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtb0hspc000dif04dh7yh2by",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-apnogz",
+      "href": "/decklists/rg-luffy/tcgportal-2026-08-16-apnogz.html",
+      "title": "赤緑ルフィ（OP13） スタンダードバトル winner - カードショップワーテル柏駅前",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1pc5fr001vjs04lrapnogz",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-bookoff-sdajf4",
+      "href": "/decklists/rg-luffy/tcgportal-2026-08-16-bookoff-sdajf4.html",
+      "title": "赤緑ルフィ（OP13） フラッグシップバトル winner - BOOKOFF 鹿児島ジョイプラザ店 トレカ館",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1oknu80020l704yasdajf4",
+      "kind": "web",
+      "date": "2026-08-16"
     }
   ],
   "OP11-041": [
@@ -789,6 +1086,24 @@
       "source_url": "https://www.reddit.com/r/OnePieceTCG/comments/1walgzo/momi_on_the_rocks/",
       "kind": "web",
       "date": "2026-09-08"
+    },
+    {
+      "slug": "optcggg-4th-human-playlatam-26-27-championship-latin-american-finals",
+      "href": "/decklists/nami/optcggg-4th-human-playlatam-26-27-championship-latin-american-finals.html",
+      "title": "Human - PlayLATAM 26-27 Championship Latin American Finals",
+      "subtitle": "Public OPTCG.GG list · PlayLATAM 26-27 Championship Latin American Finals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/9342cc2c-4b5e-4124-904a-8d6638b7e31d",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-rv64f3",
+      "href": "/decklists/nami/tcgportal-2026-08-23-rv64f3.html",
+      "title": "青黄ナミ フラッグシップバトル winner - カードショップ彩々 アミュプラザ鹿児島店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtb0lph6001jl504brrv64f3",
+      "kind": "web",
+      "date": "2026-08-23"
     }
   ],
   "OP14-020": [
@@ -1195,6 +1510,573 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-eu-final-sep06-arman/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "optcggg-3th-josh-graham-utrecht-regionals",
+      "href": "/decklists/mihawk/optcggg-3th-josh-graham-utrecht-regionals.html",
+      "title": "Josh Graham - Utrecht Regionals",
+      "subtitle": "Public OPTCG.GG list · Utrecht Regionals · 2026-09-07",
+      "source_url": "https://www.optcg.gg/deck-lists/b7282494-3a6e-4173-a277-0c56cf801cfb",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "optcggg-1th-dylan-tak-games-brisbane-regionals",
+      "href": "/decklists/mihawk/optcggg-1th-dylan-tak-games-brisbane-regionals.html",
+      "title": "Dylan - TAK Games Brisbane Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/23035516-15d9-4e5b-8c49-db4e30da770e",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-2th-ernest-tak-games-brisbane-regionals",
+      "href": "/decklists/mihawk/optcggg-2th-ernest-tak-games-brisbane-regionals.html",
+      "title": "Ernest - TAK Games Brisbane Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/7edddb42-f233-42da-b13e-689b7d1b71b4",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-3th-zyrios-eu-finals-utrecht",
+      "href": "/decklists/mihawk/optcggg-3th-zyrios-eu-finals-utrecht.html",
+      "title": "Zyrios - EU Finals Utrecht",
+      "subtitle": "Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/07594072-7398-437d-9a53-204c52ff6a91",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-8th-damon-tak-games-brisbane-regionals",
+      "href": "/decklists/mihawk/optcggg-8th-damon-tak-games-brisbane-regionals.html",
+      "title": "Damon - TAK Games Brisbane Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/4a2424ee-5665-48d1-bb90-082dd3db510c",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-16th-zhao-tak-games-brisbane-regionals",
+      "href": "/decklists/mihawk/optcggg-16th-zhao-tak-games-brisbane-regionals.html",
+      "title": "Zhao - TAK Games Brisbane Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/98d8fce7-c8a3-4fe9-a058-ec11a0dbb2ba",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-2th-flozing-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/mihawk/optcggg-2th-flozing-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "Flozing - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/c6323f01-df05-48e4-a30b-df63cc0f8672",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-2th-cinnas-flame-flame-fruit-coliseum-europe-block-d",
+      "href": "/decklists/mihawk/optcggg-2th-cinnas-flame-flame-fruit-coliseum-europe-block-d.html",
+      "title": "Cinnas - Flame Flame Fruit Coliseum Europe Block D",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block D · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/74ac39c2-0274-427a-b876-37fbb393901e",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-3th-donillou-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/mihawk/optcggg-3th-donillou-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "donillou - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/98c99767-571f-4ae8-893e-9afd2ebef5be",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-4th-woodywood-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/mihawk/optcggg-4th-woodywood-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "woodywood - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/02e216b7-3cee-4110-88f3-31fe1e79a15c",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-4th-lunatik-flame-flame-fruit-coliseum-europe-block-c",
+      "href": "/decklists/mihawk/optcggg-4th-lunatik-flame-flame-fruit-coliseum-europe-block-c.html",
+      "title": "Lunatik - Flame Flame Fruit Coliseum Europe Block C",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block C · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/dc608b00-a28d-4b08-836d-ea52c7c9faaa",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-5th-benjamin-bayer-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/mihawk/optcggg-5th-benjamin-bayer-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "Benjamin Bayer - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/9102fe1f-8eee-4667-8fc8-9c941a0f27de",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-7th-zelcom-night-flame-flame-fruit-coliseum-europe-block-d",
+      "href": "/decklists/mihawk/optcggg-7th-zelcom-night-flame-flame-fruit-coliseum-europe-block-d.html",
+      "title": "ZelCoM Night - Flame Flame Fruit Coliseum Europe Block D",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block D · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/426d2322-2d79-4dee-be6e-253a94072826",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-7th-alessandro-villa-flame-flame-fruit-coliseum-europe-block-c",
+      "href": "/decklists/mihawk/optcggg-7th-alessandro-villa-flame-flame-fruit-coliseum-europe-block-c.html",
+      "title": "Alessandro Villa - Flame Flame Fruit Coliseum Europe Block C",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block C · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/66f68ce7-76bb-4062-a854-5964df8c5084",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-7th-gaston78910-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/mihawk/optcggg-7th-gaston78910-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "Gaston78910 - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/17854c83-6ff1-4fef-8384-45b37de76355",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-8th-anestakis-flame-flame-fruit-coliseum-europe-block-d",
+      "href": "/decklists/mihawk/optcggg-8th-anestakis-flame-flame-fruit-coliseum-europe-block-d.html",
+      "title": "anestakis - Flame Flame Fruit Coliseum Europe Block D",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block D · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/8dcf0ac2-3ff7-4d50-bf34-9c2bedf89f8a",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-33th-chewwii-flame-flame-fruit-coliseum-europe",
+      "href": "/decklists/mihawk/optcggg-33th-chewwii-flame-flame-fruit-coliseum-europe.html",
+      "title": "Chewwii - Flame Flame Fruit Coliseum Europe",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/570af9d4-bae5-4b83-946b-da8dc7be2aec",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-1th-james-fleming-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/mihawk/optcggg-1th-james-fleming-egman-events-op17-triple-win-a-box.html",
+      "title": "James Fleming - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/71294bdb-d11d-4112-94d0-fd2b108ede9e",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "optcggg-6th-angelo-zong-liscum-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/mihawk/optcggg-6th-angelo-zong-liscum-egman-events-op17-triple-win-a-box.html",
+      "title": "Angelo Zong-Liscum - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/a379d86d-0bc9-4926-99df-bf3eac64572e",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "optcggg-7th-brandon-wilson-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/mihawk/optcggg-7th-brandon-wilson-egman-events-op17-triple-win-a-box.html",
+      "title": "Brandon wilson - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/ad263579-91c6-44d1-a0a6-5d90809dea7a",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "optcggg-2th-jimmy-lieu-ikailacup-op17-2",
+      "href": "/decklists/mihawk/optcggg-2th-jimmy-lieu-ikailacup-op17-2.html",
+      "title": "Jimmy Lieu - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/7a55ec5f-75aa-40bc-bf0a-aa791567ca95",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-4th-ashwin-r-ikailacup-op17-2",
+      "href": "/decklists/mihawk/optcggg-4th-ashwin-r-ikailacup-op17-2.html",
+      "title": "Ashwin R - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/6a356ad1-d138-43b2-a3fe-e154558ff93e",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-5th-james-lee-ikailacup-op17-2",
+      "href": "/decklists/mihawk/optcggg-5th-james-lee-ikailacup-op17-2.html",
+      "title": "James Lee - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/5f275194-d11e-43f0-83c2-224457275c14",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-6th-patrick-ciszczon-ikailacup-op17-2",
+      "href": "/decklists/mihawk/optcggg-6th-patrick-ciszczon-ikailacup-op17-2.html",
+      "title": "Patrick Ciszczon - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/e70614a7-bcbf-4659-876c-a2e504630245",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-3th-brian-huynh-crimson-guild-double-case-tournament",
+      "href": "/decklists/mihawk/optcggg-3th-brian-huynh-crimson-guild-double-case-tournament.html",
+      "title": "Brian Huynh - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/eb8607c0-f4c1-4927-8a3e-9bcc9a5341ee",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-5th-jose-salas-crimson-guild-double-case-tournament",
+      "href": "/decklists/mihawk/optcggg-5th-jose-salas-crimson-guild-double-case-tournament.html",
+      "title": "Jose Salas - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/3cd83000-5862-4a18-91c0-061fc0f8f0dc",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-6th-justin-saenz-crimson-guild-double-case-tournament",
+      "href": "/decklists/mihawk/optcggg-6th-justin-saenz-crimson-guild-double-case-tournament.html",
+      "title": "Justin Saenz - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/6bc03d2f-b2d4-4e37-8044-d32932c63165",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-11th-arthur-shi-crimson-guild-double-case-tournament",
+      "href": "/decklists/mihawk/optcggg-11th-arthur-shi-crimson-guild-double-case-tournament.html",
+      "title": "Arthur Shi - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/13330131-177c-4e89-adcf-f53abc22cbd1",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-12th-brayan-madrigal-crimson-guild-double-case-tournament",
+      "href": "/decklists/mihawk/optcggg-12th-brayan-madrigal-crimson-guild-double-case-tournament.html",
+      "title": "Brayan Madrigal - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/6314da96-0e8b-4bcf-8528-0e532764be70",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-13th-seraphim-zhang-crimson-guild-double-case-tournament",
+      "href": "/decklists/mihawk/optcggg-13th-seraphim-zhang-crimson-guild-double-case-tournament.html",
+      "title": "Seraphim Zhang - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/f5f375b6-33f5-44e1-ac82-87971336c7d7",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-16th-andrew-an-crimson-guild-double-case-tournament",
+      "href": "/decklists/mihawk/optcggg-16th-andrew-an-crimson-guild-double-case-tournament.html",
+      "title": "Andrew An - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/c2788976-8c53-4d6b-965d-0d3425cce2a3",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-3th-sean-clausen-ikailacup-op17-1",
+      "href": "/decklists/mihawk/optcggg-3th-sean-clausen-ikailacup-op17-1.html",
+      "title": "Sean Clausen - iKailaCup OP17 #1",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #1 · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/e2bedc2d-5545-4bc1-a9eb-8c0dedac878a",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-4th-amr-elfar-ikailacup-op17-1",
+      "href": "/decklists/mihawk/optcggg-4th-amr-elfar-ikailacup-op17-1.html",
+      "title": "Amr Elfar - iKailaCup OP17 #1",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #1 · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/9afbf4c0-7b5d-4f13-8cff-1474b80a6afb",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-7th-june-lee-ikailacup-op17-1",
+      "href": "/decklists/mihawk/optcggg-7th-june-lee-ikailacup-op17-1.html",
+      "title": "June Lee - iKailaCup OP17 #1",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #1 · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/39f266f6-7c74-4a92-8407-8b555af54728",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-east-tcg-center-sep09-araki",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-east-tcg-center-sep09-araki.html",
+      "title": "Dracule Mihawk (Format OP17) Standard Battle",
+      "subtitle": "TCG Center · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/mihawk-op17-east-tcg-center-sep09-araki/",
+      "kind": "web",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-east-cardshop-sep09-sake",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-east-cardshop-sep09-sake.html",
+      "title": "Dracule Mihawk (Format OP17) Standard Battle",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/mihawk-op17-east-cardshop-sep09-sake/",
+      "kind": "web",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-east-corgi-sep09-kanachoo",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-east-corgi-sep09-kanachoo.html",
+      "title": "Dracule Mihawk (Format OP17) Flagship Battle Battle",
+      "subtitle": "Corgi · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/mihawk-op17-east-corgi-sep09-kanachoo/",
+      "kind": "web",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-bandai-utrecht-sep07-monaru",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-bandai-utrecht-sep07-monaru.html",
+      "title": "Dracule Mihawk (Format OP17) Regional",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-bandai-utrecht-sep07-monaru/",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-tak-games-sep06-eugene",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-tak-games-sep06-eugene.html",
+      "title": "Dracule Mihawk (Format OP17) Regional",
+      "subtitle": "TAK Games · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-tak-games-sep06-eugene/",
+      "kind": "web",
+      "date": "2026-09-06"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-eu-final-sep06-zyrios",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-eu-final-sep06-zyrios.html",
+      "title": "Dracule Mihawk (Format OP17) EU Final",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-eu-final-sep06-zyrios/",
+      "kind": "web",
+      "date": "2026-09-06"
+    },
+    {
+      "slug": "optcggg-1th-yost-kayfabe-cards-ppg-games-orlando-regionals",
+      "href": "/decklists/mihawk/optcggg-1th-yost-kayfabe-cards-ppg-games-orlando-regionals.html",
+      "title": "Yost (Kayfabe Cards) - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/f5613e96-3418-4d3a-91e7-e8998c6fa62c",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-4th-chris-sok-ppg-games-orlando-regionals",
+      "href": "/decklists/mihawk/optcggg-4th-chris-sok-ppg-games-orlando-regionals.html",
+      "title": "Chris Sok - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/092190bf-c712-4535-9599-f4bc6af20e73",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-10th-shima-ppg-games-orlando-regionals",
+      "href": "/decklists/mihawk/optcggg-10th-shima-ppg-games-orlando-regionals.html",
+      "title": "Shima - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/882079de-aa0d-4c22-b3a4-fb17f81ccbfc",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-14th-yaranaikasmith-ppg-games-orlando-regionals",
+      "href": "/decklists/mihawk/optcggg-14th-yaranaikasmith-ppg-games-orlando-regionals.html",
+      "title": "Yaranaikasmith - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/f5f61a42-4e3e-4c8c-a317-eb9ad539aa56",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-16th-capt-karoo-ppg-games-orlando-regionals",
+      "href": "/decklists/mihawk/optcggg-16th-capt-karoo-ppg-games-orlando-regionals.html",
+      "title": "Capt_Karoo - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/b1922ad2-44ab-4706-91da-62e38d108eb8",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-1th-hubert-tak-games-auckland-regionals",
+      "href": "/decklists/mihawk/optcggg-1th-hubert-tak-games-auckland-regionals.html",
+      "title": "Hubert - TAK Games Auckland Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Auckland Regionals · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/1bf52ad1-752e-4e17-b81f-e003449bfea3",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-1th-zoru-playlatam-26-27-championship-latin-american-finals",
+      "href": "/decklists/mihawk/optcggg-1th-zoru-playlatam-26-27-championship-latin-american-finals.html",
+      "title": "Zoru - PlayLATAM 26-27 Championship Latin American Finals",
+      "subtitle": "Public OPTCG.GG list · PlayLATAM 26-27 Championship Latin American Finals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/ae0086c7-b166-45c4-b069-1e0a5ccd91e6",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-7th-fl-roker-playlatam-26-27-championship-latin-american-final",
+      "href": "/decklists/mihawk/optcggg-7th-fl-roker-playlatam-26-27-championship-latin-american-final.html",
+      "title": "FL Roker - PlayLATAM 26-27 Championship Latin American Finals",
+      "subtitle": "Public OPTCG.GG list · PlayLATAM 26-27 Championship Latin American Finals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/9bb0d129-a64d-4dd6-9b68-d2f4addd92d2",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-1th-xtotx-carta-magica-calgary-regionals",
+      "href": "/decklists/mihawk/optcggg-1th-xtotx-carta-magica-calgary-regionals.html",
+      "title": "Xtotx - Carta Magica Calgary Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Calgary Regionals · 2026-08-15",
+      "source_url": "https://www.optcg.gg/deck-lists/d89e494b-3115-4fa1-a06c-c66a640e33ae",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "optcggg-2th-caojoshua-carta-magica-calgary-treasure-cup",
+      "href": "/decklists/mihawk/optcggg-2th-caojoshua-carta-magica-calgary-treasure-cup.html",
+      "title": "caojoshua - Carta Magica Calgary Treasure Cup",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Calgary Treasure Cup · 2026-08-15",
+      "source_url": "https://www.optcg.gg/deck-lists/fb0e67c9-b146-4f5e-a51e-860867500619",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "optcggg-2th-chewwii-carta-magica-calgary-regionals",
+      "href": "/decklists/mihawk/optcggg-2th-chewwii-carta-magica-calgary-regionals.html",
+      "title": "Chewwii - Carta Magica Calgary Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Calgary Regionals · 2026-08-15",
+      "source_url": "https://www.optcg.gg/deck-lists/386eaa48-fd0d-48ca-9cb7-d4a62577474e",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "optcggg-3th-yosh-kyoto-championship-season-1",
+      "href": "/decklists/mihawk/optcggg-3th-yosh-kyoto-championship-season-1.html",
+      "title": "Yosh - Kyoto Championship Season 1",
+      "subtitle": "Public OPTCG.GG list · Kyoto Championship Season 1 · 2026-08-15",
+      "source_url": "https://www.optcg.gg/deck-lists/63dedde4-827b-4ad6-b071-fead72fef5a9",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "tcgportal-2026-08-26-5x271s",
+      "href": "/decklists/mihawk/tcgportal-2026-08-26-5x271s.html",
+      "title": "緑ミホーク フラッグシップバトル winner - コーギーアール大宮駅前店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtabckr80035l204ge5x271s",
+      "kind": "web",
+      "date": "2026-08-26"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-acmdml",
+      "href": "/decklists/mihawk/tcgportal-2026-08-23-acmdml.html",
+      "title": "緑ミホーク フラッグシップバトル winner - ダイソー楽器トレカ店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtb1efr2001jkv0445acmdml",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-ih399l",
+      "href": "/decklists/mihawk/tcgportal-2026-08-23-ih399l.html",
+      "title": "緑ミホーク エクストラグランドバトル winner - 宝島 可児店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtb167g5001jjr04g3ih399l",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-g89en6",
+      "href": "/decklists/mihawk/tcgportal-2026-08-23-g89en6.html",
+      "title": "緑ミホーク フラッグシップバトル winner - オレタン福岡天神店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtb13vst001jl6047fg89en6",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-hvnz6m",
+      "href": "/decklists/mihawk/tcgportal-2026-08-23-hvnz6m.html",
+      "title": "緑ミホーク エクストラグランドバトル winner - プレイズ ららぽーと安城店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtaz1awi001jl204qnhvnz6m",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-o6h2ie",
+      "href": "/decklists/mihawk/tcgportal-2026-08-16-o6h2ie.html",
+      "title": "緑ミホーク ONEPIECEカードゲーム エクストラチャンピオンシップ26-27 Season 1 予選大会(京都会場)​ winner - 京都府",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1qrl84001mju04vfo6h2ie",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-namco-tokyo-w5guw0",
+      "href": "/decklists/mihawk/tcgportal-2026-08-16-namco-tokyo-w5guw0.html",
+      "title": "緑ミホーク エクストラグランドバトル winner - namco TOKYO（ナムコ トーキョー）",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1ptk4x0029l504dmw5guw0",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-bookoff-cfz0qw",
+      "href": "/decklists/mihawk/tcgportal-2026-08-16-bookoff-cfz0qw.html",
+      "title": "緑ミホーク フラッグシップバトル winner - BOOKOFF リヴィン田無店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1ov6fm007tla04ijcfz0qw",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-kwpc7w",
+      "href": "/decklists/mihawk/tcgportal-2026-08-16-kwpc7w.html",
+      "title": "緑ミホーク フラッグシップバトル winner - カードラボ 天王寺店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1ocujx005qla04j0kwpc7w",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-7uzuib",
+      "href": "/decklists/mihawk/tcgportal-2026-08-15-7uzuib.html",
+      "title": "緑ミホーク エクストラグランドバトル winner - トレカエース植田店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1m15id0039l805jc7uzuib",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-tsutaya-u28srs",
+      "href": "/decklists/mihawk/tcgportal-2026-08-15-tsutaya-u28srs.html",
+      "title": "緑ミホーク フラッグシップバトル winner - TSUTAYA 所沢山口店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1lxgvq001tl504fyu28srs",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "OP16-001": [
@@ -1312,6 +2194,123 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-bandai-utrecht-sep04-felixvp10/",
       "kind": "web",
       "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-1th-rian-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/portgas-d-ace/optcggg-1th-rian-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "Rian - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/e15bcc6c-e0ca-41c9-aaee-d42e34731bd7",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-5th-code-flame-flame-fruit-coliseum-europe-block-c",
+      "href": "/decklists/portgas-d-ace/optcggg-5th-code-flame-flame-fruit-coliseum-europe-block-c.html",
+      "title": "code - Flame Flame Fruit Coliseum Europe Block C",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block C · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/0a2e9abf-1d35-47e0-8f70-c7937b1e66a4",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-6th-skip-flame-flame-fruit-coliseum-europe-block-d",
+      "href": "/decklists/portgas-d-ace/optcggg-6th-skip-flame-flame-fruit-coliseum-europe-block-d.html",
+      "title": "Skip - Flame Flame Fruit Coliseum Europe Block D",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block D · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/00bd303e-63b3-4234-9528-ac6664732275",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-4th-nguyen-chau-crimson-guild-double-case-tournament",
+      "href": "/decklists/portgas-d-ace/optcggg-4th-nguyen-chau-crimson-guild-double-case-tournament.html",
+      "title": "Nguyen Chau - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/bb340655-d3f8-47ce-ab74-c2515099510f",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-7th-gavin-chan-crimson-guild-double-case-tournament",
+      "href": "/decklists/portgas-d-ace/optcggg-7th-gavin-chan-crimson-guild-double-case-tournament.html",
+      "title": "Gavin Chan - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/3f87c2d9-3cb2-4778-896d-670b9e4a4d99",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "tcgportal-2026-08-25-30vvpl",
+      "href": "/decklists/portgas-d-ace/tcgportal-2026-08-25-30vvpl.html",
+      "title": "赤エース（OP16） スタンダードバトル winner - トレカの森",
+      "subtitle": "Public TCG PORTAL list · 2026-08-25",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmta8xz040001ju044a30vvpl",
+      "kind": "web",
+      "date": "2026-08-25"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-15wzwx",
+      "href": "/decklists/portgas-d-ace/tcgportal-2026-08-23-15wzwx.html",
+      "title": "赤エース（OP16） スタンダードバトル winner - イエローサブマリン マジッカーズ福岡店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtb0s7h8001xif04xx15wzwx",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-good-games-cannington-sep09-keyllua",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-good-games-cannington-sep09-keyllua.html",
+      "title": "Portgas.D.Ace (Format OP17) Standard Battle",
+      "subtitle": "Good Games Cannington · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-good-games-cannington-sep09-keyllua/",
+      "kind": "web",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-bandai-utrecht-sep07-mattymitsu",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-bandai-utrecht-sep07-mattymitsu.html",
+      "title": "Portgas.D.Ace (Format OP17) Regional",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-bandai-utrecht-sep07-mattymitsu/",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-tak-games-sep06-matt",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-tak-games-sep06-matt.html",
+      "title": "Portgas.D.Ace (Format OP17) Regional",
+      "subtitle": "TAK Games · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-tak-games-sep06-matt/",
+      "kind": "web",
+      "date": "2026-09-06"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-bandai-utrecht-sep05-skip-tcg",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-bandai-utrecht-sep05-skip-tcg.html",
+      "title": "Portgas.D.Ace (Format OP17) Flame-Flame FC",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-bandai-utrecht-sep05-skip-tcg/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-bear-cave-sep01-apokdango",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-bear-cave-sep01-apokdango.html",
+      "title": "Portgas.D.Ace (Format OP17) Standard Battle Winner",
+      "subtitle": "Bear Cave · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-bear-cave-sep01-apokdango/",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-zu4ev9",
+      "href": "/decklists/portgas-d-ace/tcgportal-2026-08-15-zu4ev9.html",
+      "title": "赤エース（OP16） フラッグシップバトル winner - 三洋堂書店 穂積店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1mkauj001xl704xazu4ev9",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "OP13-079": [
@@ -1321,6 +2320,15 @@
       "title": "The Five Elders - Mabi",
       "source_url": "https://mabitcg.com/one-piece-tcg-imu-op13-the-five-elders-op13-mabi/",
       "kind": "web"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-9hjljr",
+      "href": "/decklists/imu/tcgportal-2026-08-16-9hjljr.html",
+      "title": "黒イム フラッグシップバトル winner - トレカエース小名浜住吉店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1qdms2001jjj04c99hjljr",
+      "kind": "web",
+      "date": "2026-08-16"
     }
   ],
   "OP13-002": [
@@ -1331,6 +2339,24 @@
       "source_url": "https://www.youtube.com/watch?v=hbYhFPZRY5E",
       "kind": "youtube",
       "date": "2026-05-13"
+    },
+    {
+      "slug": "tcgportal-2026-08-25-tsutaya-ci5k5b",
+      "href": "/decklists/op13-ace/tcgportal-2026-08-25-tsutaya-ci5k5b.html",
+      "title": "赤青エース フラッグシップバトル winner - TSUTAYA 北習志野駅前店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-25",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmta9ojhd001zju047wci5k5b",
+      "kind": "web",
+      "date": "2026-08-25"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-cardbox-d2xrdu",
+      "href": "/decklists/op13-ace/tcgportal-2026-08-15-cardbox-d2xrdu.html",
+      "title": "赤青エース スタンダードバトル winner - CARDBOX 北国書林 辰口店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1n8xwk003dl404obd2xrdu",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "OP11-040": [
@@ -1351,6 +2377,15 @@
       "source_url": "https://www.youtube.com/watch?v=-M5JW91P5BE",
       "kind": "youtube",
       "date": "2026-06-17"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-mundo-cartas-sep03-yoghaul",
+      "href": "/decklists/up-luffy/opdeck-luffy-op17-west-mundo-cartas-sep03-yoghaul.html",
+      "title": "Monkey.D.Luffy (Format OP17) Standard Battle Winner",
+      "subtitle": "Mundo Cartas · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-mundo-cartas-sep03-yoghaul/",
+      "kind": "web",
+      "date": "2026-09-03"
     }
   ],
   "OP14-060": [
@@ -1465,6 +2500,177 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-cardshop-sep06-shuto/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-eu-final-sep06-andrea-zanotti",
+      "href": "/decklists/enel/opdeck-enel-op17-west-eu-final-sep06-andrea-zanotti.html",
+      "title": "Enel (Format OP17) EU Final",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-eu-final-sep06-andrea-zanotti/",
+      "kind": "web",
+      "date": "2026-09-06"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-bandai-utrecht-sep05-salvaoptcg",
+      "href": "/decklists/enel/opdeck-enel-op17-west-bandai-utrecht-sep05-salvaoptcg.html",
+      "title": "Enel (Format OP17) Treasure Cup",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-bandai-utrecht-sep05-salvaoptcg/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-1th-frle-eu-finals-utrecht",
+      "href": "/decklists/enel/optcggg-1th-frle-eu-finals-utrecht.html",
+      "title": "Frle - EU Finals Utrecht",
+      "subtitle": "Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/3b960bbb-28f0-4f62-8687-20482111b570",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-1th-xixo-flame-flame-fruit-coliseum-europe-block-c",
+      "href": "/decklists/enel/optcggg-1th-xixo-flame-flame-fruit-coliseum-europe-block-c.html",
+      "title": "Xixo - Flame Flame Fruit Coliseum Europe Block C",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block C · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/14336b05-9024-4901-9bdf-2813d3014edf",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-3th-duskdragon-ppg-games-orlando-regionals",
+      "href": "/decklists/enel/optcggg-3th-duskdragon-ppg-games-orlando-regionals.html",
+      "title": "Duskdragon - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/708af3ac-53f9-4df8-b694-56577f067761",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-8th-simon-roach-ikailacup-op17-2",
+      "href": "/decklists/enel/optcggg-8th-simon-roach-ikailacup-op17-2.html",
+      "title": "Simon Roach - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/004f0e85-100d-4346-8284-7e946cd8aeee",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-11th-x3-biglamma-ppg-games-orlando-regionals",
+      "href": "/decklists/enel/optcggg-11th-x3-biglamma-ppg-games-orlando-regionals.html",
+      "title": "[x3] Biglamma - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/39644c84-cade-4cf6-88c5-0769836b2ff4",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-4th-levi-tak-games-auckland-regionals",
+      "href": "/decklists/enel/optcggg-4th-levi-tak-games-auckland-regionals.html",
+      "title": "Levi - TAK Games Auckland Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Auckland Regionals · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/9591a3fd-df16-4fc3-b266-6316cd244507",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-15th-jiajun-crimson-guild-double-case-tournament",
+      "href": "/decklists/enel/optcggg-15th-jiajun-crimson-guild-double-case-tournament.html",
+      "title": "Jiajun - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/56bc2fc2-f958-4842-a343-9cc88f024f7a",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-16th-poe-tak-games-auckland-regionals",
+      "href": "/decklists/enel/optcggg-16th-poe-tak-games-auckland-regionals.html",
+      "title": "Poe - TAK Games Auckland Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Auckland Regionals · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/2831f297-8d93-45f4-9bb0-d3a029135581",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-2th-diego-djordjevic-ikailacup-op17-1",
+      "href": "/decklists/enel/optcggg-2th-diego-djordjevic-ikailacup-op17-1.html",
+      "title": "Diego Djordjevic - iKailaCup OP17 #1",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #1 · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/6ccb8189-43bf-49ea-9e88-bcbb79d35f21",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-5th-hakun-magic-omen-s-zagreb-regionals",
+      "href": "/decklists/enel/optcggg-5th-hakun-magic-omen-s-zagreb-regionals.html",
+      "title": "Hakun - Magic Omen's Zagreb Regionals",
+      "subtitle": "Public OPTCG.GG list · Magic Omen's Zagreb Regionals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/1c4d9ab6-77cc-40ee-8b83-1bf6bc114752",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-6th-soto-wl-playlatam-26-27-championship-latin-american-finals",
+      "href": "/decklists/enel/optcggg-6th-soto-wl-playlatam-26-27-championship-latin-american-finals.html",
+      "title": "Soto [WL] - PlayLATAM 26-27 Championship Latin American Finals",
+      "subtitle": "Public OPTCG.GG list · PlayLATAM 26-27 Championship Latin American Finals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/08fad5cc-7af6-4899-9000-2a4c740cca1e",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-1th-x3-biglamma-carta-magica-calgary-treasure-cup",
+      "href": "/decklists/enel/optcggg-1th-x3-biglamma-carta-magica-calgary-treasure-cup.html",
+      "title": "[x3] Biglamma - Carta Magica Calgary Treasure Cup",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Calgary Treasure Cup · 2026-08-15",
+      "source_url": "https://www.optcg.gg/deck-lists/aae02cd2-6976-4ac5-a6d7-63aea8622286",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "optcggg-2th-kyoto-championship-season-1",
+      "href": "/decklists/enel/optcggg-2th-kyoto-championship-season-1.html",
+      "title": "めん - Kyoto Championship Season 1",
+      "subtitle": "Public OPTCG.GG list · Kyoto Championship Season 1 · 2026-08-15",
+      "source_url": "https://www.optcg.gg/deck-lists/7986c172-9e4b-4569-8490-66004560aa72",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-9bcx08",
+      "href": "/decklists/enel/tcgportal-2026-08-16-9bcx08.html",
+      "title": "紫エネル フラッグシップバトル winner - 力一ドゲ一ムショップ りらい",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1q85xf006el104e29bcx08",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-x7t720",
+      "href": "/decklists/enel/tcgportal-2026-08-16-x7t720.html",
+      "title": "紫エネル フラッグシップバトル winner - ドラゴンスター秋葉原駅前店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1o7enf0044la043hx7t720",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-1zjace",
+      "href": "/decklists/enel/tcgportal-2026-08-15-1zjace.html",
+      "title": "紫エネル ONEPIECEカードゲーム チャンピオンシップ26-27​ Season 1 エリア決勝大会(京都会場)​ winner - 京都府",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1nkhxv001pjs04rn1zjace",
+      "kind": "web",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-wnqvz6",
+      "href": "/decklists/enel/tcgportal-2026-08-15-wnqvz6.html",
+      "title": "紫エネル ONEPIECEカードゲーム チャンピオンシップ26-27​ Season 1 エリア決勝大会(京都会場)​ winner - 京都府",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1nhzna001tla04j4wnqvz6",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "OP16-060": [
@@ -1577,6 +2783,69 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/boa-op17-west-eu-final-sep06-trecore/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "optcggg-5th-trec-utrecht-regionals",
+      "href": "/decklists/boa-hancock/optcggg-5th-trec-utrecht-regionals.html",
+      "title": "Trec - Utrecht Regionals",
+      "subtitle": "Public OPTCG.GG list · Utrecht Regionals · 2026-09-07",
+      "source_url": "https://www.optcg.gg/deck-lists/d462dfae-e9a3-42b3-9b4f-96c43ed156a9",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "optcggg-4th-kevin-flame-flame-fruit-coliseum-europe-block-d",
+      "href": "/decklists/boa-hancock/optcggg-4th-kevin-flame-flame-fruit-coliseum-europe-block-d.html",
+      "title": "Kevin - Flame Flame Fruit Coliseum Europe Block D",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block D · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/c338e8c9-955a-40c7-9ebd-285aa048d85c",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-4th-james-m-miller-jr-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/boa-hancock/optcggg-4th-james-m-miller-jr-egman-events-op17-triple-win-a-box.html",
+      "title": "James M Miller Jr - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/dbf97720-f983-40af-80f6-0ac158650f57",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "opdeck-boa-op17-east-tsutaya-sep08-k",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-east-tsutaya-sep08-k.html",
+      "title": "Boa Hancock (Format OP17) Standard Battle",
+      "subtitle": "Tsutaya · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/boa-op17-east-tsutaya-sep08-k/",
+      "kind": "web",
+      "date": "2026-09-08"
+    },
+    {
+      "slug": "opdeck-boa-op17-east-cardshop-sep05-remenoripra",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-east-cardshop-sep05-remenoripra.html",
+      "title": "Boa Hancock (Format OP17) Standard Battle Winner",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/boa-op17-east-cardshop-sep05-remenoripra/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "tcgportal-2026-08-26-rxmdm6",
+      "href": "/decklists/boa-hancock/tcgportal-2026-08-26-rxmdm6.html",
+      "title": "青黄ハンコック フラッグシップバトル winner - コーギーアール大宮駅前店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtabf69u001rl404wyrxmdm6",
+      "kind": "web",
+      "date": "2026-08-26"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-vqu21v",
+      "href": "/decklists/boa-hancock/tcgportal-2026-08-15-vqu21v.html",
+      "title": "青黄ハンコック スタンダードバトル winner - 竜星の嵐 高松店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1lqzp10001l404e5vqu21v",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "ST13-001": [
@@ -1816,6 +3085,186 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-eu-final-sep06-eduardo-sosa/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "optcggg-2th-kdz-mill-n-player-eu-finals-utrecht",
+      "href": "/decklists/nico-robin/optcggg-2th-kdz-mill-n-player-eu-finals-utrecht.html",
+      "title": "KDZ Millán player - EU Finals Utrecht",
+      "subtitle": "Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/c339cdee-af6e-4cb6-8599-44ecf244a8e5",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-5th-ziiaaaac-eu-finals-utrecht",
+      "href": "/decklists/nico-robin/optcggg-5th-ziiaaaac-eu-finals-utrecht.html",
+      "title": "Ziiaaaac - EU Finals Utrecht",
+      "subtitle": "Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05",
+      "source_url": "https://www.optcg.gg/deck-lists/b212871e-a050-4a9e-8d9e-ccd8d523f808",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-1th-benjo-1-flame-flame-fruit-coliseum-europe-block-d",
+      "href": "/decklists/nico-robin/optcggg-1th-benjo-1-flame-flame-fruit-coliseum-europe-block-d.html",
+      "title": "Benjo@@@1 - Flame Flame Fruit Coliseum Europe Block D",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block D · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/f75d8a5f-ac67-4ab7-a945-4d792b6fb49f",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-1th-benjo-flame-flame-fruit-coliseum-europe",
+      "href": "/decklists/nico-robin/optcggg-1th-benjo-flame-flame-fruit-coliseum-europe.html",
+      "title": "Benjo - Flame Flame Fruit Coliseum Europe",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/a9e4bc3a-46bc-432a-a670-692bfebcda96",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-2th-max711-flame-flame-fruit-coliseum-europe-block-c",
+      "href": "/decklists/nico-robin/optcggg-2th-max711-flame-flame-fruit-coliseum-europe-block-c.html",
+      "title": "Max711 - Flame Flame Fruit Coliseum Europe Block C",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block C · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/7d4be314-579a-4dea-8059-277f54a7fb24",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-2th-tooluca-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/nico-robin/optcggg-2th-tooluca-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "Tooluca - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/fd53ac50-bbea-49db-a102-07a45e87f282",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-3th-noko-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/nico-robin/optcggg-3th-noko-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "Noko - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/c9e12e59-05b3-4030-8fd1-f83c7ba717d8",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-5th-gatuszo-flame-flame-fruit-coliseum-europe-block-d",
+      "href": "/decklists/nico-robin/optcggg-5th-gatuszo-flame-flame-fruit-coliseum-europe-block-d.html",
+      "title": "Gatuszo - Flame Flame Fruit Coliseum Europe Block D",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block D · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/ce8187d6-f6bd-42e5-af09-090af7bf6be0",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-6th-rey-bamboopanda-flame-flame-fruit-coliseum-europe-block-c",
+      "href": "/decklists/nico-robin/optcggg-6th-rey-bamboopanda-flame-flame-fruit-coliseum-europe-block-c.html",
+      "title": "[REY] Bamboopanda - Flame Flame Fruit Coliseum Europe Block C",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block C · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/75726cb9-d7a7-4f7d-a765-328233555a1a",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-6th-juru-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/nico-robin/optcggg-6th-juru-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "Juru - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/db42b3ea-7355-4c3b-91b6-080ce9bc417e",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-8th-marco-casile-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/nico-robin/optcggg-8th-marco-casile-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "Marco Casile - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/98b2cd96-8a67-400d-8677-b812f70d1985",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-2th-hayden-m-langley-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/nico-robin/optcggg-2th-hayden-m-langley-egman-events-op17-triple-win-a-box.html",
+      "title": "Hayden M Langley - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/2ba8a072-d4c0-4ad1-9eca-c699412139e8",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "optcggg-8th-dominic-bucceroni-egman-events-op17-triple-win-a-box",
+      "href": "/decklists/nico-robin/optcggg-8th-dominic-bucceroni-egman-events-op17-triple-win-a-box.html",
+      "title": "Dominic Bucceroni - Egman Events OP17 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events OP17 Triple Win-A-Box · 2026-09-01",
+      "source_url": "https://www.optcg.gg/deck-lists/4d794421-93c8-4585-a851-c7b66cef054e",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "opdeck-robin-op17-east-unbox-sep09-c9",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-east-unbox-sep09-c9.html",
+      "title": "Nico Robin (Format OP17) Flagship Battle Battle",
+      "subtitle": "Unbox · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/robin-op17-east-unbox-sep09-c9/",
+      "kind": "web",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "opdeck-robin-op17-east-hobbystadium39-sep05-az",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-east-hobbystadium39-sep05-az.html",
+      "title": "Nico Robin (Format OP17) Flagship Battle Battle 2nd Place",
+      "subtitle": "Hobby Stadium(39) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/robin-op17-east-hobbystadium39-sep05-az/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "opdeck-robin-op17-east-clovebase-sep03-kitaba",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-east-clovebase-sep03-kitaba.html",
+      "title": "Nico Robin (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Clovebase · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/robin-op17-east-clovebase-sep03-kitaba/",
+      "kind": "web",
+      "date": "2026-09-03"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-eu-final-sep06-diclegiancuca",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-eu-final-sep06-diclegiancuca.html",
+      "title": "Nico Robin (Format OP17) Treasure Cup",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-eu-final-sep06-diclegiancuca/",
+      "kind": "web",
+      "date": "2026-09-06"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-royalcard-store-sep05-verso",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-royalcard-store-sep05-verso.html",
+      "title": "Nico Robin (Format OP17) Standard Battle Winner",
+      "subtitle": "RoyalCard Store(25) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-royalcard-store-sep05-verso/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-pokeoasis-sep01-kitsune",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-pokeoasis-sep01-kitsune.html",
+      "title": "Nico Robin (Format OP17) Standard Battle 2nd Place",
+      "subtitle": "PokeOasis · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-pokeoasis-sep01-kitsune/",
+      "kind": "web",
+      "date": "2026-09-01"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-bookoff-vgilba",
+      "href": "/decklists/nico-robin/tcgportal-2026-08-15-bookoff-vgilba.html",
+      "title": "紫黄ロビン フラッグシップバトル winner - BOOKOFF 和歌山国体道路店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1qm041005ljs04vdvgilba",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "ST30-001": [
@@ -1836,6 +3285,51 @@
       "source_url": "https://www.youtube.com/watch?v=-8n9oqREEYE",
       "kind": "youtube",
       "date": "2026-08-29"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-bandai-utrecht-sep07-globu-52",
+      "href": "/decklists/luffy-ace/opdeck-luffy-op17-west-bandai-utrecht-sep07-globu-52.html",
+      "title": "Luffy & Ace (Format OP17) Regional",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-bandai-utrecht-sep07-globu-52/",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-bandai-utrecht-sep05-milan",
+      "href": "/decklists/luffy-ace/opdeck-ace-op17-west-bandai-utrecht-sep05-milan.html",
+      "title": "Luffy & Ace (Format OP17) Treasure Cup",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-bandai-utrecht-sep05-milan/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "optcggg-3th-montre-flame-flame-fruit-coliseum-europe-block-c",
+      "href": "/decklists/luffy-ace/optcggg-3th-montre-flame-flame-fruit-coliseum-europe-block-c.html",
+      "title": "Montre - Flame Flame Fruit Coliseum Europe Block C",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block C · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/984e1968-5e1e-4215-bf2d-7af0f5fd3c80",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-5th-solo-kun-ppg-games-orlando-regionals",
+      "href": "/decklists/luffy-ace/optcggg-5th-solo-kun-ppg-games-orlando-regionals.html",
+      "title": "Solo-kun - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/f9b1a2c5-dc92-43ca-b1ec-b4137e78dfb0",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-bookoff-s83xn9",
+      "href": "/decklists/luffy-ace/tcgportal-2026-08-15-bookoff-s83xn9.html",
+      "title": "赤緑ルフィ＆エース フラッグシップバトル winner - BOOKOFF 武蔵小金井店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1mextv003ol504yqs83xn9",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "OP09-061": [
@@ -1975,6 +3469,87 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/sabo-op17-east-cardshops-sep06-niginigi/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "optcggg-2th-arenascv-utrecht-regionals",
+      "href": "/decklists/sabo/optcggg-2th-arenascv-utrecht-regionals.html",
+      "title": "arenasCV - Utrecht Regionals",
+      "subtitle": "Public OPTCG.GG list · Utrecht Regionals · 2026-09-07",
+      "source_url": "https://www.optcg.gg/deck-lists/b856f40c-00eb-4044-a075-3a63709bf4b2",
+      "kind": "web",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "optcggg-1th-borsaistrash-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/sabo/optcggg-1th-borsaistrash-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "borsaistrash - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/7ce4fbd3-2c9b-457d-888c-d82ca2e74495",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-5th-mitchel-flame-flame-fruit-coliseum-europe-block-b",
+      "href": "/decklists/sabo/optcggg-5th-mitchel-flame-flame-fruit-coliseum-europe-block-b.html",
+      "title": "mitchel - Flame Flame Fruit Coliseum Europe Block B",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/ae575437-c040-4156-a890-08bad563956b",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-3th-jahkolbi-searles-ikailacup-op17-2",
+      "href": "/decklists/sabo/optcggg-3th-jahkolbi-searles-ikailacup-op17-2.html",
+      "title": "Jahkolbi Searles - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/6869adc3-f0b9-455d-8d3c-4c36cf04a1f4",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-1th-jaydon-ramos-crimson-guild-double-case-tournament",
+      "href": "/decklists/sabo/optcggg-1th-jaydon-ramos-crimson-guild-double-case-tournament.html",
+      "title": "Jaydon Ramos - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/205f543f-9d14-458e-87c9-0cffb712c5bc",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-14th-gage-swift-crimson-guild-double-case-tournament",
+      "href": "/decklists/sabo/optcggg-14th-gage-swift-crimson-guild-double-case-tournament.html",
+      "title": "Gage Swift - Crimson Guild Double Case Tournament",
+      "subtitle": "Public OPTCG.GG list · Crimson Guild Double Case Tournament · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/286068ec-5a1e-4db6-a5cd-3605fd9ab08a",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "optcggg-5th-sammy-rakeen-fairad-ikailacup-op17-1",
+      "href": "/decklists/sabo/optcggg-5th-sammy-rakeen-fairad-ikailacup-op17-1.html",
+      "title": "Sammy Rakeen Fairad - iKailaCup OP17 #1",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #1 · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/4a1c22b2-8eb9-4f56-8129-6c0d893716c2",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-24-mint-uxwy6t",
+      "href": "/decklists/sabo/tcgportal-2026-08-24-mint-uxwy6t.html",
+      "title": "赤黒サボ（OP13） スタンダードバトル winner - MINT 横浜店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-24",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtaa14j0001nl2048quxwy6t",
+      "kind": "web",
+      "date": "2026-08-24"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-bandai-utrecht-sep07-adrian",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-bandai-utrecht-sep07-adrian.html",
+      "title": "Sabo (Format OP17) Regional",
+      "subtitle": "Bandai(Utrecht) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-bandai-utrecht-sep07-adrian/",
+      "kind": "web",
+      "date": "2026-09-07"
     }
   ],
   "OP16-022": [
@@ -1986,6 +3561,78 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-cardshop-aug30-kuru/",
       "kind": "web",
       "date": "2026-08-30"
+    },
+    {
+      "slug": "optcggg-2th-aceofspades-ppg-games-orlando-regionals",
+      "href": "/decklists/gb-luffy/optcggg-2th-aceofspades-ppg-games-orlando-regionals.html",
+      "title": "AceOfSpades - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/c658aeda-7d64-493a-8096-3cb0dfbdf2fa",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-13th-shelledalf-ppg-games-orlando-regionals",
+      "href": "/decklists/gb-luffy/optcggg-13th-shelledalf-ppg-games-orlando-regionals.html",
+      "title": "Shelledalf - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/38f17332-ec18-4b24-9b68-4d662ce8e1a5",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-5th-cia-playlatam-26-27-championship-latin-american-finals",
+      "href": "/decklists/gb-luffy/optcggg-5th-cia-playlatam-26-27-championship-latin-american-finals.html",
+      "title": "CIA - PlayLATAM 26-27 Championship Latin American Finals",
+      "subtitle": "Public OPTCG.GG list · PlayLATAM 26-27 Championship Latin American Finals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/6e865507-2f0e-45e1-a0be-7cc62e5f5fb9",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "optcggg-9th-zoronoa8-magic-omen-s-zagreb-regionals",
+      "href": "/decklists/gb-luffy/optcggg-9th-zoronoa8-magic-omen-s-zagreb-regionals.html",
+      "title": "Zoronoa8 - Magic Omen's Zagreb Regionals",
+      "subtitle": "Public OPTCG.GG list · Magic Omen's Zagreb Regionals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/ba51924e-bdd8-4d45-be8b-a840dd2218f3",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-g79bb2",
+      "href": "/decklists/gb-luffy/tcgportal-2026-08-23-g79bb2.html",
+      "title": "緑青ルフィ フラッグシップバトル winner - シーガル嶋北店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtazim3l001tju04png79bb2",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-fg4rrm",
+      "href": "/decklists/gb-luffy/tcgportal-2026-08-16-fg4rrm.html",
+      "title": "緑青ルフィ ONEPIECEカードゲーム エクストラチャンピオンシップ26-27 Season 1 予選大会(京都会場)​ winner - 京都府",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1qoznc001pl205g6fg4rrm",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-tsutaya-trading-card-g2ga78",
+      "href": "/decklists/gb-luffy/tcgportal-2026-08-16-tsutaya-trading-card-g2ga78.html",
+      "title": "緑青ルフィ エクストラグランドバトル winner - TSUTAYA Trading Card 戸塚",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1p0ndp003il104nng2ga78",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-5g6bst",
+      "href": "/decklists/gb-luffy/tcgportal-2026-08-15-5g6bst.html",
+      "title": "緑青ルフィ エクストラグランドバトル winner - カードショップ彩々 国分店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1n2qjm001rl404zr5g6bst",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ],
   "OP14-080": [
@@ -2006,6 +3653,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/moria-op17-east-cardshop-sep06-tgumi545/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "opdeck-moria-op17-west-geeklogia32-sep02-alberto",
+      "href": "/decklists/gecko-moria/opdeck-moria-op17-west-geeklogia32-sep02-alberto.html",
+      "title": "Gecko Moria (Format OP17) Standard Battle 4th Place",
+      "subtitle": "GeekLogia(32) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/moria-op17-west-geeklogia32-sep02-alberto/",
+      "kind": "web",
+      "date": "2026-09-02"
     }
   ],
   "OP16-079": [
@@ -2017,6 +3673,195 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-tak-games-sep06-allen/",
       "kind": "web",
       "date": "2026-09-06"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-bookoff-s9zbl6",
+      "href": "/decklists/yamato/tcgportal-2026-08-23-bookoff-s9zbl6.html",
+      "title": "黒ヤマト フラッグシップバトル winner - BOOKOFF チャチャタウン小倉店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtayq9nl001rjq04cjs9zbl6",
+      "kind": "web",
+      "date": "2026-08-23"
+    }
+  ],
+  "OP16-080": [
+    {
+      "slug": "optcggg-7th-flame-flame-fruit-coliseum-europe-block-a",
+      "href": "/decklists/blackbeard/optcggg-7th-flame-flame-fruit-coliseum-europe-block-a.html",
+      "title": "(⌐■_■) - Flame Flame Fruit Coliseum Europe Block A",
+      "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04",
+      "source_url": "https://www.optcg.gg/deck-lists/097a16a5-b205-4d9c-b2e2-f86e9a1f9e4c",
+      "kind": "web",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "optcggg-1th-kevin-l-magic-omen-s-zagreb-regionals",
+      "href": "/decklists/blackbeard/optcggg-1th-kevin-l-magic-omen-s-zagreb-regionals.html",
+      "title": "Kevin L - Magic Omen's Zagreb Regionals",
+      "subtitle": "Public OPTCG.GG list · Magic Omen's Zagreb Regionals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/96fbabcd-a4c8-4c17-844b-c740e3e31f2c",
+      "kind": "web",
+      "date": "2026-08-16"
+    },
+    {
+      "slug": "tcgportal-2026-08-23-tsutaya-x3gobc",
+      "href": "/decklists/blackbeard/tcgportal-2026-08-23-tsutaya-x3gobc.html",
+      "title": "黒黄ティーチ エクストラグランドバトル winner - TSUTAYA 出雲店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtazw9qn004vl20427x3gobc",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-4mtqtd",
+      "href": "/decklists/blackbeard/tcgportal-2026-08-16-4mtqtd.html",
+      "title": "黒黄ティーチ フラッグシップバトル winner - バトロコミニ横浜鶴ヶ峰店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1p97i100asla044u4mtqtd",
+      "kind": "web",
+      "date": "2026-08-16"
+    }
+  ],
+  "OP05-002": [
+    {
+      "slug": "optcggg-7th-tim-elder-ikailacup-op17-2",
+      "href": "/decklists/belo-betty/optcggg-7th-tim-elder-ikailacup-op17-2.html",
+      "title": "Tim Elder - iKailaCup OP17 #2",
+      "subtitle": "Public OPTCG.GG list · iKailaCup OP17 #2 · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/6bfa4a85-e26c-4b1f-8d0f-43741db2a492",
+      "kind": "web",
+      "date": "2026-08-31"
+    }
+  ],
+  "OP12-081": [
+    {
+      "slug": "opdeck-koala-op17-east-cardshop-sep09-jack-jun",
+      "href": "/decklists/koala/opdeck-koala-op17-east-cardshop-sep09-jack-jun.html",
+      "title": "Koala (Format OP17) Standard Battle",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/koala-op17-east-cardshop-sep09-jack-jun/",
+      "kind": "web",
+      "date": "2026-09-09"
+    }
+  ],
+  "OP05-060": [
+    {
+      "slug": "opdeck-luffy-op17-west-nedzvault-sep10-zach-s",
+      "href": "/decklists/op05-luffy/opdeck-luffy-op17-west-nedzvault-sep10-zach-s.html",
+      "title": "Monkey.D.Luffy (Format OP17) Standard Battle",
+      "subtitle": "Nedzvault · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-nedzvault-sep10-zach-s/",
+      "kind": "web",
+      "date": "2026-09-10"
+    }
+  ],
+  "OP12-061": [
+    {
+      "slug": "optcggg-6th-chudge-ppg-games-orlando-regionals",
+      "href": "/decklists/rosinante/optcggg-6th-chudge-ppg-games-orlando-regionals.html",
+      "title": "Chudge - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/29b24434-5e1c-4272-b8ff-e45c73af9456",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-12th-dustin-ppg-games-orlando-regionals",
+      "href": "/decklists/rosinante/optcggg-12th-dustin-ppg-games-orlando-regionals.html",
+      "title": "Dustin - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/5fa9ab6b-ce04-44bc-bf2a-3514eb8ea821",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-2th-mage-magic-omen-s-zagreb-regionals",
+      "href": "/decklists/rosinante/optcggg-2th-mage-magic-omen-s-zagreb-regionals.html",
+      "title": "MaGe - Magic Omen's Zagreb Regionals",
+      "subtitle": "Public OPTCG.GG list · Magic Omen's Zagreb Regionals · 2026-08-16",
+      "source_url": "https://www.optcg.gg/deck-lists/61fa1d86-6583-47e6-90e9-3f45b7577e93",
+      "kind": "web",
+      "date": "2026-08-16"
+    }
+  ],
+  "OP11-062": [
+    {
+      "slug": "optcggg-8th-4nem-ppg-games-orlando-regionals",
+      "href": "/decklists/charlotte-katakuri/optcggg-8th-4nem-ppg-games-orlando-regionals.html",
+      "title": "4nem - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/eb05e02c-ec42-4783-a9a8-bd555f575dc8",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-15th-jovan-vagachi-ppg-games-orlando-regionals",
+      "href": "/decklists/charlotte-katakuri/optcggg-15th-jovan-vagachi-ppg-games-orlando-regionals.html",
+      "title": "Jovan Vagachi - PPG Games Orlando Regionals",
+      "subtitle": "Public OPTCG.GG list · PPG Games Orlando Regionals · 2026-08-31",
+      "source_url": "https://www.optcg.gg/deck-lists/7d2f059a-ddfb-45b5-94b7-46d4ddf3deec",
+      "kind": "web",
+      "date": "2026-08-31"
+    },
+    {
+      "slug": "optcggg-8th-allen-tak-games-auckland-regionals",
+      "href": "/decklists/charlotte-katakuri/optcggg-8th-allen-tak-games-auckland-regionals.html",
+      "title": "Allen - TAK Games Auckland Regionals",
+      "subtitle": "Public OPTCG.GG list · TAK Games Auckland Regionals · 2026-08-29",
+      "source_url": "https://www.optcg.gg/deck-lists/2d02b004-72cb-4185-a0a1-e054278e6abb",
+      "kind": "web",
+      "date": "2026-08-29"
+    },
+    {
+      "slug": "tcgportal-2026-08-15-55-y26yu8",
+      "href": "/decklists/charlotte-katakuri/tcgportal-2026-08-15-55-y26yu8.html",
+      "title": "紫カタクリ スタンダードバトル winner - トレカプラザ55 西尾店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1nbkbz0038ju049iy26yu8",
+      "kind": "web",
+      "date": "2026-08-15"
+    }
+  ],
+  "OP12-040": [
+    {
+      "slug": "tcgportal-2026-08-23-0k4y7c",
+      "href": "/decklists/kuzan/tcgportal-2026-08-23-0k4y7c.html",
+      "title": "青クザン フラッグシップバトル winner - 宝島イオンモール三川店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-23",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmtazet8t0005jy04h20k4y7c",
+      "kind": "web",
+      "date": "2026-08-23"
+    },
+    {
+      "slug": "tcgportal-2026-08-16-wiz-r94qig",
+      "href": "/decklists/kuzan/tcgportal-2026-08-16-wiz-r94qig.html",
+      "title": "青クザン フラッグシップバトル winner - カードショップWiZ",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1pxt9x003fjs04jrr94qig",
+      "kind": "web",
+      "date": "2026-08-16"
+    }
+  ],
+  "OP15-002": [
+    {
+      "slug": "tcgportal-2026-08-16-7rtvw6",
+      "href": "/decklists/lucy/tcgportal-2026-08-16-7rtvw6.html",
+      "title": "赤青ルーシー エクストラグランドバトル winner - 宝島 長久手店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-16",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1qgg45006dl504k97rtvw6",
+      "kind": "web",
+      "date": "2026-08-16"
+    }
+  ],
+  "OP10-099": [
+    {
+      "slug": "tcgportal-2026-08-15-tc4xqe",
+      "href": "/decklists/eustass-kid/tcgportal-2026-08-15-tc4xqe.html",
+      "title": "黄キッド スタンダードバトル winner - カードキングダム溝の口店",
+      "subtitle": "Public TCG PORTAL list · 2026-08-15",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmt1mrejs001jju04qhtc4xqe",
+      "kind": "web",
+      "date": "2026-08-15"
     }
   ]
 }
