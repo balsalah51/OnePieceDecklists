@@ -279,28 +279,58 @@ def collect_home_lists() -> list[dict]:
     return rows
 
 
+def source_bucket(row: dict) -> str:
+    key = f"{row.get('href') or ''} {row.get('slug') or ''}"
+    if "optcggg-" in key:
+        return "optcggg"
+    if "opdeck-" in key:
+        return "opdeck"
+    if "tcgportal-" in key:
+        return "tcgportal"
+    if (row.get("kind") or "") in {"web", "youtube", "x", "reddit"}:
+        return "community"
+    return "tournament"
+
+
+def is_community_list(row: dict) -> bool:
+    return source_bucket(row) != "tournament"
+
+
 def pick_recent_lists(rows: list[dict], limit: int = RECENT_LIMIT) -> list[dict]:
-    by_leader: dict[str, list[dict]] = {}
-    for row in rows:
-        by_leader.setdefault(row["leader"]["id"], []).append(row)
-    for lid, items in by_leader.items():
-        items.sort(key=gen.date_sort_key, reverse=True)
-    picked = []
-    seen = set()
-    for leader in gen.LEADERS:
-        items = by_leader.get(leader["id"]) or []
-        if not items:
-            continue
-        first = items[0]
-        picked.append(first)
-        seen.add(first["href"])
-    rest = [row for row in rows if row["href"] not in seen]
-    rest.sort(key=gen.date_sort_key, reverse=True)
-    for row in rest:
-        picked.append(row)
-        if len(picked) >= limit:
+    """Round-robin public sources so Limitless does not own the homepage."""
+    buckets: dict[str, list[dict]] = {
+        "opdeck": [],
+        "tournament": [],
+        "optcggg": [],
+        "tcgportal": [],
+        "community": [],
+    }
+    for row in sorted(rows, key=gen.date_sort_key, reverse=True):
+        buckets[source_bucket(row)].append(row)
+    order = [name for name in ("opdeck", "tournament", "optcggg", "tcgportal", "community") if buckets[name]]
+    index = {name: 0 for name in order}
+    picked: list[dict] = []
+    seen: set[str] = set()
+    while len(picked) < limit:
+        progressed = False
+        for name in order:
+            i = index[name]
+            bucket = buckets[name]
+            while i < len(bucket):
+                row = bucket[i]
+                i += 1
+                href = row.get("href") or ""
+                if not href or href in seen:
+                    continue
+                seen.add(href)
+                picked.append(row)
+                progressed = True
+                break
+            index[name] = i
+            if len(picked) >= limit:
+                break
+        if not progressed:
             break
-    picked.sort(key=gen.date_sort_key, reverse=True)
     return picked[:limit]
 
 
@@ -428,7 +458,7 @@ def render_home_body() -> str:
             <h3>Recent lists</h3>
             <div class="muted">{len(recent)} lists</div>
           </div>
-          <p class="muted">Newest first. At least one list from each leader, then the latest results.</p>
+          <p class="muted">Newest first. OPTCG.GG, OPDeckGuide, TCG PORTAL, and other public lists mixed with tournament results.</p>
           <ul class="recent-list" aria-label="Recent decklists">
 {recent_rows_html(recent)}
           </ul>
