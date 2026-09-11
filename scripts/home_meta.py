@@ -299,52 +299,24 @@ def pie_html(pie: dict) -> str:
             start, end = row["start"], row["start"] + row["pct"]
         stops.append(f"{row['fill']} {start:.2f}% {end:.2f}%")
     gradient = ", ".join(stops)
-    right, left = [], []
-    for row in slices:
-        if row["mid"] <= 50:
-            right.append(row)
-        else:
-            left.append(row)
-    right.sort(key=lambda r: r["mid"])
-    left.sort(key=lambda r: r["mid"], reverse=True)
-
-    def side_html(rows: list[dict]) -> str:
-        labs = []
-        for row in rows:
-            if row.get("image"):
-                face = (
-                    f'<img class="meta-pie-face" src="{html.escape(row["image"])}" '
-                    f'alt="" width="44" height="44" />'
-                )
-            else:
-                face = '<span class="meta-pie-face meta-pie-face-empty" aria-hidden="true"></span>'
-            labs.append(
-                f"""              <a class="meta-pie-lab" style="--slice:{html.escape(row['fill'])}" href="{html.escape(row['href'])}">
-                {face}
-                <span class="meta-pie-lab-copy">
-                  <span class="meta-pie-lab-name">{html.escape(row["name"])}</span>
-                  <span class="meta-pie-lab-pct">{html.escape(_pct_label(row["pct"]))}</span>
-                </span>
-              </a>"""
-            )
-        return "\n".join(labs)
-
     legend = []
     for row in slices:
         if row.get("image"):
             face = (
                 f'<img class="meta-pie-face" src="{html.escape(row["image"])}" '
-                f'alt="" width="36" height="36" />'
+                f'alt="" width="48" height="48" />'
             )
         else:
             face = '<span class="meta-pie-face meta-pie-face-empty" aria-hidden="true"></span>'
         legend.append(
-            f"""            <li>
+            f"""            <li style="--slice:{html.escape(row["fill"])}">
               <span class="meta-pie-swatch" style="background:{html.escape(row["fill"])}"></span>
               {face}
-              <a href="{html.escape(row["href"])}">{html.escape(row["name"])}</a>
+              <span class="meta-pie-legend-copy">
+                <a href="{html.escape(row["href"])}">{html.escape(row["name"])}</a>
+                <span class="meta-pie-legend-tier">{_tier_label(row)}</span>
+              </span>
               <span class="meta-pie-legend-pct">{html.escape(_pct_label(row["pct"]))}</span>
-              <span class="meta-pie-legend-tier">{_tier_label(row)}</span>
             </li>"""
         )
     return f"""        <section class="card home-panel home-meta-pie" id="meta-share">
@@ -353,24 +325,18 @@ def pie_html(pie: dict) -> str:
             <h3>{html.escape(latest)} lists</h3>
             <a href="/tier-list.html">Tier list →</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. Names sit in columns beside the chart. The legend adds each leader's tier score.</p>
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. Names, percents, and tier scores sit in the list beside the chart, never on the slices.</p>
           <div class="meta-pie-board">
-            <div class="meta-pie-side meta-pie-side-left">
-{side_html(left)}
-            </div>
             <div class="meta-pie-disk" style="background:conic-gradient({gradient})">
               <div class="meta-pie-hole">
                 <strong>{html.escape(latest)}</strong>
                 <span>{matched} lists</span>
               </div>
             </div>
-            <div class="meta-pie-side meta-pie-side-right">
-{side_html(right)}
-            </div>
-          </div>
-          <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
+            <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
 {chr(10).join(legend)}
-          </ul>
+            </ul>
+          </div>
         </section>
 """
 
