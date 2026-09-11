@@ -243,12 +243,28 @@
     }
   }
 
+  function initRecentMore() {
+    var btn = document.querySelector("[data-recent-more]");
+    if (!btn || btn.dataset.bound) return;
+    btn.dataset.bound = "1";
+    btn.addEventListener("click", function () {
+      document.querySelectorAll("li.recent-more").forEach(function (li) {
+        li.hidden = false;
+      });
+      var count = document.querySelector("#recent .section-title .muted");
+      var visible = document.querySelectorAll("#recent .recent-list > li").length;
+      if (count) count.textContent = visible + " lists";
+      btn.hidden = true;
+    });
+  }
+
   function ready() {
     initTheme();
     ensureCopyButtons();
     initCopy();
     initFilters();
     initSiteSearch();
+    initRecentMore();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready);
   else ready();

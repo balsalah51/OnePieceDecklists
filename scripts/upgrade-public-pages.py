@@ -20,10 +20,14 @@ aspec = importlib.util.spec_from_file_location("analysis", "/workspace/scripts/a
 ana = importlib.util.module_from_spec(aspec)
 aspec.loader.exec_module(ana)
 
+hspec = importlib.util.spec_from_file_location("homemeta", "/workspace/scripts/home_meta.py")
+home_meta = importlib.util.module_from_spec(hspec)
+hspec.loader.exec_module(home_meta)
+
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro2"
-JS_NEW = "/js/site.js?v=theme"
+CSS_NEW = "/css/site.css?v=home-pro3"
+JS_NEW = "/js/site.js?v=home-meta"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -228,7 +232,7 @@ def leader_list_html(rows: list[tuple[dict, int]]) -> str:
     return "\n".join(items)
 
 
-RECENT_LIMIT = 100
+RECENT_LIMIT = home_meta.HOME_RECENT_VISIBLE + home_meta.HOME_RECENT_EXTRA
 
 
 def collect_home_lists() -> list[dict]:
@@ -341,9 +345,9 @@ def pick_recent_lists(rows: list[dict], limit: int = RECENT_LIMIT) -> list[dict]
     return picked[:limit]
 
 
-def recent_rows_html(rows: list[dict]) -> str:
+def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
     items = []
-    for entry in rows:
+    for i, entry in enumerate(rows):
         leader = entry["leader"]
         title, _subtitle = gen.list_heading(entry, leader["name"])
         event = entry.get("tournament_name") or entry.get("subtitle") or ""
@@ -356,8 +360,11 @@ def recent_rows_html(rows: list[dict]) -> str:
         meta = place_html + event_meta
         if not meta:
             meta = html.escape(leader["name"])
+        extra_attrs = ""
+        if hide_after is not None and i >= hide_after:
+            extra_attrs = ' class="recent-more" hidden'
         items.append(
-            f"""            <li>
+            f"""            <li{extra_attrs}>
               <a class="recent-item {html.escape(leader['color'])}" href="{html.escape(entry['href'])}">
                 <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}" />
                 <div class="recent-copy">
@@ -372,9 +379,39 @@ def recent_rows_html(rows: list[dict]) -> str:
     return "\n".join(items)
 
 
-def render_home_body() -> str:
-    cards = leader_cards_html()
-    recent = pick_recent_lists(collect_home_lists())
+def build_home_data() -> dict:
+    rows = collect_home_lists()
+    leaders = home_meta.ranked_leaders(rows)
+    pie = home_meta.pie_slices(rows)
+    home_meta.save_meta(leaders, pie)
+    return {
+        "rows": rows,
+        "leaders": leaders,
+        "pie": pie,
+        "recent_home": home_meta.newest_rows(rows, RECENT_LIMIT),
+        "recent_page": home_meta.newest_rows(rows, home_meta.RECENT_PAGE_LIMIT),
+    }
+
+
+def render_home_body(data: dict | None = None) -> str:
+    data = data or build_home_data()
+    leaders = data["leaders"]
+    pie = data["pie"]
+    cards = home_meta.leader_cards_html(leaders)
+    pie_block = home_meta.pie_html(pie)
+    recent = data["recent_home"]
+    visible = home_meta.HOME_RECENT_VISIBLE
+    extra_n = max(0, len(recent) - visible)
+    count_label = f"{visible} of {len(recent)}" if extra_n else f"{len(recent)} lists"
+    if extra_n:
+        more_btn = f"""          <div class="recent-more-row">
+            <button type="button" class="recent-more-btn" data-recent-more>Show {extra_n} more</button>
+            <a class="recent-all-link" href="/recent.html">All recent lists →</a>
+          </div>"""
+    else:
+        more_btn = """          <div class="recent-more-row">
+            <a class="recent-all-link" href="/recent.html">All recent lists →</a>
+          </div>"""
     return f"""        <!-- HOME_BODY -->
         <section class="home-splash" aria-label="One Piece Decklists">
           <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" width="1400" height="636" fetchpriority="high" decoding="async" />
@@ -437,7 +474,7 @@ def render_home_body() -> str:
               </svg>
             </span>
             <span class="home-big-title">Leaders</span>
-            <span class="home-big-note">Hubs for every leader on OPDL</span>
+            <span class="home-big-note">Top ten from the newest 200 lists</span>
           </a>
           <a class="home-big home-big-shop" href="/shop/">
             <span class="home-big-icon" aria-hidden="true">
@@ -460,19 +497,20 @@ def render_home_body() -> str:
           </a>
         </nav>
 
+{pie_block}
         <section class="home-leaders-flow" id="leaders">
           <div class="home-leaders-intro">
-            <p class="home-leaders-kicker">Browse</p>
+            <p class="home-leaders-kicker">Popular now</p>
             <div class="home-leaders-intro-row">
               <div>
                 <h3>Leaders</h3>
-                <p>Open a hub for lists, analysis, and recent results. Character names live in the <a href="/guides/">guides</a>.</p>
+                <p>The ten most played leaders in the newest 200 lists on this site. Rankings move when new lists land.</p>
               </div>
               <a href="/decklists/op17.html">All leader pages →</a>
             </div>
           </div>
           <div class="card home-panel home-leaders-grid">
-            <div class="leader-cards home-cards" aria-label="All leader card pictures">
+            <div class="leader-cards home-cards" aria-label="Popular leader card pictures">
 {cards}
             </div>
           </div>
@@ -482,9 +520,9 @@ def render_home_body() -> str:
           <p class="home-leaders-kicker">Results</p>
           <div class="section-title">
             <h3>Recent lists</h3>
-            <div class="muted">{len(recent)} lists</div>
+            <div class="muted">{count_label}</div>
           </div>
-          <p class="muted home-recent-lede">Newest first. OPDeckGuide, OPTCG.GG, TCG PORTAL, OnePieceDB, and other public lists mixed with tournament results.</p>
+          <p class="muted home-recent-lede">Newest first. Show more on this page, or open the full recent list.</p>
           <div class="recent-cols" aria-hidden="true">
             <span></span>
             <span>List</span>
@@ -492,8 +530,9 @@ def render_home_body() -> str:
             <span>Date</span>
           </div>
           <ul class="recent-list" aria-label="Recent decklists">
-{recent_rows_html(recent)}
+{recent_rows_html(recent, hide_after=visible)}
           </ul>
+{more_btn}
         </section>
         <!-- /HOME_BODY -->"""
 
@@ -514,7 +553,8 @@ def leader_cards_html() -> str:
 def patch_home() -> None:
     path = ROOT / "index.html"
     text = path.read_text()
-    body = render_home_body()
+    data = build_home_data()
+    body = render_home_body(data)
     text = text.replace(
         '    <main class="single">\n      <div class="card hero" role="main">\n',
         '    <main class="single home" role="main">\n',
@@ -549,10 +589,23 @@ def patch_home() -> None:
         '        <a href="#recent">Recent lists</a>\n        <a href="#leaders">Leaders</a>',
     )
     text = patch_nav_and_assets(text)
+    text = home_meta.patch_home_jsonld(text, data["leaders"])
     if 'class="wrap wrap-home"' not in text:
         text = text.replace('<div class="wrap">', '<div class="wrap wrap-home">', 1)
     path.write_text(text)
-    print("home leaders", len(gen.LEADERS), "recent", RECENT_LIMIT)
+    home_meta.write_recent_page(
+        recent_rows_html(data["recent_page"]),
+        len(data["recent_page"]),
+    )
+    print(
+        "home leaders",
+        len(data["leaders"]),
+        "recent",
+        home_meta.HOME_RECENT_VISIBLE,
+        "pie",
+        data["pie"].get("set"),
+        data["pie"].get("matched"),
+    )
 
 
 def patch_op17() -> None:

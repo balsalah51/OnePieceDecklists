@@ -16,8 +16,8 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "home-pro2"
-JS_VER = "theme"
+CSS_VER = "home-pro3"
+JS_VER = "home-meta"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
 )
@@ -526,7 +526,7 @@ def apply_theme_chrome(text: str) -> str:
 
 
 def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
-    recent = "#recent" if home else "/#recent"
+    recent = "#recent" if home else "/recent.html"
     leaders = "#leaders" if home else "/decklists/op17.html"
     items = [
         ("/tier-list.html", "Tier List", "tier"),

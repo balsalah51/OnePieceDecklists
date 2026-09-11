@@ -1,0 +1,113 @@
+{
+  "window": 200,
+  "home_leaders": [
+    {
+      "id": "OP14-020",
+      "name": "Mihawk",
+      "count": 31
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "count": 27
+    },
+    {
+      "id": "OP09-062",
+      "name": "Nico Robin",
+      "count": 24
+    },
+    {
+      "id": "OP17-058",
+      "name": "Kaido",
+      "count": 20
+    },
+    {
+      "id": "OP17-039",
+      "name": "Rocks D. Xebec",
+      "count": 16
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 13
+    },
+    {
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "count": 11
+    },
+    {
+      "id": "OP15-058",
+      "name": "Enel",
+      "count": 8
+    },
+    {
+      "id": "OP16-001",
+      "name": "Portgas D. Ace",
+      "count": 8
+    },
+    {
+      "id": "OP17-099",
+      "name": "Charlotte Linlin",
+      "count": 6
+    }
+  ],
+  "set": "OP17",
+  "pie_lists": 350,
+  "pie": [
+    {
+      "id": "OP14-020",
+      "name": "Mihawk",
+      "count": 71,
+      "pct": 20.3
+    },
+    {
+      "id": "OP09-062",
+      "name": "Nico Robin",
+      "count": 64,
+      "pct": 18.3
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "count": 39,
+      "pct": 11.1
+    },
+    {
+      "id": "OP17-058",
+      "name": "Kaido",
+      "count": 31,
+      "pct": 8.9
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 30,
+      "pct": 8.6
+    },
+    {
+      "id": "OP17-039",
+      "name": "Rocks D. Xebec",
+      "count": 23,
+      "pct": 6.6
+    },
+    {
+      "id": "OP16-001",
+      "name": "Portgas D. Ace",
+      "count": 19,
+      "pct": 5.4
+    },
+    {
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "count": 13,
+      "pct": 3.7
+    },
+    {
+      "id": "",
+      "name": "Other",
+      "count": 60,
+      "pct": 17.1
+    }
+  ]
+}

@@ -62,6 +62,7 @@ CORE_RELS = {
     "format.html",
     "privacy.html",
     "search.html",
+    "recent.html",
     "tier-list.html",
     "decklists/op17.html",
 }
