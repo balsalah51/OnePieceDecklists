@@ -26,8 +26,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro4"
-JS_NEW = "/js/site.js?v=home-meta"
+CSS_NEW = "/css/site.css?v=home-pro6"
+JS_NEW = "/js/site.js?v=home-splash"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -413,18 +413,53 @@ def render_home_body(data: dict | None = None) -> str:
             <a class="recent-all-link" href="/recent.html">All recent lists →</a>
           </div>"""
     return f"""        <!-- HOME_BODY -->
-        <section class="home-splash" aria-label="One Piece Decklists">
-          <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" width="1400" height="636" fetchpriority="high" decoding="async" />
-          <div class="home-hero-copy">
-            <p class="home-hero-kicker">One Piece Card Game</p>
-            <h2>Tournament decklists</h2>
-            <p class="home-hero-lede">Complete 50-card OPTCG lists, leader hubs, and a weekly meta snapshot.</p>
-            <div class="home-hero-actions">
-              <a class="home-hero-btn" href="#home-search">Search lists</a>
-              <a class="home-hero-btn home-hero-btn-ghost" href="#leaders">Browse leaders</a>
+        <section class="home-splash" id="home-splash" aria-label="One Piece Decklists banners" style="--splash-i:0">
+          <div class="home-splash-viewport">
+            <div class="home-splash-track">
+              <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Rocks D. Xebec, Nico Robin, and Mihawk" width="1920" height="960" fetchpriority="high" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Monkey D. Luffy" width="1920" height="960" decoding="async" />
             </div>
           </div>
+          <div class="home-splash-fade" aria-hidden="true"></div>
+          <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
+            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin leader card" width="300" height="419" />
+            <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
+          </a>
+          <div class="home-splash-nav">
+            <button type="button" data-splash-prev aria-label="Previous banner">‹</button>
+            <button type="button" data-splash-next aria-label="Next banner">›</button>
+          </div>
+          <div class="home-splash-dots" role="tablist" aria-label="Choose banner">
+            <button type="button" data-splash-dot="0" aria-label="Banner 1" aria-current="true"></button>
+            <button type="button" data-splash-dot="1" aria-label="Banner 2"></button>
+            <button type="button" data-splash-dot="2" aria-label="Banner 3"></button>
+          </div>
         </section>
+        <script>
+        (function(){{
+          var root=document.getElementById("home-splash");
+          if(!root) return;
+          var faces=[
+            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp"}},
+            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp"}},
+            {{name:"Mihawk",href:"/decklists/mihawk.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp"}}
+          ];
+          var i=Math.floor(Math.random()*3);
+          var f=faces[Math.floor(Math.random()*3)];
+          root.style.setProperty("--splash-i", String(i));
+          root.setAttribute("data-splash-i", String(i));
+          var a=root.querySelector("[data-splash-card]");
+          var img=a&&a.querySelector("img");
+          var lab=root.querySelector("[data-splash-card-label]");
+          if(a){{a.href=f.href;a.setAttribute("aria-label", f.name+" lists");}}
+          if(img){{img.src=f.img;img.alt=f.name+" leader card";}}
+          if(lab) lab.textContent=f.name+" lists";
+          root.querySelectorAll("[data-splash-dot]").forEach(function(d,k){{
+            d.setAttribute("aria-current", k===i?"true":"false");
+          }});
+        }})();
+        </script>
 
         <form class="site-search home-search" id="home-search" method="get" action="/search.html" role="search">
           <label class="site-search-label" for="home-q">Search OPTCG decklists</label>

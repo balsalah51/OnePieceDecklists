@@ -258,6 +258,53 @@
     });
   }
 
+  function initHomeSplash() {
+    var root = document.getElementById("home-splash");
+    if (!root || root.dataset.bound) return;
+    root.dataset.bound = "1";
+    var count = root.querySelectorAll(".home-splash-bg").length;
+    if (!count) return;
+    var index = parseInt(root.getAttribute("data-splash-i") || "0", 10);
+    if (isNaN(index)) index = 0;
+    var timer = null;
+
+    function setIndex(next) {
+      index = ((next % count) + count) % count;
+      root.style.setProperty("--splash-i", String(index));
+      root.setAttribute("data-splash-i", String(index));
+      root.querySelectorAll("[data-splash-dot]").forEach(function (dot, k) {
+        dot.setAttribute("aria-current", k === index ? "true" : "false");
+      });
+    }
+
+    function play() {
+      stop();
+      timer = setInterval(function () { setIndex(index + 1); }, 7000);
+    }
+
+    function stop() {
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    var prev = root.querySelector("[data-splash-prev]");
+    var next = root.querySelector("[data-splash-next]");
+    if (prev) prev.addEventListener("click", function () { setIndex(index - 1); play(); });
+    if (next) next.addEventListener("click", function () { setIndex(index + 1); play(); });
+    root.querySelectorAll("[data-splash-dot]").forEach(function (dot) {
+      dot.addEventListener("click", function () {
+        setIndex(parseInt(dot.getAttribute("data-splash-dot") || "0", 10));
+        play();
+      });
+    });
+    root.addEventListener("mouseenter", stop);
+    root.addEventListener("mouseleave", play);
+    root.addEventListener("focusin", stop);
+    root.addEventListener("focusout", play);
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    play();
+  }
+
   function ready() {
     initTheme();
     ensureCopyButtons();
@@ -265,6 +312,7 @@
     initFilters();
     initSiteSearch();
     initRecentMore();
+    initHomeSplash();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready);
   else ready();
