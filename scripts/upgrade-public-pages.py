@@ -22,7 +22,7 @@ aspec.loader.exec_module(ana)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro"
+CSS_NEW = "/css/site.css?v=home-pro2"
 JS_NEW = "/js/site.js?v=theme"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
