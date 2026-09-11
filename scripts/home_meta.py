@@ -22,6 +22,7 @@ RECENT_PAGE_LIMIT = 250
 PIE_SCAN_LIMIT = 400
 PIE_MAX_SLICES = 8
 PIE_SMALL_PCT = 6.5
+PIE_WIN_MIN_LISTS = 15
 META_PATH = ROOT / "data/home-meta.json"
 
 TILE = {
@@ -157,6 +158,16 @@ def detect_latest_set(rows: list[dict]) -> str:
     return f"OP{best:02d}"
 
 
+def _placing(row: dict) -> int | None:
+    placing = row.get("placing")
+    if placing is None or placing == "":
+        return None
+    try:
+        return int(placing)
+    except (TypeError, ValueError):
+        return None
+
+
 def pie_slices(rows: list[dict], latest_set: str | None = None) -> dict:
     sample = newest_rows(rows, PIE_SCAN_LIMIT)
     cards_by_href: dict[str, list[str]] = {}
@@ -174,6 +185,8 @@ def pie_slices(rows: list[dict], latest_set: str | None = None) -> dict:
     latest_set = latest_set or f"OP{best:02d}"
     prefix = latest_set + "-"
     counts: Counter[str] = Counter()
+    placed: Counter[str] = Counter()
+    firsts: Counter[str] = Counter()
     by_id = {}
     scanned = 0
     matched = 0
@@ -191,6 +204,11 @@ def pie_slices(rows: list[dict], latest_set: str | None = None) -> dict:
             continue
         matched += 1
         counts[lid] += 1
+        placing = _placing(row)
+        if placing is not None:
+            placed[lid] += 1
+            if placing == 1:
+                firsts[lid] += 1
         by_id[lid] = leader
     total = sum(counts.values()) or 1
     ranked = counts.most_common()
@@ -243,12 +261,46 @@ def pie_slices(rows: list[dict], latest_set: str | None = None) -> dict:
                 "score": None,
             }
         )
+    hole = None
+    best_key = None
+    for lid, n_placed in placed.items():
+        if n_placed < PIE_WIN_MIN_LISTS:
+            continue
+        wins = firsts[lid]
+        rate = wins / n_placed
+        key = (rate, wins, n_placed)
+        if best_key is None or key > best_key:
+            best_key = key
+            leader = by_id[lid]
+            hole = {
+                "id": lid,
+                "name": leader["name"],
+                "href": "/" + leader["page"],
+                "image": gen.card_image_url(lid),
+                "wins": wins,
+                "lists": n_placed,
+                "win_pct": 100.0 * rate,
+            }
+    if hole is None and keep:
+        lid, n = keep[0]
+        leader = by_id[lid]
+        n_placed = placed[lid] or n
+        hole = {
+            "id": lid,
+            "name": leader["name"],
+            "href": "/" + leader["page"],
+            "image": gen.card_image_url(lid),
+            "wins": firsts[lid],
+            "lists": n_placed,
+            "win_pct": 100.0 * firsts[lid] / n_placed if n_placed else 0.0,
+        }
     return {
         "set": latest_set,
         "scanned": scanned,
         "matched": matched,
         "total": matched,
         "slices": slices,
+        "hole": hole,
     }
 
 
@@ -264,6 +316,17 @@ def save_meta(leaders: list[dict], pie: dict, window: int = POPULAR_WINDOW) -> N
             {"id": s["id"], "name": s["name"], "count": s["count"], "pct": round(s["pct"], 1)}
             for s in pie.get("slices") or []
         ],
+        "hole": (
+            {
+                "id": pie["hole"]["id"],
+                "name": pie["hole"]["name"],
+                "wins": pie["hole"]["wins"],
+                "lists": pie["hole"]["lists"],
+                "win_pct": round(pie["hole"]["win_pct"], 1),
+            }
+            if pie.get("hole")
+            else None
+        ),
     }
     META_PATH.write_text(json.dumps(payload, indent=2) + "\n")
 
@@ -299,6 +362,28 @@ def pie_html(pie: dict) -> str:
             start, end = row["start"], row["start"] + row["pct"]
         stops.append(f"{row['fill']} {start:.2f}% {end:.2f}%")
     gradient = ", ".join(stops)
+    hole = pie.get("hole") or {}
+    if hole.get("image"):
+        hole_inner = (
+            f'<img class="meta-pie-hole-face" src="{html.escape(hole["image"])}" '
+            f'alt="" width="220" height="220" />'
+            f'<span class="meta-pie-hole-copy">'
+            f'<strong>{html.escape(hole["name"])}</strong>'
+            f'<span>{html.escape(_pct_label(hole.get("win_pct") or 0))} win rate</span>'
+            f"</span>"
+        )
+        hole_html = (
+            f'<a class="meta-pie-hole" href="{html.escape(hole["href"])}" '
+            f'aria-label="{html.escape(hole["name"])}, highest first-place rate in this sample">'
+            f"{hole_inner}</a>"
+        )
+    else:
+        hole_html = (
+            f'<div class="meta-pie-hole">'
+            f"<strong>{html.escape(latest)}</strong>"
+            f"<span>{matched} lists</span>"
+            f"</div>"
+        )
     legend = []
     for row in slices:
         if row.get("image"):
@@ -325,13 +410,10 @@ def pie_html(pie: dict) -> str:
             <h3>{html.escape(latest)} lists</h3>
             <a href="/tier-list.html">Tier list →</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. Names, percents, and tier scores sit in the list beside the chart, never on the slices.</p>
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. The center is the leader with the highest first-place rate in this sample. Names, percents, and tier scores sit in the list beside the chart.</p>
           <div class="meta-pie-board">
             <div class="meta-pie-disk" style="background:conic-gradient({gradient})">
-              <div class="meta-pie-hole">
-                <strong>{html.escape(latest)}</strong>
-                <span>{matched} lists</span>
-              </div>
+              {hole_html}
             </div>
             <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
 {chr(10).join(legend)}
