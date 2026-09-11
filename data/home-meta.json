@@ -109,5 +109,12 @@
       "count": 60,
       "pct": 17.1
     }
-  ]
+  ],
+  "hole": {
+    "id": "OP14-020",
+    "name": "Mihawk",
+    "wins": 3,
+    "lists": 32,
+    "win_pct": 9.4
+  }
 }
