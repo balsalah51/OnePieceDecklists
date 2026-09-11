@@ -245,12 +245,12 @@ main.single{grid-template-columns:1fr}
 .home-meta-pie{margin-top:28px;padding:28px 26px 24px}
 .meta-pie-board{
   display:grid;grid-template-columns:minmax(280px,520px) minmax(260px,1fr);
-  gap:24px 32px;align-items:center;margin:20px 0 0
+  gap:24px 32px;align-items:center;margin:20px 0 8px
 }
 .meta-pie-disk{
   width:100%;max-width:520px;aspect-ratio:1;border-radius:50%;justify-self:center;
   box-shadow:0 0 0 8px var(--surface),0 0 0 11px var(--color-outline,#111),0 20px 40px rgba(16,22,26,.14);
-  position:relative
+  position:relative;overflow:visible
 }
 .meta-pie-hole{
   position:absolute;inset:22%;border-radius:50%;background:var(--surface);
