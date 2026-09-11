@@ -358,6 +358,36 @@ def scrape_weird(found: list[dict], seen: set[str]) -> None:
         time.sleep(0.12)
 
 
+UNIQUE_PAGE_HOSTS = {
+    "optcg.gg",
+    "www.optcg.gg",
+    "tcg-portal.jp",
+    "opdeckguide.com",
+    "www.opdeckguide.com",
+    "onepiecedb.io",
+    "play.limitlesstcg.com",
+    "mabitcg.com",
+    "mercardop.jp",
+    "cardkaizoku.com",
+}
+
+
+def source_host(url: str) -> str:
+    if "://" not in (url or ""):
+        return ""
+    return (url.split("/")[2] or "").lower()
+
+
+def existing_unique_urls(community: dict) -> set[str]:
+    urls: set[str] = set()
+    for rows in community.values():
+        for row in rows or []:
+            src = (row.get("source_url") or "").rstrip("/")
+            if src and source_host(src) in UNIQUE_PAGE_HOSTS:
+                urls.add(src)
+    return urls
+
+
 def write_lists(found: list[dict]) -> set[str]:
     if not found:
         return set()
@@ -378,11 +408,16 @@ def write_lists(found: list[dict]) -> set[str]:
     comm_path = ROOT / "data/community-decks.json"
     if comm_path.exists():
         community = json.loads(comm_path.read_text())
+    unique_urls = existing_unique_urls(community)
     touched = set()
     by_id = {L["id"]: L for L in gen.LEADERS}
     for item, counts in parsed:
         leader = by_id.get(item["leader"])
         if not leader:
+            continue
+        src = (item.get("source_url") or "").rstrip("/")
+        if src and source_host(src) in UNIQUE_PAGE_HOSTS and src in unique_urls:
+            log("exists url", src)
             continue
         out_dir = ROOT / leader["dir"]
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -421,6 +456,8 @@ def write_lists(found: list[dict]) -> set[str]:
             if item.get("date"):
                 row["date"] = item["date"]
             rows.append(row)
+        if src and source_host(src) in UNIQUE_PAGE_HOSTS:
+            unique_urls.add(src)
         touched.add(leader["id"])
         log("wrote", path)
     more.save_index(index)

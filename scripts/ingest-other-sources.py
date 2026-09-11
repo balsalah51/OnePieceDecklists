@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Host complete lists from sources that are not Limitless.
 
-OPTCG.GG (skips ChinoizeCup), TCG PORTAL shop battles, and OPDeckGuide.
+OPTCG.GG (skips ChinoizeCup), TCG PORTAL shop battles, OPDeckGuide, and OnePieceDB.
 Only writes a page when the source is 1 leader + 50 cards with no bans.
 Does not invent cards from photos. Does not wipe existing list pages.
 """
@@ -32,6 +32,7 @@ def main() -> None:
     opdeck = load("opdeck", "/workspace/scripts/add-opdeckguide-lists.py")
     portal = load("portal", "/workspace/scripts/add-tcgportal-lists.py")
     optcggg = load("optcggg", "/workspace/scripts/add-optcggg-lists.py")
+    opdb = load("opdb", "/workspace/scripts/add-onepiecedb-lists.py")
     hunt = load("hunt", "/workspace/scripts/hunt-window-lists.py")
     analysis = load("analysis", "/workspace/scripts/add-leader-analysis.py")
     up = load("upgrade", "/workspace/scripts/upgrade-public-pages.py")
@@ -45,6 +46,10 @@ def main() -> None:
 
     found: list[dict] = []
     seen: set[str] = set()
+
+    print("=== OnePieceDB ===", flush=True)
+    for item in opdb.collect_lists(gen, commsrc):
+        commsrc.record(found, item, seen)
 
     print("=== OPTCG.GG (not ChinoizeCup) ===", flush=True)
     for item in optcggg.collect_lists(gen, commsrc):

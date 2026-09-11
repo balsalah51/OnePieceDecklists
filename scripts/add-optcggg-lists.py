@@ -22,13 +22,13 @@ SITE = "https://www.optcg.gg/deck-lists"
 SKIP_EVENT_RE = re.compile(r"chinoize|versus cup", re.I)
 LEADER_RE = re.compile(r"\[((?:OP|ST|EB|PRB)\d{2}-\d{3})\]")
 CARD_RE = re.compile(r"^((?:OP|ST|EB|PRB)\d{2}-\d{3}|P-\d{3})$")
-SINCE = "2026-08-15"
-UNTIL = "2026-09-10"
-MAX_PAGES = 40
+SINCE = "2026-08-01"
+UNTIL = "2026-09-11"
+MAX_PAGES = 70
 PAGE_SIZE = 20
-PER_EVENT = 20
-TARGET = 120
-DETAIL_CAP = 280
+PER_EVENT = 40
+TARGET = 220
+DETAIL_CAP = 520
 
 
 def load(name: str, path: str):
@@ -76,8 +76,10 @@ def leader_id(row: dict, counts: dict[str, int], hosted: set[str]) -> str | None
     return None
 
 
-def existing_keys(gen) -> set[tuple[str, str, str]]:
+def existing_index(gen) -> tuple[set[tuple[str, str, str]], set[str]]:
+    """Skip already hosted OPTCG.GG pages, including 1th vs 1st slug mismatches."""
     keys: set[tuple[str, str, str]] = set()
+    urls: set[str] = set()
     for name in ("data/tournament-decks.json", "data/community-decks.json"):
         path = ROOT / name
         if not path.exists():
@@ -85,16 +87,19 @@ def existing_keys(gen) -> set[tuple[str, str, str]]:
         data = json.loads(path.read_text())
         for lid, rows in data.items():
             for row in rows or []:
+                src = (row.get("source_url") or "").rstrip("/")
+                if src:
+                    urls.add(src)
                 player = gen.slugify(row.get("player") or "")
                 day = (row.get("date") or "")[:10]
                 if player and day:
                     keys.add((lid, player, day))
-    return keys
+    return keys, urls
 
 
 def collect_lists(gen, commsrc) -> list[dict]:
     hosted = {L["id"] for L in gen.LEADERS}
-    seen_keys = existing_keys(gen)
+    seen_keys, seen_urls = existing_index(gen)
     found: list[dict] = []
     seen: set[str] = set()
     per_event: dict[str, int] = {}
@@ -124,6 +129,9 @@ def collect_lists(gen, commsrc) -> list[dict]:
             did = row.get("id") or ""
             if not did:
                 continue
+            source_url = f"{SITE}/{did}".rstrip("/")
+            if source_url in seen_urls:
+                continue
             if fetched >= DETAIL_CAP or len(found) >= TARGET:
                 break
             fetched += 1
@@ -152,7 +160,7 @@ def collect_lists(gen, commsrc) -> list[dict]:
                 time.sleep(0.12)
                 continue
             key = (lid, gen.slugify(player), day)
-            if key in seen_keys:
+            if key in seen_keys or source_url in seen_urls:
                 print("skip dup", player, lid, day, flush=True)
                 time.sleep(0.12)
                 continue
@@ -164,7 +172,7 @@ def collect_lists(gen, commsrc) -> list[dict]:
                 "player": player,
                 "title": f"{player} - {event}",
                 "subtitle": f"Public OPTCG.GG list · {event} · {day}",
-                "source_url": f"{SITE}/{did}",
+                "source_url": source_url,
                 "slug": gen.slugify(f"optcggg-{place_bit}-{player}-{event}")[:70],
                 "raw": " ".join(f"{n}x{cid}" for cid, n in counts.items()),
                 "cards": main_n,
@@ -174,6 +182,7 @@ def collect_lists(gen, commsrc) -> list[dict]:
             commsrc.record(found, item, seen)
             if len(found) > before:
                 seen_keys.add(key)
+                seen_urls.add(source_url)
                 per_event[event] = per_event.get(event, 0) + 1
             time.sleep(0.12)
         if stop and page > 2:

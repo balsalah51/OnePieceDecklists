@@ -20,7 +20,7 @@ UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list s
 API = "https://tcg-portal.jp/api/onepiece/tournament-results"
 ALT_RE = re.compile(r'alt="[^"]*\(((?:OP|ST|EB|PRB)\d{2}-\d{3})\)"')
 HREF_RE = re.compile(r'href="/onepiece/cards/((?:OP|ST|EB|PRB)\d{2}-\d{3})"')
-SINCE = "2026-08-15"
+SINCE = "2026-08-01"
 
 
 def load(name: str, path: str):
@@ -45,7 +45,7 @@ def fetch(url: str) -> str:
 def collect_rows() -> list[dict]:
     rows = []
     page = 1
-    while page <= 12:
+    while page <= 22:
         data = get_json(f"{API}?page={page}&limit=50")
         batch = data.get("tournamentDecks") or []
         if not batch:
@@ -75,6 +75,20 @@ def counts_from_html(html: str) -> dict[str, int]:
     return counts
 
 
+def existing_urls() -> set[str]:
+    urls: set[str] = set()
+    path = ROOT / "data/community-decks.json"
+    if not path.exists():
+        return urls
+    data = json.loads(path.read_text())
+    for rows in data.values():
+        for row in rows or []:
+            src = (row.get("source_url") or "").rstrip("/")
+            if "tcg-portal.jp" in src:
+                urls.add(src)
+    return urls
+
+
 def collect_lists(gen, commsrc) -> list[dict]:
     hosted = {L["id"] for L in gen.LEADERS}
     print("=== TCG PORTAL since", SINCE, "===", flush=True)
@@ -83,11 +97,14 @@ def collect_lists(gen, commsrc) -> list[dict]:
 
     found = []
     seen: set[str] = set()
+    known = existing_urls()
     for row in rows:
         if not row.get("deckId") and not row.get("deckData"):
             continue
         pid = row["id"]
         url = f"https://tcg-portal.jp/onepiece/tournament-results/{pid}"
+        if url.rstrip("/") in known:
+            continue
         try:
             html = fetch(url)
         except Exception as exc:  # noqa: BLE001
@@ -127,6 +144,7 @@ def collect_lists(gen, commsrc) -> list[dict]:
             "date": day,
         }
         commsrc.record(found, item, seen)
+        known.add(url.rstrip("/"))
         time.sleep(0.12)
 
     log_path = ROOT / "data/tcgportal-log.json"

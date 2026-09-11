@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Host complete OP17-splash lists from the public OPDeckGuide tournament hub.
+"""Host complete lists from the public OPDeckGuide tournament hub.
 
-The r/OnePieceTCG "OP17 tournament decklist" post links here. Only writes a page
-when the sim dump is 1 leader + 50 cards, includes an OP17 card, and has no bans.
-Adds ST30 Luffy & Ace if that list splashes OP17. Does not wipe existing pages.
+Reads east/west OP16 and OP17 sim dumps. Only writes a page when the dump is
+1 hosted leader + 50 cards with no bans. Does not invent cards. Does not wipe
+existing pages.
 """
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path("/workspace")
 HUB = "https://opdeckguide.com/tournaments-decklists/"
 UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list scrape)"
-HREF_RE = re.compile(r'href="(/tournaments-decklists/op17-(?:east|west)/[^"#?]+)"')
+HREF_RE = re.compile(r'href="(/tournaments-decklists/op1[67]-(?:east|west)/[^"#?]+)"')
 SIM_RE = re.compile(r'data-sim-deck="([^"]+)"')
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.S)
@@ -27,9 +27,34 @@ META_RE = re.compile(
     r'<span class="meta-label"[^>]*>(.*?)</span>\s*<[^>]+>(.*?)</',
     re.S,
 )
-DATE_RE = re.compile(r"(aug|sep)(\d{1,2})", re.I)
+DATE_RE = re.compile(
+    r"(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|"
+    r"sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)[-]?(\d{1,2})(?:-(\d{4}))?",
+    re.I,
+)
+MONTHS = {
+    "jan": "01",
+    "feb": "02",
+    "mar": "03",
+    "apr": "04",
+    "may": "05",
+    "jun": "06",
+    "jul": "07",
+    "aug": "08",
+    "sep": "09",
+    "oct": "10",
+    "nov": "11",
+    "dec": "12",
+}
 TAG_RE = re.compile(r"<[^>]+>")
 NEW_IDS = {"ST30-001"}
+HUB_PAGES = (
+    HUB,
+    HUB + "op17-west/",
+    HUB + "op16-east/",
+    HUB + "op16-west/",
+)
+OP16_CAP = 180
 
 
 def load(name: str, path: str):
@@ -54,17 +79,69 @@ def clean(text: str) -> str:
 
 def collect_paths() -> list[str]:
     paths: list[str] = []
-    for page in (HUB, HUB + "op17-east/", HUB + "op17-west/"):
-        body = fetch(page)
+    for page in HUB_PAGES:
+        try:
+            body = fetch(page)
+        except Exception as exc:  # noqa: BLE001
+            print("hub fail", page, exc, flush=True)
+            continue
         for href in HREF_RE.findall(body):
-            if href not in paths and href.rstrip("/") != "/tournaments-decklists/op17-east":
-                if href.rstrip("/") != "/tournaments-decklists/op17-west":
-                    paths.append(href)
+            tail = href.rstrip("/")
+            if tail.endswith("/op17-east") or tail.endswith("/op17-west"):
+                continue
+            if tail.endswith("/op16-east") or tail.endswith("/op16-west"):
+                continue
+            if href not in paths:
+                paths.append(href)
+        print("opdeck hub", page, "paths", len(paths), flush=True)
         time.sleep(0.12)
-    return paths
+    op17 = [p for p in paths if "/op17-" in p]
+    op16 = [p for p in paths if "/op16-" in p]
+    return op17 + op16[:OP16_CAP]
+
+
+def existing_slugs() -> set[str]:
+    slugs: set[str] = set()
+    for name in ("data/community-decks.json", "data/tournament-decks.json"):
+        path = ROOT / name
+        if not path.exists():
+            continue
+        data = json.loads(path.read_text())
+        for rows in data.values():
+            for row in rows or []:
+                slug = row.get("slug") or ""
+                if slug:
+                    slugs.add(slug)
+    return slugs
+
+
+_EXISTING_SLUGS: set[str] | None = None
+
+
+def existing_slugs_cached() -> set[str]:
+    global _EXISTING_SLUGS
+    if _EXISTING_SLUGS is None:
+        _EXISTING_SLUGS = existing_slugs()
+    return _EXISTING_SLUGS
+
+
+def date_from_slug(slug_tail: str) -> str:
+    m = DATE_RE.search(slug_tail)
+    if not m:
+        return ""
+    mon = MONTHS.get(m.group(1)[:3].lower(), "")
+    year = m.group(3) or "2026"
+    if not mon:
+        return ""
+    return f"{year}-{mon}-{int(m.group(2)):02d}"
 
 
 def parse_page(path: str, comm, gen) -> dict | None:
+    slug_tail = path.rstrip("/").split("/")[-1]
+    slug = f"opdeck-{slug_tail}"[:70]
+    if slug in existing_slugs_cached():
+        print("exists", slug)
+        return None
     url = "https://opdeckguide.com" + path
     body = fetch(url)
     sim = SIM_RE.search(body)
@@ -85,9 +162,11 @@ def parse_page(path: str, comm, gen) -> dict | None:
         return None
     main_n = sum(n for cid, n in counts.items() if cid != lid)
     banned = [cid for cid in counts if cid in gen.BANNED_CARDS]
-    has_op17 = any(cid.startswith("OP17-") for cid in counts)
-    print(path, "leader", lid, "cards", main_n, "op17", has_op17, "banned", banned)
-    if counts.get(lid) != 1 or main_n != 50 or banned or not has_op17:
+    print(path, "leader", lid, "cards", main_n, "banned", banned)
+    if counts.get(lid) != 1 or main_n != 50 or banned:
+        return None
+    if lid not in {L["id"] for L in gen.LEADERS} and lid not in NEW_IDS:
+        print("skip unhosted", lid, path)
         return None
     title_html = TITLE_RE.search(body)
     h1 = H1_RE.search(body)
@@ -96,12 +175,7 @@ def parse_page(path: str, comm, gen) -> dict | None:
     player = meta.get("Author") or path.rstrip("/").split("-")[-1]
     host = meta.get("Host") or meta.get("Location") or "OPDeckGuide"
     slug_tail = path.rstrip("/").split("/")[-1]
-    month = DATE_RE.search(slug_tail)
-    if month:
-        mon = "08" if month.group(1).lower() == "aug" else "09"
-        date = f"2026-{mon}-{int(month.group(2)):02d}"
-    else:
-        date = "2026-08-22"
+    date = date_from_slug(slug_tail) or "2026-08-01"
     return {
         "leader": lid,
         "kind": "web",
