@@ -287,6 +287,8 @@ def source_bucket(row: dict) -> str:
         return "opdeck"
     if "tcgportal-" in key:
         return "tcgportal"
+    if "opdb-" in key or "onepiecedb" in key:
+        return "opdb"
     if (row.get("kind") or "") in {"web", "youtube", "x", "reddit"}:
         return "community"
     return "tournament"
@@ -303,11 +305,16 @@ def pick_recent_lists(rows: list[dict], limit: int = RECENT_LIMIT) -> list[dict]
         "tournament": [],
         "optcggg": [],
         "tcgportal": [],
+        "opdb": [],
         "community": [],
     }
     for row in sorted(rows, key=gen.date_sort_key, reverse=True):
         buckets[source_bucket(row)].append(row)
-    order = [name for name in ("opdeck", "tournament", "optcggg", "tcgportal", "community") if buckets[name]]
+    order = [
+        name
+        for name in ("opdeck", "tournament", "optcggg", "tcgportal", "opdb", "community")
+        if buckets[name]
+    ]
     index = {name: 0 for name in order}
     picked: list[dict] = []
     seen: set[str] = set()
@@ -458,7 +465,7 @@ def render_home_body() -> str:
             <h3>Recent lists</h3>
             <div class="muted">{len(recent)} lists</div>
           </div>
-          <p class="muted">Newest first. OPTCG.GG, OPDeckGuide, TCG PORTAL, and other public lists mixed with tournament results.</p>
+          <p class="muted">Newest first. OPDeckGuide, OPTCG.GG, TCG PORTAL, OnePieceDB, and other public lists mixed with tournament results.</p>
           <ul class="recent-list" aria-label="Recent decklists">
 {recent_rows_html(recent)}
           </ul>

@@ -22,13 +22,13 @@ SITE = "https://www.optcg.gg/deck-lists"
 SKIP_EVENT_RE = re.compile(r"chinoize|versus cup", re.I)
 LEADER_RE = re.compile(r"\[((?:OP|ST|EB|PRB)\d{2}-\d{3})\]")
 CARD_RE = re.compile(r"^((?:OP|ST|EB|PRB)\d{2}-\d{3}|P-\d{3})$")
-SINCE = "2026-08-15"
-UNTIL = "2026-09-10"
-MAX_PAGES = 40
+SINCE = "2026-08-01"
+UNTIL = "2026-09-11"
+MAX_PAGES = 70
 PAGE_SIZE = 20
-PER_EVENT = 20
-TARGET = 120
-DETAIL_CAP = 280
+PER_EVENT = 40
+TARGET = 220
+DETAIL_CAP = 520
 
 
 def load(name: str, path: str):

@@ -20,7 +20,7 @@ UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list s
 API = "https://tcg-portal.jp/api/onepiece/tournament-results"
 ALT_RE = re.compile(r'alt="[^"]*\(((?:OP|ST|EB|PRB)\d{2}-\d{3})\)"')
 HREF_RE = re.compile(r'href="/onepiece/cards/((?:OP|ST|EB|PRB)\d{2}-\d{3})"')
-SINCE = "2026-08-15"
+SINCE = "2026-08-01"
 
 
 def load(name: str, path: str):
@@ -45,7 +45,7 @@ def fetch(url: str) -> str:
 def collect_rows() -> list[dict]:
     rows = []
     page = 1
-    while page <= 12:
+    while page <= 22:
         data = get_json(f"{API}?page={page}&limit=50")
         batch = data.get("tournamentDecks") or []
         if not batch:
