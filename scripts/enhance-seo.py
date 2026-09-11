@@ -656,7 +656,7 @@ def homepage_search_html() -> str:
     return """        <form class="site-search home-search" method="get" action="/search.html" role="search">
           <label class="site-search-label" for="home-q">Search OPTCG decklists</label>
           <div class="site-search-row">
-            <input id="home-q" type="search" name="q" placeholder="Leader, player, character, or event" aria-label="Search OPTCG decklists" />
+            <input id="home-q" type="search" name="q" placeholder="Leader, player, or event" aria-label="Search OPTCG decklists" />
             <button type="submit">Search</button>
           </div>
         </form>
@@ -690,12 +690,14 @@ def patch_file(path: Path, index: dict, by_href: dict) -> tuple[bool, str]:
 
     if rel == "index.html":
         text = text.replace('alt="OPDL"', 'alt="One Piece Decklists, an OPTCG decklist site"')
-        if 'href="/guides/"' not in text.split("home-leaders-intro", 1)[-1][:800]:
+        if 'href="/guides/"' not in text.split("home-leaders-intro", 1)[-1][:900]:
             text = text.replace(
                 "<p>Pick a picture. Each page has lists for that leader.</p>",
-                '<p>Pick a picture. Each page has lists for that leader. Character names live in the <a href="/guides/">guides</a>.</p>',
+                '<p>Open a hub for lists, analysis, and recent results. Character names live in the <a href="/guides/">guides</a>.</p>',
                 1,
             )
+        if 'class="wrap wrap-home"' not in text:
+            text = text.replace('<div class="wrap">', '<div class="wrap wrap-home">', 1)
         if 'class="site-search home-search"' not in text:
             text = text.replace(
                 '        </nav>\n\n        <section class="home-leaders-flow"',

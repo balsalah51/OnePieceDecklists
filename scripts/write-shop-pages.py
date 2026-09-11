@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path("/workspace")
 DISCORD = "https://discord.gg/adZ2WUQ3D"
-CSS = "/css/site.css?v=theme"
+CSS = "/css/site.css?v=home-pro"
 SITE = "https://onepiecedecklists.com"
 
 # Keep amzn.to URLs - they carry the Associates tag (opdl07-20).

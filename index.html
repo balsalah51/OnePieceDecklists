@@ -9,7 +9,7 @@
     <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-<link rel="stylesheet" href="/css/site.css?v=theme" />
+<link rel="stylesheet" href="/css/site.css?v=home-pro" />
   <link rel="canonical" href="https://onepiecedecklists.com/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -40,7 +40,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"One Piece TCG Decklists (OPTCG) | One Piece Decklists","description":"OPTCG decklists for the Bandai ONE PIECE CARD GAME. Leader pictures and recent 50-card lists.","url":"https://onepiecedecklists.com/","inLanguage":"en","isPartOf":{"@id":"https://onepiecedecklists.com/#website"},"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Edward Newgate","url":"https://onepiecedecklists.com/decklists/op17/edward-newgate.html"},{"@type":"ListItem","position":2,"name":"Shanks","url":"https://onepiecedecklists.com/decklists/op17/shanks.html"},{"@type":"ListItem","position":3,"name":"Rocks D. Xebec","url":"https://onepiecedecklists.com/decklists/op17/rocks-d-xebec.html"},{"@type":"ListItem","position":4,"name":"Kaido","url":"https://onepiecedecklists.com/decklists/op17/kaido.html"},{"@type":"ListItem","position":5,"name":"Monkey D. Luffy","url":"https://onepiecedecklists.com/decklists/op17/monkey-d-luffy.html"},{"@type":"ListItem","position":6,"name":"Charlotte Linlin","url":"https://onepiecedecklists.com/decklists/op17/charlotte-linlin.html"},{"@type":"ListItem","position":7,"name":"RG Luffy","url":"https://onepiecedecklists.com/decklists/rg-luffy.html"},{"@type":"ListItem","position":8,"name":"Nami","url":"https://onepiecedecklists.com/decklists/nami.html"},{"@type":"ListItem","position":9,"name":"Mihawk","url":"https://onepiecedecklists.com/decklists/mihawk.html"},{"@type":"ListItem","position":10,"name":"Portgas D. Ace","url":"https://onepiecedecklists.com/decklists/portgas-d-ace.html"},{"@type":"ListItem","position":11,"name":"Enel","url":"https://onepiecedecklists.com/decklists/enel.html"},{"@type":"ListItem","position":12,"name":"Charlotte Katakuri","url":"https://onepiecedecklists.com/decklists/charlotte-katakuri.html"},{"@type":"ListItem","position":13,"name":"Imu","url":"https://onepiecedecklists.com/decklists/imu.html"},{"@type":"ListItem","position":14,"name":"OP13 Ace","url":"https://onepiecedecklists.com/decklists/op13-ace.html"},{"@type":"ListItem","position":15,"name":"GB Luffy","url":"https://onepiecedecklists.com/decklists/gb-luffy.html"},{"@type":"ListItem","position":16,"name":"Blackbeard","url":"https://onepiecedecklists.com/decklists/blackbeard.html"},{"@type":"ListItem","position":17,"name":"Rosinante","url":"https://onepiecedecklists.com/decklists/rosinante.html"},{"@type":"ListItem","position":18,"name":"Lucy","url":"https://onepiecedecklists.com/decklists/lucy.html"},{"@type":"ListItem","position":19,"name":"Yamato","url":"https://onepiecedecklists.com/decklists/yamato.html"},{"@type":"ListItem","position":20,"name":"Koby","url":"https://onepiecedecklists.com/decklists/koby.html"}],"numberOfItems":20}}</script>
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap wrap-home">
     <header>
       <a class="brand" href="/">
         <img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />
@@ -69,21 +69,31 @@
     <main class="single home" role="main">
         <!-- HOME_BODY -->
         <section class="home-splash" aria-label="One Piece Decklists">
-          <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" width="1400" height="636" fetchpriority="high" decoding="async">
-          <a class="home-splash-luffy" href="/decklists/nico-robin.html">
-            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
-          </a>
-          <div class="home-splash-bar">
-            <h2>One Piece Decklists</h2>
-            <p>OPTCG decklists. Jump a section, or keep scrolling into the leaders.</p>
+          <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" width="1400" height="636" fetchpriority="high" decoding="async" />
+          <div class="home-hero-copy">
+            <p class="home-hero-kicker">One Piece Card Game</p>
+            <h2>Tournament decklists</h2>
+            <p class="home-hero-lede">Complete 50-card OPTCG lists, leader hubs, and a weekly meta snapshot.</p>
+            <div class="home-hero-actions">
+              <a class="home-hero-btn" href="#home-search">Search lists</a>
+              <a class="home-hero-btn home-hero-btn-ghost" href="#leaders">Browse leaders</a>
+            </div>
           </div>
         </section>
 
+        <form class="site-search home-search" id="home-search" method="get" action="/search.html" role="search">
+          <label class="site-search-label" for="home-q">Search OPTCG decklists</label>
+          <div class="site-search-row">
+            <input id="home-q" type="search" name="q" placeholder="Leader, player, or event" aria-label="Search OPTCG decklists" />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+
         <a class="events-banner" id="events" href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">
           <div>
-            <div class="kicker">Official Bandai site</div>
+            <div class="kicker">Official calendar</div>
             <div class="title">ONE PIECE CARD GAME events</div>
-            <div class="muted" style="color:rgba(255,255,255,0.82);margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
+            <div class="muted" style="margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
           </div>
           <div class="go">Official events →</div>
         </a>
@@ -109,7 +119,7 @@
               </svg>
             </span>
             <span class="home-big-title">Recent Lists</span>
-            <span class="home-big-note">Newest 50-card results from every leader</span>
+            <span class="home-big-note">Newest complete 50-card results</span>
           </a>
           <a class="home-big home-big-leaders" href="#leaders">
             <span class="home-big-icon" aria-hidden="true">
@@ -119,7 +129,7 @@
               </svg>
             </span>
             <span class="home-big-title">Leaders</span>
-            <span class="home-big-note">Every leader picture on this site</span>
+            <span class="home-big-note">Hubs for every leader on OPDL</span>
           </a>
           <a class="home-big home-big-shop" href="/shop/">
             <span class="home-big-icon" aria-hidden="true">
@@ -138,25 +148,17 @@
               </svg>
             </span>
             <span class="home-big-title">Discord</span>
-            <span class="home-big-note">Talk lists, flair, and the crew</span>
+            <span class="home-big-note">Share lists and talk the meta</span>
           </a>
         </nav>
 
-        <form class="site-search home-search" method="get" action="/search.html" role="search">
-          <label class="site-search-label" for="home-q">Search OPTCG decklists</label>
-          <div class="site-search-row">
-            <input id="home-q" type="search" name="q" placeholder="Leader, player, character, or event" aria-label="Search OPTCG decklists" />
-            <button type="submit">Search</button>
-          </div>
-        </form>
-
         <section class="home-leaders-flow" id="leaders">
           <div class="home-leaders-intro">
-            <p class="home-leaders-kicker">The crew</p>
+            <p class="home-leaders-kicker">Browse</p>
             <div class="home-leaders-intro-row">
               <div>
                 <h3>Leaders</h3>
-                <p>Pick a picture. Each page has lists for that leader. Character names live in the <a href="/guides/">guides</a>.</p>
+                <p>Open a hub for lists, analysis, and recent results. Character names live in the <a href="/guides/">guides</a>.</p>
               </div>
               <a href="/decklists/op17.html">All leader pages →</a>
             </div>
@@ -371,20 +373,28 @@
           </div>
         </section>
 
-        <section class="card home-panel" id="recent">
+        <section class="card home-panel home-recent" id="recent">
+          <p class="home-leaders-kicker">Results</p>
           <div class="section-title">
             <h3>Recent lists</h3>
             <div class="muted">100 lists</div>
           </div>
-          <p class="muted">Newest first. OPDeckGuide, OPTCG.GG, TCG PORTAL, OnePieceDB, and other public lists mixed with tournament results.</p>
+          <p class="muted home-recent-lede">Newest first. OPDeckGuide, OPTCG.GG, TCG PORTAL, OnePieceDB, and other public lists mixed with tournament results.</p>
+          <div class="recent-cols" aria-hidden="true">
+            <span></span>
+            <span>List</span>
+            <span>Event</span>
+            <span>Date</span>
+          </div>
           <ul class="recent-list" aria-label="Recent decklists">
             <li>
               <a class="recent-item color-purple" href="/decklists/op05-luffy/opdeck-luffy-op17-west-nedzvault-sep10-zach-s.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-060_EN.webp" alt="OP05 Luffy" />
                 <div class="recent-copy">
                   <div class="who">Monkey.D.Luffy (Format OP17) Standard Battle</div>
-                  <div class="muted meta">Nedzvault · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Nedzvault · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Nedzvault · public list from OPDeckGuide</div>
                 <div class="when">2026-09-10</div>
               </a>
             </li>
@@ -393,8 +403,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">snorlax1cynda - Luffy &amp; Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 1st · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -403,8 +414,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Svinci - Utrecht Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -413,8 +425,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">緑ミホーク チャンピオンシップ26-27​ Season 2 店舗予選 winner - MINT 吉祥寺店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-03</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-03</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-03</div>
                 <div class="when">2026-09-03</div>
               </a>
             </li>
@@ -423,8 +436,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-001_EN.webp" alt="Edward Newgate" />
                 <div class="recent-copy">
                   <div class="who">Red whitebeard</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -433,8 +447,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-041_EN.webp" alt="Nami" />
                 <div class="recent-copy">
                   <div class="who">Nami Reddit list</div>
-                  <div class="muted meta">Public r/OnePieceTCG list · 2026-09-08</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public r/OnePieceTCG list · 2026-09-08</span></div>
                 </div>
+                <div class="recent-event">Public r/OnePieceTCG list · 2026-09-08</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -443,8 +458,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido" />
                 <div class="recent-copy">
                   <div class="who">Kaido (Format OP17) Standard Battle</div>
-                  <div class="muted meta">Cardshops · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Cardshops · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Cardshops · public list from OPDeckGuide</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -453,8 +469,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Captivat3 - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 2nd · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -463,8 +480,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Josh Graham - Utrecht Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -473,8 +491,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">紫黄ロビン スタンダードバトル winner - コーギーアール蕨店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-03</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-03</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-03</div>
                 <div class="when">2026-09-03</div>
               </a>
             </li>
@@ -483,8 +502,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">Rocks</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -493,8 +513,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido" />
                 <div class="recent-copy">
                   <div class="who">Locals 1st - TwerkMasterFlex Kaido</div>
-                  <div class="muted meta">List from the public r/OnePieceTCG post · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">List from the public r/OnePieceTCG post · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">List from the public r/OnePieceTCG post · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -503,8 +524,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Dracule Mihawk (Format OP17) Standard Battle</div>
-                  <div class="muted meta">TCG Center · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">TCG Center · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">TCG Center · public list from OPDeckGuide</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -513,8 +535,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">tinnoy - Rocks D. Xebec</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 3rd · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -523,8 +546,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="Sabo" />
                 <div class="recent-copy">
                   <div class="who">arenasCV - Utrecht Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -533,8 +557,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" />
                 <div class="recent-copy">
                   <div class="who">青黄ハンコック フラッグシップバトル winner - S CARD OASIS 天美店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-03</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-03</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-03</div>
                 <div class="when">2026-09-03</div>
               </a>
             </li>
@@ -543,8 +568,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">1st Place - Monkey.D.Luffy Deck - 2026 Regional Utrecht by Svinci</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -553,8 +579,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">Flame-Flame Fruit Coliseum Utrecht finals - XIXO Enel</div>
-                  <div class="muted meta">List read from the public BCG Fest Utrecht X deck graphic · 2026-09-04</div>
+                  <div class="muted meta"><span class="recent-meta-event">List read from the public BCG Fest Utrecht X deck graphic · 2026-09-04</span></div>
                 </div>
+                <div class="recent-event">List read from the public BCG Fest Utrecht X deck graphic · 2026-09-04</div>
                 <div class="when">2026-09-04</div>
               </a>
             </li>
@@ -563,8 +590,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Dracule Mihawk (Format OP17) Standard Battle</div>
-                  <div class="muted meta">Cardshop · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Cardshop · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Cardshop · public list from OPDeckGuide</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -573,8 +601,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Dissonance075 - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 4th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -583,8 +612,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" />
                 <div class="recent-copy">
                   <div class="who">Trec - Utrecht Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Utrecht Regionals · 2026-09-07</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -593,8 +623,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" />
                 <div class="recent-copy">
                   <div class="who">青黄ハンコック チャンピオンシップ26-27​ Season 2 店舗予選 winner - コーギーアール大宮駅前店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-03</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-03</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-03</div>
                 <div class="when">2026-09-03</div>
               </a>
             </li>
@@ -603,8 +634,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">New big mom deck</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -613,8 +645,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">Flame Flame Winner Utrecht - Nico Robin</div>
-                  <div class="muted meta">Submitted 50-card list · 2026-09-04</div>
+                  <div class="muted meta"><span class="recent-meta-event">Submitted 50-card list · 2026-09-04</span></div>
                 </div>
+                <div class="recent-event">Submitted 50-card list · 2026-09-04</div>
                 <div class="when">2026-09-04</div>
               </a>
             </li>
@@ -623,8 +656,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Dracule Mihawk (Format OP17) Flagship Battle Battle</div>
-                  <div class="muted meta">Corgi · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Corgi · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Corgi · public list from OPDeckGuide</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -633,8 +667,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">luzsnikov - Monkey D. Luffy</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 5th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -643,8 +678,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido" />
                 <div class="recent-copy">
                   <div class="who">Jacob - TAK Games Brisbane Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -653,8 +689,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">青ロックス フラッグシップバトル winner - TSUTAYA AVクラブ 大津店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -663,8 +700,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">14th Place - Monkey.D.Luffy Deck - 2026 CoreTCG Los Angeles Regionals by Zeresimo</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -673,8 +711,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-080_EN.webp" alt="Gecko Moria" />
                 <div class="recent-copy">
                   <div class="who">Pirate Party Moria - Million_X</div>
-                  <div class="muted meta">Public CardKaizoku list from r/OnePieceTCG · 2026-09-04</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public CardKaizoku list from r/OnePieceTCG · 2026-09-04</span></div>
                 </div>
+                <div class="recent-event">Public CardKaizoku list from r/OnePieceTCG · 2026-09-04</div>
                 <div class="when">2026-09-04</div>
               </a>
             </li>
@@ -683,8 +722,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-001_EN.webp" alt="Portgas D. Ace" />
                 <div class="recent-copy">
                   <div class="who">Portgas.D.Ace (Format OP17) Standard Battle</div>
-                  <div class="muted meta">Good Games Cannington · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Good Games Cannington · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Good Games Cannington · public list from OPDeckGuide</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -693,8 +733,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-001_EN.webp" alt="Edward Newgate" />
                 <div class="recent-copy">
                   <div class="who">HashtagEMB - Edward Newgate</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 6th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -703,8 +744,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Dylan - TAK Games Brisbane Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -713,8 +755,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">黄リンリン（OP17） スタンダードバトル winner - カードラボ名古屋駅前店（サテライトショップ名古屋）</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -723,8 +766,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">2nd Place - Monkey.D.Luffy Deck - 2026 Regional Auckland by Isaac</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -733,8 +777,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">Luffy Ace YouTube list</div>
-                  <div class="muted meta">YouTube deck profile from a public description · 2026-08-29</div>
+                  <div class="muted meta"><span class="recent-meta-event">YouTube deck profile from a public description · 2026-08-29</span></div>
                 </div>
+                <div class="recent-event">YouTube deck profile from a public description · 2026-08-29</div>
                 <div class="when">2026-08-29</div>
               </a>
             </li>
@@ -743,8 +788,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">Nico Robin (Format OP17) Flagship Battle Battle</div>
-                  <div class="muted meta">Unbox · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Unbox · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Unbox · public list from OPDeckGuide</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -753,8 +799,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">Roronoah - Rocks D. Xebec</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 7th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -763,8 +810,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Ernest - TAK Games Brisbane Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -773,8 +821,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">緑ミホーク チャンピオンシップ26-27​ Season 2 店舗予選 winner - トレカ X 藤沢湘南台店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -783,8 +832,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">9th Place - Monkey.D.Luffy Deck - 2026 Regional Peoria, IL by Ricmasterflash</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -793,8 +843,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Monkey D Luffy YouTube list</div>
-                  <div class="muted meta">YouTube deck profile from a public description · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">YouTube deck profile from a public description · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">YouTube deck profile from a public description · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -803,8 +854,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-081_EN.webp" alt="Koala" />
                 <div class="recent-copy">
                   <div class="who">Koala (Format OP17) Standard Battle</div>
-                  <div class="muted meta">Cardshop · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Cardshop · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Cardshop · public list from OPDeckGuide</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -813,8 +865,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">filipipirat - Nico Robin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 8th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">8th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -823,8 +876,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Zyrios - EU Finals Utrecht</div>
-                  <div class="muted meta">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -833,8 +887,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">緑ミホーク チャンピオンシップ26-27​ Season 2 店舗予選 winner -  トレカアルマダ</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -843,8 +898,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">3rd Place - Monkey.D.Luffy Deck - 2026 Treasure Cup Lille by Suppy</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -853,8 +909,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-060_EN.webp" alt="Sengoku" />
                 <div class="recent-copy">
                   <div class="who">Sengoku locals test - r/OnePieceTCG</div>
-                  <div class="muted meta">List read from the public CardKaizoku screenshot · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">List read from the public CardKaizoku screenshot · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">List read from the public CardKaizoku screenshot · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -863,8 +920,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">Enel (Format OP17) Standard Battle</div>
-                  <div class="muted meta">Nextturncards(16) · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Nextturncards(16) · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Nextturncards(16) · public list from OPDeckGuide</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -873,8 +931,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Daeyang - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 9th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -883,8 +942,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Damon - TAK Games Brisbane Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -893,8 +953,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">緑ミホーク フラッグシップバトル winner - GIRAFULL オタロード店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -903,8 +964,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">6th Place - Monkey.D.Luffy Deck - 2026 Treasure Cup Warsaw by Julius Schürhoff</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -913,8 +975,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">Rocks D Xebec YouTube list</div>
-                  <div class="muted meta">YouTube deck profile from a public description · 2026-08-27</div>
+                  <div class="muted meta"><span class="recent-meta-event">YouTube deck profile from a public description · 2026-08-27</span></div>
                 </div>
+                <div class="recent-event">YouTube deck profile from a public description · 2026-08-27</div>
                 <div class="when">2026-08-27</div>
               </a>
             </li>
@@ -923,8 +986,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" />
                 <div class="recent-copy">
                   <div class="who">Boa Hancock (Format OP17) Standard Battle</div>
-                  <div class="muted meta">Tsutaya · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Tsutaya · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Tsutaya · public list from OPDeckGuide</div>
                 <div class="when">2026-09-08</div>
               </a>
             </li>
@@ -933,8 +997,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">Cakey_TCG - Luffy &amp; Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 10th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">10th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -943,8 +1008,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Zhao - TAK Games Brisbane Regionals</div>
-                  <div class="muted meta">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · TAK Games Brisbane Regionals · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -953,8 +1019,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">緑ミホーク チャンピオンシップ26-27​ Season 2 店舗予選 winner - トレカの家康 入間店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -963,8 +1030,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">8th Place - Monkey.D.Luffy Deck - 2026 Regional Warsaw by SSL GreeD</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -973,8 +1041,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">ChinoizeCup #101 4th - Corentin33 Rocks</div>
-                  <div class="muted meta">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
+                  <div class="muted meta"><span class="recent-meta-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</span></div>
                 </div>
+                <div class="recent-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
                 <div class="when">2026-08-25</div>
               </a>
             </li>
@@ -983,8 +1052,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Monkey.D.Luffy (Format OP17) Regional</div>
-                  <div class="muted meta">Bandai(Utrecht) · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Bandai(Utrecht) · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Bandai(Utrecht) · public list from OPDeckGuide</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -993,8 +1063,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">fuat - Rocks D. Xebec</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 11th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">11th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -1003,8 +1074,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">Frle - EU Finals Utrecht</div>
-                  <div class="muted meta">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -1013,8 +1085,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-001_EN.webp" alt="Portgas D. Ace" />
                 <div class="recent-copy">
                   <div class="who">赤エース（OP16） チャンピオンシップ26-27​ Season 2 店舗予選 winner - ブックマーケット・エーツー 三河安城店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -1023,8 +1096,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">8th Place - Monkey.D.Luffy Deck - 2026 Treasure Cup Toronto by DoubleD</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -1033,8 +1107,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">ChinoizeCup #101 1st - MaGe Mihawk</div>
-                  <div class="muted meta">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
+                  <div class="muted meta"><span class="recent-meta-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</span></div>
                 </div>
+                <div class="recent-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
                 <div class="when">2026-08-25</div>
               </a>
             </li>
@@ -1043,8 +1118,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Monkey.D.Luffy (Format OP17) Regional</div>
-                  <div class="muted meta">Bandai(Utrecht) · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Bandai(Utrecht) · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Bandai(Utrecht) · public list from OPDeckGuide</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1053,8 +1129,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">Simpiii - Charlotte Linlin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 12th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">12th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -1063,8 +1140,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">KDZ Millán player - EU Finals Utrecht</div>
-                  <div class="muted meta">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -1073,8 +1151,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">紫黄ロビン フラッグシップバトル winner - カードボックス横浜西口店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -1083,8 +1162,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">8th Place - Monkey.D.Luffy Deck - 2026 Regional Lille by Julius Schürhoff</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -1093,8 +1173,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">ChinoizeCup #101 3rd - Dearcan Mihawk</div>
-                  <div class="muted meta">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
+                  <div class="muted meta"><span class="recent-meta-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</span></div>
                 </div>
+                <div class="recent-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
                 <div class="when">2026-08-25</div>
               </a>
             </li>
@@ -1103,8 +1184,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Monkey.D.Luffy (Format OP17) Regional</div>
-                  <div class="muted meta">Bandai(Utrecht) · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Bandai(Utrecht) · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Bandai(Utrecht) · public list from OPDeckGuide</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1113,8 +1195,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">zockerdima - Mihawk</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 13th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">13th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -1123,8 +1206,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">Ziiaaaac - EU Finals Utrecht</div>
-                  <div class="muted meta">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · EU Finals Utrecht · 2026-09-05</div>
                 <div class="when">2026-09-05</div>
               </a>
             </li>
@@ -1133,8 +1217,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">紫黄ロビン フラッグシップバトル winner - GIRAFULL オタロード店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-02</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-02</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-02</div>
                 <div class="when">2026-09-02</div>
               </a>
             </li>
@@ -1143,8 +1228,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">2nd Place - Monkey.D.Luffy Deck - ClubTV #13 Simulador (feat. Macaúba TCG) by OutroTaz</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -1153,8 +1239,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">ChinoizeCup #101 2nd - Wortaxx Enel</div>
-                  <div class="muted meta">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
+                  <div class="muted meta"><span class="recent-meta-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</span></div>
                 </div>
+                <div class="recent-event">List from the public X photo post @Chinoize_ · 2026-08-25 · IDs verified on Limitless</div>
                 <div class="when">2026-08-25</div>
               </a>
             </li>
@@ -1163,8 +1250,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" />
                 <div class="recent-copy">
                   <div class="who">Monkey.D.Luffy (Format OP17) Flagship Battle Battle</div>
-                  <div class="muted meta">Cardshop · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Cardshop · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Cardshop · public list from OPDeckGuide</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1173,8 +1261,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">Pavlo - Enel</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 14th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">14th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -1183,8 +1272,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Nightingale_ - Flame Flame Fruit Coliseum Europe Block B</div>
-                  <div class="muted meta">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block B · 2026-09-04</div>
                 <div class="when">2026-09-04</div>
               </a>
             </li>
@@ -1193,8 +1283,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">青ロックス チャンピオンシップ26-27​ Season 2 店舗予選 winner - TCG shop POCOP</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-01</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-01</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-01</div>
                 <div class="when">2026-09-01</div>
               </a>
             </li>
@@ -1203,8 +1294,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-041_EN.webp" alt="Nami" />
                 <div class="recent-copy">
                   <div class="who">12th Place - Nami Deck - 2026 CoreTCG Los Angeles Regionals by Peter</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -1213,8 +1305,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-058_EN.webp" alt="Charlotte Pudding" />
                 <div class="recent-copy">
                   <div class="who">Purple/Yellow Pudding - r/OnePieceTCG</div>
-                  <div class="muted meta">Community screenshot from r/OnePieceTCG · 2026-08-24</div>
+                  <div class="muted meta"><span class="recent-meta-event">Community screenshot from r/OnePieceTCG · 2026-08-24</span></div>
                 </div>
+                <div class="recent-event">Community screenshot from r/OnePieceTCG · 2026-08-24</div>
                 <div class="when">2026-08-24</div>
               </a>
             </li>
@@ -1223,8 +1316,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Dracule Mihawk (Format OP17) Regional</div>
-                  <div class="muted meta">Bandai(Utrecht) · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Bandai(Utrecht) · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Bandai(Utrecht) · public list from OPDeckGuide</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1233,8 +1327,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">Tadomari - Luffy &amp; Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 16th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">16th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -1243,8 +1338,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">Fury - Flame Flame Fruit Coliseum Europe Block A</div>
-                  <div class="muted meta">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</div>
                 <div class="when">2026-09-04</div>
               </a>
             </li>
@@ -1253,8 +1349,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
                 <div class="recent-copy">
                   <div class="who">黒ルフィ（OP17） フラッグシップバトル winner - Japan TCG center 千葉駅前店</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-01</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-01</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-01</div>
                 <div class="when">2026-09-01</div>
               </a>
             </li>
@@ -1263,8 +1360,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-041_EN.webp" alt="Nami" />
                 <div class="recent-copy">
                   <div class="who">14th Place - Nami Deck - 2026 Regional Peoria, IL by Benny</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -1273,8 +1371,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-060_EN.webp" alt="Doffy" />
                 <div class="recent-copy">
                   <div class="who">Doffy YouTube list</div>
-                  <div class="muted meta">YouTube deck profile from a public description</div>
+                  <div class="muted meta"><span class="recent-meta-event">YouTube deck profile from a public description</span></div>
                 </div>
+                <div class="recent-event">YouTube deck profile from a public description</div>
                 <div class="when">2026-08-23</div>
               </a>
             </li>
@@ -1283,8 +1382,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-001_EN.webp" alt="Portgas D. Ace" />
                 <div class="recent-copy">
                   <div class="who">Portgas.D.Ace (Format OP17) Regional</div>
-                  <div class="muted meta">Bandai(Utrecht) · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Bandai(Utrecht) · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Bandai(Utrecht) · public list from OPDeckGuide</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1293,8 +1393,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">DerBosch - Nico Robin</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 17th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">17th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -1303,8 +1404,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp" alt="Charlotte Linlin" />
                 <div class="recent-copy">
                   <div class="who">MerryTCG - Flame Flame Fruit Coliseum Europe Block A</div>
-                  <div class="muted meta">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</div>
                 <div class="when">2026-09-04</div>
               </a>
             </li>
@@ -1313,8 +1415,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">緑ミホーク スタンダードバトル winner - トレカの森</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-01</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-01</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-01</div>
                 <div class="when">2026-09-01</div>
               </a>
             </li>
@@ -1323,8 +1426,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-041_EN.webp" alt="Nami" />
                 <div class="recent-copy">
                   <div class="who">12th Place - Nami Deck - 2026 Regional Peoria, IL by YTJJGaming</div>
-                  <div class="muted meta">Public OnePieceDB list · 2026-08-28</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OnePieceDB list · 2026-08-28</span></div>
                 </div>
+                <div class="recent-event">Public OnePieceDB list · 2026-08-28</div>
                 <div class="when">2026-08-28</div>
               </a>
             </li>
@@ -1333,8 +1437,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">Blue Rocks 50-card guide - Mercard OP</div>
-                  <div class="muted meta">Public Japanese 50-card ID list · 2026-08-20</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public Japanese 50-card ID list · 2026-08-20</span></div>
                 </div>
+                <div class="recent-event">Public Japanese 50-card ID list · 2026-08-20</div>
                 <div class="when">2026-08-20</div>
               </a>
             </li>
@@ -1343,8 +1448,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" />
                 <div class="recent-copy">
                   <div class="who">Enel (Format OP17) Regional</div>
-                  <div class="muted meta">Bandai(Utrecht) · public list from OPDeckGuide</div>
+                  <div class="muted meta"><span class="recent-meta-event">Bandai(Utrecht) · public list from OPDeckGuide</span></div>
                 </div>
+                <div class="recent-event">Bandai(Utrecht) · public list from OPDeckGuide</div>
                 <div class="when">2026-09-07</div>
               </a>
             </li>
@@ -1353,8 +1459,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-001_EN.webp" alt="Portgas D. Ace" />
                 <div class="recent-copy">
                   <div class="who">Anacleto - Portgas D. Ace</div>
-                  <div class="muted meta">[EGB] ChinoizeCup #108 Wednesday · 18th · 2026-09-09</div>
+                  <div class="muted meta"><span class="recent-place">18th</span><span class="recent-meta-event">[EGB] ChinoizeCup #108 Wednesday</span></div>
                 </div>
+                <div class="recent-event">[EGB] ChinoizeCup #108 Wednesday</div>
                 <div class="when">2026-09-09</div>
               </a>
             </li>
@@ -1363,8 +1470,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">Flozing - Flame Flame Fruit Coliseum Europe Block A</div>
-                  <div class="muted meta">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</span></div>
                 </div>
+                <div class="recent-event">Public OPTCG.GG list · Flame Flame Fruit Coliseum Europe Block A · 2026-09-04</div>
                 <div class="when">2026-09-04</div>
               </a>
             </li>
@@ -1373,8 +1481,9 @@
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk" />
                 <div class="recent-copy">
                   <div class="who">緑ミホーク チャンピオンシップ26-27​ Season 2 店舗予選 winner - トレカショップフロント</div>
-                  <div class="muted meta">Public TCG PORTAL list · 2026-09-01</div>
+                  <div class="muted meta"><span class="recent-meta-event">Public TCG PORTAL list · 2026-09-01</span></div>
                 </div>
+                <div class="recent-event">Public TCG PORTAL list · 2026-09-01</div>
                 <div class="when">2026-09-01</div>
               </a>
             </li>

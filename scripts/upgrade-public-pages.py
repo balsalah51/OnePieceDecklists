@@ -22,7 +22,7 @@ aspec.loader.exec_module(ana)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=theme"
+CSS_NEW = "/css/site.css?v=home-pro"
 JS_NEW = "/js/site.js?v=theme"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
@@ -345,17 +345,26 @@ def recent_rows_html(rows: list[dict]) -> str:
     items = []
     for entry in rows:
         leader = entry["leader"]
-        title, subtitle = gen.list_heading(entry, leader["name"])
-        when = entry.get("date") or gen.ordinal(entry.get("placing")) or "List"
+        title, _subtitle = gen.list_heading(entry, leader["name"])
+        event = entry.get("tournament_name") or entry.get("subtitle") or ""
+        event_html = html.escape(event)
+        place = gen.ordinal(entry.get("placing")) or ""
+        when = entry.get("date") or place or "List"
         img = gen.card_image_url(leader["id"])
+        place_html = f'<span class="recent-place">{html.escape(place)}</span>' if place else ""
+        event_meta = f'<span class="recent-meta-event">{event_html}</span>' if event else ""
+        meta = place_html + event_meta
+        if not meta:
+            meta = html.escape(leader["name"])
         items.append(
             f"""            <li>
               <a class="recent-item {html.escape(leader['color'])}" href="{html.escape(entry['href'])}">
                 <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}" />
                 <div class="recent-copy">
                   <div class="who">{html.escape(title)}</div>
-                  <div class="muted meta">{html.escape(subtitle)}</div>
+                  <div class="muted meta">{meta}</div>
                 </div>
+                <div class="recent-event">{event_html}</div>
                 <div class="when">{html.escape(str(when))}</div>
               </a>
             </li>"""
@@ -366,24 +375,33 @@ def recent_rows_html(rows: list[dict]) -> str:
 def render_home_body() -> str:
     cards = leader_cards_html()
     recent = pick_recent_lists(collect_home_lists())
-    nico = gen.card_image_url("OP09-062")
     return f"""        <!-- HOME_BODY -->
         <section class="home-splash" aria-label="One Piece Decklists">
-          <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" />
-          <a class="home-splash-luffy" href="/decklists/nico-robin.html">
-            <img src="{nico}" alt="Nico Robin" />
-          </a>
-          <div class="home-splash-bar">
-            <h2>One Piece Decklists</h2>
-            <p>OPTCG decklists. Jump a section, or keep scrolling into the leaders.</p>
+          <img class="home-splash-bg" src="/img/opdl-hero.jpg" alt="One Piece Decklists, an OPTCG decklist site" width="1400" height="636" fetchpriority="high" decoding="async" />
+          <div class="home-hero-copy">
+            <p class="home-hero-kicker">One Piece Card Game</p>
+            <h2>Tournament decklists</h2>
+            <p class="home-hero-lede">Complete 50-card OPTCG lists, leader hubs, and a weekly meta snapshot.</p>
+            <div class="home-hero-actions">
+              <a class="home-hero-btn" href="#home-search">Search lists</a>
+              <a class="home-hero-btn home-hero-btn-ghost" href="#leaders">Browse leaders</a>
+            </div>
           </div>
         </section>
 
+        <form class="site-search home-search" id="home-search" method="get" action="/search.html" role="search">
+          <label class="site-search-label" for="home-q">Search OPTCG decklists</label>
+          <div class="site-search-row">
+            <input id="home-q" type="search" name="q" placeholder="Leader, player, or event" aria-label="Search OPTCG decklists" />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+
         <a class="events-banner" id="events" href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">
           <div>
-            <div class="kicker">Official Bandai site</div>
+            <div class="kicker">Official calendar</div>
             <div class="title">ONE PIECE CARD GAME events</div>
-            <div class="muted" style="color:rgba(255,255,255,0.82);margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
+            <div class="muted" style="margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
           </div>
           <div class="go">Official events →</div>
         </a>
@@ -409,7 +427,7 @@ def render_home_body() -> str:
               </svg>
             </span>
             <span class="home-big-title">Recent Lists</span>
-            <span class="home-big-note">Newest 50-card results from every leader</span>
+            <span class="home-big-note">Newest complete 50-card results</span>
           </a>
           <a class="home-big home-big-leaders" href="#leaders">
             <span class="home-big-icon" aria-hidden="true">
@@ -419,7 +437,7 @@ def render_home_body() -> str:
               </svg>
             </span>
             <span class="home-big-title">Leaders</span>
-            <span class="home-big-note">Every leader picture on this site</span>
+            <span class="home-big-note">Hubs for every leader on OPDL</span>
           </a>
           <a class="home-big home-big-shop" href="/shop/">
             <span class="home-big-icon" aria-hidden="true">
@@ -438,17 +456,17 @@ def render_home_body() -> str:
               </svg>
             </span>
             <span class="home-big-title">Discord</span>
-            <span class="home-big-note">Talk lists, flair, and the crew</span>
+            <span class="home-big-note">Share lists and talk the meta</span>
           </a>
         </nav>
 
         <section class="home-leaders-flow" id="leaders">
           <div class="home-leaders-intro">
-            <p class="home-leaders-kicker">The crew</p>
+            <p class="home-leaders-kicker">Browse</p>
             <div class="home-leaders-intro-row">
               <div>
                 <h3>Leaders</h3>
-                <p>Pick a picture. Each page has lists for that leader. Character names live in the <a href="/guides/">guides</a>.</p>
+                <p>Open a hub for lists, analysis, and recent results. Character names live in the <a href="/guides/">guides</a>.</p>
               </div>
               <a href="/decklists/op17.html">All leader pages →</a>
             </div>
@@ -460,12 +478,19 @@ def render_home_body() -> str:
           </div>
         </section>
 
-        <section class="card home-panel" id="recent">
+        <section class="card home-panel home-recent" id="recent">
+          <p class="home-leaders-kicker">Results</p>
           <div class="section-title">
             <h3>Recent lists</h3>
             <div class="muted">{len(recent)} lists</div>
           </div>
-          <p class="muted">Newest first. OPDeckGuide, OPTCG.GG, TCG PORTAL, OnePieceDB, and other public lists mixed with tournament results.</p>
+          <p class="muted home-recent-lede">Newest first. OPDeckGuide, OPTCG.GG, TCG PORTAL, OnePieceDB, and other public lists mixed with tournament results.</p>
+          <div class="recent-cols" aria-hidden="true">
+            <span></span>
+            <span>List</span>
+            <span>Event</span>
+            <span>Date</span>
+          </div>
           <ul class="recent-list" aria-label="Recent decklists">
 {recent_rows_html(recent)}
           </ul>
@@ -524,6 +549,8 @@ def patch_home() -> None:
         '        <a href="#recent">Recent lists</a>\n        <a href="#leaders">Leaders</a>',
     )
     text = patch_nav_and_assets(text)
+    if 'class="wrap wrap-home"' not in text:
+        text = text.replace('<div class="wrap">', '<div class="wrap wrap-home">', 1)
     path.write_text(text)
     print("home leaders", len(gen.LEADERS), "recent", RECENT_LIMIT)
 
