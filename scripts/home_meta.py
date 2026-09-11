@@ -291,36 +291,44 @@ def pie_html(pie: dict) -> str:
     latest = pie.get("set") or "OP17"
     matched = pie.get("matched") or 0
     stops = []
-    for row in slices:
-        start = row["start"]
-        end = row["start"] + row["pct"]
+    gap = 0.28
+    for i, row in enumerate(slices):
+        start = row["start"] + (gap if i else 0)
+        end = row["start"] + row["pct"] - (gap if i < len(slices) - 1 else 0)
+        if end <= start:
+            start, end = row["start"], row["start"] + row["pct"]
         stops.append(f"{row['fill']} {start:.2f}% {end:.2f}%")
     gradient = ", ".join(stops)
-    callouts = []
+    right, left = [], []
     for row in slices:
-        deg = row["mid"] * 3.6
-        out = -158 if row["small"] else -108
-        if abs((deg % 360) - 180) < 28:
-            out -= 10
-        cls = "meta-pie-callout"
-        if row["small"]:
-            cls += " meta-pie-callout-out"
-        if row.get("image"):
-            face = (
-                f'<img class="meta-pie-face" src="{html.escape(row["image"])}" '
-                f'alt="" width="40" height="40" />'
-            )
+        if row["mid"] <= 50:
+            right.append(row)
         else:
-            face = '<span class="meta-pie-face meta-pie-face-empty" aria-hidden="true"></span>'
-        callouts.append(
-            f"""            <a class="{cls}" style="--deg:{deg:.1f}deg;--out:{out}px;--slice:{html.escape(row['fill'])}" href="{html.escape(row['href'])}">
-              {face}
-              <span class="meta-pie-callout-text">
-                <span class="meta-pie-callout-name">{html.escape(row["name"])}</span>
-                <span class="meta-pie-callout-pct">{html.escape(_pct_label(row["pct"]))}</span>
-              </span>
-            </a>"""
-        )
+            left.append(row)
+    right.sort(key=lambda r: r["mid"])
+    left.sort(key=lambda r: r["mid"], reverse=True)
+
+    def side_html(rows: list[dict]) -> str:
+        labs = []
+        for row in rows:
+            if row.get("image"):
+                face = (
+                    f'<img class="meta-pie-face" src="{html.escape(row["image"])}" '
+                    f'alt="" width="44" height="44" />'
+                )
+            else:
+                face = '<span class="meta-pie-face meta-pie-face-empty" aria-hidden="true"></span>'
+            labs.append(
+                f"""              <a class="meta-pie-lab" style="--slice:{html.escape(row['fill'])}" href="{html.escape(row['href'])}">
+                {face}
+                <span class="meta-pie-lab-copy">
+                  <span class="meta-pie-lab-name">{html.escape(row["name"])}</span>
+                  <span class="meta-pie-lab-pct">{html.escape(_pct_label(row["pct"]))}</span>
+                </span>
+              </a>"""
+            )
+        return "\n".join(labs)
+
     legend = []
     for row in slices:
         if row.get("image"):
@@ -345,17 +353,24 @@ def pie_html(pie: dict) -> str:
             <h3>{html.escape(latest)} lists</h3>
             <a href="/tier-list.html">Tier list →</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. Faces sit on the pie; thin slices sit beside it. The legend adds each leader's tier score.</p>
-          <div class="meta-pie-layout">
-            <div class="meta-pie-wrap" aria-hidden="true">
-              <div class="meta-pie" style="background:conic-gradient({gradient})"></div>
-{chr(10).join(callouts)}
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. Names sit in columns beside the chart. The legend adds each leader's tier score.</p>
+          <div class="meta-pie-board">
+            <div class="meta-pie-side meta-pie-side-left">
+{side_html(left)}
             </div>
-            <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
-{chr(10).join(legend)}
-            </ul>
+            <div class="meta-pie-disk" style="background:conic-gradient({gradient})">
+              <div class="meta-pie-hole">
+                <strong>{html.escape(latest)}</strong>
+                <span>{matched} lists</span>
+              </div>
+            </div>
+            <div class="meta-pie-side meta-pie-side-right">
+{side_html(right)}
+            </div>
           </div>
-          <p class="muted meta-pie-note">{matched} lists in this sample.</p>
+          <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
+{chr(10).join(legend)}
+          </ul>
         </section>
 """
 
