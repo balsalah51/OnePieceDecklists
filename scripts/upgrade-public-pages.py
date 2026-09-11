@@ -26,7 +26,7 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro6"
+CSS_NEW = "/css/site.css?v=home-pro7"
 JS_NEW = "/js/site.js?v=home-splash"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
@@ -539,7 +539,8 @@ def render_home_body(data: dict | None = None) -> str:
             <div class="home-leaders-intro-row">
               <div>
                 <h3>Leaders</h3>
-                <p>The ten most played leaders in the newest 200 lists on this site. Rankings move when new lists land.</p>
+                <p>Last format is not gone. We still rank the ten most played leaders from the newest 200 lists on this site, and a lot of them printed before OP17 ever showed up. Green Mihawk is one of the most played leaders we host right now. He rests the board, he steals top eights, and he keeps walking out of cups like the new set was a rumor somebody told at pairings.</p>
+                <p>Red OP16 Ace is the leftover Whitebeard rush deck, the greedy little engine people swore would fade, and it keeps converting in OP17 cups anyway. Older names sit in this row next to Rocks and Luffy because people still love playing them. When a new list lands, the ranking moves, and so does the room.</p>
               </div>
               <a href="/decklists/op17.html">All leader pages →</a>
             </div>
