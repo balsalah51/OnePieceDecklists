@@ -706,7 +706,7 @@ def patch_file(path: Path, index: dict, by_href: dict) -> tuple[bool, str]:
                 1,
             )
         def splash_repl(m: re.Match) -> str:
-            if "fetchpriority=" in m.group(0):
+            if "home-banner-" in m.group(0) or "fetchpriority=" in m.group(0):
                 return m.group(0)
             return m.group(1) + ' width="1400" height="636" fetchpriority="high" decoding="async">'
 
