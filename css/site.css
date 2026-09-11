@@ -21,7 +21,7 @@ html{box-sizing:border-box}
 *,*::before,*::after{box-sizing:inherit}
 html,body{height:100%;margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .wrap{max-width:var(--maxw);width:100%;margin:36px auto;padding:28px;min-width:0}
-.wrap-home{max-width:1140px;margin:22px auto 56px}
+.wrap-home{max-width:1240px;margin:22px auto 56px}
 .wrap-home header{
   padding-bottom:16px;border-bottom:1px solid var(--line);align-items:center
 }
@@ -242,71 +242,49 @@ main.single{grid-template-columns:1fr}
   border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)
 }
 .recent-all-link:hover{border-bottom-color:var(--accent)}
-.home-meta-pie{margin-top:28px;padding:28px 24px 22px}
+.home-meta-pie{margin-top:28px;padding:28px 26px 24px}
 .meta-pie-board{
-  display:grid;grid-template-columns:minmax(200px,1fr) minmax(280px,520px) minmax(200px,1fr);
-  gap:18px 32px;align-items:center;margin:18px 0 8px;isolation:isolate
+  display:grid;grid-template-columns:minmax(420px,640px) minmax(280px,1fr);
+  gap:28px 40px;align-items:center;margin:20px 0 0
 }
 .meta-pie-disk{
-  width:100%;max-width:520px;aspect-ratio:1;border-radius:50%;justify-self:center;
-  box-shadow:0 0 0 8px var(--surface),0 0 0 11px var(--color-outline,#111),0 24px 48px rgba(16,22,26,.14);
+  width:100%;max-width:640px;aspect-ratio:1;border-radius:50%;justify-self:center;
+  box-shadow:0 0 0 10px var(--surface),0 0 0 14px var(--color-outline,#111),0 28px 56px rgba(16,22,26,.16);
   position:relative
 }
 .meta-pie-hole{
-  position:absolute;inset:24%;border-radius:50%;background:var(--surface);
+  position:absolute;inset:22%;border-radius:50%;background:var(--surface);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
-  box-shadow:inset 0 0 0 1px var(--line);text-align:center;padding:10px
+  box-shadow:inset 0 0 0 1px var(--line);text-align:center;padding:12px
 }
-.meta-pie-hole strong{font-size:clamp(20px,2.6vw,32px);letter-spacing:-.04em;line-height:1.1}
-.meta-pie-hole span{margin-top:4px;font-size:13px;font-weight:700;color:var(--muted)}
-.meta-pie-side{
-  display:flex;flex-direction:column;justify-content:space-evenly;gap:12px;
-  min-width:0;max-width:100%;align-self:stretch
-}
-.meta-pie-lab{
-  display:flex;align-items:center;gap:10px;min-width:0;max-width:100%;flex:0 0 auto;
-  text-decoration:none;color:inherit;padding:8px 12px;border-radius:14px;
-  background:color-mix(in srgb, var(--slice) 9%, var(--surface));
-  border:1px solid color-mix(in srgb, var(--slice) 26%, var(--line));
-  box-shadow:0 1px 0 color-mix(in srgb, var(--slice) 12%, transparent)
-}
-.meta-pie-lab:hover{
-  background:color-mix(in srgb, var(--slice) 16%, var(--surface));
-  border-color:color-mix(in srgb, var(--slice) 46%, var(--line))
-}
-.meta-pie-side-left{align-items:flex-end}
-.meta-pie-side-right{align-items:flex-start}
-.meta-pie-side-left .meta-pie-lab{flex-direction:row-reverse;text-align:right;border-right:3px solid var(--slice)}
-.meta-pie-side-right .meta-pie-lab{border-left:3px solid var(--slice)}
-.meta-pie-lab-copy{display:flex;flex-direction:column;gap:3px;min-width:0;overflow:hidden}
-.meta-pie-lab-name{
-  font-size:14px;font-weight:800;letter-spacing:-.02em;line-height:1.25;
-  overflow-wrap:break-word;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden
-}
-.meta-pie-lab-pct{font-size:13px;font-weight:800;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums}
+.meta-pie-hole strong{font-size:clamp(26px,3vw,40px);letter-spacing:-.05em;line-height:1.05}
+.meta-pie-hole span{margin-top:6px;font-size:15px;font-weight:700;color:var(--muted)}
 .meta-pie-face{
-  width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 16%;
+  width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 16%;
   background:#eee;border:2px solid #fff;flex-shrink:0;
   box-shadow:0 0 0 2px var(--slice,#111)
 }
 .meta-pie-legend{
-  list-style:none;padding:14px 0 0;margin:16px 0 0;display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px;
-  border-top:1px solid var(--line)
+  list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;min-width:0
 }
 .meta-pie-legend li{
-  display:grid;grid-template-columns:10px 36px minmax(0,1fr) 52px 72px;
-  align-items:center;gap:8px;min-width:0
+  display:grid;grid-template-columns:8px 48px minmax(0,1fr) 64px;
+  align-items:center;gap:12px;min-width:0;padding:8px 10px;border-radius:14px;
+  background:color-mix(in srgb, var(--slice) 8%, var(--surface));
+  border:1px solid color-mix(in srgb, var(--slice) 22%, var(--line))
 }
-.meta-pie-swatch{width:10px;height:10px;border-radius:99px;box-shadow:0 0 0 1.5px var(--color-outline,#000)}
+.meta-pie-legend li:hover{background:color-mix(in srgb, var(--slice) 14%, var(--surface))}
+.meta-pie-swatch{width:8px;height:28px;border-radius:99px;box-shadow:0 0 0 1.5px var(--color-outline,#000)}
+.meta-pie-legend-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
 .meta-pie-legend a{
-  color:inherit;font-weight:800;text-decoration:none;font-size:13px;
-  overflow:hidden;text-overflow:ellipsis;white-space:nowrap
+  color:inherit;font-weight:800;text-decoration:none;font-size:15px;line-height:1.25;
+  overflow-wrap:break-word;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden
 }
 .meta-pie-legend a:hover{color:var(--accent)}
-.meta-pie-legend-pct{font-weight:800;font-size:13px;text-align:right}
-.meta-pie-legend-tier{font-size:12px;font-weight:700;color:var(--muted);text-align:right;white-space:nowrap}
-.meta-pie-legend .meta-pie-face{width:36px;height:36px}
+.meta-pie-legend-pct{
+  font-weight:800;font-size:16px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap
+}
+.meta-pie-legend-tier{font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap}
 .meta-pie-face-empty{background:var(--line);border-color:transparent;box-shadow:none}
 .recent-cols{
   display:grid;grid-template-columns:42px minmax(0,1.15fr) minmax(0,.95fr) 96px;
@@ -622,10 +600,9 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
   .home-flow p{white-space:normal;text-align:center}
   .home-leaders-intro-row{flex-direction:column;align-items:flex-start}
   .leader-cards.home-cards,.wrap-home .leader-cards.home-cards{grid-template-columns:repeat(2,1fr)}
-  .meta-pie-board{grid-template-columns:1fr;justify-items:center;gap:16px}
-  .meta-pie-side{display:none}
-  .meta-pie-disk{width:min(400px,88vw);max-width:400px}
-  .meta-pie-legend{grid-template-columns:1fr}
+  .meta-pie-board{grid-template-columns:1fr;justify-items:center;gap:22px}
+  .meta-pie-disk{width:min(520px,92vw);max-width:520px}
+  .meta-pie-legend{width:100%}
   .recent-more-row{flex-direction:column;align-items:stretch}
   .recent-more-btn{width:100%;text-align:center}
   .wrap-home header{align-items:flex-start}
@@ -633,9 +610,7 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
 @media (max-width:1100px) and (min-width:881px){
   .home-big3{grid-template-columns:repeat(3,1fr)}
   .wrap-home .leader-cards.home-cards{grid-template-columns:repeat(5,1fr)}
-  .meta-pie-board{gap:14px 18px}
-  .meta-pie-lab{padding:7px 10px}
-  .meta-pie-lab-name{font-size:13px}
+  .meta-pie-board{grid-template-columns:minmax(320px,1fr) minmax(240px,1fr);gap:20px 24px}
 }
 @media (max-width:420px){
   .wrap{padding:12px;margin:12px auto}
@@ -881,9 +856,9 @@ a.tier-leader .meta{font-size:11px;color:var(--muted);font-weight:700;margin-top
 [data-theme="dark"] a.tier-leader img{box-shadow:0 4px 12px rgba(0,0,0,.45),0 0 0 2px var(--color-outline)}
 [data-theme="dark"] .leader-hero img{box-shadow:var(--shadow),0 0 0 2px var(--tile, var(--accent)),0 0 0 4px var(--color-outline)}
 [data-theme="dark"] .meta-pie-face{border-color:#1c1d22;background:#111}
-[data-theme="dark"] .meta-pie-lab{
+[data-theme="dark"] .meta-pie-legend li{
   background:color-mix(in srgb, var(--slice) 16%, var(--surface));
-  border-color:color-mix(in srgb, var(--slice) 34%, var(--line))
+  border-color:color-mix(in srgb, var(--slice) 32%, var(--line))
 }
-[data-theme="dark"] .meta-pie-disk{box-shadow:0 0 0 8px var(--surface),0 0 0 11px var(--color-outline),0 24px 48px rgba(0,0,0,.45)}
+[data-theme="dark"] .meta-pie-disk{box-shadow:0 0 0 10px var(--surface),0 0 0 14px var(--color-outline),0 28px 56px rgba(0,0,0,.5)}
 [data-theme="dark"] .meta-pie-hole{background:var(--surface)}
