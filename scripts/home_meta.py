@@ -24,8 +24,8 @@ PIE_SCAN_LIMIT = 400
 PIE_MAX_SLICES = 8
 PIE_SMALL_PCT = 6.5
 PIE_WIN_MIN_LISTS = 15
-PIE_LABEL_MIN_PCT = 12.0
-PIE_LABEL_MIN_GAP = 14.0
+PIE_LABEL_MIN_PCT = 3.0
+PIE_LABEL_MIN_GAP = 5.5
 META_PATH = ROOT / "data/home-meta.json"
 
 TILE = {
@@ -347,6 +347,7 @@ def _short_pie_name(name: str) -> str:
         "Rocks D. Xebec": "Rocks",
         "Charlotte Linlin": "Linlin",
         "Edward Newgate": "Newgate",
+        "Luffy & Ace": "L&Ace",
         "Nico Robin": "Robin",
         "Boa Hancock": "Boa",
         "Dracule Mihawk": "Mihawk",
@@ -421,7 +422,11 @@ def pie_html(pie: dict) -> str:
     names = []
     for row in _pie_labels(slices):
         left, top = _label_xy(row["mid"])
-        tight = " meta-pie-on-tight" if row["pct"] < 12 else ""
+        tight = ""
+        if row["pct"] < 6:
+            tight = " meta-pie-on-tiny"
+        elif row["pct"] < 10:
+            tight = " meta-pie-on-tight"
         names.append(
             f'<a class="meta-pie-on{tight}" href="{html.escape(row["href"])}" '
             f'style="left:{left};top:{top}">{html.escape(_short_pie_name(row["name"]))}</a>'
