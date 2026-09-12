@@ -104,10 +104,22 @@
       "pct": 3.7
     },
     {
+      "id": "OP17-099",
+      "name": "Charlotte Linlin",
+      "count": 12,
+      "pct": 3.4
+    },
+    {
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "count": 11,
+      "pct": 3.1
+    },
+    {
       "id": "",
       "name": "Other",
-      "count": 60,
-      "pct": 17.1
+      "count": 37,
+      "pct": 10.6
     }
   ],
   "hole": {

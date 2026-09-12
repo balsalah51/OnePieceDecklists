@@ -21,11 +21,13 @@ HOME_RECENT_VISIBLE = 25
 HOME_RECENT_EXTRA = 25
 RECENT_PAGE_LIMIT = 250
 PIE_SCAN_LIMIT = 400
-PIE_MAX_SLICES = 8
+PIE_MAX_SLICES = 10
 PIE_SMALL_PCT = 6.5
 PIE_WIN_MIN_LISTS = 15
-PIE_LABEL_MIN_PCT = 3.0
-PIE_LABEL_MIN_GAP = 5.5
+PIE_LABEL_MIN_GAP = 4.6
+PIE_LABEL_INNER = 34.5
+PIE_LABEL_OUTER = 42.0
+PIE_LABEL_RIM = 45.5
 META_PATH = ROOT / "data/home-meta.json"
 
 TILE = {
@@ -351,10 +353,15 @@ def _short_pie_name(name: str) -> str:
         "Nico Robin": "Robin",
         "Boa Hancock": "Boa",
         "Dracule Mihawk": "Mihawk",
+        "Charlotte Katakuri": "Katakuri",
+        "Trafalgar Law": "Law",
+        "Jewelry Bonney": "Bonney",
+        "Gecko Moria": "Moria",
+        "Rob Lucci": "Lucci",
     }
     if name in short:
         return short[name]
-    if len(name) > 12:
+    if len(name) > 10:
         return name.split()[0]
     return name
 
@@ -365,20 +372,21 @@ def _circle_gap(a: float, b: float) -> float:
 
 
 def _pie_labels(slices: list[dict]) -> list[dict]:
-    ranked = sorted(slices, key=lambda row: row.get("pct") or 0, reverse=True)
-    keep: list[dict] = []
-    for row in ranked:
-        if (row.get("pct") or 0) < PIE_LABEL_MIN_PCT:
-            continue
-        if any(_circle_gap(row["mid"], placed["mid"]) < PIE_LABEL_MIN_GAP for placed in keep):
-            continue
-        keep.append(row)
-    return keep
+    items = [dict(row) for row in slices]
+    ordered = sorted(items, key=lambda row: row["mid"])
+    small_n = 0
+    for row in ordered:
+        pct = row.get("pct") or 0
+        if pct >= 8:
+            row["radius"] = PIE_LABEL_OUTER
+        else:
+            row["radius"] = PIE_LABEL_RIM if small_n % 2 == 0 else PIE_LABEL_INNER
+            small_n += 1
+    return items
 
 
-def _label_xy(mid: float) -> tuple[str, str]:
+def _label_xy(mid: float, radius: float) -> tuple[str, str]:
     theta = mid / 100.0 * 2 * math.pi
-    radius = 39.0
     x = 50 + radius * math.sin(theta)
     y = 50 - radius * math.cos(theta)
     return f"{x:.2f}%", f"{y:.2f}%"
@@ -421,11 +429,11 @@ def pie_html(pie: dict) -> str:
         hole_html = '<div class="meta-pie-hole" aria-hidden="true"></div>'
     names = []
     for row in _pie_labels(slices):
-        left, top = _label_xy(row["mid"])
+        left, top = _label_xy(row["mid"], row["radius"])
         tight = ""
-        if row["pct"] < 6:
+        if row["pct"] < 5:
             tight = " meta-pie-on-tiny"
-        elif row["pct"] < 10:
+        elif row["pct"] < 9:
             tight = " meta-pie-on-tight"
         names.append(
             f'<a class="meta-pie-on{tight}" href="{html.escape(row["href"])}" '
@@ -458,7 +466,7 @@ def pie_html(pie: dict) -> str:
             <h3>{html.escape(latest)} lists</h3>
             <a href="/tier-list.html">Tier list →</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. The hole is the leader converting best in this sample. Bigger slices get a name when it fits.</p>
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. The hole is the leader converting best among these lists. Names sit on every slice.</p>
           <div class="meta-pie-board">
             <div class="meta-pie-disk" style="background:conic-gradient({gradient})">
               {hole_html}
