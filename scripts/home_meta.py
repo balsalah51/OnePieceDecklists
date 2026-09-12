@@ -376,7 +376,7 @@ def _pie_labels(slices: list[dict]) -> list[dict]:
 
 def _label_xy(mid: float) -> tuple[str, str]:
     theta = mid / 100.0 * 2 * math.pi
-    radius = 33.0
+    radius = 39.0
     x = 50 + radius * math.sin(theta)
     y = 50 - radius * math.cos(theta)
     return f"{x:.2f}%", f"{y:.2f}%"
