@@ -26,7 +26,7 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro15"
+CSS_NEW = "/css/site.css?v=home-pro16"
 JS_NEW = "/js/site.js?v=home-splash"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
@@ -423,7 +423,7 @@ def render_home_body(data: dict | None = None) -> str:
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
           <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
-            <span class="home-splash-face"><img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin leader card" width="300" height="419" /></span>
+            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin leader card" width="300" height="419" />
             <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
           </a>
           <div class="home-splash-nav">
