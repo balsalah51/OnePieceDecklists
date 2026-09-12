@@ -24,8 +24,8 @@ PIE_SCAN_LIMIT = 400
 PIE_MAX_SLICES = 8
 PIE_SMALL_PCT = 6.5
 PIE_WIN_MIN_LISTS = 15
-PIE_LABEL_MIN_PCT = 8.0
-PIE_LABEL_MIN_GAP = 10.0
+PIE_LABEL_MIN_PCT = 12.0
+PIE_LABEL_MIN_GAP = 14.0
 META_PATH = ROOT / "data/home-meta.json"
 
 TILE = {
@@ -347,6 +347,7 @@ def _short_pie_name(name: str) -> str:
         "Rocks D. Xebec": "Rocks",
         "Charlotte Linlin": "Linlin",
         "Edward Newgate": "Newgate",
+        "Nico Robin": "Robin",
         "Boa Hancock": "Boa",
         "Dracule Mihawk": "Mihawk",
     }
@@ -376,7 +377,7 @@ def _pie_labels(slices: list[dict]) -> list[dict]:
 
 def _label_xy(mid: float) -> tuple[str, str]:
     theta = mid / 100.0 * 2 * math.pi
-    radius = 33.0
+    radius = 39.0
     x = 50 + radius * math.sin(theta)
     y = 50 - radius * math.cos(theta)
     return f"{x:.2f}%", f"{y:.2f}%"
@@ -406,6 +407,17 @@ def pie_html(pie: dict) -> str:
             start, end = row["start"], row["start"] + row["pct"]
         stops.append(f"{row['fill']} {start:.2f}% {end:.2f}%")
     gradient = ", ".join(stops)
+    hole = pie.get("hole") or {}
+    if hole.get("image"):
+        hole_html = (
+            f'<a class="meta-pie-hole" href="{html.escape(hole["href"])}" '
+            f'aria-label="{html.escape(hole["name"])}">'
+            f'<img class="meta-pie-hole-face" src="{html.escape(hole["image"])}" '
+            f'alt="" width="220" height="220" />'
+            f"</a>"
+        )
+    else:
+        hole_html = '<div class="meta-pie-hole" aria-hidden="true"></div>'
     names = []
     for row in _pie_labels(slices):
         left, top = _label_xy(row["mid"])
@@ -441,10 +453,10 @@ def pie_html(pie: dict) -> str:
             <h3>{html.escape(latest)} lists</h3>
             <a href="/tier-list.html">Tier list →</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. Bigger slices get a name when it fits. The list beside the chart has every leader, percent, and tier score.</p>
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. The hole is the leader converting best in this sample. Bigger slices get a name when it fits.</p>
           <div class="meta-pie-board">
             <div class="meta-pie-disk" style="background:conic-gradient({gradient})">
-              <div class="meta-pie-hole" aria-hidden="true"></div>
+              {hole_html}
               {names_html}
             </div>
             <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
