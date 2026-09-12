@@ -24,8 +24,8 @@ PIE_SCAN_LIMIT = 400
 PIE_MAX_SLICES = 8
 PIE_SMALL_PCT = 6.5
 PIE_WIN_MIN_LISTS = 15
-PIE_LABEL_MIN_PCT = 8.0
-PIE_LABEL_MIN_GAP = 12.0
+PIE_LABEL_MIN_PCT = 12.0
+PIE_LABEL_MIN_GAP = 14.0
 META_PATH = ROOT / "data/home-meta.json"
 
 TILE = {
@@ -347,6 +347,7 @@ def _short_pie_name(name: str) -> str:
         "Rocks D. Xebec": "Rocks",
         "Charlotte Linlin": "Linlin",
         "Edward Newgate": "Newgate",
+        "Nico Robin": "Robin",
         "Boa Hancock": "Boa",
         "Dracule Mihawk": "Mihawk",
     }

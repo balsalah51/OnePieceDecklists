@@ -262,12 +262,14 @@ main.single{grid-template-columns:1fr}
 .meta-pie-hole:hover .meta-pie-hole-face{filter:brightness(1.06)}
 .meta-pie-on{
   position:absolute;transform:translate(-50%,-50%);z-index:2;
-  color:#fff;font-size:14px;font-weight:800;letter-spacing:-.02em;line-height:1.15;
+  color:#fff;font-size:15px;font-weight:800;letter-spacing:-.02em;line-height:1.1;
   text-align:center;text-decoration:none;white-space:nowrap;
-  -webkit-text-stroke:2px #111;paint-order:stroke fill;
-  text-shadow:0 1px 0 #111,1px 0 0 #111,0 -1px 0 #111,-1px 0 0 #111
+  -webkit-text-stroke:1.6px #000;paint-order:stroke fill;
+  text-shadow:
+    -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,
+    -1.5px 0 0 #000,1.5px 0 0 #000,0 -1.5px 0 #000,0 1.5px 0 #000
 }
-.meta-pie-on:hover{color:#fff;filter:brightness(1.08)}
+.meta-pie-on:hover{color:#fff}
 .meta-pie-face{
   width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 16%;
   background:#eee;border:2px solid #fff;flex-shrink:0;
@@ -611,7 +613,7 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
   .leader-cards.home-cards,.wrap-home .leader-cards.home-cards{grid-template-columns:repeat(2,1fr)}
   .meta-pie-board{grid-template-columns:1fr;justify-items:center;gap:22px}
   .meta-pie-disk{width:min(420px,88vw);max-width:420px}
-  .meta-pie-on{font-size:13px}
+  .meta-pie-on{font-size:14px}
   .meta-pie-on-tight{display:none}
   .meta-pie-legend{width:100%}
   .recent-more-row{flex-direction:column;align-items:stretch}
