@@ -9,6 +9,7 @@ from __future__ import annotations
 import html
 import importlib.util
 import json
+import math
 import re
 from collections import Counter
 from pathlib import Path
@@ -23,6 +24,8 @@ PIE_SCAN_LIMIT = 400
 PIE_MAX_SLICES = 8
 PIE_SMALL_PCT = 6.5
 PIE_WIN_MIN_LISTS = 15
+PIE_LABEL_MIN_PCT = 8.0
+PIE_LABEL_MIN_GAP = 10.0
 META_PATH = ROOT / "data/home-meta.json"
 
 TILE = {
@@ -337,6 +340,48 @@ def _pct_label(pct: float) -> str:
     return f"{pct:.1f}%"
 
 
+def _short_pie_name(name: str) -> str:
+    short = {
+        "Monkey D. Luffy": "Luffy",
+        "Portgas D. Ace": "Ace",
+        "Rocks D. Xebec": "Rocks",
+        "Charlotte Linlin": "Linlin",
+        "Edward Newgate": "Newgate",
+        "Boa Hancock": "Boa",
+        "Dracule Mihawk": "Mihawk",
+    }
+    if name in short:
+        return short[name]
+    if len(name) > 12:
+        return name.split()[0]
+    return name
+
+
+def _circle_gap(a: float, b: float) -> float:
+    d = abs(a - b)
+    return min(d, 100.0 - d)
+
+
+def _pie_labels(slices: list[dict]) -> list[dict]:
+    ranked = sorted(slices, key=lambda row: row.get("pct") or 0, reverse=True)
+    keep: list[dict] = []
+    for row in ranked:
+        if (row.get("pct") or 0) < PIE_LABEL_MIN_PCT:
+            continue
+        if any(_circle_gap(row["mid"], placed["mid"]) < PIE_LABEL_MIN_GAP for placed in keep):
+            continue
+        keep.append(row)
+    return keep
+
+
+def _label_xy(mid: float) -> tuple[str, str]:
+    theta = mid / 100.0 * 2 * math.pi
+    radius = 33.0
+    x = 50 + radius * math.sin(theta)
+    y = 50 - radius * math.cos(theta)
+    return f"{x:.2f}%", f"{y:.2f}%"
+
+
 def _tier_label(slice_row: dict) -> str:
     letter = slice_row.get("tier") or ""
     score = slice_row.get("score")
@@ -352,7 +397,6 @@ def pie_html(pie: dict) -> str:
     if not slices:
         return ""
     latest = pie.get("set") or "OP17"
-    matched = pie.get("matched") or 0
     stops = []
     gap = 0.28
     for i, row in enumerate(slices):
@@ -362,28 +406,15 @@ def pie_html(pie: dict) -> str:
             start, end = row["start"], row["start"] + row["pct"]
         stops.append(f"{row['fill']} {start:.2f}% {end:.2f}%")
     gradient = ", ".join(stops)
-    hole = pie.get("hole") or {}
-    if hole.get("image"):
-        hole_inner = (
-            f'<img class="meta-pie-hole-face" src="{html.escape(hole["image"])}" '
-            f'alt="" width="220" height="220" />'
-            f'<span class="meta-pie-hole-copy">'
-            f'<strong>{html.escape(hole["name"])}</strong>'
-            f'<span>{html.escape(_pct_label(hole.get("win_pct") or 0))} win rate</span>'
-            f"</span>"
+    names = []
+    for row in _pie_labels(slices):
+        left, top = _label_xy(row["mid"])
+        tight = " meta-pie-on-tight" if row["pct"] < 12 else ""
+        names.append(
+            f'<a class="meta-pie-on{tight}" href="{html.escape(row["href"])}" '
+            f'style="left:{left};top:{top}">{html.escape(_short_pie_name(row["name"]))}</a>'
         )
-        hole_html = (
-            f'<a class="meta-pie-hole" href="{html.escape(hole["href"])}" '
-            f'aria-label="{html.escape(hole["name"])}, highest first-place rate in this sample">'
-            f"{hole_inner}</a>"
-        )
-    else:
-        hole_html = (
-            f'<div class="meta-pie-hole">'
-            f"<strong>{html.escape(latest)}</strong>"
-            f"<span>{matched} lists</span>"
-            f"</div>"
-        )
+    names_html = "\n              ".join(names)
     legend = []
     for row in slices:
         if row.get("image"):
@@ -410,10 +441,11 @@ def pie_html(pie: dict) -> str:
             <h3>{html.escape(latest)} lists</h3>
             <a href="/tier-list.html">Tier list →</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. The center is the leader with the highest first-place rate in this sample. Names, percents, and tier scores sit in the list beside the chart.</p>
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. Bigger slices get a name when it fits. The list beside the chart has every leader, percent, and tier score.</p>
           <div class="meta-pie-board">
             <div class="meta-pie-disk" style="background:conic-gradient({gradient})">
-              {hole_html}
+              <div class="meta-pie-hole" aria-hidden="true"></div>
+              {names_html}
             </div>
             <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
 {chr(10).join(legend)}
