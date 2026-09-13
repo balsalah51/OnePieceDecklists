@@ -1,0 +1,80 @@
+{
+  "found": [
+    {
+      "leader": "OP14-020",
+      "kind": "web",
+      "player": "Mitsu",
+      "title": "Dracule Mihawk (Format OP17) Standard Battle Winner",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/mihawk-op17-east-cardshop-sep11-mitsu/",
+      "slug": "opdeck-mihawk-op17-east-cardshop-sep11-mitsu",
+      "raw": "1xOP14-020 4xOP07-022 4xOP12-034 4xST32-001 3xOP06-033 2xOP07-026 4xOP12-023 1xOP14-033 4xST32-002 3xOP17-031 4xOP13-031 1xST32-003 1xOP06-035 4xOP17-022 3xOP01-055 4xOP06-038 2xOP14-039 2xOP08-036",
+      "cards": 50,
+      "date": "2026-09-11"
+    },
+    {
+      "leader": "OP14-041",
+      "kind": "web",
+      "player": "tsk00104",
+      "title": "Boa Hancock (Format OP17) Standard Battle Winner",
+      "subtitle": "TorecaShop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/boa-op17-east-toreca-shop-sep11-tsk00104/",
+      "slug": "opdeck-boa-op17-east-toreca-shop-sep11-tsk00104",
+      "raw": "1xOP14-041 4xOP17-109 4xOP14-114 4xOP15-113 4xEB04-058 4xOP16-113 4xOP14-105 4xOP14-107 2xOP14-108 4xOP14-104 4xOP14-112 4xST17-004 4xOP06-115 4xOP06-058",
+      "cards": 50,
+      "date": "2026-09-11"
+    },
+    {
+      "leader": "OP14-041",
+      "kind": "web",
+      "player": "jtjt_1083",
+      "title": "Boa Hancock (Format OP17) Standard Battle Winner",
+      "subtitle": "OneHappy · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/boa-op17-east-onehappy-sep11-jtjt-1083/",
+      "slug": "opdeck-boa-op17-east-onehappy-sep11-jtjt-1083",
+      "raw": "1xOP14-041 2xOP06-106 4xOP17-109 4xOP14-114 4xOP15-113 4xEB04-058 4xOP16-113 4xOP14-105 4xOP14-107 4xOP14-104 2xOP16-119 4xOP14-112 1xST17-004 4xOP11-054 2xOP06-115 1xOP14-118 1xOP07-057 1xOP06-058",
+      "cards": 50,
+      "date": "2026-09-11"
+    },
+    {
+      "leader": "OP16-079",
+      "kind": "web",
+      "player": "3zu",
+      "title": "Yamato (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "CARDBOX · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/yamato-op17-east-cardbox-sep11-3zu/",
+      "slug": "opdeck-yamato-op17-east-cardbox-sep11-3zu",
+      "raw": "1xOP16-079 4xOP16-091 4xOP16-092 2xOP16-081 4xOP16-087 1xOP16-088 1xOP16-095 3xOP06-093 4xOP16-082 1xOP16-094 4xOP16-084 4xOP16-098 3xOP16-096 4xOP16-097 1xOP07-085 3xOP16-085 3xOP14-096 4xOP16-099",
+      "cards": 50,
+      "date": "2026-09-11"
+    },
+    {
+      "leader": "OP17-058",
+      "kind": "web",
+      "player": "Hideyoshi",
+      "title": "Kaido (Format OP17) Standard Battle Winner",
+      "subtitle": "BINKS · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/kaido-op17-east-binks-sep11-hideyoshi/",
+      "slug": "opdeck-kaido-op17-east-binks-sep11-hideyoshi",
+      "raw": "1xOP17-058 4xEB04-032 4xOP17-075 4xOP17-073 4xOP17-074 4xEB04-031 2xEB04-030 4xOP17-061 3xST34-004 4xOP17-062 2xOP17-063 4xOP15-078 4xOP07-077 3xEB04-040 4xOP07-076",
+      "cards": 50,
+      "date": "2026-09-11"
+    },
+    {
+      "leader": "OP15-058",
+      "kind": "web",
+      "player": "Ryu",
+      "title": "Enel (Format OP17) Standard Battle Winner",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/enel-op17-east-cardshop-sep11-ryu/",
+      "slug": "opdeck-enel-op17-east-cardshop-sep11-ryu",
+      "raw": "1xOP15-058 2xOP12-071 4xOP15-061 4xOP15-066 4xOP15-067 3xST10-010 1xOP09-072 2xOP10-067 4xOP15-118 1xOP13-076 4xOP15-074 4xOP15-075 4xOP15-076 4xOP15-077 4xOP15-078 3xOP05-077 2xOP09-077",
+      "cards": 50,
+      "date": "2026-09-11"
+    }
+  ],
+  "window": {
+    "start": "2026-09-10",
+    "end": "2026-09-12"
+  }
+}

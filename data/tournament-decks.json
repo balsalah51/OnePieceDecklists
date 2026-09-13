@@ -181,6 +181,16 @@
       "date": "2026-08-27",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a86a68678baaa6d1c224215/standings"
+    },
+    {
+      "slug": "10th-jaaz-ger-dressrosa-tournament-op17",
+      "href": "/decklists/op17/shanks/10th-jaaz-ger-dressrosa-tournament-op17.html",
+      "player": "Jaaz",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 10,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
     }
   ],
   "OP17-039": [
@@ -1763,6 +1773,26 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
+    },
+    {
+      "slug": "5th-menta99-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/op17/rocks-d-xebec/5th-menta99-op17-win-a-box-rumble-league-8.html",
+      "player": "Menta99",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 5,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "21st-itzfalco-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/op17/rocks-d-xebec/21st-itzfalco-op17-win-a-box-rumble-league-8.html",
+      "player": "itzfalco",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 21,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
     }
   ],
   "OP17-058": [
@@ -2985,6 +3015,66 @@
       "date": "2026-09-09",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a981389ab080c8c957f7cbd/standings"
+    },
+    {
+      "slug": "8th-rhaexo-ger-dressrosa-tournament-op17-2",
+      "href": "/decklists/op17/kaido/8th-rhaexo-ger-dressrosa-tournament-op17-2.html",
+      "player": "Rhaexo",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 8,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
+    },
+    {
+      "slug": "10th-nkoupas-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/op17/kaido/10th-nkoupas-op17-win-a-box-praxi-agapis-4.html",
+      "player": "NKoupas",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 10,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "11th-jollyrossger-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/op17/kaido/11th-jollyrossger-op17-win-a-box-rumble-league-8.html",
+      "player": "Jollyrossger",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 11,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "14th-dominicanosjr-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/op17/kaido/14th-dominicanosjr-op17-win-a-box-praxi-agapis-4.html",
+      "player": "DominicanosJr",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 14,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "22nd-freeangel-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/op17/kaido/22nd-freeangel-op17-win-a-box-rumble-league-8.html",
+      "player": "FreeAngel",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 22,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "26th-iakoroy-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/op17/kaido/26th-iakoroy-op17-win-a-box-rumble-league-8.html",
+      "player": "Iakoroy",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 26,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
     }
   ],
   "OP17-079": [
@@ -3817,6 +3907,36 @@
       "date": "2026-09-09",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a981389ab080c8c957f7cbd/standings"
+    },
+    {
+      "slug": "5th-chibeloha-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/op17/monkey-d-luffy/5th-chibeloha-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Chibeloha",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 5,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "7th-left-d-chat-ger-dressrosa-tournament-op17",
+      "href": "/decklists/op17/monkey-d-luffy/7th-left-d-chat-ger-dressrosa-tournament-op17.html",
+      "player": "Left_D_Chat",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 7,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
+    },
+    {
+      "slug": "12th-zuramp17-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/op17/monkey-d-luffy/12th-zuramp17-op17-win-a-box-rumble-league-8.html",
+      "player": "Zuramp17",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 12,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
     }
   ],
   "OP17-099": [
@@ -6061,6 +6181,16 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
+    },
+    {
+      "slug": "6th-timooooo-ger-dressrosa-tournament-op17",
+      "href": "/decklists/rg-luffy/6th-timooooo-ger-dressrosa-tournament-op17.html",
+      "player": "Timooooo",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 6,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
     }
   ],
   "OP11-041": [
@@ -7443,6 +7573,16 @@
       "date": "2026-09-09",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a981389ab080c8c957f7cbd/standings"
+    },
+    {
+      "slug": "4th-blackslayer-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/nami/4th-blackslayer-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Blackslayer",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 4,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
     }
   ],
   "OP14-020": [
@@ -11885,6 +12025,126 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a9f5e0cab080c8c957fd9ee/standings"
+    },
+    {
+      "slug": "1st-genjispeed-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/mihawk/1st-genjispeed-op17-win-a-box-praxi-agapis-4.html",
+      "player": "GenjiSpeed",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 1,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "3rd-maskchange29-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/mihawk/3rd-maskchange29-op17-win-a-box-praxi-agapis-4.html",
+      "player": "MaskChange29",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 3,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "3rd-lykoi763-ger-dressrosa-tournament-op17",
+      "href": "/decklists/mihawk/3rd-lykoi763-ger-dressrosa-tournament-op17.html",
+      "player": "Lykoi763",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 3,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
+    },
+    {
+      "slug": "6th-giano-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/mihawk/6th-giano-op17-win-a-box-rumble-league-8.html",
+      "player": "Giano",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 6,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "10th-just10-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/mihawk/10th-just10-op17-win-a-box-rumble-league-8.html",
+      "player": "Just10",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 10,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "11th-tsouk3-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/mihawk/11th-tsouk3-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Tsouk3",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 11,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "14th-vimax19-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/mihawk/14th-vimax19-op17-win-a-box-rumble-league-8.html",
+      "player": "ViMax19",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 14,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "15th-tzaf-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/mihawk/15th-tzaf-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Tzaf",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 15,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "16th-forst007-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/mihawk/16th-forst007-op17-win-a-box-rumble-league-8.html",
+      "player": "Forst007",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 16,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "18th-senpai21-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/mihawk/18th-senpai21-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Senpai21",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 18,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "20th-ukerunpu-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/mihawk/20th-ukerunpu-op17-win-a-box-praxi-agapis-4.html",
+      "player": "UkeRunpu",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 20,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "27th-prog-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/mihawk/27th-prog-op17-win-a-box-rumble-league-8.html",
+      "player": "Prog",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 27,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
     }
   ],
   "OP16-001": [
@@ -13277,6 +13537,36 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a9f5e0cab080c8c957fd9ee/standings"
+    },
+    {
+      "slug": "16th-mparkoulinio-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/portgas-d-ace/16th-mparkoulinio-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Mparkoulinio",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 16,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "19th-ivane96-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/portgas-d-ace/19th-ivane96-op17-win-a-box-rumble-league-8.html",
+      "player": "Ivane96",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 19,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "23rd-yamigianko-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/portgas-d-ace/23rd-yamigianko-op17-win-a-box-praxi-agapis-4.html",
+      "player": "yamigianko",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 23,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
     }
   ],
   "OP15-058": [
@@ -15359,6 +15649,66 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
+    },
+    {
+      "slug": "7th-ryanellice-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/enel/7th-ryanellice-op17-win-a-box-rumble-league-8.html",
+      "player": "ryanellice",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 7,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "8th-piso-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/enel/8th-piso-op17-win-a-box-rumble-league-8.html",
+      "player": "Piso",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 8,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "9th-rst-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/enel/9th-rst-op17-win-a-box-praxi-agapis-4.html",
+      "player": "RST",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 9,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "12th-castiel1992-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/enel/12th-castiel1992-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Castiel1992",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 12,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "18th-maggiocrisss-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/enel/18th-maggiocrisss-op17-win-a-box-rumble-league-8.html",
+      "player": "Maggiocrisss",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 18,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "22nd-biggeo-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/enel/22nd-biggeo-op17-win-a-box-praxi-agapis-4.html",
+      "player": "biggeo",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 22,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
     }
   ],
   "OP11-062": [
@@ -20609,6 +20959,16 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a9f5e0cab080c8c957fd9ee/standings"
+    },
+    {
+      "slug": "1st-kondoriano98-ger-dressrosa-tournament-op17-2",
+      "href": "/decklists/blackbeard/1st-kondoriano98-ger-dressrosa-tournament-op17-2.html",
+      "player": "Kondoriano98",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 1,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
     }
   ],
   "OP12-061": [
@@ -23235,6 +23595,16 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a9f5e0cab080c8c957fd9ee/standings"
+    },
+    {
+      "slug": "5th-saiya-gin-ger-dressrosa-tournament-op17",
+      "href": "/decklists/yamato/5th-saiya-gin-ger-dressrosa-tournament-op17.html",
+      "player": "Saiya_Gin",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 5,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
     }
   ],
   "OP11-001": [
@@ -24077,6 +24447,16 @@
       "date": "2026-09-03",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a8847835a30714095575f05/standings"
+    },
+    {
+      "slug": "23rd-squalo8-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/koby/23rd-squalo8-op17-win-a-box-rumble-league-8.html",
+      "player": "Squalo8",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 23,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
     }
   ],
   "OP14-060": [
@@ -27457,6 +27837,56 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
+    },
+    {
+      "slug": "4th-henri21-ger-dressrosa-tournament-op17-2",
+      "href": "/decklists/sabo/4th-henri21-ger-dressrosa-tournament-op17-2.html",
+      "player": "Henri21",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 4,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
+    },
+    {
+      "slug": "13th-kevinpaillex-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/sabo/13th-kevinpaillex-op17-win-a-box-rumble-league-8.html",
+      "player": "KevinPaillex",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 13,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "25th-kiwitt-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/sabo/25th-kiwitt-op17-win-a-box-rumble-league-8.html",
+      "player": "Kiwitt",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 25,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "0-2-beardedblue-ger-dressrosa-tournament-op17",
+      "href": "/decklists/sabo/0-2-beardedblue-ger-dressrosa-tournament-op17.html",
+      "player": "beardedblue",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": null,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
+    },
+    {
+      "slug": "19th-puretcg-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/sabo/19th-puretcg-op17-win-a-box-praxi-agapis-4.html",
+      "player": "PureTCG",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 19,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
     }
   ],
   "OP09-062": [
@@ -28459,6 +28889,86 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
+    },
+    {
+      "slug": "1st-ghiro-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/nico-robin/1st-ghiro-op17-win-a-box-rumble-league-8.html",
+      "player": "Ghiro",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 1,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "2nd-meid-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/nico-robin/2nd-meid-op17-win-a-box-rumble-league-8.html",
+      "player": "Meid",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 2,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "2nd-mrupperhand-ger-dressrosa-tournament-op17",
+      "href": "/decklists/nico-robin/2nd-mrupperhand-ger-dressrosa-tournament-op17.html",
+      "player": "MrUpperhand",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 2,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
+    },
+    {
+      "slug": "3rd-nizzintheskyz-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/nico-robin/3rd-nizzintheskyz-op17-win-a-box-rumble-league-8.html",
+      "player": "Nizzintheskyz",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 3,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "8th-vasilispatralis-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/nico-robin/8th-vasilispatralis-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Vasilispatralis",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 8,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "9th-franz-s-ger-dressrosa-tournament-op17",
+      "href": "/decklists/nico-robin/9th-franz-s-ger-dressrosa-tournament-op17.html",
+      "player": "Franz S",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 9,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a93fcb4abb9482237503ba9/standings"
+    },
+    {
+      "slug": "21st-genji-noah-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/nico-robin/21st-genji-noah-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Genji_Noah",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 21,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "24th-perryagentep-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/nico-robin/24th-perryagentep-op17-win-a-box-rumble-league-8.html",
+      "player": "PerryAgenteP",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 24,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
     }
   ],
   "OP14-080": [
@@ -28989,6 +29499,16 @@
       "date": "2026-09-07",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a980df4ab080c8c957f7c63/standings"
+    },
+    {
+      "slug": "13th-mamanis7-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/op05-enel/13th-mamanis7-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Mamanis7",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 13,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
     }
   ],
   "ST10-002": [
@@ -29377,6 +29897,16 @@
       "date": "2026-09-09",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a981389ab080c8c957f7cbd/standings"
+    },
+    {
+      "slug": "7th-sotkas-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/charlotte-pudding/7th-sotkas-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Sotkas",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 7,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
     }
   ],
   "ST30-001": [
@@ -29589,6 +30119,76 @@
       "date": "2026-09-08",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
+    },
+    {
+      "slug": "9th-cicciuzz94-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/luffy-ace/9th-cicciuzz94-op17-win-a-box-rumble-league-8.html",
+      "player": "Cicciuzz94",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 9,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "17th-gorista-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/luffy-ace/17th-gorista-op17-win-a-box-praxi-agapis-4.html",
+      "player": "Gorista",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 17,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "2nd-petemess-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/luffy-ace/2nd-petemess-op17-win-a-box-praxi-agapis-4.html",
+      "player": "petemess",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 2,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "6th-kakopaiktis-op17-win-a-box-praxi-agapis-4",
+      "href": "/decklists/luffy-ace/6th-kakopaiktis-op17-win-a-box-praxi-agapis-4.html",
+      "player": "kakopaiktis",
+      "tournament": "[OP17]Win a Box - Praxi Agapis #4",
+      "placing": 6,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a75bab12b308b6067b4c6e5/standings"
+    },
+    {
+      "slug": "15th-alfrix22-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/luffy-ace/15th-alfrix22-op17-win-a-box-rumble-league-8.html",
+      "player": "Alfrix22",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 15,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "17th-babylosby-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/luffy-ace/17th-babylosby-op17-win-a-box-rumble-league-8.html",
+      "player": "BabyLosby",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 17,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "20th-lorex-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/luffy-ace/20th-lorex-op17-win-a-box-rumble-league-8.html",
+      "player": "LoreX",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 20,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
     }
   ]
 }

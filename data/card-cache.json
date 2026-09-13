@@ -16928,5 +16928,37 @@
     "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST35/ST35-005_EN.webp",
     "source": "https://onepiece.limitlesstcg.com/cards/ST35-005",
     "tcgplayer_id": 706355
+  },
+  "OP06-003": {
+    "id": "OP06-003",
+    "name": "Emporio.Ivankov",
+    "category": "Character",
+    "color": "Red",
+    "life": null,
+    "cost": "5",
+    "power": "6000",
+    "counter": null,
+    "attribute": "Special",
+    "types": "Revolutionary Army",
+    "effect": "[On Play] Look at 3 cards from the top of your deck and play up to 1 {Revolutionary Army} type Character card with 5000 power or less. Then, place the rest at the bottom of your deck in any order.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP06/OP06-003_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP06-003",
+    "tcgplayer_id": 541567
+  },
+  "OP14-106": {
+    "id": "OP14-106",
+    "name": "Salome",
+    "category": "Character",
+    "color": "Yellow",
+    "life": null,
+    "cost": "3",
+    "power": "1000",
+    "counter": "+1000",
+    "attribute": "Strike",
+    "types": "Animal/Amazon Lily",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [Trigger] Play this card.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-106_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP14-106",
+    "tcgplayer_id": 671436
   }
 }
