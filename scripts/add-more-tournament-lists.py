@@ -283,17 +283,32 @@ def fetch_more(
     extra_limit: int | None = None,
     per_event: int | None = None,
     since: str | None = None,
+    until: str | None = None,
     require_op17: bool = False,
 ) -> dict:
     target_ids = only_ids or {L["id"] for L in gen.LEADERS}
     leaders = [L for L in gen.LEADERS if L["id"] in target_ids]
     limit = EXTRA_LIMIT if extra_limit is None else extra_limit
     event_cap = PER_EVENT if per_event is None else per_event
-    print("fetching tournament pages", pages, "extra_limit", limit, "per_event", event_cap, "since", since)
+    print(
+        "fetching tournament pages",
+        pages,
+        "extra_limit",
+        limit,
+        "per_event",
+        event_cap,
+        "since",
+        since,
+        "until",
+        until,
+    )
     tournaments = fetch_tournament_pages(pages=pages)
     if since:
         tournaments = [t for t in tournaments if (t.get("date") or "")[:10] >= since]
         print("kept since", since, len(tournaments))
+    if until:
+        tournaments = [t for t in tournaments if (t.get("date") or "")[:10] <= until]
+        print("kept until", until, len(tournaments))
     print("tournaments", len(tournaments), "scanning", sorted(target_ids))
     by_leader = gen.fetch_standings(tournaments, target_ids)
     cache = gen.load_card_cache()
