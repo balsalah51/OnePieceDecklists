@@ -138,39 +138,43 @@ SEED_TWEETS = {
     "2076068504843735235": "sormiltcg",
 }
 
-SEARCHES = [
-    f'site:x.com "4xOP17" since:{DATE_START}',
-    f'site:x.com "1xOP17-001" since:{DATE_START}',
-    f'site:x.com "1xOP17-039" since:{DATE_START}',
-    f'site:x.com "1xOP17-079" since:{DATE_START}',
-    f'site:x.com "1xOP11-040" since:{DATE_START}',
-    f'site:x.com "1xOP08-058" since:{DATE_START}',
-    f'site:x.com "1xOP16-001" since:{DATE_START}',
-    f"site:x.com OP17 decklist since:{DATE_START}",
-    f"site:x.com OPTCG decklist since:{DATE_START}",
-    f"site:x.com ChinoizeCup since:{DATE_START}",
-    f"site:x.com The_Egman decklist since:{DATE_START}",
-    f"site:x.com Yonxlj deck-list since:{DATE_START}",
-    f"site:x.com MarinefordTCG since:{DATE_START}",
-    f"site:x.com CardKaizoku since:{DATE_START}",
-    f"site:x.com ChinoizeCup #103 since:{DATE_START}",
-    f"site:x.com ChinoizeCup #102 since:{DATE_START}",
-    f"site:x.com NightingaleTCG decklist since:{DATE_START}",
-    f"site:x.com StrawHatPecan decklist since:{DATE_START}",
-    f"site:x.com BlaisePlays decklist since:{DATE_START}",
-    'site:x.com "4xOP17"',
-    'site:twitter.com "4xOP17-040"',
-    "site:x.com ChinoizeCup #101 Winner",
-    "site:x.com ChinoizeCup #100 Winner",
-    "site:x.com ワンピカード デッキ since:2026-09-04",
-    f"site:x.com Flame Flame decklist since:{DATE_START}",
-    f'site:x.com "Flame-Flame Fruit" Utrecht since:{DATE_START}',
-    f"site:x.com BCG Fest Utrecht decklist since:{DATE_START}",
-    f"site:x.com Flame Flame Winner Robin since:{DATE_START}",
-    f'site:x.com "4xOP17" since:{DATE_START}',
-    "site:x.com ワンピカード 優勝 デッキ since:2026-09-04",
-    "site:x.com 紫黄ロビン デッキ since:2026-09-04",
-]
+def search_queries() -> list[str]:
+    return [
+        f'site:x.com "4xOP17" since:{DATE_START}',
+        f'site:x.com "1xOP17-001" since:{DATE_START}',
+        f'site:x.com "1xOP17-039" since:{DATE_START}',
+        f'site:x.com "1xOP17-079" since:{DATE_START}',
+        f'site:x.com "1xOP11-040" since:{DATE_START}',
+        f'site:x.com "1xOP08-058" since:{DATE_START}',
+        f'site:x.com "1xOP16-001" since:{DATE_START}',
+        f"site:x.com OP17 decklist since:{DATE_START}",
+        f"site:x.com OPTCG decklist since:{DATE_START}",
+        f"site:x.com ChinoizeCup since:{DATE_START}",
+        f"site:x.com The_Egman decklist since:{DATE_START}",
+        f"site:x.com Yonxlj deck-list since:{DATE_START}",
+        f"site:x.com MarinefordTCG since:{DATE_START}",
+        f"site:x.com CardKaizoku since:{DATE_START}",
+        f"site:x.com ChinoizeCup #103 since:{DATE_START}",
+        f"site:x.com ChinoizeCup #102 since:{DATE_START}",
+        f"site:x.com NightingaleTCG decklist since:{DATE_START}",
+        f"site:x.com StrawHatPecan decklist since:{DATE_START}",
+        f"site:x.com BlaisePlays decklist since:{DATE_START}",
+        'site:x.com "4xOP17"',
+        'site:twitter.com "4xOP17-040"',
+        "site:x.com ChinoizeCup #101 Winner",
+        "site:x.com ChinoizeCup #100 Winner",
+        f"site:x.com ワンピカード デッキ since:{DATE_START}",
+        f"site:x.com Flame Flame decklist since:{DATE_START}",
+        f'site:x.com "Flame-Flame Fruit" Utrecht since:{DATE_START}',
+        f"site:x.com BCG Fest Utrecht decklist since:{DATE_START}",
+        f"site:x.com Flame Flame Winner Robin since:{DATE_START}",
+        f'site:x.com "4xOP17" since:{DATE_START}',
+        f"site:x.com ワンピカード 優勝 デッキ since:{DATE_START}",
+        f"site:x.com 紫黄ロビン デッキ since:{DATE_START}",
+    ]
+
+
+SEARCHES = search_queries()
 
 
 def log(*args) -> None:
@@ -353,11 +357,12 @@ def main() -> None:
             out["partial_id_hits"].append({"source": url, "hits": hits[:40]})
 
     extra_urls = []
-    for q in SEARCHES:
+    queries = search_queries()
+    for q in queries:
         extra_urls.append(
             ("ddg", q, "https://html.duckduckgo.com/html/?" + urllib.parse.urlencode({"q": q}))
         )
-    for q in SEARCHES[:6]:
+    for q in queries[:6]:
         extra_urls.append(
             ("bing", q, "https://www.bing.com/search?" + urllib.parse.urlencode({"q": q}))
         )
