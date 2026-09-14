@@ -10,12 +10,14 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import re
 import time
 import urllib.parse
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path("/workspace")
+SITE = "https://onepiecedecklists.com"
 SINCE = "2026-09-11"
 UNTIL = date.today().isoformat()
 
@@ -33,6 +35,75 @@ def in_window(day: str) -> bool:
 
 def dated(item: dict) -> bool:
     return in_window(item.get("date") or "")
+
+
+def list_rels_from_run(found: list[dict], gen, before: dict, index: dict) -> list[str]:
+    by_id = {L["id"]: L for L in gen.LEADERS}
+    rels: list[str] = []
+    seen: set[str] = set()
+
+    def add(rel: str) -> None:
+        if rel in seen:
+            return
+        if (ROOT / rel).exists():
+            seen.add(rel)
+            rels.append(rel)
+
+    for item in found:
+        leader = by_id.get(item.get("leader") or "")
+        slug = item.get("slug")
+        if leader and slug:
+            add(f"{leader['dir']}/{slug}.html")
+    for lid, rows in index.items():
+        leader = by_id.get(lid)
+        if not leader:
+            continue
+        old_n = before.get(lid, 0)
+        for row in (rows or [])[old_n:]:
+            slug = row.get("slug")
+            if slug:
+                add(f"{leader['dir']}/{slug}.html")
+    return rels
+
+
+def update_sitemaps(new_rels: list[str]) -> None:
+    """Add new list URLs to the split sitemap. Does not replace sitemap.xml."""
+    today = date.today().isoformat()
+    lists_path = ROOT / "sitemap-lists.xml"
+    text = lists_path.read_text()
+    existing = set(re.findall(r"<loc>([^<]+)</loc>", text))
+    rows = []
+    for rel in new_rels:
+        loc = f"{SITE}/{rel}"
+        if loc not in existing:
+            rows.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod></url>\n")
+    if rows:
+        text = text.replace("</urlset>", "".join(rows) + "</urlset>")
+        if not text.endswith("\n"):
+            text += "\n"
+        lists_path.write_text(text)
+    print("sitemap-lists added", len(rows), flush=True)
+
+    hubs = {f"{SITE}/", f"{SITE}/tier-list.html"}
+    for rel in new_rels:
+        hub = str(Path(rel).parent) + ".html"
+        hubs.add(f"{SITE}/{hub}")
+    core_path = ROOT / "sitemap-core.xml"
+    core = core_path.read_text()
+    for loc in sorted(hubs):
+        core = re.sub(
+            rf"(<url><loc>{re.escape(loc)}</loc><lastmod>)[^<]+",
+            rf"\g<1>{today}",
+            core,
+        )
+    core_path.write_text(core)
+
+    idx_path = ROOT / "sitemap.xml"
+    idx = idx_path.read_text()
+    idx = re.sub(r"(sitemap-core.xml</loc><lastmod>)[^<]+", rf"\g<1>{today}", idx)
+    idx = re.sub(r"(sitemap-lists.xml</loc><lastmod>)[^<]+", rf"\g<1>{today}", idx)
+    idx_path.write_text(idx)
+    print("sitemap lastmod", today, "hubs", len(hubs), flush=True)
 
 
 def main() -> None:
@@ -154,16 +225,18 @@ def main() -> None:
 
     print("=== rebuild hubs / consensus / homepage pie / tier list ===", flush=True)
     more.rebuild_hubs(index)
-    more.rewrite_sitemap()
     analysis.main()
     up.patch_home()
     tier.main()
+    new_rels = list_rels_from_run(found, gen, before, index)
+    update_sitemaps(new_rels)
 
     summary = {
         "window": {"start": SINCE, "end": UNTIL},
         "community_found": len(found),
         "community_slugs": [item.get("slug") for item in found],
         "limitless_new_index_rows": limitless_new,
+        "sitemap_list_urls": new_rels,
     }
     (ROOT / "data/sep11-on-ingest-summary.json").write_text(
         json.dumps(summary, indent=2, ensure_ascii=False) + "\n"

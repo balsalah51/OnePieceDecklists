@@ -16928,5 +16928,37 @@
     "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST35/ST35-005_EN.webp",
     "source": "https://onepiece.limitlesstcg.com/cards/ST35-005",
     "tcgplayer_id": 706355
+  },
+  "OP02-106": {
+    "id": "OP02-106",
+    "name": "Tsuru",
+    "category": "Character",
+    "color": "Black",
+    "life": null,
+    "cost": "1",
+    "power": "0",
+    "counter": "+2000",
+    "attribute": "Wisdom",
+    "types": "Navy",
+    "effect": "[On Play] Give up to 1 of your opponent's Characters −2 cost during this turn.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP02/OP02-106_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP02-106",
+    "tcgplayer_id": 486484
+  },
+  "OP14-038": {
+    "id": "OP14-038",
+    "name": "I Never Bother to Remember the Faces of Trash",
+    "category": "Event",
+    "color": "Green",
+    "life": null,
+    "cost": "1",
+    "power": null,
+    "counter": null,
+    "attribute": null,
+    "types": "The Seven Warlords of the Sea",
+    "effect": "[Main] You may rest 2 of your cards: Draw 1 card and rest up to 1 of your opponent's Characters with 7000 base power or less.\n[Counter] Your Leader gains +3000 power during this battle.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-038_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP14-038",
+    "tcgplayer_id": 671379
   }
 }
