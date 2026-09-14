@@ -226,8 +226,17 @@ def main() -> None:
     print("=== rebuild hubs / consensus / homepage pie / tier list ===", flush=True)
     more.rebuild_hubs(index)
     analysis.main()
-    up.patch_home()
     tier.main()
+    up.patch_home()
+    tier_html = ROOT / "tier-list.html"
+    if tier_html.exists():
+        tier_html.write_text(
+            re.sub(
+                r'href="/css/site\.css(?:\?[^"]*)?"',
+                'href="/css/site.css?v=home-pro16"',
+                tier_html.read_text(),
+            )
+        )
     new_rels = list_rels_from_run(found, gen, before, index)
     update_sitemaps(new_rels)
 
