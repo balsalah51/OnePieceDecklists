@@ -258,11 +258,8 @@ main.single{grid-template-columns:1fr}
   text-decoration:none;z-index:1
 }
 .meta-pie-hole-face{
-  width:100%;height:100%;object-fit:cover;object-position:50% 42%;display:block;
-  object-view-box:inset(8% 6% 58% 6%)
-}
-@supports not (object-view-box: inset(0)){
-  .meta-pie-hole-face{transform:scale(2.45);transform-origin:50% 14%}
+  position:absolute;left:50%;top:50%;width:215%;height:auto;max-width:none;
+  transform:translate(-50%,-28%);object-fit:cover;display:block
 }
 .meta-pie-hole:hover .meta-pie-hole-face{filter:brightness(1.06)}
 .meta-pie-on{
@@ -561,7 +558,14 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
   header > nav[aria-label="Primary"] a{margin-left:0;margin-right:14px}
   .wrap{padding:16px;margin:18px auto}
   .leader-grid,.home-leaders{grid-template-columns:1fr}
-  .leader-cards,.home-cards{grid-template-columns:repeat(2,1fr)}
+  .home-cards{grid-template-columns:repeat(2,1fr)}
+  .leader-cards:not(.home-cards){
+    grid-template-columns:repeat(4,1fr);gap:8px
+  }
+  .leader-cards:not(.home-cards) .leader-card-link{border-radius:8px}
+  .leader-cards:not(.home-cards) .leader-card-link .caption{
+    padding:4px 3px 6px;font-size:10px;line-height:1.2;letter-spacing:-.02em
+  }
   .hero{padding:18px 14px}
   .card{padding:16px}
   header{align-items:flex-start}
@@ -616,9 +620,11 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
   .home-flow{margin:16px 0 10px}
   .home-flow p{white-space:normal;text-align:center}
   .home-leaders-intro-row{flex-direction:column;align-items:flex-start}
-  .leader-cards.home-cards,.wrap-home .leader-cards.home-cards{grid-template-columns:repeat(2,1fr)}
+  .leader-cards.home-cards,.wrap-home .leader-cards.home-cards{grid-template-columns:repeat(2,1fr);gap:14px}
   .meta-pie-board{grid-template-columns:1fr;justify-items:center;gap:22px}
-  .meta-pie-disk{width:min(420px,88vw);max-width:420px}
+  .meta-pie-disk{width:min(420px,92vw);max-width:420px}
+  .meta-pie-hole{inset:20%}
+  .meta-pie-hole-face{width:230%;transform:translate(-50%,-26%)}
   .meta-pie-on{font-size:13px}
   .meta-pie-on-tight{font-size:11px}
   .meta-pie-on-tiny{font-size:10px}
@@ -639,6 +645,9 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
   .item{padding:10px}
   .logo{width:44px;height:44px}
   h1{font-size:17px}
+  .leader-cards:not(.home-cards){grid-template-columns:repeat(3,1fr);gap:6px}
+  .leader-cards:not(.home-cards) .leader-card-link .caption{font-size:9px;padding:3px 2px 5px}
+  .meta-pie-hole-face{width:240%;transform:translate(-50%,-24%)}
 }
 @media (min-width:1100px){
   .leader-hero{
