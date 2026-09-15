@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Host Basem's custom OP09 Nico Robin 50-card list.
 
-Locked lines: 4 Brulee, 4 1-cost 2k Pudding, 3 Borsalino, 1 6c purple Luffy,
-2 starter Kid, 2 Katakuri. Remaining slots from the OP17 consensus, trimmed to 50.
+Locked lines: 4 Brulee, 4 Streusen, 4 Yamato, 4 Gum-Gum Giant, 3 Borsalino,
+1 6c purple Luffy, 2 starter Kid, 2 Katakuri. No 1-cost Charlotte Pudding.
 Does not wipe other list pages. Does not run generate-tournament-lists.main().
 """
 
@@ -21,17 +21,17 @@ ALT_LEADER = (
 )
 DON_IMG = "/img/cards/chinese-3rd-anniversary-don.jpg"
 
-# Locked: 4 Brulee + 4 1-cost 2k Pudding (8 one-drops), 3 Borsalino,
+# Locked: 4 Brulee, 4 Streusen, 4 Yamato, 4 Gum-Gum Giant, 3 Borsalino,
 # 1 6c purple Luffy (EB02-061, not 9c OP09-119), 2 Kid, 2 Katakuri.
-# Remaining slots from OP17 consensus; extra copies come out of Streusen,
-# Perospero, Teach, Yamato, and Giant.
+# No 1-cost 2k Pudding (OP03-112). Remaining slots from OP17 consensus;
+# Perospero, Baby 5, and 1 Teach stay out.
 RAW = (
-    "1xOP09-062 4xST34-003 4xOP03-112 2xOP17-113 4xOP17-107 4xOP17-109 "
-    "3xOP17-074 4xOP17-102 3xEB04-058 4xOP17-106 2xST36-005 4xOP17-114 "
-    "2xOP11-067 2xOP16-119 1xEB02-061 4xOP17-112 3xOP09-078"
+    "1xOP09-062 4xST34-003 4xOP17-113 4xOP17-107 4xOP17-109 "
+    "4xOP17-074 4xOP17-102 3xEB04-058 4xOP17-106 2xST36-005 4xOP17-114 "
+    "2xOP11-067 2xOP16-119 1xEB02-061 4xOP17-112 4xOP09-078"
 )
 
-NOTES = """        <p>Custom 50-card list. Locked lines: 4 Charlotte Brulee and 4 1-cost 2k Charlotte Pudding (OP03-112) for eight 1-drops, 3 Borsalino, 1 six-cost purple Monkey.D.Luffy (EB02-061), 2 starter Captain Kid, and 2 Charlotte Katakuri. The rest is the OP17 consensus, trimmed to 50.</p>"""
+NOTES = """        <p>Custom 50-card list. Locked lines: 4 Charlotte Brulee, 4 Streusen, 4 Yamato, 4 Gum-Gum Giant, 3 Borsalino, 1 six-cost purple Monkey.D.Luffy (EB02-061), 2 starter Captain Kid, and 2 Charlotte Katakuri. No 1-cost Charlotte Pudding (OP03-112). The rest is the OP17 consensus, trimmed to 50.</p>"""
 
 DON_BLOCK = f"""        <section class="leader-block" style="margin-top:22px">
           <div class="section-title">
@@ -117,7 +117,7 @@ def patch_search() -> None:
         "t": "Nico Flame Basem",
         "n": "Basem custom OP17 Robin list · 2026-09-15",
         "h": HREF,
-        "q": "Nico Flame Basem Nico Robin OP09-062 Basem custom list Captain Kid Katakuri Brulee Pudding Borsalino Luffy",
+        "q": "Nico Flame Basem Nico Robin OP09-062 Basem custom list Captain Kid Katakuri Brulee Streusen Yamato Giant Borsalino Luffy",
     }
     m = re.search(
         r'(<script type="application/json" id="search-lists">)(.*?)(</script>)',
@@ -144,6 +144,12 @@ def patch_search() -> None:
               </a>
             </li>
 '''
+    text = re.sub(
+        rf'<li data-q="[^"]*">(\s*<a class="item" href="{re.escape(HREF)}")',
+        f'<li data-q="{entry["q"]}">\\1',
+        text,
+        count=1,
+    )
     if HREF not in text.split('id="search-lists"', 1)[0]:
         # Prefer the Recent lists group if present.
         needle = '<section class="search-group" data-search-group>\n          <div class="section-title">\n            <h3>Recent lists</h3>'
@@ -232,6 +238,13 @@ def main() -> None:
     seo.patch_file(page_path, index, by_href)
     seo.patch_file(ROOT / "decklists/nico-robin.html", index, by_href)
     patch_page(page_path)  # keep alt-art + DON after SEO head rewrite
+    hub = ROOT / "decklists/nico-robin.html"
+    hub.write_text(
+        hub.read_text().replace(
+            'href="/css/site.css?v=home-pro8"',
+            'href="/css/site.css?v=home-pro16"',
+        )
+    )
     patch_search()
     patch_sitemap()
     print("done", page_path)
