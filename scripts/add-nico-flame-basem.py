@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Host Basem's custom OP09 Nico Robin 50-card list.
 
-Starts from the OP17 consensus on decklists/nico-robin.html, adds the requested
-cards, and drops 5 copies that OP17 Robin lists already cut most often.
-Does not wipe existing list pages. Does not run generate-tournament-lists.main().
+Locked lines: 4 Brulee, 4 1-cost 2k Pudding, 3 Borsalino, 1 6c purple Luffy,
+2 starter Kid, 2 Katakuri. Remaining slots from the OP17 consensus, trimmed to 50.
+Does not wipe other list pages. Does not run generate-tournament-lists.main().
 """
 
 from __future__ import annotations
@@ -21,20 +21,17 @@ ALT_LEADER = (
 )
 DON_IMG = "/img/cards/chinese-3rd-anniversary-don.jpg"
 
-# Consensus 50 minus the 5 most-cut copies across 152 OP17 Robin lists:
-#   -2 OP12-112 Baby 5 (82/152 lists play 0)
-#   -1 EB04-058 Borsalino (mode is 2, consensus was 3)
-#   -1 OP17-110 Perospero (mode is 2, consensus was 3)
-#   -1 ST34-003 Brulee (41 lists play 0; avg 2.27 vs consensus 3)
-# Then +1 OP09-119 purple Secret Rare Luffy, +2 ST36-005 Captain Kid,
-# +2 OP11-067 Charlotte Katakuri.
+# Locked: 4 Brulee + 4 1-cost 2k Pudding (8 one-drops), 3 Borsalino,
+# 1 6c purple Luffy (EB02-061, not 9c OP09-119), 2 Kid, 2 Katakuri.
+# Remaining slots from OP17 consensus; extra copies come out of Streusen,
+# Perospero, Teach, Yamato, and Giant.
 RAW = (
-    "1xOP09-062 2xST34-003 4xOP17-113 4xOP17-107 4xOP17-109 4xOP17-074 "
-    "4xOP17-102 2xEB04-058 4xOP17-106 4xOP17-114 2xOP17-110 3xOP16-119 "
-    "4xOP17-112 4xOP09-078 1xOP09-119 2xST36-005 2xOP11-067"
+    "1xOP09-062 4xST34-003 4xOP03-112 2xOP17-113 4xOP17-107 4xOP17-109 "
+    "3xOP17-074 4xOP17-102 3xEB04-058 4xOP17-106 2xST36-005 4xOP17-114 "
+    "2xOP11-067 2xOP16-119 1xEB02-061 4xOP17-112 3xOP09-078"
 )
 
-NOTES = """        <p>Custom 50-card list from the OP17 consensus on this hub. Adds 1 purple Secret Rare Monkey.D.Luffy (OP09-119), 2 starter Captain Kid (ST36-005), and 2 Charlotte Katakuri (OP11-067). To make room, drops the 5 copies OP17 Robin lists already trim most often: both Baby 5, 1 Borsalino, 1 Perospero, and 1 Brulee.</p>"""
+NOTES = """        <p>Custom 50-card list. Locked lines: 4 Charlotte Brulee and 4 1-cost 2k Charlotte Pudding (OP03-112) for eight 1-drops, 3 Borsalino, 1 six-cost purple Monkey.D.Luffy (EB02-061), 2 starter Captain Kid, and 2 Charlotte Katakuri. The rest is the OP17 consensus, trimmed to 50.</p>"""
 
 DON_BLOCK = f"""        <section class="leader-block" style="margin-top:22px">
           <div class="section-title">
@@ -74,7 +71,14 @@ def patch_page(path: Path) -> None:
     text = path.read_text()
     text = text.replace('href="/css/site.css?v=home-pro8"', 'href="/css/site.css?v=home-pro16"')
     text = text.replace('href="/css/site.css?v=home-pro2"', 'href="/css/site.css?v=home-pro16"')
-    if "Custom 50-card list from the OP17 consensus" not in text:
+    text = re.sub(
+        r'(<p>Submitted 50-card list · 2026-09-15</p>\n)(?:        <p>Custom 50-card list.*?</p>\n)?',
+        r'\1' + NOTES + '\n',
+        text,
+        count=1,
+        flags=re.S,
+    )
+    if "Custom 50-card list" not in text:
         text = text.replace(
             "<p>Submitted 50-card list · 2026-09-15</p>",
             "<p>Submitted 50-card list · 2026-09-15</p>\n" + NOTES,
@@ -113,7 +117,7 @@ def patch_search() -> None:
         "t": "Nico Flame Basem",
         "n": "Basem custom OP17 Robin list · 2026-09-15",
         "h": HREF,
-        "q": "Nico Flame Basem Nico Robin OP09-062 Basem custom list Captain Kid Katakuri Secret Rare Luffy",
+        "q": "Nico Flame Basem Nico Robin OP09-062 Basem custom list Captain Kid Katakuri Brulee Pudding Borsalino Luffy",
     }
     m = re.search(
         r'(<script type="application/json" id="search-lists">)(.*?)(</script>)',
@@ -123,10 +127,13 @@ def patch_search() -> None:
     if not m:
         raise SystemExit("search-lists json missing")
     blob = json.loads(m.group(2))
-    if not any(row.get("h") == HREF for row in blob):
+    existing = next((i for i, row in enumerate(blob) if row.get("h") == HREF), None)
+    if existing is None:
         blob.insert(0, entry)
-        new = json.dumps(blob, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
-        text = text[: m.start(2)] + new + text[m.end(2) :]
+    else:
+        blob[existing] = entry
+    new = json.dumps(blob, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+    text = text[: m.start(2)] + new + text[m.end(2) :]
     li = f'''            <li data-q="{entry["q"]}">
               <a class="item" href="{HREF}">
                 <div>
@@ -205,6 +212,15 @@ def main() -> None:
     )
 
     commsrc.write_lists([item])
+
+    comm = json.loads((ROOT / "data/community-decks.json").read_text())
+    for row in comm.get("OP09-062") or []:
+        if row.get("slug") == SLUG:
+            row["player"] = "Basem"
+            break
+    (ROOT / "data/community-decks.json").write_text(
+        json.dumps(comm, indent=2, ensure_ascii=False) + "\n"
+    )
 
     leader = next(L for L in gen.LEADERS if L["id"] == "OP09-062")
     cache = gen.load_card_cache()
