@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path("/workspace")
 SITE = "https://onepiecedecklists.com"
-BONNEY_IDS = {"EB04-001", "OP13-100"}
+BONNEY_IDS = {"EB04-001", "OP13-100", "OP07-019"}
 TARGET_EACH = 10
 SINCE = "2026-09-13"
 UNTIL = "2026-09-14"
@@ -91,8 +91,8 @@ def fill_bonney(gen, commsrc, more, opdeck, hunt, ana, optcggg, opdb, portal) ->
 
     print("=== OPDeckGuide Bonney ===", flush=True)
     comm = load("commlists", "/workspace/scripts/add-community-lists.py")
-    paths = [p for p in opdeck.collect_paths() if "bonney" in p.lower() or "bonnie" in p.lower()]
-    print("bonney opdeck paths", len(paths), flush=True)
+    paths = opdeck.collect_paths()
+    print("opdeck paths", len(paths), flush=True)
     for path in paths:
         item = opdeck.parse_page(path, comm, gen)
         time.sleep(0.1)

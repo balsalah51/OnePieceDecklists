@@ -1,0 +1,20 @@
+{
+  "found": [
+    {
+      "leader": "OP13-100",
+      "kind": "web",
+      "player": "Aldo Wijaya",
+      "title": "Jewelry Bonney (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Ogre Greenlake · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/bonney-op17-east-ogre-greenlake-sep13-aldo-wijaya/",
+      "slug": "opdeck-bonney-op17-east-ogre-greenlake-sep13-aldo-wijaya",
+      "raw": "1xOP13-100 4xOP13-113 4xOP17-113 2xPRB02-016 4xOP17-107 4xOP17-109 4xOP17-102 3xPRB02-017 2xEB04-058 4xOP17-106 4xOP17-103 4xOP17-114 4xOP16-119 4xOP13-108 3xOP17-112",
+      "cards": 50,
+      "date": "2026-09-13"
+    }
+  ],
+  "window": {
+    "start": "2026-09-13",
+    "end": "2026-09-14"
+  }
+}

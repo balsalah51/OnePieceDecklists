@@ -234,11 +234,15 @@ TAKES = {
     ),
     "EB04-001": (
         "EB04 Jewelry Bonney is red/yellow Supernova Bonney. "
-        "OP17 yellow Pudding and Linlin are the current splash. Not yellow OP13 Bonney."
+        "OP17 yellow Pudding and Linlin are the current splash. Not yellow OP13 Bonney and not green OP07 Bonney."
     ),
     "OP13-100": (
         "Yellow OP13 Jewelry Bonney ramps DON!! when you play a Trigger character. "
-        "OP17 yellow Big Mom cards are the current splash. Not red/yellow EB04 Bonney."
+        "OP17 yellow Big Mom cards are the current splash. Not red/yellow EB04 Bonney and not green OP07 Bonney."
+    ),
+    "OP07-019": (
+        "Green OP07 Jewelry Bonney is the original 5-life Bonney leader. "
+        "OP17 green Shanks cards are the current splash. Not red/yellow EB04 Bonney and not yellow OP13 Bonney."
     ),
     "OP10-099": (
         "Yellow OP10 Eustass Kid is the Kid Pirates leader. "

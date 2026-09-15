@@ -8362,5 +8362,34 @@
       "kind": "web",
       "date": "2026-07-29"
     }
+  ],
+  "OP13-100": [
+    {
+      "slug": "opdeck-bonney-op17-east-ogre-greenlake-sep13-aldo-wijaya",
+      "href": "/decklists/op13-bonney/opdeck-bonney-op17-east-ogre-greenlake-sep13-aldo-wijaya.html",
+      "title": "Jewelry Bonney (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Ogre Greenlake · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/bonney-op17-east-ogre-greenlake-sep13-aldo-wijaya/",
+      "kind": "web",
+      "date": "2026-09-13"
+    },
+    {
+      "slug": "opdeck-bonney-op17-east-hobbystation-sep05-alphodie",
+      "href": "/decklists/op13-bonney/opdeck-bonney-op17-east-hobbystation-sep05-alphodie.html",
+      "title": "Jewelry Bonney (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "hobbystation · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/bonney-op17-east-hobbystation-sep05-alphodie/",
+      "kind": "web",
+      "date": "2026-09-05"
+    },
+    {
+      "slug": "opdb-yellow-jewelry-bonney-2432",
+      "href": "/decklists/op13-bonney/opdb-yellow-jewelry-bonney-2432.html",
+      "title": "yellow Jewelry Bonney",
+      "subtitle": "Public OnePieceDB list · 2026-09-01",
+      "source_url": "https://onepiecedb.io/deck/yellow-jewelry-bonney-2432",
+      "kind": "web",
+      "date": "2026-09-01"
+    }
   ]
 }

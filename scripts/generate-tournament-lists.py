@@ -493,6 +493,18 @@ LEADERS = [
         "pool_note": "English names and art from Limitless",
     },
     {
+        "id": "OP07-019",
+        "key": "op07-bonney",
+        "page": "decklists/op07-bonney.html",
+        "dir": "decklists/op07-bonney",
+        "name": "OP07 Bonney",
+        "color": "color-green",
+        "crumb": ("/decklists/op17.html", "OP17 decklists"),
+        "nav_op17": False,
+        "pool_heading": "Card pictures",
+        "pool_note": "English names and art from Limitless",
+    },
+    {
         "id": "OP10-099",
         "key": "eustass-kid",
         "page": "decklists/eustass-kid.html",
@@ -1655,11 +1667,15 @@ HUB_INTRO = {
     ),
     "EB04-001": (
         "EB04 Jewelry Bonney is the red/yellow Egghead Bonney leader. "
-        "Not yellow OP13 Bonney. Hosted lists splash OP17 yellow cards."
+        "Not yellow OP13 Bonney and not green OP07 Bonney. Hosted lists splash OP17 yellow cards."
     ),
     "OP13-100": (
         "Yellow OP13 Jewelry Bonney is the Trigger-ramp Bonney leader. "
-        "Not red/yellow EB04 Bonney. Hosted lists splash OP17 yellow cards."
+        "Not red/yellow EB04 Bonney and not green OP07 Bonney. Hosted lists splash OP17 yellow cards."
+    ),
+    "OP07-019": (
+        "Green OP07 Jewelry Bonney is the original 5-life Bonney leader. "
+        "Not red/yellow EB04 Bonney and not yellow OP13 Bonney. Hosted lists splash OP17 green cards."
     ),
 }
 

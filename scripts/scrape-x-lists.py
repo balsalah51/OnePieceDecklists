@@ -82,6 +82,7 @@ LEADERS = {
     "OP12-041",
     "ST30-001",
     "OP13-100",
+    "OP07-019",
 }
 
 # Public creator accounts that actually post OPTCG content.
