@@ -8390,6 +8390,71 @@
       "source_url": "https://onepiecedb.io/deck/yellow-jewelry-bonney-2432",
       "kind": "web",
       "date": "2026-09-01"
+    },
+    {
+      "slug": "opdb-yellow-jewelry-boney-2485",
+      "href": "/decklists/op13-bonney/opdb-yellow-jewelry-boney-2485.html",
+      "title": "Yellow jewelry boney",
+      "subtitle": "Public OnePieceDB list · 2026-09-01",
+      "source_url": "https://onepiecedb.io/deck/yellow-jewelry-boney-2485",
+      "kind": "web",
+      "date": "2026-09-01"
+    }
+  ],
+  "OP07-019": [
+    {
+      "slug": "optcggg-17th-teacabo-coretcg-los-angeles-regionals",
+      "href": "/decklists/op07-bonney/optcggg-17th-teacabo-coretcg-los-angeles-regionals.html",
+      "title": "Teacabo - CoreTCG Los Angeles Regionals",
+      "subtitle": "Public OPTCG.GG list · CoreTCG Los Angeles Regionals · 2026-06-14",
+      "source_url": "https://www.optcg.gg/deck-lists/5b5b3df0-ca61-4b6d-b9aa-7611f1a64477",
+      "kind": "web",
+      "date": "2026-06-14"
+    },
+    {
+      "slug": "optcggg-4th-wl-najerita-sangsang-s-merida-regional",
+      "href": "/decklists/op07-bonney/optcggg-4th-wl-najerita-sangsang-s-merida-regional.html",
+      "title": "[WL] Najerita - SangSang's Merida Regional",
+      "subtitle": "Public OPTCG.GG list · SangSang's Merida Regional · 2026-05-17",
+      "source_url": "https://www.optcg.gg/deck-lists/df3807ab-1f05-4455-a933-a4339d0bc455",
+      "kind": "web",
+      "date": "2026-05-17"
+    },
+    {
+      "slug": "optcggg-17th-sebastian-urbano-victory-road-barcelona-regionals",
+      "href": "/decklists/op07-bonney/optcggg-17th-sebastian-urbano-victory-road-barcelona-regionals.html",
+      "title": "Sebastian Urbano - Victory Road Barcelona Regionals",
+      "subtitle": "Public OPTCG.GG list · Victory Road Barcelona Regionals · 2026-05-10",
+      "source_url": "https://www.optcg.gg/deck-lists/48199181-4bab-4ba9-b1ed-057680345e60",
+      "kind": "web",
+      "date": "2026-05-10"
+    },
+    {
+      "slug": "optcggg-8th-juame-rafart-op13-pec-occitania-france-regionals",
+      "href": "/decklists/op07-bonney/optcggg-8th-juame-rafart-op13-pec-occitania-france-regionals.html",
+      "title": "Juame Rafart - [OP13] PEC Occitania France Regionals",
+      "subtitle": "Public OPTCG.GG list · [OP13] PEC Occitania France Regionals · 2025-11-16",
+      "source_url": "https://www.optcg.gg/deck-lists/0d6dcc06-39bc-41f8-8da1-9493563b7550",
+      "kind": "web",
+      "date": "2025-11-16"
+    },
+    {
+      "slug": "optcggg-16th-gmar-op13-versus-games-online-treasure-cup",
+      "href": "/decklists/op07-bonney/optcggg-16th-gmar-op13-versus-games-online-treasure-cup.html",
+      "title": "Gmar - [OP13] Versus Games’ Online Treasure Cup",
+      "subtitle": "Public OPTCG.GG list · [OP13] Versus Games’ Online Treasure Cup · 2025-11-16",
+      "source_url": "https://www.optcg.gg/deck-lists/96192edc-9f34-4359-a9a4-15778f57d49b",
+      "kind": "web",
+      "date": "2025-11-16"
+    },
+    {
+      "slug": "optcggg-7th-vermet-prb02-eng-coretcg-s-los-angeles-regionals",
+      "href": "/decklists/op07-bonney/optcggg-7th-vermet-prb02-eng-coretcg-s-los-angeles-regionals.html",
+      "title": "Vermet - [PRB02 ENG] CoreTCG’s Los Angeles Regionals",
+      "subtitle": "Public OPTCG.GG list · [PRB02 ENG] CoreTCG’s Los Angeles Regionals · 2025-10-20",
+      "source_url": "https://www.optcg.gg/deck-lists/b8fca763-2c9f-4b9f-9d8b-7df73e1ff58a",
+      "kind": "web",
+      "date": "2025-10-20"
     }
   ]
 }

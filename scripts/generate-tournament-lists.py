@@ -1675,7 +1675,8 @@ HUB_INTRO = {
     ),
     "OP07-019": (
         "Green OP07 Jewelry Bonney is the original 5-life Bonney leader. "
-        "Not red/yellow EB04 Bonney and not yellow OP13 Bonney. Hosted lists splash OP17 green cards."
+        "Not red/yellow EB04 Bonney and not yellow OP13 Bonney. "
+        "Hosted lists are the most recent complete public dumps. No public OP17-splash OP07 Bonney dump was found."
     ),
 }
 

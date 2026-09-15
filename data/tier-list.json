@@ -738,15 +738,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 3,
+      "lists": 6,
       "wins": 0,
-      "top8": 1,
-      "top4": 1,
+      "top8": 2,
+      "top4": 2,
       "recent_lists": 3,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 3,
-      "best": 4
+      "community": 4,
+      "best": 3
     },
     {
       "id": "ST10-002",

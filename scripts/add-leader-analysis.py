@@ -242,7 +242,7 @@ TAKES = {
     ),
     "OP07-019": (
         "Green OP07 Jewelry Bonney is the original 5-life Bonney leader. "
-        "OP17 green Shanks cards are the current splash. Not red/yellow EB04 Bonney and not yellow OP13 Bonney."
+        "Recent public lists stay on the pre-OP17 green package. Not red/yellow EB04 Bonney and not yellow OP13 Bonney."
     ),
     "OP10-099": (
         "Yellow OP10 Eustass Kid is the Kid Pirates leader. "
