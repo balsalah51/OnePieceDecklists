@@ -655,14 +655,15 @@ def patch_op17() -> None:
         count=1,
         flags=re.S,
     )
-    grid = '          <div class="leader-cards" aria-label="All leader card pictures">\n' + leader_cards_html() + "\n          </div>"
-    text = re.sub(
-        r'          <div class="leader-cards" aria-label="All leader card pictures">.*?</div>',
-        grid,
-        text,
-        count=1,
-        flags=re.S,
-    )
+    start = text.find('<div class="leader-cards" aria-label="All leader card pictures">')
+    sec_end = text.find("        </section>", start) if start >= 0 else -1
+    if start >= 0 and sec_end >= 0:
+        grid = (
+            '<div class="leader-cards" aria-label="All leader card pictures">\n'
+            + leader_cards_html()
+            + "\n          </div>\n        "
+        )
+        text = text[:start] + grid + text[sec_end:]
     path.write_text(text)
     print("leaders page", n)
 

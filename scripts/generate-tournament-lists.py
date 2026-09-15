@@ -481,6 +481,30 @@ LEADERS = [
         "pool_note": "English names and art from Limitless",
     },
     {
+        "id": "OP13-100",
+        "key": "op13-bonney",
+        "page": "decklists/op13-bonney.html",
+        "dir": "decklists/op13-bonney",
+        "name": "OP13 Bonney",
+        "color": "color-yellow",
+        "crumb": ("/decklists/op17.html", "OP17 decklists"),
+        "nav_op17": False,
+        "pool_heading": "Card pictures",
+        "pool_note": "English names and art from Limitless",
+    },
+    {
+        "id": "OP07-019",
+        "key": "op07-bonney",
+        "page": "decklists/op07-bonney.html",
+        "dir": "decklists/op07-bonney",
+        "name": "OP07 Bonney",
+        "color": "color-green",
+        "crumb": ("/decklists/op17.html", "OP17 decklists"),
+        "nav_op17": False,
+        "pool_heading": "Card pictures",
+        "pool_note": "English names and art from Limitless",
+    },
+    {
         "id": "OP10-099",
         "key": "eustass-kid",
         "page": "decklists/eustass-kid.html",
@@ -1640,6 +1664,19 @@ HUB_INTRO = {
     "OP08-058": (
         "Purple/Yellow OP08 Charlotte Pudding is the Big Mom DON!! ramp leader - not yellow OP17 Linlin and not purple OP11 Katakuri. "
         "When attacking, turn 2 Life cards face-up to add 1 DON!! from your DON!! deck and rest it."
+    ),
+    "EB04-001": (
+        "EB04 Jewelry Bonney is the red/yellow Egghead Bonney leader. "
+        "Not yellow OP13 Bonney and not green OP07 Bonney. Hosted lists splash OP17 yellow cards."
+    ),
+    "OP13-100": (
+        "Yellow OP13 Jewelry Bonney is the Trigger-ramp Bonney leader. "
+        "Not red/yellow EB04 Bonney and not green OP07 Bonney. Hosted lists splash OP17 yellow cards."
+    ),
+    "OP07-019": (
+        "Green OP07 Jewelry Bonney is the original 5-life Bonney leader. "
+        "Not red/yellow EB04 Bonney and not yellow OP13 Bonney. "
+        "Hosted lists are the most recent complete public dumps. No public OP17-splash OP07 Bonney dump was found."
     ),
 }
 
