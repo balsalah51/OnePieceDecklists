@@ -58,6 +58,8 @@ OPDL_SLUGS = {
     "OP16-060": "sengoku-op16-060",
     "OP11-040": "monkey-d-luffy-op11-040",
     "OP08-058": "charlotte-pudding-op08-058",
+    "EB04-001": "jewelry-bonney-eb04-001",
+    "OP13-100": "jewelry-bonney-op13-100",
 }
 YOUTUBE_ID_RE = re.compile(r"(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{8,})", re.I)
 DECK_HREF_RE = re.compile(r'href="(https?://onepiecedb\.io/[^"]+)"')
