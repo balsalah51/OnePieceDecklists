@@ -67,6 +67,7 @@ LEADERS = [
     ("Jinbe", "/decklists/jinbe.html", "OP14 Blue Jinbe"),
     ("Sanji", "/decklists/sanji.html", "OP12 Blue/Purple Sanji"),
     ("Luffy & Ace", "/decklists/luffy-ace.html", "ST30 Red/Green Luffy & Ace"),
+    ("Yellow Bonney", "/decklists/yellow-bonney.html", "OP13 Yellow Jewelry Bonney"),
 ]
 
 
@@ -504,7 +505,7 @@ CHARACTERS = [
     ("Trafalgar Law", "trafalgar-law", "Surgeon of Death. Purple/Yellow Rosinante is the Law-partner leader; Law cards also appear in RG Luffy lists.", [16, 6, 8]),
     ("Eustass Kid", "eustass-kid", "Captain of the Kid Pirates. Kid is a common OPTCG search; start from the OP17 hub and RG Luffy.", [6, 4]),
     ("Killer", "killer", "Kid Pirates combatant. Related OPTCG lists sit with supernova packages on RG Luffy.", [6]),
-    ("Jewelry Bonney", "jewelry-bonney", "Supernova captain. Bonney names often land next to other supernova OPTCG lists.", [6]),
+    ("Jewelry Bonney", "jewelry-bonney", "Supernova captain. Yellow OP13 Bonney and red/yellow EB04 Bonney are constructed leaders; Bonney cards also show up in supernova lists.", [51, 37]),
     ("Marshall D. Teach", "marshall-d-teach", "Blackbeard. Black/Yellow OP16 Marshall D. Teach is the constructed leader on this site.", [15]),
     ("Blackbeard", "blackbeard", "Same person as Marshall D. Teach. Open the OP16 Blackbeard leader page for 50-card lists.", [15]),
     ("Buggy", "buggy", "Warlord and Emperor. Blue OP16 Buggy is the constructed Impel Down leader.", [21, 14]),
@@ -695,7 +696,8 @@ CHARACTERS = [
     ("Scratchmen Apoo", "scratchmen-apoo", "Supernova captain. Start from the OPTCG hub or Kaido-adjacent lists.", [3, 6]),
     ("Basil Hawkins", "basil-hawkins", "Supernova captain. Wano-era searches can start at Kaido.", [3, 6]),
     ("X Drake", "x-drake", "Supernova and marine. Wano / Kaido OPTCG pages are related.", [3, 6]),
-    ("Bonney", "bonney", "Same search as Jewelry Bonney. Start from the OPTCG hub.", [6]),
+    ("Bonney", "bonney", "Same search as Jewelry Bonney. Yellow OP13 Bonney and red/yellow EB04 Bonney are the constructed leaders.", [51, 37]),
+    ("Yellow Bonney", "yellow-bonney", "Yellow OP13 Jewelry Bonney. 5-life Trigger Bonney, distinct from red/yellow EB04 Bonney. Current lists splash OP17 yellow Big Mom cards.", [51, 37, 5]),
     ("Carrot", "carrot", "Mink of the Mokomo Dukedom. Wano / Luffy OPTCG pages are related.", [4]),
     ("Pedro", "pedro", "Mink of Nox. Wano / Luffy OPTCG pages are related.", [4]),
     ("Wanda", "wanda", "Mink of the Mokomo Dukedom. Use the OPTCG hub and Luffy pages.", [4]),

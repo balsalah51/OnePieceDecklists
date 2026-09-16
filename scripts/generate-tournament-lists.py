@@ -636,6 +636,18 @@ LEADERS = [
         "pool_heading": "Card pictures",
         "pool_note": "English names and art from Limitless",
     },
+    {
+        "id": "OP13-100",
+        "key": "yellow-bonney",
+        "page": "decklists/yellow-bonney.html",
+        "dir": "decklists/yellow-bonney",
+        "name": "Yellow Bonney",
+        "color": "color-yellow",
+        "crumb": ("/decklists/op17.html", "OP17 decklists"),
+        "nav_op17": False,
+        "pool_heading": "Card pictures",
+        "pool_note": "English names and art from Limitless",
+    },
 ]
 
 
@@ -1640,6 +1652,10 @@ HUB_INTRO = {
     "OP08-058": (
         "Purple/Yellow OP08 Charlotte Pudding is the Big Mom DON!! ramp leader - not yellow OP17 Linlin and not purple OP11 Katakuri. "
         "When attacking, turn 2 Life cards face-up to add 1 DON!! from your DON!! deck and rest it."
+    ),
+    "OP13-100": (
+        "Yellow OP13 Jewelry Bonney is the 5-life Trigger Bonney - not red/yellow EB04 Bonney. "
+        "Once per turn when you play a Trigger character, give 2 rested DON!! to your leader or a character."
     ),
 }
 

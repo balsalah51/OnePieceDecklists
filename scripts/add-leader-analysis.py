@@ -288,6 +288,11 @@ TAKES = {
         "ST30 Luffy & Ace is red/green Whitebeard rush. "
         "Hosted lists keep the starter Ace package and splash OP17 Shanks and Newgate cards."
     ),
+    "OP13-100": (
+        "Yellow OP13 Jewelry Bonney is the 5-life Trigger Bonney - not red/yellow EB04 Bonney. "
+        "Once per turn when you play a Trigger character, give 2 rested DON!! to your leader or a character. "
+        "Current lists splash OP17 yellow Big Mom cards: Pudding, Oven, Daifuku, Sweet 3 Generals, and Linlin."
+    ),
 }
 
 POPUP_JS = r"""
