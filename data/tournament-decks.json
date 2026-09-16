@@ -29670,5 +29670,27 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
     }
+  ],
+  "OP13-100": [
+    {
+      "slug": "4th-ace88-op17-win-a-box-rumble-league-8",
+      "href": "/decklists/yellow-bonney/4th-ace88-op17-win-a-box-rumble-league-8.html",
+      "player": "Ace88",
+      "tournament": "[OP17] Win a box | Rumble league #8",
+      "placing": 4,
+      "date": "2026-09-10",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a9a5e57ab080c8c957f9663/standings"
+    },
+    {
+      "slug": "2-2-tapeinoxamomhlaki-op17-chinoizecup-107-tuesday",
+      "href": "/decklists/yellow-bonney/2-2-tapeinoxamomhlaki-op17-chinoizecup-107-tuesday.html",
+      "player": "tapeinoxamomhlaki",
+      "tournament": "[OP17] ChinoizeCup #107 Tuesday",
+      "placing": null,
+      "date": "2026-09-08",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6a98104da4272c53be644c83/standings"
+    }
   ]
 }
