@@ -356,6 +356,7 @@ def _short_pie_name(name: str) -> str:
         "Charlotte Katakuri": "Katakuri",
         "Trafalgar Law": "Law",
         "Jewelry Bonney": "Bonney",
+        "Yellow Bonney": "Y.Bonney",
         "Gecko Moria": "Moria",
         "Rob Lucci": "Lucci",
     }
