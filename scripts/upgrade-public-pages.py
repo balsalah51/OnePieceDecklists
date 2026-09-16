@@ -26,8 +26,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro17"
-JS_NEW = "/js/site.js?v=home-splash"
+CSS_NEW = "/css/site.css?v=home-pro18"
+JS_NEW = "/js/site.js?v=leader-page"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -569,17 +569,68 @@ def render_home_body(data: dict | None = None) -> str:
         <!-- /HOME_BODY -->"""
 
 
+def unique_catalog_leaders() -> list[dict]:
+    seen: set[str] = set()
+    out: list[dict] = []
+    for leader in gen.LEADERS:
+        key = (leader.get("id") or "").strip().upper()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        out.append(leader)
+    return out
+
+
 def leader_cards_html() -> str:
     cards = []
-    for leader in gen.LEADERS:
+    for leader in unique_catalog_leaders():
         img = gen.card_image_url(leader["id"])
+        name = html.escape(leader["name"])
+        lid = html.escape(leader["id"])
         cards.append(
-            f"""            <a class="leader-card-link" href="/{leader["page"]}">
-              <img src="{img}" alt="{leader["name"]} leader card" />
-              <div class="caption">{leader["name"]}</div>
+            f"""            <a class="leader-card-link" href="/{leader["page"]}" data-leader-id="{lid}">
+              <img src="{img}" alt="{name} leader card" />
+              <div class="caption">{name}</div>
             </a>"""
         )
     return "\n".join(cards)
+
+
+def leader_jump_html() -> str:
+    opts = ['              <option value="">Jump to a leader page</option>']
+    for leader in unique_catalog_leaders():
+        label = html.escape(f'{leader["name"]} · {leader["id"]}')
+        opts.append(f'              <option value="/{leader["page"]}">{label}</option>')
+    return "\n".join(opts)
+
+
+def leaders_page_body() -> str:
+    n = len(unique_catalog_leaders())
+    pages = max(1, (n + 3) // 4)
+    return f"""        <h2>All leaders</h2>
+        <p>One card per leader, all the same size. Four leaders on this page at a time.</p>
+
+        <section id="leader-cards">
+          <div class="section-title">
+            <h3>Leader cards</h3>
+            <div class="muted" data-leader-page-status>1 / {pages}</div>
+          </div>
+          <label class="leader-jump">
+            <span>Open a leader page</span>
+            <select data-leader-jump aria-label="Open a leader page">
+{leader_jump_html()}
+            </select>
+          </label>
+          <div class="leader-cards paged-leaders" data-leader-pages data-page-size="4" aria-label="Leader card pictures">
+{leader_cards_html()}
+          </div>
+          <div class="leader-pager" data-leader-pager>
+            <button type="button" class="leader-pager-btn" data-leader-prev disabled>Previous</button>
+            <span class="leader-pager-label" data-leader-page-label>Page 1 of {pages}</span>
+            <button type="button" class="leader-pager-btn" data-leader-next>Next</button>
+          </div>
+        </section>
+"""
 
 
 def patch_home() -> None:
@@ -643,29 +694,20 @@ def patch_home() -> None:
 def patch_op17() -> None:
     path = ROOT / "decklists/op17.html"
     text = path.read_text()
-    rows = meta_rows()
-    n = len(gen.LEADERS)
+    n = len(unique_catalog_leaders())
     text = patch_nav_and_assets(text)
-    text = re.sub(r'<div class="muted">\d+ leaders</div>', f'<div class="muted">{n} leaders</div>', text, count=1)
-    ol = '          <ol class="text-leader-list" aria-label="All leader pages">\n' + leader_list_html(rows) + "\n          </ol>"
-    text = re.sub(
-        r'          <ol class="text-leader-list" aria-label="All leader pages">.*?</ol>',
-        ol,
+    body = leaders_page_body().rstrip() + "\n"
+    updated = re.sub(
+        r"\n\s*<h2>All leaders</h2>.*?(?=\s*<!-- RELATED_LINKS -->|\s*<section class=\"related-links\")",
+        "\n" + body,
         text,
         count=1,
         flags=re.S,
     )
-    start = text.find('<div class="leader-cards" aria-label="All leader card pictures">')
-    sec_end = text.find("        </section>", start) if start >= 0 else -1
-    if start >= 0 and sec_end >= 0:
-        grid = (
-            '<div class="leader-cards" aria-label="All leader card pictures">\n'
-            + leader_cards_html()
-            + "\n          </div>\n        "
-        )
-        text = text[:start] + grid + text[sec_end:]
-    path.write_text(text)
-    print("leaders page", n)
+    if updated == text:
+        raise SystemExit("leaders page body not found")
+    path.write_text(updated)
+    print("leaders page", n, "unique")
 
 
 def main() -> None:

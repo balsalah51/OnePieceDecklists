@@ -305,6 +305,63 @@
     play();
   }
 
+  function initLeaderPages() {
+    var grid = document.querySelector("[data-leader-pages]");
+    if (!grid || grid.dataset.bound) return;
+    grid.dataset.bound = "1";
+    var seen = {};
+    Array.prototype.slice.call(grid.querySelectorAll(".leader-card-link")).forEach(function (card) {
+      var key = (card.getAttribute("data-leader-id") || card.getAttribute("href") || "").toUpperCase();
+      if (!key || seen[key]) {
+        card.parentNode.removeChild(card);
+        return;
+      }
+      seen[key] = 1;
+    });
+    var cards = Array.prototype.slice.call(grid.querySelectorAll(".leader-card-link"));
+    var size = parseInt(grid.getAttribute("data-page-size") || "4", 10) || 4;
+    var page = 0;
+    var pages = Math.max(1, Math.ceil(cards.length / size));
+    grid.classList.add("is-paged");
+    var prev = document.querySelector("[data-leader-prev]");
+    var next = document.querySelector("[data-leader-next]");
+    var label = document.querySelector("[data-leader-page-label]");
+    var status = document.querySelector("[data-leader-page-status]");
+
+    function show() {
+      var start = page * size;
+      var end = start + size;
+      cards.forEach(function (card, i) {
+        if (i >= start && i < end) card.classList.add("is-page-visible");
+        else card.classList.remove("is-page-visible");
+      });
+      if (label) label.textContent = "Page " + (page + 1) + " of " + pages;
+      if (status) status.textContent = (page + 1) + " / " + pages;
+      if (prev) prev.disabled = page <= 0;
+      if (next) next.disabled = page >= pages - 1;
+    }
+
+    if (prev) prev.addEventListener("click", function () {
+      if (page > 0) {
+        page -= 1;
+        show();
+      }
+    });
+    if (next) next.addEventListener("click", function () {
+      if (page < pages - 1) {
+        page += 1;
+        show();
+      }
+    });
+    var jump = document.querySelector("[data-leader-jump]");
+    if (jump) {
+      jump.addEventListener("change", function () {
+        if (jump.value) window.location.href = jump.value;
+      });
+    }
+    show();
+  }
+
   function ready() {
     initTheme();
     ensureCopyButtons();
@@ -313,6 +370,7 @@
     initSiteSearch();
     initRecentMore();
     initHomeSplash();
+    initLeaderPages();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready);
   else ready();
