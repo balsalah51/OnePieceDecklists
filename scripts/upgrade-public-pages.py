@@ -26,7 +26,7 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro17"
+CSS_NEW = "/css/site.css?v=home-pro19"
 JS_NEW = "/js/site.js?v=home-splash"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
@@ -569,17 +569,83 @@ def render_home_body(data: dict | None = None) -> str:
         <!-- /HOME_BODY -->"""
 
 
-def leader_cards_html() -> str:
-    cards = []
+def unique_catalog_leaders() -> list[dict]:
+    seen: set[str] = set()
+    out: list[dict] = []
     for leader in gen.LEADERS:
+        key = (leader.get("id") or "").strip().upper()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        out.append(leader)
+    return out
+
+
+def featured_leaders(limit: int = 4) -> list[dict]:
+    rows = collect_home_lists()
+    ranked = home_meta.ranked_leaders(rows, limit=limit)
+    seen: set[str] = set()
+    out: list[dict] = []
+    for leader in ranked:
+        key = (leader.get("id") or "").strip().upper()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        out.append(leader)
+        if len(out) >= limit:
+            return out
+    for leader in unique_catalog_leaders():
+        key = (leader.get("id") or "").strip().upper()
+        if key in seen:
+            continue
+        out.append(leader)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def leader_cards_html(leaders: list[dict] | None = None) -> str:
+    cards = []
+    for leader in leaders or unique_catalog_leaders():
         img = gen.card_image_url(leader["id"])
+        name = html.escape(leader["name"])
         cards.append(
             f"""            <a class="leader-card-link" href="/{leader["page"]}">
-              <img src="{img}" alt="{leader["name"]} leader card" />
-              <div class="caption">{leader["name"]}</div>
+              <img src="{img}" alt="{name} leader card" />
+              <div class="caption">{name}</div>
             </a>"""
         )
     return "\n".join(cards)
+
+
+def leader_name_grid_html() -> str:
+    items = []
+    for leader in unique_catalog_leaders():
+        items.append(
+            f'            <li><a href="/{leader["page"]}">{html.escape(leader["name"])}</a></li>'
+        )
+    return "\n".join(items)
+
+
+def leaders_page_body() -> str:
+    featured = featured_leaders(4)
+    return f"""        <h2>Leaders</h2>
+        <p>Four featured pages, one card each, all the same size.</p>
+
+        <section id="leader-cards">
+          <div class="leader-cards featured-leaders" aria-label="Featured leader cards">
+{leader_cards_html(featured)}
+          </div>
+        </section>
+
+        <details class="leader-all">
+          <summary>All leader pages</summary>
+          <ul class="leader-name-grid" aria-label="All leader pages">
+{leader_name_grid_html()}
+          </ul>
+        </details>
+        <p class="leaders-more muted">Search a name, or open the <a href="/search.html">search page</a> · <a href="/tier-list.html">Tier list</a> · <a href="/format.html">Format</a></p>
+"""
 
 
 def patch_home() -> None:
@@ -643,29 +709,35 @@ def patch_home() -> None:
 def patch_op17() -> None:
     path = ROOT / "decklists/op17.html"
     text = path.read_text()
-    rows = meta_rows()
-    n = len(gen.LEADERS)
+    n = len(unique_catalog_leaders())
     text = patch_nav_and_assets(text)
-    text = re.sub(r'<div class="muted">\d+ leaders</div>', f'<div class="muted">{n} leaders</div>', text, count=1)
-    ol = '          <ol class="text-leader-list" aria-label="All leader pages">\n' + leader_list_html(rows) + "\n          </ol>"
-    text = re.sub(
-        r'          <ol class="text-leader-list" aria-label="All leader pages">.*?</ol>',
-        ol,
+    body = leaders_page_body().rstrip() + "\n"
+    updated = re.sub(
+        r"\n\s*<h2>All leaders</h2>.*?(?=\s*<!-- RELATED_LINKS -->|\s*<section class=\"related-links\"|\s*<p class=\"muted\" style=\"margin-top:18px\")",
+        "\n" + body,
         text,
         count=1,
         flags=re.S,
     )
-    start = text.find('<div class="leader-cards" aria-label="All leader card pictures">')
-    sec_end = text.find("        </section>", start) if start >= 0 else -1
-    if start >= 0 and sec_end >= 0:
-        grid = (
-            '<div class="leader-cards" aria-label="All leader card pictures">\n'
-            + leader_cards_html()
-            + "\n          </div>\n        "
+    if updated == text:
+        updated = re.sub(
+            r"\n\s*<h2>Leaders</h2>.*?(?=\s*<!-- RELATED_LINKS -->|\s*<section class=\"related-links\"|\s*<p class=\"muted\" style=\"margin-top:18px\")",
+            "\n" + body,
+            text,
+            count=1,
+            flags=re.S,
         )
-        text = text[:start] + grid + text[sec_end:]
-    path.write_text(text)
-    print("leaders page", n)
+    if updated == text:
+        raise SystemExit("leaders page body not found")
+    updated = re.sub(
+        r"\s*<!-- RELATED_LINKS -->.*?<!-- /RELATED_LINKS -->",
+        "\n",
+        updated,
+        count=1,
+        flags=re.S,
+    )
+    path.write_text(updated)
+    print("leaders page featured 4 of", n)
 
 
 def main() -> None:
