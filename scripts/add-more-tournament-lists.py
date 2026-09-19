@@ -236,6 +236,7 @@ def pick_fresh(
     extra_limit: int = EXTRA_LIMIT,
     per_event: int = PER_EVENT,
     require_op17: bool = False,
+    max_placing: int | None = None,
 ) -> list[dict]:
     have = existing_stems(leader)
     known = known_results(leader, index)
@@ -256,6 +257,14 @@ def pick_fresh(
             continue
         if require_op17 and not gen.deck_has_op17(dl):
             continue
+        if max_placing is not None:
+            placing = entry.get("placing")
+            try:
+                placing_n = int(placing)
+            except (TypeError, ValueError):
+                continue
+            if placing_n > max_placing:
+                continue
         player = (entry.get("player") or "").strip().lower()
         tid = entry.get("tournament_id") or ""
         if tid and player and (tid, player) in known:
@@ -285,6 +294,7 @@ def fetch_more(
     since: str | None = None,
     until: str | None = None,
     require_op17: bool = False,
+    max_placing: int | None = None,
 ) -> dict:
     target_ids = only_ids or {L["id"] for L in gen.LEADERS}
     leaders = [L for L in gen.LEADERS if L["id"] in target_ids]
@@ -301,6 +311,8 @@ def fetch_more(
         since,
         "until",
         until,
+        "max_placing",
+        max_placing,
     )
     tournaments = fetch_tournament_pages(pages=pages)
     if since:
@@ -323,6 +335,7 @@ def fetch_more(
             extra_limit=limit,
             per_event=event_cap,
             require_op17=require_op17,
+            max_placing=max_placing,
         )
         planned[lid] = fresh
         for entry in fresh:
