@@ -1,0 +1,188 @@
+{
+  "found": [
+    {
+      "leader": "OP14-020",
+      "kind": "web",
+      "player": "Wara",
+      "title": "G Mihawk (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "GIRAFULL(57) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/mihawk-op17-east-girafull57-sep16-wara/",
+      "slug": "opdeck-mihawk-op17-east-girafull57-sep16-wara",
+      "raw": "1xOP14-020 4xOP07-022 4xOP12-034 4xST32-001 3xOP06-033 4xOP12-023 2xOP14-033 4xST32-002 3xOP17-031 4xOP13-031 1xST32-003 1xOP14-027 1xST24-004 3xOP17-022 3xOP01-055 3xOP06-038 1xOP12-037 2xOP14-039 3xOP08-036",
+      "cards": 50,
+      "date": "2026-09-16"
+    },
+    {
+      "leader": "OP13-004",
+      "kind": "web",
+      "player": "Hironi",
+      "title": "Sabo (Format OP17) Flagship Battle Battle Runner-up",
+      "subtitle": "GIRAFULL(57) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/sabo-op17-east-girafull57-sep16-hironi/",
+      "slug": "opdeck-sabo-op17-east-girafull57-sep16-hironi",
+      "raw": "1xOP13-004 2xOP17-084 3xOP17-086 4xOP17-080 4xOP17-082 2xOP17-083 4xOP17-087 4xOP17-095 4xOP17-089 4xOP15-088 4xOP17-119 3xOP17-093 3xOP17-016 2xOP13-007 3xST01-011 1xOP07-002 1xOP11-097 2xOP04-016",
+      "cards": 50,
+      "date": "2026-09-16"
+    },
+    {
+      "leader": "OP15-058",
+      "kind": "web",
+      "player": "Tetesan",
+      "title": "Enel (Format OP17) Flagship Battle Battle",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/enel-op17-east-sep16-tetesan/",
+      "slug": "opdeck-enel-op17-east-sep16-tetesan",
+      "raw": "1xOP15-058 2xOP12-071 4xOP15-061 4xOP15-066 4xOP15-067 2xOP17-075 3xST10-010 2xOP12-063 1xOP10-067 4xOP15-118 4xOP15-074 4xOP15-075 4xOP15-076 4xOP15-077 4xOP15-078 3xOP05-077 1xOP09-077",
+      "cards": 50,
+      "date": "2026-09-16"
+    },
+    {
+      "leader": "OP14-020",
+      "kind": "web",
+      "player": "Umabrion",
+      "title": "G Mihawk (Format OP17) Standard Battle Winner",
+      "subtitle": "Corji · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/mihawk-op17-east-corji-sep16-umabrion/",
+      "slug": "opdeck-mihawk-op17-east-corji-sep16-umabrion",
+      "raw": "1xOP14-020 4xOP07-022 4xOP12-034 4xST32-001 3xOP06-033 2xOP07-026 4xOP12-023 1xOP14-033 4xST32-002 3xOP17-031 4xOP13-031 1xST32-003 1xST24-004 3xOP17-022 3xOP01-055 3xOP06-038 1xOP12-037 2xOP14-039 3xOP08-036",
+      "cards": 50,
+      "date": "2026-09-16"
+    },
+    {
+      "leader": "OP13-004",
+      "kind": "web",
+      "player": "Domenic Russel",
+      "title": "Sabo (Format OP17) Standard Battle Winner",
+      "subtitle": "3LGS · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-3lgs-sep16-domenic-russel/",
+      "slug": "opdeck-sabo-op17-west-3lgs-sep16-domenic-russel",
+      "raw": "1xOP13-004 3xOP17-084 4xOP17-086 4xOP17-080 4xOP17-082 2xOP17-083 4xOP17-087 4xOP17-095 4xOP17-089 3xOP15-088 4xOP17-119 4xOP17-093 4xST01-011 2xEB04-007 2xOP14-096 2xOP04-016",
+      "cards": 50,
+      "date": "2026-09-16"
+    },
+    {
+      "leader": "OP13-004",
+      "kind": "web",
+      "player": "TheKlet_OPTCG",
+      "title": "Sabo (Format OP17) Standard Battle Winner",
+      "subtitle": "LGS · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-lgs-sep16-theklet-optcg/",
+      "slug": "opdeck-sabo-op17-west-lgs-sep16-theklet-optcg",
+      "raw": "1xOP13-004 3xOP17-084 2xOP17-086 4xOP17-080 2xOP17-081 4xOP17-082 2xOP17-083 4xOP17-087 4xOP17-095 2xP-105 4xOP17-089 2xOP04-083 3xOP15-088 4xOP17-119 3xOP17-093 3xST01-011 2xOP14-096 2xOP04-016",
+      "cards": 50,
+      "date": "2026-09-16"
+    },
+    {
+      "leader": "OP17-058",
+      "kind": "web",
+      "player": "NA",
+      "title": "Kaido (Format OP17) Standard Battle Winner",
+      "subtitle": "Comic Con(70) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/kaido-op17-west-comiccon-sep14-na/",
+      "slug": "opdeck-kaido-op17-west-comiccon-sep14-na",
+      "raw": "1xOP17-058 4xEB04-032 4xOP08-074 4xOP17-073 4xOP17-074 1xOP09-072 4xEB04-031 2xEB04-030 4xOP17-061 3xOP17-065 2xST34-004 4xOP17-062 2xOP17-063 4xOP07-077 2xOP17-077 3xOP07-076 3xOP09-077",
+      "cards": 50,
+      "date": "2026-09-14"
+    },
+    {
+      "leader": "OP17-039",
+      "kind": "web",
+      "player": "Dakota Angeloff",
+      "title": "Dakota Angeloff - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/c737a121-94d3-4b15-ade3-685b8bee75ce",
+      "slug": "optcggg-1st-dakota-angeloff-egman-events-triple-win-a-box-2",
+      "raw": "1xOP17-050 3xOP08-051 4xOP17-045 4xOP17-054 4xOP17-041 4xOP17-044 4xOP17-046 4xOP17-049 4xOP17-040 4xOP17-048 4xOP17-118 4xOP17-055 4xOP17-056 2xEB02-030 1xOP17-039",
+      "cards": 50,
+      "date": "2026-09-15"
+    },
+    {
+      "leader": "OP15-058",
+      "kind": "web",
+      "player": "Robby Hadley",
+      "title": "Robby Hadley - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/355f7d4b-4f1d-400d-abb2-c4d9916fdf62",
+      "slug": "optcggg-2nd-robby-hadley-egman-events-triple-win-a-box-2",
+      "raw": "1xOP15-058 4xOP15-061 4xOP15-067 2xOP15-066 4xOP15-071 3xOP15-074 4xOP15-075 4xOP15-076 3xOP15-077 4xOP15-078 3xOP15-118 1xOP13-076 4xOP12-071 1xOP10-067 1xOP09-072 1xOP09-077 3xOP05-077 4xST10-010",
+      "cards": 50,
+      "date": "2026-09-15"
+    },
+    {
+      "leader": "ST30-001",
+      "kind": "web",
+      "player": "Vince Chase",
+      "title": "Vince Chase - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/234311b8-cbcb-49b2-92f8-df8d269fa826",
+      "slug": "optcggg-3rd-vince-chase-egman-events-triple-win-a-box-2",
+      "raw": "1xST30-001 3xST30-012 4xOP12-015 4xST31-001 4xST21-014 4xEB02-017 4xOP01-016 4xEB04-002 4xST31-005 2xOP14-019 2xOP12-037 2xOP17-017 4xOP04-016 3xST21-017 2xOP12-018 2xOP13-040 1xOP15-032 1xOP16-039",
+      "cards": 50,
+      "date": "2026-09-15"
+    },
+    {
+      "leader": "ST30-001",
+      "kind": "web",
+      "player": "James Lee",
+      "title": "James Lee - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/acd2d364-6f5c-4bf0-a29b-d46ba42b33bd",
+      "slug": "optcggg-4th-james-lee-egman-events-triple-win-a-box-2",
+      "raw": "1xST30-001 4xEB04-002 4xOP01-016 4xOP12-015 4xST21-014 4xST31-001 3xEB02-017 4xST30-012 4xOP04-016 1xOP12-018 4xOP14-019 4xOP17-017 1xOP06-018 2xOP12-037 3xOP13-040 4xST31-005",
+      "cards": 50,
+      "date": "2026-09-15"
+    },
+    {
+      "leader": "OP14-020",
+      "kind": "web",
+      "player": "Raja Twam",
+      "title": "Raja Twam - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/a33c801c-c1c2-4ab0-b7af-e66c9065d169",
+      "slug": "optcggg-5th-raja-twam-egman-events-triple-win-a-box-2",
+      "raw": "1xOP14-020 4xOP14-039 4xOP13-031 4xOP12-034 1xST24-004 2xOP08-036 3xOP06-038 4xOP14-038 4xOP07-022 4xST32-001 3xOP06-033 4xOP12-023 4xOP17-031 4xST32-002 3xOP17-022 2xOP01-055",
+      "cards": 50,
+      "date": "2026-09-15"
+    },
+    {
+      "leader": "OP17-020",
+      "kind": "web",
+      "player": "Rj Perez",
+      "title": "Rj Perez - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/5d9868f5-8d80-48ad-81eb-dfea3f2d5787",
+      "slug": "optcggg-6th-rj-perez-egman-events-triple-win-a-box-2",
+      "raw": "1xOP17-020 4xOP17-021 3xOP17-022 1xOP17-025 4xOP17-027 3xOP17-029 4xOP17-031 4xOP17-032 4xOP17-033 3xOP17-034 3xOP17-036 4xOP17-037 2xOP17-038 4xST16-004 1xOP12-037 3xST32-003 3xST32-002",
+      "cards": 50,
+      "date": "2026-09-15"
+    },
+    {
+      "leader": "OP10-099",
+      "kind": "web",
+      "player": "June Lee",
+      "title": "June Lee - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/c0391caf-4bd5-4820-aa7e-0cc49dfaec68",
+      "slug": "optcggg-7th-june-lee-egman-events-triple-win-a-box-2",
+      "raw": "4xST36-005 1xOP10-099 4xOP17-102 4xOP17-106 4xOP17-107 4xOP17-109 2xOP17-110 3xOP17-111 4xOP17-114 4xOP17-113 4xOP17-112 4xST36-003 4xEB04-058 4xST36-002 1xOP10-112",
+      "cards": 50,
+      "date": "2026-09-15"
+    },
+    {
+      "leader": "OP13-004",
+      "kind": "web",
+      "player": "Jacob Rainey",
+      "title": "Jacob Rainey - Egman Events Triple Win-A-Box #2",
+      "subtitle": "Public OPTCG.GG list · Egman Events Triple Win-A-Box #2 · 2026-09-15",
+      "source_url": "https://www.optcg.gg/deck-lists/87fb3061-939e-4452-bd4a-30fa8d799d46",
+      "slug": "optcggg-8th-jacob-rainey-egman-events-triple-win-a-box-2",
+      "raw": "1xOP13-004 3xOP01-016 3xST01-011 2xEB04-007 3xOP17-084 2xOP17-086 4xOP17-080 1xOP17-081 3xOP17-082 2xOP17-083 4xOP17-087 4xOP17-095 4xOP17-089 4xOP15-088 4xOP17-119 3xOP17-093 2xOP04-016 2xOP14-096",
+      "cards": 50,
+      "date": "2026-09-15"
+    }
+  ],
+  "window": {
+    "start": "2026-09-14",
+    "end": "2026-09-19"
+  }
+}
