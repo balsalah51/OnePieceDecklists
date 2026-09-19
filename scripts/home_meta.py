@@ -19,7 +19,13 @@ HOME_LEADER_COUNT = 10
 POPULAR_WINDOW = 200
 HOME_RECENT_VISIBLE = 25
 HOME_RECENT_EXTRA = 25
+FEATURED_LIMIT = 8
+FEATURED_MAX_PLACE = 4
 RECENT_PAGE_LIMIT = 250
+PLACE_TITLE_RE = re.compile(
+    r"(?<![A-Za-z0-9])(\d{1,2})(?:st|nd|rd|th)(?![A-Za-z])",
+    re.I,
+)
 PIE_SCAN_LIMIT = 400
 PIE_MAX_SLICES = 10
 PIE_SMALL_PCT = 6.5
@@ -161,6 +167,92 @@ def detect_latest_set(rows: list[dict]) -> str:
             if m:
                 best = max(best, int(m.group(1)))
     return f"OP{best:02d}"
+
+
+def placing_of(row: dict) -> int | None:
+    placing = _placing(row)
+    if placing is not None:
+        return placing
+    text = " ".join(
+        str(row.get(k) or "")
+        for k in ("title_override", "slug", "player", "tournament_name", "href")
+    )
+    match = PLACE_TITLE_RE.search(text)
+    if not match:
+        return None
+    n = int(match.group(1))
+    return n if 1 <= n <= 32 else None
+
+
+def featured_rows(rows: list[dict], limit: int = FEATURED_LIMIT) -> list[dict]:
+    """Newest 1st–4th lists, preferring one leader per card when possible."""
+    scored: list[dict] = []
+    for row in newest_rows(rows, 500):
+        place = placing_of(row)
+        if place is None or place > FEATURED_MAX_PLACE:
+            continue
+        extra = dict(row)
+        extra["_place"] = place
+        scored.append(extra)
+    scored.sort(key=lambda row: (row["_place"], row.get("date") or ""), reverse=True)
+    scored.sort(key=lambda row: row["_place"])
+    picked: list[dict] = []
+    used_href: set[str] = set()
+    used_leaders: set[str] = set()
+    for unique_pass in (True, False):
+        for row in scored:
+            href = row.get("href") or ""
+            lid = (row.get("leader") or {}).get("id") or ""
+            if not href or href in used_href:
+                continue
+            if unique_pass and lid and lid in used_leaders:
+                continue
+            used_href.add(href)
+            if lid:
+                used_leaders.add(lid)
+            picked.append(row)
+            if len(picked) >= limit:
+                return picked
+    return picked
+
+
+def featured_html(rows: list[dict]) -> str:
+    if not rows:
+        return ""
+    cards = []
+    for row in rows:
+        leader = row["leader"]
+        title, _subtitle = gen.list_heading(row, leader["name"])
+        place = gen.ordinal(row.get("_place") or row.get("placing")) or "Top"
+        img = gen.card_image_url(leader["id"])
+        event = row.get("tournament_name") or row.get("subtitle") or ""
+        when = row.get("date") or ""
+        if when and when in event:
+            note = event
+        else:
+            note = " · ".join(part for part in (event, when) if part) or leader["name"]
+        cards.append(
+            f"""            <a class="featured-card {html.escape(leader['color'])}" href="{html.escape(row['href'])}">
+              <span class="featured-place">{html.escape(place)}</span>
+              <img src="{html.escape(img)}" alt="{html.escape(leader['name'])} leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">{html.escape(title)}</div>
+                <div class="muted">{html.escape(note)}</div>
+              </div>
+            </a>"""
+        )
+    return f"""        <section class="card home-panel home-featured" id="featured">
+          <p class="home-leaders-kicker">Top cuts</p>
+          <div class="section-title">
+            <h3>Amazing lists</h3>
+            <a href="/recent.html">All recent →</a>
+          </div>
+          <p class="muted home-recent-lede">First through fourth from the newest hosted results. One list per leader when we can.</p>
+          <div class="featured-grid">
+{chr(10).join(cards)}
+          </div>
+        </section>
+"""
 
 
 def _placing(row: dict) -> int | None:
@@ -487,7 +579,7 @@ def leader_cards_html(leaders: list[dict]) -> str:
         img = gen.card_image_url(leader["id"])
         cards.append(
             f"""            <a class="leader-card-link" href="/{leader["page"]}">
-              <img src="{img}" alt="{html.escape(leader["name"])} leader card" />
+              <img src="{img}" alt="{html.escape(leader["name"])} leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">{html.escape(leader["name"])}</div>
             </a>"""
         )

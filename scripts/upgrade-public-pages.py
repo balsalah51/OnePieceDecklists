@@ -26,8 +26,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro16"
-JS_NEW = "/js/site.js?v=home-splash"
+CSS_NEW = "/css/site.css?v=home-pro17"
+JS_NEW = "/js/site.js?v=home-smooth"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -363,10 +363,11 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
         extra_attrs = ""
         if hide_after is not None and i >= hide_after:
             extra_attrs = ' class="recent-more" hidden'
+        lazy = "" if i < 6 else ' loading="lazy" decoding="async"'
         items.append(
             f"""            <li{extra_attrs}>
               <a class="recent-item {html.escape(leader['color'])}" href="{html.escape(entry['href'])}">
-                <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}" />
+                <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}"{lazy} />
                 <div class="recent-copy">
                   <div class="who">{html.escape(title)}</div>
                   <div class="muted meta">{meta}</div>
@@ -390,6 +391,7 @@ def build_home_data() -> dict:
         "pie": pie,
         "recent_home": home_meta.newest_rows(rows, RECENT_LIMIT),
         "recent_page": home_meta.newest_rows(rows, home_meta.RECENT_PAGE_LIMIT),
+        "featured": home_meta.featured_rows(rows),
     }
 
 
@@ -399,6 +401,7 @@ def render_home_body(data: dict | None = None) -> str:
     pie = data["pie"]
     cards = home_meta.leader_cards_html(leaders)
     pie_block = home_meta.pie_html(pie)
+    featured_block = home_meta.featured_html(data.get("featured") or [])
     recent = data["recent_home"]
     visible = home_meta.HOME_RECENT_VISIBLE
     extra_n = max(0, len(recent) - visible)
@@ -532,6 +535,7 @@ def render_home_body(data: dict | None = None) -> str:
           </a>
         </nav>
 
+{featured_block}
 {pie_block}
         <section class="home-leaders-flow" id="leaders">
           <div class="home-leaders-intro">
@@ -612,14 +616,24 @@ def patch_home() -> None:
             flags=re.S,
         )
     text = text.replace('href="/#decklists"', 'href="/#recent"')
+    featured_nav = (
+        '        <a href="#featured">Top cuts</a>\n'
+        '        <a href="#recent">Recent lists</a>\n'
+        '        <a href="#leaders">Leaders</a>'
+    )
     text = text.replace(
         '        <a href="/#recent" aria-current="page">Recent lists</a>\n        <a href="/decklists/op17.html">Leaders</a>',
-        '        <a href="#recent">Recent lists</a>\n        <a href="#leaders">Leaders</a>',
+        featured_nav,
     )
     text = text.replace(
         '        <a href="/#recent">Recent lists</a>\n        <a href="/decklists/op17.html">Leaders</a>',
-        '        <a href="#recent">Recent lists</a>\n        <a href="#leaders">Leaders</a>',
+        featured_nav,
     )
+    if 'href="#featured"' not in text:
+        text = text.replace(
+            '        <a href="#recent">Recent lists</a>\n        <a href="#leaders">Leaders</a>',
+            featured_nav,
+        )
     text = patch_nav_and_assets(text)
     text = home_meta.patch_home_jsonld(text, data["leaders"])
     if 'class="wrap wrap-home"' not in text:
