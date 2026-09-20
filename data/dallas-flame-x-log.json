@@ -7,67 +7,67 @@
     {
       "q": "site:x.com Dallas \"Flame-Flame\" since:2026-09-18",
       "status": 202,
-      "chars": 14283,
+      "chars": 14284,
       "ids": []
     },
     {
       "q": "site:x.com Dallas \"Flame Flame\" since:2026-09-18",
       "status": 202,
-      "chars": 14290,
+      "chars": 14302,
       "ids": []
     },
     {
       "q": "site:x.com \"Flame-Flame Fruit Coliseum\" Dallas",
       "status": 202,
-      "chars": 14280,
+      "chars": 14304,
       "ids": []
     },
     {
       "q": "site:x.com \"BCG Fest Dallas\" decklist",
       "status": 202,
-      "chars": 14274,
+      "chars": 14298,
       "ids": []
     },
     {
       "q": "site:x.com \"BCG Fest\" Dallas winner",
       "status": 202,
-      "chars": 14258,
+      "chars": 14270,
       "ids": []
     },
     {
       "q": "site:x.com Dallas OPTCG decklist since:2026-09-18",
       "status": 202,
-      "chars": 14277,
+      "chars": 14272,
       "ids": []
     },
     {
       "q": "site:x.com Dallas \"top cut\" OPTCG",
       "status": 202,
-      "chars": 14272,
+      "chars": 14284,
       "ids": []
     },
     {
       "q": "site:x.com from:ONEPIECE_tcg_EN Dallas",
       "status": 202,
-      "chars": 14244,
+      "chars": 14262,
       "ids": []
     },
     {
       "q": "site:x.com from:The_Egman Dallas",
       "status": 202,
-      "chars": 14250,
+      "chars": 14238,
       "ids": []
     },
     {
       "q": "site:x.com from:CardKaizoku Dallas",
       "status": 202,
-      "chars": 14252,
+      "chars": 14242,
       "ids": []
     },
     {
       "q": "site:x.com from:OPtopdecks Dallas",
       "status": 202,
-      "chars": 14240,
+      "chars": 14258,
       "ids": []
     },
     {
@@ -79,7 +79,7 @@
     {
       "q": "site:x.com from:MarinefordTCG Dallas",
       "status": 202,
-      "chars": 14258,
+      "chars": 14252,
       "ids": []
     },
     {
@@ -91,19 +91,19 @@
     {
       "q": "site:x.com \"Flame-Flame Fruit Coliseum: Decklists\"",
       "status": 202,
-      "chars": 14294,
+      "chars": 14312,
       "ids": []
     },
     {
       "q": "Dallas Flame-Flame Fruit Coliseum decklist",
       "status": 202,
-      "chars": 14264,
+      "chars": 14258,
       "ids": []
     },
     {
       "q": "Dallas Flame Flame Coliseum top 8 decklist",
       "status": 202,
-      "chars": 14270,
+      "chars": 14252,
       "ids": []
     }
   ],
@@ -111,136 +111,148 @@
     {
       "handle": "ONEPIECE_tcg_EN",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "BandaiTCG",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "BandaiCardGames",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "The_Egman",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "EgmanEvents",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "CardKaizoku",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "MarinefordTCG",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "OPtopdecks",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "OPTCGAlert",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "PlayTCGOfficial",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "JohnnyTCG",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "StrawHatPecan",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "Vampyrgaming",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "felixvp10",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "PleaseBanYellow",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "fedemeco_",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "LukaTCG",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     },
     {
       "handle": "RobertoOPTCG",
       "status": 403,
-      "chars": 527,
-      "ids": 0
+      "chars": 617,
+      "ids": 2
     }
   ],
   "pages": [
     {
       "url": "https://r.jina.ai/https://x.com/search?q=Dallas%20Flame%20since%3A2026-09-18&src=typed_query&f=live",
       "status": 403,
-      "chars": 527,
-      "ids": []
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
     },
     {
       "url": "https://r.jina.ai/https://x.com/search?q=from%3AONEPIECE_tcg_EN%20since%3A2026-09-18&src=typed_query&f=live",
       "status": 403,
-      "chars": 527,
-      "ids": []
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
     },
     {
       "url": "https://r.jina.ai/https://x.com/search?q=%22Flame-Flame%20Fruit%20Coliseum%3A%20Decklists%22&src=typed_query&f=live",
       "status": 403,
-      "chars": 527,
-      "ids": []
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
     },
     {
       "url": "https://r.jina.ai/https://x.com/search?q=BCG%20Fest%20Dallas%20decklist&src=typed_query&f=live",
       "status": 403,
-      "chars": 527,
-      "ids": []
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
     }
   ],
   "tweets": [
@@ -251,7 +263,7 @@
       "http": 200,
       "created": "2026-09-04",
       "in_window": false,
-      "dallas_flame": true,
+      "dallas_flame": false,
       "europe": true,
       "text": "[Flame-Flame Fruit Coliseum: Decklists]\nWe have a champion!\n\nCongratulations to the winner of the WORLD'S FIRST Flame-Flame Fruit Coliseum!\nCheck out the top player decks below!\n\nChampion: Benjo@@@1 (D Block)\n\n#ONEPIECE\n#onepiececardgame\n#BCGFest",
       "photos": [
@@ -267,7 +279,7 @@
       "http": 200,
       "created": "2026-09-04",
       "in_window": false,
-      "dallas_flame": true,
+      "dallas_flame": false,
       "europe": false,
       "text": "[Flame-Flame Fruit Coliseum: Decklists] \n\nTop 4 :\nRian (A Block)\nborsaistrash (B Block)\n\n#ONEPIECE \n#onepiececardgame \n#BCGFest",
       "photos": [
@@ -275,6 +287,21 @@
         "https://pbs.twimg.com/media/HRZwlP3bkAAFmaC.jpg?name=orig",
         "https://pbs.twimg.com/media/HRZwmHxbAAA0Ph-.jpg?name=orig",
         "https://pbs.twimg.com/media/HRZwuBWWQAEMYkJ.jpg?name=orig"
+      ],
+      "complete_lists": 0
+    },
+    {
+      "handle": "JUSTCASSANOVA",
+      "id": "2101676542849945891",
+      "url": "https://x.com/JUSTCASSANOVA/status/2101676542849945891",
+      "http": 200,
+      "created": "2026-09-20",
+      "in_window": true,
+      "dallas_flame": false,
+      "europe": false,
+      "text": "SHEZSO EU VS AEON GOING DOWN ON NOVEMBER 14TH..I THINK🤷🏾‍♂️🤷🏾‍♂️😈😈 #STUDSUP @CMC_Guapo",
+      "photos": [
+        "https://pbs.twimg.com/media/HSqfIm1XoAAOy-g.jpg?name=orig"
       ],
       "complete_lists": 0
     }
