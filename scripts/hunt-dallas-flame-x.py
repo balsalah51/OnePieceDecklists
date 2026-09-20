@@ -31,7 +31,7 @@ EUROPE_RE = re.compile(
     re.I,
 )
 DALLAS_RE = re.compile(
-    r"dallas|bcg fest|bcgfest|north america|kay bailey|play!?\s*tcg",
+    r"dallas|north america|kay bailey",
     re.I,
 )
 FLAME_RE = re.compile(r"flame[\s-]?flame|coliseum", re.I)
@@ -249,6 +249,27 @@ def main() -> None:
                 out["notes"].append({"opdb": href, "name": name.strip()[:120]})
     except Exception as exc:  # noqa: BLE001
         log("opdb fail", exc)
+
+    # Limitless Play tournaments dated this weekend.
+    st, lim = fetch("https://play.limitlesstcg.com/api/tournaments?game=OP&limit=40")
+    try:
+        tours = json.loads(lim) if st == 200 else []
+    except json.JSONDecodeError:
+        tours = []
+    for tour in tours if isinstance(tours, list) else []:
+        name = tour.get("name") or ""
+        day = (tour.get("date") or "")[:10]
+        blob = f"{name} {day}"
+        if DALLAS_RE.search(blob) or FLAME_RE.search(blob) or (day and in_window(day) and "dallas" in name.lower()):
+            out["notes"].append(
+                {
+                    "limitless": name,
+                    "id": tour.get("id"),
+                    "date": day,
+                    "players": tour.get("players"),
+                }
+            )
+            log("limitless", day, name, tour.get("id"), tour.get("players"))
 
     # Reddit.
     st, red = fetch("https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=OnePieceTCG&limit=80")
