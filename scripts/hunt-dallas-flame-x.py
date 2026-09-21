@@ -16,22 +16,22 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path("/workspace")
 UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list scrape)"
-SINCE = "2026-09-18"
-UNTIL = "2026-09-21"
+SINCE = "2026-09-17"
+UNTIL = date.today().isoformat()
 TWITTER_EPOCH_MS = 1288834974657
 LINE_RE = re.compile(r"(?i)(\d+)\s*[x×]\s*((?:OP|ST|EB|PRB)\d{2}-\d{3}|P-\d{3})")
 STATUS_RE = re.compile(r"(?:x\.com|twitter\.com)/([A-Za-z0-9_]+)/status/(\d+)", re.I)
 EUROPE_RE = re.compile(
-    r"utrecht|europe|benjo|xixo\b|world'?s first|block [abcd]\b|jaarbeurs",
+    r"utrecht|europe.*flame|flame.*europe|jaarbeurs|benjo",
     re.I,
 )
 DALLAS_RE = re.compile(
-    r"dallas|north america|kay bailey",
+    r"dallas|north america|\bna\b|kay bailey",
     re.I,
 )
 FLAME_RE = re.compile(r"flame[\s-]?flame|coliseum", re.I)
@@ -65,12 +65,12 @@ SEED_TWEETS = {
 }
 
 QUERIES = [
-    'site:x.com Dallas "Flame-Flame" since:2026-09-18',
-    'site:x.com Dallas "Flame Flame" since:2026-09-18',
+    'site:x.com Dallas "Flame-Flame" since:2026-09-17',
+    'site:x.com Dallas "Flame Flame" since:2026-09-17',
     'site:x.com "Flame-Flame Fruit Coliseum" Dallas',
     'site:x.com "BCG Fest Dallas" decklist',
     'site:x.com "BCG Fest" Dallas winner',
-    'site:x.com Dallas OPTCG decklist since:2026-09-18',
+    'site:x.com Dallas OPTCG decklist since:2026-09-17',
     'site:x.com Dallas "top cut" OPTCG',
     'site:x.com from:ONEPIECE_tcg_EN Dallas',
     'site:x.com from:The_Egman Dallas',
@@ -173,8 +173,8 @@ def main() -> None:
         time.sleep(0.12)
 
     for q in (
-        "Dallas Flame since:2026-09-18",
-        "from:ONEPIECE_tcg_EN since:2026-09-18",
+        "Dallas Flame since:2026-09-17",
+        "from:ONEPIECE_tcg_EN since:2026-09-17",
         '"Flame-Flame Fruit Coliseum: Decklists"',
         "BCG Fest Dallas decklist",
     ):
@@ -202,7 +202,7 @@ def main() -> None:
             out["optcggg"].append({"event": event, "date": day, "player": row.get("player"), "dallas_flame": dallas_flame(blob)})
             if not dallas_flame(blob):
                 continue
-            if day and day < "2026-09-18":
+            if day and day < SINCE:
                 continue
             did = row.get("id") or ""
             if not did:
@@ -218,7 +218,7 @@ def main() -> None:
             banned = [cid for cid in counts if cid in gen.BANNED_CARDS]
             player = (row.get("player") or "Unknown").strip() or "Unknown"
             log("optcg dallas?", event, player, lid, "cards", main_n)
-            if not lid or counts.get(lid) != 1 or main_n != 50 or banned:
+            if not lid or counts.get(lid) != 1 or banned or not commsrc.complete(counts, lid):
                 continue
             commsrc.record(
                 found,
@@ -375,11 +375,8 @@ def main() -> None:
 
     if not found:
         out["notes"].append(
-            "No complete 1+50 Dallas Flame-Flame lists were public on X, OPTCG.GG, "
-            "OnePieceDB, or r/OnePieceTCG at scrape time. Day 3 finals stream "
-            "https://www.youtube.com/watch?v=DLUyxqx8jG0 was live; official EN "
-            "decklist graphics for Europe landed the evening of that event and "
-            "Dallas lists are expected the same way after the champion is crowned."
+            "No extra complete Dallas Flame-Flame lists were found on X / Reddit "
+            "beyond the OPTCG.GG ingest. Europe Utrecht Flame-Flame lists were skipped."
         )
 
     log_path = ROOT / "data/dallas-flame-x-log.json"
