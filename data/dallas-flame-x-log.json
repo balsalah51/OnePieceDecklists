@@ -1,0 +1,2025 @@
+{
+  "window": {
+    "start": "2026-09-18",
+    "end": "2026-09-21"
+  },
+  "searches": [
+    {
+      "q": "site:x.com Dallas \"Flame-Flame\" since:2026-09-18",
+      "status": 202,
+      "chars": 14284,
+      "ids": []
+    },
+    {
+      "q": "site:x.com Dallas \"Flame Flame\" since:2026-09-18",
+      "status": 202,
+      "chars": 14302,
+      "ids": []
+    },
+    {
+      "q": "site:x.com \"Flame-Flame Fruit Coliseum\" Dallas",
+      "status": 202,
+      "chars": 14304,
+      "ids": []
+    },
+    {
+      "q": "site:x.com \"BCG Fest Dallas\" decklist",
+      "status": 202,
+      "chars": 14298,
+      "ids": []
+    },
+    {
+      "q": "site:x.com \"BCG Fest\" Dallas winner",
+      "status": 202,
+      "chars": 14270,
+      "ids": []
+    },
+    {
+      "q": "site:x.com Dallas OPTCG decklist since:2026-09-18",
+      "status": 202,
+      "chars": 14272,
+      "ids": []
+    },
+    {
+      "q": "site:x.com Dallas \"top cut\" OPTCG",
+      "status": 202,
+      "chars": 14284,
+      "ids": []
+    },
+    {
+      "q": "site:x.com from:ONEPIECE_tcg_EN Dallas",
+      "status": 202,
+      "chars": 14262,
+      "ids": []
+    },
+    {
+      "q": "site:x.com from:The_Egman Dallas",
+      "status": 202,
+      "chars": 14238,
+      "ids": []
+    },
+    {
+      "q": "site:x.com from:CardKaizoku Dallas",
+      "status": 202,
+      "chars": 14242,
+      "ids": []
+    },
+    {
+      "q": "site:x.com from:OPtopdecks Dallas",
+      "status": 202,
+      "chars": 14258,
+      "ids": []
+    },
+    {
+      "q": "site:x.com from:OPTCGAlert Dallas",
+      "status": 202,
+      "chars": 14240,
+      "ids": []
+    },
+    {
+      "q": "site:x.com from:MarinefordTCG Dallas",
+      "status": 202,
+      "chars": 14252,
+      "ids": []
+    },
+    {
+      "q": "site:x.com from:felixvp10",
+      "status": 202,
+      "chars": 14224,
+      "ids": []
+    },
+    {
+      "q": "site:x.com \"Flame-Flame Fruit Coliseum: Decklists\"",
+      "status": 202,
+      "chars": 14312,
+      "ids": []
+    },
+    {
+      "q": "Dallas Flame-Flame Fruit Coliseum decklist",
+      "status": 202,
+      "chars": 14258,
+      "ids": []
+    },
+    {
+      "q": "Dallas Flame Flame Coliseum top 8 decklist",
+      "status": 202,
+      "chars": 14252,
+      "ids": []
+    }
+  ],
+  "profiles": [
+    {
+      "handle": "ONEPIECE_tcg_EN",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "BandaiTCG",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "BandaiCardGames",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "The_Egman",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "EgmanEvents",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "CardKaizoku",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "MarinefordTCG",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "OPtopdecks",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "OPTCGAlert",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "PlayTCGOfficial",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "JohnnyTCG",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "StrawHatPecan",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "Vampyrgaming",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "felixvp10",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "PleaseBanYellow",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "fedemeco_",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "LukaTCG",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    },
+    {
+      "handle": "RobertoOPTCG",
+      "status": 403,
+      "chars": 617,
+      "ids": 2
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://r.jina.ai/https://x.com/search?q=Dallas%20Flame%20since%3A2026-09-18&src=typed_query&f=live",
+      "status": 403,
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
+    },
+    {
+      "url": "https://r.jina.ai/https://x.com/search?q=from%3AONEPIECE_tcg_EN%20since%3A2026-09-18&src=typed_query&f=live",
+      "status": 403,
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
+    },
+    {
+      "url": "https://r.jina.ai/https://x.com/search?q=%22Flame-Flame%20Fruit%20Coliseum%3A%20Decklists%22&src=typed_query&f=live",
+      "status": 403,
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
+    },
+    {
+      "url": "https://r.jina.ai/https://x.com/search?q=BCG%20Fest%20Dallas%20decklist&src=typed_query&f=live",
+      "status": 403,
+      "chars": 617,
+      "ids": [
+        "JUSTCASSANOVA/2101676542849945891",
+        "JUSTCASSANOVA/2101676542849945891"
+      ]
+    }
+  ],
+  "tweets": [
+    {
+      "handle": "ONEPIECE_tcg_EN",
+      "id": "2095985462720500200",
+      "url": "https://x.com/ONEPIECE_tcg_EN/status/2095985462720500200",
+      "http": 200,
+      "created": "2026-09-04",
+      "in_window": false,
+      "dallas_flame": false,
+      "europe": true,
+      "text": "[Flame-Flame Fruit Coliseum: Decklists]\nWe have a champion!\n\nCongratulations to the winner of the WORLD'S FIRST Flame-Flame Fruit Coliseum!\nCheck out the top player decks below!\n\nChampion: Benjo@@@1 (D Block)\n\n#ONEPIECE\n#onepiececardgame\n#BCGFest",
+      "photos": [
+        "https://pbs.twimg.com/media/HRZvIjubUAApzEz.jpg?name=orig",
+        "https://pbs.twimg.com/media/HRZvLMObUAAzgaP.jpg?name=orig"
+      ],
+      "complete_lists": 0
+    },
+    {
+      "handle": "ONEPIECE_tcg_EN",
+      "id": "2095986697037107308",
+      "url": "https://x.com/ONEPIECE_tcg_EN/status/2095986697037107308",
+      "http": 200,
+      "created": "2026-09-04",
+      "in_window": false,
+      "dallas_flame": false,
+      "europe": false,
+      "text": "[Flame-Flame Fruit Coliseum: Decklists] \n\nTop 4 :\nRian (A Block)\nborsaistrash (B Block)\n\n#ONEPIECE \n#onepiececardgame \n#BCGFest",
+      "photos": [
+        "https://pbs.twimg.com/media/HRZwiAUbIAAmjul.jpg?name=orig",
+        "https://pbs.twimg.com/media/HRZwlP3bkAAFmaC.jpg?name=orig",
+        "https://pbs.twimg.com/media/HRZwmHxbAAA0Ph-.jpg?name=orig",
+        "https://pbs.twimg.com/media/HRZwuBWWQAEMYkJ.jpg?name=orig"
+      ],
+      "complete_lists": 0
+    },
+    {
+      "handle": "JUSTCASSANOVA",
+      "id": "2101676542849945891",
+      "url": "https://x.com/JUSTCASSANOVA/status/2101676542849945891",
+      "http": 200,
+      "created": "2026-09-20",
+      "in_window": true,
+      "dallas_flame": false,
+      "europe": false,
+      "text": "SHEZSO EU VS AEON GOING DOWN ON NOVEMBER 14TH..I THINK🤷🏾‍♂️🤷🏾‍♂️😈😈 #STUDSUP @CMC_Guapo",
+      "photos": [
+        "https://pbs.twimg.com/media/HSqfIm1XoAAOy-g.jpg?name=orig"
+      ],
+      "complete_lists": 0
+    }
+  ],
+  "optcggg": [
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "Dakota Angeloff",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "Robby Hadley",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "Vince Chase",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "James Lee",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "Raja Twam",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "Rj Perez",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "June Lee",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events Triple Win-A-Box #2",
+      "date": "2026-09-15",
+      "player": "Jacob Rainey",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Billy",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Brayan",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Xtotx",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Kaido [WL]",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Dylhu",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Scarria",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Dom",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Ligma",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Banana",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Austin",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Daryl",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "GibsonArcherTang",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Steven_hohenheim",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Benjamin Isa Robert",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Tira",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Beard",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Tanner Jones",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Silent Kwak",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Beamer",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "LettuceBoi",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Clayton H",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Noos",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Oppa",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "KZ",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "[POLY] code",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "BCD",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Gochugang",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "JX",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "OPplayer",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Prof Bee",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Van",
+      "dallas_flame": false
+    },
+    {
+      "event": "The Booster Box's Virginia Regionals",
+      "date": "2026-09-14",
+      "player": "Anthemthy",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Xixo",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Hungry",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Sempere95",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Vlets",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Nour",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Meids",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "SSL Nghiem",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Imran",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Skepas",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Prowder",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Luigi Amato",
+      "dallas_flame": false
+    },
+    {
+      "event": "Athens Regionals",
+      "date": "2026-09-12",
+      "player": "Arman Haji-Ghassemi",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "NikolayBaydanov",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "LilyKei",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "SoulKingg",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "Patpat",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "Captivat3",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "Nightingale",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "trocheesy",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #107",
+      "date": "2026-09-09",
+      "player": "Xevi",
+      "dallas_flame": false
+    },
+    {
+      "event": "Utrecht Regionals",
+      "date": "2026-09-07",
+      "player": "Svinci",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "legendarysword34",
+      "dallas_flame": false
+    },
+    {
+      "event": "Utrecht Regionals",
+      "date": "2026-09-07",
+      "player": "arenasCV",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "Slodea",
+      "dallas_flame": false
+    },
+    {
+      "event": "Utrecht Regionals",
+      "date": "2026-09-07",
+      "player": "Josh Graham",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "OtakuProwder",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "LilyKei",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "Butko",
+      "dallas_flame": false
+    },
+    {
+      "event": "Utrecht Regionals",
+      "date": "2026-09-07",
+      "player": "Trec",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "schumifoxx",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "nessos",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #106",
+      "date": "2026-09-07",
+      "player": "Rider",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Brisbane Regionals",
+      "date": "2026-09-05",
+      "player": "Dylan",
+      "dallas_flame": false
+    },
+    {
+      "event": "EU Finals Utrecht",
+      "date": "2026-09-05",
+      "player": "Frle",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Brisbane Regionals",
+      "date": "2026-09-05",
+      "player": "Ernest",
+      "dallas_flame": false
+    },
+    {
+      "event": "EU Finals Utrecht",
+      "date": "2026-09-05",
+      "player": "KDZ Millán player",
+      "dallas_flame": false
+    },
+    {
+      "event": "EU Finals Utrecht",
+      "date": "2026-09-05",
+      "player": "Zyrios",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Brisbane Regionals",
+      "date": "2026-09-05",
+      "player": "Jacob",
+      "dallas_flame": false
+    },
+    {
+      "event": "EU Finals Utrecht",
+      "date": "2026-09-05",
+      "player": "Ziiaaaac",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Brisbane Regionals",
+      "date": "2026-09-05",
+      "player": "Damon",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Brisbane Regionals",
+      "date": "2026-09-05",
+      "player": "Zhao",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "Benjo@@@1",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe",
+      "date": "2026-09-04",
+      "player": "Benjo",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "borsaistrash",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "Xixo",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "Rian",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe",
+      "date": "2026-09-04",
+      "player": "Xixo",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "Tooluca",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "Flozing",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "Max711",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "Cinnas",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "Montre",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "Noko",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "donillou",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe",
+      "date": "2026-09-04",
+      "player": "Rian",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "MastasVS",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "MerryTCG",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "Lunatik",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "woodywood",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "Kevin",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "mitchel",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "code",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "Benjamin Bayer",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "Gatuszo",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe",
+      "date": "2026-09-04",
+      "player": "Maximilian Lorenz",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "Juru",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "Skip",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "Nightingale_",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "[REY] Bamboopanda",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "(⌐■_■)",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "ZelCoM Night",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "Gaston78910",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "Alessandro Villa",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block B",
+      "date": "2026-09-04",
+      "player": "Marco Casile",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block A",
+      "date": "2026-09-04",
+      "player": "Fury",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block D",
+      "date": "2026-09-04",
+      "player": "anestakis",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe Block C",
+      "date": "2026-09-04",
+      "player": "Balanced",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe",
+      "date": "2026-09-04",
+      "player": "Lafinte",
+      "dallas_flame": false
+    },
+    {
+      "event": "Flame Flame Fruit Coliseum Europe",
+      "date": "2026-09-04",
+      "player": "Chewwii",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "Simpiii",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "TheEgman",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "Patpat",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "AliSelim",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "Jrpriest",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "r0xtar",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "HalfJimmy",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #105",
+      "date": "2026-09-03",
+      "player": "Orseeni",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "OtakuProwder",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "Vincaru",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "Kettensaege",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "Patpat",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "UPS_Employee",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "AsherB",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "petemess",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #104",
+      "date": "2026-09-02",
+      "player": "ScuR",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "James Fleming",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "Hayden M Langley",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "Lily Long",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "James M Miller Jr",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "Nic Barnes",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "Angelo Zong-Liscum",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "Brandon wilson",
+      "dallas_flame": false
+    },
+    {
+      "event": "Egman Events OP17 Triple Win-A-Box",
+      "date": "2026-09-01",
+      "player": "Dominic Bucceroni",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #2",
+      "date": "2026-08-31",
+      "player": "Edeer Vazquez",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Yost (Kayfabe Cards)",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "legendarysword34",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "AceOfSpades",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #2",
+      "date": "2026-08-31",
+      "player": "Jimmy Lieu",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "luzsnikov",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Duskdragon",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #2",
+      "date": "2026-08-31",
+      "player": "Jahkolbi Searles",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "Nightingale",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #2",
+      "date": "2026-08-31",
+      "player": "Ashwin R",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "Gringoloco",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Chris Sok",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "Frodon",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Solo-kun",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #2",
+      "date": "2026-08-31",
+      "player": "James Lee",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Chudge",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "Beton1996",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Chudge",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "KZ",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #2",
+      "date": "2026-08-31",
+      "player": "Tim Elder",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "freajski",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #2",
+      "date": "2026-08-31",
+      "player": "Simon Roach",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #103",
+      "date": "2026-08-31",
+      "player": "Slodea",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "4nem",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "CPP SLaTe",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Shima",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "[x3] Biglamma",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Dustin",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Shelledalf",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Yaranaikasmith",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Jovan Vagachi",
+      "dallas_flame": false
+    },
+    {
+      "event": "PPG Games Orlando Regionals",
+      "date": "2026-08-31",
+      "player": "Capt_Karoo",
+      "dallas_flame": false
+    },
+    {
+      "event": "Chinoize Cup Road To Utrecht Win-A-Case",
+      "date": "2026-08-30",
+      "player": "Jonathan Frakes",
+      "dallas_flame": false
+    },
+    {
+      "event": "Chinoize Cup Road To Utrecht Win-A-Case",
+      "date": "2026-08-30",
+      "player": "Cinnas",
+      "dallas_flame": false
+    },
+    {
+      "event": "Chinoize Cup Road To Utrecht Win-A-Case",
+      "date": "2026-08-30",
+      "player": "Danrom",
+      "dallas_flame": false
+    },
+    {
+      "event": "Chinoize Cup Road To Utrecht Win-A-Case",
+      "date": "2026-08-30",
+      "player": "NinjaTrain",
+      "dallas_flame": false
+    },
+    {
+      "event": "Chinoize Cup Road To Utrecht Win-A-Case",
+      "date": "2026-08-30",
+      "player": "Monchimillian",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Auckland Regionals",
+      "date": "2026-08-29",
+      "player": "Hubert",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Jaydon Ramos",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Louigi Braga",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Auckland Regionals",
+      "date": "2026-08-29",
+      "player": "Isaac",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Brian Huynh",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Auckland Regionals",
+      "date": "2026-08-29",
+      "player": "Levi",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Nguyen Chau",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Jose Salas",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Justin Saenz",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Gavin Chan",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Auckland Regionals",
+      "date": "2026-08-29",
+      "player": "Allen",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Arthur Shi",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Brayan Madrigal",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Seraphim Zhang",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Gage Swift",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Jiajun",
+      "dallas_flame": false
+    },
+    {
+      "event": "TAK Games Auckland Regionals",
+      "date": "2026-08-29",
+      "player": "Poe",
+      "dallas_flame": false
+    },
+    {
+      "event": "Crimson Guild Double Case Tournament",
+      "date": "2026-08-29",
+      "player": "Andrew An",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "LilyKei",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "Butko",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "Khoifish",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "Willerd7",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "GreenD",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "LunatikStrange",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "Kushy",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #102",
+      "date": "2026-08-26",
+      "player": "UPS_Employee",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "MaGe",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "Wortaxx",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "Dearcan",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "Corentin33",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "Gaston78910",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "Victiny",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "lordRafa",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #101",
+      "date": "2026-08-25",
+      "player": "Pixsci",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "UPS_Employee",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "Wortaxx",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "Nicolooo",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "enderu",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "fuat",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "Selcuk",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "igordiasr",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #100",
+      "date": "2026-08-24",
+      "player": "Yony",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "Donkaiser",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Cenkonator",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "LilyKei",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "Rukyy",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "Beton1996",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "mstrkenc",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Noostag",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "TheEgman",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Tetra",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "fuat",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "Roko Zoric",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Gaston78910",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "FenoHS",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "azirite",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "MrPolypous",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "MaGe",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Brian",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "MaGe",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "AsherB",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "petemess",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Yonxlj",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "Nicolooo",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Dearcan",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "troru",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "DragoATX",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "theribeyesteak",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Miguelitorinho",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "Nightingale",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "RubenTR",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "WPKaptain",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #99",
+      "date": "2026-08-19",
+      "player": "Gefen H",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #98",
+      "date": "2026-08-19",
+      "player": "Sanders94",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "asce712",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "UPS_Employee",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "marshmellor",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "luzsnikov",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "Wortaxx",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "RubenTR",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "SaBR",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "Pacio23",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "NinjaTrain",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "tinnoy",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "enderu",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "Prussia",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "SoulKingg",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "MaxMaxMax3",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "iacca7",
+      "dallas_flame": false
+    },
+    {
+      "event": "ChinoizeCup #97",
+      "date": "2026-08-18",
+      "player": "ScuR",
+      "dallas_flame": false
+    },
+    {
+      "event": "PlayLATAM 26-27 Championship Latin American Finals",
+      "date": "2026-08-16",
+      "player": "Zoru",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #1",
+      "date": "2026-08-16",
+      "player": "Slayde Stautz",
+      "dallas_flame": false
+    },
+    {
+      "event": "Magic Omen's Zagreb Regionals",
+      "date": "2026-08-16",
+      "player": "Kevin L",
+      "dallas_flame": false
+    },
+    {
+      "event": "Magic Omen's Zagreb Regionals",
+      "date": "2026-08-16",
+      "player": "MaGe",
+      "dallas_flame": false
+    },
+    {
+      "event": "PlayLATAM 26-27 Championship Latin American Finals",
+      "date": "2026-08-16",
+      "player": "Blizzard",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #1",
+      "date": "2026-08-16",
+      "player": "Diego Djordjevic",
+      "dallas_flame": false
+    },
+    {
+      "event": "iKailaCup OP17 #1",
+      "date": "2026-08-16",
+      "player": "Sean Clausen",
+      "dallas_flame": false
+    },
+    {
+      "event": "PlayLATAM 26-27 Championship Latin American Finals",
+      "date": "2026-08-16",
+      "player": "Zelcom Night",
+      "dallas_flame": false
+    },
+    {
+      "event": "Magic Omen's Zagreb Regionals",
+      "date": "2026-08-16",
+      "player": "Julius Schurhoff",
+      "dallas_flame": false
+    },
+    {
+      "event": "PlayLATAM 26-27 Championship Latin American Finals",
+      "date": "2026-08-16",
+      "player": "Human",
+      "dallas_flame": false
+    }
+  ],
+  "hosted": [],
+  "notes": [
+    {
+      "reddit": "What is BCG Fest?",
+      "date": "2026-09-20",
+      "dallas_flame": false
+    },
+    {
+      "reddit": "FOUND Deck at Dallas Nats",
+      "date": "2026-09-19",
+      "dallas_flame": false
+    },
+    {
+      "reddit": "Flame Flame Side event location",
+      "date": "2026-09-19",
+      "dallas_flame": false
+    },
+    {
+      "reddit": "Flame flame event.",
+      "date": "2026-09-19",
+      "dallas_flame": false
+    },
+    {
+      "reddit": "BCG Fest Dallas Player Safety Notice",
+      "date": "2026-09-19",
+      "dallas_flame": false
+    },
+    {
+      "reddit": "Flame flame TC and EGB",
+      "date": "2026-09-19",
+      "dallas_flame": false
+    },
+    "No complete 1+50 Dallas Flame-Flame lists were public on X, OPTCG.GG, OnePieceDB, or r/OnePieceTCG at scrape time. Day 3 finals stream https://www.youtube.com/watch?v=DLUyxqx8jG0 was live; official EN decklist graphics for Europe landed the evening of that event and Dallas lists are expected the same way after the champion is crowned."
+  ]
+}

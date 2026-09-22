@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19",
+  "updated": "2026-09-21",
   "recent_from": "2026-08-20",
   "source_count": 25,
   "leaders": [
@@ -17,14 +17,14 @@
         "S": 13,
         "A": 3
       },
-      "lists": 179,
+      "lists": 181,
       "wins": 4,
-      "top8": 29,
-      "top4": 15,
-      "recent_lists": 116,
+      "top8": 31,
+      "top4": 16,
+      "recent_lists": 118,
       "recent_wins": 2,
-      "recent_top8": 21,
-      "community": 39,
+      "recent_top8": 23,
+      "community": 42,
       "best": 1
     },
     {
@@ -43,14 +43,14 @@
         "C": 1,
         "B": 1
       },
-      "lists": 487,
-      "wins": 33,
-      "top8": 229,
-      "top4": 134,
-      "recent_lists": 260,
-      "recent_wins": 10,
-      "recent_top8": 56,
-      "community": 181,
+      "lists": 488,
+      "wins": 34,
+      "top8": 230,
+      "top4": 135,
+      "recent_lists": 261,
+      "recent_wins": 11,
+      "recent_top8": 57,
+      "community": 220,
       "best": 1
     },
     {
@@ -69,14 +69,14 @@
         "A": 2,
         "B": 1
       },
-      "lists": 149,
+      "lists": 151,
       "wins": 3,
       "top8": 25,
       "top4": 14,
-      "recent_lists": 128,
+      "recent_lists": 130,
       "recent_wins": 2,
       "recent_top8": 22,
-      "community": 35,
+      "community": 48,
       "best": 1
     },
     {
@@ -95,14 +95,14 @@
         "C": 1,
         "S": 1
       },
-      "lists": 107,
+      "lists": 108,
       "wins": 1,
-      "top8": 16,
+      "top8": 17,
       "top4": 8,
-      "recent_lists": 91,
+      "recent_lists": 92,
       "recent_wins": 1,
-      "recent_top8": 15,
-      "community": 34,
+      "recent_top8": 16,
+      "community": 36,
       "best": 1
     },
     {
@@ -127,7 +127,7 @@
       "recent_lists": 47,
       "recent_wins": 1,
       "recent_top8": 8,
-      "community": 37,
+      "community": 40,
       "best": 1
     },
     {
@@ -152,7 +152,7 @@
       "recent_lists": 43,
       "recent_wins": 0,
       "recent_top8": 10,
-      "community": 89,
+      "community": 94,
       "best": 1
     },
     {
@@ -171,14 +171,14 @@
         "A": 5,
         "S": 1
       },
-      "lists": 135,
+      "lists": 136,
       "wins": 0,
-      "top8": 18,
-      "top4": 3,
-      "recent_lists": 85,
+      "top8": 19,
+      "top4": 4,
+      "recent_lists": 86,
       "recent_wins": 0,
-      "recent_top8": 17,
-      "community": 27,
+      "recent_top8": 18,
+      "community": 32,
       "best": 2
     },
     {
@@ -204,7 +204,7 @@
       "recent_lists": 11,
       "recent_wins": 2,
       "recent_top8": 5,
-      "community": 55,
+      "community": 56,
       "best": 1
     },
     {
@@ -223,14 +223,14 @@
         "A": 1,
         "S": 2
       },
-      "lists": 141,
-      "wins": 5,
-      "top8": 34,
-      "top4": 19,
-      "recent_lists": 135,
-      "recent_wins": 5,
-      "recent_top8": 34,
-      "community": 55,
+      "lists": 145,
+      "wins": 6,
+      "top8": 36,
+      "top4": 20,
+      "recent_lists": 139,
+      "recent_wins": 6,
+      "recent_top8": 36,
+      "community": 72,
       "best": 1
     },
     {
@@ -280,7 +280,7 @@
       "recent_lists": 19,
       "recent_wins": 0,
       "recent_top8": 4,
-      "community": 26,
+      "community": 28,
       "best": 2
     },
     {
@@ -305,7 +305,7 @@
       "recent_lists": 52,
       "recent_wins": 3,
       "recent_top8": 9,
-      "community": 17,
+      "community": 22,
       "best": 1
     },
     {
@@ -356,7 +356,7 @@
       "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 53,
+      "community": 54,
       "best": 1
     },
     {
@@ -505,7 +505,7 @@
       "recent_lists": 17,
       "recent_wins": 0,
       "recent_top8": 4,
-      "community": 7,
+      "community": 9,
       "best": 3
     },
     {
@@ -546,15 +546,39 @@
       "votes": {
         "B": 2
       },
-      "lists": 13,
+      "lists": 14,
       "wins": 0,
-      "top8": 5,
-      "top4": 2,
-      "recent_lists": 11,
+      "top8": 6,
+      "top4": 3,
+      "recent_lists": 12,
       "recent_wins": 0,
-      "recent_top8": 5,
+      "recent_top8": 6,
       "community": 0,
       "best": 2
+    },
+    {
+      "id": "OP11-040",
+      "name": "UP Luffy",
+      "href": "/decklists/up-luffy.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-040_EN.webp",
+      "color": "color-blue-purple",
+      "color_label": "Blue/Purple",
+      "tier": "C",
+      "score": 4.78,
+      "sources": 2,
+      "votes": {
+        "B": 1,
+        "A": 1
+      },
+      "lists": 76,
+      "wins": 2,
+      "top8": 22,
+      "top4": 9,
+      "recent_lists": 18,
+      "recent_wins": 1,
+      "recent_top8": 4,
+      "community": 4,
+      "best": 1
     },
     {
       "id": "OP08-058",
@@ -577,7 +601,7 @@
       "recent_lists": 7,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 8,
+      "community": 12,
       "best": 7
     },
     {
@@ -603,29 +627,6 @@
       "recent_top8": 2,
       "community": 11,
       "best": 6
-    },
-    {
-      "id": "OP11-040",
-      "name": "UP Luffy",
-      "href": "/decklists/up-luffy.html",
-      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-040_EN.webp",
-      "color": "color-blue-purple",
-      "color_label": "Blue/Purple",
-      "tier": "C",
-      "score": 2.9,
-      "sources": 2,
-      "votes": {
-        "B": 2
-      },
-      "lists": 75,
-      "wins": 2,
-      "top8": 21,
-      "top4": 8,
-      "recent_lists": 17,
-      "recent_wins": 1,
-      "recent_top8": 3,
-      "community": 3,
-      "best": 1
     },
     {
       "id": "OP15-002",
@@ -736,13 +737,13 @@
       "votes": {
         "C": 1
       },
-      "lists": 4,
+      "lists": 5,
       "wins": 0,
-      "top8": 2,
+      "top8": 3,
       "top4": 1,
-      "recent_lists": 3,
+      "recent_lists": 4,
       "recent_wins": 0,
-      "recent_top8": 2,
+      "recent_top8": 3,
       "community": 2,
       "best": 4
     },
@@ -812,7 +813,7 @@
       "recent_lists": 2,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 9,
+      "community": 10,
       "best": null
     },
     {
@@ -1294,7 +1295,7 @@
         "OP16-079": "B",
         "OP11-001": "C",
         "OP14-060": "D",
-        "OP11-040": "B",
+        "OP11-040": "A",
         "OP08-058": "C",
         "OP13-004": "S",
         "OP09-062": "S",
