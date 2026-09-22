@@ -4,27 +4,32 @@
     {
       "id": "OP14-020",
       "name": "Mihawk",
-      "count": 50
+      "count": 51
     },
     {
       "id": "OP09-062",
       "name": "Nico Robin",
-      "count": 32
+      "count": 34
     },
     {
       "id": "OP13-004",
       "name": "Sabo",
-      "count": 21
+      "count": 23
     },
     {
       "id": "ST30-001",
       "name": "Luffy & Ace",
-      "count": 16
+      "count": 15
     },
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 13
+      "count": 12
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "count": 9
     },
     {
       "id": "OP17-058",
@@ -32,64 +37,59 @@
       "count": 9
     },
     {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 8
-    },
-    {
       "id": "OP15-058",
       "name": "Enel",
-      "count": 8
+      "count": 9
     },
     {
       "id": "OP17-001",
       "name": "Edward Newgate",
-      "count": 6
+      "count": 5
     },
     {
-      "id": "OP16-001",
-      "name": "Portgas D. Ace",
-      "count": 6
+      "id": "OP11-040",
+      "name": "UP Luffy",
+      "count": 5
     }
   ],
   "set": "OP17",
-  "pie_lists": 359,
+  "pie_lists": 358,
   "pie": [
     {
       "id": "OP14-020",
       "name": "Mihawk",
-      "count": 81,
-      "pct": 22.6
+      "count": 82,
+      "pct": 22.9
     },
     {
       "id": "OP09-062",
       "name": "Nico Robin",
-      "count": 58,
-      "pct": 16.2
+      "count": 60,
+      "pct": 16.8
     },
     {
       "id": "OP13-004",
       "name": "Sabo",
-      "count": 41,
-      "pct": 11.4
+      "count": 43,
+      "pct": 12.0
     },
     {
       "id": "ST30-001",
       "name": "Luffy & Ace",
-      "count": 33,
-      "pct": 9.2
-    },
-    {
-      "id": "OP17-039",
-      "name": "Rocks D. Xebec",
       "count": 29,
       "pct": 8.1
     },
     {
+      "id": "OP17-039",
+      "name": "Rocks D. Xebec",
+      "count": 27,
+      "pct": 7.5
+    },
+    {
       "id": "OP17-079",
       "name": "Monkey D. Luffy",
-      "count": 25,
-      "pct": 7.0
+      "count": 26,
+      "pct": 7.3
     },
     {
       "id": "OP17-058",
@@ -113,13 +113,13 @@
       "id": "OP16-001",
       "name": "Portgas D. Ace",
       "count": 7,
-      "pct": 1.9
+      "pct": 2.0
     },
     {
       "id": "",
       "name": "Other",
-      "count": 47,
-      "pct": 13.1
+      "count": 46,
+      "pct": 12.8
     }
   ],
   "hole": {
