@@ -1170,6 +1170,15 @@ def render_card_entry(item: dict, meta: dict) -> str:
         </article>"""
 
 
+def page_canonical(rel: str) -> str:
+    rel = (rel or "").lstrip("/")
+    if rel in ("index.html", ""):
+        return "https://onepiecedecklists.com/"
+    if rel.endswith("/index.html"):
+        return "https://onepiecedecklists.com/" + rel[: -len("index.html")]
+    return "https://onepiecedecklists.com/" + rel
+
+
 def page_chrome(
     title: str,
     description: str,
@@ -1177,6 +1186,7 @@ def page_chrome(
     nav_op17: bool,
     body: str,
     include_tcgplayer: bool = True,
+    path: str = "",
 ) -> str:
     op17_cur = ' aria-current="page"' if nav_op17 else ""
     tcg_scripts = ""
@@ -1187,6 +1197,13 @@ def page_chrome(
             '  <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>\n'
             '  <script src="/js/tcgplayer.js?v=tcg-quiet"></script>\n'
         )
+    canon = ""
+    if path:
+        url = html.escape(page_canonical(path), quote=True)
+        canon = (
+            f'  <link rel="canonical" href="{url}" />\n'
+            '  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />\n'
+        )
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -1194,7 +1211,7 @@ def page_chrome(
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}" />
-  <script id="opdl-theme-boot">
+{canon}  <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
   <link rel="stylesheet" href="/css/site.css?v=home-pro17" />
@@ -1594,7 +1611,9 @@ def render_deck_page(leader: dict, entry: dict, cache: dict) -> str:
 {picture}
         <p class="muted" style="margin-top:22px">{html.escape(kind_note)} Source: <a href="{html.escape(source)}">{html.escape(source)}</a>. Images hosted by Limitless. Not affiliated with Bandai.</p>"""
     desc = f"{leader['name']} decklist - {subtitle}"[:160]
-    return page_chrome(f"{title}", desc, leader["color"], leader["nav_op17"], body)
+    slug = entry.get("forced_slug") or entry.get("slug") or ""
+    rel = f"{leader['dir']}/{slug}.html" if slug else ""
+    return page_chrome(f"{title}", desc, leader["color"], leader["nav_op17"], body, path=rel)
 
 
 def render_pool_heading(leader: dict) -> str:
@@ -1709,7 +1728,14 @@ def render_hub_page(leader: dict, cache: dict) -> str:
         <!-- /TOURNAMENT_DECKLISTS -->
 {render_pool_heading(leader)}"""
     desc = f"{leader['name']} - {color} leader page and tournament lists."
-    return page_chrome(f"{leader['name']} decklist", desc[:160], leader["color"], leader["nav_op17"], body)
+    return page_chrome(
+        f"{leader['name']} decklist",
+        desc[:160],
+        leader["color"],
+        leader["nav_op17"],
+        body,
+        path=leader["page"],
+    )
 
 
 def render_index_section(leader: dict, lists: list[dict]) -> str:
