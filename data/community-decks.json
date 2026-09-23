@@ -148,6 +148,15 @@
       "source_url": "https://www.optcg.gg/deck-lists/5d9868f5-8d80-48ad-81eb-dfea3f2d5787",
       "kind": "web",
       "date": "2026-09-15"
+    },
+    {
+      "slug": "opdeck-shanks-op17-west-il-mondo-di-miky-sep10-alex",
+      "href": "/decklists/op17/shanks/opdeck-shanks-op17-west-il-mondo-di-miky-sep10-alex.html",
+      "title": "Shanks (Format OP17) Standard Battle Winner",
+      "subtitle": "Il Mondo di Miky(43) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/shanks-op17-west-il-mondo-di-miky-sep10-alex/",
+      "kind": "web",
+      "date": "2026-09-10"
     }
   ],
   "OP17-039": [
@@ -523,6 +532,51 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/rocks-op17-east-cardshop-sep17-chelseaonepi/",
       "kind": "web",
       "date": "2026-09-17"
+    },
+    {
+      "slug": "opdeck-rocks-op17-west-nats-sep19-seven07",
+      "href": "/decklists/op17/rocks-d-xebec/opdeck-rocks-op17-west-nats-sep19-seven07.html",
+      "title": "Rocks.D.Xebec (Format OP17) Championship T4",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rocks-op17-west-nats-sep19-seven07/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-rocks-op17-west-cdmx-sep19-joymemex",
+      "href": "/decklists/op17/rocks-d-xebec/opdeck-rocks-op17-west-cdmx-sep19-joymemex.html",
+      "title": "Rocks.D.Xebec (Format OP17) Regional T8",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rocks-op17-west-cdmx-sep19-joymemex/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-rocks-op17-west-cdmx-sep19-siiu911",
+      "href": "/decklists/op17/rocks-d-xebec/opdeck-rocks-op17-west-cdmx-sep19-siiu911.html",
+      "title": "Rocks.D.Xebec (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rocks-op17-west-cdmx-sep19-siiu911/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-rocks-op17-west-lgs-sep15-mutsugaoptcg",
+      "href": "/decklists/op17/rocks-d-xebec/opdeck-rocks-op17-west-lgs-sep15-mutsugaoptcg.html",
+      "title": "Rocks D. Xebec (Format OP17) Shop Event Winner",
+      "subtitle": "LGS · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rocks-op17-west-lgs-sep15-mutsugaoptcg/",
+      "kind": "web",
+      "date": "2026-09-15"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-wiz-n43wuw",
+      "href": "/decklists/op17/rocks-d-xebec/tcgportal-2026-09-12-wiz-n43wuw.html",
+      "title": "青ロックス エクストラグランドバトル winner - カードショップWiZ",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu9xkruj001jgm0anun43wuw",
+      "kind": "web",
+      "date": "2026-09-12"
     }
   ],
   "OP17-058": [
@@ -807,6 +861,33 @@
       "title": "sol 16th - Flame Flame Fruit Coliseum NA Block B",
       "subtitle": "Public OPTCG.GG list · Flame Flame Fruit Coliseum NA Block B · 2026-09-20",
       "source_url": "https://www.optcg.gg/deck-lists/2a0838ac-2591-450f-9911-31809a74550e",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-kaido-op17-west-cdmx-sep19-buggy-d-clown",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-west-cdmx-sep19-buggy-d-clown.html",
+      "title": "Kaido (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/kaido-op17-west-cdmx-sep19-buggy-d-clown/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-kaido-op17-west-cdmx-tc-sep20-chinokaiba",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-west-cdmx-tc-sep20-chinokaiba.html",
+      "title": "Kaido (Format OP17) Treasure Cup T8",
+      "subtitle": "CDMX TC · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/kaido-op17-west-cdmx-tc-sep20-chinokaiba/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-kaido-op17-west-scifi-sep20-angelito",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-west-scifi-sep20-angelito.html",
+      "title": "Kaido (Format OP17) Standard Battle Winner",
+      "subtitle": "Sci-Fi Factory · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/kaido-op17-west-scifi-sep20-angelito/",
       "kind": "web",
       "date": "2026-09-20"
     }
@@ -1141,6 +1222,15 @@
       "source_url": "https://www.optcg.gg/deck-lists/c1453382-02ed-483a-8490-f0efb8a70028",
       "kind": "web",
       "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-luffy-op17-east-hbst16-sep16-puzzle",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-east-hbst16-sep16-puzzle.html",
+      "title": "Monkey D. Luffy (Format OP17) Standard Battle Winner",
+      "subtitle": "HBST(16) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-hbst16-sep16-puzzle/",
+      "kind": "web",
+      "date": "2026-09-16"
     }
   ],
   "OP17-099": [
@@ -1222,6 +1312,15 @@
       "source_url": "https://onepiecedb.io/deck/new-big-mom-deck-2361",
       "kind": "web",
       "date": "2026-08-28"
+    },
+    {
+      "slug": "opdeck-linlin-op17-east-bandai-sep19-panthbs",
+      "href": "/decklists/op17/charlotte-linlin/opdeck-linlin-op17-east-bandai-sep19-panthbs.html",
+      "title": "Charlotte Linlin (Format OP17) Extra Grand Battle Regional Runner-up",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/linlin-op17-east-bandai-sep19-panthbs/",
+      "kind": "web",
+      "date": "2026-09-19"
     }
   ],
   "OP13-001": [
@@ -1726,6 +1825,24 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-cardshop-sep18-tamagoegg/",
       "kind": "web",
       "date": "2026-09-18"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-egb-sep20-rene",
+      "href": "/decklists/rg-luffy/opdeck-luffy-op17-west-egb-sep20-rene.html",
+      "title": "Monkey.D.Luffy (Format OP17) Extra Grand Battle Winner",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-egb-sep20-rene/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-egb-sep20-ric",
+      "href": "/decklists/rg-luffy/opdeck-luffy-op17-west-egb-sep20-ric.html",
+      "title": "Monkey.D.Luffy (Format OP17) Extra Grand Battle 3rd Place",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-egb-sep20-ric/",
+      "kind": "web",
+      "date": "2026-09-20"
     }
   ],
   "OP11-041": [
@@ -2128,6 +2245,15 @@
       "title": "Nami (Format OP17) Standard Battle Winner",
       "subtitle": "CK_mizonokuchi · public list from OPDeckGuide",
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/nami-op17-east-ck-mizonokuchi-sep12-hando/",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-bru7v7",
+      "href": "/decklists/nami/tcgportal-2026-09-12-bru7v7.html",
+      "title": "青黄ナミ スタンダードバトル winner - カードキングダム溝の口店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7qkilx0026gm0ar1bru7v7",
       "kind": "web",
       "date": "2026-09-12"
     }
@@ -4120,6 +4246,168 @@
       "source_url": "https://www.optcg.gg/deck-lists/cd6f6630-f29b-4f80-b495-e065c422ace7",
       "kind": "web",
       "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-bcgfest-sep20-alexander-g",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-bcgfest-sep20-alexander-g.html",
+      "title": "G Mihawk (Format OP17) Treasure Cup 9th Place",
+      "subtitle": "BCGFestDallas · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-bcgfest-sep20-alexander-g/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-bcgfest-sep20-armin",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-bcgfest-sep20-armin.html",
+      "title": "G Mihawk (Format OP17) Treasure Cup Winner",
+      "subtitle": "BCGFestDallas · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-bcgfest-sep20-armin/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-bcgfest-sep20-saz",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-bcgfest-sep20-saz.html",
+      "title": "G Mihawk (Format OP17) Treasure Cup 3rd Place",
+      "subtitle": "BCGFestDallas(426) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-bcgfest-sep20-saz/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-bcgfest-sep20-steven-le",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-bcgfest-sep20-steven-le.html",
+      "title": "G Mihawk (Format OP17) Treasure Cup Winner",
+      "subtitle": "BCGFestDallas · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-bcgfest-sep20-steven-le/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-nats-sep19-bluu",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-nats-sep19-bluu.html",
+      "title": "G Mihawk (Format OP17) Championship T32",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-nats-sep19-bluu/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-nats-sep19-chewwii",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-nats-sep19-chewwii.html",
+      "title": "G Mihawk (Format OP17) Championship T32",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-nats-sep19-chewwii/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-nats-sep19-dawstin",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-nats-sep19-dawstin.html",
+      "title": "G Mihawk (Format OP17) Championship T32",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-nats-sep19-dawstin/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-nats-sep19-sean",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-nats-sep19-sean.html",
+      "title": "G Mihawk (Format OP17) Championship T32",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-nats-sep19-sean/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-cdmx-sep19-adrian-canepa",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-cdmx-sep19-adrian-canepa.html",
+      "title": "G Mihawk (Format OP17) Regional Winner",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-cdmx-sep19-adrian-canepa/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-cdmx-sep19-amaro-albornoz",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-cdmx-sep19-amaro-albornoz.html",
+      "title": "G Mihawk (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-cdmx-sep19-amaro-albornoz/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-cdmx-sep19-emmanuel",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-cdmx-sep19-emmanuel.html",
+      "title": "G Mihawk (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-cdmx-sep19-emmanuel/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-cdmx-sep19-powder",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-cdmx-sep19-powder.html",
+      "title": "G Mihawk (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-cdmx-sep19-powder/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-egb-sep20-captivat3",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-egb-sep20-captivat3.html",
+      "title": "G Mihawk (Format OP17) Extra Grand Battle 5th Place",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-egb-sep20-captivat3/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-egb-sep20-sean",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-egb-sep20-sean.html",
+      "title": "G Mihawk (Format OP17) Extra Grand Battle 5th Place",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-egb-sep20-sean/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-west-magicfrance-sep20-doffy",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-west-magicfrance-sep20-doffy.html",
+      "title": "G Mihawk (Format OP17) Standard Battle Winner",
+      "subtitle": "MagicFrance(24) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/mihawk-op17-west-magicfrance-sep20-doffy/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-tsutaya-d1i9qz",
+      "href": "/decklists/mihawk/tcgportal-2026-09-12-tsutaya-d1i9qz.html",
+      "title": "緑ミホーク フラッグシップバトル winner - TSUTAYA 五所川原店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu9x5lv60005js04eld1i9qz",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-s-card-oasis-uqugs1",
+      "href": "/decklists/mihawk/tcgportal-2026-09-12-s-card-oasis-uqugs1.html",
+      "title": "緑ミホーク スタンダードバトル winner - S CARD OASIS 伊丹昆陽店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu9wvi6u001jgm0bfbuqugs1",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-wgkmic",
+      "href": "/decklists/mihawk/tcgportal-2026-09-12-wgkmic.html",
+      "title": "緑ミホーク フラッグシップバトル winner - 三洋堂書店 生桑店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7rgd9r001jgm0akpwgkmic",
+      "kind": "web",
+      "date": "2026-09-12"
     }
   ],
   "OP16-001": [
@@ -4498,6 +4786,51 @@
       "source_url": "https://www.optcg.gg/deck-lists/78a1501b-7647-4a63-9bc8-08e9a1a8cd51",
       "kind": "web",
       "date": "2026-09-04"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-bandai-sep19-totony",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-bandai-sep19-totony.html",
+      "title": "Portgas.D. Ace (Format OP17) Treasure Cup Runner-up",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-bandai-sep19-totony/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-cdmx-sep19-hebi",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-cdmx-sep19-hebi.html",
+      "title": "Portgas.D. Ace (Format OP17) Regional T4",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-cdmx-sep19-hebi/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-goodgamesmorley-sep21-keyllua",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-goodgamesmorley-sep21-keyllua.html",
+      "title": "Portgas.D. Ace (Format OP17) Standard Battle Winner",
+      "subtitle": "GoodGamesMorley · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-goodgamesmorley-sep21-keyllua/",
+      "kind": "web",
+      "date": "2026-09-21"
+    },
+    {
+      "slug": "opdeck-ace-op17-west-lgs-sep10-lexinator",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-west-lgs-sep10-lexinator.html",
+      "title": "Portgas.D. Ace (Format OP17) Standard Battle Winner",
+      "subtitle": "LGS · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/ace-op17-west-lgs-sep10-lexinator/",
+      "kind": "web",
+      "date": "2026-09-10"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-tsutaya-7k7sms",
+      "href": "/decklists/portgas-d-ace/tcgportal-2026-09-12-tsutaya-7k7sms.html",
+      "title": "赤エース（OP16） フラッグシップバトル winner - カードスタジアム小禄店（TSUTAYA 小禄店内）",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7rbrk8001tgm0auo7k7sms",
+      "kind": "web",
+      "date": "2026-09-12"
     }
   ],
   "OP13-079": [
@@ -4982,6 +5315,24 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/pudding-op17-west-lgs-sep17-phoenix/",
       "kind": "web",
       "date": "2026-09-17"
+    },
+    {
+      "slug": "opdeck-pudding-op17-west-nats-sep19-kevin-zhou",
+      "href": "/decklists/charlotte-pudding/opdeck-pudding-op17-west-nats-sep19-kevin-zhou.html",
+      "title": "Charlotte Pudding (Format OP17) Championship T16",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/pudding-op17-west-nats-sep19-kevin-zhou/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-pudding-op17-west-bandai-sep20-tanner",
+      "href": "/decklists/charlotte-pudding/opdeck-pudding-op17-west-bandai-sep20-tanner.html",
+      "title": "Charlotte Pudding (Format OP17) Flame-Flame Phase1 T8",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/pudding-op17-west-bandai-sep20-tanner/",
+      "kind": "web",
+      "date": "2026-09-20"
     }
   ],
   "OP15-058": [
@@ -5848,6 +6199,51 @@
       "source_url": "https://www.optcg.gg/deck-lists/a59ca7c6-d89c-44a4-82ba-50a3843445d5",
       "kind": "web",
       "date": "2026-09-04"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-nats-sep19-t3-dablo",
+      "href": "/decklists/enel/opdeck-enel-op17-west-nats-sep19-t3-dablo.html",
+      "title": "Enel (Format OP17) Championship T16",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-nats-sep19-t3-dablo/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-nats-sep19-xixo",
+      "href": "/decklists/enel/opdeck-enel-op17-west-nats-sep19-xixo.html",
+      "title": "Enel (Format OP17) Championship 3rd Place",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-nats-sep19-xixo/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-nats-sep19-yonas",
+      "href": "/decklists/enel/opdeck-enel-op17-west-nats-sep19-yonas.html",
+      "title": "Enel (Format OP17) Championship Runner-up",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-nats-sep19-yonas/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-bandai-sep19-joan-mendez",
+      "href": "/decklists/enel/opdeck-enel-op17-west-bandai-sep19-joan-mendez.html",
+      "title": "Enel (Format OP17) Treasure Cup Runner-up",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-bandai-sep19-joan-mendez/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-cdmx-sep19-kaido",
+      "href": "/decklists/enel/opdeck-enel-op17-west-cdmx-sep19-kaido.html",
+      "title": "Enel (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-cdmx-sep19-kaido/",
+      "kind": "web",
+      "date": "2026-09-19"
     }
   ],
   "OP16-060": [
@@ -6140,6 +6536,51 @@
       "source_url": "https://www.optcg.gg/deck-lists/d09dd17d-3c14-4e11-bbdb-c9deeee55e14",
       "kind": "web",
       "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-boa-op17-west-bcgfest-sep20-jimmy-h",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-west-bcgfest-sep20-jimmy-h.html",
+      "title": "Boa Hancock (Format OP17) Treasure Cup T8",
+      "subtitle": "BCGFestDallas · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/boa-op17-west-bcgfest-sep20-jimmy-h/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-boa-op17-west-bandai-sep20-rayplusone",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-west-bandai-sep20-rayplusone.html",
+      "title": "Boa Hancock (Format OP17) Flame-Flame Phase1 T8",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/boa-op17-west-bandai-sep20-rayplusone/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-boa-op17-west-egb-sep20-maebatsu",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-west-egb-sep20-maebatsu.html",
+      "title": "Boa Hancock (Format OP17) Extra Grand Battle T4",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/boa-op17-west-egb-sep20-maebatsu/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-dj2rxr",
+      "href": "/decklists/boa-hancock/tcgportal-2026-09-12-dj2rxr.html",
+      "title": "青黄ハンコック チャンピオンシップ26-27​ Season 2 店舗予選 winner - あっぷる今福店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7qwoxd002rgm0a5vdj2rxr",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-9fff4k",
+      "href": "/decklists/boa-hancock/tcgportal-2026-09-12-9fff4k.html",
+      "title": "青黄ハンコック スタンダードバトル winner - 竜星の嵐 高松店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7pn1dq001jgm09q29fff4k",
+      "kind": "web",
+      "date": "2026-09-12"
     }
   ],
   "ST13-001": [
@@ -6857,6 +7298,60 @@
       "source_url": "https://www.optcg.gg/deck-lists/77ad0074-0717-4e33-834f-af3461b69731",
       "kind": "web",
       "date": "2026-09-04"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-bcgfest-sep20-luigi-amato",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-bcgfest-sep20-luigi-amato.html",
+      "title": "Nico Robin (Format OP17) Standard Battle Top List",
+      "subtitle": "BCGFestDallas · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-bcgfest-sep20-luigi-amato/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-robin-op17-east-bandai-sep19-peter",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-east-bandai-sep19-peter.html",
+      "title": "Nico Robin (Format OP17) Extra Grand Battle Regional T8",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/robin-op17-east-bandai-sep19-peter/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-bandai-sep20-dogxwisdom",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-bandai-sep20-dogxwisdom.html",
+      "title": "Nico Robin (Format OP17) Flame-Flame Phase1 T4",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-bandai-sep20-dogxwisdom/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-cdmx-sep19-alex-soto",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-cdmx-sep19-alex-soto.html",
+      "title": "Nico Robin (Format OP17) Regional T4",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-cdmx-sep19-alex-soto/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-cdmx-sep19-derick-ojeda",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-cdmx-sep19-derick-ojeda.html",
+      "title": "Nico Robin (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-cdmx-sep19-derick-ojeda/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-cdmx-sep19-haru-urara",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-cdmx-sep19-haru-urara.html",
+      "title": "Nico Robin (Format OP17) Regional T8",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-cdmx-sep19-haru-urara/",
+      "kind": "web",
+      "date": "2026-09-19"
     }
   ],
   "ST30-001": [
@@ -7066,6 +7561,60 @@
       "source_url": "https://www.optcg.gg/deck-lists/6f843545-3500-464f-80c8-b6efb283b859",
       "kind": "web",
       "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-east-tsutaya-sep20-tsuchi",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-east-tsutaya-sep20-tsuchi.html",
+      "title": "Luffy & Ace (Format OP17) Extra Grand Battle Winner",
+      "subtitle": "Tsutaya · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-ace-op17-east-tsutaya-sep20-tsuchi/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-west-cdmx-sep19-eduardo",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-west-cdmx-sep19-eduardo.html",
+      "title": "Luffy & Ace (Format OP17) Regional Runner-up",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-ace-op17-west-cdmx-sep19-eduardo/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-west-cdmx-sep19-vaterrie",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-west-cdmx-sep19-vaterrie.html",
+      "title": "Luffy & Ace (Format OP17) Regional T16",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-ace-op17-west-cdmx-sep19-vaterrie/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-west-egb-sep20-kevin-zhou",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-west-egb-sep20-kevin-zhou.html",
+      "title": "Luffy & Ace (Format OP17) Extra Grand Battle 6th Place",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-ace-op17-west-egb-sep20-kevin-zhou/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-west-egb-sep20-nevenraphael",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-west-egb-sep20-nevenraphael.html",
+      "title": "Luffy & Ace (Format OP17) Extra Grand Battle T16",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-ace-op17-west-egb-sep20-nevenraphael/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-west-lgs-sep13-henriquexfm",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-west-lgs-sep13-henriquexfm.html",
+      "title": "Luffy & Ace (Format OP17) Shop Event Runner-up",
+      "subtitle": "LGS(60) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-ace-op17-west-lgs-sep13-henriquexfm/",
+      "kind": "web",
+      "date": "2026-09-13"
     }
   ],
   "OP09-061": [
@@ -7538,6 +8087,132 @@
       "source_url": "https://www.optcg.gg/deck-lists/8ac4b771-2ef8-4576-a954-a58721ed4ddb",
       "kind": "web",
       "date": "2026-09-04"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-nats-sep19-conere",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-nats-sep19-conere.html",
+      "title": "Sabo (Format OP17) Championship T16",
+      "subtitle": "PlayTCG(1021) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-nats-sep19-conere/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-cdmx-sep19-ramon",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-cdmx-sep19-ramon.html",
+      "title": "Sabo (Format OP17) Regional T8",
+      "subtitle": "CDMX Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-cdmx-sep19-ramon/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-egb-sep20-gabriel-cunha",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-egb-sep20-gabriel-cunha.html",
+      "title": "Sabo (Format OP17) Extra Grand Battle Runner-up",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-egb-sep20-gabriel-cunha/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-egb-sep20-manny-walia",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-egb-sep20-manny-walia.html",
+      "title": "Sabo (Format OP17) Extra Grand Battle Winner",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-egb-sep20-manny-walia/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-egb-sep20-nuchers",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-egb-sep20-nuchers.html",
+      "title": "Sabo (Format OP17) Extra Grand Battle 3rd Place",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-egb-sep20-nuchers/",
+      "kind": "web",
+      "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-lgs-sep19-silveroptcg",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-lgs-sep19-silveroptcg.html",
+      "title": "Sabo (Format OP17) Standard Battle Winner",
+      "subtitle": "LGS(30) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-lgs-sep19-silveroptcg/",
+      "kind": "web",
+      "date": "2026-09-19"
+    },
+    {
+      "slug": "opdeck-sabo-op17-east-bookoff-sep16-azu",
+      "href": "/decklists/sabo/opdeck-sabo-op17-east-bookoff-sep16-azu.html",
+      "title": "Sabo (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Bookoff · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/sabo-op17-east-bookoff-sep16-azu/",
+      "kind": "web",
+      "date": "2026-09-16"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-ciegana-sep10-charly",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-ciegana-sep10-charly.html",
+      "title": "Sabo (Format OP17) Standard Battle Winner",
+      "subtitle": "Ciegana · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-ciegana-sep10-charly/",
+      "kind": "web",
+      "date": "2026-09-10"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-mana-wdj24b",
+      "href": "/decklists/sabo/tcgportal-2026-09-12-mana-wdj24b.html",
+      "title": "赤黒サボ（OP13） フラッグシップバトル winner - カードショップMana 北見店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu9x9mno001kgm09a1wdj24b",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-tsutaya-av-nqzelk",
+      "href": "/decklists/sabo/tcgportal-2026-09-12-tsutaya-av-nqzelk.html",
+      "title": "赤黒サボ（OP13） エクストラグランドバトル winner - TSUTAYA AVクラブ 大塚台店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7r62fr001jkx04x6nqzelk",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-tsutaya-av-tdf84n",
+      "href": "/decklists/sabo/tcgportal-2026-09-12-tsutaya-av-tdf84n.html",
+      "title": "赤黒サボ（OP13） スタンダードバトル winner - TSUTAYA AVクラブ 大津店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7r30oa0035gm0ap2tdf84n",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-8wdzi9",
+      "href": "/decklists/sabo/tcgportal-2026-09-12-8wdzi9.html",
+      "title": "赤黒サボ（OP13） エクストラグランドバトル winner - ドラグーン周南",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7r0lbv001lgm0aen8wdzi9",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-wpbrz1",
+      "href": "/decklists/sabo/tcgportal-2026-09-12-wpbrz1.html",
+      "title": "赤黒サボ（OP13） チャンピオンシップ26-27​ Season 2 店舗予選 winner - トレカの家康 所沢店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7qo5t00039gm0agdwpbrz1",
+      "kind": "web",
+      "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-3y5rj5",
+      "href": "/decklists/sabo/tcgportal-2026-09-12-3y5rj5.html",
+      "title": "赤黒サボ（OP13） チャンピオンシップ26-27​ Season 2 店舗予選 winner - トレーディングカードピット上越インター店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu7pj6ad001ngm0aya3y5rj5",
+      "kind": "web",
+      "date": "2026-09-12"
     }
   ],
   "OP16-022": [
@@ -8026,6 +8701,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-cardshop-sep18-shishi/",
       "kind": "web",
       "date": "2026-09-18"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-l5q86f",
+      "href": "/decklists/gb-luffy/tcgportal-2026-09-12-l5q86f.html",
+      "title": "緑青ルフィ フラッグシップバトル winner - カードラボ 名古屋大須店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu9xrc6g0001gm0aznl5q86f",
+      "kind": "web",
+      "date": "2026-09-12"
     }
   ],
   "OP14-080": [
@@ -8055,6 +8739,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/moria-op17-west-geeklogia32-sep02-alberto/",
       "kind": "web",
       "date": "2026-09-02"
+    },
+    {
+      "slug": "opdeck-moria-op17-east-cardshop-sep13-asahi",
+      "href": "/decklists/gecko-moria/opdeck-moria-op17-east-cardshop-sep13-asahi.html",
+      "title": "Gecko Moria (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/moria-op17-east-cardshop-sep13-asahi/",
+      "kind": "web",
+      "date": "2026-09-13"
     }
   ],
   "OP16-079": [
@@ -8558,6 +9251,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/koala-op17-east-vidaway-sep12-no-73/",
       "kind": "web",
       "date": "2026-09-12"
+    },
+    {
+      "slug": "tcgportal-2026-09-12-vidaway-tsutaya-7h5mog",
+      "href": "/decklists/koala/tcgportal-2026-09-12-vidaway-tsutaya-7h5mog.html",
+      "title": "黒黄コアラ チャンピオンシップ26-27​ Season 2 店舗予選 winner - トレカ専門店Vidaway函館白鳥店（TSUTAYA 函館白鳥店内）",
+      "subtitle": "Public TCG PORTAL list · 2026-09-12",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmu9xha24001jgm0bob7h5mog",
+      "kind": "web",
+      "date": "2026-09-12"
     }
   ],
   "OP05-060": [
@@ -8823,6 +9525,15 @@
       "source_url": "https://www.optcg.gg/deck-lists/39c8b04a-df2b-4c42-be84-611f8ae2c980",
       "kind": "web",
       "date": "2026-08-01"
+    },
+    {
+      "slug": "opdeck-rosinante-op17-west-egb-sep20-holden-miller",
+      "href": "/decklists/rosinante/opdeck-rosinante-op17-west-egb-sep20-holden-miller.html",
+      "title": "Donquixote Rosinante (Format OP17) Extra Grand Battle Top List",
+      "subtitle": "PlayTCG · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rosinante-op17-west-egb-sep20-holden-miller/",
+      "kind": "web",
+      "date": "2026-09-20"
     }
   ],
   "OP11-062": [
@@ -9673,6 +10384,17 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/jinbe-op17-west-lgs-sep18-par2/",
       "kind": "web",
       "date": "2026-09-18"
+    }
+  ],
+  "OP06-022": [
+    {
+      "slug": "opdeck-yamato-op17-west-zgames-sep20-new-genisis-cam",
+      "href": "/decklists/op06-yamato/opdeck-yamato-op17-west-zgames-sep20-new-genisis-cam.html",
+      "title": "Yamato (Format OP17) Pirate Party Winner",
+      "subtitle": "Zgames · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/yamato-op17-west-zgames-sep20-new-genisis-cam/",
+      "kind": "web",
+      "date": "2026-09-20"
     }
   ]
 }

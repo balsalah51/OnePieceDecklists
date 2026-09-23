@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "recent_from": "2026-08-20",
   "source_count": 25,
   "leaders": [
@@ -17,14 +17,14 @@
         "S": 13,
         "A": 3
       },
-      "lists": 181,
+      "lists": 190,
       "wins": 4,
       "top8": 31,
       "top4": 16,
-      "recent_lists": 118,
+      "recent_lists": 127,
       "recent_wins": 2,
       "recent_top8": 23,
-      "community": 42,
+      "community": 47,
       "best": 1
     },
     {
@@ -43,14 +43,14 @@
         "C": 1,
         "B": 1
       },
-      "lists": 488,
-      "wins": 34,
-      "top8": 230,
-      "top4": 135,
-      "recent_lists": 261,
-      "recent_wins": 11,
-      "recent_top8": 57,
-      "community": 221,
+      "lists": 519,
+      "wins": 35,
+      "top8": 238,
+      "top4": 140,
+      "recent_lists": 292,
+      "recent_wins": 12,
+      "recent_top8": 65,
+      "community": 239,
       "best": 1
     },
     {
@@ -69,14 +69,39 @@
         "A": 2,
         "B": 1
       },
-      "lists": 151,
+      "lists": 171,
       "wins": 3,
-      "top8": 25,
-      "top4": 14,
-      "recent_lists": 130,
+      "top8": 29,
+      "top4": 16,
+      "recent_lists": 150,
       "recent_wins": 2,
-      "recent_top8": 22,
-      "community": 51,
+      "recent_top8": 26,
+      "community": 65,
+      "best": 1
+    },
+    {
+      "id": "OP15-058",
+      "name": "Enel",
+      "href": "/decklists/enel.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp",
+      "color": "color-purple",
+      "color_label": "Purple",
+      "tier": "A",
+      "score": 30.85,
+      "sources": 12,
+      "votes": {
+        "A": 6,
+        "B": 2,
+        "S": 4
+      },
+      "lists": 239,
+      "wins": 17,
+      "top8": 172,
+      "top4": 81,
+      "recent_lists": 58,
+      "recent_wins": 1,
+      "recent_top8": 12,
+      "community": 101,
       "best": 1
     },
     {
@@ -95,14 +120,14 @@
         "C": 1,
         "S": 1
       },
-      "lists": 108,
+      "lists": 117,
       "wins": 1,
       "top8": 17,
       "top4": 8,
-      "recent_lists": 92,
+      "recent_lists": 101,
       "recent_wins": 1,
       "recent_top8": 16,
-      "community": 37,
+      "community": 38,
       "best": 1
     },
     {
@@ -120,39 +145,14 @@
         "C": 3,
         "B": 1
       },
-      "lists": 144,
+      "lists": 149,
       "wins": 4,
-      "top8": 33,
+      "top8": 34,
       "top4": 12,
-      "recent_lists": 47,
+      "recent_lists": 52,
       "recent_wins": 1,
-      "recent_top8": 8,
-      "community": 42,
-      "best": 1
-    },
-    {
-      "id": "OP15-058",
-      "name": "Enel",
-      "href": "/decklists/enel.html",
-      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp",
-      "color": "color-purple",
-      "color_label": "Purple",
-      "tier": "A",
-      "score": 28.98,
-      "sources": 12,
-      "votes": {
-        "A": 7,
-        "B": 2,
-        "S": 3
-      },
-      "lists": 224,
-      "wins": 16,
-      "top8": 170,
-      "top4": 80,
-      "recent_lists": 43,
-      "recent_wins": 0,
-      "recent_top8": 10,
-      "community": 96,
+      "recent_top8": 9,
+      "community": 47,
       "best": 1
     },
     {
@@ -171,15 +171,15 @@
         "A": 5,
         "S": 1
       },
-      "lists": 136,
-      "wins": 0,
-      "top8": 19,
-      "top4": 4,
-      "recent_lists": 86,
-      "recent_wins": 0,
-      "recent_top8": 18,
-      "community": 32,
-      "best": 2
+      "lists": 148,
+      "wins": 1,
+      "top8": 20,
+      "top4": 5,
+      "recent_lists": 98,
+      "recent_wins": 1,
+      "recent_top8": 19,
+      "community": 35,
+      "best": 1
     },
     {
       "id": "OP13-001",
@@ -197,14 +197,14 @@
         "C": 3,
         "B": 3
       },
-      "lists": 199,
+      "lists": 200,
       "wins": 20,
       "top8": 121,
       "top4": 73,
-      "recent_lists": 11,
+      "recent_lists": 12,
       "recent_wins": 2,
       "recent_top8": 5,
-      "community": 56,
+      "community": 58,
       "best": 1
     },
     {
@@ -223,14 +223,14 @@
         "A": 1,
         "S": 2
       },
-      "lists": 145,
+      "lists": 169,
       "wins": 6,
-      "top8": 36,
+      "top8": 37,
       "top4": 20,
-      "recent_lists": 139,
+      "recent_lists": 163,
       "recent_wins": 6,
-      "recent_top8": 36,
-      "community": 75,
+      "recent_top8": 37,
+      "community": 81,
       "best": 1
     },
     {
@@ -255,7 +255,7 @@
       "recent_lists": 14,
       "recent_wins": 1,
       "recent_top8": 2,
-      "community": 9,
+      "community": 10,
       "best": 1
     },
     {
@@ -273,14 +273,14 @@
         "B": 4,
         "A": 1
       },
-      "lists": 21,
+      "lists": 25,
       "wins": 0,
-      "top8": 4,
+      "top8": 5,
       "top4": 3,
-      "recent_lists": 19,
+      "recent_lists": 23,
       "recent_wins": 0,
-      "recent_top8": 4,
-      "community": 28,
+      "recent_top8": 5,
+      "community": 33,
       "best": 2
     },
     {
@@ -298,14 +298,14 @@
         "S": 2,
         "A": 1
       },
-      "lists": 52,
+      "lists": 72,
       "wins": 3,
-      "top8": 9,
-      "top4": 5,
-      "recent_lists": 52,
+      "top8": 13,
+      "top4": 8,
+      "recent_lists": 72,
       "recent_wins": 3,
-      "recent_top8": 9,
-      "community": 23,
+      "recent_top8": 13,
+      "community": 29,
       "best": 1
     },
     {
@@ -323,14 +323,14 @@
         "B": 3,
         "A": 1
       },
-      "lists": 9,
+      "lists": 11,
       "wins": 0,
       "top8": 3,
       "top4": 1,
-      "recent_lists": 5,
+      "recent_lists": 7,
       "recent_wins": 0,
       "recent_top8": 3,
-      "community": 8,
+      "community": 9,
       "best": 3
     },
     {
@@ -356,7 +356,7 @@
       "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 54,
+      "community": 55,
       "best": 1
     },
     {
@@ -374,14 +374,39 @@
         "A": 3,
         "B": 2
       },
-      "lists": 87,
+      "lists": 88,
       "wins": 11,
       "top8": 74,
       "top4": 41,
-      "recent_lists": 7,
+      "recent_lists": 8,
       "recent_wins": 2,
       "recent_top8": 3,
       "community": 40,
+      "best": 1
+    },
+    {
+      "id": "OP16-079",
+      "name": "Yamato",
+      "href": "/decklists/yamato.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-079_EN.webp",
+      "color": "color-black",
+      "color_label": "Black",
+      "tier": "B",
+      "score": 9.72,
+      "sources": 6,
+      "votes": {
+        "C": 3,
+        "B": 1,
+        "A": 2
+      },
+      "lists": 103,
+      "wins": 8,
+      "top8": 51,
+      "top4": 25,
+      "recent_lists": 22,
+      "recent_wins": 1,
+      "recent_top8": 3,
+      "community": 12,
       "best": 1
     },
     {
@@ -406,7 +431,7 @@
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 45,
+      "community": 46,
       "best": 1
     },
     {
@@ -430,7 +455,7 @@
       "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 3,
+      "community": 4,
       "best": 4
     },
     {
@@ -459,31 +484,6 @@
       "best": 1
     },
     {
-      "id": "OP16-079",
-      "name": "Yamato",
-      "href": "/decklists/yamato.html",
-      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-079_EN.webp",
-      "color": "color-black",
-      "color_label": "Black",
-      "tier": "B",
-      "score": 7.85,
-      "sources": 6,
-      "votes": {
-        "C": 3,
-        "B": 2,
-        "A": 1
-      },
-      "lists": 99,
-      "wins": 8,
-      "top8": 51,
-      "top4": 25,
-      "recent_lists": 18,
-      "recent_wins": 1,
-      "recent_top8": 3,
-      "community": 12,
-      "best": 1
-    },
-    {
       "id": "OP17-001",
       "name": "Edward Newgate",
       "href": "/decklists/op17/edward-newgate.html",
@@ -498,11 +498,11 @@
         "D": 1,
         "B": 2
       },
-      "lists": 17,
+      "lists": 19,
       "wins": 0,
       "top8": 4,
       "top4": 1,
-      "recent_lists": 17,
+      "recent_lists": 19,
       "recent_wins": 0,
       "recent_top8": 4,
       "community": 9,
@@ -530,7 +530,7 @@
       "recent_lists": 6,
       "recent_wins": 0,
       "recent_top8": 3,
-      "community": 27,
+      "community": 28,
       "best": 1
     },
     {
@@ -546,11 +546,11 @@
       "votes": {
         "B": 2
       },
-      "lists": 14,
+      "lists": 15,
       "wins": 0,
       "top8": 6,
       "top4": 3,
-      "recent_lists": 12,
+      "recent_lists": 13,
       "recent_wins": 0,
       "recent_top8": 6,
       "community": 0,
@@ -594,14 +594,14 @@
         "C": 2,
         "B": 1
       },
-      "lists": 7,
+      "lists": 13,
       "wins": 0,
       "top8": 1,
       "top4": 0,
-      "recent_lists": 7,
+      "recent_lists": 13,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 12,
+      "community": 14,
       "best": 7
     },
     {
@@ -678,6 +678,30 @@
       "best": 1
     },
     {
+      "id": "OP13-079",
+      "name": "Imu",
+      "href": "/decklists/imu.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-079_EN.webp",
+      "color": "color-black",
+      "color_label": "Black",
+      "tier": "D",
+      "score": 1.73,
+      "sources": 2,
+      "votes": {
+        "D": 1,
+        "C": 1
+      },
+      "lists": 177,
+      "wins": 24,
+      "top8": 166,
+      "top4": 98,
+      "recent_lists": 2,
+      "recent_wins": 0,
+      "recent_top8": 1,
+      "community": 18,
+      "best": 1
+    },
+    {
       "id": "OP11-001",
       "name": "Koby",
       "href": "/decklists/koby.html",
@@ -691,11 +715,11 @@
         "D": 1,
         "C": 1
       },
-      "lists": 85,
+      "lists": 86,
       "wins": 5,
       "top8": 31,
       "top4": 11,
-      "recent_lists": 4,
+      "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 4,
@@ -714,14 +738,14 @@
       "votes": {
         "C": 1
       },
-      "lists": 10,
+      "lists": 12,
       "wins": 0,
       "top8": 2,
       "top4": 0,
-      "recent_lists": 7,
+      "recent_lists": 9,
       "recent_wins": 0,
       "recent_top8": 2,
-      "community": 2,
+      "community": 3,
       "best": 7
     },
     {
@@ -737,11 +761,11 @@
       "votes": {
         "C": 1
       },
-      "lists": 5,
+      "lists": 7,
       "wins": 0,
       "top8": 3,
       "top4": 1,
-      "recent_lists": 4,
+      "recent_lists": 6,
       "recent_wins": 0,
       "recent_top8": 3,
       "community": 2,
@@ -783,11 +807,11 @@
       "votes": {
         "C": 1
       },
-      "lists": 2,
+      "lists": 3,
       "wins": 0,
       "top8": 1,
       "top4": 1,
-      "recent_lists": 2,
+      "recent_lists": 3,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 10,
@@ -815,29 +839,6 @@
       "recent_top8": 0,
       "community": 10,
       "best": null
-    },
-    {
-      "id": "OP13-079",
-      "name": "Imu",
-      "href": "/decklists/imu.html",
-      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-079_EN.webp",
-      "color": "color-black",
-      "color_label": "Black",
-      "tier": "D",
-      "score": 0.98,
-      "sources": 2,
-      "votes": {
-        "D": 2
-      },
-      "lists": 176,
-      "wins": 24,
-      "top8": 165,
-      "top4": 98,
-      "recent_lists": 1,
-      "recent_wins": 0,
-      "recent_top8": 0,
-      "community": 18,
-      "best": 1
     }
   ],
   "sources": [
@@ -1285,14 +1286,14 @@
         "OP11-041": "C",
         "OP14-020": "S",
         "OP16-001": "A",
-        "OP15-058": "A",
+        "OP15-058": "S",
         "OP11-062": "C",
-        "OP13-079": "D",
+        "OP13-079": "C",
         "OP16-022": "C",
         "OP16-080": "A",
         "OP12-061": "C",
         "OP15-002": "D",
-        "OP16-079": "B",
+        "OP16-079": "A",
         "OP11-001": "C",
         "OP14-060": "D",
         "OP11-040": "A",
