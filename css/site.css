@@ -141,9 +141,10 @@ main.single{grid-template-columns:1fr}
   transition:transform .55s ease
 }
 .home-splash-bg{
-  display:block;width:25%;height:clamp(200px,42vw,500px);
+  display:block;width:25%;height:clamp(220px,46vw,560px);
   object-fit:cover;object-position:center 42%;flex:0 0 25%
 }
+.home-splash-six{object-position:center 28%}
 .home-splash-fade{
   position:absolute;inset:auto 0 0 0;height:88px;pointer-events:none;z-index:1;
   background:linear-gradient(180deg,transparent,rgba(12,6,6,.35))
@@ -647,7 +648,8 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
   .home-big-discord{
     grid-column:1/-1;min-height:72px;flex-direction:row;align-items:center;gap:12px
   }
-  .home-splash-bg{height:clamp(210px,58vw,320px);object-position:center 40%}
+  .home-splash-bg{height:clamp(230px,62vw,360px);object-position:center 40%}
+  .home-splash-six{object-position:center 24%}
   .home-splash-card{width:min(118px,34vw);left:12px;bottom:46px}
   .home-splash-card-label{font-size:11px;padding:5px 8px}
   .home-splash-nav{padding:0 6px}
