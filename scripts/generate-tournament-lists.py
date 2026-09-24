@@ -625,6 +625,18 @@ LEADERS = [
         "pool_note": "English names and art from Limitless",
     },
     {
+        "id": "OP12-020",
+        "key": "zoro",
+        "page": "decklists/zoro.html",
+        "dir": "decklists/zoro",
+        "name": "Roronoa Zoro",
+        "color": "color-green",
+        "crumb": ("/decklists/op17.html", "OP17 decklists"),
+        "nav_op17": False,
+        "pool_heading": "Card pictures",
+        "pool_note": "English names and art from Limitless",
+    },
+    {
         "id": "ST30-001",
         "key": "luffy-ace",
         "page": "decklists/luffy-ace.html",
@@ -1214,7 +1226,7 @@ def page_chrome(
 {canon}  <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro17" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro19" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -1675,6 +1687,11 @@ HUB_INTRO = {
     "OP13-100": (
         "Yellow OP13 Jewelry Bonney is the 5-life Trigger Bonney - not red/yellow EB04 Bonney. "
         "Once per turn when you play a Trigger character, give 2 rested DON!! to your leader or a character."
+    ),
+    "OP12-020": (
+        "Green OP12 Roronoa Zoro. Straw Hat Crew. "
+        "A 3-cost or higher Slash character can attack the turn it is played. "
+        "Not red OP01 Zoro and not a Mihawk leader."
     ),
 }
 

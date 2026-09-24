@@ -244,10 +244,10 @@ def featured_html(rows: list[dict]) -> str:
     return f"""        <section class="card home-panel home-featured" id="featured">
           <p class="home-leaders-kicker">Top cuts</p>
           <div class="section-title">
-            <h3>Amazing lists</h3>
+            <h3>Featured results</h3>
             <a href="/recent.html">All recent →</a>
           </div>
-          <p class="muted home-recent-lede">First through fourth from the newest hosted results. One list per leader when we can.</p>
+          <p class="muted home-recent-lede">First through fourth from the newest hosted events. One list per leader when we can.</p>
           <div class="featured-grid">
 {chr(10).join(cards)}
           </div>
@@ -445,6 +445,7 @@ def _short_pie_name(name: str) -> str:
         "Nico Robin": "Robin",
         "Boa Hancock": "Boa",
         "Dracule Mihawk": "Mihawk",
+        "Roronoa Zoro": "Zoro",
         "Charlotte Katakuri": "Katakuri",
         "Trafalgar Law": "Law",
         "Jewelry Bonney": "Bonney",

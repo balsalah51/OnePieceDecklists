@@ -16,7 +16,7 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "home-pro8"
+CSS_VER = "home-pro19"
 JS_VER = "home-splash"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
@@ -126,6 +126,7 @@ RELATED_LEADERS: dict[str, list[str]] = {
     "EB02-010": ["OP17-020", "OP13-001", "OP17-079"],
     "OP14-040": ["OP17-039", "OP16-041", "OP12-041"],
     "OP12-041": ["OP14-040", "OP11-040", "OP17-079"],
+    "OP12-020": ["OP14-020", "OP13-004", "OP17-079"],
     "ST30-001": ["OP16-001", "OP13-002", "OP17-001"],
 }
 
@@ -180,6 +181,7 @@ LEADER_GUIDE: dict[str, str] = {
     "eb02-luffy": "monkey-d-luffy",
     "jinbe": "jinbe",
     "sanji": "sanji",
+    "zoro": "roronoa-zoro",
 }
 
 SHOP_PAGES = [

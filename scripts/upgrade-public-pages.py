@@ -26,7 +26,7 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro17"
+CSS_NEW = "/css/site.css?v=home-pro19"
 JS_NEW = "/js/site.js?v=home-smooth"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
@@ -419,15 +419,15 @@ def render_home_body(data: dict | None = None) -> str:
         <section class="home-splash" id="home-splash" aria-label="One Piece Decklists banners" style="--splash-i:0">
           <div class="home-splash-viewport">
             <div class="home-splash-track">
-              <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Rocks D. Xebec, Nico Robin, and Mihawk" width="1920" height="960" fetchpriority="high" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Monkey D. Luffy" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Sabo, Elbaph Luffy, and Roronoa Zoro" width="1920" height="960" fetchpriority="high" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Roronoa Zoro" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
-          <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
-            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin leader card" width="300" height="419" />
-            <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
+          <a class="home-splash-card" data-splash-card href="/decklists/sabo.html" aria-label="Sabo lists">
+            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="Sabo leader card" width="300" height="419" />
+            <span class="home-splash-card-label" data-splash-card-label>Sabo lists</span>
           </a>
           <div class="home-splash-nav">
             <button type="button" data-splash-prev aria-label="Previous banner">‹</button>
@@ -444,9 +444,9 @@ def render_home_body(data: dict | None = None) -> str:
           var root=document.getElementById("home-splash");
           if(!root) return;
           var faces=[
-            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp"}},
-            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp"}},
-            {{name:"Mihawk",href:"/decklists/mihawk.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp"}}
+            {{name:"Sabo",href:"/decklists/sabo.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp"}},
+            {{name:"Elbaph Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp"}},
+            {{name:"Roronoa Zoro",href:"/decklists/zoro.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-020_EN.webp"}}
           ];
           var i=Math.floor(Math.random()*3);
           var f=faces[Math.floor(Math.random()*3)];
