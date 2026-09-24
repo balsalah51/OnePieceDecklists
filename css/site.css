@@ -136,13 +136,13 @@ main.single{grid-template-columns:1fr}
 }
 .home-splash-viewport{overflow:hidden;width:100%}
 .home-splash-track{
-  display:flex;width:300%;
-  transform:translateX(calc(var(--splash-i,0) * -33.3333%));
+  display:flex;width:400%;
+  transform:translateX(calc(var(--splash-i,0) * -25%));
   transition:transform .55s ease
 }
 .home-splash-bg{
-  display:block;width:33.3333%;height:clamp(200px,42vw,500px);
-  object-fit:cover;object-position:center 42%;flex:0 0 33.3333%
+  display:block;width:25%;height:clamp(200px,42vw,500px);
+  object-fit:cover;object-position:center 42%;flex:0 0 25%
 }
 .home-splash-fade{
   position:absolute;inset:auto 0 0 0;height:88px;pointer-events:none;z-index:1;
