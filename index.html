@@ -110,7 +110,7 @@
             {name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp"}
           ];
           var i=Math.floor(Math.random()*6);
-          var f=faces[Math.floor(Math.random()*faces.length)];
+          var f=faces[i%faces.length];
           root.style.setProperty("--splash-i", String(i));
           root.setAttribute("data-splash-i", String(i));
           var a=root.querySelector("[data-splash-card]");
@@ -1031,6 +1031,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <script src="/js/site.js?v=home-smooth"></script>
+  <script src="/js/site.js?v=home-cards5"></script>
 </body>
 </html>

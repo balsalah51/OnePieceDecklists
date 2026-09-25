@@ -27,7 +27,7 @@ hspec.loader.exec_module(home_meta)
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
 CSS_NEW = "/css/site.css?v=home-pro21"
-JS_NEW = "/js/site.js?v=home-smooth"
+JS_NEW = "/js/site.js?v=home-cards5"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -457,7 +457,7 @@ def render_home_body(data: dict | None = None) -> str:
             {{name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp"}}
           ];
           var i=Math.floor(Math.random()*6);
-          var f=faces[Math.floor(Math.random()*faces.length)];
+          var f=faces[i%faces.length];
           root.style.setProperty("--splash-i", String(i));
           root.setAttribute("data-splash-i", String(i));
           var a=root.querySelector("[data-splash-card]");
