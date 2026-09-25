@@ -136,15 +136,16 @@ main.single{grid-template-columns:1fr}
 }
 .home-splash-viewport{overflow:hidden;width:100%}
 .home-splash-track{
-  display:flex;width:400%;
-  transform:translateX(calc(var(--splash-i,0) * -25%));
+  display:flex;width:600%;
+  transform:translateX(calc(var(--splash-i,0) * -16.6667%));
   transition:transform .55s ease
 }
 .home-splash-bg{
-  display:block;width:25%;height:clamp(220px,46vw,560px);
-  object-fit:cover;object-position:center 42%;flex:0 0 25%
+  display:block;width:16.6667%;height:clamp(220px,46vw,560px);
+  object-fit:cover;object-position:center 42%;flex:0 0 16.6667%
 }
 .home-splash-six{object-position:center 28%}
+.home-splash-rocks{object-position:center 32%}
 .home-splash-fade{
   position:absolute;inset:auto 0 0 0;height:88px;pointer-events:none;z-index:1;
   background:linear-gradient(180deg,transparent,rgba(12,6,6,.35))
