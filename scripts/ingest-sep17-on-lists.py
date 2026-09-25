@@ -278,7 +278,7 @@ def bump_asset_versions() -> None:
         if any(part in path.parts for part in skip):
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        next_text = css_old.sub('href="/css/site.css?v=home-pro18"', text)
+        next_text = css_old.sub('href="/css/site.css?v=home-pro21"', text)
         next_text = js_old.sub('src="/js/site.js?v=home-smooth"', next_text)
         if next_text != text:
             path.write_text(next_text)

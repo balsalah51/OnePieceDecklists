@@ -5,12 +5,11 @@ from __future__ import annotations
 
 import importlib.util
 
-spec = importlib.util.spec_from_file_location("ingest200", "/workspace/scripts/ingest-200-lists.py")
+spec = importlib.util.spec_from_file_location("ingest_sep17", "/workspace/scripts/ingest-sep17-on-lists.py")
 ingest = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(ingest)
 
-ingest.SINCE = "2026-09-20"
-ingest.TARGET = 120
+ingest.SINCE = "2026-09-17"
 
 
 if __name__ == "__main__":
