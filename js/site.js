@@ -267,6 +267,29 @@
     var index = parseInt(root.getAttribute("data-splash-i") || "0", 10);
     if (isNaN(index)) index = 0;
     var timer = null;
+    var faces = [
+      {name:"Nico Robin",href:"/decklists/nico-robin.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp"},
+      {name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp"},
+      {name:"Sabo",href:"/decklists/sabo.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp"},
+      {name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp"},
+      {name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp"}
+    ];
+
+    function setCard(i) {
+      var f = faces[((i % faces.length) + faces.length) % faces.length];
+      var a = root.querySelector("[data-splash-card]");
+      var img = a && a.querySelector("img");
+      var lab = root.querySelector("[data-splash-card-label]");
+      if (a) {
+        a.href = f.href;
+        a.setAttribute("aria-label", f.name + " lists");
+      }
+      if (img) {
+        img.src = f.img;
+        img.alt = f.name + " leader card";
+      }
+      if (lab) lab.textContent = f.name + " lists";
+    }
 
     function setIndex(next) {
       index = ((next % count) + count) % count;
@@ -275,6 +298,7 @@
       root.querySelectorAll("[data-splash-dot]").forEach(function (dot, k) {
         dot.setAttribute("aria-current", k === index ? "true" : "false");
       });
+      setCard(index);
     }
 
     function play() {
@@ -301,6 +325,7 @@
     root.addEventListener("mouseleave", play);
     root.addEventListener("focusin", stop);
     root.addEventListener("focusout", play);
+    setCard(index);
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     play();
   }

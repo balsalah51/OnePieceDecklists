@@ -1226,7 +1226,7 @@ def page_chrome(
 {canon}  <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro20" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro21" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -1318,7 +1318,7 @@ def page_chrome(
       }});
     }})();
   </script>
-  <script src="/js/site.js?v=home-smooth"></script>
+  <script src="/js/site.js?v=home-cards5"></script>
 {tcg_scripts}</body>
 </html>
 """
