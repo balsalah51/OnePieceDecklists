@@ -17,6 +17,7 @@ from pathlib import Path
 ROOT = Path("/workspace")
 SITE = "https://onepiecedecklists.com"
 SINCE = (date.today() - timedelta(days=5)).isoformat()
+LIMITLESS_SINCE = "2026-08-20"
 UNTIL = date.today().isoformat()
 
 
@@ -104,7 +105,7 @@ def main() -> None:
 
     found: list[dict] = []
     seen: set[str] = set()
-    print("=== window", SINCE, "to", UNTIL, "===", flush=True)
+    print("=== window community", SINCE, "limitless", LIMITLESS_SINCE, "to", UNTIL, "===", flush=True)
 
     ingest200.collect_optcg(gen, commsrc, optcggg, found, seen)
     ingest200.collect_opdeck(gen, commsrc, opdeck, found, seen)
@@ -117,15 +118,27 @@ def main() -> None:
     if found:
         commsrc.write_lists(found)
 
-    print("=== Limitless since", SINCE, "===", flush=True)
+    print("=== OnePieceDB ===", flush=True)
+    opdb = load("opdb", "/workspace/scripts/add-onepiecedb-lists.py")
+    for item in opdb.collect_lists(gen, commsrc):
+        day = (item.get("date") or "")[:10]
+        if day and day < LIMITLESS_SINCE:
+            print("skip old opdb", item.get("slug"), day, flush=True)
+            continue
+        commsrc.record(found, item, seen)
+    if found:
+        commsrc.write_lists(found)
+        print("community after opdb", len(found), flush=True)
+
+    print("=== Limitless since", LIMITLESS_SINCE, "===", flush=True)
     index = more.load_index()
     before = {lid: len(index.get(lid) or []) for lid in {L["id"] for L in gen.LEADERS}}
     index = more.fetch_more(
         index,
-        pages=8,
-        extra_limit=220,
-        per_event=40,
-        since=SINCE,
+        pages=24,
+        extra_limit=400,
+        per_event=80,
+        since=LIMITLESS_SINCE,
         until=UNTIL,
     )
     more.save_index(index)
