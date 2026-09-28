@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19",
+  "updated": "2026-09-28",
   "recent_from": "2026-08-20",
   "source_count": 25,
   "leaders": [
@@ -43,14 +43,14 @@
         "C": 1,
         "B": 1
       },
-      "lists": 487,
+      "lists": 488,
       "wins": 33,
-      "top8": 229,
+      "top8": 230,
       "top4": 134,
-      "recent_lists": 260,
+      "recent_lists": 261,
       "recent_wins": 10,
-      "recent_top8": 56,
-      "community": 181,
+      "recent_top8": 57,
+      "community": 184,
       "best": 1
     },
     {
@@ -76,7 +76,7 @@
       "recent_lists": 128,
       "recent_wins": 2,
       "recent_top8": 22,
-      "community": 35,
+      "community": 36,
       "best": 1
     },
     {
@@ -95,13 +95,13 @@
         "C": 1,
         "S": 1
       },
-      "lists": 107,
+      "lists": 108,
       "wins": 1,
-      "top8": 16,
-      "top4": 8,
-      "recent_lists": 91,
+      "top8": 17,
+      "top4": 9,
+      "recent_lists": 92,
       "recent_wins": 1,
-      "recent_top8": 15,
+      "recent_top8": 16,
       "community": 34,
       "best": 1
     },
@@ -120,14 +120,14 @@
         "C": 3,
         "B": 1
       },
-      "lists": 144,
+      "lists": 146,
       "wins": 4,
-      "top8": 33,
+      "top8": 34,
       "top4": 12,
-      "recent_lists": 47,
+      "recent_lists": 49,
       "recent_wins": 1,
-      "recent_top8": 8,
-      "community": 37,
+      "recent_top8": 9,
+      "community": 38,
       "best": 1
     },
     {
@@ -152,7 +152,7 @@
       "recent_lists": 43,
       "recent_wins": 0,
       "recent_top8": 10,
-      "community": 89,
+      "community": 91,
       "best": 1
     },
     {
@@ -171,14 +171,14 @@
         "A": 5,
         "S": 1
       },
-      "lists": 135,
+      "lists": 136,
       "wins": 0,
-      "top8": 18,
+      "top8": 19,
       "top4": 3,
-      "recent_lists": 85,
+      "recent_lists": 86,
       "recent_wins": 0,
-      "recent_top8": 17,
-      "community": 27,
+      "recent_top8": 18,
+      "community": 29,
       "best": 2
     },
     {
@@ -223,14 +223,14 @@
         "A": 1,
         "S": 2
       },
-      "lists": 141,
+      "lists": 143,
       "wins": 5,
-      "top8": 34,
+      "top8": 35,
       "top4": 19,
-      "recent_lists": 135,
+      "recent_lists": 137,
       "recent_wins": 5,
-      "recent_top8": 34,
-      "community": 55,
+      "recent_top8": 35,
+      "community": 58,
       "best": 1
     },
     {
@@ -273,13 +273,13 @@
         "B": 4,
         "A": 1
       },
-      "lists": 21,
+      "lists": 22,
       "wins": 0,
-      "top8": 4,
-      "top4": 3,
-      "recent_lists": 19,
+      "top8": 5,
+      "top4": 4,
+      "recent_lists": 20,
       "recent_wins": 0,
-      "recent_top8": 4,
+      "recent_top8": 5,
       "community": 26,
       "best": 2
     },
@@ -330,7 +330,7 @@
       "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 3,
-      "community": 8,
+      "community": 9,
       "best": 3
     },
     {
@@ -349,13 +349,13 @@
         "A": 1,
         "S": 3
       },
-      "lists": 87,
+      "lists": 88,
       "wins": 9,
-      "top8": 77,
-      "top4": 41,
-      "recent_lists": 5,
+      "top8": 78,
+      "top4": 42,
+      "recent_lists": 6,
       "recent_wins": 0,
-      "recent_top8": 1,
+      "recent_top8": 2,
       "community": 53,
       "best": 1
     },
@@ -473,14 +473,14 @@
         "B": 2,
         "A": 1
       },
-      "lists": 99,
+      "lists": 100,
       "wins": 8,
       "top8": 51,
       "top4": 25,
-      "recent_lists": 18,
+      "recent_lists": 19,
       "recent_wins": 1,
       "recent_top8": 3,
-      "community": 12,
+      "community": 13,
       "best": 1
     },
     {

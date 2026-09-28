@@ -4,22 +4,12 @@
     {
       "id": "OP14-020",
       "name": "Mihawk",
-      "count": 31
+      "count": 30
     },
     {
       "id": "OP09-062",
       "name": "Nico Robin",
-      "count": 28
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 19
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 17
+      "count": 26
     },
     {
       "id": "OP17-039",
@@ -27,51 +17,55 @@
       "count": 17
     },
     {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 16
+    },
+    {
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "count": 16
+    },
+    {
       "id": "OP17-079",
       "name": "Monkey D. Luffy",
       "count": 14
     },
     {
-      "id": "OP15-058",
-      "name": "Enel",
+      "id": "OP17-058",
+      "name": "Kaido",
       "count": 11
     },
     {
-      "id": "OP17-058",
-      "name": "Kaido",
+      "id": "OP15-058",
+      "name": "Enel",
       "count": 8
+    },
+    {
+      "id": "OP16-001",
+      "name": "Portgas D. Ace",
+      "count": 7
     },
     {
       "id": "OP11-040",
       "name": "UP Luffy",
       "count": 7
-    },
-    {
-      "id": "OP13-100",
-      "name": "Yellow Bonney",
-      "count": 7
     }
   ],
   "set": "OP17",
-  "pie_lists": 348,
+  "pie_lists": 347,
   "pie": [
     {
       "id": "OP14-020",
       "name": "Mihawk",
-      "count": 61,
-      "pct": 17.5
+      "count": 60,
+      "pct": 17.3
     },
     {
       "id": "OP09-062",
       "name": "Nico Robin",
-      "count": 51,
-      "pct": 14.7
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 35,
-      "pct": 10.1
+      "count": 55,
+      "pct": 15.9
     },
     {
       "id": "ST30-001",
@@ -82,6 +76,12 @@
     {
       "id": "OP13-004",
       "name": "Sabo",
+      "count": 31,
+      "pct": 8.9
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
       "count": 30,
       "pct": 8.6
     },
@@ -94,12 +94,12 @@
     {
       "id": "OP17-058",
       "name": "Kaido",
-      "count": 22,
-      "pct": 6.3
+      "count": 21,
+      "pct": 6.1
     },
     {
-      "id": "OP17-001",
-      "name": "Edward Newgate",
+      "id": "OP14-041",
+      "name": "Boa Hancock",
       "count": 10,
       "pct": 2.9
     },
@@ -110,16 +110,16 @@
       "pct": 2.9
     },
     {
-      "id": "OP14-041",
-      "name": "Boa Hancock",
+      "id": "OP16-001",
+      "name": "Portgas D. Ace",
       "count": 9,
       "pct": 2.6
     },
     {
       "id": "",
       "name": "Other",
-      "count": 57,
-      "pct": 16.4
+      "count": 58,
+      "pct": 16.7
     }
   ],
   "hole": {

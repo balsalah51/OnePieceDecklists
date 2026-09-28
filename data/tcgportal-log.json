@@ -1,3 +1,184 @@
 {
-  "hosted": []
+  "hosted": [
+    {
+      "leader": "OP14-020",
+      "kind": "web",
+      "player": "フルコンプ 福岡天神店",
+      "title": "緑ミホーク フラッグシップバトル winner - フルコンプ 福岡天神店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuilp1ap0001lb049v323cuk",
+      "slug": "tcgportal-2026-09-26-323cuk",
+      "raw": "1xOP14-020 4xOP17-022 4xOP13-031 4xST32-002 4xOP17-031 4xOP12-023 3xOP06-033 4xOP12-034 4xOP07-022 4xST32-001 2xOP08-036 4xOP06-038 4xOP14-038 2xOP01-055 3xOP14-039",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP09-062",
+      "kind": "web",
+      "player": "プレイズ 大阪日本橋本店",
+      "title": "紫黄ロビン フラッグシップバトル winner - プレイズ 大阪日本橋本店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuilh1gk001jjs0494p732fx",
+      "slug": "tcgportal-2026-09-26-p732fx",
+      "raw": "1xOP09-062 4xOP09-078 4xEB04-058 4xOP16-119 3xST34-003 4xOP17-074 4xOP17-102 4xOP17-107 2xOP17-106 4xOP17-109 4xOP17-112 4xOP17-113 4xOP17-114 4xOP05-073 1xOP16-117",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP17-058",
+      "kind": "web",
+      "player": "TSUTAYA いまじん白揚大垣店",
+      "title": "紫カイドウ（OP17） チャンピオンシップ26-27​ Season 2 店舗予選 winner - TSUTAYA いまじん白揚大垣店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuileg420003k404pzfg1dca",
+      "slug": "tcgportal-2026-09-26-tsutaya-fg1dca",
+      "raw": "1xOP17-058 2xOP17-065 2xOP17-061 2xOP08-069 3xST34-004 1xOP17-063 4xOP17-062 4xOP17-074 4xOP17-073 3xOP17-075 4xOP15-078 4xEB04-031 2xOP13-076 4xEB04-032 4xOP07-077 4xOP07-076 1xOP07-075 1xOP17-076 1xOP09-077",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP14-020",
+      "kind": "web",
+      "player": "カードショップMana 北見店",
+      "title": "緑ミホーク フラッグシップバトル winner - カードショップMana 北見店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuilanjl001pgm0aqw4r2b7j",
+      "slug": "tcgportal-2026-09-26-mana-4r2b7j",
+      "raw": "1xOP14-020 4xOP07-022 4xOP12-034 4xST32-001 3xOP06-033 4xOP17-031 4xST32-002 4xOP12-023 4xOP13-031 4xOP06-038 3xOP14-038 4xOP01-055 2xOP14-027 3xOP17-022 1xST24-004 2xOP14-039",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP09-062",
+      "kind": "web",
+      "player": "トイコンプ 高槻店",
+      "title": "紫黄ロビン エクストラグランドバトル winner - トイコンプ 高槻店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuil8ivh001ngm0ati0r4lc7",
+      "slug": "tcgportal-2026-09-26-0r4lc7",
+      "raw": "1xOP09-062 4xOP17-113 3xST34-003 4xOP09-078 4xOP17-074 4xOP17-107 4xOP17-109 4xOP17-111 4xOP17-102 3xOP17-106 4xEB04-058 4xOP17-114 4xOP16-119 4xOP17-112",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP13-004",
+      "kind": "web",
+      "player": "トレカチャンピオンMEGAドン・キホーテ豊橋店",
+      "title": "赤黒サボ（OP13） フラッグシップバトル winner - トレカチャンピオンMEGAドン・キホーテ豊橋店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuil2yi4001ngm0a89xf540r",
+      "slug": "tcgportal-2026-09-26-mega-xf540r",
+      "raw": "1xOP13-004 2xOP17-098 2xOP14-096 3xST14-017 1xOP04-016 4xOP01-016 2xOP17-086 3xOP17-084 3xOP17-093 2xEB04-007 2xOP17-119 4xOP15-088 3xOP17-089 4xOP17-095 2xOP17-083 4xOP17-082 1xOP17-081 4xOP17-080 2xOP17-087 2xST01-011",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP16-079",
+      "kind": "web",
+      "player": "ドラグーン周南",
+      "title": "黒ヤマト チャンピオンシップ26-27​ Season 2 店舗予選 winner - ドラグーン周南",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuikywzo001ljn0488jr3snz",
+      "slug": "tcgportal-2026-09-26-jr3snz",
+      "raw": "1xOP16-079 4xOP16-092 4xOP16-091 4xOP16-087 3xOP17-081 1xOP16-095 2xOP16-081 4xOP16-082 4xOP16-084 4xOP16-098 2xOP15-092 4xOP16-097 3xOP16-096 3xOP16-085 4xOP16-099 4xOP14-096",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP17-058",
+      "kind": "web",
+      "player": "＋upside（アップサイド）",
+      "title": "紫カイドウ（OP17） チャンピオンシップ26-27​ Season 2 店舗予選 winner - ＋upside（アップサイド）",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuikvego001ngm0a5fyzj2xq",
+      "slug": "tcgportal-2026-09-26-upside-yzj2xq",
+      "raw": "1xOP17-058 4xOP17-062 1xOP17-063 3xST34-004 3xOP17-061 2xOP17-065 1xEB04-030 4xEB04-031 4xOP08-074 4xOP17-073 4xOP17-074 4xEB04-032 2xOP09-077 4xOP07-077 1xEB04-040 4xOP15-078 1xOP13-076 4xOP07-076",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP15-058",
+      "kind": "web",
+      "player": "プレイズ イオンタウン刈谷店",
+      "title": "紫エネル チャンピオンシップ26-27​ Season 2 店舗予選 winner - プレイズ イオンタウン刈谷店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuiklvrg001pgm0aeeqi834h",
+      "slug": "tcgportal-2026-09-26-qi834h",
+      "raw": "1xOP15-058 3xOP15-066 3xOP15-067 4xOP15-061 3xOP12-063 2xST10-010 2xOP10-067 4xOP15-118 1xOP13-076 4xOP12-071 4xOP15-075 4xOP15-074 4xOP15-077 4xOP15-076 4xOP15-078 2xOP05-077 2xOP09-077",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP16-001",
+      "kind": "web",
+      "player": "カードキングダム溝の口店",
+      "title": "赤エース（OP16） スタンダードバトル winner - カードキングダム溝の口店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuikeggb001jgm0ap00j9ydx",
+      "slug": "tcgportal-2026-09-26-0j9ydx",
+      "raw": "1xOP16-001 4xOP17-005 4xOP16-003 4xOP16-004 2xOP17-006 4xOP16-014 3xOP16-011 2xST23-001 3xOP16-118 4xOP16-015 4xOP16-017 4xOP13-016 2xOP16-010 4xOP17-017 2xOP17-019 4xOP16-021",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP16-060",
+      "kind": "web",
+      "player": "アメニティードリーム京都店",
+      "title": "紫センゴク スタンダードバトル winner - アメニティードリーム京都店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuik819x001ngm0ab1efyzg7",
+      "slug": "tcgportal-2026-09-26-efyzg7",
+      "raw": "1xOP16-060 4xOP16-064 4xOP16-067 2xOP16-071 4xOP16-075 4xOP16-066 2xOP16-062 4xOP16-065 4xOP16-073 3xOP16-063 3xOP17-059 4xOP15-077 4xOP16-076 4xOP16-077 4xOP16-078",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP14-020",
+      "kind": "web",
+      "player": "あっぷる今福店",
+      "title": "緑ミホーク チャンピオンシップ26-27​ Season 2 店舗予選 winner - あっぷる今福店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuik3eq5001lgm0aewvf1arw",
+      "slug": "tcgportal-2026-09-26-vf1arw",
+      "raw": "1xOP14-020 2xOP14-023 3xOP07-022 4xOP12-034 4xST32-001 3xOP06-033 4xST32-002 4xOP12-023 4xOP17-031 4xOP13-031 2xOP14-027 2xST24-004 3xOP17-022 1xOP13-040 1xOP12-037 3xOP01-055 4xOP06-038 2xOP14-039",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP15-058",
+      "kind": "web",
+      "player": "ドラマ下北沢トレカ専門店",
+      "title": "紫エネル フラッグシップバトル winner - ドラマ下北沢トレカ専門店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuijzicf002pla04xseyug6n",
+      "slug": "tcgportal-2026-09-26-eyug6n",
+      "raw": "1xOP15-058 4xOP15-067 4xOP15-061 4xOP12-071 2xOP15-066 3xOP12-063 3xST10-010 1xOP10-067 4xOP15-118 2xOP05-077 1xOP13-076 4xOP15-078 4xOP15-076 4xOP15-074 2xOP09-077 4xOP15-077 4xOP15-075",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP09-062",
+      "kind": "web",
+      "player": "スミレヤ",
+      "title": "紫黄ロビン エクストラグランドバトル winner - スミレヤ",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuijh2ff0006l5044ccklpip",
+      "slug": "tcgportal-2026-09-26-cklpip",
+      "raw": "1xOP09-062 4xOP17-113 2xST34-003 4xOP17-074 4xOP17-107 4xOP17-109 4xOP05-073 4xOP17-102 3xOP17-106 3xEB04-058 4xOP17-114 2xOP17-110 4xOP16-119 1xOP11-067 4xOP17-112 3xOP09-078",
+      "cards": 50,
+      "date": "2026-09-26"
+    },
+    {
+      "leader": "OP17-020",
+      "kind": "web",
+      "player": "カードゲームショップ オレタン岡山本店",
+      "title": "緑シャンクス チャンピオンシップ26-27​ Season 2 店舗予選 winner - カードゲームショップ オレタン岡山本店",
+      "subtitle": "Public TCG PORTAL list · 2026-09-26",
+      "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuijel05002ngm0aortbex7k",
+      "slug": "tcgportal-2026-09-26-tbex7k",
+      "raw": "1xOP17-020 4xOP12-034 4xOP17-032 4xOP17-021 4xOP06-033 3xOP15-023 3xST32-002 4xOP17-031 4xOP12-023 3xOP13-031 4xOP17-033 4xOP17-027 4xOP17-022 2xST16-004 3xOP17-036",
+      "cards": 50,
+      "date": "2026-09-26"
+    }
+  ]
 }
