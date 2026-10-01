@@ -503,6 +503,16 @@ def render_home_body(data: dict | None = None) -> str:
             <span class="home-big-title">Tier List</span>
             <span class="home-big-note">OP17 S through D with leader pictures</span>
           </a>
+          <a class="home-big home-big-egb" href="/extra-grand-battle.html">
+            <span class="home-big-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8"/>
+                <path d="M12 8v8M8 12h8"/>
+              </svg>
+            </span>
+            <span class="home-big-title">Extra Grand Battle</span>
+            <span class="home-big-note">EXTRA cups with their own pie, tier, and recent lists</span>
+          </a>
           <a class="home-big home-big-recent" href="#recent">
             <span class="home-big-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
@@ -625,6 +635,7 @@ def patch_home() -> None:
         )
     text = text.replace('href="/#decklists"', 'href="/#recent"')
     featured_nav = (
+        '        <a href="/extra-grand-battle.html">Extra Grand Battle</a>\n'
         '        <a href="#featured">Top cuts</a>\n'
         '        <a href="#recent">Recent lists</a>\n'
         '        <a href="#leaders">Leaders</a>'

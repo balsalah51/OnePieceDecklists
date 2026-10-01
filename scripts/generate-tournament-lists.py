@@ -865,6 +865,7 @@ def fetch_standings(tournaments: list[dict], target_ids: set[str]) -> dict[str, 
                     {
                         "tournament_id": tid,
                         "tournament_name": tourney.get("name") or "Limitless event",
+                        "format": tourney.get("format") or "",
                         "date": (tourney.get("date") or "")[:10],
                         "players": tourney.get("players") or 0,
                         "player": row.get("name") or "Unknown",
@@ -1246,6 +1247,7 @@ def page_chrome(
       </div>
       <nav aria-label="Primary">
         <a href="/tier-list.html">Tier List</a>
+        <a href="/extra-grand-battle.html">Extra Grand Battle</a>
         <a href="/#recent">Recent lists</a>
         <a href="/decklists/op17.html"{op17_cur}>Leaders</a>
         <a href="/format.html">Format</a>
@@ -1264,7 +1266,7 @@ def page_chrome(
     </main>
     <footer>
       © <span id="year"></span> One Piece Decklists - Built with community in mind.
-      <a href="/tier-list.html">Tier List</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
+      <a href="/tier-list.html">Tier List</a> · <a href="/extra-grand-battle.html">Extra Grand Battle</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
     </footer>
   </div>
   <script>

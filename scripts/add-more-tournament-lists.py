@@ -207,6 +207,7 @@ def index_row(entry: dict) -> dict:
         "date": entry.get("date"),
         "kind": entry.get("kind"),
         "source_url": entry.get("source_url"),
+        "format": entry.get("format") or "",
     }
 
 
