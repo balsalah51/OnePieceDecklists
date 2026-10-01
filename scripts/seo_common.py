@@ -499,6 +499,7 @@ def parse_crumbs(text: str) -> list[tuple[str, str]]:
 
 FOOTER_LINKS = (
     '      <a href="/tier-list.html">Tier List</a> · '
+    '<a href="/extra-grand-battle.html">Extra Grand Battle</a> · '
     '<a href="/guides/">Guides</a> · '
     '<a href="/decklists/op17.html">Leaders</a> · '
     '<a href="/format.html">Format</a> · '
@@ -534,6 +535,7 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
     leaders = "#leaders" if home else "/decklists/op17.html"
     items = [
         ("/tier-list.html", "Tier List", "tier"),
+        ("/extra-grand-battle.html", "Extra Grand Battle", "egb"),
         (recent, "Recent lists", "recent"),
         (leaders, "Leaders", "leaders"),
         ("/format.html", "Format", "format"),

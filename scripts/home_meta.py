@@ -131,8 +131,8 @@ def ranked_leaders(rows: list[dict], window: int = POPULAR_WINDOW, limit: int = 
     return ordered[:limit]
 
 
-def load_tier_lookup() -> dict[str, dict]:
-    path = ROOT / "data/tier-list.json"
+def load_tier_lookup(path: Path | None = None) -> dict[str, dict]:
+    path = path or (ROOT / "data/tier-list.json")
     if not path.exists():
         return {}
     data = json.loads(path.read_text())
@@ -216,7 +216,15 @@ def featured_rows(rows: list[dict], limit: int = FEATURED_LIMIT) -> list[dict]:
     return picked
 
 
-def featured_html(rows: list[dict]) -> str:
+def featured_html(
+    rows: list[dict],
+    *,
+    recent_href: str = "/recent.html",
+    recent_label: str = "All recent →",
+    kicker: str = "Top cuts",
+    heading: str = "Featured results",
+    lede: str = "First through fourth from the newest hosted events. One list per leader when we can.",
+) -> str:
     if not rows:
         return ""
     cards = []
@@ -242,12 +250,12 @@ def featured_html(rows: list[dict]) -> str:
             </a>"""
         )
     return f"""        <section class="card home-panel home-featured" id="featured">
-          <p class="home-leaders-kicker">Top cuts</p>
+          <p class="home-leaders-kicker">{html.escape(kicker)}</p>
           <div class="section-title">
-            <h3>Featured results</h3>
-            <a href="/recent.html">All recent →</a>
+            <h3>{html.escape(heading)}</h3>
+            <a href="{html.escape(recent_href)}">{html.escape(recent_label)}</a>
           </div>
-          <p class="muted home-recent-lede">First through fourth from the newest hosted events. One list per leader when we can.</p>
+          <p class="muted home-recent-lede">{html.escape(lede)}</p>
           <div class="featured-grid">
 {chr(10).join(cards)}
           </div>
@@ -265,7 +273,11 @@ def _placing(row: dict) -> int | None:
         return None
 
 
-def pie_slices(rows: list[dict], latest_set: str | None = None) -> dict:
+def pie_slices(
+    rows: list[dict],
+    latest_set: str | None = None,
+    tier_path: Path | None = None,
+) -> dict:
     sample = newest_rows(rows, PIE_SCAN_LIMIT)
     cards_by_href: dict[str, list[str]] = {}
     best = 17
@@ -312,7 +324,7 @@ def pie_slices(rows: list[dict], latest_set: str | None = None) -> dict:
     keep = ranked[:PIE_MAX_SLICES]
     rest = ranked[PIE_MAX_SLICES:]
     rest_n = sum(n for _lid, n in rest)
-    tiers = load_tier_lookup()
+    tiers = load_tier_lookup(tier_path)
     slices = []
     cursor = 0.0
     used_fills: set[str] = set()
@@ -496,11 +508,29 @@ def _tier_label(slice_row: dict) -> str:
     return "Unranked"
 
 
-def pie_html(pie: dict) -> str:
+def pie_html(
+    pie: dict,
+    *,
+    kicker: str = "Format share",
+    heading: str | None = None,
+    more_href: str = "/tier-list.html",
+    more_label: str = "Tier list →",
+    lede: str | None = None,
+    other_href: str | None = None,
+) -> str:
     slices = pie.get("slices") or []
     if not slices:
         return ""
     latest = pie.get("set") or "OP17"
+    heading = heading or f"{latest} lists"
+    lede = lede or (
+        f"Share of the newest hosted lists that play at least one {latest} card. "
+        "The hole is the leader converting best among these lists. Names sit on every slice."
+    )
+    if other_href:
+        for row in slices:
+            if row.get("name") == "Other":
+                row["href"] = other_href
     stops = []
     gap = 0.28
     for i, row in enumerate(slices):
@@ -555,12 +585,12 @@ def pie_html(pie: dict) -> str:
             </li>"""
         )
     return f"""        <section class="card home-panel home-meta-pie" id="meta-share">
-          <p class="home-leaders-kicker">Format share</p>
+          <p class="home-leaders-kicker">{html.escape(kicker)}</p>
           <div class="section-title">
-            <h3>{html.escape(latest)} lists</h3>
-            <a href="/tier-list.html">Tier list →</a>
+            <h3>{html.escape(heading)}</h3>
+            <a href="{html.escape(more_href)}">{html.escape(more_label)}</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one {html.escape(latest)} card. The hole is the leader converting best among these lists. Names sit on every slice.</p>
+          <p class="muted home-recent-lede">{html.escape(lede)}</p>
           <div class="meta-pie-board">
             <div class="meta-pie-disk" style="background:conic-gradient({gradient})">
               {hole_html}
