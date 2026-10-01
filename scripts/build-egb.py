@@ -87,9 +87,9 @@ def egb_tiers(stats: dict[str, dict]) -> list[dict]:
             + s["top8"] * 1.4
             + min(s["lists"], 80) * 0.12
         )
-        if score >= 22:
+        if score >= 14:
             letter = "S"
-        elif score >= 10:
+        elif score >= 8:
             letter = "A"
         elif score >= 4:
             letter = "B"
