@@ -1,124 +1,124 @@
 {
   "updated": "2026-10-01",
-  "lists": 196,
+  "lists": 299,
   "leaders": [
     {
-      "id": "OP14-020",
-      "name": "Mihawk",
-      "count": 23
-    },
-    {
       "id": "ST30-001",
       "name": "Luffy & Ace",
-      "count": 21
-    },
-    {
-      "id": "OP11-040",
-      "name": "UP Luffy",
-      "count": 20
-    },
-    {
-      "id": "OP15-058",
-      "name": "Enel",
-      "count": 14
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 14
-    },
-    {
-      "id": "OP17-001",
-      "name": "Edward Newgate",
-      "count": 12
-    },
-    {
-      "id": "OP09-062",
-      "name": "Nico Robin",
-      "count": 12
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 11
-    },
-    {
-      "id": "OP16-022",
-      "name": "GB Luffy",
-      "count": 9
-    },
-    {
-      "id": "OP17-058",
-      "name": "Kaido",
-      "count": 6
-    }
-  ],
-  "pie": [
-    {
-      "id": "OP14-020",
-      "name": "Mihawk",
-      "count": 23,
-      "pct": 16.3
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 18,
-      "pct": 12.8
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 14,
-      "pct": 9.9
-    },
-    {
-      "id": "OP17-001",
-      "name": "Edward Newgate",
-      "count": 12,
-      "pct": 8.5
-    },
-    {
-      "id": "OP09-062",
-      "name": "Nico Robin",
-      "count": 12,
-      "pct": 8.5
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 11,
-      "pct": 7.8
-    },
-    {
-      "id": "OP11-040",
-      "name": "UP Luffy",
-      "count": 9,
-      "pct": 6.4
-    },
-    {
-      "id": "OP17-058",
-      "name": "Kaido",
-      "count": 6,
-      "pct": 4.3
+      "count": 27
     },
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 6,
-      "pct": 4.3
+      "count": 25
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "count": 15
+    },
+    {
+      "id": "OP14-020",
+      "name": "Mihawk",
+      "count": 14
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 13
+    },
+    {
+      "id": "OP16-022",
+      "name": "GB Luffy",
+      "count": 11
+    },
+    {
+      "id": "OP17-001",
+      "name": "Edward Newgate",
+      "count": 11
+    },
+    {
+      "id": "OP15-058",
+      "name": "Enel",
+      "count": 10
+    },
+    {
+      "id": "OP09-062",
+      "name": "Nico Robin",
+      "count": 10
+    },
+    {
+      "id": "OP08-058",
+      "name": "Charlotte Pudding",
+      "count": 9
+    }
+  ],
+  "pie": [
+    {
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "count": 29,
+      "pct": 12.8
+    },
+    {
+      "id": "OP17-039",
+      "name": "Rocks D. Xebec",
+      "count": 28,
+      "pct": 12.3
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "count": 23,
+      "pct": 10.1
+    },
+    {
+      "id": "OP14-020",
+      "name": "Mihawk",
+      "count": 23,
+      "pct": 10.1
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 18,
+      "pct": 7.9
+    },
+    {
+      "id": "OP09-062",
+      "name": "Nico Robin",
+      "count": 17,
+      "pct": 7.5
+    },
+    {
+      "id": "OP17-001",
+      "name": "Edward Newgate",
+      "count": 14,
+      "pct": 6.2
+    },
+    {
+      "id": "OP08-058",
+      "name": "Charlotte Pudding",
+      "count": 11,
+      "pct": 4.8
+    },
+    {
+      "id": "OP17-058",
+      "name": "Kaido",
+      "count": 10,
+      "pct": 4.4
     },
     {
       "id": "OP17-099",
       "name": "Charlotte Linlin",
-      "count": 5,
-      "pct": 3.5
+      "count": 9,
+      "pct": 4.0
     },
     {
       "id": "",
       "name": "Other",
-      "count": 25,
-      "pct": 17.7
+      "count": 45,
+      "pct": 19.8
     }
   ]
 }
