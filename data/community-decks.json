@@ -7362,6 +7362,15 @@
       "source_url": "https://onepiecedb.io/deck/in-the-navy-2509",
       "kind": "web",
       "date": "2026-09-12"
+    },
+    {
+      "slug": "opdeck-sengoku-op17-west-kks-sep30-chasescardss",
+      "href": "/decklists/sengoku/opdeck-sengoku-op17-west-kks-sep30-chasescardss.html",
+      "title": "Sengoku (Format OP17) Shop Event Winner",
+      "subtitle": "KKs · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sengoku-op17-west-kks-sep30-chasescardss/",
+      "kind": "web",
+      "date": "2026-09-30"
     }
   ],
   "OP14-041": [
@@ -9680,6 +9689,15 @@
       "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmueyppz6001jjt04bd0v5rpz",
       "kind": "web",
       "date": "2026-09-20"
+    },
+    {
+      "slug": "opdeck-sabo-op17-west-central-coast-collectibles-sep30-anthonyrealin",
+      "href": "/decklists/sabo/opdeck-sabo-op17-west-central-coast-collectibles-sep30-anthonyrealin.html",
+      "title": "Sabo (Format OP17) Extra Grand Battle Winner",
+      "subtitle": "Central Coast Collectibles · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/sabo-op17-west-central-coast-collectibles-sep30-anthonyrealin/",
+      "kind": "web",
+      "date": "2026-09-30"
     }
   ],
   "OP16-022": [
@@ -10361,6 +10379,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/yamato-op17-east-cardbox-sep11-3zu/",
       "kind": "web",
       "date": "2026-09-11"
+    },
+    {
+      "slug": "opdeck-yamato-op17-east-cardshop-oct01-xx16-16xx",
+      "href": "/decklists/yamato/opdeck-yamato-op17-east-cardshop-oct01-xx16-16xx.html",
+      "title": "Yamato (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/yamato-op17-east-cardshop-oct01-xx16-16xx/",
+      "kind": "web",
+      "date": "2026-10-01"
     }
   ],
   "OP16-080": [
@@ -10801,6 +10828,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-lgs-sep17-galoot/",
       "kind": "web",
       "date": "2026-09-17"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-lgs45-sep30-galoot",
+      "href": "/decklists/op05-luffy/opdeck-luffy-op17-west-lgs45-sep30-galoot.html",
+      "title": "Monkey.D.Luffy (Format OP17) Standard Battle",
+      "subtitle": "LGS(45) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-lgs45-sep30-galoot/",
+      "kind": "web",
+      "date": "2026-09-30"
     }
   ],
   "OP12-061": [
@@ -12019,6 +12055,26 @@
       "source_url": "https://onepiecedb.io/deck/bonney-1984",
       "kind": "web",
       "date": "2026-09-12"
+    }
+  ],
+  "OP05-098": [
+    {
+      "slug": "opdeck-enel-op17-east-bandaicrossstore-sep30-peperon",
+      "href": "/decklists/op05-enel/opdeck-enel-op17-east-bandaicrossstore-sep30-peperon.html",
+      "title": "Enel (Format OP17) Standard Battle Winner",
+      "subtitle": "BandaiCrossStore · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/enel-op17-east-bandaicrossstore-sep30-peperon/",
+      "kind": "web",
+      "date": "2026-09-30"
+    },
+    {
+      "slug": "opdeck-enel-op17-east-cardshop-sep30-wappon",
+      "href": "/decklists/op05-enel/opdeck-enel-op17-east-cardshop-sep30-wappon.html",
+      "title": "Enel (Format OP17) Standard Battle Winner",
+      "subtitle": "cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/enel-op17-east-cardshop-sep30-wappon/",
+      "kind": "web",
+      "date": "2026-09-30"
     }
   ]
 }
