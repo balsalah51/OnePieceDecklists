@@ -18304,5 +18304,37 @@
     "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST17/ST17-003_EN.webp",
     "source": "https://onepiece.limitlesstcg.com/cards/ST17-003",
     "tcgplayer_id": 581018
+  },
+  "P-069": {
+    "id": "P-069",
+    "name": "Koala",
+    "category": "Character",
+    "color": "Red",
+    "life": null,
+    "cost": "1",
+    "power": "1000",
+    "counter": "+1000",
+    "attribute": "Strike",
+    "types": "Revolutionary Army",
+    "effect": "[Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/*EP5/P-069_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/P-069",
+    "tcgplayer_id": 583768
+  },
+  "EB03-061": {
+    "id": "EB03-061",
+    "name": "Uta",
+    "category": "Character",
+    "color": "Green",
+    "life": null,
+    "cost": "7",
+    "power": "8000",
+    "counter": null,
+    "attribute": "Special",
+    "types": "FILM",
+    "effect": "[Activate: Main] [Once Per Turn] Set up to 1 of your DON!! cards as active. Then, rest up to 1 of your opponent's DON!! cards or Characters with a cost of 4 or less.\n[End of Your Turn] You may rest 1 of your DON!! cards: Set up to 1 of your {FILM} type Characters as active.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB03/EB03-061_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/EB03-061",
+    "tcgplayer_id": 672815
   }
 }

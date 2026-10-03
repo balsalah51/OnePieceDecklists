@@ -601,6 +601,50 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e651e905c1db687493fe/standings",
       "format": ""
+    },
+    {
+      "slug": "3rd-xigante75-versus-cup",
+      "href": "/decklists/op17/shanks/3rd-xigante75-versus-cup.html",
+      "player": "Xigante75",
+      "tournament": "Versus Cup",
+      "placing": 3,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
+    },
+    {
+      "slug": "4th-davehunterhs-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/shanks/4th-davehunterhs-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "DavehunterHS",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 4,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "6th-lykoi763-ger-dressrosa-tournament-op17",
+      "href": "/decklists/op17/shanks/6th-lykoi763-ger-dressrosa-tournament-op17.html",
+      "player": "Lykoi763",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 6,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
+    },
+    {
+      "slug": "9th-dearcan-versus-cup",
+      "href": "/decklists/op17/shanks/9th-dearcan-versus-cup.html",
+      "player": "Dearcan",
+      "tournament": "Versus Cup",
+      "placing": 9,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
     }
   ],
   "OP17-039": [
@@ -3643,6 +3687,83 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "4th-left-d-chat-ger-dressrosa-tournament-op17",
+      "href": "/decklists/op17/rocks-d-xebec/4th-left-d-chat-ger-dressrosa-tournament-op17.html",
+      "player": "Left_D_Chat",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 4,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
+    },
+    {
+      "slug": "5th-mrupperhand-ger-dressrosa-tournament-op17-2",
+      "href": "/decklists/op17/rocks-d-xebec/5th-mrupperhand-ger-dressrosa-tournament-op17-2.html",
+      "player": "MrUpperhand",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 5,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
+    },
+    {
+      "slug": "6th-gaab126-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/rocks-d-xebec/6th-gaab126-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "gaab126",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 6,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "6th-ryurex-versus-cup",
+      "href": "/decklists/op17/rocks-d-xebec/6th-ryurex-versus-cup.html",
+      "player": "RyuRex",
+      "tournament": "Versus Cup",
+      "placing": 6,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
+    },
+    {
+      "slug": "10th-pari-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/rocks-d-xebec/10th-pari-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Pari",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 10,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "18th-ginovati-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/rocks-d-xebec/18th-ginovati-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Ginovati",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 18,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "26th-thomas07-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/rocks-d-xebec/26th-thomas07-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Thomas07",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 26,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
     }
   ],
   "OP17-058": [
@@ -5526,6 +5647,83 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "1st-laessigerlurch-ger-dressrosa-tournament-op17",
+      "href": "/decklists/op17/kaido/1st-laessigerlurch-ger-dressrosa-tournament-op17.html",
+      "player": "Laessigerlurch",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 1,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
+    },
+    {
+      "slug": "3rd-vairozzo-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/kaido/3rd-vairozzo-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Vairozzo",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 3,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "5th-julian-vallejos-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/op17/kaido/5th-julian-vallejos-one-piece-banfield-19-4th-n1.html",
+      "player": "Julian Vallejos",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 5,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
+    },
+    {
+      "slug": "16th-freeangel-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/kaido/16th-freeangel-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "FreeAngel",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 16,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "20th-shanksalsole-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/kaido/20th-shanksalsole-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "ShanksAlSole",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 20,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "22nd-iacca7-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/kaido/22nd-iacca7-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "iacca7",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 22,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "23rd-fezzi77-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/kaido/23rd-fezzi77-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Fezzi77",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 23,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
     }
   ],
   "OP17-079": [
@@ -7196,6 +7394,50 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "3rd-fabian-lallana-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/op17/monkey-d-luffy/3rd-fabian-lallana-one-piece-banfield-19-4th-n1.html",
+      "player": "Fabian Lallana",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 3,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
+    },
+    {
+      "slug": "7th-frastrawhat-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/monkey-d-luffy/7th-frastrawhat-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "frastrawhat",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 7,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "8th-itzfalco-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/monkey-d-luffy/8th-itzfalco-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "itzfalco",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 8,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "9th-corrado-b-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op17/monkey-d-luffy/9th-corrado-b-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Corrado B",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 9,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
     }
   ],
   "OP17-099": [
@@ -9648,6 +9890,17 @@
       "date": "2026-09-28",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e5b8f127b1b52c28101c/standings",
+      "format": ""
+    },
+    {
+      "slug": "21st-nu95-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/rg-luffy/21st-nu95-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Nu95",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 21,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
       "format": ""
     }
   ],
@@ -16423,6 +16676,17 @@
       "date": "2026-09-23",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6aab0f7138886b36383c1e14/standings"
+    },
+    {
+      "slug": "8th-matias-pertot-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/mihawk/8th-matias-pertot-one-piece-banfield-19-4th-n1.html",
+      "player": "Matias Pertot",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 8,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
     }
   ],
   "OP16-001": [
@@ -18008,6 +18272,39 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "7th-leonel-abraham-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/portgas-d-ace/7th-leonel-abraham-one-piece-banfield-19-4th-n1.html",
+      "player": "Leonel Abraham",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 7,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
+    },
+    {
+      "slug": "8th-smile-versus-cup",
+      "href": "/decklists/portgas-d-ace/8th-smile-versus-cup.html",
+      "player": "Smile",
+      "tournament": "Versus Cup",
+      "placing": 8,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
+    },
+    {
+      "slug": "9th-nadia-fraga-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/portgas-d-ace/9th-nadia-fraga-one-piece-banfield-19-4th-n1.html",
+      "player": "Nadia Fraga",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 9,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
     }
   ],
   "OP15-058": [
@@ -20731,6 +21028,17 @@
       "date": "2026-09-29",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e651e905c1db687493fe/standings",
+      "format": ""
+    },
+    {
+      "slug": "19th-nizzintheskyz-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/enel/19th-nizzintheskyz-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Nizzintheskyz",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 19,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
       "format": ""
     }
   ],
@@ -24373,6 +24681,17 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e651e905c1db687493fe/standings",
       "format": ""
+    },
+    {
+      "slug": "12th-just10-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/op13-ace/12th-just10-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Just10",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 12,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
     }
   ],
   "OP16-022": [
@@ -25392,6 +25711,17 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "2nd-thiago-mandias-louzan-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/gb-luffy/2nd-thiago-mandias-louzan-one-piece-banfield-19-4th-n1.html",
+      "player": "Thiago Mandias Louzan",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 2,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
     }
   ],
   "OP16-080": [
@@ -26305,6 +26635,28 @@
       "date": "2026-09-28",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6aafee9bf127b1b52c27dd8b/standings",
+      "format": ""
+    },
+    {
+      "slug": "4th-jdaigo-versus-cup",
+      "href": "/decklists/blackbeard/4th-jdaigo-versus-cup.html",
+      "player": "JDaigo",
+      "tournament": "Versus Cup",
+      "placing": 4,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
+    },
+    {
+      "slug": "0-1-kondoriano98-ger-dressrosa-tournament-op17-2",
+      "href": "/decklists/blackbeard/0-1-kondoriano98-ger-dressrosa-tournament-op17-2.html",
+      "player": "Kondoriano98",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": null,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
       "format": ""
     }
   ],
@@ -27353,6 +27705,28 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "1st-ryanellice-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/rosinante/1st-ryanellice-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "ryanellice",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 1,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "7th-gortiz-versus-cup",
+      "href": "/decklists/rosinante/7th-gortiz-versus-cup.html",
+      "player": "Gortiz",
+      "tournament": "Versus Cup",
+      "placing": 7,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
     }
   ],
   "OP15-002": [
@@ -29261,6 +29635,28 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e5b8f127b1b52c28101c/standings",
       "format": ""
+    },
+    {
+      "slug": "5th-claa-versus-cup",
+      "href": "/decklists/yamato/5th-claa-versus-cup.html",
+      "player": "CLAA",
+      "tournament": "Versus Cup",
+      "placing": 5,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
+    },
+    {
+      "slug": "10th-matias-casta-o-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/yamato/10th-matias-casta-o-one-piece-banfield-19-4th-n1.html",
+      "player": "Matias Castaño",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 10,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
     }
   ],
   "OP11-001": [
@@ -30133,6 +30529,17 @@
       "date": "2026-09-24",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab24caef127b1b52c27f6de/standings"
+    },
+    {
+      "slug": "15th-squalo8-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/koby/15th-squalo8-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Squalo8",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 15,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
     }
   ],
   "OP14-060": [
@@ -34670,6 +35077,17 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e651e905c1db687493fe/standings",
       "format": ""
+    },
+    {
+      "slug": "3rd-kush7z-ger-dressrosa-tournament-op17",
+      "href": "/decklists/sabo/3rd-kush7z-ger-dressrosa-tournament-op17.html",
+      "player": "Kush7z",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 3,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
     }
   ],
   "OP09-062": [
@@ -36672,6 +37090,61 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "2nd-0xdvs-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/nico-robin/2nd-0xdvs-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "0xDVS",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 2,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "2nd-jaaz-ger-dressrosa-tournament-op17",
+      "href": "/decklists/nico-robin/2nd-jaaz-ger-dressrosa-tournament-op17.html",
+      "player": "Jaaz",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 2,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
+    },
+    {
+      "slug": "6th-alejandro-bacio-t-motomel-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/nico-robin/6th-alejandro-bacio-t-motomel-one-piece-banfield-19-4th-n1.html",
+      "player": "Alejandro Bacio T - [Motomel]",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 6,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
+    },
+    {
+      "slug": "7th-mythara-ger-dressrosa-tournament-op17",
+      "href": "/decklists/nico-robin/7th-mythara-ger-dressrosa-tournament-op17.html",
+      "player": "Mythara",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 7,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
+    },
+    {
+      "slug": "11th-ian-torrilla-never-lucky-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/nico-robin/11th-ian-torrilla-never-lucky-one-piece-banfield-19-4th-n1.html",
+      "player": "Ian Torrilla  [Never Lucky]",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 11,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
     }
   ],
   "OP14-080": [
@@ -37226,6 +37699,50 @@
       "date": "2026-09-29",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e651e905c1db687493fe/standings",
+      "format": ""
+    },
+    {
+      "slug": "4th-pascual-pascu-one-piece-banfield-19-4th-n1",
+      "href": "/decklists/boa-hancock/4th-pascual-pascu-one-piece-banfield-19-4th-n1.html",
+      "player": "Pascual Pascu",
+      "tournament": "one piece banfield #19 (4th n1)",
+      "placing": 4,
+      "date": "2026-09-26",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab42716f127b1b52c28090a/standings",
+      "format": ""
+    },
+    {
+      "slug": "5th-kevinpaillex-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/boa-hancock/5th-kevinpaillex-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "KevinPaillex",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 5,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "8th-timooooo-ger-dressrosa-tournament-op17",
+      "href": "/decklists/boa-hancock/8th-timooooo-ger-dressrosa-tournament-op17.html",
+      "player": "Timooooo",
+      "tournament": "[GER] Dressrosa Tournament-OP17",
+      "placing": 8,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aafeed6e905c1db687462de/standings",
+      "format": ""
+    },
+    {
+      "slug": "27th-silfi-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/boa-hancock/27th-silfi-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Silfi",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 27,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
       "format": ""
     }
   ],
@@ -38648,6 +39165,39 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e72af127b1b52c28101d/standings",
       "format": "EXTRA"
+    },
+    {
+      "slug": "2nd-lajofa-versus-cup",
+      "href": "/decklists/charlotte-pudding/2nd-lajofa-versus-cup.html",
+      "player": "Lajofa",
+      "tournament": "Versus Cup",
+      "placing": 2,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
+    },
+    {
+      "slug": "13th-giano-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/charlotte-pudding/13th-giano-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Giano",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 13,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
+    },
+    {
+      "slug": "14th-ghiro-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/charlotte-pudding/14th-ghiro-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "Ghiro",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 14,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
     }
   ],
   "ST30-001": [
@@ -39840,6 +40390,28 @@
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e5b8f127b1b52c28101c/standings",
       "format": ""
+    },
+    {
+      "slug": "1st-lordrafa-versus-cup",
+      "href": "/decklists/luffy-ace/1st-lordrafa-versus-cup.html",
+      "player": "lordRafa",
+      "tournament": "Versus Cup",
+      "placing": 1,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab64d33880ed327106dc3a1/standings",
+      "format": ""
+    },
+    {
+      "slug": "17th-fettabeshottata-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/luffy-ace/17th-fettabeshottata-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "FettaBeshottata",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 17,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
+      "format": ""
     }
   ],
   "OP13-100": [
@@ -39957,6 +40529,17 @@
       "date": "2026-09-28",
       "kind": "tournament",
       "source_url": "https://play.limitlesstcg.com/tournament/6ab4e5b8f127b1b52c28101c/standings",
+      "format": ""
+    },
+    {
+      "slug": "24th-perryagentep-op17-new-banned-win-a-box-rumble-league-11",
+      "href": "/decklists/zoro/24th-perryagentep-op17-new-banned-win-a-box-rumble-league-11.html",
+      "player": "PerryAgenteP",
+      "tournament": "[OP17 NEW BANNED] Win a box | Rumble league #11",
+      "placing": 24,
+      "date": "2026-10-01",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ab613e7880ed327106dc30c/standings",
       "format": ""
     }
   ]
