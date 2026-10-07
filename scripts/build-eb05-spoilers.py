@@ -128,7 +128,7 @@ def render() -> str:
   <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=eb05-spoilers1" />
+  <link rel="stylesheet" href="/css/site.css?v=eb05-spoilers2" />
   <link rel="canonical" href="https://onepiecedecklists.com/eb05-spoilers.html" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

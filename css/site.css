@@ -1175,10 +1175,11 @@ html[data-theme="dark"],html[data-theme="dark"] body{
   margin:8px 0 0;color:#fff;font-weight:800;text-align:center
 }
 .spoiler-dialog-close{
-  position:absolute;top:8px;right:8px;border:0;border-radius:999px;
+  align-self:flex-end;margin:0 0 8px;border:0;border-radius:999px;
   background:rgba(0,0,0,.6);color:#fff;font:inherit;font-weight:800;padding:6px 10px;cursor:pointer
 }
-.spoiler-dialog form{position:relative;margin:0}
+.spoiler-dialog form{position:relative;margin:0;display:flex;flex-direction:column}
+.spoiler-dialog p{align-self:stretch}
 @media (max-width:980px){
   .spoiler-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
