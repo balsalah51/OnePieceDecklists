@@ -18336,5 +18336,37 @@
     "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB03/EB03-061_EN.webp",
     "source": "https://onepiece.limitlesstcg.com/cards/EB03-061",
     "tcgplayer_id": 672815
+  },
+  "OP01-096": {
+    "id": "OP01-096",
+    "name": "King",
+    "category": "Character",
+    "color": "Purple",
+    "life": null,
+    "cost": "7",
+    "power": "7000",
+    "counter": null,
+    "attribute": "Special",
+    "types": "Animal Kingdom Pirates",
+    "effect": "[On Play] DON!! −2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): K.O. up to 1 of your opponent's Characters with a cost of 3 or less and up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP01/OP01-096_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP01-096",
+    "tcgplayer_id": 454629
+  },
+  "OP14-017": {
+    "id": "OP14-017",
+    "name": "Chambres",
+    "category": "Event",
+    "color": "Red",
+    "life": null,
+    "cost": "3",
+    "power": null,
+    "counter": null,
+    "attribute": null,
+    "types": "The Seven Warlords of the Sea/Supernovas/Heart Pirates",
+    "effect": "[Main] Select 2 of your opponent's Characters with 9000 base power or less. Swap the base power of the selected Characters with each other during this turn.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-017_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP14-017",
+    "tcgplayer_id": 671361
   }
 }
