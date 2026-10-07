@@ -95,6 +95,15 @@
       "source_url": "https://www.optcg.gg/deck-lists/2f18ed95-768c-44e0-96a8-b689cae88f6a",
       "kind": "web",
       "date": "2026-09-02"
+    },
+    {
+      "slug": "opdeck-newgate-op17-east-bandai-oct04-zato",
+      "href": "/decklists/op17/edward-newgate/opdeck-newgate-op17-east-bandai-oct04-zato.html",
+      "title": "Edward.Newgate (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/newgate-op17-east-bandai-oct04-zato/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP17-020": [
@@ -202,6 +211,15 @@
       "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuijel05002ngm0aortbex7k",
       "kind": "web",
       "date": "2026-09-26"
+    },
+    {
+      "slug": "opdeck-shanks-op17-east-cardshops-oct04-moisesdavi1150",
+      "href": "/decklists/op17/shanks/opdeck-shanks-op17-east-cardshops-oct04-moisesdavi1150.html",
+      "title": "Shanks (Format OP17) Extra Grand Battle",
+      "subtitle": "cardshops · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/shanks-op17-east-cardshops-oct04-moisesdavi1150/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP17-039": [
@@ -766,6 +784,42 @@
       "source_url": "https://www.optcg.gg/deck-lists/be5b2e25-d848-47f3-85f1-fc22ebf5f58a",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-rocks-op17-east-cardshop-oct04-nishi",
+      "href": "/decklists/op17/rocks-d-xebec/opdeck-rocks-op17-east-cardshop-oct04-nishi.html",
+      "title": "Rocks.D.Xebec (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/rocks-op17-east-cardshop-oct04-nishi/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-rocks-op17-west-kingdom-collector-oct04-neoxdark",
+      "href": "/decklists/op17/rocks-d-xebec/opdeck-rocks-op17-west-kingdom-collector-oct04-neoxdark.html",
+      "title": "Rocks.D.Xebec (Format OP17) Extra Grand Battle Winner",
+      "subtitle": "Kingdom Collector · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rocks-op17-west-kingdom-collector-oct04-neoxdark/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-3rd-mirco-morscio-organized-play-events-london-regionals",
+      "href": "/decklists/op17/rocks-d-xebec/optcggg-3rd-mirco-morscio-organized-play-events-london-regionals.html",
+      "title": "Mirco Morscio - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/bbd35a0c-69bd-4963-8d85-13bc356eebc7",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-3rd-perear-organized-play-events-london-regionals",
+      "href": "/decklists/op17/rocks-d-xebec/optcggg-3rd-perear-organized-play-events-london-regionals.html",
+      "title": "pereAr - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/d066487b-1edb-4714-85c4-4f1e07513ca5",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP17-058": [
@@ -1205,6 +1259,60 @@
       "source_url": "https://www.optcg.gg/deck-lists/a645141c-8428-4920-b3b1-a2da85145d3a",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-kaido-op17-east-bandai-oct04-kyon",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-east-bandai-oct04-kyon.html",
+      "title": "Kaido (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/kaido-op17-east-bandai-oct04-kyon/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-kaido-op17-east-jaburo14-oct04-oke",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-east-jaburo14-oct04-oke.html",
+      "title": "Kaido (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "Jaburo(14) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/kaido-op17-east-jaburo14-oct04-oke/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-kaido-op17-east-bandai-oct04-mammoth",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-east-bandai-oct04-mammoth.html",
+      "title": "Kaido (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/kaido-op17-east-bandai-oct04-mammoth/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-kaido-op17-east-bandai-oct04-onepiehime",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-east-bandai-oct04-onepiehime.html",
+      "title": "Kaido (Format OP17) FlameFlame Winner",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/kaido-op17-east-bandai-oct04-onepiehime/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-kaido-op17-west-lgs-oct02-starlax",
+      "href": "/decklists/op17/kaido/opdeck-kaido-op17-west-lgs-oct02-starlax.html",
+      "title": "Kaido (Format OP17) Store Championship Winner",
+      "subtitle": "LGS · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/kaido-op17-west-lgs-oct02-starlax/",
+      "kind": "web",
+      "date": "2026-10-02"
+    },
+    {
+      "slug": "optcggg-17th-hieratict0-organized-play-events-london-regionals",
+      "href": "/decklists/op17/kaido/optcggg-17th-hieratict0-organized-play-events-london-regionals.html",
+      "title": "HieraticT0 - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/4c4c37de-2059-49e9-ab2e-907671ba6af9",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP17-079": [
@@ -1618,6 +1726,33 @@
       "source_url": "https://www.optcg.gg/deck-lists/3f0de8fe-3152-46d3-be92-8445c761b8e4",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-luffy-op17-east-bandai-oct04-kitano",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-east-bandai-oct04-kitano.html",
+      "title": "Monkey.D.Luffy (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-bandai-oct04-kitano/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-luffy-op17-east-bandai-oct04-yamage",
+      "href": "/decklists/op17/monkey-d-luffy/opdeck-luffy-op17-east-bandai-oct04-yamage.html",
+      "title": "Monkey.D.Luffy (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-bandai-oct04-yamage/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-gasha-organized-play-events-london-regionals",
+      "href": "/decklists/op17/monkey-d-luffy/optcggg-17th-gasha-organized-play-events-london-regionals.html",
+      "title": "Gasha - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/448b1f52-d09c-4c7f-b03c-bbdf95557072",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP17-099": [
@@ -1735,6 +1870,24 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/linlin-op17-west-lgs-sep26-micheal/",
       "kind": "web",
       "date": "2026-09-26"
+    },
+    {
+      "slug": "opdeck-linlin-op17-west-london-regional-oct04-merrytcg",
+      "href": "/decklists/op17/charlotte-linlin/opdeck-linlin-op17-west-london-regional-oct04-merrytcg.html",
+      "title": "Charlotte Linlin (Format OP17) Regional",
+      "subtitle": "London Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/linlin-op17-west-london-regional-oct04-merrytcg/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-merrytcg-organized-play-events-london-regionals",
+      "href": "/decklists/op17/charlotte-linlin/optcggg-9th-merrytcg-organized-play-events-london-regionals.html",
+      "title": "MerryTCG - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/5560518f-e2ae-41bf-a550-375495e08803",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP13-001": [
@@ -2338,6 +2491,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-nextturncards17-sep29-max-d-savage/",
       "kind": "web",
       "date": "2026-09-29"
+    },
+    {
+      "slug": "optcggg-17th-fancymunchlax-ryan-organized-play-events-london-regionals",
+      "href": "/decklists/rg-luffy/optcggg-17th-fancymunchlax-ryan-organized-play-events-london-regionals.html",
+      "title": "Fancymunchlax-Ryan - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/1347ff9d-ad50-41bf-96f7-0d28b85d8ee8",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP11-041": [
@@ -2787,6 +2949,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/nami-op17-east-batoloco-sep25-hagie/",
       "kind": "web",
       "date": "2026-09-25"
+    },
+    {
+      "slug": "opdeck-nami-op17-east-bandai-oct04-kitune-gaooo",
+      "href": "/decklists/nami/opdeck-nami-op17-east-bandai-oct04-kitune-gaooo.html",
+      "title": "Nami (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/nami-op17-east-bandai-oct04-kitune-gaooo/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP14-020": [
@@ -5650,6 +5821,105 @@
       "source_url": "https://www.optcg.gg/deck-lists/593df062-7b03-4cbb-a3e4-0f303dcfded9",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-mihawk-op17-east-bandai-oct04-itou",
+      "href": "/decklists/mihawk/opdeck-mihawk-op17-east-bandai-oct04-itou.html",
+      "title": "Dracule Mihawk (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/mihawk-op17-east-bandai-oct04-itou/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-1st-interistasbarazzino-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-1st-interistasbarazzino-organized-play-events-london-regionals.html",
+      "title": "INTERISTASBARAZZINO - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/d3cee34d-7cb2-43a6-9f05-6621da2feb09",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-5th-woodywood-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-5th-woodywood-organized-play-events-london-regionals.html",
+      "title": "woodywood - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/9837fcb7-9992-4390-b5bf-24436488fd16",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-awes0m0-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-9th-awes0m0-organized-play-events-london-regionals.html",
+      "title": "AWES0M0 - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/bc803ce2-618e-4993-b75d-7ff2f2499153",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-capt-karoo-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-9th-capt-karoo-organized-play-events-london-regionals.html",
+      "title": "Capt_Karoo - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/85e09c2f-9464-4bbe-9155-f69a7a0da14a",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-sleeping-genius-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-17th-sleeping-genius-organized-play-events-london-regionals.html",
+      "title": "Sleeping Genius - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/d7d3e497-da1d-4730-afd2-81867c2cc435",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-streams-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-17th-streams-organized-play-events-london-regionals.html",
+      "title": "Streams - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/2f4a1831-7eea-48ae-b52c-f0fd63fc2531",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-lance-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-17th-lance-organized-play-events-london-regionals.html",
+      "title": "Lance - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/cbb7708c-a8ca-434b-8af7-0efb57d29383",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-radical-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-17th-radical-organized-play-events-london-regionals.html",
+      "title": "Radical - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/5f4a3b95-a133-485f-9cb3-76ae65f173e2",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-tanguy-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-17th-tanguy-organized-play-events-london-regionals.html",
+      "title": "Tanguy - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/28f22d34-023f-44c3-81c0-294d308ef34b",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-tom-avg-organized-play-events-london-regionals",
+      "href": "/decklists/mihawk/optcggg-17th-tom-avg-organized-play-events-london-regionals.html",
+      "title": "Tom_Avg - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/cc345e0b-dabc-4a32-8ba4-53f2d8511179",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP16-001": [
@@ -6145,6 +6415,51 @@
       "source_url": "https://tcg-portal.jp/onepiece/tournament-results/cmuikeggb001jgm0ap00j9ydx",
       "kind": "web",
       "date": "2026-09-26"
+    },
+    {
+      "slug": "opdeck-ace-op17-east-bandai-oct04-tsuka",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-east-bandai-oct04-tsuka.html",
+      "title": "Portgas.D.Ace (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/ace-op17-east-bandai-oct04-tsuka/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-ace-op17-east-strawhat-hobby-oct04-siegetenk",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-east-strawhat-hobby-oct04-siegetenk.html",
+      "title": "Portgas.D.Ace (Format OP17) Extra Grand Battle",
+      "subtitle": "Strawhat Hobby · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/ace-op17-east-strawhat-hobby-oct04-siegetenk/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-ace-op17-east-bandai-oct04-hideyoshi",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-east-bandai-oct04-hideyoshi.html",
+      "title": "Portgas.D.Ace (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/ace-op17-east-bandai-oct04-hideyoshi/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-ace-op17-east-bandai-oct04-yuu",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-east-bandai-oct04-yuu.html",
+      "title": "Portgas.D.Ace (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/ace-op17-east-bandai-oct04-yuu/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-ace-op17-east-tcg-shop-pontianak-oct04-zetto",
+      "href": "/decklists/portgas-d-ace/opdeck-ace-op17-east-tcg-shop-pontianak-oct04-zetto.html",
+      "title": "Portgas.D.Ace (Format OP17) Flagship Battle Battle Winner",
+      "subtitle": "TCG Shop Pontianak · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/ace-op17-east-tcg-shop-pontianak-oct04-zetto/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP13-079": [
@@ -7909,6 +8224,69 @@
       "source_url": "https://www.optcg.gg/deck-lists/1ff49b98-206d-4982-b15f-658191951e3e",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-london-regional-oct04-luka",
+      "href": "/decklists/enel/opdeck-enel-op17-west-london-regional-oct04-luka.html",
+      "title": "Enel (Format OP17) Regional",
+      "subtitle": "London Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-london-regional-oct04-luka/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-frle-organized-play-events-london-regionals",
+      "href": "/decklists/enel/optcggg-9th-frle-organized-play-events-london-regionals.html",
+      "title": "Frle - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/56c82c27-e1ff-4c7f-bed1-56df1ee88eff",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-abyssausrede-organized-play-events-london-regionals",
+      "href": "/decklists/enel/optcggg-17th-abyssausrede-organized-play-events-london-regionals.html",
+      "title": "Abyssausrede - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/fb908b15-8c57-434b-917a-c3afc6d75b44",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-enel-op17-east-bandai-oct04-genius4428",
+      "href": "/decklists/enel/opdeck-enel-op17-east-bandai-oct04-genius4428.html",
+      "title": "Enel (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/enel-op17-east-bandai-oct04-genius4428/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-enel-op17-west-fortaludica-oct03-celo",
+      "href": "/decklists/enel/opdeck-enel-op17-west-fortaludica-oct03-celo.html",
+      "title": "Enel (Format OP17) Standard Battle Winner",
+      "subtitle": "Fortaludica · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-fortaludica-oct03-celo/",
+      "kind": "web",
+      "date": "2026-10-03"
+    },
+    {
+      "slug": "optcggg-2nd-xixo-organized-play-events-london-regionals",
+      "href": "/decklists/enel/optcggg-2nd-xixo-organized-play-events-london-regionals.html",
+      "title": "Xixo - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/43b36dd2-5e33-4b6b-95fa-34935152373e",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-leo-organized-play-events-london-regionals",
+      "href": "/decklists/enel/optcggg-9th-leo-organized-play-events-london-regionals.html",
+      "title": "Leo - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/5910dda0-d80d-47d1-80fb-0c3eed7233e7",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP16-060": [
@@ -8309,6 +8687,42 @@
       "source_url": "https://www.optcg.gg/deck-lists/2cee217a-9624-4610-9bd1-e29049b5f076",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-boa-op17-east-bandai-oct04-konuko",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-east-bandai-oct04-konuko.html",
+      "title": "Boa Hancock (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/boa-op17-east-bandai-oct04-konuko/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-boa-op17-west-jesters-games-oct04-ethan-silverton",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-west-jesters-games-oct04-ethan-silverton.html",
+      "title": "Boa Hancock (Format OP17) Standard Battle Winner",
+      "subtitle": "Jesters games · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/boa-op17-west-jesters-games-oct04-ethan-silverton/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-boa-op17-west-london-regional-oct04-herman",
+      "href": "/decklists/boa-hancock/opdeck-boa-op17-west-london-regional-oct04-herman.html",
+      "title": "Boa Hancock (Format OP17) Regional",
+      "subtitle": "London Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/boa-op17-west-london-regional-oct04-herman/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-mist-organized-play-events-london-regionals",
+      "href": "/decklists/boa-hancock/optcggg-9th-mist-organized-play-events-london-regionals.html",
+      "title": "Mist - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/4a3dacdd-dfa9-4385-b124-a5382a3bc3b1",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "ST13-001": [
@@ -9449,6 +9863,87 @@
       "source_url": "https://www.optcg.gg/deck-lists/1578ce02-b357-46cc-b979-655f6366bcf8",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-robin-op17-east-bandai-oct04-esuto",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-east-bandai-oct04-esuto.html",
+      "title": "Nico Robin (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/robin-op17-east-bandai-oct04-esuto/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-robin-op17-east-bandai-oct04-shohei",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-east-bandai-oct04-shohei.html",
+      "title": "Nico Robin (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/robin-op17-east-bandai-oct04-shohei/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-london-regional-oct04-diclegianluca",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-london-regional-oct04-diclegianluca.html",
+      "title": "Nico Robin (Format OP17) Regional",
+      "subtitle": "London Regional(1500) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-london-regional-oct04-diclegianluca/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-lgs128-oct03-sagemodenaldo",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-lgs128-oct03-sagemodenaldo.html",
+      "title": "Nico Robin (Format OP17) Store Championship",
+      "subtitle": "LGS(128) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-lgs128-oct03-sagemodenaldo/",
+      "kind": "web",
+      "date": "2026-10-03"
+    },
+    {
+      "slug": "opdeck-robin-op17-west-pokeoasis-oct01-ir-kong",
+      "href": "/decklists/nico-robin/opdeck-robin-op17-west-pokeoasis-oct01-ir-kong.html",
+      "title": "Nico Robin (Format OP17) Standard Battle Winner",
+      "subtitle": "PokeOasis · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/robin-op17-west-pokeoasis-oct01-ir-kong/",
+      "kind": "web",
+      "date": "2026-10-01"
+    },
+    {
+      "slug": "optcggg-5th-dicle-organized-play-events-london-regionals",
+      "href": "/decklists/nico-robin/optcggg-5th-dicle-organized-play-events-london-regionals.html",
+      "title": "Dicle - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/651ad816-f0e5-4875-b218-3b69e573f786",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-r0xtar-organized-play-events-london-regionals",
+      "href": "/decklists/nico-robin/optcggg-9th-r0xtar-organized-play-events-london-regionals.html",
+      "title": "r0xtar - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/a4f4d59c-633e-4826-8587-a84d1f137026",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-9th-aj-organized-play-events-london-regionals",
+      "href": "/decklists/nico-robin/optcggg-9th-aj-organized-play-events-london-regionals.html",
+      "title": "AJ - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/f7f9b68d-1dbb-4c28-b049-10a23bd7fbe2",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-yost-organized-play-events-london-regionals",
+      "href": "/decklists/nico-robin/optcggg-17th-yost-organized-play-events-london-regionals.html",
+      "title": "Yost - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/f1ef9e75-f6b5-4649-b47f-458892122fb8",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "ST30-001": [
@@ -9883,6 +10378,60 @@
       "source_url": "https://www.optcg.gg/deck-lists/e3747b56-42c1-4f80-940d-7b3514510ce0",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-east-bandai-oct04-lulu",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-east-bandai-oct04-lulu.html",
+      "title": "Luffy & Ace (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-ace-op17-east-bandai-oct04-lulu/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-east-bandai300-oct04-raffy",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-east-bandai300-oct04-raffy.html",
+      "title": "Luffy & Ace (Format OP17) Extra Grand Battle Winner",
+      "subtitle": "Bandai(300) · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-ace-op17-east-bandai300-oct04-raffy/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-east-bandai-oct04-poni",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-east-bandai-oct04-poni.html",
+      "title": "Monkey.D.Luffy (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-ace-op17-east-bandai-oct04-poni/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-luffy-ace-op17-west-london-regional-oct04-chris-tsako",
+      "href": "/decklists/luffy-ace/opdeck-luffy-ace-op17-west-london-regional-oct04-chris-tsako.html",
+      "title": "Monkey.D.Luffy (Format OP17) Regional",
+      "subtitle": "London Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-ace-op17-west-london-regional-oct04-chris-tsako/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-5th-cco-pie-organized-play-events-london-regionals",
+      "href": "/decklists/luffy-ace/optcggg-5th-cco-pie-organized-play-events-london-regionals.html",
+      "title": "Cco pie - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/728d9db5-e081-4750-9a57-2be7f1c6b321",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-feno-organized-play-events-london-regionals",
+      "href": "/decklists/luffy-ace/optcggg-17th-feno-organized-play-events-london-regionals.html",
+      "title": "ΜΣΦΡ Feno - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/96199210-9567-4bf2-b0c3-6badc3d51e46",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP09-061": [
@@ -10706,6 +11255,60 @@
       "source_url": "https://www.optcg.gg/deck-lists/9f2f47bd-e00b-4d55-92e4-c9ed1f83c0e2",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-sabo-op17-east-bandai-oct04-r6hhm",
+      "href": "/decklists/sabo/opdeck-sabo-op17-east-bandai-oct04-r6hhm.html",
+      "title": "Sabo (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/sabo-op17-east-bandai-oct04-r6hhm/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-sabo-op17-east-bandai-oct04-okao",
+      "href": "/decklists/sabo/opdeck-sabo-op17-east-bandai-oct04-okao.html",
+      "title": "Sabo (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/sabo-op17-east-bandai-oct04-okao/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-sabo-op17-east-bandai-oct04-koki",
+      "href": "/decklists/sabo/opdeck-sabo-op17-east-bandai-oct04-koki.html",
+      "title": "Sabo (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/sabo-op17-east-bandai-oct04-koki/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-sabo-op17-east-bandai-oct04-daichan",
+      "href": "/decklists/sabo/opdeck-sabo-op17-east-bandai-oct04-daichan.html",
+      "title": "Sabo (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/sabo-op17-east-bandai-oct04-daichan/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-5th-jonathan-frakes-organized-play-events-london-regionals",
+      "href": "/decklists/sabo/optcggg-5th-jonathan-frakes-organized-play-events-london-regionals.html",
+      "title": "Jonathan_frakes - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/294503d1-c262-4360-b1c3-2461827e3e27",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "optcggg-17th-aste-organized-play-events-london-regionals",
+      "href": "/decklists/sabo/optcggg-17th-aste-organized-play-events-london-regionals.html",
+      "title": "Aste - Organized Play Events' London Regionals",
+      "subtitle": "Public OPTCG.GG list · Organized Play Events' London Regionals · 2026-10-04",
+      "source_url": "https://www.optcg.gg/deck-lists/f3b28753-06e0-43bd-beb2-27890e12397b",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP16-022": [
@@ -11257,6 +11860,24 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-session-zero-sep26-craig/",
       "kind": "web",
       "date": "2026-09-26"
+    },
+    {
+      "slug": "opdeck-luffy-op17-west-london-regional-oct04-railz0",
+      "href": "/decklists/gb-luffy/opdeck-luffy-op17-west-london-regional-oct04-railz0.html",
+      "title": "Monkey.D.Luffy (Format OP17) Extra Grand Battle",
+      "subtitle": "London Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/luffy-op17-west-london-regional-oct04-railz0/",
+      "kind": "web",
+      "date": "2026-10-04"
+    },
+    {
+      "slug": "opdeck-luffy-op17-east-bandai-oct04-aatsu",
+      "href": "/decklists/gb-luffy/opdeck-luffy-op17-east-bandai-oct04-aatsu.html",
+      "title": "Monkey.D.Luffy (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/luffy-op17-east-bandai-oct04-aatsu/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP14-080": [
@@ -11295,6 +11916,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/moria-op17-east-cardshop-sep13-asahi/",
       "kind": "web",
       "date": "2026-09-13"
+    },
+    {
+      "slug": "opdeck-moria-op17-east-bandai-oct04-gyokurodx",
+      "href": "/decklists/gecko-moria/opdeck-moria-op17-east-bandai-oct04-gyokurodx.html",
+      "title": "Gecko Moria (Format OP17) FlameFlame",
+      "subtitle": "Bandai · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/moria-op17-east-bandai-oct04-gyokurodx/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP16-079": [
@@ -11450,6 +12080,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/yamato-op17-west-lgs-sep26-hana/",
       "kind": "web",
       "date": "2026-09-26"
+    },
+    {
+      "slug": "opdeck-yamato-op17-west-london-regional-oct04-radical",
+      "href": "/decklists/yamato/opdeck-yamato-op17-west-london-regional-oct04-radical.html",
+      "title": "Yamato (Format OP17) Regional",
+      "subtitle": "London Regional · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/yamato-op17-west-london-regional-oct04-radical/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP16-080": [
@@ -12180,6 +12819,15 @@
       "source_url": "https://onepiecedb.io/deck/purpleyellow-rosinante-by-jamie-2208",
       "kind": "web",
       "date": "2026-09-12"
+    },
+    {
+      "slug": "opdeck-rosinante-op17-west-phoenix-rise-oct04-kitsune",
+      "href": "/decklists/rosinante/opdeck-rosinante-op17-west-phoenix-rise-oct04-kitsune.html",
+      "title": "Donquixote Rosinante (Format OP17) Standard Battle Winner",
+      "subtitle": "Phoenix Rise · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/rosinante-op17-west-phoenix-rise-oct04-kitsune/",
+      "kind": "web",
+      "date": "2026-10-04"
     }
   ],
   "OP11-062": [
@@ -13155,6 +13803,15 @@
       "source_url": "https://opdeckguide.com/tournaments-decklists/op17-west/enel-op17-west-prague-regional-sep27-ttp-slodea/",
       "kind": "web",
       "date": "2026-09-27"
+    },
+    {
+      "slug": "opdeck-enel-op17-east-cardshop-oct03-dohyokuri",
+      "href": "/decklists/op05-enel/opdeck-enel-op17-east-cardshop-oct03-dohyokuri.html",
+      "title": "Enel (Format OP17) Extra Grand Battle",
+      "subtitle": "Cardshop · public list from OPDeckGuide",
+      "source_url": "https://opdeckguide.com/tournaments-decklists/op17-east/enel-op17-east-cardshop-oct03-dohyokuri/",
+      "kind": "web",
+      "date": "2026-10-03"
     }
   ]
 }
