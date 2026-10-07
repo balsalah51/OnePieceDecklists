@@ -502,6 +502,7 @@ FOOTER_LINKS = (
     '<a href="/extra-grand-battle.html">Extra Grand Battle</a> · '
     '<a href="/guides/">Guides</a> · '
     '<a href="/decklists/op17.html">Leaders</a> · '
+    '<a href="/op18-spoilers.html">OP18</a> · '
     '<a href="/format.html">Format</a> · '
     '<a href="/search.html">Search</a> · '
     '<a href="/shop/">Shop</a> · '
@@ -539,6 +540,7 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
         (recent, "Recent lists", "recent"),
         (leaders, "Leaders", "leaders"),
         ("/format.html", "Format", "format"),
+        ("/op18-spoilers.html", "OP18", "op18"),
         ("https://en.onepiece-cardgame.com/events/", "Events", "events"),
         ("/guides/", "Guides", "guides"),
         ("/shop/", "Shop", "shop"),

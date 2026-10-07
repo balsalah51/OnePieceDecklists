@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "recent_from": "2026-08-20",
   "source_count": 25,
   "leaders": [
@@ -17,14 +17,14 @@
         "S": 13,
         "A": 3
       },
-      "lists": 303,
-      "wins": 6,
-      "top8": 57,
-      "top4": 28,
-      "recent_lists": 240,
-      "recent_wins": 4,
-      "recent_top8": 49,
-      "community": 63,
+      "lists": 327,
+      "wins": 8,
+      "top8": 63,
+      "top4": 33,
+      "recent_lists": 264,
+      "recent_wins": 6,
+      "recent_top8": 55,
+      "community": 67,
       "best": 1
     },
     {
@@ -43,14 +43,14 @@
         "C": 1,
         "B": 1
       },
-      "lists": 537,
+      "lists": 538,
       "wins": 36,
       "top8": 242,
       "top4": 141,
-      "recent_lists": 310,
+      "recent_lists": 311,
       "recent_wins": 13,
       "recent_top8": 69,
-      "community": 318,
+      "community": 329,
       "best": 1
     },
     {
@@ -69,14 +69,14 @@
         "A": 2,
         "B": 1
       },
-      "lists": 220,
+      "lists": 231,
       "wins": 4,
-      "top8": 34,
-      "top4": 19,
-      "recent_lists": 199,
+      "top8": 35,
+      "top4": 20,
+      "recent_lists": 210,
       "recent_wins": 3,
-      "recent_top8": 31,
-      "community": 90,
+      "recent_top8": 32,
+      "community": 96,
       "best": 1
     },
     {
@@ -95,14 +95,14 @@
         "B": 1,
         "S": 1
       },
-      "lists": 161,
+      "lists": 163,
       "wins": 4,
-      "top8": 38,
+      "top8": 39,
       "top4": 13,
-      "recent_lists": 64,
+      "recent_lists": 66,
       "recent_wins": 1,
-      "recent_top8": 13,
-      "community": 55,
+      "recent_top8": 14,
+      "community": 60,
       "best": 1
     },
     {
@@ -120,14 +120,14 @@
         "B": 2,
         "S": 4
       },
-      "lists": 271,
+      "lists": 282,
       "wins": 17,
-      "top8": 174,
-      "top4": 82,
-      "recent_lists": 90,
+      "top8": 176,
+      "top4": 83,
+      "recent_lists": 101,
       "recent_wins": 1,
-      "recent_top8": 14,
-      "community": 131,
+      "recent_top8": 16,
+      "community": 138,
       "best": 1
     },
     {
@@ -146,14 +146,14 @@
         "C": 1,
         "S": 1
       },
-      "lists": 167,
-      "wins": 3,
-      "top8": 26,
-      "top4": 12,
-      "recent_lists": 151,
-      "recent_wins": 3,
-      "recent_top8": 25,
-      "community": 46,
+      "lists": 185,
+      "wins": 4,
+      "top8": 30,
+      "top4": 14,
+      "recent_lists": 169,
+      "recent_wins": 4,
+      "recent_top8": 29,
+      "community": 49,
       "best": 1
     },
     {
@@ -172,14 +172,14 @@
         "A": 5,
         "S": 1
       },
-      "lists": 193,
+      "lists": 205,
       "wins": 3,
-      "top8": 30,
+      "top8": 31,
       "top4": 8,
-      "recent_lists": 143,
+      "recent_lists": 155,
       "recent_wins": 3,
-      "recent_top8": 29,
-      "community": 49,
+      "recent_top8": 30,
+      "community": 55,
       "best": 1
     },
     {
@@ -205,7 +205,7 @@
       "recent_lists": 21,
       "recent_wins": 2,
       "recent_top8": 7,
-      "community": 67,
+      "community": 68,
       "best": 1
     },
     {
@@ -223,14 +223,14 @@
         "A": 4,
         "B": 3
       },
-      "lists": 36,
+      "lists": 37,
       "wins": 1,
       "top8": 3,
       "top4": 2,
-      "recent_lists": 21,
+      "recent_lists": 22,
       "recent_wins": 1,
       "recent_top8": 3,
-      "community": 13,
+      "community": 15,
       "best": 1
     },
     {
@@ -249,14 +249,14 @@
         "A": 1,
         "S": 2
       },
-      "lists": 203,
+      "lists": 210,
       "wins": 6,
-      "top8": 44,
-      "top4": 23,
-      "recent_lists": 197,
+      "top8": 48,
+      "top4": 24,
+      "recent_lists": 204,
       "recent_wins": 6,
-      "recent_top8": 44,
-      "community": 122,
+      "recent_top8": 48,
+      "community": 131,
       "best": 1
     },
     {
@@ -274,14 +274,14 @@
         "B": 3,
         "A": 2
       },
-      "lists": 31,
+      "lists": 33,
       "wins": 0,
       "top8": 7,
       "top4": 3,
-      "recent_lists": 27,
+      "recent_lists": 29,
       "recent_wins": 0,
       "recent_top8": 7,
-      "community": 12,
+      "community": 13,
       "best": 3
     },
     {
@@ -299,14 +299,14 @@
         "B": 3,
         "A": 2
       },
-      "lists": 40,
+      "lists": 49,
       "wins": 0,
-      "top8": 11,
-      "top4": 6,
-      "recent_lists": 38,
+      "top8": 13,
+      "top4": 7,
+      "recent_lists": 47,
       "recent_wins": 0,
-      "recent_top8": 11,
-      "community": 37,
+      "recent_top8": 13,
+      "community": 41,
       "best": 2
     },
     {
@@ -325,14 +325,14 @@
         "A": 2,
         "S": 3
       },
-      "lists": 102,
+      "lists": 104,
       "wins": 10,
       "top8": 80,
       "top4": 43,
-      "recent_lists": 20,
+      "recent_lists": 22,
       "recent_wins": 1,
       "recent_top8": 4,
-      "community": 61,
+      "community": 63,
       "best": 1
     },
     {
@@ -350,14 +350,14 @@
         "S": 2,
         "A": 1
       },
-      "lists": 118,
+      "lists": 133,
       "wins": 4,
-      "top8": 20,
-      "top4": 12,
-      "recent_lists": 118,
+      "top8": 23,
+      "top4": 14,
+      "recent_lists": 133,
       "recent_wins": 4,
-      "recent_top8": 20,
-      "community": 48,
+      "recent_top8": 23,
+      "community": 54,
       "best": 1
     },
     {
@@ -375,13 +375,13 @@
         "A": 3,
         "B": 2
       },
-      "lists": 93,
+      "lists": 95,
       "wins": 12,
-      "top8": 76,
-      "top4": 43,
-      "recent_lists": 13,
+      "top8": 77,
+      "top4": 44,
+      "recent_lists": 15,
       "recent_wins": 3,
-      "recent_top8": 5,
+      "recent_top8": 6,
       "community": 42,
       "best": 1
     },
@@ -400,14 +400,14 @@
         "B": 1,
         "A": 2
       },
-      "lists": 110,
-      "wins": 8,
-      "top8": 52,
-      "top4": 25,
-      "recent_lists": 29,
-      "recent_wins": 1,
-      "recent_top8": 4,
-      "community": 17,
+      "lists": 111,
+      "wins": 9,
+      "top8": 53,
+      "top4": 26,
+      "recent_lists": 30,
+      "recent_wins": 2,
+      "recent_top8": 5,
+      "community": 18,
       "best": 1
     },
     {
@@ -432,7 +432,7 @@
       "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 50,
+      "community": 51,
       "best": 1
     },
     {
@@ -450,14 +450,14 @@
         "S": 1,
         "A": 1
       },
-      "lists": 105,
+      "lists": 109,
       "wins": 17,
-      "top8": 88,
-      "top4": 62,
-      "recent_lists": 23,
+      "top8": 90,
+      "top4": 63,
+      "recent_lists": 27,
       "recent_wins": 1,
-      "recent_top8": 8,
-      "community": 31,
+      "recent_top8": 10,
+      "community": 32,
       "best": 1
     },
     {
@@ -481,7 +481,7 @@
       "recent_lists": 10,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 4,
+      "community": 5,
       "best": 4
     },
     {
@@ -510,6 +510,30 @@
       "best": 1
     },
     {
+      "id": "OP05-098",
+      "name": "OP05 Enel",
+      "href": "/decklists/op05-enel.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp",
+      "color": "color-yellow",
+      "color_label": "Yellow",
+      "tier": "C",
+      "score": 6.67,
+      "sources": 2,
+      "votes": {
+        "B": 1,
+        "A": 1
+      },
+      "lists": 28,
+      "wins": 0,
+      "top8": 10,
+      "top4": 5,
+      "recent_lists": 26,
+      "recent_wins": 0,
+      "recent_top8": 10,
+      "community": 5,
+      "best": 2
+    },
+    {
       "id": "OP17-001",
       "name": "Edward Newgate",
       "href": "/decklists/op17/edward-newgate.html",
@@ -524,14 +548,14 @@
         "D": 1,
         "B": 2
       },
-      "lists": 31,
+      "lists": 32,
       "wins": 0,
-      "top8": 5,
-      "top4": 2,
-      "recent_lists": 31,
+      "top8": 6,
+      "top4": 3,
+      "recent_lists": 32,
       "recent_wins": 0,
-      "recent_top8": 5,
-      "community": 11,
+      "recent_top8": 6,
+      "community": 12,
       "best": 3
     },
     {
@@ -548,37 +572,14 @@
         "C": 1,
         "B": 2
       },
-      "lists": 37,
+      "lists": 44,
       "wins": 0,
-      "top8": 3,
+      "top8": 4,
       "top4": 2,
-      "recent_lists": 37,
+      "recent_lists": 44,
       "recent_wins": 0,
-      "recent_top8": 3,
+      "recent_top8": 4,
       "community": 17,
-      "best": 2
-    },
-    {
-      "id": "OP05-098",
-      "name": "OP05 Enel",
-      "href": "/decklists/op05-enel.html",
-      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp",
-      "color": "color-yellow",
-      "color_label": "Yellow",
-      "tier": "C",
-      "score": 4.8,
-      "sources": 2,
-      "votes": {
-        "B": 2
-      },
-      "lists": 24,
-      "wins": 0,
-      "top8": 7,
-      "top4": 4,
-      "recent_lists": 22,
-      "recent_wins": 0,
-      "recent_top8": 7,
-      "community": 4,
       "best": 2
     },
     {
@@ -644,11 +645,11 @@
         "A": 1,
         "C": 2
       },
-      "lists": 45,
+      "lists": 49,
       "wins": 9,
       "top8": 41,
       "top4": 34,
-      "recent_lists": 4,
+      "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 17,
@@ -716,13 +717,13 @@
         "D": 1,
         "C": 1
       },
-      "lists": 180,
+      "lists": 181,
       "wins": 24,
-      "top8": 166,
-      "top4": 98,
-      "recent_lists": 5,
+      "top8": 167,
+      "top4": 99,
+      "recent_lists": 6,
       "recent_wins": 0,
-      "recent_top8": 1,
+      "recent_top8": 2,
       "community": 22,
       "best": 1
     },
@@ -740,13 +741,13 @@
         "D": 1,
         "C": 1
       },
-      "lists": 88,
+      "lists": 89,
       "wins": 5,
-      "top8": 32,
+      "top8": 33,
       "top4": 12,
-      "recent_lists": 7,
+      "recent_lists": 8,
       "recent_wins": 0,
-      "recent_top8": 1,
+      "recent_top8": 2,
       "community": 6,
       "best": 1
     },
@@ -787,15 +788,38 @@
       "votes": {
         "C": 1
       },
-      "lists": 2,
+      "lists": 3,
       "wins": 0,
       "top8": 1,
       "top4": 1,
-      "recent_lists": 2,
+      "recent_lists": 3,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 1,
       "best": 2
+    },
+    {
+      "id": "OP14-060",
+      "name": "Doffy",
+      "href": "/decklists/doffy.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-060_EN.webp",
+      "color": "color-purple",
+      "color_label": "Purple",
+      "tier": "D",
+      "score": 1.25,
+      "sources": 1,
+      "votes": {
+        "C": 1
+      },
+      "lists": 83,
+      "wins": 7,
+      "top8": 57,
+      "top4": 30,
+      "recent_lists": 3,
+      "recent_wins": 0,
+      "recent_top8": 1,
+      "community": 3,
+      "best": 1
     },
     {
       "id": "OP12-081",
@@ -833,15 +857,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 6,
+      "lists": 7,
       "wins": 0,
-      "top8": 0,
+      "top8": 1,
       "top4": 0,
-      "recent_lists": 6,
+      "recent_lists": 7,
       "recent_wins": 0,
-      "recent_top8": 0,
+      "recent_top8": 1,
       "community": 2,
-      "best": 13
+      "best": 6
     },
     {
       "id": "ST10-002",
@@ -925,11 +949,11 @@
       "votes": {
         "C": 1
       },
-      "lists": 6,
+      "lists": 8,
       "wins": 0,
       "top8": 1,
       "top4": 1,
-      "recent_lists": 6,
+      "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 11,
@@ -1391,7 +1415,7 @@
         "OP15-002": "D",
         "OP16-079": "A",
         "OP11-001": "C",
-        "OP14-060": "D",
+        "OP14-060": "C",
         "OP16-041": "D",
         "OP16-060": "D",
         "OP11-040": "A",
@@ -1402,7 +1426,7 @@
         "OP14-041": "A",
         "OP12-081": "C",
         "OP09-001": "D",
-        "OP05-098": "B",
+        "OP05-098": "A",
         "ST10-002": "C",
         "OP09-061": "D",
         "OP12-040": "C",
