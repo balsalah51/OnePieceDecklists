@@ -961,6 +961,8 @@ def search_catalog(index: dict) -> tuple[list[dict], list[dict]]:
                 "q": f"{L['name']} {L['id']} {L['key']} decklist optcg",
             }
         )
+    pages.append({"kind": "page", "title": "EB05 spoilers", "note": "Heroines Edition vol.2 revealed cards", "href": "/eb05-spoilers.html", "q": "EB05 spoilers Heroines Edition vol.2 Nico Robin Nami Shirahoshi Bonney Hancock extra booster"})
+    pages.append({"kind": "page", "title": "OP18 spoilers", "note": "The Dominance of God revealed cards", "href": "/op18-spoilers.html", "q": "OP18 spoilers The Dominance of God Gunko Franky Shamrock Water Seven Holy Knights"})
     pages.append({"kind": "page", "title": "OP17 tier list", "note": "Aggregated S-A-B-C-D with leader pictures", "href": "/tier-list.html", "q": "tier list meta op17 mihawk rocks sabo"})
     pages.append({"kind": "page", "title": "Format and banlist", "note": "Standard OPTCG rules", "href": "/format.html", "q": "format banlist rotation pudding"})
     pages.append({"kind": "page", "title": "All leader pages", "note": "Every constructed hub", "href": "/decklists/op17.html", "q": "leaders op17 decklists"})
