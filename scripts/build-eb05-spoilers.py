@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "eb05-spoilers.html"
 CARDS = json.loads((ROOT / "scripts" / "eb05-cards.json").read_text(encoding="utf-8"))
 IMG = "https://cards.oplaytcg.com/{set}/en/{id}.webp"
+REPRINT_IMG = "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set}/{id}_EN.webp"
 
 # Returning Leaders keep their original numbers. Pictures are the original
 # prints; Bandai has not posted the EB-05 illustrations to this CDN yet.
@@ -63,8 +64,10 @@ SP_CARDS = [
 ]
 
 
-def img_src(card_id: str) -> str:
+def img_src(card_id: str, reprint: bool = False) -> str:
     set_code = card_id.split("-", 1)[0]
+    if reprint:
+        return REPRINT_IMG.format(set=set_code, id=card_id)
     return IMG.format(set=set_code, id=card_id)
 
 
@@ -93,13 +96,13 @@ def stats(card: dict) -> str:
     return " · ".join(parts)
 
 
-def picture(card: dict, leader: bool = False) -> str:
+def picture(card: dict, leader: bool = False, reprint: bool = False) -> str:
     cid = card["id"]
     label = f"{card['name']} {cid}"
     if not card.get("image", True):
         return f'<div class="spoiler-missing" role="img" aria-label="{e(label)}">{e(cid)}</div>'
     img = (
-        f'<img src="{img_src(cid)}" alt="{e(label)}" '
+        f'<img src="{img_src(cid, reprint=reprint)}" alt="{e(label)}" '
         f'width="300" height="419" loading="lazy" decoding="async" referrerpolicy="no-referrer" />'
     )
     if leader:
@@ -110,12 +113,12 @@ def picture(card: dict, leader: bool = False) -> str:
     )
 
 
-def leader_tile(card: dict, href: str | None = None, extra: str = "") -> str:
+def leader_tile(card: dict, href: str | None = None, extra: str = "", reprint: bool = False) -> str:
     target = href or f"#{card['id']}"
     caption = extra or f"{e(card['name'])}<br>{e(card['id'])}"
     return (
         f'<a class="spoiler-leader {color_class(card["colors"])}" href="{e(target)}">'
-        f"{picture({**card, 'image': True}, leader=True)}"
+        f"{picture({**card, 'image': True}, leader=True, reprint=reprint)}"
         f"<span>{caption}</span></a>"
     )
 
@@ -164,6 +167,7 @@ def render() -> str:
                 row,
                 href="#returning",
                 extra=f"{e(row['name'])}<br>{e(row['id'])} reprint",
+                reprint=True,
             )
         )
     leaders = "\n          ".join(leader_tiles)
