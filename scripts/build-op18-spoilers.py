@@ -663,6 +663,7 @@ def render() -> str:
         <a href="/#recent">Recent lists</a>
         <a href="/decklists/op17.html">Leaders</a>
         <a href="/format.html">Format</a>
+        <a href="/eb05-spoilers.html">EB05</a>
         <a href="/op18-spoilers.html" aria-current="page">OP18</a>
         <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
         <a href="/guides/">Guides</a>
@@ -768,6 +769,15 @@ def render() -> str:
           </div>
           <ul class="list">
             <li>
+              <a class="item" href="/eb05-spoilers.html">
+                <div>
+                  <div style="font-weight:700">EB05 spoilers</div>
+                  <div class="muted" style="font-size:13px">Heroines Edition vol.2 revealed cards</div>
+                </div>
+                <div class="link">Open →</div>
+              </a>
+            </li>
+            <li>
               <a class="item" href="/decklists/op17.html">
                 <div>
                   <div style="font-weight:700">OP17 leaders</div>
@@ -800,7 +810,7 @@ def render() -> str:
     </main>
     <footer>
       © <span id="year"></span> One Piece Decklists - Fan site, not affiliated with Bandai.
-      <a href="/tier-list.html">Tier List</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/op18-spoilers.html">OP18</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
+      <a href="/tier-list.html">Tier List</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/eb05-spoilers.html">EB05</a> · <a href="/op18-spoilers.html">OP18</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
     </footer>
   </div>
   <dialog class="spoiler-dialog" id="spoiler-dialog" aria-label="Card image">
