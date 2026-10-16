@@ -1,124 +1,124 @@
 {
-  "updated": "2026-10-12",
-  "lists": 354,
+  "updated": "2026-10-16",
+  "lists": 410,
   "leaders": [
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 30
+      "count": 40
     },
     {
       "id": "ST30-001",
       "name": "Luffy & Ace",
-      "count": 26
+      "count": 25
     },
     {
       "id": "OP17-079",
       "name": "Monkey D. Luffy",
-      "count": 16
+      "count": 19
     },
     {
       "id": "OP13-004",
       "name": "Sabo",
-      "count": 15
-    },
-    {
-      "id": "OP15-058",
-      "name": "Enel",
-      "count": 11
+      "count": 14
     },
     {
       "id": "OP16-022",
       "name": "GB Luffy",
-      "count": 11
-    },
-    {
-      "id": "OP17-099",
-      "name": "Charlotte Linlin",
-      "count": 10
+      "count": 12
     },
     {
       "id": "OP08-058",
       "name": "Charlotte Pudding",
-      "count": 10
+      "count": 12
+    },
+    {
+      "id": "OP13-001",
+      "name": "RG Luffy",
+      "count": 9
+    },
+    {
+      "id": "OP17-099",
+      "name": "Charlotte Linlin",
+      "count": 9
     },
     {
       "id": "OP17-058",
       "name": "Kaido",
-      "count": 10
+      "count": 8
     },
     {
-      "id": "OP17-001",
-      "name": "Edward Newgate",
-      "count": 8
+      "id": "OP15-058",
+      "name": "Enel",
+      "count": 7
     }
   ],
   "pie": [
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 35,
-      "pct": 12.8
+      "count": 46,
+      "pct": 14.4
     },
     {
       "id": "ST30-001",
       "name": "Luffy & Ace",
-      "count": 34,
-      "pct": 12.5
+      "count": 43,
+      "pct": 13.5
     },
     {
       "id": "OP17-079",
       "name": "Monkey D. Luffy",
-      "count": 28,
+      "count": 33,
       "pct": 10.3
     },
     {
       "id": "OP13-004",
       "name": "Sabo",
-      "count": 24,
-      "pct": 8.8
+      "count": 25,
+      "pct": 7.8
     },
     {
       "id": "OP14-020",
       "name": "Mihawk",
       "count": 23,
-      "pct": 8.4
+      "pct": 7.2
     },
     {
       "id": "OP09-062",
       "name": "Nico Robin",
-      "count": 17,
-      "pct": 6.2
+      "count": 19,
+      "pct": 6.0
     },
     {
       "id": "OP08-058",
       "name": "Charlotte Pudding",
-      "count": 15,
-      "pct": 5.5
+      "count": 17,
+      "pct": 5.3
     },
     {
       "id": "OP17-001",
       "name": "Edward Newgate",
       "count": 15,
-      "pct": 5.5
+      "pct": 4.7
+    },
+    {
+      "id": "OP17-058",
+      "name": "Kaido",
+      "count": 14,
+      "pct": 4.4
     },
     {
       "id": "OP17-099",
       "name": "Charlotte Linlin",
       "count": 14,
-      "pct": 5.1
-    },
-    {
-      "id": "OP17-058",
-      "name": "Kaido",
-      "count": 13,
-      "pct": 4.8
+      "pct": 4.4
     },
     {
       "id": "",
       "name": "Other",
-      "count": 55,
-      "pct": 20.1
+      "count": 70,
+      "pct": 21.9
     }
   ]
 }
