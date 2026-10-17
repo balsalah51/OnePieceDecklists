@@ -43,7 +43,7 @@
         "C": 1,
         "B": 1
       },
-      "lists": 555,
+      "lists": 563,
       "wins": 36,
       "top8": 243,
       "top4": 142,
@@ -69,7 +69,7 @@
         "A": 2,
         "B": 1
       },
-      "lists": 264,
+      "lists": 272,
       "wins": 4,
       "top8": 38,
       "top4": 21,
@@ -120,7 +120,7 @@
         "B": 2,
         "S": 4
       },
-      "lists": 307,
+      "lists": 315,
       "wins": 17,
       "top8": 176,
       "top4": 83,
@@ -198,7 +198,7 @@
         "C": 3,
         "B": 3
       },
-      "lists": 233,
+      "lists": 241,
       "wins": 22,
       "top8": 128,
       "top4": 77,
@@ -249,10 +249,10 @@
         "A": 1,
         "S": 2
       },
-      "lists": 228,
-      "wins": 6,
-      "top8": 55,
-      "top4": 27,
+      "lists": 236,
+      "wins": 8,
+      "top8": 63,
+      "top4": 35,
       "recent_lists": 210,
       "recent_wins": 6,
       "recent_top8": 50,
@@ -275,10 +275,10 @@
         "A": 1,
         "S": 1
       },
-      "lists": 82,
-      "wins": 3,
-      "top8": 32,
-      "top4": 20,
+      "lists": 90,
+      "wins": 6,
+      "top8": 40,
+      "top4": 28,
       "recent_lists": 64,
       "recent_wins": 0,
       "recent_top8": 16,
@@ -326,7 +326,7 @@
         "A": 2,
         "S": 3
       },
-      "lists": 128,
+      "lists": 136,
       "wins": 10,
       "top8": 80,
       "top4": 43,
@@ -352,7 +352,7 @@
         "B": 2,
         "S": 1
       },
-      "lists": 118,
+      "lists": 126,
       "wins": 13,
       "top8": 83,
       "top4": 47,
@@ -377,10 +377,10 @@
         "S": 2,
         "A": 1
       },
-      "lists": 200,
-      "wins": 10,
-      "top8": 49,
-      "top4": 29,
+      "lists": 208,
+      "wins": 11,
+      "top8": 53,
+      "top4": 30,
       "recent_lists": 184,
       "recent_wins": 8,
       "recent_top8": 39,
@@ -402,7 +402,7 @@
         "B": 1,
         "A": 2
       },
-      "lists": 130,
+      "lists": 138,
       "wins": 9,
       "top8": 53,
       "top4": 26,
@@ -427,9 +427,9 @@
         "B": 2,
         "A": 3
       },
-      "lists": 161,
+      "lists": 169,
       "wins": 21,
-      "top8": 134,
+      "top8": 142,
       "top4": 98,
       "recent_lists": 9,
       "recent_wins": 0,
@@ -452,9 +452,9 @@
         "S": 1,
         "A": 1
       },
-      "lists": 138,
+      "lists": 146,
       "wins": 17,
-      "top8": 101,
+      "top8": 109,
       "top4": 63,
       "recent_lists": 40,
       "recent_wins": 1,
@@ -476,10 +476,10 @@
         "B": 1,
         "S": 1
       },
-      "lists": 58,
-      "wins": 2,
-      "top8": 19,
-      "top4": 9,
+      "lists": 258,
+      "wins": 40,
+      "top8": 219,
+      "top4": 173,
       "recent_lists": 41,
       "recent_wins": 1,
       "recent_top8": 15,
@@ -500,15 +500,15 @@
         "A": 2,
         "C": 1
       },
-      "lists": 24,
-      "wins": 0,
-      "top8": 2,
-      "top4": 1,
+      "lists": 32,
+      "wins": 4,
+      "top8": 10,
+      "top4": 9,
       "recent_lists": 15,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 6,
-      "best": 4
+      "best": 1
     },
     {
       "id": "OP11-062",
@@ -576,10 +576,10 @@
         "B": 1,
         "A": 1
       },
-      "lists": 64,
+      "lists": 72,
       "wins": 1,
-      "top8": 6,
-      "top4": 4,
+      "top8": 14,
+      "top4": 12,
       "recent_lists": 62,
       "recent_wins": 1,
       "recent_top8": 6,
@@ -600,10 +600,10 @@
         "B": 1,
         "A": 1
       },
-      "lists": 84,
-      "wins": 2,
-      "top8": 22,
-      "top4": 9,
+      "lists": 92,
+      "wins": 4,
+      "top8": 30,
+      "top4": 17,
       "recent_lists": 26,
       "recent_wins": 1,
       "recent_top8": 4,
@@ -624,10 +624,10 @@
         "C": 2,
         "A": 1
       },
-      "lists": 23,
-      "wins": 2,
-      "top8": 19,
-      "top4": 5,
+      "lists": 31,
+      "wins": 3,
+      "top8": 26,
+      "top4": 7,
       "recent_lists": 6,
       "recent_wins": 0,
       "recent_top8": 3,
@@ -649,14 +649,37 @@
         "A": 1,
         "C": 2
       },
-      "lists": 68,
+      "lists": 76,
       "wins": 9,
-      "top8": 50,
+      "top8": 58,
       "top4": 35,
       "recent_lists": 11,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 17,
+      "best": 1
+    },
+    {
+      "id": "OP14-079",
+      "name": "Crocodile",
+      "href": "/decklists/crocodile.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-079_EN.webp",
+      "color": "color-black",
+      "color_label": "Black",
+      "tier": "D",
+      "score": 2.5,
+      "sources": 1,
+      "votes": {
+        "B": 1
+      },
+      "lists": 8,
+      "wins": 6,
+      "top8": 7,
+      "top4": 7,
+      "recent_lists": 3,
+      "recent_wins": 1,
+      "recent_top8": 2,
+      "community": 1,
       "best": 1
     },
     {
@@ -673,9 +696,9 @@
         "D": 2,
         "A": 1
       },
-      "lists": 98,
+      "lists": 106,
       "wins": 11,
-      "top8": 82,
+      "top8": 86,
       "top4": 45,
       "recent_lists": 2,
       "recent_wins": 0,
@@ -697,10 +720,10 @@
         "D": 1,
         "C": 1
       },
-      "lists": 20,
-      "wins": 1,
-      "top8": 16,
-      "top4": 9,
+      "lists": 28,
+      "wins": 8,
+      "top8": 24,
+      "top4": 17,
       "recent_lists": 3,
       "recent_wins": 0,
       "recent_top8": 0,
@@ -721,9 +744,9 @@
         "D": 1,
         "C": 1
       },
-      "lists": 194,
+      "lists": 202,
       "wins": 24,
-      "top8": 169,
+      "top8": 177,
       "top4": 100,
       "recent_lists": 7,
       "recent_wins": 0,
@@ -745,7 +768,7 @@
         "D": 1,
         "C": 1
       },
-      "lists": 94,
+      "lists": 102,
       "wins": 5,
       "top8": 33,
       "top4": 12,
@@ -792,15 +815,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 7,
-      "wins": 0,
-      "top8": 1,
-      "top4": 1,
+      "lists": 15,
+      "wins": 8,
+      "top8": 9,
+      "top4": 9,
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 1,
-      "best": 2
+      "best": 1
     },
     {
       "id": "OP14-060",
@@ -815,7 +838,7 @@
       "votes": {
         "C": 1
       },
-      "lists": 84,
+      "lists": 92,
       "wins": 7,
       "top8": 57,
       "top4": 30,
@@ -838,15 +861,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 21,
-      "wins": 0,
-      "top8": 2,
-      "top4": 1,
+      "lists": 29,
+      "wins": 8,
+      "top8": 10,
+      "top4": 9,
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
-      "best": 2
+      "best": 1
     },
     {
       "id": "OP12-081",
@@ -861,10 +884,10 @@
       "votes": {
         "C": 1
       },
-      "lists": 27,
+      "lists": 35,
       "wins": 2,
-      "top8": 7,
-      "top4": 3,
+      "top8": 15,
+      "top4": 6,
       "recent_lists": 13,
       "recent_wins": 0,
       "recent_top8": 2,
@@ -884,15 +907,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 19,
-      "wins": 0,
-      "top8": 5,
-      "top4": 0,
+      "lists": 27,
+      "wins": 8,
+      "top8": 13,
+      "top4": 8,
       "recent_lists": 9,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 2,
-      "best": 6
+      "best": 1
     },
     {
       "id": "ST10-002",
@@ -907,15 +930,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 13,
-      "wins": 0,
-      "top8": 5,
-      "top4": 1,
+      "lists": 21,
+      "wins": 8,
+      "top8": 13,
+      "top4": 9,
       "recent_lists": 7,
       "recent_wins": 0,
       "recent_top8": 3,
       "community": 2,
-      "best": 4
+      "best": 1
     },
     {
       "id": "OP12-041",
@@ -930,15 +953,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 15,
-      "wins": 0,
-      "top8": 3,
-      "top4": 3,
+      "lists": 23,
+      "wins": 2,
+      "top8": 11,
+      "top4": 11,
       "recent_lists": 7,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
-      "best": 4
+      "best": 1
     },
     {
       "id": "OP10-022",
@@ -953,15 +976,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 7,
-      "wins": 0,
-      "top8": 0,
-      "top4": 0,
+      "lists": 15,
+      "wins": 4,
+      "top8": 8,
+      "top4": 8,
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
-      "best": 9
+      "best": 1
     },
     {
       "id": "OP13-100",
@@ -976,15 +999,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 13,
+      "lists": 21,
       "wins": 0,
-      "top8": 2,
-      "top4": 2,
+      "top8": 10,
+      "top4": 7,
       "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 11,
-      "best": 3
+      "best": 2
     }
   ],
   "sources": [
@@ -1472,7 +1495,8 @@
         "OP12-041": "C",
         "OP12-020": "C",
         "ST30-001": "S",
-        "OP13-100": "C"
+        "OP13-100": "C",
+        "OP14-079": "B"
       }
     }
   ]
