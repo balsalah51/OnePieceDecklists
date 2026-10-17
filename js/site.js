@@ -330,6 +330,54 @@
     play();
   }
 
+  var VIGNETTE_ANCHOR = [
+    "header a",
+    "footer a",
+    "nav a",
+    ".crumb a",
+    ".related-links a",
+    ".section-title a",
+    "a.events-banner",
+    "a.home-big",
+    "a.home-splash-card",
+    "a.shop-buy",
+    "a.shop-photo-link",
+    "a.buy-tcg",
+    "a.buy-tcg-inline",
+    "a.recent-all-link",
+    "a.brand",
+    "a.discord",
+    "a.skip-link"
+  ].join(",");
+
+  function markVignetteLinks(root) {
+    var scope = root && root.querySelectorAll ? root : document;
+    var nodes = [];
+    if (scope.matches && scope.matches(VIGNETTE_ANCHOR)) nodes.push(scope);
+    if (scope.querySelectorAll) {
+      scope.querySelectorAll(VIGNETTE_ANCHOR).forEach(function (a) { nodes.push(a); });
+    }
+    nodes.forEach(function (a) {
+      if (a.getAttribute("data-google-vignette") !== "false") {
+        a.setAttribute("data-google-vignette", "false");
+      }
+    });
+  }
+
+  function watchVignetteLinks() {
+    if (!window.MutationObserver || document.documentElement.dataset.vignetteWatch) return;
+    document.documentElement.dataset.vignetteWatch = "1";
+    var obs = new MutationObserver(function (records) {
+      records.forEach(function (rec) {
+        Array.prototype.forEach.call(rec.addedNodes || [], function (node) {
+          if (!node || node.nodeType !== 1) return;
+          markVignetteLinks(node);
+        });
+      });
+    });
+    obs.observe(document.documentElement, { childList: true, subtree: true });
+  }
+
   function ensureSkipLink() {
     if (document.querySelector(".skip-link")) return;
     var main = document.querySelector("main");
@@ -338,6 +386,7 @@
     var a = document.createElement("a");
     a.className = "skip-link";
     a.href = "#" + target;
+    a.setAttribute("data-google-vignette", "false");
     a.textContent = "Skip to content";
     document.body.insertBefore(a, document.body.firstChild);
   }
@@ -417,7 +466,9 @@
   }
 
   function ready() {
+    watchVignetteLinks();
     ensureSkipLink();
+    markVignetteLinks(document);
     initTheme();
     initMobileNav();
     initHeaderScroll();
@@ -429,6 +480,7 @@
     initSiteSearch();
     initRecentMore();
     initHomeSplash();
+    markVignetteLinks(document);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready);
   else ready();

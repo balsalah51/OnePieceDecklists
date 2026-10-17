@@ -1320,7 +1320,7 @@ def page_chrome(
       }});
     }})();
   </script>
-  <script src="/js/site.js?v=home-cards5"></script>
+  <script src="/js/site.js?v=nav-vignette1"></script>
 {tcg_scripts}</body>
 </html>
 """
