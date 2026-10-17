@@ -823,7 +823,7 @@ def render() -> str:
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script src="/js/site.js?v=home-smooth"></script>
+  <script src="/js/site.js?v=nav-vignette1"></script>
   <script>
     (function () {{
       var cards = Array.prototype.slice.call(document.querySelectorAll("[data-spoiler-card]"));
