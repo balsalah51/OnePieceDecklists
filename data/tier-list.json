@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "recent_from": "2026-08-20",
   "source_count": 25,
   "leaders": [
@@ -17,13 +17,13 @@
         "S": 13,
         "A": 3
       },
-      "lists": 382,
+      "lists": 383,
       "wins": 9,
-      "top8": 80,
-      "top4": 40,
-      "recent_lists": 319,
+      "top8": 81,
+      "top4": 41,
+      "recent_lists": 320,
       "recent_wins": 7,
-      "recent_top8": 72,
+      "recent_top8": 73,
       "community": 68,
       "best": 1
     },
@@ -43,7 +43,7 @@
         "C": 1,
         "B": 1
       },
-      "lists": 539,
+      "lists": 555,
       "wins": 36,
       "top8": 243,
       "top4": 142,
@@ -69,7 +69,7 @@
         "A": 2,
         "B": 1
       },
-      "lists": 248,
+      "lists": 264,
       "wins": 4,
       "top8": 38,
       "top4": 21,
@@ -120,7 +120,7 @@
         "B": 2,
         "S": 4
       },
-      "lists": 291,
+      "lists": 307,
       "wins": 17,
       "top8": 176,
       "top4": 83,
@@ -198,7 +198,7 @@
         "C": 3,
         "B": 3
       },
-      "lists": 217,
+      "lists": 233,
       "wins": 22,
       "top8": 128,
       "top4": 77,
@@ -249,13 +249,13 @@
         "A": 1,
         "S": 2
       },
-      "lists": 215,
+      "lists": 228,
       "wins": 6,
-      "top8": 49,
-      "top4": 25,
-      "recent_lists": 209,
+      "top8": 55,
+      "top4": 27,
+      "recent_lists": 210,
       "recent_wins": 6,
-      "recent_top8": 49,
+      "recent_top8": 50,
       "community": 137,
       "best": 1
     },
@@ -275,15 +275,15 @@
         "A": 1,
         "S": 1
       },
-      "lists": 66,
-      "wins": 0,
-      "top8": 16,
-      "top4": 9,
+      "lists": 82,
+      "wins": 3,
+      "top8": 32,
+      "top4": 20,
       "recent_lists": 64,
       "recent_wins": 0,
       "recent_top8": 16,
       "community": 42,
-      "best": 2
+      "best": 1
     },
     {
       "id": "OP17-020",
@@ -326,7 +326,7 @@
         "A": 2,
         "S": 3
       },
-      "lists": 112,
+      "lists": 128,
       "wins": 10,
       "top8": 80,
       "top4": 43,
@@ -352,7 +352,7 @@
         "B": 2,
         "S": 1
       },
-      "lists": 102,
+      "lists": 118,
       "wins": 13,
       "top8": 83,
       "top4": 47,
@@ -377,10 +377,10 @@
         "S": 2,
         "A": 1
       },
-      "lists": 184,
-      "wins": 8,
-      "top8": 39,
-      "top4": 25,
+      "lists": 200,
+      "wins": 10,
+      "top8": 49,
+      "top4": 29,
       "recent_lists": 184,
       "recent_wins": 8,
       "recent_top8": 39,
@@ -402,7 +402,7 @@
         "B": 1,
         "A": 2
       },
-      "lists": 114,
+      "lists": 130,
       "wins": 9,
       "top8": 53,
       "top4": 26,
@@ -427,9 +427,9 @@
         "B": 2,
         "A": 3
       },
-      "lists": 145,
+      "lists": 161,
       "wins": 21,
-      "top8": 118,
+      "top8": 134,
       "top4": 98,
       "recent_lists": 9,
       "recent_wins": 0,
@@ -452,14 +452,38 @@
         "S": 1,
         "A": 1
       },
-      "lists": 122,
+      "lists": 138,
       "wins": 17,
-      "top8": 91,
+      "top8": 101,
       "top4": 63,
       "recent_lists": 40,
       "recent_wins": 1,
       "recent_top8": 11,
       "community": 33,
+      "best": 1
+    },
+    {
+      "id": "OP05-098",
+      "name": "OP05 Enel",
+      "href": "/decklists/op05-enel.html",
+      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp",
+      "color": "color-yellow",
+      "color_label": "Yellow",
+      "tier": "B",
+      "score": 8.55,
+      "sources": 2,
+      "votes": {
+        "B": 1,
+        "S": 1
+      },
+      "lists": 58,
+      "wins": 2,
+      "top8": 19,
+      "top4": 9,
+      "recent_lists": 41,
+      "recent_wins": 1,
+      "recent_top8": 15,
+      "community": 9,
       "best": 1
     },
     {
@@ -476,7 +500,7 @@
         "A": 2,
         "C": 1
       },
-      "lists": 23,
+      "lists": 24,
       "wins": 0,
       "top8": 2,
       "top4": 1,
@@ -552,7 +576,7 @@
         "B": 1,
         "A": 1
       },
-      "lists": 62,
+      "lists": 64,
       "wins": 1,
       "top8": 6,
       "top4": 4,
@@ -561,30 +585,6 @@
       "recent_top8": 6,
       "community": 17,
       "best": 1
-    },
-    {
-      "id": "OP05-098",
-      "name": "OP05 Enel",
-      "href": "/decklists/op05-enel.html",
-      "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp",
-      "color": "color-yellow",
-      "color_label": "Yellow",
-      "tier": "C",
-      "score": 6.67,
-      "sources": 2,
-      "votes": {
-        "B": 1,
-        "A": 1
-      },
-      "lists": 42,
-      "wins": 0,
-      "top8": 14,
-      "top4": 6,
-      "recent_lists": 40,
-      "recent_wins": 0,
-      "recent_top8": 14,
-      "community": 9,
-      "best": 2
     },
     {
       "id": "OP11-040",
@@ -624,15 +624,15 @@
         "C": 2,
         "A": 1
       },
-      "lists": 7,
-      "wins": 0,
-      "top8": 3,
-      "top4": 0,
+      "lists": 23,
+      "wins": 2,
+      "top8": 19,
+      "top4": 5,
       "recent_lists": 6,
       "recent_wins": 0,
       "recent_top8": 3,
       "community": 11,
-      "best": 6
+      "best": 1
     },
     {
       "id": "OP13-002",
@@ -649,9 +649,9 @@
         "A": 1,
         "C": 2
       },
-      "lists": 52,
+      "lists": 68,
       "wins": 9,
-      "top8": 42,
+      "top8": 50,
       "top4": 35,
       "recent_lists": 11,
       "recent_wins": 0,
@@ -673,9 +673,9 @@
         "D": 2,
         "A": 1
       },
-      "lists": 82,
+      "lists": 98,
       "wins": 11,
-      "top8": 80,
+      "top8": 82,
       "top4": 45,
       "recent_lists": 2,
       "recent_wins": 0,
@@ -697,15 +697,15 @@
         "D": 1,
         "C": 1
       },
-      "lists": 4,
-      "wins": 0,
-      "top8": 0,
-      "top4": 0,
+      "lists": 20,
+      "wins": 1,
+      "top8": 16,
+      "top4": 9,
       "recent_lists": 3,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 10,
-      "best": 17
+      "best": 1
     },
     {
       "id": "OP13-079",
@@ -721,9 +721,9 @@
         "D": 1,
         "C": 1
       },
-      "lists": 182,
+      "lists": 194,
       "wins": 24,
-      "top8": 168,
+      "top8": 169,
       "top4": 100,
       "recent_lists": 7,
       "recent_wins": 0,
@@ -745,7 +745,7 @@
         "D": 1,
         "C": 1
       },
-      "lists": 89,
+      "lists": 94,
       "wins": 5,
       "top8": 33,
       "top4": 12,
@@ -792,7 +792,7 @@
       "votes": {
         "C": 1
       },
-      "lists": 4,
+      "lists": 7,
       "wins": 0,
       "top8": 1,
       "top4": 1,
@@ -815,7 +815,7 @@
       "votes": {
         "C": 1
       },
-      "lists": 83,
+      "lists": 84,
       "wins": 7,
       "top8": 57,
       "top4": 30,
@@ -838,15 +838,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 5,
+      "lists": 21,
       "wins": 0,
-      "top8": 0,
-      "top4": 0,
+      "top8": 2,
+      "top4": 1,
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
-      "best": 22
+      "best": 2
     },
     {
       "id": "OP12-081",
@@ -861,15 +861,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 16,
-      "wins": 0,
-      "top8": 2,
-      "top4": 0,
+      "lists": 27,
+      "wins": 2,
+      "top8": 7,
+      "top4": 3,
       "recent_lists": 13,
       "recent_wins": 0,
       "recent_top8": 2,
       "community": 3,
-      "best": 7
+      "best": 1
     },
     {
       "id": "OP12-020",
@@ -884,9 +884,9 @@
       "votes": {
         "C": 1
       },
-      "lists": 9,
+      "lists": 19,
       "wins": 0,
-      "top8": 1,
+      "top8": 5,
       "top4": 0,
       "recent_lists": 9,
       "recent_wins": 0,
@@ -907,9 +907,9 @@
       "votes": {
         "C": 1
       },
-      "lists": 8,
+      "lists": 13,
       "wins": 0,
-      "top8": 3,
+      "top8": 5,
       "top4": 1,
       "recent_lists": 7,
       "recent_wins": 0,
@@ -930,15 +930,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 8,
+      "lists": 15,
       "wins": 0,
-      "top8": 0,
-      "top4": 0,
+      "top8": 3,
+      "top4": 3,
       "recent_lists": 7,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
-      "best": 21
+      "best": 4
     },
     {
       "id": "OP10-022",
@@ -953,7 +953,7 @@
       "votes": {
         "C": 1
       },
-      "lists": 4,
+      "lists": 7,
       "wins": 0,
       "top8": 0,
       "top4": 0,
@@ -961,7 +961,7 @@
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
-      "best": 18
+      "best": 9
     },
     {
       "id": "OP13-100",
@@ -976,15 +976,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 8,
+      "lists": 13,
       "wins": 0,
-      "top8": 1,
-      "top4": 1,
+      "top8": 2,
+      "top4": 2,
       "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 11,
-      "best": 4
+      "best": 3
     }
   ],
   "sources": [
@@ -1453,7 +1453,7 @@
         "OP14-041": "S",
         "OP12-081": "C",
         "OP09-001": "D",
-        "OP05-098": "A",
+        "OP05-098": "S",
         "ST10-002": "C",
         "OP09-061": "D",
         "OP12-040": "C",

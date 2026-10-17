@@ -4,7 +4,7 @@
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 40
+      "count": 41
     },
     {
       "id": "ST30-001",
@@ -14,12 +14,12 @@
     {
       "id": "OP17-079",
       "name": "Monkey D. Luffy",
-      "count": 23
+      "count": 22
     },
     {
       "id": "OP05-098",
       "name": "OP05 Enel",
-      "count": 12
+      "count": 13
     },
     {
       "id": "OP08-058",
@@ -58,8 +58,8 @@
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 68,
-      "pct": 19.3
+      "count": 65,
+      "pct": 18.5
     },
     {
       "id": "ST30-001",
@@ -86,16 +86,16 @@
       "pct": 6.2
     },
     {
-      "id": "OP08-058",
-      "name": "Charlotte Pudding",
+      "id": "OP05-098",
+      "name": "OP05 Enel",
       "count": 19,
       "pct": 5.4
     },
     {
-      "id": "OP05-098",
-      "name": "OP05 Enel",
-      "count": 18,
-      "pct": 5.1
+      "id": "OP08-058",
+      "name": "Charlotte Pudding",
+      "count": 19,
+      "pct": 5.4
     },
     {
       "id": "OP14-041",
@@ -110,16 +110,16 @@
       "pct": 4.0
     },
     {
-      "id": "OP12-061",
-      "name": "Rosinante",
+      "id": "OP09-062",
+      "name": "Nico Robin",
       "count": 12,
       "pct": 3.4
     },
     {
       "id": "",
       "name": "Other",
-      "count": 72,
-      "pct": 20.5
+      "count": 74,
+      "pct": 21.0
     }
   ],
   "hole": {

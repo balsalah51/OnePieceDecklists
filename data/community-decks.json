@@ -14272,5 +14272,36 @@
       "kind": "web",
       "date": "2026-10-13"
     }
+  ],
+  "EB05-010": [
+    {
+      "slug": "opdeck-nico-robin-eb05",
+      "href": "/decklists/eb05-nico-robin/opdeck-nico-robin-eb05.html",
+      "title": "Nico Robin EB05 Deck Guide",
+      "subtitle": "OPDeckGuide · public EB05 pre-release list",
+      "source_url": "https://opdeckguide.com/deck-guides/nico-robin-eb05/",
+      "kind": "web",
+      "date": "2026-10-16"
+    },
+    {
+      "slug": "reddit-thohar88-eb05-nico-robin",
+      "href": "/decklists/eb05-nico-robin/reddit-thohar88-eb05-nico-robin.html",
+      "title": "EB05 Nico Robin list",
+      "subtitle": "Reddit · public EB05 pre-release list",
+      "source_url": "https://www.reddit.com/r/OnePieceTCG/comments/1wydz1o/eb05_nico_deck_list_help/",
+      "kind": "web",
+      "date": "2026-10-05"
+    }
+  ],
+  "OP14-079": [
+    {
+      "slug": "reddit-million-x-eb05-crocodile",
+      "href": "/decklists/crocodile/reddit-million-x-eb05-crocodile.html",
+      "title": "EB05 Crocodile list",
+      "subtitle": "Reddit · public EB05 Baroque Works list",
+      "source_url": "https://www.reddit.com/r/OnePieceTCG/comments/1wraufc/deck_recommendations_for_eb05op18/",
+      "kind": "web",
+      "date": "2026-10-03"
+    }
   ]
 }

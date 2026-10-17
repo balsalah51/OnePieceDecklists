@@ -160,7 +160,10 @@ def card_article(card: dict) -> str:
 def render() -> str:
     count = len(CARDS)
     new_leaders = [c for c in CARDS if c["kind"] == "leader"]
-    leader_tiles = [leader_tile(c) for c in new_leaders]
+    leader_tiles = []
+    for card in new_leaders:
+        href = "/decklists/eb05-nico-robin.html" if card["id"] == "EB05-010" else None
+        leader_tiles.append(leader_tile(card, href=href))
     for row in RETURNING_LEADERS:
         leader_tiles.append(
             leader_tile(
@@ -211,9 +214,9 @@ def render() -> str:
         "(OP14-041), Rebecca (OP15-039), and Nefeltari Vivi (EB03-001)."
     )
     faq_full = (
-        f"No. This page lists the {count} EB05-numbered cards revealed by 8 October 2026. "
+        f"No. This page lists the {count} EB05-numbered cards revealed by 16 October 2026. "
         "Unrevealed numbers are omitted. English wording can still change before Bandai posts "
-        "the official card list. A purple 1-cost Nico Robin has been shown without a confirmed number."
+        "the official card list. The purple 1-cost Nico Robin is EB05-033."
     )
     return f"""<!doctype html>
 <html lang="en">
@@ -273,6 +276,7 @@ def render() -> str:
         <a href="/#recent">Recent lists</a>
         <a href="/decklists/op17.html">Leaders</a>
         <a href="/format.html">Format</a>
+        <a href="/eb05-lists.html">EB05 lists</a>
         <a href="/eb05-spoilers.html" aria-current="page">EB05</a>
         <a href="/op18-spoilers.html">OP18</a>
         <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
@@ -286,7 +290,7 @@ def render() -> str:
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / EB05 spoilers</div>
         <h2>EB05 spoilers</h2>
-        <p>EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05] is the second Heroines extra booster. English release is 30 October 2026. These are the {count} EB05-numbered cards revealed by 8 October 2026, not the full 75+2 list. Unrevealed numbers are left off. Wording follows the sample prints and can still change. Pictures are sample previews.</p>
+        <p>EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05] is the second Heroines extra booster. English release is 30 October 2026. These are the {count} EB05-numbered cards revealed by 16 October 2026, not the full 75+2 list. Unrevealed numbers are left off. Wording follows the sample prints and can still change. Pictures are sample previews. <a href="/eb05-lists.html">EB05 lists</a> collects complete public decks that play these cards, including the <a href="/decklists/eb05-nico-robin.html">new green/yellow Nico Robin leader</a>.</p>
         <div class="spoiler-facts">
           <div><strong>30 Oct 2026</strong><span>English release</span></div>
           <div><strong>$4.99</strong><span>Pack MSRP</span></div>
@@ -327,7 +331,7 @@ def render() -> str:
             <li><a href="#EB05-010">Nico Robin</a><span class="muted">EB05-010 Leader · manga Super Parallel reported</span></li>
             <li><a href="#EB05-055">Nami</a><span class="muted">EB05-055 SR · several parallels reported</span></li>
           </ul>
-          <p class="muted">A purple 1-cost Nico Robin has been shown without a confirmed card number, so it is not in the grid below.</p>
+          <p class="muted">The purple 1-cost Nico Robin is <a href="#EB05-033">EB05-033</a>.</p>
         </section>
 
         <section style="margin-top:22px" id="sp">
@@ -400,6 +404,24 @@ def render() -> str:
             <div class="muted">Current format and the next booster</div>
           </div>
           <ul class="list">
+            <li>
+              <a class="item" href="/eb05-lists.html">
+                <div>
+                  <div style="font-weight:700">EB05 lists</div>
+                  <div class="muted" style="font-size:13px">Complete public decks that play EB05 cards</div>
+                </div>
+                <div class="link">Open →</div>
+              </a>
+            </li>
+            <li>
+              <a class="item" href="/decklists/eb05-nico-robin.html">
+                <div>
+                  <div style="font-weight:700">Nico Robin EB05-010</div>
+                  <div class="muted" style="font-size:13px">Green/Yellow Wisdom leader hub</div>
+                </div>
+                <div class="link">Open →</div>
+              </a>
+            </li>
             <li>
               <a class="item" href="/op18-spoilers.html">
                 <div>
