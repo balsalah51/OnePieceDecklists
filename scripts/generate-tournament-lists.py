@@ -660,6 +660,30 @@ LEADERS = [
         "pool_heading": "Card pictures",
         "pool_note": "English names and art from Limitless",
     },
+    {
+        "id": "EB05-010",
+        "key": "eb05-nico-robin",
+        "page": "decklists/eb05-nico-robin.html",
+        "dir": "decklists/eb05-nico-robin",
+        "name": "Nico Robin",
+        "color": "color-green-yellow",
+        "crumb": ("/eb05-lists.html", "EB05 lists"),
+        "nav_op17": False,
+        "pool_heading": "Card pictures",
+        "pool_note": "Sample art from the public EB05 previews",
+    },
+    {
+        "id": "OP14-079",
+        "key": "crocodile",
+        "page": "decklists/crocodile.html",
+        "dir": "decklists/crocodile",
+        "name": "Crocodile",
+        "color": "color-black",
+        "crumb": ("/eb05-lists.html", "EB05 lists"),
+        "nav_op17": False,
+        "pool_heading": "Card pictures",
+        "pool_note": "English names and art from Limitless",
+    },
 ]
 
 
@@ -1160,8 +1184,7 @@ def stats_line(card: dict) -> str:
 def render_card_entry(item: dict, meta: dict) -> str:
     cid = item["id"]
     name = display_name(meta.get("name") or item.get("name") or cid)
-    set_code = cid.split("-")[0]
-    img = f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{cid}_EN.webp"
+    img = card_image_url(cid)
     qty = ""
     if item["group"] != "Leader":
         qty = f'<span class="qty">{html.escape(str(item["count"]))}x</span>'
@@ -1251,6 +1274,9 @@ def page_chrome(
         <a href="/#recent">Recent lists</a>
         <a href="/decklists/op17.html"{op17_cur}>Leaders</a>
         <a href="/format.html">Format</a>
+        <a href="/eb05-lists.html">EB05 lists</a>
+        <a href="/eb05-spoilers.html">EB05</a>
+        <a href="/op18-spoilers.html">OP18</a>
         <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
         <a href="/guides/">Guides</a>
         <a href="/shop/">Shop</a>
@@ -1266,7 +1292,7 @@ def page_chrome(
     </main>
     <footer>
       © <span id="year"></span> One Piece Decklists - Built with community in mind.
-      <a href="/tier-list.html">Tier List</a> · <a href="/extra-grand-battle.html">Extra Grand Battle</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
+      <a href="/tier-list.html">Tier List</a> · <a href="/extra-grand-battle.html">Extra Grand Battle</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/eb05-lists.html">EB05 lists</a> · <a href="/eb05-spoilers.html">EB05</a> · <a href="/op18-spoilers.html">OP18</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
     </footer>
   </div>
   <script>
@@ -1370,6 +1396,9 @@ def unique_slug(entry: dict, used: set[str]) -> str:
 
 def card_image_url(cid: str) -> str:
     set_code = cid.split("-")[0]
+    # EB05 and OP18 are not on the Limitless CDN yet. OPlay hosts the sample art.
+    if set_code in {"EB05", "OP18"}:
+        return f"https://cards.oplaytcg.com/{set_code}/en/{cid}.webp"
     return f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{cid}_EN.webp"
 
 
@@ -1694,6 +1723,17 @@ HUB_INTRO = {
         "Green OP12 Roronoa Zoro. Straw Hat Crew. "
         "A 3-cost or higher Slash character can attack the turn it is played. "
         "Not red OP01 Zoro and not a Mihawk leader."
+    ),
+    "EB05-010": (
+        "Green/Yellow EB05 Nico Robin. Straw Hat Crew, Wisdom. "
+        "Once per turn, a non-Blocker Wisdom character being K.O.'d adds a Life, "
+        "and she can set one Wisdom character with 6000 power or less as active. "
+        "Not purple/yellow OP09-062 Robin."
+    ),
+    "OP14-079": (
+        "Black OP14 Crocodile. Baroque Works. "
+        "Opponent characters cannot be removed by your effects. "
+        "K.O. a Baroque Works character to give an opposing character −10 cost."
     ),
 }
 

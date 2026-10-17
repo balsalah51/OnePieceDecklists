@@ -583,6 +583,27 @@
     "note": "Special card treatment confirmed."
   },
   {
+    "id": "EB05-033",
+    "name": "Nico Robin",
+    "aliases": "purple 1-cost Robin Straw Hat",
+    "kind": "character",
+    "rarity": "Rare",
+    "colors": [
+      "Purple"
+    ],
+    "cost": "1",
+    "power": "2000",
+    "life": "",
+    "counter": "+2000",
+    "attribute": "Strike",
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "effect": "[On Play] If your Leader has the {Straw Hat Crew} type, and the number of DON!! cards on your field is at least 6 less than the number on your opponent's field, draw 3 cards and trash 2 cards from your hand. Then, add up to 4 DON!! cards from your DON!! deck and rest them.",
+    "image": true,
+    "note": "The purple 1-cost Nico Robin. Number confirmed on the OPlay card page."
+  },
+  {
     "id": "EB05-034",
     "name": "Sugar",
     "aliases": "",

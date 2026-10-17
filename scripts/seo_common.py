@@ -502,6 +502,7 @@ FOOTER_LINKS = (
     '<a href="/extra-grand-battle.html" data-google-vignette="false">Extra Grand Battle</a> · '
     '<a href="/guides/" data-google-vignette="false">Guides</a> · '
     '<a href="/decklists/op17.html" data-google-vignette="false">Leaders</a> · '
+    '<a href="/eb05-lists.html" data-google-vignette="false">EB05 lists</a> · '
     '<a href="/eb05-spoilers.html" data-google-vignette="false">EB05</a> · '
     '<a href="/op18-spoilers.html" data-google-vignette="false">OP18</a> · '
     '<a href="/format.html" data-google-vignette="false">Format</a> · '
@@ -541,6 +542,7 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
         (recent, "Recent lists", "recent"),
         (leaders, "Leaders", "leaders"),
         ("/format.html", "Format", "format"),
+        ("/eb05-lists.html", "EB05 lists", "eb05-lists"),
         ("/eb05-spoilers.html", "EB05", "eb05"),
         ("/op18-spoilers.html", "OP18", "op18"),
         ("https://en.onepiece-cardgame.com/events/", "Events", "events"),

@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "op18-spoilers.html"
 IMG = "https://cards.oplaytcg.com/OP18/en/{id}.webp"
 
-# Public reveals as of 7 October 2026. English text follows spoiler
+# Public reveals as of 16 October 2026. English text follows spoiler
 # translations. Kokoro and Mr. 9 are translated from the Japanese list.
 CARDS = [
     {
@@ -38,6 +38,20 @@ CARDS = [
         "attribute": "Wisdom",
         "types": ["Animal", "Alabasta"],
         "effect": "No effect.",
+        "image": True,
+    },
+    {
+        "id": "OP18-010",
+        "name": "Tony Tony.Chopper",
+        "aliases": "Chopper",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Red"],
+        "cost": "4",
+        "power": "5000",
+        "counter": "+2000",
+        "types": ["Alabasta", "Animal", "Straw Hat Crew"],
+        "effect": "[On K.O.] Add up to 1 Character card with 4000 power or less from your trash to your hand.",
         "image": True,
     },
     {
@@ -177,6 +191,21 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-032",
+        "name": "Buggy",
+        "aliases": "",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Green"],
+        "cost": "5",
+        "power": "6000",
+        "counter": "+1000",
+        "attribute": "Slash",
+        "types": ["Buggy Pirates", "East Blue"],
+        "effect": "[On Play]/[On K.O.] Up to 1 of your opponent's rested Characters with 8000 power or less will not become active in your opponent's next Refresh Phase.",
+        "image": True,
+    },
+    {
         "id": "OP18-034",
         "name": "Franky",
         "aliases": "フランキー character",
@@ -248,6 +277,21 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-052",
+        "name": "Mr.5 & Miss.Valentine",
+        "aliases": "Mr. 5 Miss Valentine",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Blue"],
+        "cost": "5",
+        "power": "4000",
+        "counter": "+2000",
+        "attribute": "Strike/Special",
+        "types": ["Baroque Works"],
+        "effect": "[DON!! x1] This Character gains +1000 power. [On Play] Play up to 1 Character card with a type including \"Baroque Works\" and a cost of 3 or less from your hand.",
+        "image": True,
+    },
+    {
         "id": "OP18-055",
         "name": "Mr. 9 & Miss Wednesday",
         "aliases": "Vivi Wednesday",
@@ -309,6 +353,21 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-063",
+        "name": "Kiwi & Mozu",
+        "aliases": "",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Purple"],
+        "cost": "3",
+        "power": "1000",
+        "counter": "+2000",
+        "attribute": "Slash",
+        "types": ["The Franky Family", "Water Seven"],
+        "effect": "[On Play] You may K.O. 1 of your Stages with a cost of 5 or less: Add up to 1 DON!! card as rested from your DON!! deck.",
+        "image": True,
+    },
+    {
         "id": "OP18-065",
         "name": "Saint Gunko",
         "aliases": "Gunko super parallel God's Knights 軍子宮",
@@ -336,6 +395,21 @@ CARDS = [
         "attribute": "Slash",
         "types": ["Water Seven", "Franky Family"],
         "effect": "[Activate: Main] You may K.O. 1 of your Stages with a cost of 5 or less: This Character gains [Rush] during this turn.",
+        "image": True,
+    },
+    {
+        "id": "OP18-069",
+        "name": "Sodomu & Gomora",
+        "aliases": "Sodom Gomorrah",
+        "kind": "character",
+        "rarity": "Common",
+        "colors": ["Purple"],
+        "cost": "1",
+        "power": "2000",
+        "counter": "+2000",
+        "attribute": "Strike",
+        "types": ["Animal", "The Franky Family", "Water Seven"],
+        "effect": "If your {The Franky Family} type Character would be K.O.'d, you may DON!! −1 and rest this Character instead.",
         "image": True,
     },
     {
@@ -392,6 +466,21 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-085",
+        "name": "Cerberus",
+        "aliases": "",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Black"],
+        "cost": "1",
+        "power": "0",
+        "counter": "+2000",
+        "attribute": "Slash",
+        "types": ["Holy Knights of God"],
+        "effect": "[Activate:Main] You may return this Character to the owner's hand: Up to 1 of your [Saint Shamrock] Characters gains [Rush], [Banish], or [Unblockable] during this turn.",
+        "image": True,
+    },
+    {
         "id": "OP18-086",
         "name": "Goldberg",
         "aliases": "New Giant Pirates",
@@ -419,6 +508,21 @@ CARDS = [
         "attribute": "Slash",
         "types": ["Giant", "Elbaph", "Giant Pirates"],
         "effect": "This Character gains +12 cost. [On Play] You may trash 1 card from your hand: Your opponent trashes 1 card from their hand.",
+        "image": True,
+    },
+    {
+        "id": "OP18-091",
+        "name": "Brogy",
+        "aliases": "Dorry and Brogy",
+        "kind": "character",
+        "rarity": "Common",
+        "colors": ["Black"],
+        "cost": "4",
+        "power": "5000",
+        "counter": "+2000",
+        "attribute": "Slash",
+        "types": ["Elbaph", "Giant", "Giant Pirates"],
+        "effect": "This Character gains +12 cost. [When Attacking] You may trash 1 card from your hand: Add up to 1 of your Character cards with a cost of 2 or less from your trash to your hand.",
         "image": True,
     },
     {
@@ -452,6 +556,20 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-101",
+        "name": "Kumadori",
+        "aliases": "",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Yellow"],
+        "cost": "4",
+        "power": "6000",
+        "attribute": "Strike",
+        "types": ["CP9"],
+        "effect": "[On K.O.] Add up to 1 card with a type including \"CP\" from your hand to the top or bottom of your Life cards face-up. [Trigger] If your Leader's type includes \"CP\", K.O. or rest up to 1 of your opponent's Characters with a cost of 6 or less.",
+        "image": True,
+    },
+    {
         "id": "OP18-106",
         "name": "Doberman",
         "aliases": "Vice Admiral Navy",
@@ -464,6 +582,21 @@ CARDS = [
         "attribute": "Slash",
         "types": ["Vice Admiral", "Navy"],
         "effect": "[Double Attack] (This card deals 2 damage.)",
+        "image": True,
+    },
+    {
+        "id": "OP18-111",
+        "name": "Momonga",
+        "aliases": "",
+        "kind": "character",
+        "rarity": "Common",
+        "colors": ["Yellow"],
+        "cost": "7",
+        "power": "7000",
+        "counter": "+2000",
+        "attribute": "Slash",
+        "types": ["Navy", "Vice Admiral"],
+        "effect": "[Rush] (This card can attack on the turn in which it is played.)",
         "image": True,
     },
     {
@@ -642,7 +775,7 @@ def render() -> str:
   <meta name="twitter:image" content="https://onepiecedecklists.com/img/opdl-hero.jpg" />
   <meta name="twitter:image:alt" content="OP18 spoilers | The Dominance of God" />
   <script type="application/ld+json">{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://onepiecedecklists.com/"}},{{"@type":"ListItem","position":2,"name":"OP18 spoilers","item":"https://onepiecedecklists.com/op18-spoilers.html"}}]}}</script>
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{"@type":"Question","name":"When does OP18 release?","acceptedAnswer":{{"@type":"Answer","text":"English OP-18 The Dominance of God releases 20 November 2026 at $4.99 a pack. Japan is later in November 2026. Cards become tournament legal 7 days after the release date in your region, and from the pre-release date at your store."}}}},{{"@type":"Question","name":"What is in OP18?","acceptedAnswer":{{"@type":"Answer","text":"OP-18 is BOOSTER PACK -THE DOMINANCE OF GOD-. Bandai lists 127 card types plus 1. The themes are Water Seven and the Holy Knights. Saint Gunko and Saint Shamrock debut, and Franky gets his first Leader card."}}}},{{"@type":"Question","name":"Which OP18 leaders are revealed?","acceptedAnswer":{{"@type":"Answer","text":"Six leaders are revealed: Karoo (OP18-001, red/blue), Franky (OP18-021, green/purple), Monkey D. Luffy (OP18-022, green), Ms. All Sunday (OP18-041, blue), Saint Gunko (OP18-060, purple/black), and Spandam (OP18-079, black/yellow)."}}}},{{"@type":"Question","name":"Is the full OP18 card list out?","acceptedAnswer":{{"@type":"Answer","text":"No. This page lists the cards revealed by 7 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list."}}}}]}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{"@type":"Question","name":"When does OP18 release?","acceptedAnswer":{{"@type":"Answer","text":"English OP-18 The Dominance of God releases 20 November 2026 at $4.99 a pack. Japan is later in November 2026. Cards become tournament legal 7 days after the release date in your region, and from the pre-release date at your store."}}}},{{"@type":"Question","name":"What is in OP18?","acceptedAnswer":{{"@type":"Answer","text":"OP-18 is BOOSTER PACK -THE DOMINANCE OF GOD-. Bandai lists 127 card types plus 1. The themes are Water Seven and the Holy Knights. Saint Gunko and Saint Shamrock debut, and Franky gets his first Leader card."}}}},{{"@type":"Question","name":"Which OP18 leaders are revealed?","acceptedAnswer":{{"@type":"Answer","text":"Six leaders are revealed: Karoo (OP18-001, red/blue), Franky (OP18-021, green/purple), Monkey D. Luffy (OP18-022, green), Ms. All Sunday (OP18-041, blue), Saint Gunko (OP18-060, purple/black), and Spandam (OP18-079, black/yellow)."}}}},{{"@type":"Question","name":"Is the full OP18 card list out?","acceptedAnswer":{{"@type":"Answer","text":"No. This page lists the cards revealed by 16 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list."}}}}]}}</script>
 </head>
 <body>
   <div class="wrap wrap-spoilers">
@@ -663,6 +796,7 @@ def render() -> str:
         <a href="/#recent">Recent lists</a>
         <a href="/decklists/op17.html">Leaders</a>
         <a href="/format.html">Format</a>
+        <a href="/eb05-lists.html">EB05 lists</a>
         <a href="/eb05-spoilers.html">EB05</a>
         <a href="/op18-spoilers.html" aria-current="page">OP18</a>
         <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
@@ -676,7 +810,7 @@ def render() -> str:
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / OP18 spoilers</div>
         <h2>OP18 spoilers</h2>
-        <p>BOOSTER PACK -THE DOMINANCE OF GOD- [OP-18] is the Water Seven and Holy Knights set. English release is 20 November 2026. These are the cards revealed by 7 October 2026, not the full 127+1 list. Wording follows the sample prints and can still change. Pictures are sample previews.</p>
+        <p>BOOSTER PACK -THE DOMINANCE OF GOD- [OP-18] is the Water Seven and Holy Knights set. English release is 20 November 2026. These are the cards revealed by 16 October 2026, not the full 127+1 list. Wording follows the sample prints and can still change. Pictures are sample previews.</p>
         <div class="spoiler-facts">
           <div><strong>20 Nov 2026</strong><span>English release</span></div>
           <div><strong>$4.99</strong><span>Pack MSRP</span></div>
@@ -758,7 +892,7 @@ def render() -> str:
           </details>
           <details>
             <summary>Is the full OP18 card list out?</summary>
-            <p>No. This page lists the cards revealed by 7 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list.</p>
+            <p>No. This page lists the cards revealed by 16 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list.</p>
           </details>
         </section>
 

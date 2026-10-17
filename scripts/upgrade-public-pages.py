@@ -689,8 +689,9 @@ def patch_op17() -> None:
         flags=re.S,
     )
     grid = '          <div class="leader-cards" aria-label="All leader card pictures">\n' + leader_cards_html() + "\n          </div>"
+    # Caption divs sit inside each card, so stop at the grid's own closing tag.
     text = re.sub(
-        r'          <div class="leader-cards" aria-label="All leader card pictures">.*?</div>',
+        r'          <div class="leader-cards" aria-label="All leader card pictures">.*?\n          </div>',
         grid,
         text,
         count=1,
