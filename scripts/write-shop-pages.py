@@ -12,6 +12,15 @@ from pathlib import Path
 
 ROOT = Path("/workspace")
 DISCORD = "https://discord.gg/adZ2WUQ3D"
+
+
+def _primary_nav(current: str) -> str:
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts" / "seo_common.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.primary_nav_html(current=current)
 CSS = "/css/site.css?v=home-pro2"
 SITE = "https://onepiecedecklists.com"
 
@@ -219,9 +228,7 @@ def chrome(title: str, desc: str, canonical: str, body: str, *, indexable: bool,
         <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
-      <nav aria-label="Primary">
-{nav_html("shop")}
-      </nav>
+{_primary_nav("shop")}
     </header>
     <main class="single">
       <div class="card hero">

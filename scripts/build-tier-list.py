@@ -70,8 +70,7 @@ BY_ID = {L["id"]: L for L in LEADERS}
 
 
 def leader_img(lid: str) -> str:
-    set_code = lid.split("-")[0]
-    return f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{lid}_EN.webp"
+    return gen.card_image_url(lid)
 
 
 def color_name(L: dict) -> str:

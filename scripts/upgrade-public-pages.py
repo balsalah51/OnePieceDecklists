@@ -26,8 +26,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro23"
-JS_NEW = "/js/site.js?v=home-cards5"
+CSS_NEW = "/css/site.css?v=home-pro24"
+JS_NEW = "/js/site.js?v=nav-groups1"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -255,6 +255,8 @@ def collect_home_lists() -> list[dict]:
             row = dict(item)
             row["leader"] = leader
             row["tournament_name"] = row.get("tournament_name") or row.get("tournament") or ""
+            if home_meta.event_display.is_test_row(row):
+                continue
             rows.append(row)
         for item in community.get(leader["id"]) or []:
             href = item.get("href") or ""
@@ -263,8 +265,7 @@ def collect_home_lists() -> list[dict]:
             if not (ROOT / href.lstrip("/")).exists():
                 continue
             seen.add(href)
-            rows.append(
-                {
+            community_row = {
                     "slug": item.get("slug"),
                     "href": href,
                     "player": item.get("player") or "Community",
@@ -279,7 +280,9 @@ def collect_home_lists() -> list[dict]:
                     ),
                     "leader": leader,
                 }
-            )
+            if home_meta.event_display.is_test_row(community_row):
+                continue
+            rows.append(community_row)
     return rows
 
 
@@ -351,28 +354,34 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
         leader = entry["leader"]
         title, _subtitle = gen.list_heading(entry, leader["name"])
         event = entry.get("tournament_name") or entry.get("subtitle") or ""
-        event_html = html.escape(event)
+        event_label = home_meta.event_display.display_event(event) or event
+        event_html = html.escape(event_label)
+        badge = home_meta.event_display.event_badge(event)
+        badge_html = (
+            f'<span class="event-rank">{html.escape(badge)}</span>' if badge else ""
+        )
         place = gen.ordinal(entry.get("placing")) or ""
         when = entry.get("date") or place or "List"
         img = gen.card_image_url(leader["id"])
         place_html = f'<span class="recent-place">{html.escape(place)}</span>' if place else ""
-        event_meta = f'<span class="recent-meta-event">{event_html}</span>' if event else ""
+        event_meta = f'<span class="recent-meta-event">{badge_html}{event_html}</span>' if event_label else ""
         meta = place_html + event_meta
         if not meta:
             meta = html.escape(leader["name"])
         extra_attrs = ""
         if hide_after is not None and i >= hide_after:
             extra_attrs = ' class="recent-more" hidden'
+        major = " is-major" if home_meta.event_display.event_weight(event) >= 2 else ""
         lazy = "" if i < 6 else ' loading="lazy" decoding="async"'
         items.append(
             f"""            <li{extra_attrs}>
-              <a class="recent-item {html.escape(leader['color'])}" href="{html.escape(entry['href'])}">
+              <a class="recent-item {html.escape(leader['color'])}{major}" href="{html.escape(entry['href'])}">
                 <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}"{lazy} />
                 <div class="recent-copy">
                   <div class="who">{html.escape(title)}</div>
                   <div class="muted meta">{meta}</div>
                 </div>
-                <div class="recent-event">{event_html}</div>
+                <div class="recent-event">{badge_html}{event_html}</div>
                 <div class="when">{html.escape(str(when))}</div>
               </a>
             </li>"""
@@ -395,6 +404,61 @@ def build_home_data() -> dict:
     }
 
 
+def home_notes_html(data: dict) -> str:
+    """Short original notes so the homepage is more than a list mirror."""
+    leaders = data.get("leaders") or []
+    pie = data.get("pie") or {}
+    slices = pie.get("slices") or []
+    top = leaders[0] if leaders else {}
+    second = leaders[1] if len(leaders) > 1 else {}
+    third = leaders[2] if len(leaders) > 2 else {}
+    share = next((row for row in slices if row.get("id") == top.get("id")), None)
+    hole = pie.get("hole") or {}
+    window = home_meta.POPULAR_WINDOW
+    top_name = html.escape(top.get("name") or "The top leader")
+    top_n = top.get("home_lists") or 0
+    share_txt = f"{share['pct']:.1f}%" if share else ""
+    share_bit = (
+        f", and {share_txt} of lists that play an {html.escape(pie.get('set') or 'OP17')} card"
+        if share_txt
+        else ""
+    )
+    follow = ""
+    if second and third:
+        follow = (
+            f" {html.escape(second['name'])} ({second.get('home_lists', 0)}) and "
+            f"{html.escape(third['name'])} ({third.get('home_lists', 0)}) are the next names in that window."
+        )
+    hole_bit = ""
+    if hole.get("name") and hole.get("lists"):
+        hole_bit = (
+            f" {html.escape(hole['name'])} has the best first-place rate in the same slice: "
+            f"{hole.get('wins', 0)} firsts from {hole.get('lists')} placed lists "
+            f"({hole.get('win_pct', 0):.1f}%). That is a first-place rate, not a game win rate."
+        )
+    return f"""        <section class="card home-panel home-notes" id="meta-notes">
+          <p class="home-leaders-kicker">Original notes</p>
+          <div class="section-title">
+            <h3>This week in the meta</h3>
+            <a href="/guides/weekly-meta.html">Full write-up →</a>
+          </div>
+          <p class="home-notes-lede">{top_name} shows up on {top_n} of the newest {window} hosted lists{share_bit}.{follow}{hole_bit}</p>
+          <div class="home-notes-grid">
+            <a class="home-note" href="/guides/weekly-meta.html">
+              <span class="kicker">Weekly meta</span>
+              <strong>What the hosted lists are actually playing</strong>
+              <span>A short read on the tier list, the share chart, and which names are filling recent events.</span>
+            </a>
+            <a class="home-note" href="/guides/matchups.html">
+              <span class="kicker">Matchup notes</span>
+              <strong>How the top leaders attack each other</strong>
+              <span>Printed leader text, plus the Mihawk pairing counts already on this site. No copied tier graphic.</span>
+            </a>
+          </div>
+        </section>
+"""
+
+
 def render_home_body(data: dict | None = None) -> str:
     data = data or build_home_data()
     leaders = data["leaders"]
@@ -402,6 +466,12 @@ def render_home_body(data: dict | None = None) -> str:
     cards = home_meta.leader_cards_html(leaders)
     pie_block = home_meta.pie_html(pie)
     featured_block = home_meta.featured_html(data.get("featured") or [])
+    notes_block = home_notes_html(data)
+    robin = gen.card_image_url("OP09-062")
+    rocks = gen.card_image_url("OP17-039")
+    sabo = gen.card_image_url("OP13-004")
+    rg = gen.card_image_url("OP13-001")
+    black = gen.card_image_url("OP17-079")
     recent = data["recent_home"]
     visible = home_meta.HOME_RECENT_VISIBLE
     extra_n = max(0, len(recent) - visible)
@@ -429,7 +499,7 @@ def render_home_body(data: dict | None = None) -> str:
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
           <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
-            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin leader card" width="300" height="419" />
+            <img src="{robin}" alt="Nico Robin leader card" width="300" height="419" />
             <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
           </a>
           <div class="home-splash-nav">
@@ -450,11 +520,11 @@ def render_home_body(data: dict | None = None) -> str:
           var root=document.getElementById("home-splash");
           if(!root) return;
           var faces=[
-            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp"}},
-            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp"}},
-            {{name:"Sabo",href:"/decklists/sabo.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp"}},
-            {{name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp"}},
-            {{name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp"}}
+            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"{robin}"}},
+            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"{rocks}"}},
+            {{name:"Sabo",href:"/decklists/sabo.html",img:"{sabo}"}},
+            {{name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"{rg}"}},
+            {{name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"{black}"}}
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];
@@ -554,6 +624,7 @@ def render_home_body(data: dict | None = None) -> str:
         </nav>
 
 {featured_block}
+{notes_block}
 {pie_block}
         <section class="home-leaders-flow" id="leaders">
           <div class="home-leaders-intro">
@@ -576,7 +647,7 @@ def render_home_body(data: dict | None = None) -> str:
             <h3>Recent lists</h3>
             <div class="muted">{count_label}</div>
           </div>
-          <p class="muted home-recent-lede">Newest first. Show more on this page, or open the full recent list.</p>
+          <p class="muted home-recent-lede">Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
           <div class="recent-cols" aria-hidden="true">
             <span></span>
             <span>List</span>
@@ -654,6 +725,13 @@ def patch_home() -> None:
             featured_nav,
         )
     text = patch_nav_and_assets(text)
+    text = re.sub(
+        r"[ \t]*<nav aria-label=\"Primary\">.*?</nav>",
+        home_meta.seo.primary_nav_html(home=True).strip("\n"),
+        text,
+        count=1,
+        flags=re.S,
+    )
     text = home_meta.patch_home_jsonld(text, data["leaders"])
     if 'class="wrap wrap-home"' not in text:
         text = text.replace('<div class="wrap">', '<div class="wrap wrap-home">', 1)

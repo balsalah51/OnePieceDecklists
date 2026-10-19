@@ -6,6 +6,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "op18-spoilers.html"
+
+
+def _primary_nav(current: str) -> str:
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts" / "seo_common.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.primary_nav_html(current=current)
 IMG = "https://cards.oplaytcg.com/OP18/en/{id}.webp"
 
 # Public reveals as of 16 October 2026. English text follows spoiler
@@ -791,20 +800,7 @@ def render() -> str:
         <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
-      <nav aria-label="Primary">
-        <a href="/tier-list.html">Tier List</a>
-        <a href="/#recent">Recent lists</a>
-        <a href="/decklists/op17.html">Leaders</a>
-        <a href="/format.html">Format</a>
-        <a href="/eb05-lists.html">EB05 lists</a>
-        <a href="/eb05-spoilers.html">EB05</a>
-        <a href="/op18-spoilers.html" aria-current="page">OP18</a>
-        <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-        <a href="/guides/">Guides</a>
-        <a href="/shop/">Shop</a>
-        <a href="/search.html">Search</a>
-        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
-      </nav>
+{_primary_nav("op18")}
     </header>
     <main class="single">
       <div class="card hero">

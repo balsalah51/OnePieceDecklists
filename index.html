@@ -9,7 +9,7 @@
     <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-<link rel="stylesheet" href="/css/site.css?v=home-pro23" />
+<link rel="stylesheet" href="/css/site.css?v=home-pro24" />
   <link rel="canonical" href="https://onepiecedecklists.com/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -54,20 +54,37 @@
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
       <nav aria-label="Primary">
-        <a href="/tier-list.html">Tier List</a>
-        <a href="/extra-grand-battle.html">Extra Grand Battle</a>
-        <a href="#featured">Top cuts</a>
-        <a href="#recent">Recent lists</a>
-        <a href="#leaders">Leaders</a>
-        <a href="/format.html">Format</a>
-        <a href="/eb05-lists.html">EB05 lists</a>
-        <a href="/eb05-spoilers.html">EB05</a>
-        <a href="/op18-spoilers.html">OP18</a>
-        <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-        <a href="/guides/">Guides</a>
-        <a href="/shop/">Shop</a>
-        <a href="/search.html">Search</a>
-        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+        <details class="nav-group">
+          <summary>Meta</summary>
+          <div class="nav-menu">
+            <a href="/tier-list.html">Tier List</a>
+            <a href="/extra-grand-battle.html">Extra Grand Battle</a>
+            <a href="#featured">Top cuts</a>
+            <a href="#recent">Recent lists</a>
+            <a href="#leaders">Leaders</a>
+            <a href="/guides/weekly-meta.html">Weekly meta</a>
+            <a href="/guides/matchups.html">Matchups</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Sets</summary>
+          <div class="nav-menu">
+            <a href="/eb05-lists.html">EB05 lists</a>
+            <a href="/eb05-spoilers.html">EB05 spoilers</a>
+            <a href="/op18-spoilers.html">OP18 spoilers</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Resources</summary>
+          <div class="nav-menu">
+            <a href="/format.html">Format</a>
+            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
+            <a href="/guides/">Guides</a>
+            <a href="/shop/">Shop</a>
+            <a href="/search.html">Search</a>
+            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+          </div>
+        </details>
       </nav>
     </header>
 
@@ -86,7 +103,7 @@
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
           <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
-            <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin leader card" width="300" height="419" />
+            <img src="/img/cards/OP09/OP09-062.webp" alt="Nico Robin leader card" width="300" height="419" />
             <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
           </a>
           <div class="home-splash-nav">
@@ -107,11 +124,11 @@
           var root=document.getElementById("home-splash");
           if(!root) return;
           var faces=[
-            {name:"Nico Robin",href:"/decklists/nico-robin.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp"},
-            {name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp"},
-            {name:"Sabo",href:"/decklists/sabo.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp"},
-            {name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp"},
-            {name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp"}
+            {name:"Nico Robin",href:"/decklists/nico-robin.html",img:"/img/cards/OP09/OP09-062.webp"},
+            {name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"/img/cards/OP17/OP17-039.webp"},
+            {name:"Sabo",href:"/decklists/sabo.html",img:"/img/cards/OP13/OP13-004.webp"},
+            {name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"/img/cards/OP13/OP13-001.webp"},
+            {name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"/img/cards/OP17/OP17-079.webp"}
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];
@@ -216,71 +233,92 @@
             <h3>Featured results</h3>
             <a href="/recent.html">All recent →</a>
           </div>
-          <p class="muted home-recent-lede">First through fourth from the newest hosted events. One list per leader when we can.</p>
+          <p class="muted home-recent-lede">First through fourth from hosted events. Regionals, championships, and finals sit ahead of online cups. One list per leader when we can.</p>
           <div class="featured-grid">
-            <a class="featured-card color-yellow" href="/decklists/op05-enel/1st-tenzy-tournoi-test-0.html">
+            <a class="featured-card color-green is-major" href="/decklists/mihawk/optcggg-1st-interistasbarazzino-organized-play-events-london-regionals.html">
               <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP14/OP14-020.webp" alt="Mihawk leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
-                <div class="who">Tenzy - OP05 Enel</div>
-                <div class="muted">Tournoi Test #0 · 2026-10-16</div>
+                <div class="who">INTERISTASBARAZZINO - Organized Play Events&#x27; London Regionals</div>
+                <div class="muted"><span class="event-rank event-rank-major">Regional</span> Organized Play Events&#x27; London Regional · 2026-10-04</div>
               </div>
             </a>
-            <a class="featured-card color-purple-yellow" href="/decklists/charlotte-pudding/1st-lajofa-versus-cup.html">
-              <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-058_EN.webp" alt="Charlotte Pudding leader card" width="72" height="100" loading="lazy" decoding="async" />
+            <a class="featured-card color-purple is-major" href="/decklists/enel/optcggg-2nd-xixo-organized-play-events-london-regionals.html">
+              <span class="featured-place">2nd</span>
+              <img src="/img/cards/OP15/OP15-058.webp" alt="Enel leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
-                <div class="who">Lajofa - Charlotte Pudding</div>
-                <div class="muted">Versus Cup · 2026-10-15</div>
+                <div class="who">Xixo - Organized Play Events&#x27; London Regionals</div>
+                <div class="muted"><span class="event-rank event-rank-major">Regional</span> Organized Play Events&#x27; London Regional · 2026-10-04</div>
               </div>
             </a>
-            <a class="featured-card color-red-green" href="/decklists/luffy-ace/1st-kiwitt-op17-5-win-a-box-rumble-league-13.html">
-              <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace leader card" width="72" height="100" loading="lazy" decoding="async" />
+            <a class="featured-card color-blue is-major" href="/decklists/op17/rocks-d-xebec/optcggg-3rd-mirco-morscio-organized-play-events-london-regionals.html">
+              <span class="featured-place">3rd</span>
+              <img src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
-                <div class="who">Kiwitt - Luffy &amp; Ace</div>
-                <div class="muted">[OP17.5] Win a box | Rumble league #13 · 2026-10-15</div>
+                <div class="who">Mirco Morscio - Organized Play Events&#x27; London Regionals</div>
+                <div class="muted"><span class="event-rank event-rank-major">Regional</span> Organized Play Events&#x27; London Regional · 2026-10-04</div>
               </div>
             </a>
             <a class="featured-card color-purple" href="/decklists/op17/kaido/1st-pio-cattoni-bokogod-liga-phoenix-2026-one-piece-mana-40.html">
               <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP17/OP17-058.webp" alt="Kaido leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
                 <div class="who">Pio Cattoni [Bokogod] - Kaido</div>
-                <div class="muted">Liga Phoenix 2026 -  ONE PIECE - MANA 40° · 2026-10-13</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 40 · 2026-10-13</div>
               </div>
             </a>
-            <a class="featured-card color-red-green" href="/decklists/rg-luffy/1st-snorlax1cynda-op17-5-chinoizecup-121-monday.html">
-              <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy leader card" width="72" height="100" loading="lazy" decoding="async" />
+            <a class="featured-card color-red-blue" href="/decklists/op13-ace/2nd-tiago-klimavicius-liga-phoenix-2026-one-piece-mana-40.html">
+              <span class="featured-place">2nd</span>
+              <img src="/img/cards/OP13/OP13-002.webp" alt="OP13 Ace leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
-                <div class="who">snorlax1cynda - RG Luffy</div>
-                <div class="muted">[OP17.5] ChinoizeCup #121 Monday · 2026-10-12</div>
+                <div class="who">Tiago Klimavicius - OP13 Ace</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 40 · 2026-10-13</div>
               </div>
             </a>
-            <a class="featured-card color-green" href="/decklists/mihawk/optcggg-1st-it-flame-flame-fruit-coliseum-jpn-block-c.html">
-              <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="Mihawk leader card" width="72" height="100" loading="lazy" decoding="async" />
+            <a class="featured-card color-yellow" href="/decklists/op05-enel/4th-gonzalo-alonso-liga-phoenix-2026-one-piece-mana-40.html">
+              <span class="featured-place">4th</span>
+              <img src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
-                <div class="who">Itō - Flame Flame Fruit Coliseum JPN Block C</div>
-                <div class="muted">Public OPTCG.GG list · Flame Flame Fruit Coliseum JPN Block C · 2026-10-11</div>
+                <div class="who">Gonzalo Alonso - OP05 Enel</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 40 · 2026-10-13</div>
               </div>
             </a>
-            <a class="featured-card color-purple-yellow" href="/decklists/nico-robin/optcggg-1st-hiromaruchi-flame-flame-fruit-coliseum-jpn-block-a.html">
-              <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin leader card" width="72" height="100" loading="lazy" decoding="async" />
+            <a class="featured-card color-black" href="/decklists/imu/2nd-facundo-gabarrot-liga-phoenix-2026-one-piece-mana-39.html">
+              <span class="featured-place">2nd</span>
+              <img src="/img/cards/OP13/OP13-079.webp" alt="Imu leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
-                <div class="who">Hiromaruchi - Flame Flame Fruit Coliseum JPN Block A</div>
-                <div class="muted">Public OPTCG.GG list · Flame Flame Fruit Coliseum JPN Block A · 2026-10-11</div>
+                <div class="who">Facundo Gabarrot - Imu</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 39 · 2026-10-05</div>
               </div>
             </a>
-            <a class="featured-card color-blue" href="/decklists/op17/rocks-d-xebec/1st-ryurex-versus-cup.html">
-              <span class="featured-place">1st</span>
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec leader card" width="72" height="100" loading="lazy" decoding="async" />
+            <a class="featured-card color-red-green" href="/decklists/luffy-ace/3rd-jose-laaz-liga-phoenix-2026-one-piece-mana-39.html">
+              <span class="featured-place">3rd</span>
+              <img src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
-                <div class="who">RyuRex - Rocks D. Xebec</div>
-                <div class="muted">Versus Cup · 2026-10-08</div>
+                <div class="who">Jose Laaz - Luffy &amp; Ace</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 39 · 2026-10-05</div>
               </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="card home-panel home-notes" id="meta-notes">
+          <p class="home-leaders-kicker">Original notes</p>
+          <div class="section-title">
+            <h3>This week in the meta</h3>
+            <a href="/guides/weekly-meta.html">Full write-up →</a>
+          </div>
+          <p class="home-notes-lede">Rocks D. Xebec shows up on 40 of the newest 200 hosted lists, and 19.0% of lists that play an OP17 card. Luffy &amp; Ace (33) and Monkey D. Luffy (23) are the next names in that window. Luffy &amp; Ace has the best first-place rate in the same slice: 4 firsts from 35 placed lists (11.4%). That is a first-place rate, not a game win rate.</p>
+          <div class="home-notes-grid">
+            <a class="home-note" href="/guides/weekly-meta.html">
+              <span class="kicker">Weekly meta</span>
+              <strong>What the hosted lists are actually playing</strong>
+              <span>A short read on the tier list, the share chart, and which names are filling recent events.</span>
+            </a>
+            <a class="home-note" href="/guides/matchups.html">
+              <span class="kicker">Matchup notes</span>
+              <strong>How the top leaders attack each other</strong>
+              <span>Printed leader text, plus the Mihawk pairing counts already on this site. No copied tier graphic.</span>
             </a>
           </div>
         </section>
@@ -293,33 +331,33 @@
           </div>
           <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one OP17 card. The hole is the leader converting best among these lists. Names sit on every slice.</p>
           <div class="meta-pie-board">
-            <div class="meta-pie-disk" style="background:conic-gradient(#1565c0 0.00% 18.19%, #b71c1c 18.75% 32.67%, #212121 33.23% 42.90%, #ce6565 43.46% 49.15%, #6a1b9a 49.71% 55.40%, #c9a227 55.96% 60.80%, #9a64ba 61.36% 66.20%, #6096d4 66.76% 71.31%, #2e7d32 71.87% 75.29%, #7e5299 75.85% 78.70%, #8a8580 79.26% 100.00%)">
-              <a class="meta-pie-hole" href="/decklists/luffy-ace.html" aria-label="Luffy &amp; Ace"><img class="meta-pie-hole-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="" width="220" height="220" /></a>
-              <a class="meta-pie-on" href="/decklists/op17/rocks-d-xebec.html" style="left:73.02%;top:14.87%">Rocks</a>
-              <a class="meta-pie-on" href="/decklists/luffy-ace.html" style="left:91.96%;top:51.87%">L&amp;Ace</a>
-              <a class="meta-pie-on" href="/decklists/op17/monkey-d-luffy.html" style="left:78.62%;top:80.74%">Luffy</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/sabo.html" style="left:60.46%;top:94.28%">Sabo</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/op17/kaido.html" style="left:44.48%;top:84.06%">Kaido</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/op05-enel.html" style="left:27.13%;top:89.34%">OP05 Enel</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/charlotte-pudding.html" style="left:23.73%;top:72.36%">Charlotte</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/boa-hancock.html" style="left:7.66%;top:66.66%">Boa</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/mihawk.html" style="left:15.64%;top:53.08%">Mihawk</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/nico-robin.html" style="left:4.96%;top:43.52%">Robin</a>
-              <a class="meta-pie-on" href="/decklists/op17.html" style="left:24.23%;top:16.83%">Other</a>
+            <div class="meta-pie-disk" style="background:conic-gradient(#1565c0 0.00% 18.75%, #b71c1c 19.31% 33.24%, #212121 33.80% 43.47%, #ce6565 44.03% 49.72%, #6a1b9a 50.28% 55.97%, #9a64ba 56.53% 61.37%, #c9a227 61.93% 66.48%, #6096d4 67.04% 71.59%, #2e7d32 72.16% 75.57%, #7e5299 76.13% 78.98%, #8a8580 79.54% 100.00%)">
+              <a class="meta-pie-hole" href="/decklists/luffy-ace.html" aria-label="Luffy &amp; Ace"><img class="meta-pie-hole-face" src="/img/cards/ST30/ST30-001.webp" alt="" width="220" height="220" /></a>
+              <a class="meta-pie-on" href="/decklists/op17/rocks-d-xebec.html" style="left:73.64%;top:15.29%">Rocks</a>
+              <a class="meta-pie-on" href="/decklists/luffy-ace.html" style="left:91.86%;top:53.37%">L&amp;Ace</a>
+              <a class="meta-pie-on" href="/decklists/op17/monkey-d-luffy.html" style="left:77.50%;top:81.74%">Luffy</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/sabo.html" style="left:58.88%;top:94.63%">Sabo</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/op17/kaido.html" style="left:43.27%;top:83.84%">Kaido</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/charlotte-pudding.html" style="left:25.74%;top:88.50%">Charlotte</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/op05-enel.html" style="left:23.14%;top:71.65%">OP05 Enel</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/boa-hancock.html" style="left:7.37%;top:65.90%">Boa</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/mihawk.html" style="left:15.59%;top:52.46%">Mihawk</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/rosinante.html" style="left:5.09%;top:42.72%">Rosinante</a>
+              <a class="meta-pie-on" href="/decklists/op17.html" style="left:24.53%;top:16.60%">Other</a>
             </div>
             <ul class="meta-pie-legend" aria-label="OP17 list share">
             <li style="--slice:#1565c0">
               <span class="meta-pie-swatch" style="background:#1565c0"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP17/OP17-039.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/op17/rocks-d-xebec.html">Rocks D. Xebec</a>
                 <span class="meta-pie-legend-tier">S · 62</span>
               </span>
-              <span class="meta-pie-legend-pct">18%</span>
+              <span class="meta-pie-legend-pct">19%</span>
             </li>
             <li style="--slice:#b71c1c">
               <span class="meta-pie-swatch" style="background:#b71c1c"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/ST30/ST30-001.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/luffy-ace.html">Luffy &amp; Ace</a>
                 <span class="meta-pie-legend-tier">B · 13</span>
@@ -328,7 +366,7 @@
             </li>
             <li style="--slice:#212121">
               <span class="meta-pie-swatch" style="background:#212121"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP17/OP17-079.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/op17/monkey-d-luffy.html">Monkey D. Luffy</a>
                 <span class="meta-pie-legend-tier">A · 30</span>
@@ -337,7 +375,7 @@
             </li>
             <li style="--slice:#ce6565">
               <span class="meta-pie-swatch" style="background:#ce6565"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP13/OP13-004.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/sabo.html">Sabo</a>
                 <span class="meta-pie-legend-tier">S · 35</span>
@@ -346,34 +384,34 @@
             </li>
             <li style="--slice:#6a1b9a">
               <span class="meta-pie-swatch" style="background:#6a1b9a"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP17/OP17-058.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/op17/kaido.html">Kaido</a>
                 <span class="meta-pie-legend-tier">A · 27</span>
               </span>
               <span class="meta-pie-legend-pct">6.2%</span>
             </li>
-            <li style="--slice:#c9a227">
-              <span class="meta-pie-swatch" style="background:#c9a227"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/op05-enel.html">OP05 Enel</a>
-                <span class="meta-pie-legend-tier">B · 9</span>
-              </span>
-              <span class="meta-pie-legend-pct">5.4%</span>
-            </li>
             <li style="--slice:#9a64ba">
               <span class="meta-pie-swatch" style="background:#9a64ba"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-058_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP08/OP08-058.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/charlotte-pudding.html">Charlotte Pudding</a>
                 <span class="meta-pie-legend-tier">C · 7</span>
               </span>
               <span class="meta-pie-legend-pct">5.4%</span>
             </li>
+            <li style="--slice:#c9a227">
+              <span class="meta-pie-swatch" style="background:#c9a227"></span>
+              <img class="meta-pie-face" src="/img/cards/OP05/OP05-098.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/op05-enel.html">OP05 Enel</a>
+                <span class="meta-pie-legend-tier">B · 9</span>
+              </span>
+              <span class="meta-pie-legend-pct">5.1%</span>
+            </li>
             <li style="--slice:#6096d4">
               <span class="meta-pie-swatch" style="background:#6096d4"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP14/OP14-041.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/boa-hancock.html">Boa Hancock</a>
                 <span class="meta-pie-legend-tier">A · 17</span>
@@ -382,7 +420,7 @@
             </li>
             <li style="--slice:#2e7d32">
               <span class="meta-pie-swatch" style="background:#2e7d32"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-020_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP14/OP14-020.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/mihawk.html">Mihawk</a>
                 <span class="meta-pie-legend-tier">S · 60</span>
@@ -391,10 +429,10 @@
             </li>
             <li style="--slice:#7e5299">
               <span class="meta-pie-swatch" style="background:#7e5299"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="" width="48" height="48" />
+              <img class="meta-pie-face" src="/img/cards/OP12/OP12-061.webp" alt="" width="48" height="48" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/nico-robin.html">Nico Robin</a>
-                <span class="meta-pie-legend-tier">A · 18</span>
+                <a href="/decklists/rosinante.html">Rosinante</a>
+                <span class="meta-pie-legend-tier">B · 9</span>
               </span>
               <span class="meta-pie-legend-pct">3.4%</span>
             </li>
@@ -422,43 +460,43 @@
           <div class="card home-panel home-leaders-grid">
             <div class="leader-cards home-cards" aria-label="Popular leader card pictures">
             <a class="leader-card-link" href="/decklists/op17/rocks-d-xebec.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Rocks D. Xebec</div>
             </a>
             <a class="leader-card-link" href="/decklists/luffy-ace.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Luffy &amp; Ace</div>
             </a>
             <a class="leader-card-link" href="/decklists/op17/monkey-d-luffy.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Monkey D. Luffy</div>
             </a>
             <a class="leader-card-link" href="/decklists/op05-enel.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">OP05 Enel</div>
             </a>
             <a class="leader-card-link" href="/decklists/charlotte-pudding.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-058_EN.webp" alt="Charlotte Pudding leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP08/OP08-058.webp" alt="Charlotte Pudding leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Charlotte Pudding</div>
             </a>
             <a class="leader-card-link" href="/decklists/rosinante.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-061_EN.webp" alt="Rosinante leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP12/OP12-061.webp" alt="Rosinante leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Rosinante</div>
             </a>
             <a class="leader-card-link" href="/decklists/op17/kaido.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp" alt="Kaido leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP17/OP17-058.webp" alt="Kaido leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Kaido</div>
             </a>
             <a class="leader-card-link" href="/decklists/sabo.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="Sabo leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP13/OP13-004.webp" alt="Sabo leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Sabo</div>
             </a>
             <a class="leader-card-link" href="/decklists/rg-luffy.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">RG Luffy</div>
             </a>
             <a class="leader-card-link" href="/decklists/boa-hancock.html">
-              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock leader card" width="300" height="419" loading="lazy" decoding="async" />
               <div class="caption">Boa Hancock</div>
             </a>
             </div>
@@ -471,7 +509,7 @@
             <h3>Recent lists</h3>
             <div class="muted">25 of 50</div>
           </div>
-          <p class="muted home-recent-lede">Newest first. Show more on this page, or open the full recent list.</p>
+          <p class="muted home-recent-lede">Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
           <div class="recent-cols" aria-hidden="true">
             <span></span>
             <span>List</span>
@@ -480,41 +518,8 @@
           </div>
           <ul class="recent-list" aria-label="Recent decklists">
             <li>
-              <a class="recent-item color-yellow" href="/decklists/op05-enel/1st-tenzy-tournoi-test-0.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" />
-                <div class="recent-copy">
-                  <div class="who">Tenzy - OP05 Enel</div>
-                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">Tournoi Test #0</span></div>
-                </div>
-                <div class="recent-event">Tournoi Test #0</div>
-                <div class="when">2026-10-16</div>
-              </a>
-            </li>
-            <li>
-              <a class="recent-item color-purple-yellow" href="/decklists/nico-robin/2nd-tharchen-tournoi-test-0.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp" alt="Nico Robin" />
-                <div class="recent-copy">
-                  <div class="who">Tharchen - Nico Robin</div>
-                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">Tournoi Test #0</span></div>
-                </div>
-                <div class="recent-event">Tournoi Test #0</div>
-                <div class="when">2026-10-16</div>
-              </a>
-            </li>
-            <li>
-              <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/3rd-player01-tournoi-test-0.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" />
-                <div class="recent-copy">
-                  <div class="who">Player01 - Rocks D. Xebec</div>
-                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">Tournoi Test #0</span></div>
-                </div>
-                <div class="recent-event">Tournoi Test #0</div>
-                <div class="when">2026-10-16</div>
-              </a>
-            </li>
-            <li>
               <a class="recent-item color-green-yellow" href="/decklists/eb05-nico-robin/opdeck-nico-robin-eb05.html">
-                <img class="recent-leader" src="https://cards.oplaytcg.com/EB05/en/EB05-010.webp" alt="Nico Robin" />
+                <img class="recent-leader" src="/img/cards/EB05/EB05-010.webp" alt="Nico Robin" />
                 <div class="recent-copy">
                   <div class="who">Nico Robin EB05 Deck Guide</div>
                   <div class="muted meta"><span class="recent-meta-event">OPDeckGuide · public EB05 pre-release list</span></div>
@@ -525,7 +530,7 @@
             </li>
             <li>
               <a class="recent-item color-purple-yellow" href="/decklists/charlotte-pudding/1st-lajofa-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-058_EN.webp" alt="Charlotte Pudding" />
+                <img class="recent-leader" src="/img/cards/OP08/OP08-058.webp" alt="Charlotte Pudding" />
                 <div class="recent-copy">
                   <div class="who">Lajofa - Charlotte Pudding</div>
                   <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -536,18 +541,18 @@
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/1st-kiwitt-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" />
                 <div class="recent-copy">
                   <div class="who">Kiwitt - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-black" href="/decklists/imu/2nd-smile-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-079_EN.webp" alt="Imu" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP13/OP13-079.webp" alt="Imu" />
                 <div class="recent-copy">
                   <div class="who">Smile - Imu</div>
                   <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -558,18 +563,18 @@
             </li>
             <li>
               <a class="recent-item color-black-yellow" href="/decklists/blackbeard/2nd-iacca7-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-080_EN.webp" alt="Blackbeard" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP16/OP16-080.webp" alt="Blackbeard" />
                 <div class="recent-copy">
                   <div class="who">iacca7 - Blackbeard</div>
-                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/3rd-dearcan-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" />
                 <div class="recent-copy">
                   <div class="who">Dearcan - Rocks D. Xebec</div>
                   <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -580,18 +585,18 @@
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/3rd-drcommodore-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">drcommodore - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/4th-kiriq-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Kiriq - Rocks D. Xebec</div>
                   <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -602,18 +607,18 @@
             </li>
             <li>
               <a class="recent-item color-black" href="/decklists/op17/monkey-d-luffy/4th-vairozzo-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Vairozzo - Monkey D. Luffy</div>
-                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-black-yellow" href="/decklists/blackbeard/5th-jdaigo-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-080_EN.webp" alt="Blackbeard" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP16/OP16-080.webp" alt="Blackbeard" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">JDaigo - Blackbeard</div>
                   <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -624,29 +629,29 @@
             </li>
             <li>
               <a class="recent-item color-yellow" href="/decklists/op05-enel/5th-zuramp17-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Zuramp17 - OP05 Enel</div>
-                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-yellow" href="/decklists/op05-enel/6th-alexdeleeuw-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">AlexDeLeeuw - OP05 Enel</div>
-                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/6th-lordrafa-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">lordRafa - Luffy &amp; Ace</div>
                   <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -657,7 +662,7 @@
             </li>
             <li>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/7th-bluemask-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">bluemask - Rocks D. Xebec</div>
                   <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -668,29 +673,29 @@
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/7th-neuron95-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Neuron95 - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-green" href="/decklists/op17/shanks/8th-davehunterhs-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-020_EN.webp" alt="Shanks" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-020.webp" alt="Shanks" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">DavehunterHS - Shanks</div>
-                  <div class="muted meta"><span class="recent-place">8th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">8th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/8th-cmdtcovo-versus-cup.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Cmdtcovo - Luffy &amp; Ace</div>
                   <div class="muted meta"><span class="recent-place">8th</span><span class="recent-meta-event">Versus Cup</span></div>
@@ -701,331 +706,364 @@
             </li>
             <li>
               <a class="recent-item color-red-black" href="/decklists/sabo/9th-xro799-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp" alt="Sabo" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP13/OP13-004.webp" alt="Sabo" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">xro799 - Sabo</div>
-                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/10th-kevinpaillex-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">KevinPaillex - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">10th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">10th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/11th-vins-spez-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Vins_spez - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">11th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">11th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-yellow" href="/decklists/op05-enel/12th-cdce-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">CDCe - OP05 Enel</div>
-                  <div class="muted meta"><span class="recent-place">12th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">12th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/13th-korvo-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Korvo - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">13th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">13th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
-            <li class="recent-more" hidden>
+            <li>
               <a class="recent-item color-blue-yellow" href="/decklists/boa-hancock/14th-celix91-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Celix91 - Boa Hancock</div>
-                  <div class="muted meta"><span class="recent-place">14th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">14th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
-            <li class="recent-more" hidden>
+            <li>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/15th-itzfalco-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">itzfalco - Rocks D. Xebec</div>
-                  <div class="muted meta"><span class="recent-place">15th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">15th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
-            <li class="recent-more" hidden>
+            <li>
               <a class="recent-item color-black" href="/decklists/op17/monkey-d-luffy/16th-frastrawhat-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">frastrawhat - Monkey D. Luffy</div>
-                  <div class="muted meta"><span class="recent-place">16th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">16th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-purple" href="/decklists/enel/17th-leobacca-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP15/OP15-058.webp" alt="Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">LeoBacca - Enel</div>
-                  <div class="muted meta"><span class="recent-place">17th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">17th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-green" href="/decklists/op17/shanks/18th-chiarastock-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-020_EN.webp" alt="Shanks" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-020.webp" alt="Shanks" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">ChiaraStock - Shanks</div>
-                  <div class="muted meta"><span class="recent-place">18th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">18th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-green" href="/decklists/zoro/19th-vimax19-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-020_EN.webp" alt="Roronoa Zoro" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP12/OP12-020.webp" alt="Roronoa Zoro" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">ViMax19 - Roronoa Zoro</div>
-                  <div class="muted meta"><span class="recent-place">19th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">19th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-purple-yellow" href="/decklists/rosinante/20th-nicogiri92-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-061_EN.webp" alt="Rosinante" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP12/OP12-061.webp" alt="Rosinante" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">nicogiri92 - Rosinante</div>
-                  <div class="muted meta"><span class="recent-place">20th</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">20th</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-purple" href="/decklists/enel/21st-nizzintheskyz-op17-5-win-a-box-rumble-league-13.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-058_EN.webp" alt="Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP15/OP15-058.webp" alt="Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Nizzintheskyz - Enel</div>
-                  <div class="muted meta"><span class="recent-place">21st</span><span class="recent-meta-event">[OP17.5] Win a box | Rumble league #13</span></div>
+                  <div class="muted meta"><span class="recent-place">21st</span><span class="recent-meta-event">Rumble League #13 · Win a Box</span></div>
                 </div>
-                <div class="recent-event">[OP17.5] Win a box | Rumble league #13</div>
+                <div class="recent-event">Rumble League #13 · Win a Box</div>
                 <div class="when">2026-10-15</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/1st-deviljho77-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Deviljho77 - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">1st</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-black-yellow" href="/decklists/blackbeard/2nd-kondoriano98-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-080_EN.webp" alt="Blackbeard" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP16/OP16-080.webp" alt="Blackbeard" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Kondoriano98 - Blackbeard</div>
-                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">2nd</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-red-green" href="/decklists/rg-luffy/3rd-ricmasterflash-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">ricmasterflash - RG Luffy</div>
-                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">3rd</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-black" href="/decklists/op17/monkey-d-luffy/4th-fuat-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">fuat - Monkey D. Luffy</div>
-                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">4th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/5th-solmyr-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Solmyr - Rocks D. Xebec</div>
-                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">5th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-red-green" href="/decklists/rg-luffy/6th-gefen-h-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Gefen H - RG Luffy</div>
-                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">6th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-red-green" href="/decklists/rg-luffy/7th-zockerdima-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp" alt="RG Luffy" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">zockerdima - RG Luffy</div>
-                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">7th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/8th-sebaba-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">sebaba - Rocks D. Xebec</div>
-                  <div class="muted meta"><span class="recent-place">8th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">8th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/9th-luzsnikov-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">luzsnikov - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">9th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-yellow" href="/decklists/op05-enel/10th-coasterjit-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">CoasterJit - OP05 Enel</div>
-                  <div class="muted meta"><span class="recent-place">10th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">10th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-blue-yellow" href="/decklists/boa-hancock/11th-volkiso-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-041_EN.webp" alt="Boa Hancock" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">volkiso - Boa Hancock</div>
-                  <div class="muted meta"><span class="recent-place">11th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">11th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/12th-pacio23-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Pacio23 - Rocks D. Xebec</div>
-                  <div class="muted meta"><span class="recent-place">12th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">12th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-black" href="/decklists/op17/monkey-d-luffy/13th-trocheesy-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">trocheesy - Monkey D. Luffy</div>
-                  <div class="muted meta"><span class="recent-place">13th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">13th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/14th-jrdkale-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST30/ST30-001_EN.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Jrdkale - Luffy &amp; Ace</div>
-                  <div class="muted meta"><span class="recent-place">14th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">14th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/15th-mi-co-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Mi_co - Rocks D. Xebec</div>
-                  <div class="muted meta"><span class="recent-place">15th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">15th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-yellow" href="/decklists/op05-enel/16th-halox-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">Halox - OP05 Enel</div>
-                  <div class="muted meta"><span class="recent-place">16th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">16th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
             <li class="recent-more" hidden>
               <a class="recent-item color-yellow" href="/decklists/op05-enel/17th-cdce-egb-chinoizecup-123-wednesday.html">
-                <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-098_EN.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
+                <img class="recent-leader" src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel" loading="lazy" decoding="async" />
                 <div class="recent-copy">
                   <div class="who">CDCe - OP05 Enel</div>
-                  <div class="muted meta"><span class="recent-place">17th</span><span class="recent-meta-event">[EGB] ChinoizeCup #123 Wednesday</span></div>
+                  <div class="muted meta"><span class="recent-place">17th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
                 </div>
-                <div class="recent-event">[EGB] ChinoizeCup #123 Wednesday</div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
+                <div class="when">2026-10-14</div>
+              </a>
+            </li>
+            <li class="recent-more" hidden>
+              <a class="recent-item color-blue-yellow" href="/decklists/boa-hancock/18th-franciscorp115-egb-chinoizecup-123-wednesday.html">
+                <img class="recent-leader" src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock" loading="lazy" decoding="async" />
+                <div class="recent-copy">
+                  <div class="who">Franciscorp115 - Boa Hancock</div>
+                  <div class="muted meta"><span class="recent-place">18th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
+                </div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
+                <div class="when">2026-10-14</div>
+              </a>
+            </li>
+            <li class="recent-more" hidden>
+              <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/19th-legandes-egb-chinoizecup-123-wednesday.html">
+                <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" />
+                <div class="recent-copy">
+                  <div class="who">Legandes - Rocks D. Xebec</div>
+                  <div class="muted meta"><span class="recent-place">19th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
+                </div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
+                <div class="when">2026-10-14</div>
+              </a>
+            </li>
+            <li class="recent-more" hidden>
+              <a class="recent-item color-red-green" href="/decklists/luffy-ace/20th-apxtristan-egb-chinoizecup-123-wednesday.html">
+                <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" />
+                <div class="recent-copy">
+                  <div class="who">apxtristan - Luffy &amp; Ace</div>
+                  <div class="muted meta"><span class="recent-place">20th</span><span class="recent-meta-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</span></div>
+                </div>
+                <div class="recent-event">Extra Grand Battle · ChinoizeCup #123 Wednesday</div>
                 <div class="when">2026-10-14</div>
               </a>
             </li>
@@ -1045,6 +1083,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <script src="/js/site.js?v=home-cards5"></script>
+  <script src="/js/site.js?v=nav-groups1"></script>
 </body>
 </html>

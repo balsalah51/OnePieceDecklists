@@ -8,7 +8,7 @@
   <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro19" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro24" />
   <link rel="canonical" href="https://onepiecedecklists.com/guides/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -52,25 +52,48 @@
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
       <nav aria-label="Primary">
-        <a href="/tier-list.html">Tier List</a>
-        <a href="/#recent">Recent lists</a>
-        <a href="/decklists/op17.html">Leaders</a>
-        <a href="/format.html">Format</a>
-        <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-        <a href="/guides/">Guides</a>
-        <a href="/shop/">Shop</a>
-        <a href="/search.html">Search</a>
-        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+        <details class="nav-group">
+          <summary>Meta</summary>
+          <div class="nav-menu">
+            <a href="/tier-list.html">Tier List</a>
+            <a href="/extra-grand-battle.html">Extra Grand Battle</a>
+            <a href="/recent.html">Recent lists</a>
+            <a href="/decklists/op17.html">Leaders</a>
+            <a href="/guides/weekly-meta.html">Weekly meta</a>
+            <a href="/guides/matchups.html">Matchups</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Sets</summary>
+          <div class="nav-menu">
+            <a href="/eb05-lists.html">EB05 lists</a>
+            <a href="/eb05-spoilers.html">EB05 spoilers</a>
+            <a href="/op18-spoilers.html">OP18 spoilers</a>
+          </div>
+        </details>
+        <details class="nav-group is-current">
+          <summary>Resources</summary>
+          <div class="nav-menu">
+            <a href="/format.html">Format</a>
+            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
+            <a href="/guides/" aria-current="page">Guides</a>
+            <a href="/shop/">Shop</a>
+            <a href="/search.html">Search</a>
+            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+          </div>
+        </details>
       </nav>
     </header>
     <main class="single">
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / Guides</div>
         <h2>One Piece TCG guides</h2>
-        <p>How the popular OP17 lists actually play, plus a color index if you just want to browse.</p>
+        <p>How the popular OP17 lists actually play, a weekly count of what the hosted lists are doing, and matchup notes that are not a copy of another metagame site.</p>
         <section style="margin-top:18px">
-          <div class="section-title"><h3>Strategy</h3><div class="muted">Curve, keeps, matchups</div></div>
+          <div class="section-title"><h3>Strategy</h3><div class="muted">Weekly notes, matchups, curve</div></div>
           <ul class="list">
+            <li><a class="item" href="/guides/weekly-meta.html"><div><div style="font-weight:700">Weekly meta</div><div class="muted" style="font-size:13px">What the newest hosted lists are playing</div></div><div class="link">Open →</div></a></li>
+            <li><a class="item" href="/guides/matchups.html"><div><div style="font-weight:700">Matchup notes</div><div class="muted" style="font-size:13px">How the top leaders attack each other</div></div><div class="link">Open →</div></a></li>
             <li><a class="item" href="/guides/nico-robin-strategy.html"><div><div style="font-weight:700">Nico Robin strategy</div><div class="muted" style="font-size:13px">Ramp into yellow Big Mom</div></div><div class="link">Open →</div></a></li>
             <li><a class="item" href="/guides/sabo-strategy.html"><div><div style="font-weight:700">Sabo strategy</div><div class="muted" style="font-size:13px">Elbaph Straw Hats plus Loki</div></div><div class="link">Open →</div></a></li>
             <li><a class="item" href="/guides/rocks-d-xebec-strategy.html"><div><div style="font-weight:700">Rocks D. Xebec strategy</div><div class="muted" style="font-size:13px">Blue Rocks Pirates curve</div></div><div class="link">Open →</div></a></li>
@@ -104,6 +127,6 @@
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/js/site.js?v=home-smooth"></script>
+  <script src="/js/site.js?v=nav-groups1"></script>
 </body>
 </html>
