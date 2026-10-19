@@ -16,8 +16,8 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "home-pro23"
-JS_VER = "home-cards5"
+CSS_VER = "home-pro24"
+JS_VER = "nav-groups1"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
 )
@@ -217,6 +217,11 @@ def og_image_for(rel: str, leaders: list[dict]) -> str:
         if rel == L["page"] or rel.startswith(L["dir"] + "/"):
             cid = L["id"]
             set_code = cid.split("-")[0]
+            local = ROOT / "img" / "cards" / set_code / f"{cid}.webp"
+            if local.exists():
+                return f"{SITE}/img/cards/{set_code}/{cid}.webp"
+            if set_code in {"EB05", "OP18"}:
+                return f"https://cards.oplaytcg.com/{set_code}/en/{cid}.webp"
             return f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{cid}_EN.webp"
     if rel.startswith("shop/"):
         return f"{SITE}/img/shop/sleeve-jet.jpg"
@@ -534,28 +539,58 @@ def apply_theme_chrome(text: str) -> str:
 
 
 def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
+    """Three menus so the bar stays Meta, Sets, and Resources."""
     recent = "#recent" if home else "/recent.html"
     leaders = "#leaders" if home else "/decklists/op17.html"
-    items = [
-        ("/tier-list.html", "Tier List", "tier"),
-        ("/extra-grand-battle.html", "Extra Grand Battle", "egb"),
-        (recent, "Recent lists", "recent"),
-        (leaders, "Leaders", "leaders"),
-        ("/format.html", "Format", "format"),
-        ("/eb05-lists.html", "EB05 lists", "eb05-lists"),
-        ("/eb05-spoilers.html", "EB05", "eb05"),
-        ("/op18-spoilers.html", "OP18", "op18"),
-        ("https://en.onepiece-cardgame.com/events/", "Events", "events"),
-        ("/guides/", "Guides", "guides"),
-        ("/shop/", "Shop", "shop"),
-        ("/search.html", "Search", "search"),
-        ("https://discord.gg/adZ2WUQ3D", "Discord", "discord"),
+    groups: list[tuple[str, str, list[tuple[str, str, str]]]] = [
+        (
+            "Meta",
+            "meta",
+            [
+                ("/tier-list.html", "Tier List", "tier"),
+                ("/extra-grand-battle.html", "Extra Grand Battle", "egb"),
+                *((("#featured", "Top cuts", "featured"),) if home else ()),
+                (recent, "Recent lists", "recent"),
+                (leaders, "Leaders", "leaders"),
+                ("/guides/weekly-meta.html", "Weekly meta", "weekly"),
+                ("/guides/matchups.html", "Matchups", "matchups"),
+            ],
+        ),
+        (
+            "Sets",
+            "sets",
+            [
+                ("/eb05-lists.html", "EB05 lists", "eb05-lists"),
+                ("/eb05-spoilers.html", "EB05 spoilers", "eb05"),
+                ("/op18-spoilers.html", "OP18 spoilers", "op18"),
+            ],
+        ),
+        (
+            "Resources",
+            "resources",
+            [
+                ("/format.html", "Format", "format"),
+                ("https://en.onepiece-cardgame.com/events/", "Events", "events"),
+                ("/guides/", "Guides", "guides"),
+                ("/shop/", "Shop", "shop"),
+                ("/search.html", "Search", "search"),
+                ("https://discord.gg/adZ2WUQ3D", "Discord", "discord"),
+            ],
+        ),
     ]
     lines = ['      <nav aria-label="Primary">']
-    for href, label, key in items:
-        cur = ' aria-current="page"' if key == current else ""
-        extra = ' target="_blank" rel="noopener"' if href.startswith("http") else ""
-        lines.append(f'        <a href="{href}"{cur}{extra}>{label}</a>')
+    for label, _key, items in groups:
+        current_group = any(key == current for _href, _label, key in items)
+        group_class = "nav-group is-current" if current_group else "nav-group"
+        lines.append(f'        <details class="{group_class}">')
+        lines.append(f"          <summary>{label}</summary>")
+        lines.append('          <div class="nav-menu">')
+        for href, item_label, key in items:
+            cur = ' aria-current="page"' if key == current else ""
+            extra = ' target="_blank" rel="noopener"' if href.startswith("http") else ""
+            lines.append(f'            <a href="{href}"{cur}{extra}>{item_label}</a>')
+        lines.append("          </div>")
+        lines.append("        </details>")
     lines.append("      </nav>")
     return "\n".join(lines)
 

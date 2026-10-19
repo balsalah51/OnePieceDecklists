@@ -10,7 +10,7 @@
   <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro18" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro24" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -29,15 +29,36 @@
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
       <nav aria-label="Primary">
-        <a href="/tier-list.html">Tier List</a>
-        <a href="/#recent">Recent lists</a>
-        <a href="/decklists/op17.html" aria-current="page">Leaders</a>
-        <a href="/format.html">Format</a>
-        <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-        <a href="/guides/">Guides</a>
-        <a href="/shop/">Shop</a>
-        <a href="/search.html">Search</a>
-        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+        <details class="nav-group">
+          <summary>Meta</summary>
+          <div class="nav-menu">
+            <a href="/tier-list.html">Tier List</a>
+            <a href="/extra-grand-battle.html">Extra Grand Battle</a>
+            <a href="/recent.html">Recent lists</a>
+            <a href="/decklists/op17.html">Leaders</a>
+            <a href="/guides/weekly-meta.html">Weekly meta</a>
+            <a href="/guides/matchups.html">Matchups</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Sets</summary>
+          <div class="nav-menu">
+            <a href="/eb05-lists.html">EB05 lists</a>
+            <a href="/eb05-spoilers.html">EB05 spoilers</a>
+            <a href="/op18-spoilers.html">OP18 spoilers</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Resources</summary>
+          <div class="nav-menu">
+            <a href="/format.html">Format</a>
+            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
+            <a href="/guides/">Guides</a>
+            <a href="/shop/">Shop</a>
+            <a href="/search.html">Search</a>
+            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+          </div>
+        </details>
       </nav>
     </header>
 
@@ -53,7 +74,7 @@
           </div>
           <div class="card-grid">
         <article class="card-entry">
-          <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy OP17-079" loading="lazy" />
+          <img src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy OP17-079" loading="lazy" />
           <div>
             <div class="id"><span class="qty">1x</span>OP17-079 · Leader</div>
             <h4>Monkey D. Luffy</h4>
@@ -96,7 +117,7 @@
               <span class="qty">1x</span>
               <span class="card-title">Monkey D. Luffy</span>
               <span class="muted card-id">OP17-079</span>
-              <img class="card-pop" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp" alt="Monkey D. Luffy" />
+              <img class="card-pop" src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy" />
             </li>
             </ul>
           </div>
@@ -483,7 +504,7 @@
       });
     })();
   </script>
-  <script src="/js/site.js?v=home-smooth"></script>
+  <script src="/js/site.js?v=nav-groups1"></script>
   <script src="/js/tcgplayer-config.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-ids.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>

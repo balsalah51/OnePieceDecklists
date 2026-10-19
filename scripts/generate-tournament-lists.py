@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+import importlib.util
 import json
 import re
 import time
@@ -1268,21 +1269,7 @@ def page_chrome(
         <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
-      <nav aria-label="Primary">
-        <a href="/tier-list.html">Tier List</a>
-        <a href="/extra-grand-battle.html">Extra Grand Battle</a>
-        <a href="/#recent">Recent lists</a>
-        <a href="/decklists/op17.html"{op17_cur}>Leaders</a>
-        <a href="/format.html">Format</a>
-        <a href="/eb05-lists.html">EB05 lists</a>
-        <a href="/eb05-spoilers.html">EB05</a>
-        <a href="/op18-spoilers.html">OP18</a>
-        <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-        <a href="/guides/">Guides</a>
-        <a href="/shop/">Shop</a>
-        <a href="/search.html">Search</a>
-        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
-      </nav>
+{site_nav_html(current="leaders" if nav_op17 else None)}
     </header>
 
     <main class="single">
@@ -1394,8 +1381,23 @@ def unique_slug(entry: dict, used: set[str]) -> str:
     return slug
 
 
+_seo_mod = None
+
+
+def site_nav_html(*, current: str | None = None, home: bool = False) -> str:
+    global _seo_mod
+    if _seo_mod is None:
+        spec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts/seo_common.py")
+        _seo_mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(_seo_mod)
+    return _seo_mod.primary_nav_html(current=current, home=home)
+
+
 def card_image_url(cid: str) -> str:
     set_code = cid.split("-")[0]
+    local = ROOT / "img" / "cards" / set_code / f"{cid}.webp"
+    if local.exists():
+        return f"/img/cards/{set_code}/{cid}.webp"
     # EB05 and OP18 are not on the Limitless CDN yet. OPlay hosts the sample art.
     if set_code in {"EB05", "OP18"}:
         return f"https://cards.oplaytcg.com/{set_code}/en/{cid}.webp"

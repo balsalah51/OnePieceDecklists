@@ -96,6 +96,10 @@ sspec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts/seo_
 seo = importlib.util.module_from_spec(sspec)
 sspec.loader.exec_module(seo)
 
+espec = importlib.util.spec_from_file_location("eventdisplay", ROOT / "scripts/event_display.py")
+event_display = importlib.util.module_from_spec(espec)
+espec.loader.exec_module(event_display)
+
 
 def newest_rows(rows: list[dict], limit: int) -> list[dict]:
     return sorted(rows, key=gen.date_sort_key, reverse=True)[:limit]
@@ -185,22 +189,31 @@ def placing_of(row: dict) -> int | None:
 
 
 def featured_rows(rows: list[dict], limit: int = FEATURED_LIMIT) -> list[dict]:
-    """Newest 1st–4th lists, preferring one leader per card when possible."""
+    """Top cuts, with regionals and championships ahead of online cups."""
     scored: list[dict] = []
-    for row in newest_rows(rows, 500):
+    for row in newest_rows(rows, 800):
+        if event_display.is_test_row(row):
+            continue
         place = placing_of(row)
         if place is None or place > FEATURED_MAX_PLACE:
             continue
         extra = dict(row)
         extra["_place"] = place
+        raw_event = row.get("tournament_name") or row.get("tournament") or ""
+        extra["_weight"] = event_display.event_weight(raw_event)
         scored.append(extra)
-    scored.sort(key=lambda row: (row["_place"], row.get("date") or ""), reverse=True)
-    scored.sort(key=lambda row: row["_place"])
+    majors = [row for row in scored if row["_weight"] >= 2]
+    rest = [row for row in scored if row["_weight"] < 2]
+    majors.sort(key=lambda row: (row.get("date") or "", -row["_place"]), reverse=True)
+    rest.sort(
+        key=lambda row: (row["_weight"], row.get("date") or "", -row["_place"]),
+        reverse=True,
+    )
     picked: list[dict] = []
     used_href: set[str] = set()
     used_leaders: set[str] = set()
     for unique_pass in (True, False):
-        for row in scored:
+        for row in majors + rest:
             href = row.get("href") or ""
             lid = (row.get("leader") or {}).get("id") or ""
             if not href or href in used_href:
@@ -223,7 +236,7 @@ def featured_html(
     recent_label: str = "All recent →",
     kicker: str = "Top cuts",
     heading: str = "Featured results",
-    lede: str = "First through fourth from the newest hosted events. One list per leader when we can.",
+    lede: str = "First through fourth from hosted events. Regionals, championships, and finals sit ahead of online cups. One list per leader when we can.",
 ) -> str:
     if not rows:
         return ""
@@ -235,17 +248,15 @@ def featured_html(
         img = gen.card_image_url(leader["id"])
         event = row.get("tournament_name") or row.get("subtitle") or ""
         when = row.get("date") or ""
-        if when and when in event:
-            note = event
-        else:
-            note = " · ".join(part for part in (event, when) if part) or leader["name"]
+        note = event_display.event_note_html(event, when) or html.escape(leader["name"])
+        major = " is-major" if event_display.event_weight(event) >= 2 else ""
         cards.append(
-            f"""            <a class="featured-card {html.escape(leader['color'])}" href="{html.escape(row['href'])}">
+            f"""            <a class="featured-card {html.escape(leader['color'])}{major}" href="{html.escape(row['href'])}">
               <span class="featured-place">{html.escape(place)}</span>
               <img src="{html.escape(img)}" alt="{html.escape(leader['name'])} leader card" width="72" height="100" loading="lazy" decoding="async" />
               <div class="featured-copy">
                 <div class="who">{html.escape(title)}</div>
-                <div class="muted">{html.escape(note)}</div>
+                <div class="muted">{note}</div>
               </div>
             </a>"""
         )

@@ -416,10 +416,30 @@
     }, true);
   }
 
+  function initNavGroups() {
+    var groups = document.querySelectorAll(".nav-group");
+    if (!groups.length) return;
+    groups.forEach(function (group) {
+      group.addEventListener("toggle", function () {
+        if (!group.open) return;
+        groups.forEach(function (other) {
+          if (other !== group) other.removeAttribute("open");
+        });
+      });
+    });
+    document.querySelectorAll(".nav-menu a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        var group = link.closest(".nav-group");
+        if (group) group.removeAttribute("open");
+      });
+    });
+  }
+
   function ready() {
     ensureSkipLink();
     initTheme();
     initMobileNav();
+    initNavGroups();
     initHeaderScroll();
     lazyImages();
     prefetchOnHover();
