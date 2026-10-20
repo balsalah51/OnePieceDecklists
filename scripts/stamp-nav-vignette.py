@@ -107,7 +107,7 @@ def fix_alias_redirect(html: str) -> str:
     )
     html = html.replace(
         'src="/js/site.js?v=home-smooth"',
-        'src="/js/site.js?v=nav-vignette1"',
+        'src="/js/site.js?v=nav-groups2"',
     )
     return html
 
@@ -115,7 +115,7 @@ def fix_alias_redirect(html: str) -> str:
 def bump_site_js(html: str) -> str:
     return re.sub(
         r'src="/js/site\.js(?:\?[^"]*)?"',
-        'src="/js/site.js?v=nav-vignette1"',
+        'src="/js/site.js?v=nav-groups2"',
         html,
     )
 

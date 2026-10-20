@@ -10,7 +10,7 @@
   <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro23" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro24" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -29,16 +29,36 @@
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
       <nav aria-label="Primary">
-        <a href="/tier-list.html" data-google-vignette="false">Tier List</a>
-        <a href="/extra-grand-battle.html" data-google-vignette="false">Extra Grand Battle</a>
-        <a href="/#recent" data-google-vignette="false">Recent lists</a>
-        <a href="/decklists/op17.html" data-google-vignette="false">Leaders</a>
-        <a href="/format.html" data-google-vignette="false">Format</a>
-        <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener" data-google-vignette="false">Events</a>
-        <a href="/guides/" data-google-vignette="false">Guides</a>
-        <a href="/shop/" data-google-vignette="false">Shop</a>
-        <a href="/search.html" data-google-vignette="false">Search</a>
-        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener" data-google-vignette="false">Discord</a>
+        <details class="nav-group">
+          <summary>Meta</summary>
+          <div class="nav-menu">
+            <a href="/tier-list.html" data-google-vignette="false">Tier List</a>
+            <a href="/extra-grand-battle.html" data-google-vignette="false">Extra Grand Battle</a>
+            <a href="/recent.html" data-google-vignette="false">Recent lists</a>
+            <a href="/decklists/op17.html" data-google-vignette="false">Leaders</a>
+            <a href="/guides/weekly-meta.html" data-google-vignette="false">Weekly meta</a>
+            <a href="/guides/matchups.html" data-google-vignette="false">Matchups</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Sets</summary>
+          <div class="nav-menu">
+            <a href="/eb05-lists.html" data-google-vignette="false">EB05 lists</a>
+            <a href="/eb05-spoilers.html" data-google-vignette="false">EB05 spoilers</a>
+            <a href="/op18-spoilers.html" data-google-vignette="false">OP18 spoilers</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Resources</summary>
+          <div class="nav-menu">
+            <a href="/format.html" data-google-vignette="false">Format</a>
+            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener" data-google-vignette="false">Events</a>
+            <a href="/guides/" data-google-vignette="false">Guides</a>
+            <a href="/shop/" data-google-vignette="false">Shop</a>
+            <a href="/search.html" data-google-vignette="false">Search</a>
+            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener" data-google-vignette="false">Discord</a>
+          </div>
+        </details>
       </nav>
     </header>
 
@@ -54,7 +74,7 @@
           </div>
           <div class="card-grid">
         <article class="card-entry">
-          <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP07/OP07-079_EN.webp" alt="Rob Lucci OP07-079" loading="lazy" />
+          <img src="/img/cards/OP07/OP07-079.webp" alt="Rob Lucci OP07-079" loading="lazy" />
           <div>
             <div class="id"><span class="qty">1x</span>OP07-079 · Leader</div>
             <h4>Rob Lucci</h4>
@@ -97,7 +117,7 @@
               <span class="qty">1x</span>
               <span class="card-title">Rob Lucci</span>
               <span class="muted card-id">OP07-079</span>
-              <img class="card-pop" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP07/OP07-079_EN.webp" alt="Rob Lucci" />
+              <img class="card-pop" src="/img/cards/OP07/OP07-079.webp" alt="Rob Lucci" />
             </li>
             </ul>
           </div>
@@ -474,7 +494,7 @@
       });
     })();
   </script>
-  <script src="/js/site.js?v=nav-vignette1"></script>
+  <script src="/js/site.js?v=nav-groups2"></script>
   <script src="/js/tcgplayer-config.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-ids.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>

@@ -15,6 +15,15 @@ from pathlib import Path
 ROOT = Path("/workspace")
 SITE = "https://onepiecedecklists.com"
 
+
+def _primary_nav(current: str) -> str:
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts" / "seo_common.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.primary_nav_html(current=current)
+
 LEADERS = [
     ("Edward Newgate", "/decklists/op17/edward-newgate.html", "OP17 Red Whitebeard"),
     ("Shanks", "/decklists/op17/shanks.html", "OP17 Green Red-Haired"),
@@ -101,17 +110,7 @@ def chrome(title: str, description: str, body: str) -> str:
         <button type="button" class="theme-toggle-btn" data-theme-set="light" aria-pressed="true">Light</button>
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
-      <nav aria-label="Primary">
-        <a href="/tier-list.html">Tier List</a>
-        <a href="/#recent">Recent lists</a>
-        <a href="/decklists/op17.html">Leaders</a>
-        <a href="/format.html">Format</a>
-        <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-        <a href="/guides/">Guides</a>
-        <a href="/shop/">Shop</a>
-        <a href="/search.html">Search</a>
-        <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
-      </nav>
+{_primary_nav("guides")}
     </header>
     <main class="single">
       <div class="card hero">
@@ -124,7 +123,7 @@ def chrome(title: str, description: str, body: str) -> str:
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/js/site.js?v=nav-vignette1"></script>
+  <script src="/js/site.js?v=nav-groups2"></script>
 </body>
 </html>
 """
