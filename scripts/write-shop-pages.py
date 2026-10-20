@@ -147,7 +147,7 @@ def nav_html(current: str) -> str:
     def item(href: str, label: str, key: str) -> str:
         cur = ' aria-current="page"' if key == current else ""
         extra = ' target="_blank" rel="noopener"' if href.startswith("http") else ""
-        return f'        <a href="{href}"{cur}{extra}>{label}</a>'
+        return f'        <a href="{href}"{cur}{extra} data-google-vignette="false">{label}</a>'
 
     return "\n".join(
         [
@@ -170,12 +170,12 @@ def product_card(item: dict) -> str:
     url = html.escape(item["url"], quote=True)
     img = html.escape(item["img"], quote=True)
     return f"""          <article class="shop-card">
-            <a class="shop-photo-link" href="{url}" target="_blank" rel="sponsored noopener noreferrer">
+            <a class="shop-photo-link" href="{url}" target="_blank" rel="sponsored noopener noreferrer" data-google-vignette="false">
               <img class="shop-photo" src="{img}" alt="{name}" />
             </a>
             <div style="font-weight:800">{name}</div>
             <p class="shop-note">{blurb}</p>
-            <a class="shop-buy" href="{url}" target="_blank" rel="sponsored noopener noreferrer">View on Amazon</a>
+            <a class="shop-buy" href="{url}" target="_blank" rel="sponsored noopener noreferrer" data-google-vignette="false">View on Amazon</a>
           </article>"""
 
 
@@ -186,7 +186,7 @@ def product_grid(items: list[dict]) -> str:
 def section(title: str, href: str, note: str, items: list[dict]) -> str:
     return f"""        <div class="section-title" style="margin-top:28px">
           <h3>{html.escape(title)}</h3>
-          <a href="{html.escape(href, quote=True)}">All {html.escape(title.lower())} →</a>
+          <a href="{html.escape(href, quote=True)}" data-google-vignette="false">All {html.escape(title.lower())} →</a>
         </div>
         <p class="muted">{html.escape(note)}</p>
 {product_grid(items)}"""
@@ -237,11 +237,11 @@ def chrome(title: str, desc: str, canonical: str, body: str, *, indexable: bool,
     </main>
     <footer>
       © <span id="year"></span> One Piece Decklists - Fan site, not affiliated with Bandai or Shueisha.
-{amazon_line}      <a href="/tier-list.html">Tier List</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a> · <a href="{DISCORD}" target="_blank" rel="noopener">Discord</a>
+{amazon_line}      <a href="/tier-list.html" data-google-vignette="false">Tier List</a> · <a href="/guides/" data-google-vignette="false">Guides</a> · <a href="/decklists/op17.html" data-google-vignette="false">Leaders</a> · <a href="/format.html" data-google-vignette="false">Format</a> · <a href="/search.html" data-google-vignette="false">Search</a> · <a href="/shop/" data-google-vignette="false">Shop</a> · <a href="/privacy.html" data-google-vignette="false">Privacy</a> · <a href="{DISCORD}" target="_blank" rel="noopener" data-google-vignette="false">Discord</a>
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/js/site.js?v=theme"></script>
+  <script src="/js/site.js?v=nav-groups2"></script>
 </body>
 </html>
 """

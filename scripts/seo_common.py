@@ -17,7 +17,7 @@ LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
 CSS_VER = "home-pro24"
-JS_VER = "nav-groups1"
+JS_VER = "nav-groups2"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
 )
@@ -425,7 +425,7 @@ def breadcrumb_jsonld(crumbs: list[tuple[str, str]]) -> str:
 
 def list_row(href: str, title: str, note: str) -> str:
     return f"""            <li>
-              <a class="item" href="{html.escape(href, quote=True)}">
+              <a class="item" href="{html.escape(href, quote=True)}" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">{html.escape(title)}</div>
                   <div class="muted" style="font-size:13px">{html.escape(note)}</div>
@@ -503,17 +503,17 @@ def parse_crumbs(text: str) -> list[tuple[str, str]]:
 
 
 FOOTER_LINKS = (
-    '      <a href="/tier-list.html">Tier List</a> · '
-    '<a href="/extra-grand-battle.html">Extra Grand Battle</a> · '
-    '<a href="/guides/">Guides</a> · '
-    '<a href="/decklists/op17.html">Leaders</a> · '
-    '<a href="/eb05-lists.html">EB05 lists</a> · '
-    '<a href="/eb05-spoilers.html">EB05</a> · '
-    '<a href="/op18-spoilers.html">OP18</a> · '
-    '<a href="/format.html">Format</a> · '
-    '<a href="/search.html">Search</a> · '
-    '<a href="/shop/">Shop</a> · '
-    '<a href="/privacy.html">Privacy</a>'
+    '      <a href="/tier-list.html" data-google-vignette="false">Tier List</a> · '
+    '<a href="/extra-grand-battle.html" data-google-vignette="false">Extra Grand Battle</a> · '
+    '<a href="/guides/" data-google-vignette="false">Guides</a> · '
+    '<a href="/decklists/op17.html" data-google-vignette="false">Leaders</a> · '
+    '<a href="/eb05-lists.html" data-google-vignette="false">EB05 lists</a> · '
+    '<a href="/eb05-spoilers.html" data-google-vignette="false">EB05</a> · '
+    '<a href="/op18-spoilers.html" data-google-vignette="false">OP18</a> · '
+    '<a href="/format.html" data-google-vignette="false">Format</a> · '
+    '<a href="/search.html" data-google-vignette="false">Search</a> · '
+    '<a href="/shop/" data-google-vignette="false">Shop</a> · '
+    '<a href="/privacy.html" data-google-vignette="false">Privacy</a>'
 )
 
 
@@ -588,7 +588,7 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
         for href, item_label, key in items:
             cur = ' aria-current="page"' if key == current else ""
             extra = ' target="_blank" rel="noopener"' if href.startswith("http") else ""
-            lines.append(f'            <a href="{href}"{cur}{extra}>{item_label}</a>')
+            lines.append(f'            <a href="{href}"{cur}{extra} data-google-vignette="false">{item_label}</a>')
         lines.append("          </div>")
         lines.append("        </details>")
     lines.append("      </nav>")

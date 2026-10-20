@@ -123,7 +123,7 @@ def chrome(title: str, description: str, body: str) -> str:
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/js/site.js?v=theme"></script>
+  <script src="/js/site.js?v=nav-groups2"></script>
 </body>
 </html>
 """

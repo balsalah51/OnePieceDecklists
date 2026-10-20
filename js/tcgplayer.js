@@ -224,6 +224,7 @@
     a.target = "_blank";
     a.rel = REL;
     a.textContent = label;
+    a.setAttribute("data-google-vignette", "false");
     a.addEventListener("click", function (e) { e.stopPropagation(); });
     return a;
   }
