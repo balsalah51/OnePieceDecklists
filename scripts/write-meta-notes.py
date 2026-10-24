@@ -36,6 +36,10 @@ ROOT = Path("/workspace")
 spec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts/seo_common.py")
 seo = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(seo)
+gspec = importlib.util.spec_from_file_location("genlists", ROOT / "scripts/generate-tournament-lists.py")
+gen = importlib.util.module_from_spec(gspec)
+gspec.loader.exec_module(gen)
+LEADER_HREF = {row["id"]: f"/{row['dir']}.html" for row in gen.LEADERS}
 
 
 def shell(title: str, desc: str, path: str, crumb: str, body: str, current: str) -> str:
@@ -112,9 +116,10 @@ def weekly_body(meta: dict, tier: dict) -> str:
     a_names = ", ".join(html.escape(row["name"]) for row in (by_tier.get("A") or [])[:6])
     hole_line = ""
     if hole:
+        hole_href = LEADER_HREF.get(hole.get("id") or "", "/decklists/op17.html")
         hole_line = (
             f"<p>Inside lists that play at least one {html.escape(meta.get('set') or 'OP17')} card, "
-            f"<a href=\"/decklists/luffy-ace.html\">{html.escape(hole['name'])}</a> has the best first-place rate "
+            f"<a href=\"{html.escape(hole_href)}\">{html.escape(hole['name'])}</a> has the best first-place rate "
             f"among leaders with a full sample: {hole['wins']} firsts from {hole['lists']} placed lists "
             f"({hole['win_pct']}%). That number is firsts divided by placed lists on this site. "
             f"It is not a game win rate.</p>"
