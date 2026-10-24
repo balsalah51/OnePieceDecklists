@@ -26,7 +26,7 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro24"
+CSS_NEW = "/css/site.css?v=home-pro25"
 JS_NEW = "/js/site.js?v=nav-groups1"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
