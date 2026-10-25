@@ -1319,7 +1319,7 @@ def page_chrome(
 {canon}  <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro26" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro27" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -1386,9 +1386,18 @@ def page_chrome(
       lines.forEach(function(line){{
         line.addEventListener('mouseenter', function(){{ place(line); }});
         line.addEventListener('focus', function(){{ place(line); }});
+        function arm(line){{
+          var pop = line.querySelector('.card-pop');
+          if (!pop) return;
+          var src = pop.getAttribute('data-src');
+          if (src && pop.getAttribute('src') !== src) pop.setAttribute('src', src);
+        }}
+        line.addEventListener('pointerdown', function(){{ arm(line); }});
+        line.addEventListener('touchstart', function(){{ arm(line); }}, {{passive: true}});
         line.addEventListener('click', function(e){{
           if (window.matchMedia('(hover: hover)').matches) return;
           e.stopPropagation();
+          arm(line);
           lines.forEach(function(other){{ if (other !== line) other.classList.remove('is-open'); }});
           line.classList.toggle('is-open');
           place(line);
@@ -1401,7 +1410,7 @@ def page_chrome(
       }});
     }})();
   </script>
-  <script src="/js/site.js?v=deck-tools2"></script>
+  <script src="/js/site.js?v=deck-tools3"></script>
 {tcg_scripts}</body>
 </html>
 """

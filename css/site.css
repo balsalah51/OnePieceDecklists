@@ -140,9 +140,13 @@ main.single{grid-template-columns:1fr}
   transform:translateX(calc(var(--splash-i,0) * -16.6667%));
   transition:transform .55s ease
 }
+.home-splash-track > picture,
+.home-splash-track > .home-splash-bg{
+  width:16.6667%;flex:0 0 16.6667%
+}
 .home-splash-bg{
-  display:block;width:16.6667%;height:clamp(220px,46vw,560px);
-  object-fit:cover;object-position:center 42%;flex:0 0 16.6667%
+  display:block;width:100%;height:clamp(220px,46vw,560px);
+  object-fit:cover;object-position:center 42%
 }
 .home-splash-six{object-position:center 28%}
 .home-splash-rocks{object-position:center 32%}

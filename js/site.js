@@ -165,6 +165,14 @@
       var line = e.target && e.target.closest ? e.target.closest(".text-line") : null;
       arm(line);
     }, true);
+    document.addEventListener("pointerdown", function (e) {
+      var line = e.target && e.target.closest ? e.target.closest(".text-line") : null;
+      arm(line);
+    }, true);
+    document.addEventListener("touchstart", function (e) {
+      var line = e.target && e.target.closest ? e.target.closest(".text-line") : null;
+      arm(line);
+    }, {capture: true, passive: true});
   }
 
   function initCopy() {
@@ -384,6 +392,9 @@
       if (!img) return;
       var src = img.getAttribute("data-src");
       if (src && img.getAttribute("src") !== src) img.setAttribute("src", src);
+      var source = img.parentNode && img.parentNode.querySelector ? img.parentNode.querySelector("source") : null;
+      var set = source && source.getAttribute("data-srcset");
+      if (source && set && source.getAttribute("srcset") !== set) source.setAttribute("srcset", set);
     }
 
     function setIndex(next) {

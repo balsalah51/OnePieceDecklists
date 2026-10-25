@@ -451,12 +451,30 @@ def render_home_body(data: dict | None = None) -> str:
         <section class="home-splash" id="home-splash" aria-label="One Piece Decklists banners" style="--splash-i:0">
           <div class="home-splash-viewport">
             <div class="home-splash-track">
-              <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo" width="1920" height="960" fetchpriority="high" decoding="async" />
-              <img class="home-splash-bg" data-src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg" data-src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-six" data-src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
+              <picture>
+                <source type="image/webp" data-srcset="/img/home-banner-crew.webp" />
+                <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo" width="1280" height="720" fetchpriority="high" decoding="async" />
+              </picture>
+              <picture>
+                <source type="image/webp" data-srcset="/img/home-banner-crimson.webp" />
+                <img class="home-splash-bg" data-src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1280" height="720" decoding="async" />
+              </picture>
+              <picture>
+                <source type="image/webp" data-srcset="/img/home-banner-luffy.webp" />
+                <img class="home-splash-bg" data-src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1280" height="720" decoding="async" />
+              </picture>
+              <picture>
+                <source type="image/webp" data-srcset="/img/home-banner-six.webp" />
+                <img class="home-splash-bg home-splash-six" data-src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1280" height="720" decoding="async" />
+              </picture>
+              <picture>
+                <source type="image/webp" data-srcset="/img/home-banner-rocks.webp" />
+                <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1280" height="720" decoding="async" />
+              </picture>
+              <picture>
+                <source type="image/webp" data-srcset="/img/home-banner-rocks-crew.webp" />
+                <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1280" height="720" decoding="async" />
+              </picture>
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
@@ -495,6 +513,9 @@ def render_home_body(data: dict | None = None) -> str:
           if(banner){{
             var pending=banner.getAttribute("data-src");
             if(pending) banner.src=pending;
+            var source=banner.parentNode&&banner.parentNode.querySelector&&banner.parentNode.querySelector("source");
+            var set=source&&source.getAttribute("data-srcset");
+            if(source&&set) source.srcset=set;
           }}
           root.style.setProperty("--splash-i", String(i));
           root.setAttribute("data-splash-i", String(i));
