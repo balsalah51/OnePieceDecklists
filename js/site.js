@@ -378,10 +378,20 @@
       if (lab) lab.textContent = f.name + " lists";
     }
 
+    function loadSlide(i) {
+      var imgs = root.querySelectorAll(".home-splash-bg");
+      var img = imgs[((i % count) + count) % count];
+      if (!img) return;
+      var src = img.getAttribute("data-src");
+      if (src && img.getAttribute("src") !== src) img.setAttribute("src", src);
+    }
+
     function setIndex(next) {
       index = ((next % count) + count) % count;
       root.style.setProperty("--splash-i", String(index));
       root.setAttribute("data-splash-i", String(index));
+      loadSlide(index);
+      loadSlide(index + 1);
       root.querySelectorAll("[data-splash-dot]").forEach(function (dot, k) {
         dot.setAttribute("aria-current", k === index ? "true" : "false");
       });
@@ -412,6 +422,8 @@
     root.addEventListener("mouseleave", play);
     root.addEventListener("focusin", stop);
     root.addEventListener("focusout", play);
+    loadSlide(index);
+    loadSlide(index + 1);
     setCard(index);
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     play();
@@ -479,7 +491,7 @@
   function lazyImages() {
     document.querySelectorAll("img").forEach(function (img) {
       if (img.hasAttribute("fetchpriority")) return;
-      if (img.closest(".home-splash, header, .meta-pie-disk")) return;
+      if (img.closest(".home-splash, header, .meta-pie-disk, .leader-block, .leader-hero")) return;
       if (!img.getAttribute("loading")) img.setAttribute("loading", "lazy");
       if (!img.getAttribute("decoding")) img.setAttribute("decoding", "async");
     });

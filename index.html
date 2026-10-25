@@ -94,11 +94,11 @@
           <div class="home-splash-viewport">
             <div class="home-splash-track">
               <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo" width="1920" height="960" fetchpriority="high" decoding="async" />
-              <img loading="lazy" class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
-              <img loading="lazy" class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
-              <img loading="lazy" class="home-splash-bg home-splash-six" src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
-              <img loading="lazy" class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
-              <img loading="lazy" class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" data-src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" data-src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg home-splash-six" data-src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
@@ -111,12 +111,12 @@
             <button type="button" data-splash-next aria-label="Next banner">›</button>
           </div>
           <div class="home-splash-dots" role="tablist" aria-label="Choose banner">
-            <button type="button" data-splash-dot="0" aria-label="Banner 1" aria-current="true"></button>
-            <button type="button" data-splash-dot="1" aria-label="Banner 2"></button>
-            <button type="button" data-splash-dot="2" aria-label="Banner 3"></button>
-            <button type="button" data-splash-dot="3" aria-label="Banner 4"></button>
-            <button type="button" data-splash-dot="4" aria-label="Banner 5"></button>
-            <button type="button" data-splash-dot="5" aria-label="Banner 6"></button>
+            <button type="button" role="tab" data-splash-dot="0" aria-label="Banner 1" aria-current="true"></button>
+            <button type="button" role="tab" data-splash-dot="1" aria-label="Banner 2"></button>
+            <button type="button" role="tab" data-splash-dot="2" aria-label="Banner 3"></button>
+            <button type="button" role="tab" data-splash-dot="3" aria-label="Banner 4"></button>
+            <button type="button" role="tab" data-splash-dot="4" aria-label="Banner 5"></button>
+            <button type="button" role="tab" data-splash-dot="5" aria-label="Banner 6"></button>
           </div>
         </section>
         <script>
@@ -132,6 +132,12 @@
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];
+          var banners=root.querySelectorAll(".home-splash-bg");
+          var banner=banners[i];
+          if(banner){
+            var pending=banner.getAttribute("data-src");
+            if(pending) banner.src=pending;
+          }
           root.style.setProperty("--splash-i", String(i));
           root.setAttribute("data-splash-i", String(i));
           var a=root.querySelector("[data-splash-card]");
@@ -230,7 +236,7 @@
         <section class="card home-panel home-featured" id="featured">
           <p class="home-leaders-kicker">Top cuts</p>
           <div class="section-title">
-            <h3>Featured results</h3>
+            <h2>Featured results</h2>
             <a href="/recent.html">All recent →</a>
           </div>
           <p class="muted home-recent-lede">First through fourth from hosted events. Regionals, championships, and finals sit ahead of online cups. One list per leader when we can.</p>
@@ -305,7 +311,7 @@
         <section class="card home-panel home-notes" id="meta-notes">
           <p class="home-leaders-kicker">Original notes</p>
           <div class="section-title">
-            <h3>This week in the meta</h3>
+            <h2>This week in the meta</h2>
             <a href="/guides/weekly-meta.html">Full write-up →</a>
           </div>
           <p class="home-notes-lede">Mihawk shows up on 370 hosted lists from 1 September 2026 through 16 October 2026, and 13.8% of that window. OP09 Nico Robin (286) and Rocks D. Xebec (272) are the next names in that window. Blackbeard has the best first-place rate in the same slice: 3 firsts from 15 placed lists (20.0%). That is a first-place rate, not a game win rate.</p>
@@ -326,7 +332,7 @@
         <section class="card home-panel home-meta-pie" id="meta-share">
           <p class="home-leaders-kicker">Format share</p>
           <div class="section-title">
-            <h3>Recent lists</h3>
+            <h2>Recent lists</h2>
             <a href="/tier-list.html">Tier list →</a>
           </div>
           <p class="muted home-recent-lede">Share of hosted lists from 1 September 2026 through 16 October 2026 (rolling 45 days, 2681 lists). Every list in that window counts, including decks that play no OP17 card. Tier letters match the tier list. The hole is the best first-place rate in this window.</p>
@@ -453,7 +459,7 @@
           <div class="home-leaders-intro">
             <p class="home-leaders-kicker">Popular now</p>
             <div class="home-leaders-intro-row">
-              <h3>Leaders</h3>
+              <h2>Leaders</h2>
               <a href="/decklists/op17.html">All leader pages →</a>
             </div>
           </div>
@@ -506,7 +512,7 @@
         <section class="card home-panel home-recent" id="recent">
           <p class="home-leaders-kicker">Results</p>
           <div class="section-title">
-            <h3>Recent lists</h3>
+            <h2>Recent lists</h2>
             <div class="muted">25 of 50</div>
           </div>
           <p class="muted home-recent-lede">Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
