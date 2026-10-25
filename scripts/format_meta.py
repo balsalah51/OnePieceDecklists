@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 """One window and one set of leader counts for the homepage and the tier list.
 
-Recent lists are a rolling window ending on the newest hosted list date.
-OPDL_RECENT_DAYS overrides the length (default 45). The homepage share chart,
-the Leaders row, the weekly meta note, and the tier list's "recent" columns
-all read this module. Tier letters still come from build-tier-list.aggregate;
-this file does not change those thresholds.
+Recent lists are a rolling window ending on today's date in America/New_York,
+not on the newest hosted list. OPDL_RECENT_DAYS overrides the length (default
+45). The homepage share chart, the Leaders row, the weekly meta note, and the
+tier list's "recent" columns all read this module. Tier letters still come
+from build-tier-list.aggregate; this file does not change those thresholds.
 """
 
 from __future__ import annotations
 
+import html
 import importlib.util
 import os
 import re
 from collections import defaultdict
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path("/workspace")
 RECENT_DAYS = int(os.environ.get("OPDL_RECENT_DAYS", "45"))
 DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})")
+ET = ZoneInfo("America/New_York")
+STALE_AFTER = timedelta(hours=48)
 
 # Different printed leaders that share a character name. Do not merge them.
 TWINS: dict[str, dict] = {
@@ -102,23 +106,70 @@ def iso_date(raw: str) -> str:
     return match.group(1) if match else ""
 
 
-def window_bounds(rows: list[dict], *, days: int | None = None) -> dict:
-    """Rolling window ending on the newest real list date in rows."""
-    days = RECENT_DAYS if days is None else int(days)
+def now_et(now: datetime | None = None) -> datetime:
+    if now is None:
+        return datetime.now(ET)
+    if now.tzinfo is None:
+        return now.replace(tzinfo=ET)
+    return now.astimezone(ET)
+
+
+def newest_list_day(rows: list[dict]) -> str:
     dated = [iso_date(r.get("date") or "") for r in rows]
     dated = [d for d in dated if d]
-    if not dated:
-        end = date.today()
-        start = end - timedelta(days=days)
-    else:
-        end = date.fromisoformat(max(dated))
-        start = end - timedelta(days=days)
+    return max(dated) if dated else ""
+
+
+def window_bounds(
+    rows: list[dict],
+    *,
+    days: int | None = None,
+    today: date | None = None,
+    now: datetime | None = None,
+) -> dict:
+    """Rolling window ending today in America/New_York.
+
+    `today` and `now` are for tests. The newest hosted list is reported
+    separately and does not move the end of the window.
+    """
+    days = RECENT_DAYS if days is None else int(days)
+    clock = now_et(now)
+    if today is not None and now is None:
+        clock = datetime(today.year, today.month, today.day, 12, 0, tzinfo=ET)
+    end = today or clock.date()
+    start = end - timedelta(days=days)
+    newest = newest_list_day(rows)
+    stale = True
+    if newest:
+        newest_start = datetime.fromisoformat(newest).replace(tzinfo=ET)
+        stale = (clock - newest_start) > STALE_AFTER
+    newest_label = pretty_date(newest) if newest else ""
     return {
         "days": days,
         "start": start.isoformat(),
         "end": end.isoformat(),
         "label": f"{pretty_date(start.isoformat())} through {pretty_date(end.isoformat())}",
+        "newest": newest,
+        "newest_label": newest_label,
+        "stale": stale,
+        "timezone": "America/New_York",
     }
+
+
+def freshness_html(bounds: dict) -> str:
+    """Visible stamp. The warning shows when the newest list is over 48 hours old."""
+    newest = bounds.get("newest_label") or "an unknown date"
+    lines = [
+        f'<p class="freshness" id="last-updated">Last updated {html.escape(newest)}.</p>'
+    ]
+    if bounds.get("stale"):
+        lines.append(
+            '<p class="freshness-stale" role="status">'
+            f"Newest hosted list is {html.escape(newest)}, more than 48 hours ago "
+            "(America/New_York). The recent window still ends today."
+            "</p>"
+        )
+    return "\n".join(lines)
 
 
 def in_window(rows: list[dict], bounds: dict) -> list[dict]:

@@ -11,14 +11,16 @@ import importlib.util
 import json
 import re
 import time
-from datetime import date, timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path("/workspace")
 SITE = "https://onepiecedecklists.com"
-SINCE = (date.today() - timedelta(days=5)).isoformat()
+_TODAY = datetime.now(ZoneInfo("America/New_York")).date()
+SINCE = (_TODAY - timedelta(days=5)).isoformat()
 LIMITLESS_SINCE = "2026-08-20"
-UNTIL = date.today().isoformat()
+UNTIL = _TODAY.isoformat()
 
 
 def load(name: str, path: str):
@@ -58,7 +60,7 @@ def list_rels(found: list[dict], gen, before: dict, index: dict) -> list[str]:
 
 
 def update_sitemaps(new_rels: list[str]) -> None:
-    today = date.today().isoformat()
+    today = _TODAY.isoformat()
     lists_path = ROOT / "sitemap-lists.xml"
     text = lists_path.read_text()
     existing = set(re.findall(r"<loc>([^<]+)</loc>", text))

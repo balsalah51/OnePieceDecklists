@@ -10,4 +10,5 @@ data/reddit-comments-log.json
 discord-bot/.env
 discord-bot/.venv/
 discord-bot/state.json
+data/limitless-http-cache.json
 .venv/

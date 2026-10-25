@@ -429,7 +429,7 @@ def breadcrumb_jsonld(crumbs: list[tuple[str, str]]) -> str:
 
 def list_row(href: str, title: str, note: str) -> str:
     return f"""            <li>
-              <a class="item" href="{html.escape(href, quote=True)}">
+              <a class="item" href="{html.escape(href, quote=True)}" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">{html.escape(title)}</div>
                   <div class="muted" style="font-size:13px">{html.escape(note)}</div>
@@ -506,21 +506,22 @@ def parse_crumbs(text: str) -> list[tuple[str, str]]:
     return crumbs
 
 
+_V = ' data-google-vignette="false"'
 FOOTER_LINKS = (
-    '      <a href="/tier-list.html">Tier List</a> · '
-    '<a href="/extra-grand-battle.html">Extra Grand Battle</a> · '
-    '<a href="/guides/">Guides</a> · '
-    '<a href="/decklists/op17.html">Leaders</a> · '
-    '<a href="/eb05-lists.html">EB05 Lists</a> · '
-    '<a href="/eb05-spoilers.html">EB05 Spoilers</a> · '
-    '<a href="/op18-spoilers.html">OP18</a> · '
-    '<a href="/format.html">Format</a> · '
-    '<a href="/search.html">Search</a> · '
-    '<a href="/shop/">Shop</a> · '
-    '<a href="/about.html">About</a> · '
-    '<a href="/contact.html">Contact</a> · '
-    '<a href="/advertise.html">Advertise</a> · '
-    '<a href="/privacy.html">Privacy</a>'
+    f'      <a href="/tier-list.html"{_V}>Tier List</a> · '
+    f'<a href="/extra-grand-battle.html"{_V}>Extra Grand Battle</a> · '
+    f'<a href="/guides/"{_V}>Guides</a> · '
+    f'<a href="/decklists/op17.html"{_V}>Leaders</a> · '
+    f'<a href="/eb05-lists.html"{_V}>EB05 Lists</a> · '
+    f'<a href="/eb05-spoilers.html"{_V}>EB05 Spoilers</a> · '
+    f'<a href="/op18-spoilers.html"{_V}>OP18</a> · '
+    f'<a href="/format.html"{_V}>Format</a> · '
+    f'<a href="/search.html"{_V}>Search</a> · '
+    f'<a href="/shop/"{_V}>Shop</a> · '
+    f'<a href="/about.html"{_V}>About</a> · '
+    f'<a href="/contact.html"{_V}>Contact</a> · '
+    f'<a href="/advertise.html"{_V}>Advertise</a> · '
+    f'<a href="/privacy.html"{_V}>Privacy</a>'
 )
 
 
@@ -586,6 +587,19 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
         ),
     ]
     lines = ['      <nav aria-label="Primary">']
+    pins = [
+        ("/tier-list.html", "Tier List", "tier"),
+        ("/recent.html", "Recent", "recent"),
+        ("/search.html", "Search", "search"),
+    ]
+    lines.append('        <div class="nav-pins">')
+    for href, item_label, key in pins:
+        cur = ' aria-current="page"' if key == current else ""
+        lines.append(
+            f'          <a class="nav-pin" href="{href}"{cur} data-google-vignette="false">{item_label}</a>'
+        )
+    lines.append('          <span class="nav-chip">OP17 Standard</span>')
+    lines.append("        </div>")
     for label, _key, items in groups:
         current_group = any(key == current for _href, _label, key in items)
         group_class = "nav-group is-current" if current_group else "nav-group"
@@ -595,7 +609,9 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
         for href, item_label, key in items:
             cur = ' aria-current="page"' if key == current else ""
             extra = ' target="_blank" rel="noopener"' if href.startswith("http") else ""
-            lines.append(f'            <a href="{href}"{cur}{extra}>{item_label}</a>')
+            lines.append(
+                f'            <a href="{href}"{cur}{extra} data-google-vignette="false">{item_label}</a>'
+            )
         lines.append("          </div>")
         lines.append("        </details>")
     lines.append("      </nav>")

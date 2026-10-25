@@ -332,8 +332,8 @@ def upsert_social(text: str, title: str, desc: str, url: str, image: str, crumbs
     text = text.replace("</head>", block + "</head>", 1)
     text = text.replace('src="/js/site.js?v=', 'src="/js/site.js?v=deck-tools1" data-v="', 1)
     text = text.replace('src="/js/site.js?v=deck-tools1" data-v="', 'src="/js/site.js?v=', 1)
-    text = re.sub(r'src="/js/site\.js\?v=[^"]+"', 'src="/js/site.js?v=deck-tools1"', text)
-    text = re.sub(r'href="/css/site\.css\?v=[^"]+"', 'href="/css/site.css?v=home-pro25"', text)
+    text = re.sub(r'src="/js/site\.js\?v=[^"]+"', f'src="/js/site.js?v={seo.JS_VER}"', text)
+    text = re.sub(r'href="/css/site\.css\?v=[^"]+"', f'href="/css/site.css?v={seo.CSS_VER}"', text)
     return text
 
 

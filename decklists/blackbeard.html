@@ -40,7 +40,7 @@
 <body class="color-black-yellow">
   <div class="wrap">
     <header>
-      <a class="brand" href="/">
+      <a class="brand" href="/" data-google-vignette="false">
         <img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />
         <div>
           <h1>One Piece Decklists</h1>
@@ -52,34 +52,40 @@
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
       <nav aria-label="Primary">
+        <div class="nav-pins">
+          <a class="nav-pin" href="/tier-list.html" data-google-vignette="false">Tier List</a>
+          <a class="nav-pin" href="/recent.html" data-google-vignette="false">Recent</a>
+          <a class="nav-pin" href="/search.html" data-google-vignette="false">Search</a>
+          <span class="nav-chip">OP17 Standard</span>
+        </div>
         <details class="nav-group">
           <summary>Meta</summary>
           <div class="nav-menu">
-            <a href="/tier-list.html">Tier List</a>
-            <a href="/extra-grand-battle.html">Extra Grand Battle</a>
-            <a href="/recent.html">Recent lists</a>
-            <a href="/decklists/op17.html">Leaders</a>
-            <a href="/guides/weekly-meta.html">Weekly meta</a>
-            <a href="/guides/matchups.html">Matchups</a>
+            <a href="/tier-list.html" data-google-vignette="false">Tier List</a>
+            <a href="/extra-grand-battle.html" data-google-vignette="false">Extra Grand Battle</a>
+            <a href="/recent.html" data-google-vignette="false">Recent lists</a>
+            <a href="/decklists/op17.html" data-google-vignette="false">Leaders</a>
+            <a href="/guides/weekly-meta.html" data-google-vignette="false">Weekly meta</a>
+            <a href="/guides/matchups.html" data-google-vignette="false">Matchups</a>
           </div>
         </details>
         <details class="nav-group">
           <summary>Sets</summary>
           <div class="nav-menu">
-            <a href="/eb05-lists.html">EB05 lists</a>
-            <a href="/eb05-spoilers.html">EB05 spoilers</a>
-            <a href="/op18-spoilers.html">OP18 spoilers</a>
+            <a href="/eb05-lists.html" data-google-vignette="false">EB05 lists</a>
+            <a href="/eb05-spoilers.html" data-google-vignette="false">EB05 spoilers</a>
+            <a href="/op18-spoilers.html" data-google-vignette="false">OP18 spoilers</a>
           </div>
         </details>
         <details class="nav-group">
           <summary>Resources</summary>
           <div class="nav-menu">
-            <a href="/format.html">Format</a>
-            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-            <a href="/guides/">Guides</a>
-            <a href="/shop/">Shop</a>
-            <a href="/search.html">Search</a>
-            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+            <a href="/format.html" data-google-vignette="false">Format</a>
+            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener" data-google-vignette="false">Events</a>
+            <a href="/guides/" data-google-vignette="false">Guides</a>
+            <a href="/shop/" data-google-vignette="false">Shop</a>
+            <a href="/search.html" data-google-vignette="false">Search</a>
+            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener" data-google-vignette="false">Discord</a>
           </div>
         </details>
       </nav>
@@ -87,7 +93,7 @@
 
     <main class="single">
       <div class="card hero">
-        <div class="crumb"><a href="/">Home</a> / <a href="/decklists/op17.html">OP17 decklists</a> / Blackbeard</div>
+        <div class="crumb"><a href="/" data-google-vignette="false">Home</a> / <a href="/decklists/op17.html" data-google-vignette="false">OP17 decklists</a> / Blackbeard</div>
         <div class="leader-hero">
           <img src="/img/cards/OP16/OP16-080.webp" alt="Blackbeard leader" />
           <div>
@@ -258,14 +264,25 @@
         </section>
         <!-- /CONSENSUS_LIST -->
 
+        <p class="shop-note">Sleeves, playmats, and deck boxes are in the <a href="/shop/">shop</a>. As an Amazon Associate I earn from qualifying purchases.</p>
         <!-- COMMUNITY_DECKLISTS -->
         <section class="deck-index" style="margin-top:22px">
           <div class="section-title">
             <h3>YouTube and community decklists</h3>
-            <div class="muted">42 lists</div>
+            <div class="muted">43 lists</div>
           </div>
           <p class="muted">Public YouTube and web lists with a full 50-card ID list. Tournament tables below are from Limitless.</p>
           <ul class="list" aria-label="YouTube and community decklists">
+            <li class="list-row">
+              <a class="item" href="/decklists/blackbeard/tcgportal-2026-10-21-83t1im.html">
+                <div>
+                  <div style="font-weight:700">黒黄ティーチ スタンダードバトル winner - ファイブカード 坂戸店</div>
+                  <div class="muted" style="font-size:13px">Public TCG PORTAL list · 2026-10-21</div>
+                </div>
+                <div class="link">Web →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP16-103 4xOP16-110 4xOP17-109 2xOP12-112 4xOP16-104 2xOP16-106 2xEB04-058 4xOP16-108 3xOP17-114 4xOP16-119 4xOP09-093 2xOP14-118 3xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+            </li>
             <li class="list-row">
               <a class="item" href="/decklists/blackbeard/opdb-marshalldteach-by-kevin-l-2599.html">
                 <div>
@@ -689,12 +706,11 @@
           </ul>
         </section>
         <!-- /COMMUNITY_DECKLISTS -->
-        <p class="shop-note">Sleeves, playmats, and deck boxes are in the <a href="/shop/">shop</a>. As an Amazon Associate I earn from qualifying purchases.</p>
         <!-- TOURNAMENT_DECKLISTS -->
         <section class="deck-index" style="margin-top:22px">
           <div class="section-title">
             <h3>Tournament decklists</h3>
-            <div class="muted">118 lists</div>
+            <div class="muted">122 lists</div>
           </div>
           <p class="muted">Newest Limitless events first. Each row opens a separate 50-card list.</p>
           <div class="list-filters" data-hub-filters>
@@ -718,6 +734,46 @@
             </select>
           </div>
           <ul class="list" aria-label="Tournament decklists">
+            <li class="list-row" data-date="2026-10-21" data-placing="" data-event="other">
+              <a class="item" href="/decklists/blackbeard/1-2-harryvincent24-egb-eb05-chinoizecup-126-wednesday.html">
+                <div>
+                  <div style="font-weight:700">harryvincent24 - Blackbeard</div>
+                  <div class="muted" style="font-size:13px">[EGB + EB05] ChinoizeCup #126 WEDNESDAY · 2026-10-21</div>
+                </div>
+                <div class="link">2026-10-21 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP09-095 4xOP13-113 3xOP16-103 4xOP16-110 4xOP17-109 4xOP12-112 4xOP16-104 4xEB04-058 4xOP16-108 2xOP14-108 4xOP16-119 1xOP14-112 3xOP09-093 1xOP14-118 1xEB01-059 3xOP16-116">Copy to OP TCG SIM</button>
+            </li>
+            <li class="list-row" data-date="2026-10-20" data-placing="" data-event="other">
+              <a class="item" href="/decklists/blackbeard/3-3-mrupperhand-eb05-chinoizecup-125-tuesday.html">
+                <div>
+                  <div style="font-weight:700">MrUpperhand - Blackbeard</div>
+                  <div class="muted" style="font-size:13px">[EB05] ChinoizeCup #125 TUESDAY · 2026-10-20</div>
+                </div>
+                <div class="link">2026-10-20 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 3xOP09-095 4xOP13-113 3xOP16-103 4xOP16-110 4xOP17-109 4xOP12-112 4xOP16-104 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 4xOP09-093 1xOP16-115 3xOP10-098 2xOP16-116">Copy to OP TCG SIM</button>
+            </li>
+            <li class="list-row" data-date="2026-10-20" data-placing="" data-event="other">
+              <a class="item" href="/decklists/blackbeard/1-2-bobamask-eb05-chinoizecup-125-tuesday.html">
+                <div>
+                  <div style="font-weight:700">bobamask - Blackbeard</div>
+                  <div class="muted" style="font-size:13px">[EB05] ChinoizeCup #125 TUESDAY · 2026-10-20</div>
+                </div>
+                <div class="link">2026-10-20 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 2xOP16-109 3xOP13-113 2xOP16-103 4xOP16-110 4xOP17-109 4xOP12-112 4xOP16-104 4xOP17-102 3xEB04-058 4xOP16-108 4xOP17-114 4xOP16-119 1xOP14-112 3xOP17-112 2xOP09-093 1xOP14-118 1xOP16-116">Copy to OP TCG SIM</button>
+            </li>
+            <li class="list-row" data-date="2026-10-19" data-placing="" data-event="other">
+              <a class="item" href="/decklists/blackbeard/0-1-jtd-eb05-chinoizecup-124-monday.html">
+                <div>
+                  <div style="font-weight:700">JTD - Blackbeard</div>
+                  <div class="muted" style="font-size:13px">[EB05] ChinoizeCup #124 MONDAY · 2026-10-19</div>
+                </div>
+                <div class="link">2026-10-19 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP13-113 3xOP16-103 4xOP16-110 3xEB05-057 4xOP17-109 3xOP16-107 3xOP12-112 4xOP16-104 2xOP06-104 2xEB04-058 3xEB03-053 4xOP16-108 2xOP14-108 3xOP16-119 4xOP09-093 2xOP16-116">Copy to OP TCG SIM</button>
+            </li>
             <li class="list-row" data-date="2026-10-15" data-placing="2" data-event="other">
               <a class="item" href="/decklists/blackbeard/2nd-iacca7-op17-5-win-a-box-rumble-league-13.html">
                 <div>
@@ -756,7 +812,7 @@
                 </div>
                 <div class="link">2026-10-13 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-10-12" data-placing="" data-event="other">
               <a class="item" href="/decklists/blackbeard/1-2-xevi-op17-5-chinoizecup-121-monday.html">
@@ -796,7 +852,7 @@
                 </div>
                 <div class="link">2026-10-05 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-10-05" data-placing="25" data-event="other">
               <a class="item" href="/decklists/blackbeard/25th-williass-op17-5-chinoizecup-118-monday.html">
@@ -856,7 +912,7 @@
                 </div>
                 <div class="link">2026-09-22 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-09-15" data-placing="11" data-event="other">
               <a class="item" href="/decklists/blackbeard/11th-javier-luduena-liga-phoenix-2026-one-piece-mana-36.html">
@@ -866,7 +922,7 @@
                 </div>
                 <div class="link">2026-09-15 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-09-10" data-placing="1" data-event="other">
               <a class="item" href="/decklists/blackbeard/1st-kondoriano98-ger-dressrosa-tournament-op17-2.html">
@@ -886,7 +942,7 @@
                 </div>
                 <div class="link">2026-09-08 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-09-01" data-placing="14" data-event="other">
               <a class="item" href="/decklists/blackbeard/14th-javier-luduena-liga-phoenix-2026-one-piece-mana-34.html">
@@ -896,7 +952,7 @@
                 </div>
                 <div class="link">2026-09-01 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-27" data-placing="" data-event="other">
               <a class="item" href="/decklists/blackbeard/0-1-kondoriano98-ger-dressrosa-tournament-op17.html">
@@ -916,7 +972,7 @@
                 </div>
                 <div class="link">2026-08-25 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-24" data-placing="10" data-event="other">
               <a class="item" href="/decklists/blackbeard/10th-kondoriano98-ger-dressrosa-tournament-op17.html">
@@ -946,7 +1002,7 @@
                 </div>
                 <div class="link">2026-08-18 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-17" data-placing="8" data-event="other">
               <a class="item" href="/decklists/blackbeard/8th-javier-luduena-liga-phoenix-2026-one-piece-mana-31.html">
@@ -956,7 +1012,7 @@
                 </div>
                 <div class="link">2026-08-17 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-17" data-placing="27" data-event="other">
               <a class="item" href="/decklists/blackbeard/27th-umiwara-op17-chinoizecup-97-monday.html">
@@ -976,7 +1032,7 @@
                 </div>
                 <div class="link">2026-08-13 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-11" data-placing="7" data-event="other">
               <a class="item" href="/decklists/blackbeard/7th-imscreex-chinoizecup-95-tuesday.html">
@@ -1016,7 +1072,7 @@
                 </div>
                 <div class="link">2026-08-06 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-06" data-placing="12" data-event="other">
               <a class="item" href="/decklists/blackbeard/12th-agustin-nunez-phoenix-la-plata-one-piece-16.html">
@@ -1026,7 +1082,7 @@
                 </div>
                 <div class="link">2026-08-06 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 3xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP14-112 3xOP09-093 3xOP09-096 2xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-05" data-placing="9" data-event="other">
               <a class="item" href="/decklists/blackbeard/9th-ahab-693-chinoizecup-93-wednesday.html">
@@ -1056,7 +1112,7 @@
                 </div>
                 <div class="link">2026-08-04 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-08-04" data-placing="11" data-event="other">
               <a class="item" href="/decklists/blackbeard/11th-deaven-chinoizecup-92-tuesday.html">
@@ -1096,7 +1152,7 @@
                 </div>
                 <div class="link">2026-07-30 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 3xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP14-112 3xOP09-093 3xOP09-096 2xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-30" data-placing="5" data-event="other">
               <a class="item" href="/decklists/blackbeard/5th-javier-luduena-phoenix-la-plata-one-piece-15.html">
@@ -1106,7 +1162,7 @@
                 </div>
                 <div class="link">2026-07-30 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-30" data-placing="7" data-event="other">
               <a class="item" href="/decklists/blackbeard/7th-karap711-rumble-league-vol-2-op16-5.html">
@@ -1126,7 +1182,7 @@
                 </div>
                 <div class="link">2026-07-28 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 3xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP14-112 3xOP09-093 3xOP09-096 2xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-28" data-placing="6" data-event="other">
               <a class="item" href="/decklists/blackbeard/6th-javier-luduena-liga-phoenix-2026-one-piece-mana-29.html">
@@ -1136,7 +1192,7 @@
                 </div>
                 <div class="link">2026-07-28 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-27" data-placing="1" data-event="other">
               <a class="item" href="/decklists/blackbeard/1st-kondoriano98-ger-dressrosa-tournament-op16-st-31-36-2.html">
@@ -1246,7 +1302,7 @@
                 </div>
                 <div class="link">2026-07-21 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-20" data-placing="1" data-event="other">
               <a class="item" href="/decklists/blackbeard/1st-kondoriano98-ger-dressrosa-tournament-op16-st-31-36.html">
@@ -1306,7 +1362,7 @@
                 </div>
                 <div class="link">2026-07-14 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-14" data-placing="5" data-event="other">
               <a class="item" href="/decklists/blackbeard/5th-agustin-nunez-liga-phoenix-2026-one-piece-mana-27.html">
@@ -1316,7 +1372,7 @@
                 </div>
                 <div class="link">2026-07-14 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 3xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP14-112 3xOP09-093 3xOP09-096 2xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-13" data-placing="1" data-event="other">
               <a class="item" href="/decklists/blackbeard/1st-mblawluffy-chinoizecup-82-monday.html">
@@ -1356,7 +1412,7 @@
                 </div>
                 <div class="link">2026-07-09 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 3xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP14-112 3xOP09-093 3xOP09-096 2xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-09" data-placing="5" data-event="other">
               <a class="item" href="/decklists/blackbeard/5th-fahadak-mad-x-one-piece-tcg-tournament.html">
@@ -1446,7 +1502,7 @@
                 </div>
                 <div class="link">2026-07-07 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-06" data-placing="4" data-event="other">
               <a class="item" href="/decklists/blackbeard/4th-mythara-ger-dressrosa-tournament-op16.html">
@@ -1486,7 +1542,7 @@
                 </div>
                 <div class="link">2026-06-30 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-29" data-placing="8" data-event="other">
               <a class="item" href="/decklists/blackbeard/8th-bixes-chinoizecup-76-monday.html">
@@ -1506,7 +1562,7 @@
                 </div>
                 <div class="link">2026-06-25 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-25" data-placing="10" data-event="other">
               <a class="item" href="/decklists/blackbeard/10th-agustin-nunez-phoenix-la-plata-one-piece-10.html">
@@ -1516,7 +1572,7 @@
                 </div>
                 <div class="link">2026-06-25 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 3xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP14-112 3xOP09-093 3xOP09-096 2xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-23" data-placing="2" data-event="other">
               <a class="item" href="/decklists/blackbeard/2nd-duschdmarke-chinoizecup-74-tuesday.html">
@@ -1536,7 +1592,7 @@
                 </div>
                 <div class="link">2026-06-23 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 3xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP14-112 3xOP09-093 3xOP09-096 2xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-23" data-placing="3" data-event="other">
               <a class="item" href="/decklists/blackbeard/3rd-knee-chinoizecup-74-tuesday.html">
@@ -1556,7 +1612,7 @@
                 </div>
                 <div class="link">2026-06-23 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-23" data-placing="10" data-event="other">
               <a class="item" href="/decklists/blackbeard/10th-joker242-chinoizecup-74-tuesday.html">
@@ -1646,7 +1702,7 @@
                 </div>
                 <div class="link">2026-06-18 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 2xOP09-095 4xOP16-103 2xOP16-110 2xOP16-107 1xOP12-112 4xOP16-104 2xOP09-086 4xEB04-058 1xOP15-114 4xOP16-108 4xOP16-119 3xOP09-093 2xOP16-115 4xOP09-096 4xOP16-116 3xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-18" data-placing="8" data-event="other">
               <a class="item" href="/decklists/blackbeard/8th-javier-luduena-phoenix-la-plata-one-piece-9.html">
@@ -1656,7 +1712,7 @@
                 </div>
                 <div class="link">2026-06-18 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 4xOP13-113 4xOP16-103 4xOP16-110 3xOP12-112 4xOP16-104 3xEB04-058 4xOP16-108 4xOP16-119 4xOP09-093 2xOP09-097 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-18" data-placing="13" data-event="other">
               <a class="item" href="/decklists/blackbeard/13th-mrupperhand-ger-dressrosa-tournament-op16.html">
@@ -1716,7 +1772,7 @@
                 </div>
                 <div class="link">2026-06-15 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP16-080 4xOP16-109 4xOP09-095 3xOP16-103 4xOP16-110 4xOP16-104 4xOP09-086 2xOP16-106 4xEB04-058 4xOP16-108 4xOP16-119 3xOP09-093 4xOP09-096 2xOP16-116 4xOP09-099">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-14" data-placing="8" data-event="other">
               <a class="item" href="/decklists/blackbeard/8th-vasilispatralis-true-fans-tournament.html">
@@ -1909,7 +1965,7 @@
           </div>
           <ul class="list">
             <li>
-              <a class="item" href="/decklists/imu.html">
+              <a class="item" href="/decklists/imu.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Imu decklists</div>
                   <div class="muted" style="font-size:13px">OP13-079 · related constructed leader</div>
@@ -1918,7 +1974,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/decklists/buggy.html">
+              <a class="item" href="/decklists/buggy.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Buggy decklists</div>
                   <div class="muted" style="font-size:13px">OP16-041 · related constructed leader</div>
@@ -1927,7 +1983,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/decklists/rocks-d-xebec.html">
+              <a class="item" href="/decklists/rocks-d-xebec.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Rocks D. Xebec decklists</div>
                   <div class="muted" style="font-size:13px">OP17-039 · related constructed leader</div>
@@ -1936,7 +1992,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/tier-list.html">
+              <a class="item" href="/tier-list.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">OP17 tier list</div>
                   <div class="muted" style="font-size:13px">Aggregated S through D with leader pictures</div>
@@ -1945,7 +2001,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/decklists/op17.html">
+              <a class="item" href="/decklists/op17.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">All leader pages</div>
                   <div class="muted" style="font-size:13px">Every constructed leader on this site</div>
@@ -1954,7 +2010,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/guides/characters/marshall-d-teach.html">
+              <a class="item" href="/guides/characters/marshall-d-teach.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Blackbeard character guide</div>
                   <div class="muted" style="font-size:13px">Crew names mapped to this leader</div>
@@ -1963,7 +2019,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/guides/">
+              <a class="item" href="/guides/" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">One Piece TCG guides</div>
                   <div class="muted" style="font-size:13px">Topics and character pages</div>
@@ -1972,7 +2028,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/format.html">
+              <a class="item" href="/format.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Format and banlist</div>
                   <div class="muted" style="font-size:13px">Standard constructed rules</div>
@@ -1981,7 +2037,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/tier-list.html">
+              <a class="item" href="/tier-list.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">OP17 tier list</div>
                   <div class="muted" style="font-size:13px">Aggregated S through D with leader pictures</div>
@@ -1990,7 +2046,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/recent.html">
+              <a class="item" href="/recent.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Recent lists</div>
                   <div class="muted" style="font-size:13px">Newest 50-card results</div>
@@ -2011,7 +2067,7 @@
     </main>
                                                     <footer>
       © <span id="year"></span> One Piece Decklists - Fan site for the Bandai ONE PIECE CARD GAME (OPTCG). Not affiliated with Bandai or Shueisha.
-      <a href="/tier-list.html">Tier List</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/advertise.html">Advertise</a> · <a href="/privacy.html">Privacy</a>
+      <a href="/tier-list.html" data-google-vignette="false">Tier List</a> · <a href="/guides/" data-google-vignette="false">Guides</a> · <a href="/decklists/op17.html" data-google-vignette="false">Leaders</a> · <a href="/format.html" data-google-vignette="false">Format</a> · <a href="/search.html" data-google-vignette="false">Search</a> · <a href="/shop/" data-google-vignette="false">Shop</a> · <a href="/about.html" data-google-vignette="false">About</a> · <a href="/contact.html" data-google-vignette="false">Contact</a> · <a href="/advertise.html" data-google-vignette="false">Advertise</a> · <a href="/privacy.html" data-google-vignette="false">Privacy</a>
     </footer>
   </div>
   <script>

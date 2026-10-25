@@ -279,7 +279,7 @@ def featured_html(
     return f"""        <section class="card home-panel home-featured" id="featured">
           <p class="home-leaders-kicker">{html.escape(kicker)}</p>
           <div class="section-title">
-            <h3>{html.escape(heading)}</h3>
+            <h2>{html.escape(heading)}</h2>
             <a href="{html.escape(recent_href)}">{html.escape(recent_label)}</a>
           </div>
           <p class="muted home-recent-lede">{html.escape(lede)}</p>
@@ -469,6 +469,9 @@ def save_meta(leaders: list[dict], pie: dict, window: int | dict = POPULAR_WINDO
         "window_start": bounds.get("start"),
         "window_end": bounds.get("end"),
         "window_label": bounds.get("label"),
+        "newest_list": bounds.get("newest") or "",
+        "newest_label": bounds.get("newest_label") or "",
+        "stale": bool(bounds.get("stale")),
         "filter": pie.get("filter") or "",
         "home_leaders": [
             {
@@ -654,7 +657,7 @@ def pie_html(
     return f"""        <section class="card home-panel home-meta-pie" id="meta-share">
           <p class="home-leaders-kicker">{html.escape(kicker)}</p>
           <div class="section-title">
-            <h3>{html.escape(heading)}</h3>
+            <h2>{html.escape(heading)}</h2>
             <a href="{html.escape(more_href)}">{html.escape(more_label)}</a>
           </div>
           <p class="muted home-recent-lede">{html.escape(lede)}</p>
@@ -733,7 +736,7 @@ def patch_home_jsonld(text: str, leaders: list[dict]) -> str:
     return text
 
 
-def write_recent_page(rows_html: str, count: int) -> None:
+def write_recent_page(rows_html: str, count: int, bounds: dict | None = None) -> None:
     title = "Recent OPTCG decklists | One Piece Decklists"
     desc = "Newest 50-card One Piece TCG lists hosted on One Piece Decklists, newest first."
     url = seo.SITE + "/recent.html"
@@ -769,6 +772,7 @@ def write_recent_page(rows_html: str, count: int) -> None:
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / Recent lists</div>
         <h2>Recent lists</h2>
+        {fm.freshness_html(bounds or {})}
         <p>Newest complete 50-card pages on this site. Search if you need an older result.</p>
         <form class="site-search" method="get" action="/search.html" role="search">
           <label class="site-search-label" for="recent-q">Search OPTCG decklists</label>
@@ -795,7 +799,7 @@ def write_recent_page(rows_html: str, count: int) -> None:
       </section>
     </main>
     <footer>
-      © <span id="year"></span> One Piece Decklists - Built with community in mind.
+      © <span id="year"></span> One Piece Decklists - {seo.DISCLAIMER}
 {seo.FOOTER_LINKS}
     </footer>
   </div>

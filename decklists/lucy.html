@@ -40,7 +40,7 @@
 <body class="color-red-blue">
   <div class="wrap">
     <header>
-      <a class="brand" href="/">
+      <a class="brand" href="/" data-google-vignette="false">
         <img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />
         <div>
           <h1>One Piece Decklists</h1>
@@ -52,34 +52,40 @@
         <button type="button" class="theme-toggle-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
       </div>
       <nav aria-label="Primary">
+        <div class="nav-pins">
+          <a class="nav-pin" href="/tier-list.html" data-google-vignette="false">Tier List</a>
+          <a class="nav-pin" href="/recent.html" data-google-vignette="false">Recent</a>
+          <a class="nav-pin" href="/search.html" data-google-vignette="false">Search</a>
+          <span class="nav-chip">OP17 Standard</span>
+        </div>
         <details class="nav-group">
           <summary>Meta</summary>
           <div class="nav-menu">
-            <a href="/tier-list.html">Tier List</a>
-            <a href="/extra-grand-battle.html">Extra Grand Battle</a>
-            <a href="/recent.html">Recent lists</a>
-            <a href="/decklists/op17.html">Leaders</a>
-            <a href="/guides/weekly-meta.html">Weekly meta</a>
-            <a href="/guides/matchups.html">Matchups</a>
+            <a href="/tier-list.html" data-google-vignette="false">Tier List</a>
+            <a href="/extra-grand-battle.html" data-google-vignette="false">Extra Grand Battle</a>
+            <a href="/recent.html" data-google-vignette="false">Recent lists</a>
+            <a href="/decklists/op17.html" data-google-vignette="false">Leaders</a>
+            <a href="/guides/weekly-meta.html" data-google-vignette="false">Weekly meta</a>
+            <a href="/guides/matchups.html" data-google-vignette="false">Matchups</a>
           </div>
         </details>
         <details class="nav-group">
           <summary>Sets</summary>
           <div class="nav-menu">
-            <a href="/eb05-lists.html">EB05 lists</a>
-            <a href="/eb05-spoilers.html">EB05 spoilers</a>
-            <a href="/op18-spoilers.html">OP18 spoilers</a>
+            <a href="/eb05-lists.html" data-google-vignette="false">EB05 lists</a>
+            <a href="/eb05-spoilers.html" data-google-vignette="false">EB05 spoilers</a>
+            <a href="/op18-spoilers.html" data-google-vignette="false">OP18 spoilers</a>
           </div>
         </details>
         <details class="nav-group">
           <summary>Resources</summary>
           <div class="nav-menu">
-            <a href="/format.html">Format</a>
-            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">Events</a>
-            <a href="/guides/">Guides</a>
-            <a href="/shop/">Shop</a>
-            <a href="/search.html">Search</a>
-            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">Discord</a>
+            <a href="/format.html" data-google-vignette="false">Format</a>
+            <a href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener" data-google-vignette="false">Events</a>
+            <a href="/guides/" data-google-vignette="false">Guides</a>
+            <a href="/shop/" data-google-vignette="false">Shop</a>
+            <a href="/search.html" data-google-vignette="false">Search</a>
+            <a href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener" data-google-vignette="false">Discord</a>
           </div>
         </details>
       </nav>
@@ -87,7 +93,7 @@
 
     <main class="single">
       <div class="card hero">
-        <div class="crumb"><a href="/">Home</a> / <a href="/decklists/op17.html">OP17 decklists</a> / Lucy</div>
+        <div class="crumb"><a href="/" data-google-vignette="false">Home</a> / <a href="/decklists/op17.html" data-google-vignette="false">OP17 decklists</a> / Lucy</div>
         <div class="leader-hero">
           <img src="/img/cards/OP15/OP15-002.webp" alt="Lucy leader" />
           <div>
@@ -275,6 +281,7 @@
         </section>
         <!-- /CONSENSUS_LIST -->
 
+        <p class="shop-note">Sleeves, playmats, and deck boxes are in the <a href="/shop/">shop</a>. As an Amazon Associate I earn from qualifying purchases.</p>
         <!-- COMMUNITY_DECKLISTS -->
         <section class="deck-index" style="margin-top:22px">
           <div class="section-title">
@@ -576,12 +583,11 @@
           </ul>
         </section>
         <!-- /COMMUNITY_DECKLISTS -->
-        <p class="shop-note">Sleeves, playmats, and deck boxes are in the <a href="/shop/">shop</a>. As an Amazon Associate I earn from qualifying purchases.</p>
         <!-- TOURNAMENT_DECKLISTS -->
         <section class="deck-index" style="margin-top:22px">
           <div class="section-title">
             <h3>Tournament decklists</h3>
-            <div class="muted">98 lists</div>
+            <div class="muted">100 lists</div>
           </div>
           <p class="muted">Newest Limitless events first. Each row opens a separate 50-card list.</p>
           <div class="list-filters" data-hub-filters>
@@ -605,6 +611,26 @@
             </select>
           </div>
           <ul class="list" aria-label="Tournament decklists">
+            <li class="list-row" data-date="2026-10-20" data-placing="" data-event="other">
+              <a class="item" href="/decklists/lucy/0-3-phoenixshiba-eb05-chinoizecup-125-tuesday.html">
+                <div>
+                  <div style="font-weight:700">PhoenixShiba - Lucy</div>
+                  <div class="muted" style="font-size:13px">[EB05] ChinoizeCup #125 TUESDAY · 2026-10-20</div>
+                </div>
+                <div class="link">2026-10-20 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xEB05-006 2xOP17-054 3xEB05-004 4xOP10-045 4xOP15-046 1xOP09-118 1xOP04-016 4xEB05-008 2xOP05-019 2xOP15-019 3xOP15-054 4xOP15-021 2xOP10-060 4xOP15-020 2xOP15-057">Copy to OP TCG SIM</button>
+            </li>
+            <li class="list-row" data-date="2026-10-20" data-placing="" data-event="other">
+              <a class="item" href="/decklists/lucy/1-2-leucker-eb05-chinoizecup-125-tuesday.html">
+                <div>
+                  <div style="font-weight:700">Leucker - Lucy</div>
+                  <div class="muted" style="font-size:13px">[EB05] ChinoizeCup #125 TUESDAY · 2026-10-20</div>
+                </div>
+                <div class="link">2026-10-20 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xOP15-040 4xEB05-004 2xOP10-045 2xEB03-010 4xOP15-046 3xEB05-008 4xOP05-019 4xOP15-019 4xOP15-055 2xOP15-021 4xOP10-060 4xOP15-020 1xOP15-057">Copy to OP TCG SIM</button>
+            </li>
             <li class="list-row" data-date="2026-08-27" data-placing="9" data-event="other">
               <a class="item" href="/decklists/lucy/9th-squalo8-rumble-league-6-op17-free.html">
                 <div>
@@ -663,7 +689,7 @@
                 </div>
                 <div class="link">2026-07-28 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 2xOP05-015 4xOP15-052 4xOP15-053 4xOP15-040 3xOP15-014 3xOP10-045 2xOP08-047 4xOP15-046 1xOP09-118 2xOP05-019 4xOP15-055 4xOP15-054 3xOP15-021 4xOP10-060 4xOP15-020 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-28" data-placing="7" data-event="other">
               <a class="item" href="/decklists/lucy/7th-thomas-aragon-liga-phoenix-2026-one-piece-mana-29.html">
@@ -703,7 +729,7 @@
                 </div>
                 <div class="link">2026-07-21 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xOP15-040 4xOP10-045 1xOP15-006 4xOP15-046 1xOP09-118 4xOP10-059 2xOP05-019 4xOP15-054 3xOP15-021 4xOP10-060 4xOP15-020 2xOP06-058 3xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-21" data-placing="8" data-event="other">
               <a class="item" href="/decklists/lucy/8th-thomas-aragon-liga-phoenix-2026-one-piece-mana-28.html">
@@ -743,7 +769,7 @@
                 </div>
                 <div class="link">2026-07-16 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xOP15-040 4xOP10-045 2xOP15-006 4xOP15-046 1xOP09-118 4xOP10-059 3xOP05-019 4xOP15-054 3xOP15-021 4xOP10-060 4xOP15-020 2xOP06-058 3xOP15-056">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-13" data-placing="15" data-event="other">
               <a class="item" href="/decklists/lucy/15th-ray-flyaway-chinoizecup-82-monday.html">
@@ -783,7 +809,7 @@
                 </div>
                 <div class="link">2026-07-11 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xOP15-040 3xOP15-014 2xOP10-045 2xOP08-047 4xOP15-046 1xOP09-118 3xOP05-019 4xOP15-055 4xOP15-054 4xOP15-021 4xOP10-060 4xOP15-020 1xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-11" data-placing="17" data-event="other">
               <a class="item" href="/decklists/lucy/17th-javier-luduena-phoenix-la-plata-one-piece-mini-open.html">
@@ -793,7 +819,7 @@
                 </div>
                 <div class="link">2026-07-11 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xOP15-040 3xOP15-014 2xOP10-045 1xOP10-049 2xOP08-047 4xOP15-046 1xOP13-042 1xOP09-118 2xOP05-019 1xOP15-019 4xOP15-055 4xOP15-054 3xOP15-021 4xOP10-060 4xOP15-020 1xOP15-056 1xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-09" data-placing="4" data-event="other">
               <a class="item" href="/decklists/lucy/4th-safena-mad-x-one-piece-tcg-tournament.html">
@@ -843,7 +869,7 @@
                 </div>
                 <div class="link">2026-07-07 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 2xOP05-015 4xOP15-052 4xOP15-053 4xOP15-040 2xOP05-006 4xOP10-045 3xOP08-047 4xOP12-044 1xOP09-118 3xOP05-019 4xOP15-054 2xOP15-021 4xOP10-060 4xOP15-020 1xOP06-058 2xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-07-07" data-placing="5" data-event="other">
               <a class="item" href="/decklists/lucy/5th-jose-laaz-liga-phoenix-2026-one-piece-mana-26.html">
@@ -883,7 +909,7 @@
                 </div>
                 <div class="link">2026-07-02 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 2xOP05-015 4xOP15-052 4xOP15-053 4xOP15-040 2xOP05-006 4xOP10-045 3xOP08-047 4xOP12-044 1xOP09-118 3xOP05-019 4xOP15-054 2xOP15-021 4xOP10-060 4xOP15-020 1xOP06-058 2xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-30" data-placing="2" data-event="other">
               <a class="item" href="/decklists/lucy/2nd-legendarysword34-chinoizecup-77-tuesday.html">
@@ -1003,7 +1029,7 @@
                 </div>
                 <div class="link">2026-06-11 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 3xOP05-015 4xOP15-052 4xOP15-053 4xOP15-040 4xOP10-045 4xOP15-046 1xOP13-042 1xOP09-118 3xOP10-059 3xOP05-019 4xOP15-054 3xOP15-021 4xOP10-060 4xOP15-020 2xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-11" data-placing="5" data-event="other">
               <a class="item" href="/decklists/lucy/5th-agustin-nunez-phoenix-la-plata-one-piece-8.html">
@@ -1013,7 +1039,7 @@
                 </div>
                 <div class="link">2026-06-11 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 2xOP05-015 4xOP15-052 4xOP15-053 4xOP15-040 4xOP15-014 4xOP15-046 1xOP09-118 2xOP05-019 3xOP15-019 4xOP15-055 3xOP15-054 4xOP15-021 4xOP10-060 3xOP15-020 2xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-11" data-placing="7" data-event="other">
               <a class="item" href="/decklists/lucy/7th-julian-piergiacomi-phoenix-la-plata-one-piece-8.html">
@@ -1023,7 +1049,7 @@
                 </div>
                 <div class="link">2026-06-11 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xOP15-040 3xOP15-014 1xOP10-045 4xOP15-046 1xOP13-042 1xOP09-118 2xOP05-019 3xOP15-019 4xOP15-055 3xOP15-054 4xOP15-021 4xOP10-060 4xOP15-020 2xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-09" data-placing="4" data-event="other">
               <a class="item" href="/decklists/lucy/4th-kizarusenpai-chinoizecup-68-tuesday.html">
@@ -1043,7 +1069,7 @@
                 </div>
                 <div class="link">2026-06-09 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 2xOP05-015 4xOP15-052 4xOP15-053 4xOP15-040 4xOP15-014 4xOP15-046 1xOP09-118 2xOP05-019 3xOP15-019 4xOP15-055 3xOP15-054 4xOP15-021 4xOP10-060 3xOP15-020 2xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-06-04" data-placing="3" data-event="other">
               <a class="item" href="/decklists/lucy/3rd-styxpro-op-tcg-ua-weekly-webcam-tournament.html">
@@ -1193,7 +1219,7 @@
                 </div>
                 <div class="link">2026-05-19 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 3xOP05-015 4xOP15-052 4xOP15-053 4xOP15-040 4xOP10-045 4xOP15-046 1xOP13-042 1xOP09-118 3xOP10-059 3xOP05-019 4xOP15-054 3xOP15-021 4xOP10-060 4xOP15-020 2xOP15-056 2xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-05-18" data-placing="2" data-event="other">
               <a class="item" href="/decklists/lucy/2nd-dearcan-chinoizecup-58-monday.html">
@@ -1293,7 +1319,7 @@
                 </div>
                 <div class="link">2026-04-30 →</div>
               </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP15-002 4xOP15-052 4xOP15-053 4xOP15-040 4xOP10-045 1xOP15-006 4xOP15-046 2xOP09-118 4xOP10-059 3xOP05-019 4xOP15-054 3xOP15-021 4xOP10-060 4xOP15-020 4xOP15-056 1xOP15-057">Copy to OP TCG SIM</button>
+              
             </li>
             <li class="list-row" data-date="2026-04-28" data-placing="4" data-event="other">
               <a class="item" href="/decklists/lucy/4th-speedhealer-chinoizecup-50-tuesday.html">
@@ -1596,7 +1622,7 @@
           </div>
           <ul class="list">
             <li>
-              <a class="item" href="/decklists/rg-luffy.html">
+              <a class="item" href="/decklists/rg-luffy.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">RG Luffy decklists</div>
                   <div class="muted" style="font-size:13px">OP13-001 · related constructed leader</div>
@@ -1605,7 +1631,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/decklists/op13-ace.html">
+              <a class="item" href="/decklists/op13-ace.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">OP13 Ace decklists</div>
                   <div class="muted" style="font-size:13px">OP13-002 · related constructed leader</div>
@@ -1614,7 +1640,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/decklists/gb-luffy.html">
+              <a class="item" href="/decklists/gb-luffy.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">GB Luffy decklists</div>
                   <div class="muted" style="font-size:13px">OP16-022 · related constructed leader</div>
@@ -1623,7 +1649,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/tier-list.html">
+              <a class="item" href="/tier-list.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">OP17 tier list</div>
                   <div class="muted" style="font-size:13px">Aggregated S through D with leader pictures</div>
@@ -1632,7 +1658,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/decklists/op17.html">
+              <a class="item" href="/decklists/op17.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">All leader pages</div>
                   <div class="muted" style="font-size:13px">Every constructed leader on this site</div>
@@ -1641,7 +1667,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/guides/characters/lucy.html">
+              <a class="item" href="/guides/characters/lucy.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Lucy character guide</div>
                   <div class="muted" style="font-size:13px">Crew names mapped to this leader</div>
@@ -1650,7 +1676,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/guides/">
+              <a class="item" href="/guides/" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">One Piece TCG guides</div>
                   <div class="muted" style="font-size:13px">Topics and character pages</div>
@@ -1659,7 +1685,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/format.html">
+              <a class="item" href="/format.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Format and banlist</div>
                   <div class="muted" style="font-size:13px">Standard constructed rules</div>
@@ -1668,7 +1694,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/tier-list.html">
+              <a class="item" href="/tier-list.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">OP17 tier list</div>
                   <div class="muted" style="font-size:13px">Aggregated S through D with leader pictures</div>
@@ -1677,7 +1703,7 @@
               </a>
             </li>
             <li>
-              <a class="item" href="/recent.html">
+              <a class="item" href="/recent.html" data-google-vignette="false">
                 <div>
                   <div style="font-weight:700">Recent lists</div>
                   <div class="muted" style="font-size:13px">Newest 50-card results</div>
@@ -1698,7 +1724,7 @@
     </main>
                                                     <footer>
       © <span id="year"></span> One Piece Decklists - Fan site for the Bandai ONE PIECE CARD GAME (OPTCG). Not affiliated with Bandai or Shueisha.
-      <a href="/tier-list.html">Tier List</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/advertise.html">Advertise</a> · <a href="/privacy.html">Privacy</a>
+      <a href="/tier-list.html" data-google-vignette="false">Tier List</a> · <a href="/guides/" data-google-vignette="false">Guides</a> · <a href="/decklists/op17.html" data-google-vignette="false">Leaders</a> · <a href="/format.html" data-google-vignette="false">Format</a> · <a href="/search.html" data-google-vignette="false">Search</a> · <a href="/shop/" data-google-vignette="false">Shop</a> · <a href="/about.html" data-google-vignette="false">About</a> · <a href="/contact.html" data-google-vignette="false">Contact</a> · <a href="/advertise.html" data-google-vignette="false">Advertise</a> · <a href="/privacy.html" data-google-vignette="false">Privacy</a>
     </footer>
   </div>
   <script>

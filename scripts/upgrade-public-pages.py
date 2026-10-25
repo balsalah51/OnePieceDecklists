@@ -400,10 +400,11 @@ def home_notes_html(data: dict) -> str:
     return f"""        <section class="card home-panel home-notes" id="meta-notes">
           <p class="home-leaders-kicker">Original notes</p>
           <div class="section-title">
-            <h3>This week in the meta</h3>
+            <h2>This week in the meta</h2>
             <a href="/guides/weekly-meta.html">Full write-up →</a>
           </div>
           <p class="home-notes-lede">{top_name} shows up on {top_n} hosted lists from {html.escape(window_label)}{share_bit}.{follow}{hole_bit}</p>
+          {home_meta.fm.freshness_html(bounds)}
           <div class="home-notes-grid">
             <a class="home-note" href="/guides/weekly-meta.html">
               <span class="kicker">Weekly meta</span>
@@ -451,11 +452,11 @@ def render_home_body(data: dict | None = None) -> str:
           <div class="home-splash-viewport">
             <div class="home-splash-track">
               <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo" width="1920" height="960" fetchpriority="high" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-six" src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" data-src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" data-src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg home-splash-six" data-src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg home-splash-rocks" data-src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
@@ -468,12 +469,12 @@ def render_home_body(data: dict | None = None) -> str:
             <button type="button" data-splash-next aria-label="Next banner">›</button>
           </div>
           <div class="home-splash-dots" role="tablist" aria-label="Choose banner">
-            <button type="button" data-splash-dot="0" aria-label="Banner 1" aria-current="true"></button>
-            <button type="button" data-splash-dot="1" aria-label="Banner 2"></button>
-            <button type="button" data-splash-dot="2" aria-label="Banner 3"></button>
-            <button type="button" data-splash-dot="3" aria-label="Banner 4"></button>
-            <button type="button" data-splash-dot="4" aria-label="Banner 5"></button>
-            <button type="button" data-splash-dot="5" aria-label="Banner 6"></button>
+            <button type="button" role="tab" data-splash-dot="0" aria-label="Banner 1" aria-current="true"></button>
+            <button type="button" role="tab" data-splash-dot="1" aria-label="Banner 2"></button>
+            <button type="button" role="tab" data-splash-dot="2" aria-label="Banner 3"></button>
+            <button type="button" role="tab" data-splash-dot="3" aria-label="Banner 4"></button>
+            <button type="button" role="tab" data-splash-dot="4" aria-label="Banner 5"></button>
+            <button type="button" role="tab" data-splash-dot="5" aria-label="Banner 6"></button>
           </div>
         </section>
         <script>
@@ -489,6 +490,12 @@ def render_home_body(data: dict | None = None) -> str:
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];
+          var banners=root.querySelectorAll(".home-splash-bg");
+          var banner=banners[i];
+          if(banner){{
+            var pending=banner.getAttribute("data-src");
+            if(pending) banner.src=pending;
+          }}
           root.style.setProperty("--splash-i", String(i));
           root.setAttribute("data-splash-i", String(i));
           var a=root.querySelector("[data-splash-card]");
@@ -591,7 +598,7 @@ def render_home_body(data: dict | None = None) -> str:
           <div class="home-leaders-intro">
             <p class="home-leaders-kicker">Popular now</p>
             <div class="home-leaders-intro-row">
-              <h3>Leaders</h3>
+              <h2>Leaders</h2>
               <a href="/decklists/op17.html">All leader pages →</a>
             </div>
           </div>
@@ -605,7 +612,7 @@ def render_home_body(data: dict | None = None) -> str:
         <section class="card home-panel home-recent" id="recent">
           <p class="home-leaders-kicker">Results</p>
           <div class="section-title">
-            <h3>Recent lists</h3>
+            <h2>Recent lists</h2>
             <div class="muted">{count_label}</div>
           </div>
           <p class="muted home-recent-lede">Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
@@ -700,6 +707,7 @@ def patch_home() -> None:
     home_meta.write_recent_page(
         recent_rows_html(data["recent_page"]),
         len(data["recent_page"]),
+        data.get("bounds") or {},
     )
     print(
         "home leaders",

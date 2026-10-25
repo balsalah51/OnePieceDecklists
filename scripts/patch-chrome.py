@@ -223,7 +223,7 @@ def main() -> None:
     imgs = list(re.finditer(r'<img class="home-splash-bg[^"]*"[^>]*>', hero))
     hero2 = hero
     for i, match in enumerate(imgs):
-        if i == 0 or "loading=" in match.group(0):
+        if i == 0 or "loading=" in match.group(0) or "data-src=" in match.group(0):
             continue
         tag = match.group(0).replace("<img ", '<img loading="lazy" ', 1)
         hero2 = hero2.replace(match.group(0), tag, 1)

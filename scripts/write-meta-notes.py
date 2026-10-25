@@ -75,8 +75,8 @@ def shell(title: str, desc: str, path: str, crumb: str, body: str, current: str)
       </div>
     </main>
     <footer>
-      © <span id="year"></span> One Piece Decklists - Fan site, not affiliated with Bandai.
-      <a href="/tier-list.html">Tier List</a> · <a href="/guides/weekly-meta.html">Weekly meta</a> · <a href="/guides/matchups.html">Matchups</a> · <a href="/guides/">Guides</a> · <a href="/privacy.html">Privacy</a>
+      © <span id="year"></span> One Piece Decklists - {seo.DISCLAIMER}
+{seo.FOOTER_LINKS}
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
@@ -129,10 +129,19 @@ def weekly_body(meta: dict, tier: dict) -> str:
             f"{hole['lists']} placed lists ({hole['win_pct']}%). That number is firsts divided by placed lists "
             f"on this site. It is not a game win rate.</p>"
         )
-    updated = html.escape(pretty_date(str(tier.get("updated") or "")))
+    updated = html.escape(meta.get("newest_label") or pretty_date(str(tier.get("updated") or "")))
+    stale = ""
+    if meta.get("stale"):
+        stale = (
+            '<p class="freshness-stale" role="status">Newest hosted list is '
+            f"{updated}, more than 48 hours ago (America/New_York). "
+            "The recent window still ends today.</p>"
+        )
     sources = tier.get("source_count") or 0
     return f"""        <h2>Weekly meta</h2>
-        <p>Week of {updated}. This note uses the same hosted lists and the same tier letters as the <a href="/tier-list.html">tier list</a> ({sources} published sources, rolling {html.escape(str(days))} days, {html.escape(label)}). It is not a copy of the Limitless or OPTCG.GG metagame page.</p>
+        <p class="freshness" id="last-updated">Last updated {updated}.</p>
+        {stale}
+        <p>This note uses the same hosted lists and the same tier letters as the <a href="/tier-list.html">tier list</a> ({sources} published sources, rolling {html.escape(str(days))} days, {html.escape(label)}). The window ends today in America/New_York. It is not a copy of the Limitless or OPTCG.GG metagame page.</p>
         <section style="margin-top:22px">
           <div class="section-title"><h3>What the window is playing</h3><div class="muted">{html.escape(label)}</div></div>
           <p>The homepage leaders in that window are {top_line}. An older chart counted only the newest 200 lists, and a separate pie counted only lists that played an OP17 card. Mihawk lists often play no OP17 card, so that pie left him off a page that still called him S tier. Both views now count every hosted list in the rolling window.</p>

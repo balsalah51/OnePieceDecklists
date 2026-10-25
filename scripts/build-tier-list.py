@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path("/workspace")
 # Kept so older notes can see what the fixed window used to be. Live counts
-# use format_meta.RECENT_DAYS, ending on the newest hosted list.
+# use format_meta.RECENT_DAYS, ending on today's date in America/New_York.
 RECENT_FROM = "2026-08-20"
 TIER_PTS = {"S": 5.0, "A": 3.5, "B": 2.0, "C": 1.0, "D": 0.4}
 COLOR_NAMES = {
@@ -737,7 +737,8 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         <div class="crumb"><a href="/">Home</a> / Tier List</div>
         <h2>OP17 tier list</h2>
         <p>{html.escape(intro)}</p>
-        <p class="muted">Updated {html.escape(bounds['end'] if bounds else date.today().isoformat())}, the date of the newest hosted list. Recent columns use {html.escape(bounds['label'] if bounds else '')} (rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days), the same lists as the homepage share chart. OP09 Nico Robin and EB05 Nico Robin, OP15 Enel and OP05 Enel, and OP17 Shanks and OP09 Shanks are different cards and stay on separate pages.</p>
+        {fm.freshness_html(bounds or {})}
+        <p class="muted">Recent columns use {html.escape(bounds['label'] if bounds else '')} (rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days), ending today in America/New_York. Same lists as the homepage share chart. OP09 Nico Robin and EB05 Nico Robin, OP15 Enel and OP05 Enel, and OP17 Shanks and OP09 Shanks are different cards and stay on separate pages.</p>
         <div class="tier-board" aria-label="OP17 leader tier list">
 {board}
         </div>
@@ -760,7 +761,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
       </div>
     </main>
     <footer>
-      © <span id="year"></span> One Piece Decklists - Fan site for the Bandai ONE PIECE CARD GAME (OPTCG). Not affiliated with Bandai.
+      © <span id="year"></span> One Piece Decklists - {seo.DISCLAIMER}
 {seo.FOOTER_LINKS}
     </footer>
   </div>
@@ -905,7 +906,9 @@ def main() -> None:
     sources, by_id = aggregate(stats, bounds)
     rows = list(by_id.values())
     payload = {
-        "updated": bounds["end"],
+        "updated": bounds.get("newest") or bounds["end"],
+        "newest_list": bounds.get("newest") or "",
+        "stale": bool(bounds.get("stale")),
         "recent_from": bounds["start"],
         "recent_through": bounds["end"],
         "recent_days": bounds["days"],
