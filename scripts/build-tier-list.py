@@ -803,6 +803,10 @@ def patch_nav(text: str, *, current: bool = False) -> str:
     if not m:
         return text
     inner = m.group(2)
+    # Grouped nav already includes Tier List. Rewriting it would pull that
+    # link out of the Meta menu and drop a stray link above the menus.
+    if "nav-group" in inner:
+        return text
     link = '        <a href="/tier-list.html"'
     if current:
         link += ' aria-current="page"'
@@ -821,7 +825,7 @@ def patch_nav(text: str, *, current: bool = False) -> str:
 
 
 def patch_footer(text: str) -> str:
-    foot = re.search(r"<footer>(.*?)</footer>", text, re.S)
+    foot = re.search(r"[ \t]*<footer>(.*?)</footer>", text, re.S)
     if not foot:
         return text
     inner = foot.group(1)
