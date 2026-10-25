@@ -100,25 +100,39 @@ espec = importlib.util.spec_from_file_location("eventdisplay", ROOT / "scripts/e
 event_display = importlib.util.module_from_spec(espec)
 espec.loader.exec_module(event_display)
 
+fspec = importlib.util.spec_from_file_location("formatmeta", ROOT / "scripts/format_meta.py")
+fm = importlib.util.module_from_spec(fspec)
+fspec.loader.exec_module(fm)
+
 
 def newest_rows(rows: list[dict], limit: int) -> list[dict]:
     return sorted(rows, key=gen.date_sort_key, reverse=True)[:limit]
 
 
-def ranked_leaders(rows: list[dict], window: int = POPULAR_WINDOW, limit: int = HOME_LEADER_COUNT) -> list[dict]:
+def ranked_leaders(rows: list[dict], window: int | None = POPULAR_WINDOW, limit: int = HOME_LEADER_COUNT) -> list[dict]:
+    """Count leaders in `rows`.
+
+    window=None counts every row passed in (the shared rolling window).
+    A positive window keeps the older "newest N lists" behavior for callers
+    that have not switched over.
+    """
+    sample = rows if window is None else newest_rows(rows, window)
     counts: Counter[str] = Counter()
     by_id = {}
-    for row in newest_rows(rows, window):
+    for row in sample:
         leader = row.get("leader") or {}
         lid = leader.get("id")
         if not lid:
             continue
         counts[lid] += 1
         by_id[lid] = leader
+    tiers = load_tier_lookup()
     ordered = []
     for lid, n in counts.most_common():
         leader = dict(by_id[lid])
         leader["home_lists"] = n
+        leader["display_name"] = fm.public_name(leader)
+        leader["tier"] = (tiers.get(lid) or {}).get("tier") or ""
         ordered.append(leader)
         if len(ordered) >= limit:
             break
@@ -129,6 +143,8 @@ def ranked_leaders(rows: list[dict], window: int = POPULAR_WINDOW, limit: int = 
                 continue
             extra = dict(leader)
             extra["home_lists"] = counts.get(leader["id"], 0)
+            extra["display_name"] = fm.public_name(extra)
+            extra["tier"] = (tiers.get(leader["id"]) or {}).get("tier") or ""
             ordered.append(extra)
             if len(ordered) >= limit:
                 break
@@ -288,22 +304,40 @@ def pie_slices(
     rows: list[dict],
     latest_set: str | None = None,
     tier_path: Path | None = None,
+    *,
+    only_set: str | None = "auto",
+    scan_limit: int | None = PIE_SCAN_LIMIT,
 ) -> dict:
-    sample = newest_rows(rows, PIE_SCAN_LIMIT)
+    """Leader share.
+
+    only_set="auto" keeps the older chart: newest `scan_limit` lists that
+    play at least one card from the newest OP set. The homepage passes
+    only_set="" and scan_limit=None so the chart counts the same rolling
+    window as the tier list, including lists that play no OP17 card.
+    """
+    sample = list(rows) if scan_limit is None else newest_rows(rows, scan_limit)
     cards_by_href: dict[str, list[str]] = {}
     best = 17
-    for row in sample:
-        href = (row.get("href") or "").lstrip("/")
-        if not href:
-            continue
-        ids = _card_ids(ROOT / href)
-        cards_by_href[href] = ids
-        for cid in ids:
-            m = OP_SET_RE.match(cid)
-            if m:
-                best = max(best, int(m.group(1)))
-    latest_set = latest_set or f"OP{best:02d}"
-    prefix = latest_set + "-"
+    apply_filter = only_set != ""
+    if apply_filter and only_set in (None, "auto"):
+        for row in sample:
+            href = (row.get("href") or "").lstrip("/")
+            if not href:
+                continue
+            ids = _card_ids(ROOT / href)
+            cards_by_href[href] = ids
+            for cid in ids:
+                m = OP_SET_RE.match(cid)
+                if m:
+                    best = max(best, int(m.group(1)))
+        latest_set = latest_set or f"OP{best:02d}"
+        prefix = latest_set + "-"
+    elif apply_filter:
+        latest_set = only_set
+        prefix = (only_set or "") + "-"
+    else:
+        latest_set = latest_set or "Recent"
+        prefix = ""
     counts: Counter[str] = Counter()
     placed: Counter[str] = Counter()
     firsts: Counter[str] = Counter()
@@ -312,12 +346,13 @@ def pie_slices(
     matched = 0
     for row in sample:
         href = (row.get("href") or "").lstrip("/")
-        if not href:
+        if not href and apply_filter:
             continue
         scanned += 1
-        ids = cards_by_href.get(href) or []
-        if not ids or not any(cid.startswith(prefix) for cid in ids):
-            continue
+        if apply_filter:
+            ids = cards_by_href.get(href) or []
+            if not ids or not any(cid.startswith(prefix) for cid in ids):
+                continue
         leader = row.get("leader") or {}
         lid = leader.get("id")
         if not lid:
@@ -348,7 +383,7 @@ def pie_slices(
         slices.append(
             {
                 "id": lid,
-                "name": leader["name"],
+                "name": fm.public_name(leader),
                 "href": "/" + leader["page"],
                 "image": gen.card_image_url(lid),
                 "color": leader.get("color") or "",
@@ -394,7 +429,7 @@ def pie_slices(
             leader = by_id[lid]
             hole = {
                 "id": lid,
-                "name": leader["name"],
+                "name": fm.public_name(leader),
                 "href": "/" + leader["page"],
                 "image": gen.card_image_url(lid),
                 "wins": wins,
@@ -407,7 +442,7 @@ def pie_slices(
         n_placed = placed[lid] or n
         hole = {
             "id": lid,
-            "name": leader["name"],
+            "name": fm.public_name(leader),
             "href": "/" + leader["page"],
             "image": gen.card_image_url(lid),
             "wins": firsts[lid],
@@ -419,27 +454,48 @@ def pie_slices(
         "scanned": scanned,
         "matched": matched,
         "total": matched,
+        "filter": "op-set card" if apply_filter else "all hosted lists in the window",
         "slices": slices,
         "hole": hole,
     }
 
 
-def save_meta(leaders: list[dict], pie: dict, window: int = POPULAR_WINDOW) -> None:
+def save_meta(leaders: list[dict], pie: dict, window: int | dict = POPULAR_WINDOW) -> None:
+    bounds = window if isinstance(window, dict) else {}
+    window_n = pie.get("matched") if bounds else window
     payload = {
-        "window": window,
+        "window": window_n,
+        "window_days": bounds.get("days"),
+        "window_start": bounds.get("start"),
+        "window_end": bounds.get("end"),
+        "window_label": bounds.get("label"),
+        "filter": pie.get("filter") or "",
         "home_leaders": [
-            {"id": L["id"], "name": L["name"], "count": L.get("home_lists", 0)} for L in leaders
+            {
+                "id": L["id"],
+                "name": L.get("display_name") or L["name"],
+                "tier": L.get("tier") or "",
+                "count": L.get("home_lists", 0),
+            }
+            for L in leaders
         ],
         "set": pie.get("set"),
         "pie_lists": pie.get("matched"),
         "pie": [
-            {"id": s["id"], "name": s["name"], "count": s["count"], "pct": round(s["pct"], 1)}
+            {
+                "id": s["id"],
+                "name": s["name"],
+                "tier": s.get("tier") or "",
+                "count": s["count"],
+                "pct": round(s["pct"], 1),
+            }
             for s in pie.get("slices") or []
         ],
         "hole": (
             {
                 "id": pie["hole"]["id"],
                 "name": pie["hole"]["name"],
+                "href": pie["hole"].get("href") or "",
                 "wins": pie["hole"]["wins"],
                 "lists": pie["hole"]["lists"],
                 "win_pct": round(pie["hole"]["win_pct"], 1),
@@ -533,8 +589,8 @@ def pie_html(
     if not slices:
         return ""
     latest = pie.get("set") or "OP17"
-    heading = heading or f"{latest} lists"
-    lede = lede or (
+    heading = heading or (f"{latest} lists" if latest else "List share")
+    lede = lede or pie.get("lede") or (
         f"Share of the newest hosted lists that play at least one {latest} card. "
         "The hole is the leader converting best among these lists. Names sit on every slice."
     )
@@ -619,10 +675,18 @@ def leader_cards_html(leaders: list[dict]) -> str:
     cards = []
     for leader in leaders:
         img = gen.card_image_url(leader["id"])
+        name = leader.get("display_name") or leader["name"]
+        bits = [name]
+        if leader.get("tier"):
+            bits.append(str(leader["tier"]))
+        n = leader.get("home_lists")
+        if n:
+            bits.append(f"{n} lists")
+        caption = " · ".join(bits)
         cards.append(
             f"""            <a class="leader-card-link" href="/{leader["page"]}">
-              <img src="{img}" alt="{html.escape(leader["name"])} leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">{html.escape(leader["name"])}</div>
+              <img src="{img}" alt="{html.escape(name)} leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">{html.escape(caption)}</div>
             </a>"""
         )
     return "\n".join(cards)
@@ -635,7 +699,7 @@ def collection_jsonld_items(leaders: list[dict]) -> list[dict]:
             {
                 "@type": "ListItem",
                 "position": i,
-                "name": leader["name"],
+                "name": leader.get("display_name") or leader["name"],
                 "url": seo.SITE + "/" + leader["page"],
             }
         )

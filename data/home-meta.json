@@ -1,132 +1,159 @@
 {
-  "window": 200,
+  "window": 2681,
+  "window_days": 45,
+  "window_start": "2026-09-01",
+  "window_end": "2026-10-16",
+  "window_label": "1 September 2026 through 16 October 2026",
+  "filter": "all hosted lists in the window",
   "home_leaders": [
-    {
-      "id": "OP17-039",
-      "name": "Rocks D. Xebec",
-      "count": 40
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 33
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 23
-    },
-    {
-      "id": "OP05-098",
-      "name": "OP05 Enel",
-      "count": 12
-    },
-    {
-      "id": "OP08-058",
-      "name": "Charlotte Pudding",
-      "count": 11
-    },
-    {
-      "id": "OP12-061",
-      "name": "Rosinante",
-      "count": 11
-    },
-    {
-      "id": "OP17-058",
-      "name": "Kaido",
-      "count": 11
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 8
-    },
-    {
-      "id": "OP13-001",
-      "name": "RG Luffy",
-      "count": 7
-    },
-    {
-      "id": "OP14-041",
-      "name": "Boa Hancock",
-      "count": 6
-    }
-  ],
-  "set": "OP17",
-  "pie_lists": 352,
-  "pie": [
-    {
-      "id": "OP17-039",
-      "name": "Rocks D. Xebec",
-      "count": 67,
-      "pct": 19.0
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 51,
-      "pct": 14.5
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 36,
-      "pct": 10.2
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 22,
-      "pct": 6.2
-    },
-    {
-      "id": "OP17-058",
-      "name": "Kaido",
-      "count": 22,
-      "pct": 6.2
-    },
-    {
-      "id": "OP08-058",
-      "name": "Charlotte Pudding",
-      "count": 19,
-      "pct": 5.4
-    },
-    {
-      "id": "OP05-098",
-      "name": "OP05 Enel",
-      "count": 18,
-      "pct": 5.1
-    },
-    {
-      "id": "OP14-041",
-      "name": "Boa Hancock",
-      "count": 18,
-      "pct": 5.1
-    },
     {
       "id": "OP14-020",
       "name": "Mihawk",
-      "count": 14,
-      "pct": 4.0
+      "tier": "S",
+      "count": 370
     },
     {
-      "id": "OP12-061",
-      "name": "Rosinante",
-      "count": 12,
-      "pct": 3.4
+      "id": "OP09-062",
+      "name": "OP09 Nico Robin",
+      "tier": "A",
+      "count": 286
+    },
+    {
+      "id": "OP17-039",
+      "name": "Rocks D. Xebec",
+      "tier": "S",
+      "count": 272
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "tier": "S",
+      "count": 228
+    },
+    {
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "tier": "B",
+      "count": 228
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "tier": "A",
+      "count": 201
+    },
+    {
+      "id": "OP17-058",
+      "name": "Kaido",
+      "tier": "A",
+      "count": 168
+    },
+    {
+      "id": "OP15-058",
+      "name": "OP15 Enel",
+      "tier": "A",
+      "count": 168
+    },
+    {
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "tier": "A",
+      "count": 89
+    },
+    {
+      "id": "OP16-001",
+      "name": "Portgas D. Ace",
+      "tier": "A",
+      "count": 77
+    }
+  ],
+  "set": "Recent",
+  "pie_lists": 2681,
+  "pie": [
+    {
+      "id": "OP14-020",
+      "name": "Mihawk",
+      "tier": "S",
+      "count": 370,
+      "pct": 13.8
+    },
+    {
+      "id": "OP09-062",
+      "name": "OP09 Nico Robin",
+      "tier": "A",
+      "count": 286,
+      "pct": 10.7
+    },
+    {
+      "id": "OP17-039",
+      "name": "Rocks D. Xebec",
+      "tier": "S",
+      "count": 272,
+      "pct": 10.1
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "tier": "S",
+      "count": 228,
+      "pct": 8.5
+    },
+    {
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "tier": "B",
+      "count": 228,
+      "pct": 8.5
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "tier": "A",
+      "count": 201,
+      "pct": 7.5
+    },
+    {
+      "id": "OP17-058",
+      "name": "Kaido",
+      "tier": "A",
+      "count": 168,
+      "pct": 6.3
+    },
+    {
+      "id": "OP15-058",
+      "name": "OP15 Enel",
+      "tier": "A",
+      "count": 168,
+      "pct": 6.3
+    },
+    {
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "tier": "A",
+      "count": 89,
+      "pct": 3.3
+    },
+    {
+      "id": "OP16-001",
+      "name": "Portgas D. Ace",
+      "tier": "A",
+      "count": 77,
+      "pct": 2.9
     },
     {
       "id": "",
       "name": "Other",
-      "count": 73,
-      "pct": 20.7
+      "tier": "",
+      "count": 594,
+      "pct": 22.2
     }
   ],
   "hole": {
-    "id": "ST30-001",
-    "name": "Luffy & Ace",
-    "wins": 4,
-    "lists": 35,
-    "win_pct": 11.4
+    "id": "OP16-080",
+    "name": "Blackbeard",
+    "href": "/decklists/blackbeard.html",
+    "wins": 3,
+    "lists": 15,
+    "win_pct": 20.0
   }
 }

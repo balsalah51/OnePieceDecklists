@@ -236,54 +236,8 @@ RECENT_LIMIT = home_meta.HOME_RECENT_VISIBLE + home_meta.HOME_RECENT_EXTRA
 
 
 def collect_home_lists() -> list[dict]:
-    index_path = ROOT / "data/tournament-decks.json"
-    comm_path = ROOT / "data/community-decks.json"
-    index = json.loads(index_path.read_text()) if index_path.exists() else {}
-    community = json.loads(comm_path.read_text()) if comm_path.exists() else {}
-    rows = []
-    seen = set()
-    for leader in gen.LEADERS:
-        for item in index.get(leader["id"]) or []:
-            href = item.get("href") or ""
-            if item.get("kind") == "sample" or not href:
-                continue
-            if not (ROOT / href.lstrip("/")).exists():
-                continue
-            if href in seen:
-                continue
-            seen.add(href)
-            row = dict(item)
-            row["leader"] = leader
-            row["tournament_name"] = row.get("tournament_name") or row.get("tournament") or ""
-            if home_meta.event_display.is_test_row(row):
-                continue
-            rows.append(row)
-        for item in community.get(leader["id"]) or []:
-            href = item.get("href") or ""
-            if not href or href in seen:
-                continue
-            if not (ROOT / href.lstrip("/")).exists():
-                continue
-            seen.add(href)
-            community_row = {
-                    "slug": item.get("slug"),
-                    "href": href,
-                    "player": item.get("player") or "Community",
-                    "tournament_name": item.get("subtitle") or item.get("title") or "",
-                    "placing": None,
-                    "date": item.get("date") or "",
-                    "kind": item.get("kind") or "web",
-                    "title_override": item.get("title"),
-                    "subtitle": item.get("subtitle")
-                    or {"youtube": "YouTube list", "x": "X list", "web": "Community list"}.get(
-                        item.get("kind"), "Community list"
-                    ),
-                    "leader": leader,
-                }
-            if home_meta.event_display.is_test_row(community_row):
-                continue
-            rows.append(community_row)
-    return rows
+    """Same hosted rows the tier list counts. See scripts/format_meta.py."""
+    return home_meta.fm.hosted_rows()
 
 
 def source_bucket(row: dict) -> str:
@@ -391,11 +345,21 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
 
 def build_home_data() -> dict:
     rows = collect_home_lists()
-    leaders = home_meta.ranked_leaders(rows)
-    pie = home_meta.pie_slices(rows)
-    home_meta.save_meta(leaders, pie)
+    bounds = home_meta.fm.window_bounds(rows)
+    window_rows = home_meta.fm.in_window(rows, bounds)
+    leaders = home_meta.ranked_leaders(window_rows, window=None)
+    pie = home_meta.pie_slices(window_rows, only_set="", scan_limit=None)
+    pie["lede"] = (
+        f"Share of hosted lists from {bounds['label']} "
+        f"(rolling {bounds['days']} days, {len(window_rows)} lists). "
+        "Every list in that window counts, including decks that play no OP17 card. "
+        "Tier letters match the tier list. The hole is the best first-place rate in this window."
+    )
+    home_meta.save_meta(leaders, pie, window=bounds)
     return {
         "rows": rows,
+        "bounds": bounds,
+        "window_rows": window_rows,
         "leaders": leaders,
         "pie": pie,
         "recent_home": home_meta.newest_rows(rows, RECENT_LIMIT),
@@ -414,20 +378,17 @@ def home_notes_html(data: dict) -> str:
     third = leaders[2] if len(leaders) > 2 else {}
     share = next((row for row in slices if row.get("id") == top.get("id")), None)
     hole = pie.get("hole") or {}
-    window = home_meta.POPULAR_WINDOW
-    top_name = html.escape(top.get("name") or "The top leader")
+    bounds = data.get("bounds") or {}
+    window_label = bounds.get("label") or "the rolling window"
+    top_name = html.escape(top.get("display_name") or top.get("name") or "The top leader")
     top_n = top.get("home_lists") or 0
     share_txt = f"{share['pct']:.1f}%" if share else ""
-    share_bit = (
-        f", and {share_txt} of lists that play an {html.escape(pie.get('set') or 'OP17')} card"
-        if share_txt
-        else ""
-    )
+    share_bit = f", and {share_txt} of that window" if share_txt else ""
     follow = ""
     if second and third:
         follow = (
-            f" {html.escape(second['name'])} ({second.get('home_lists', 0)}) and "
-            f"{html.escape(third['name'])} ({third.get('home_lists', 0)}) are the next names in that window."
+            f" {html.escape(second.get('display_name') or second['name'])} ({second.get('home_lists', 0)}) and "
+            f"{html.escape(third.get('display_name') or third['name'])} ({third.get('home_lists', 0)}) are the next names in that window."
         )
     hole_bit = ""
     if hole.get("name") and hole.get("lists"):
@@ -442,7 +403,7 @@ def home_notes_html(data: dict) -> str:
             <h3>This week in the meta</h3>
             <a href="/guides/weekly-meta.html">Full write-up →</a>
           </div>
-          <p class="home-notes-lede">{top_name} shows up on {top_n} of the newest {window} hosted lists{share_bit}.{follow}{hole_bit}</p>
+          <p class="home-notes-lede">{top_name} shows up on {top_n} hosted lists from {html.escape(window_label)}{share_bit}.{follow}{hole_bit}</p>
           <div class="home-notes-grid">
             <a class="home-note" href="/guides/weekly-meta.html">
               <span class="kicker">Weekly meta</span>
@@ -600,7 +561,7 @@ def render_home_body(data: dict | None = None) -> str:
               </svg>
             </span>
             <span class="home-big-title">Leaders</span>
-            <span class="home-big-note">Top ten from the newest 200 lists</span>
+            <span class="home-big-note">Top ten from {html.escape((data.get("bounds") or {}).get("label") or "the rolling window")}</span>
           </a>
           <a class="home-big home-big-shop" href="/shop/">
             <span class="home-big-icon" aria-hidden="true">

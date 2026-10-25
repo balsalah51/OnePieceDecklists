@@ -90,16 +90,26 @@ def weekly_body(meta: dict, tier: dict) -> str:
     leaders = meta.get("home_leaders") or []
     pie = meta.get("pie") or []
     hole = meta.get("hole") or {}
-    window = meta.get("window") or 200
+    days = meta.get("window_days") or tier.get("recent_days") or ""
+    label = meta.get("window_label") or ""
+    if not label:
+        label = (
+            f"{pretty_date(str(tier.get('recent_from') or ''))} through "
+            f"{pretty_date(str(tier.get('recent_through') or tier.get('updated') or ''))}"
+        )
     top = leaders[:3]
     top_line = ", ".join(
-        f"{html.escape(row['name'])} ({row['count']})" for row in top
+        f"{html.escape(row['name'])} ({row['count']}"
+        + (f", {html.escape(row['tier'])}" if row.get("tier") else "")
+        + ")"
+        for row in top
     ) or "the leaders on the homepage"
     share_bits = []
-    for row in pie[:5]:
+    for row in pie[:8]:
         if not row.get("name") or row["name"] == "Other":
             continue
-        share_bits.append(f"{html.escape(row['name'])} {row['pct']}% ({row['count']})")
+        letter = f" {html.escape(row['tier'])}" if row.get("tier") else ""
+        share_bits.append(f"{html.escape(row['name'])}{letter} {row['pct']}% ({row['count']})")
     share_line = ", ".join(share_bits)
     by_tier: dict[str, list[dict]] = {}
     for row in tier.get("leaders") or []:
@@ -112,32 +122,33 @@ def weekly_body(meta: dict, tier: dict) -> str:
     a_names = ", ".join(html.escape(row["name"]) for row in (by_tier.get("A") or [])[:6])
     hole_line = ""
     if hole:
+        href = hole.get("href") or "/tier-list.html"
         hole_line = (
-            f"<p>Inside lists that play at least one {html.escape(meta.get('set') or 'OP17')} card, "
-            f"<a href=\"/decklists/luffy-ace.html\">{html.escape(hole['name'])}</a> has the best first-place rate "
-            f"among leaders with a full sample: {hole['wins']} firsts from {hole['lists']} placed lists "
-            f"({hole['win_pct']}%). That number is firsts divided by placed lists on this site. "
-            f"It is not a game win rate.</p>"
+            f"<p>In the same window, <a href=\"{html.escape(href)}\">{html.escape(hole['name'])}</a> "
+            f"has the best first-place rate among leaders with a full sample: {hole['wins']} firsts from "
+            f"{hole['lists']} placed lists ({hole['win_pct']}%). That number is firsts divided by placed lists "
+            f"on this site. It is not a game win rate.</p>"
         )
     updated = html.escape(pretty_date(str(tier.get("updated") or "")))
     sources = tier.get("source_count") or 0
     return f"""        <h2>Weekly meta</h2>
-        <p>Week of {updated}. This note is counted from lists hosted here and from the <a href="/tier-list.html">tier list</a> ({sources} published sources, lists since {html.escape(pretty_date(str(tier.get('recent_from') or '')))}). It is not a copy of the Limitless or OPTCG.GG metagame page.</p>
+        <p>Week of {updated}. This note uses the same hosted lists and the same tier letters as the <a href="/tier-list.html">tier list</a> ({sources} published sources, rolling {html.escape(str(days))} days, {html.escape(label)}). It is not a copy of the Limitless or OPTCG.GG metagame page.</p>
         <section style="margin-top:22px">
-          <div class="section-title"><h3>What the newest lists are playing</h3><div class="muted">Newest {window} hosted lists</div></div>
-          <p>The homepage window is {top_line}. That is the room you should expect at an online cup this week, before you look at a six-month tier graphic.</p>
-          <p>Among {meta.get('pie_lists') or 0} newer lists that include an {html.escape(meta.get('set') or 'OP17')} card, the share chart reads {share_line}.</p>
+          <div class="section-title"><h3>What the window is playing</h3><div class="muted">{html.escape(label)}</div></div>
+          <p>The homepage leaders in that window are {top_line}. An older chart counted only the newest 200 lists, and a separate pie counted only lists that played an OP17 card. Mihawk lists often play no OP17 card, so that pie left him off a page that still called him S tier. Both views now count every hosted list in the rolling window.</p>
+          <p>Share of the {meta.get('pie_lists') or 0} lists in the window: {share_line}.</p>
           {hole_line}
         </section>
         <section style="margin-top:22px">
-          <div class="section-title"><h3>Where that sits on the tier list</h3><div class="muted">S is still the broad vote</div></div>
-          <p>S tier on the {updated} list: {s_line}. A tier still includes {a_names}. Mihawk can lead the broader vote and still be a smaller slice of this week's OP17-card lists. Use the tier list for the season and the share chart for the current room.</p>
+          <div class="section-title"><h3>Where that sits on the tier list</h3><div class="muted">Same letters as the board</div></div>
+          <p>S tier on the {updated} list: {s_line}. A tier still includes {a_names}. The letters are the tier list's letters. The share chart does not assign a second grade.</p>
+          <p>OP09 Nico Robin and EB05 Nico Robin, OP15 Enel and OP05 Enel, and OP17 Shanks and OP09 Shanks are different cards. The labels on this page use the set code so they are not the same leader.</p>
           <p>Large events are marked on the <a href="/#featured">featured results</a> and on <a href="/recent.html">recent lists</a>. A regional or championship outranks a Rumble or Chinoize cup when both are top cuts. Online cups stay in the list. They just stop looking like the headline.</p>
         </section>
         <section style="margin-top:22px">
           <div class="section-title"><h3>What to bring</h3><div class="muted">From the counts above</div></div>
           <ul class="guide-list">
-            <li>If the room looks like the newest {window} lists, pack a plan for the three names at the top of that window before you tech for a leader who is quiet this week.</li>
+            <li>If the room looks like this {html.escape(str(days))}-day window, pack a plan for the three names at the top before you tech for a leader who is quiet in it.</li>
             <li>If you want the season's consensus instead of this week's cups, start with the S tier and the <a href="/guides/matchups.html">matchup notes</a>.</li>
             <li>Pairing counts we have actually totaled live on the <a href="/guides/op17-mihawk-matchups.html">Mihawk matchup page</a>. This note does not invent a new win-rate table.</li>
           </ul>

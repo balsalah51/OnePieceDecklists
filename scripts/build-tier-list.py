@@ -10,12 +10,15 @@ from __future__ import annotations
 import html
 import importlib.util
 import json
+import os
 import re
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
 
 ROOT = Path("/workspace")
+# Kept so older notes can see what the fixed window used to be. Live counts
+# use format_meta.RECENT_DAYS, ending on the newest hosted list.
 RECENT_FROM = "2026-08-20"
 TIER_PTS = {"S": 5.0, "A": 3.5, "B": 2.0, "C": 1.0, "D": 0.4}
 COLOR_NAMES = {
@@ -63,6 +66,9 @@ spec.loader.exec_module(gen)
 sspec = importlib.util.spec_from_file_location("seocommon", ROOT / "scripts/seo_common.py")
 seo = importlib.util.module_from_spec(sspec)
 sspec.loader.exec_module(seo)
+fspec = importlib.util.spec_from_file_location("formatmeta", ROOT / "scripts/format_meta.py")
+fm = importlib.util.module_from_spec(fspec)
+fspec.loader.exec_module(fm)
 CSS_VER = seo.CSS_VER
 
 LEADERS = gen.LEADERS
@@ -476,42 +482,17 @@ SOURCES = [
 ]
 
 
-def site_stats() -> dict[str, dict]:
-    tour = json.loads((ROOT / "data/tournament-decks.json").read_text())
-    comm = json.loads((ROOT / "data/community-decks.json").read_text())
-    out = {}
-    for L in LEADERS:
-        lid = L["id"]
-        lists = tour.get(lid) or []
-        recent = [x for x in lists if (x.get("date") or "") >= RECENT_FROM]
-        def place(xs, n):
-            return sum(1 for x in xs if isinstance(x.get("placing"), int) and x["placing"] <= n)
-        def wins(xs):
-            return sum(1 for x in xs if x.get("placing") == 1)
-        best = None
-        hrefs = []
-        for x in lists:
-            p = x.get("placing")
-            if isinstance(p, int) and (best is None or p < best):
-                best = p
-            if x.get("href"):
-                hrefs.append(x["href"])
-        out[lid] = {
-            "lists": len(lists),
-            "wins": wins(lists),
-            "top8": place(lists, 8),
-            "top4": place(lists, 4),
-            "recent_lists": len(recent),
-            "recent_wins": wins(recent),
-            "recent_top8": place(recent, 8),
-            "community": len(comm.get(lid) or []),
-            "best": best,
-            "href": "/" + L["page"],
-        }
-    return out
+def site_stats() -> tuple[dict[str, dict], dict]:
+    """Recent counts from the shared rolling window. All-time columns count every hosted list."""
+    rows = fm.hosted_rows()
+    bounds = fm.window_bounds(rows)
+    return fm.leader_stats(rows, bounds), bounds
 
 
-def site_source(stats: dict[str, dict]) -> dict:
+def site_source(stats: dict[str, dict], bounds: dict) -> dict:
+    # Letter cutoffs are unchanged. Only the lists inside recent_* changed:
+    # a rolling window of hosted tournament and community pages, shared with
+    # the homepage, instead of tournament rows dated 2026-08-20 or later.
     ranks = {}
     for lid, s in stats.items():
         score = (
@@ -533,15 +514,19 @@ def site_source(stats: dict[str, dict]) -> dict:
         "id": "opdl-lists",
         "name": "One Piece Decklists tournament tables",
         "url": "https://onepiecedecklists.com/",
-        "when": "through 3 September 2026",
+        "when": f"through {fm.pretty_date(bounds['end'])}",
         "weight": 1.25,
-        "note": f"Recent window from {RECENT_FROM}. Wins and top eights on lists hosted here.",
+        "note": (
+            f"Rolling {bounds['days']}-day window, {bounds['label']}. "
+            "Same hosted lists as the homepage share chart. "
+            "Wins and top eights on lists hosted here."
+        ),
         "ranks": ranks,
     }
 
 
-def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
-    sources = SOURCES + [site_source(stats)]
+def aggregate(stats: dict[str, dict], bounds: dict) -> tuple[list[dict], dict[str, dict]]:
+    sources = SOURCES + [site_source(stats, bounds)]
     scores: dict[str, float] = defaultdict(float)
     hits: dict[str, int] = defaultdict(int)
     by_tier_votes: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
@@ -572,7 +557,7 @@ def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
         ranked.append(
             {
                 "id": lid,
-                "name": L["name"],
+                "name": fm.public_name(L),
                 "href": "/" + L["page"],
                 "image": leader_img(lid),
                 "color": L.get("color") or "",
@@ -624,7 +609,7 @@ def render_board(rows: list[dict]) -> str:
     return "\n".join(chunks)
 
 
-def render_table(rows: list[dict]) -> str:
+def render_table(rows: list[dict], bounds: dict | None = None) -> str:
     body = []
     for r in rows:
         body.append(
@@ -643,7 +628,7 @@ def render_table(rows: list[dict]) -> str:
     return f"""        <div class="tier-table">
           <div class="section-title">
             <h3>This site's lists in the mix</h3>
-            <div class="muted">Recent = {RECENT_FROM} onward, covering the OP17 English window</div>
+            <div class="muted">Recent = rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days, {html.escape(bounds['label'] if bounds else '')}. Every hosted list in that window counts, including decks that play no OP17 card.</div>
           </div>
           <table>
             <thead>
@@ -683,7 +668,7 @@ def render_sources(sources: list[dict]) -> str:
         </section>"""
 
 
-def page_html(board: str, table: str, sources_html: str, rows: list[dict], sources: list[dict]) -> str:
+def page_html(board: str, table: str, sources_html: str, rows: list[dict], sources: list[dict], bounds: dict | None = None) -> str:
     title = "OP17 One Piece TCG tier list | One Piece Decklists"
     desc = (
         "Aggregated OP17 One Piece TCG tier list with leader pictures. "
@@ -752,7 +737,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         <div class="crumb"><a href="/">Home</a> / Tier List</div>
         <h2>OP17 tier list</h2>
         <p>{html.escape(intro)}</p>
-        <p class="muted">Updated {date.today().isoformat()}. Leader pictures link to the 50-card lists on this site.</p>
+        <p class="muted">Updated {html.escape(bounds['end'] if bounds else date.today().isoformat())}, the date of the newest hosted list. Recent columns use {html.escape(bounds['label'] if bounds else '')} (rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days), the same lists as the homepage share chart. OP09 Nico Robin and EB05 Nico Robin, OP15 Enel and OP05 Enel, and OP17 Shanks and OP09 Shanks are different cards and stay on separate pages.</p>
         <div class="tier-board" aria-label="OP17 leader tier list">
 {board}
         </div>
@@ -898,11 +883,11 @@ def patch_all_pages() -> int:
     return changed
 
 
-def patch_sitemap() -> None:
+def patch_sitemap(day: str | None = None) -> None:
     path = ROOT / "sitemap-core.xml"
     text = path.read_text()
     loc = "https://onepiecedecklists.com/tier-list.html"
-    today = date.today().isoformat()
+    today = day or date.today().isoformat()
     row = f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod></url>\n"
     if loc in text:
         text = re.sub(
@@ -916,12 +901,14 @@ def patch_sitemap() -> None:
 
 
 def main() -> None:
-    stats = site_stats()
-    sources, by_id = aggregate(stats)
+    stats, bounds = site_stats()
+    sources, by_id = aggregate(stats, bounds)
     rows = list(by_id.values())
     payload = {
-        "updated": date.today().isoformat(),
-        "recent_from": RECENT_FROM,
+        "updated": bounds["end"],
+        "recent_from": bounds["start"],
+        "recent_through": bounds["end"],
+        "recent_days": bounds["days"],
         "source_count": len(sources),
         "leaders": rows,
         "sources": [
@@ -939,11 +926,14 @@ def main() -> None:
     }
     (ROOT / "data/tier-list.json").write_text(json.dumps(payload, indent=2) + "\n")
     board = render_board(rows)
-    table = render_table(rows)
+    table = render_table(rows, bounds)
     sources_html = render_sources(sources)
-    (ROOT / "tier-list.html").write_text(page_html(board, table, sources_html, rows, sources))
-    changed = patch_all_pages()
-    patch_sitemap()
+    (ROOT / "tier-list.html").write_text(page_html(board, table, sources_html, rows, sources, bounds))
+    if os.environ.get("OPDL_SKIP_PAGE_PATCH") == "1":
+        changed = 0
+    else:
+        changed = patch_all_pages()
+    patch_sitemap(bounds["end"])
     print("sources", len(sources))
     print("leaders on board", len(rows))
     for letter in "SABCD":
