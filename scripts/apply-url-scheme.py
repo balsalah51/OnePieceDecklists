@@ -62,11 +62,13 @@ def fix_stem(stem: str, page: str) -> str:
         return stem
     old = old_slugify(player)
     new = gen.slugify(player)
-    if not old or old == new or old not in stem:
-        if any(ord(ch) > 127 for ch in player) and old not in stem:
-            return stem
+    if not old or old == new:
         return stem
-    return stem.replace(old, new, 1)
+    # Whole slug only. A substring swap turns an already-correct "mu" into "muu".
+    pattern = re.compile(rf"(?<![a-z0-9]){re.escape(old)}(?![a-z0-9])")
+    if not pattern.search(stem):
+        return stem
+    return pattern.sub(new, stem, count=1)
 
 
 def destination(rel: str, page: str) -> str:

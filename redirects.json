@@ -6600,11 +6600,6 @@
     "status": 301
   },
   {
-    "from": "/decklists/sabo/optcggg-8th-mu-flame-flame-fruit-coliseum-jpn-block-d.html",
-    "to": "/decklists/sabo/optcggg-8th-muu-flame-flame-fruit-coliseum-jpn-block-d.html",
-    "status": 301
-  },
-  {
     "from": "/decklists/op17/monkey-d-luffy.html",
     "to": "/decklists/monkey-d-luffy.html",
     "status": 301
@@ -6635,38 +6630,43 @@
     "status": 301
   },
   {
-    "from": "/decklists/enel/optcggg-7th-tatsu-flame-flame-fruit-coliseum-jpn-block-a.html",
-    "to": "/decklists/enel/optcggg-7th-tatsuu-flame-flame-fruit-coliseum-jpn-block-a.html",
+    "from": "/decklists/sabo/optcggg-8th-muu-flame-flame-fruit-coliseum-jpn-block-d.html",
+    "to": "/decklists/sabo/optcggg-8th-mu-flame-flame-fruit-coliseum-jpn-block-d.html",
     "status": 301
   },
   {
-    "from": "/decklists/imu/2nd-zan-marinkovic-tcg-park-one-piece-set-turnir-s2-2.html",
-    "to": "/decklists/imu/2nd-zzan-marinkovicc-tcg-park-one-piece-set-turnir-s2-2.html",
+    "from": "/decklists/enel/optcggg-7th-tatsuu-flame-flame-fruit-coliseum-jpn-block-a.html",
+    "to": "/decklists/enel/optcggg-7th-tatsu-flame-flame-fruit-coliseum-jpn-block-a.html",
     "status": 301
   },
   {
-    "from": "/decklists/mihawk/optcggg-1st-ito-flame-flame-fruit-coliseum-jpn-block-c.html",
-    "to": "/decklists/mihawk/optcggg-1st-itoo-flame-flame-fruit-coliseum-jpn-block-c.html",
+    "from": "/decklists/mihawk/optcggg-1st-itoo-flame-flame-fruit-coliseum-jpn-block-c.html",
+    "to": "/decklists/mihawk/optcggg-1st-ito-flame-flame-fruit-coliseum-jpn-block-c.html",
     "status": 301
   },
   {
-    "from": "/decklists/koby/33rd-nikola-mitrovic-tcg-park-one-piece-store-championship-s2-5.html",
-    "to": "/decklists/koby/33rd-nikola-mitrovicc-tcg-park-one-piece-store-championship-s2-5.html",
+    "from": "/decklists/portgas-d-ace/optcggg-8th-yuu-flame-flame-fruit-colisuem-jpn.html",
+    "to": "/decklists/portgas-d-ace/optcggg-8th-yu-flame-flame-fruit-colisuem-jpn.html",
     "status": 301
   },
   {
-    "from": "/decklists/koby/28th-antonio-cimic-tcg-park-one-piece-set-turnir-s2-1.html",
-    "to": "/decklists/koby/28th-antonio-cimicc-tcg-park-one-piece-set-turnir-s2-1.html",
+    "from": "/decklists/imu/2nd-zzan-marinkovicc-tcg-park-one-piece-set-turnir-s2-2.html",
+    "to": "/decklists/imu/2nd-zan-marinkovic-tcg-park-one-piece-set-turnir-s2-2.html",
     "status": 301
   },
   {
-    "from": "/decklists/koby/16th-antonio-cimic-tcg-park-one-piece-store-championship-s2-3.html",
-    "to": "/decklists/koby/16th-antonio-cimicc-tcg-park-one-piece-store-championship-s2-3.html",
+    "from": "/decklists/koby/16th-antonio-cimicc-tcg-park-one-piece-store-championship-s2-3.html",
+    "to": "/decklists/koby/16th-antonio-cimic-tcg-park-one-piece-store-championship-s2-3.html",
     "status": 301
   },
   {
-    "from": "/decklists/portgas-d-ace/optcggg-8th-yu-flame-flame-fruit-colisuem-jpn.html",
-    "to": "/decklists/portgas-d-ace/optcggg-8th-yuu-flame-flame-fruit-colisuem-jpn.html",
+    "from": "/decklists/koby/28th-antonio-cimicc-tcg-park-one-piece-set-turnir-s2-1.html",
+    "to": "/decklists/koby/28th-antonio-cimic-tcg-park-one-piece-set-turnir-s2-1.html",
+    "status": 301
+  },
+  {
+    "from": "/decklists/koby/33rd-nikola-mitrovicc-tcg-park-one-piece-store-championship-s2-5.html",
+    "to": "/decklists/koby/33rd-nikola-mitrovic-tcg-park-one-piece-store-championship-s2-5.html",
     "status": 301
   }
 ]
