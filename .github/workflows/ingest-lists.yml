@@ -25,6 +25,8 @@ jobs:
         run: python3 scripts/ingest-fresh-meta.py
       - name: Report newest hosted list
         run: python3 scripts/check-data-freshness.py
+      - name: Report cards missing a TCGplayer id
+        run: python3 scripts/report-tcgplayer-gaps.py
       - name: Commit ingested lists
         run: |
           git config user.name "github-actions[bot]"

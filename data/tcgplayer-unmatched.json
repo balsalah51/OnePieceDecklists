@@ -1,0 +1,6125 @@
+{
+  "summary": {
+    "hosted_card_ids": 1240,
+    "missing_product_id": 482,
+    "missing_catalog_name": 319,
+    "by_cause": {
+      "booster": 382,
+      "promo": 24,
+      "starter": 76
+    }
+  },
+  "groups": {
+    "booster": [
+      "EB01-043",
+      "EB01-051",
+      "EB01-052",
+      "EB02-002",
+      "EB02-010",
+      "EB02-019",
+      "EB02-020",
+      "EB02-025",
+      "EB02-040",
+      "EB02-041",
+      "EB02-052",
+      "EB02-054",
+      "EB02-055",
+      "EB02-060",
+      "EB03-010",
+      "EB03-017",
+      "EB03-021",
+      "EB03-025",
+      "EB03-031",
+      "EB03-042",
+      "EB03-045",
+      "EB03-051",
+      "EB03-054",
+      "EB03-056",
+      "EB03-057",
+      "EB03-059",
+      "EB03-061",
+      "EB04-001",
+      "EB04-014",
+      "EB04-022",
+      "EB04-023",
+      "EB04-026",
+      "EB04-028",
+      "EB04-029",
+      "EB04-033",
+      "EB04-034",
+      "EB04-036",
+      "EB04-037",
+      "EB04-041",
+      "EB04-045",
+      "EB04-048",
+      "EB04-049",
+      "EB04-051",
+      "EB04-052",
+      "EB04-053",
+      "EB04-054",
+      "EB04-056",
+      "EB05-001",
+      "EB05-002",
+      "EB05-004",
+      "EB05-005",
+      "EB05-006",
+      "EB05-008",
+      "EB05-009",
+      "EB05-010",
+      "EB05-012",
+      "EB05-016",
+      "EB05-018",
+      "EB05-021",
+      "EB05-023",
+      "EB05-024",
+      "EB05-025",
+      "EB05-028",
+      "EB05-031",
+      "EB05-033",
+      "EB05-034",
+      "EB05-037",
+      "EB05-039",
+      "EB05-040",
+      "EB05-043",
+      "EB05-044",
+      "EB05-045",
+      "EB05-046",
+      "EB05-047",
+      "EB05-048",
+      "EB05-049",
+      "EB05-050",
+      "EB05-051",
+      "EB05-052",
+      "EB05-053",
+      "EB05-054",
+      "EB05-055",
+      "EB05-056",
+      "EB05-057",
+      "EB05-059",
+      "EB05-061",
+      "OP01-013",
+      "OP01-077",
+      "OP01-094",
+      "OP01-096",
+      "OP01-114",
+      "OP01-118",
+      "OP01-120",
+      "OP02-021",
+      "OP02-022",
+      "OP02-024",
+      "OP02-028",
+      "OP02-037",
+      "OP02-051",
+      "OP02-058",
+      "OP02-063",
+      "OP02-067",
+      "OP02-106",
+      "OP02-117",
+      "OP02-121",
+      "OP03-018",
+      "OP03-066",
+      "OP03-078",
+      "OP03-086",
+      "OP03-088",
+      "OP03-094",
+      "OP03-095",
+      "OP03-097",
+      "OP03-101",
+      "OP03-110",
+      "OP03-115",
+      "OP03-118",
+      "OP03-119",
+      "OP03-121",
+      "OP04-083",
+      "OP04-101",
+      "OP04-105",
+      "OP04-107",
+      "OP04-108",
+      "OP04-112",
+      "OP04-114",
+      "OP04-118",
+      "OP05-002",
+      "OP05-003",
+      "OP05-004",
+      "OP05-005",
+      "OP05-011",
+      "OP05-016",
+      "OP05-017",
+      "OP05-018",
+      "OP05-021",
+      "OP05-041",
+      "OP05-052",
+      "OP05-060",
+      "OP05-076",
+      "OP05-085",
+      "OP05-088",
+      "OP05-093",
+      "OP05-098",
+      "OP05-099",
+      "OP05-102",
+      "OP05-114",
+      "OP05-115",
+      "OP05-119",
+      "OP06-003",
+      "OP06-022",
+      "OP06-033",
+      "OP06-040",
+      "OP06-041",
+      "OP06-050",
+      "OP06-051",
+      "OP06-075",
+      "OP06-081",
+      "OP06-085",
+      "OP06-090",
+      "OP06-091",
+      "OP06-092",
+      "OP06-103",
+      "OP06-110",
+      "OP06-111",
+      "OP06-117",
+      "OP07-018",
+      "OP07-040",
+      "OP07-045",
+      "OP07-047",
+      "OP07-057",
+      "OP07-059",
+      "OP07-060",
+      "OP07-065",
+      "OP07-071",
+      "OP07-074",
+      "OP07-078",
+      "OP07-079",
+      "OP07-080",
+      "OP07-081",
+      "OP07-091",
+      "OP07-099",
+      "OP07-102",
+      "OP07-103",
+      "OP07-104",
+      "OP07-109",
+      "OP07-111",
+      "OP07-112",
+      "OP07-113",
+      "OP07-114",
+      "OP07-117",
+      "OP07-118",
+      "OP08-018",
+      "OP08-065",
+      "OP08-070",
+      "OP08-071",
+      "OP08-072",
+      "OP08-073",
+      "OP08-079",
+      "OP08-084",
+      "OP08-091",
+      "OP08-101",
+      "OP08-103",
+      "OP08-111",
+      "OP08-112",
+      "OP08-113",
+      "OP08-114",
+      "OP08-119",
+      "OP09-001",
+      "OP09-002",
+      "OP09-008",
+      "OP09-011",
+      "OP09-015",
+      "OP09-019",
+      "OP09-020",
+      "OP09-035",
+      "OP09-048",
+      "OP09-056",
+      "OP09-061",
+      "OP09-062",
+      "OP09-070",
+      "OP09-071",
+      "OP09-076",
+      "OP09-079",
+      "OP09-100",
+      "OP09-101",
+      "OP09-102",
+      "OP09-103",
+      "OP09-104",
+      "OP09-106",
+      "OP09-108",
+      "OP09-109",
+      "OP09-113",
+      "OP09-114",
+      "OP09-117",
+      "OP10-015",
+      "OP10-018",
+      "OP10-019",
+      "OP10-022",
+      "OP10-031",
+      "OP10-036",
+      "OP10-058",
+      "OP10-077",
+      "OP10-094",
+      "OP10-098",
+      "OP10-099",
+      "OP10-103",
+      "OP10-107",
+      "OP10-108",
+      "OP10-110",
+      "OP10-111",
+      "OP11-003",
+      "OP11-009",
+      "OP11-019",
+      "OP11-035",
+      "OP11-051",
+      "OP11-058",
+      "OP11-060",
+      "OP11-101",
+      "OP12-006",
+      "OP12-008",
+      "OP12-014",
+      "OP12-015",
+      "OP12-019",
+      "OP12-020",
+      "OP12-026",
+      "OP12-028",
+      "OP12-029",
+      "OP12-039",
+      "OP12-040",
+      "OP12-041",
+      "OP12-043",
+      "OP12-046",
+      "OP12-047",
+      "OP12-048",
+      "OP12-056",
+      "OP12-057",
+      "OP12-059",
+      "OP12-078",
+      "OP12-079",
+      "OP12-081",
+      "OP12-085",
+      "OP12-086",
+      "OP12-087",
+      "OP12-089",
+      "OP12-090",
+      "OP12-093",
+      "OP12-094",
+      "OP12-097",
+      "OP12-098",
+      "OP12-100",
+      "OP12-104",
+      "OP12-109",
+      "OP12-117",
+      "OP13-004",
+      "OP13-015",
+      "OP13-019",
+      "OP13-029",
+      "OP13-059",
+      "OP13-061",
+      "OP13-071",
+      "OP13-088",
+      "OP13-100",
+      "OP13-102",
+      "OP13-108",
+      "OP13-110",
+      "OP13-112",
+      "OP13-114",
+      "OP13-116",
+      "OP13-120",
+      "OP14-017",
+      "OP14-038",
+      "OP14-040",
+      "OP14-041",
+      "OP14-042",
+      "OP14-043",
+      "OP14-045",
+      "OP14-046",
+      "OP14-047",
+      "OP14-050",
+      "OP14-051",
+      "OP14-054",
+      "OP14-056",
+      "OP14-070",
+      "OP14-079",
+      "OP14-080",
+      "OP14-083",
+      "OP14-084",
+      "OP14-085",
+      "OP14-086",
+      "OP14-087",
+      "OP14-088",
+      "OP14-089",
+      "OP14-090",
+      "OP14-091",
+      "OP14-093",
+      "OP14-094",
+      "OP14-097",
+      "OP14-099",
+      "OP14-100",
+      "OP14-103",
+      "OP14-105",
+      "OP14-106",
+      "OP14-107",
+      "OP14-109",
+      "OP14-113",
+      "OP14-114",
+      "OP14-115",
+      "OP14-117",
+      "OP14-120",
+      "OP15-027",
+      "OP15-030",
+      "OP15-036",
+      "OP15-079",
+      "OP15-080",
+      "OP15-081",
+      "OP15-084",
+      "OP15-085",
+      "OP15-086",
+      "OP15-090",
+      "OP15-094",
+      "OP15-099",
+      "OP15-103",
+      "OP15-104",
+      "OP15-115",
+      "OP15-117",
+      "OP16-012",
+      "OP16-018",
+      "OP16-023",
+      "OP16-035",
+      "OP16-043",
+      "OP16-059",
+      "OP16-071",
+      "OP16-089",
+      "OP16-093",
+      "OP16-111",
+      "OP16-113",
+      "OP18-031",
+      "PRB02-011",
+      "PRB02-012",
+      "PRB02-013",
+      "PRB02-018"
+    ],
+    "promo": [
+      "P-024",
+      "P-028",
+      "P-044",
+      "P-048",
+      "P-067",
+      "P-069",
+      "P-075",
+      "P-083",
+      "P-097",
+      "P-103",
+      "P-105",
+      "P-106",
+      "P-108",
+      "P-116",
+      "P-119",
+      "P-135",
+      "P-141",
+      "P-143",
+      "P-146",
+      "P-147",
+      "P-149",
+      "P-153",
+      "P-157",
+      "P-159"
+    ],
+    "starter": [
+      "ST01-011",
+      "ST01-012",
+      "ST02-009",
+      "ST02-015",
+      "ST04-002",
+      "ST04-003",
+      "ST04-012",
+      "ST04-015",
+      "ST04-017",
+      "ST06-015",
+      "ST06-017",
+      "ST07-012",
+      "ST07-015",
+      "ST07-016",
+      "ST08-014",
+      "ST10-002",
+      "ST10-013",
+      "ST13-001",
+      "ST13-003",
+      "ST13-004",
+      "ST13-007",
+      "ST13-010",
+      "ST13-011",
+      "ST13-013",
+      "ST13-014",
+      "ST13-015",
+      "ST13-016",
+      "ST14-001",
+      "ST14-007",
+      "ST14-015",
+      "ST14-016",
+      "ST17-001",
+      "ST17-002",
+      "ST17-003",
+      "ST17-004",
+      "ST18-002",
+      "ST18-003",
+      "ST18-004",
+      "ST18-005",
+      "ST20-003",
+      "ST21-010",
+      "ST23-002",
+      "ST23-003",
+      "ST24-005",
+      "ST26-001",
+      "ST26-002",
+      "ST26-003",
+      "ST26-005",
+      "ST28-001",
+      "ST28-002",
+      "ST28-003",
+      "ST29-003",
+      "ST29-009",
+      "ST29-013",
+      "ST29-014",
+      "ST29-015",
+      "ST29-017",
+      "ST30-001",
+      "ST30-002",
+      "ST30-003",
+      "ST30-017",
+      "ST31-001",
+      "ST31-002",
+      "ST33-001",
+      "ST33-002",
+      "ST33-005",
+      "ST35-001",
+      "ST35-002",
+      "ST35-003",
+      "ST35-004",
+      "ST35-005",
+      "ST36-001",
+      "ST36-002",
+      "ST36-003",
+      "ST36-004",
+      "ST36-005"
+    ]
+  },
+  "cards": [
+    {
+      "id": "EB01-043",
+      "name": "Spandine",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-01"
+    },
+    {
+      "id": "EB01-051",
+      "name": "Finger Pistol",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-01"
+    },
+    {
+      "id": "EB01-052",
+      "name": "Viola",
+      "pages": 5,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-01"
+    },
+    {
+      "id": "EB02-002",
+      "name": "Sabo",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-010",
+      "name": "Monkey D. Luffy",
+      "pages": 21,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-019",
+      "name": "Roronoa Zoro",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-020",
+      "name": "We Are!",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-025",
+      "name": "Donquixote Rosinante",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-040",
+      "name": "BRAND NEW WORLD",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-041",
+      "name": "Merry Go",
+      "pages": 18,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-052",
+      "name": "Enel",
+      "pages": 57,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-054",
+      "name": "Sanji",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-055",
+      "name": "Jinbe",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB02-060",
+      "name": "Merry Go",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-02"
+    },
+    {
+      "id": "EB03-010",
+      "name": "Monet",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-017",
+      "name": "Jewelry Bonney",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-021",
+      "name": "Alvida",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-025",
+      "name": "Hina",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-031",
+      "name": "Vinsmoke Reiju",
+      "pages": 16,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-042",
+      "name": "Koala",
+      "pages": 17,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-045",
+      "name": "Perona",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-051",
+      "name": "Charlotte Smoothie",
+      "pages": 13,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-054",
+      "name": "Nico Robin",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-056",
+      "name": "Belo Betty",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-057",
+      "name": "Yamato",
+      "pages": 6,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-059",
+      "name": "S-Snake",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB03-061",
+      "name": "Uta",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-03-04"
+    },
+    {
+      "id": "EB04-001",
+      "name": "Jewelry Bonney",
+      "pages": 21,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-014",
+      "name": "Kozuki Sukiyaki",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-022",
+      "name": "Issho",
+      "pages": 33,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-023",
+      "name": "Chaka &amp; Pell",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-026",
+      "name": "Bluegrass",
+      "pages": 15,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-028",
+      "name": "Ice Time",
+      "pages": 33,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-029",
+      "name": "I Heard the Sound of a Lady&#x27;s Teardrops Falling",
+      "pages": 19,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-033",
+      "name": "Groggy Monsters",
+      "pages": 17,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-034",
+      "name": "Charlotte Pudding",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-036",
+      "name": "Foxy",
+      "pages": 18,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-037",
+      "name": "Porche",
+      "pages": 18,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-041",
+      "name": "Stealth Black",
+      "pages": 19,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-045",
+      "name": "Ginny",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-048",
+      "name": "Rob Lucci",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-049",
+      "name": "Finger Pistol Yellow Lotus",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-051",
+      "name": "Emet",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-052",
+      "name": "Sanji",
+      "pages": 10,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-053",
+      "name": "Sentomaru",
+      "pages": 22,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-054",
+      "name": "Bartholomew Kuma",
+      "pages": 9,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB04-056",
+      "name": "Pacifista",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "EB05-001",
+      "name": "Jewelry Bonney",
+      "pages": 11,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-002",
+      "name": "Doll",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-004",
+      "name": "Baby 5",
+      "pages": 3,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-005",
+      "name": "Belo Betty",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-006",
+      "name": "Miss Buckingham Stussy",
+      "pages": 12,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-008",
+      "name": "Luffy, Now&#x27;s Your Chance",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-009",
+      "name": "Fight and Die with Me!!!",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-010",
+      "name": "Nico Robin",
+      "pages": 15,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-012",
+      "name": "Camie",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-016",
+      "name": "Nico Robin",
+      "pages": 15,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-018",
+      "name": "Rebecca",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-021",
+      "name": "Alvida",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-023",
+      "name": "Osome",
+      "pages": 3,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-024",
+      "name": "Little Sadi",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-025",
+      "name": "Domino",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-028",
+      "name": "Boa Hancock",
+      "pages": 21,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-031",
+      "name": "Vinsmoke Reiju",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-033",
+      "name": "Nico Robin",
+      "pages": 17,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-034",
+      "name": "Sugar",
+      "pages": 7,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-037",
+      "name": "Black Maria",
+      "pages": 9,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-039",
+      "name": "Pink Hornet",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-040",
+      "name": "You Need Me, Don&#x27;t You?!!\u2661",
+      "pages": 15,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-043",
+      "name": "Perona",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-044",
+      "name": "Ms Father&#x27;s Day",
+      "pages": 3,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-045",
+      "name": "Ms Monday",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-046",
+      "name": "Yamato",
+      "pages": 32,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-047",
+      "name": "Ripley",
+      "pages": 32,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-048",
+      "name": "Hedgehog Stinger",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-049",
+      "name": "Special Hollow",
+      "pages": 5,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-050",
+      "name": "Atlas",
+      "pages": 14,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-051",
+      "name": "Ahiru",
+      "pages": 4,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-052",
+      "name": "Gloriosa",
+      "pages": 19,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-053",
+      "name": "Charlotte Praline",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-054",
+      "name": "Charlotte Brulee",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-055",
+      "name": "Nami",
+      "pages": 15,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-056",
+      "name": "Nico Olvia",
+      "pages": 10,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-057",
+      "name": "Nojiko",
+      "pages": 10,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-059",
+      "name": "Charlotte Pudding",
+      "pages": 7,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "EB05-061",
+      "name": "Nami",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "EB-05"
+    },
+    {
+      "id": "OP01-013",
+      "name": "Sanji",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP01"
+    },
+    {
+      "id": "OP01-077",
+      "name": "Perona",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP01"
+    },
+    {
+      "id": "OP01-094",
+      "name": "Kaido",
+      "pages": 13,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP01"
+    },
+    {
+      "id": "OP01-096",
+      "name": "King",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP01"
+    },
+    {
+      "id": "OP01-114",
+      "name": "X Drake",
+      "pages": 4,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP01"
+    },
+    {
+      "id": "OP01-118",
+      "name": "Ulti-Mortar",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP01"
+    },
+    {
+      "id": "OP01-120",
+      "name": "Shanks",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP01"
+    },
+    {
+      "id": "OP02-021",
+      "name": "Seaquake",
+      "pages": 8,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-022",
+      "name": "Whitebeard Pirates",
+      "pages": 10,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-024",
+      "name": "Moby Dick",
+      "pages": 14,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-028",
+      "name": "Usopp",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-037",
+      "name": "Nico Robin",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-051",
+      "name": "Emporio Ivankov",
+      "pages": 24,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-058",
+      "name": "Buggy",
+      "pages": 26,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-063",
+      "name": "Mr 1(Daz Bonez)",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-067",
+      "name": "Arabesque Brick Fist",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-106",
+      "name": "Tsuru",
+      "pages": 3,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-117",
+      "name": "Ice Age",
+      "pages": 22,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP02-121",
+      "name": "Kuzan",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP02"
+    },
+    {
+      "id": "OP03-018",
+      "name": "Fire Fist",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-066",
+      "name": "Paulie",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-078",
+      "name": "Issho",
+      "pages": 6,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-086",
+      "name": "Spandam",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-088",
+      "name": "Fukurou",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-094",
+      "name": "Air Door",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-095",
+      "name": "Soap Sheep",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-097",
+      "name": "Six King Pistol",
+      "pages": 5,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-101",
+      "name": "Camie",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-110",
+      "name": "Charlotte Smoothie",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-115",
+      "name": "Streusen",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-118",
+      "name": "Ikoku Sovereignty",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-119",
+      "name": "Buzz Cut Mochi",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP03-121",
+      "name": "Thunder Bolt",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP03"
+    },
+    {
+      "id": "OP04-083",
+      "name": "Sabo",
+      "pages": 41,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP04-101",
+      "name": "Carmel",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP04-105",
+      "name": "Charlotte Amande",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP04-107",
+      "name": "Charlotte Perospero",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP04-108",
+      "name": "Charlotte Moscato",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP04-112",
+      "name": "Yamato",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP04-114",
+      "name": "Randolph",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP04-118",
+      "name": "Nefeltari Vivi",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP04"
+    },
+    {
+      "id": "OP05-002",
+      "name": "Belo Betty",
+      "pages": 9,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-003",
+      "name": "Inazuma",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-004",
+      "name": "Emporio Ivankov",
+      "pages": 10,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-005",
+      "name": "Karasu",
+      "pages": 9,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-011",
+      "name": "Bartholomew Kuma",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-016",
+      "name": "Morley",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-017",
+      "name": "Lindbergh",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-018",
+      "name": "Emporio Energy Hormone",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-021",
+      "name": "Revolutionary Army HQ",
+      "pages": 10,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-041",
+      "name": "Sakazuki",
+      "pages": 3,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-052",
+      "name": "Maynard",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-060",
+      "name": "Monkey D. Luffy",
+      "pages": 6,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-076",
+      "name": "When You&#x27;re at Sea You Fight against Pirates!!",
+      "pages": 17,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-085",
+      "name": "Nefeltari Cobra",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-088",
+      "name": "Mansherry",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-093",
+      "name": "Rob Lucci",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-098",
+      "name": "Enel",
+      "pages": 92,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-099",
+      "name": "Amazon",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-102",
+      "name": "Gedatsu",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-114",
+      "name": "El Thor",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-115",
+      "name": "Two-Hundred Million Volts Amaru",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP05-119",
+      "name": "Monkey D. Luffy",
+      "pages": 35,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP05"
+    },
+    {
+      "id": "OP06-003",
+      "name": "Emporio Ivankov",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-022",
+      "name": "Yamato",
+      "pages": 7,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-033",
+      "name": "Vander Decken IX",
+      "pages": 579,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-040",
+      "name": "Shark Arrows",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-041",
+      "name": "The Ark Noah",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-050",
+      "name": "Tashigi",
+      "pages": 36,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-051",
+      "name": "Tsuru",
+      "pages": 13,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-075",
+      "name": "Count Battler",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-081",
+      "name": "Absalom",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-085",
+      "name": "Kumacy",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-090",
+      "name": "Dr Hogback",
+      "pages": 26,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-091",
+      "name": "Victoria Cindry",
+      "pages": 30,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-092",
+      "name": "Brook",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-103",
+      "name": "Kawamatsu",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-110",
+      "name": "Nekomamushi",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-111",
+      "name": "Braham",
+      "pages": 8,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP06-117",
+      "name": "The Ark Maxim",
+      "pages": 20,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP06"
+    },
+    {
+      "id": "OP07-018",
+      "name": "KEEP OUT",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-040",
+      "name": "Crocodile",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-045",
+      "name": "Jinbe",
+      "pages": 5,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-047",
+      "name": "Trafalgar Law",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-057",
+      "name": "Perfume Femur",
+      "pages": 124,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-059",
+      "name": "Foxy",
+      "pages": 18,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-060",
+      "name": "Itomimizu",
+      "pages": 18,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-065",
+      "name": "Gina",
+      "pages": 13,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-071",
+      "name": "Foxy",
+      "pages": 18,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-074",
+      "name": "Monda",
+      "pages": 5,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-078",
+      "name": "Megaton Nine-Tails Rush",
+      "pages": 13,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-079",
+      "name": "Rob Lucci",
+      "pages": 5,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-080",
+      "name": "Kaku",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-081",
+      "name": "Kalifa",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-091",
+      "name": "Monkey D. Luffy",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-099",
+      "name": "Usopp",
+      "pages": 16,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-102",
+      "name": "Jinbe",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-103",
+      "name": "Tony Tony Chopper",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-104",
+      "name": "Nico Robin",
+      "pages": 11,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-109",
+      "name": "Monkey D. Luffy",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-111",
+      "name": "Lilith",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-112",
+      "name": "Lucy",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-113",
+      "name": "Roronoa Zoro",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-114",
+      "name": "He Possesses the World&#x27;s Most Brilliant Mind",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-117",
+      "name": "Egghead",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP07-118",
+      "name": "Sabo",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP07"
+    },
+    {
+      "id": "OP08-018",
+      "name": "Cloven Rose",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-065",
+      "name": "Charlotte Smoothie",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-070",
+      "name": "Baron Tamago",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-071",
+      "name": "Count Niwatori",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-072",
+      "name": "Biscuit Warrior",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-073",
+      "name": "Viscount Hiyoko",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-079",
+      "name": "Kaido",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-084",
+      "name": "Jack",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-091",
+      "name": "Who&#x27;s Who",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-101",
+      "name": "Charlotte Angel",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-103",
+      "name": "Charlotte Custard",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-111",
+      "name": "S-Shark",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-112",
+      "name": "S-Snake",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-113",
+      "name": "S-Bear",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-114",
+      "name": "S-Hawk",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP08-119",
+      "name": "Kaido &amp; Linlin",
+      "pages": 8,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP08"
+    },
+    {
+      "id": "OP09-001",
+      "name": "Shanks",
+      "pages": 20,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-002",
+      "name": "Uta",
+      "pages": 20,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-008",
+      "name": "Building Snake",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-011",
+      "name": "Hongo",
+      "pages": 20,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-015",
+      "name": "Lucky Roux",
+      "pages": 18,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-019",
+      "name": "Nobody Hurts a Friend of Mine!!!!",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-020",
+      "name": "Come On!! We&#x27;ll Fight You!!",
+      "pages": 15,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-035",
+      "name": "Portgas D. Ace",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-048",
+      "name": "Dracule Mihawk",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-056",
+      "name": "Mr 3(Galdino)",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-061",
+      "name": "Monkey D. Luffy",
+      "pages": 6,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-062",
+      "name": "Nico Robin",
+      "pages": 372,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-070",
+      "name": "Nami",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-071",
+      "name": "Nico Robin",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-076",
+      "name": "Roronoa Zoro",
+      "pages": 5,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-079",
+      "name": "Gum-Gum Jump Rope",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-100",
+      "name": "Karasu",
+      "pages": 10,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-101",
+      "name": "Kuzan",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-102",
+      "name": "Professor Clover",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-103",
+      "name": "Koala",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-104",
+      "name": "Sabo",
+      "pages": 15,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-106",
+      "name": "Nico Olvia",
+      "pages": 49,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-108",
+      "name": "Bartholomew Kuma",
+      "pages": 13,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-109",
+      "name": "Jaguar D. Saul",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-113",
+      "name": "Morley",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-114",
+      "name": "Lindbergh",
+      "pages": 5,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP09-117",
+      "name": "Dereshi!",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP09"
+    },
+    {
+      "id": "OP10-015",
+      "name": "Mocha",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-018",
+      "name": "Ten-Layer Igloo",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-019",
+      "name": "Divine Departure",
+      "pages": 15,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-022",
+      "name": "Trafalgar Law",
+      "pages": 7,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-031",
+      "name": "Sengoku",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-036",
+      "name": "Perona",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-058",
+      "name": "Rebecca",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-077",
+      "name": "Bellamy",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-094",
+      "name": "Ryuma",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-098",
+      "name": "Liberation",
+      "pages": 12,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-099",
+      "name": "Eustass&quot;Captain&quot;Kid",
+      "pages": 31,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-103",
+      "name": "Capone&quot;Gang&quot;Bege",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-107",
+      "name": "Jewelry Bonney",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-108",
+      "name": "Scratchmen Apoo",
+      "pages": 4,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-110",
+      "name": "Heat &amp; Wire",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP10-111",
+      "name": "Monkey D. Luffy",
+      "pages": 33,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP10"
+    },
+    {
+      "id": "OP11-003",
+      "name": "Usopp",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP11-009",
+      "name": "Nico Robin",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP11-019",
+      "name": "Glorp Web!!",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP11-035",
+      "name": "Fisher Tiger",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP11-051",
+      "name": "Sanji",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP11-058",
+      "name": "Monkey D. Luffy",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP11-060",
+      "name": "Let&#x27;s Crash This Wedding!!!",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP11-101",
+      "name": "Capone&quot;Gang&quot;Bege",
+      "pages": 10,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP11"
+    },
+    {
+      "id": "OP12-006",
+      "name": "Shakuyaku",
+      "pages": 32,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-008",
+      "name": "Shanks",
+      "pages": 18,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-014",
+      "name": "Boa Hancock",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-015",
+      "name": "Monkey D. Luffy",
+      "pages": 298,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-019",
+      "name": "Color of Arms Haki",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-020",
+      "name": "Roronoa Zoro",
+      "pages": 21,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-026",
+      "name": "Kuina",
+      "pages": 12,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-028",
+      "name": "Kouzuki Hiyori",
+      "pages": 18,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-029",
+      "name": "Shimotsuki Kouzaburou",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-039",
+      "name": "Luffy Is the Man Who Will Become the King of Pirates!!!",
+      "pages": 21,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-040",
+      "name": "Kuzan",
+      "pages": 34,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-041",
+      "name": "Sanji",
+      "pages": 18,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-043",
+      "name": "Kuzan",
+      "pages": 25,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-046",
+      "name": "Zephyr(Navy)",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-047",
+      "name": "Sengoku",
+      "pages": 33,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-048",
+      "name": "Donquixote Rosinante",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-056",
+      "name": "Monkey D. Garp",
+      "pages": 28,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-057",
+      "name": "Ice Block Pheasant Peck",
+      "pages": 33,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-059",
+      "name": "Concasser",
+      "pages": 11,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-078",
+      "name": "Brochette Blow",
+      "pages": 7,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-079",
+      "name": "Luffy Is the Man Who Will Be King of the Pirates!!!",
+      "pages": 18,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-081",
+      "name": "Koala",
+      "pages": 30,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-085",
+      "name": "Karasu",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-086",
+      "name": "Koala",
+      "pages": 17,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-087",
+      "name": "Nico Robin",
+      "pages": 18,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-089",
+      "name": "Hack",
+      "pages": 20,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-090",
+      "name": "Belo Betty",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-093",
+      "name": "Morley",
+      "pages": 13,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-094",
+      "name": "Monkey D. Dragon",
+      "pages": 19,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-097",
+      "name": "Captains Assembled",
+      "pages": 10,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-098",
+      "name": "Hair Removal Fist",
+      "pages": 19,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-100",
+      "name": "Sabo",
+      "pages": 5,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-104",
+      "name": "Sentomaru",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-109",
+      "name": "Pacifista",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP12-117",
+      "name": "Slam Gibson",
+      "pages": 3,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP12"
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "pages": 402,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-015",
+      "name": "Makino",
+      "pages": 7,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-019",
+      "name": "But Ace Here Said You Deserved It!!",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-029",
+      "name": "Jinbe",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-059",
+      "name": "Brilliant Punk",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-061",
+      "name": "Inuarashi",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-071",
+      "name": "Nekomamushi",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-088",
+      "name": "Terry Gilteo",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-100",
+      "name": "Jewelry Bonney",
+      "pages": 25,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-102",
+      "name": "Edison",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-108",
+      "name": "Jewelry Bonney",
+      "pages": 30,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-110",
+      "name": "Stussy",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-112",
+      "name": "Vegapunk",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-114",
+      "name": "S-Snake",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-116",
+      "name": "The One Who Is the Most Free Is the Pirate King!!!",
+      "pages": 20,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP13-120",
+      "name": "Sabo",
+      "pages": 17,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP13"
+    },
+    {
+      "id": "OP14-017",
+      "name": "Chambres",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-038",
+      "name": "I Never Bother to Remember the Faces of Trash",
+      "pages": 164,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-040",
+      "name": "Jinbe",
+      "pages": 8,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "pages": 137,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-042",
+      "name": "Arlong",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-043",
+      "name": "Aladine",
+      "pages": 3,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-045",
+      "name": "Kuroobi",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-046",
+      "name": "Koala",
+      "pages": 8,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-047",
+      "name": "Shirahoshi",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-050",
+      "name": "Chew",
+      "pages": 8,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-051",
+      "name": "Hatchan",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-054",
+      "name": "Fisher Tiger",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-056",
+      "name": "Wadatsumi",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-070",
+      "name": "Buffalo",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-079",
+      "name": "Crocodile",
+      "pages": 9,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-080",
+      "name": "Gecko Moria",
+      "pages": 37,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-083",
+      "name": "Ms Wednesday",
+      "pages": 9,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-084",
+      "name": "Ms All Sunday",
+      "pages": 9,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-085",
+      "name": "Miss Goldenweek(Marianne)",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-086",
+      "name": "Miss Doublefinger(Zala)",
+      "pages": 6,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-087",
+      "name": "Miss Valentine(Mikita)",
+      "pages": 9,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-088",
+      "name": "Miss MerryChristmas(Drophy)",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-089",
+      "name": "Ryuma",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-090",
+      "name": "Mr 1(Daz Bonez)",
+      "pages": 8,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-091",
+      "name": "Mr 2 Bon Kurei(Bentham)",
+      "pages": 9,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-093",
+      "name": "Mr 4(Babe)",
+      "pages": 8,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-094",
+      "name": "Mr 5(Gem)",
+      "pages": 8,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-097",
+      "name": "Hurry Up and Make Me the Pirate King!",
+      "pages": 5,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-099",
+      "name": "Disappointed?",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-100",
+      "name": "Absalom",
+      "pages": 34,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-103",
+      "name": "Gloriosa (Grandma Nyon)",
+      "pages": 39,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-105",
+      "name": "Gorgon Sisters",
+      "pages": 137,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-106",
+      "name": "Salome",
+      "pages": 5,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-107",
+      "name": "Shakuyaku",
+      "pages": 138,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-109",
+      "name": "Victoria Cindry",
+      "pages": 26,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-113",
+      "name": "Marguerite",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-114",
+      "name": "Ran",
+      "pages": 135,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-115",
+      "name": "Rindo",
+      "pages": 5,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-117",
+      "name": "Brick Bat",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP14-120",
+      "name": "Crocodile",
+      "pages": 33,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP14"
+    },
+    {
+      "id": "OP15-027",
+      "name": "Dracule Mihawk",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-030",
+      "name": "Hyouzou",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-036",
+      "name": "Ryuma",
+      "pages": 4,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-079",
+      "name": "Absalom",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-080",
+      "name": "Oars",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-081",
+      "name": "Sanji",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-084",
+      "name": "Dr Hogback",
+      "pages": 35,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-085",
+      "name": "Tony Tony Chopper",
+      "pages": 11,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-086",
+      "name": "Nami",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-090",
+      "name": "Perona",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-094",
+      "name": "Roronoa Zoro",
+      "pages": 5,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-099",
+      "name": "Urouge",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-103",
+      "name": "Genbo",
+      "pages": 21,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-104",
+      "name": "Conis",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-115",
+      "name": "Impact Dial",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP15-117",
+      "name": "Heso!!",
+      "pages": 5,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP15-EB04"
+    },
+    {
+      "id": "OP16-012",
+      "name": "Benn Beckman",
+      "pages": 20,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-018",
+      "name": "Rockstar",
+      "pages": 9,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-023",
+      "name": "Arlong",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-035",
+      "name": "Roronoa Zoro",
+      "pages": 7,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-043",
+      "name": "Usopp",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-059",
+      "name": "We&#x27;ll Change This Mission from Sneaky to Flashy!",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-071",
+      "name": "Benevolent King of the Waves",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-089",
+      "name": "Dracule Mihawk",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-093",
+      "name": "Bartholomew Kuma",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-111",
+      "name": "Boa Sandersonia",
+      "pages": 10,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP16-113",
+      "name": "Boa Marigold",
+      "pages": 137,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "OP16"
+    },
+    {
+      "id": "OP18-031",
+      "name": "Nico Robin",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "OP18"
+    },
+    {
+      "id": "PRB02-011",
+      "name": "Donquixote Doflamingo",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "booster",
+      "set_code": "PRB-02"
+    },
+    {
+      "id": "PRB02-012",
+      "name": "Nami",
+      "pages": 31,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "PRB-02"
+    },
+    {
+      "id": "PRB02-013",
+      "name": "Gecko Moria",
+      "pages": 35,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "PRB-02"
+    },
+    {
+      "id": "PRB02-018",
+      "name": "Portgas D. Ace",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "booster",
+      "set_code": "PRB-02"
+    },
+    {
+      "id": "P-024",
+      "name": "I&#x27;m Gonna Be King of the Pirates!!",
+      "pages": 5,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-028",
+      "name": "Portgas D. Ace",
+      "pages": 2,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-044",
+      "name": "Sabo",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-048",
+      "name": "Arlong",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-067",
+      "name": "Eustass&quot;Captain&quot;Kid",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-069",
+      "name": "Koala",
+      "pages": 4,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-075",
+      "name": "Monkey D. Luffy",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-083",
+      "name": "Shanks",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-097",
+      "name": "Shanks",
+      "pages": 9,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-103",
+      "name": "Portgas D. Ace",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-105",
+      "name": "Sabo",
+      "pages": 8,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-106",
+      "name": "Monkey D. Luffy",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-108",
+      "name": "Monkey D. Luffy",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-116",
+      "name": "Nico Robin",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-119",
+      "name": "Portgas D. Ace",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-135",
+      "name": "Monkey D. Luffy",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-141",
+      "name": "P-141",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-143",
+      "name": "P-143",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-146",
+      "name": "P-146",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-147",
+      "name": "P-147",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-149",
+      "name": "P-149",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-153",
+      "name": "Portgas D. Ace",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-157",
+      "name": "P-157",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "P-159",
+      "name": "P-159",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "promo",
+      "set_code": "OP-PR"
+    },
+    {
+      "id": "ST01-011",
+      "name": "Brook",
+      "pages": 380,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-01"
+    },
+    {
+      "id": "ST01-012",
+      "name": "Monkey D. Luffy",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-01"
+    },
+    {
+      "id": "ST02-009",
+      "name": "Trafalgar Law",
+      "pages": 3,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-02"
+    },
+    {
+      "id": "ST02-015",
+      "name": "Scalpel",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-02"
+    },
+    {
+      "id": "ST04-002",
+      "name": "Ulti",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-04"
+    },
+    {
+      "id": "ST04-003",
+      "name": "Kaido",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-04"
+    },
+    {
+      "id": "ST04-012",
+      "name": "Page One",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-04"
+    },
+    {
+      "id": "ST04-015",
+      "name": "Brachio Bomber",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-04"
+    },
+    {
+      "id": "ST04-017",
+      "name": "Onigashima Island",
+      "pages": 12,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-04"
+    },
+    {
+      "id": "ST06-015",
+      "name": "Great Eruption",
+      "pages": 18,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-06"
+    },
+    {
+      "id": "ST06-017",
+      "name": "Navy HQ",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-06"
+    },
+    {
+      "id": "ST07-012",
+      "name": "Baron Tamago",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-07"
+    },
+    {
+      "id": "ST07-015",
+      "name": "Soul Pocus",
+      "pages": 4,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-07"
+    },
+    {
+      "id": "ST07-016",
+      "name": "Power Mochi",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-07"
+    },
+    {
+      "id": "ST08-014",
+      "name": "Gum-Gum Bell",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-08"
+    },
+    {
+      "id": "ST10-002",
+      "name": "Monkey D. Luffy",
+      "pages": 35,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-10"
+    },
+    {
+      "id": "ST10-013",
+      "name": "Eustass&quot;Captain&quot;Kid",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-10"
+    },
+    {
+      "id": "ST13-001",
+      "name": "Sabo",
+      "pages": 24,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-003",
+      "name": "Monkey D. Luffy",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-004",
+      "name": "Edward Newgate",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-007",
+      "name": "Sabo",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-010",
+      "name": "Portgas D. Ace",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-011",
+      "name": "Portgas D. Ace",
+      "pages": 2,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-013",
+      "name": "Monkey D. Garp",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-014",
+      "name": "Monkey D. Luffy",
+      "pages": 11,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-015",
+      "name": "Monkey D. Luffy",
+      "pages": 3,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST13-016",
+      "name": "Yamato",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-13"
+    },
+    {
+      "id": "ST14-001",
+      "name": "Monkey D. Luffy",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-14"
+    },
+    {
+      "id": "ST14-007",
+      "name": "Nico Robin",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-14"
+    },
+    {
+      "id": "ST14-015",
+      "name": "Gum-Gum Diable Three-Swords Style Mouten Jet Six Hundred Pound Phoenix Cannon",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-14"
+    },
+    {
+      "id": "ST14-016",
+      "name": "I Have My Crew!!",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-14"
+    },
+    {
+      "id": "ST17-001",
+      "name": "Crocodile",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-17"
+    },
+    {
+      "id": "ST17-002",
+      "name": "Trafalgar Law",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-17"
+    },
+    {
+      "id": "ST17-003",
+      "name": "Buggy",
+      "pages": 1,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-17"
+    },
+    {
+      "id": "ST17-004",
+      "name": "Boa Hancock",
+      "pages": 90,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-17"
+    },
+    {
+      "id": "ST18-002",
+      "name": "O-Nami",
+      "pages": 3,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-18"
+    },
+    {
+      "id": "ST18-003",
+      "name": "San-Gorou",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-18"
+    },
+    {
+      "id": "ST18-004",
+      "name": "Zoro-Juurou",
+      "pages": 22,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-18"
+    },
+    {
+      "id": "ST18-005",
+      "name": "Luffy-Tarou",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-18"
+    },
+    {
+      "id": "ST20-003",
+      "name": "Charlotte Brulee",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-20"
+    },
+    {
+      "id": "ST21-010",
+      "name": "Nico Robin",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-21"
+    },
+    {
+      "id": "ST23-002",
+      "name": "Shanks",
+      "pages": 19,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-23"
+    },
+    {
+      "id": "ST23-003",
+      "name": "Benn Beckman",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-23"
+    },
+    {
+      "id": "ST24-005",
+      "name": "X Drake",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-24"
+    },
+    {
+      "id": "ST26-001",
+      "name": "Soba Mask",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-26"
+    },
+    {
+      "id": "ST26-002",
+      "name": "Tony Tony Chopper",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-26"
+    },
+    {
+      "id": "ST26-003",
+      "name": "Nico Robin",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-26"
+    },
+    {
+      "id": "ST26-005",
+      "name": "Monkey D. Luffy",
+      "pages": 7,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-26"
+    },
+    {
+      "id": "ST28-001",
+      "name": "Ashura Doji",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-28"
+    },
+    {
+      "id": "ST28-002",
+      "name": "Izo",
+      "pages": 5,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-28"
+    },
+    {
+      "id": "ST28-003",
+      "name": "Kin&#x27;emon",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-28"
+    },
+    {
+      "id": "ST29-003",
+      "name": "Kaku",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-29"
+    },
+    {
+      "id": "ST29-009",
+      "name": "Nico Robin",
+      "pages": 2,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-29"
+    },
+    {
+      "id": "ST29-013",
+      "name": "Rob Lucci",
+      "pages": 1,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-29"
+    },
+    {
+      "id": "ST29-014",
+      "name": "Roronoa Zoro",
+      "pages": 3,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-29"
+    },
+    {
+      "id": "ST29-015",
+      "name": "Raw Heat Strike",
+      "pages": 17,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-29"
+    },
+    {
+      "id": "ST29-017",
+      "name": "Iai Death Lion Song",
+      "pages": 1,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-29"
+    },
+    {
+      "id": "ST30-001",
+      "name": "Luffy &amp; Ace",
+      "pages": 293,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-30"
+    },
+    {
+      "id": "ST30-002",
+      "name": "Inazuma",
+      "pages": 14,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-30"
+    },
+    {
+      "id": "ST30-003",
+      "name": "Edward Newgate",
+      "pages": 4,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-30"
+    },
+    {
+      "id": "ST30-017",
+      "name": "And You Get Yourself in Big Trouble!!",
+      "pages": 1,
+      "qty_sample": 1,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-30"
+    },
+    {
+      "id": "ST31-001",
+      "name": "Sanji",
+      "pages": 299,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-31"
+    },
+    {
+      "id": "ST31-002",
+      "name": "Jinbe",
+      "pages": 3,
+      "qty_sample": 2,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-31"
+    },
+    {
+      "id": "ST33-001",
+      "name": "Koby",
+      "pages": 32,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-33"
+    },
+    {
+      "id": "ST33-002",
+      "name": "Sakazuki",
+      "pages": 5,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-33"
+    },
+    {
+      "id": "ST33-005",
+      "name": "Monkey D. Garp",
+      "pages": 35,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-33"
+    },
+    {
+      "id": "ST35-001",
+      "name": "Hack",
+      "pages": 7,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-35"
+    },
+    {
+      "id": "ST35-002",
+      "name": "Lindbergh",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-35"
+    },
+    {
+      "id": "ST35-003",
+      "name": "Karasu",
+      "pages": 6,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-35"
+    },
+    {
+      "id": "ST35-004",
+      "name": "Koala",
+      "pages": 2,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-35"
+    },
+    {
+      "id": "ST35-005",
+      "name": "Bartholomew Kuma",
+      "pages": 5,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-35"
+    },
+    {
+      "id": "ST36-001",
+      "name": "Cavendish",
+      "pages": 9,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id",
+        "no_catalog_name"
+      ],
+      "cause": "starter",
+      "set_code": "ST-36"
+    },
+    {
+      "id": "ST36-002",
+      "name": "Killer",
+      "pages": 31,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-36"
+    },
+    {
+      "id": "ST36-003",
+      "name": "Scratchmen Apoo",
+      "pages": 34,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-36"
+    },
+    {
+      "id": "ST36-004",
+      "name": "Bartolomeo",
+      "pages": 16,
+      "qty_sample": 4,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-36"
+    },
+    {
+      "id": "ST36-005",
+      "name": "Eustass&quot;Captain&quot;Kid",
+      "pages": 70,
+      "qty_sample": 3,
+      "reasons": [
+        "no_product_id"
+      ],
+      "cause": "starter",
+      "set_code": "ST-36"
+    }
+  ]
+}

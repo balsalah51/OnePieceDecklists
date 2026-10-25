@@ -1,0 +1,1225 @@
+{
+  "pages": [
+    "decklists/sabo/11th-kyomaycry-ger-dressrosa-tournament-op17.html",
+    "decklists/sabo/19th-puretcg-op17-win-a-box-praxi-agapis-4.html",
+    "decklists/sabo/3rd-kush7z-ger-dressrosa-tournament-op17.html",
+    "decklists/sabo/8th-kush7z-ger-dressrosa-tournament-op17.html",
+    "decklists/zoro/18th-pablo-bertola-phoenix-la-plata-one-piece-mini-open.html",
+    "decklists/belo-betty/1-5-maestroman-eb05-chinoizecup-125-tuesday.html",
+    "decklists/koala/0-3-aarton1-op17-chinoizecup-116-tuesday.html",
+    "decklists/koala/1-2-mage-op17-chinoizecup-97-monday.html",
+    "decklists/lucy/16th-ray-flyaway-chinoizecup-86-tuesday.html",
+    "decklists/sabo/optcggg-8th-dan-nicholas-egman-events-op16-sts-triple-win-a-box.html"
+  ],
+  "results": [
+    {
+      "id": "EB03-042",
+      "printed": "Koala",
+      "status": "fail",
+      "line": "Koala [EB-03-04] EB03-042",
+      "exact_set": [],
+      "number_only": [],
+      "id_search": [
+        {
+          "name": "Koala",
+          "set": "EB03",
+          "number": "EB03-042",
+          "productId": 672791
+        },
+        {
+          "name": "Koala (Alternate Art)",
+          "set": "EB03",
+          "number": "EB03-042",
+          "productId": 672792
+        },
+        {
+          "name": "Koala (SP)",
+          "set": "EB03",
+          "number": "EB03-042",
+          "productId": 672825
+        }
+      ]
+    },
+    {
+      "id": "OP04-083",
+      "printed": "Sabo",
+      "status": "number",
+      "line": "Sabo [OP04] OP04-083",
+      "exact_set": [],
+      "number_only": [
+        {
+          "name": "Sabo - OP04-083 (Reprint)",
+          "set": "PRB-02",
+          "number": "OP04-083",
+          "productId": 656036
+        },
+        {
+          "name": "Sabo (OP04-083) (Manga)",
+          "set": "PRB-01",
+          "number": "OP04-083",
+          "productId": 587958
+        }
+      ],
+      "id_search": [
+        {
+          "name": "Sabo - OP04-083 (Reprint)",
+          "set": "PRB-02",
+          "number": "OP04-083",
+          "productId": 656036
+        },
+        {
+          "name": "Sabo (OP04-083) (Manga)",
+          "set": "PRB-01",
+          "number": "OP04-083",
+          "productId": 587958
+        },
+        {
+          "name": "Sabo",
+          "set": "OP04",
+          "number": "OP04-083",
+          "productId": 514543
+        },
+        {
+          "name": "Sabo (Alternate Art)",
+          "set": "OP04",
+          "number": "OP04-083",
+          "productId": 514544
+        }
+      ]
+    },
+    {
+      "id": "OP05-003",
+      "printed": "Inazuma",
+      "status": "exact",
+      "line": "Inazuma [OP05] OP05-003",
+      "exact_set": [
+        {
+          "name": "Inazuma",
+          "set": "OP05",
+          "number": "OP05-003",
+          "productId": 528532
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Inazuma",
+          "set": "OP05",
+          "number": "OP05-003",
+          "productId": 528532
+        }
+      ]
+    },
+    {
+      "id": "OP05-004",
+      "printed": "Emporio Ivankov",
+      "status": "exact",
+      "line": "Emporio Ivankov [OP05] OP05-004",
+      "exact_set": [
+        {
+          "name": "Emporio.Ivankov",
+          "set": "OP05",
+          "number": "OP05-004",
+          "productId": 528533
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Emporio.Ivankov",
+          "set": "OP05",
+          "number": "OP05-004",
+          "productId": 528533
+        },
+        {
+          "name": "Emporio.Ivankov",
+          "set": "OP05 ANN",
+          "number": "OP05-004",
+          "productId": 530889
+        }
+      ]
+    },
+    {
+      "id": "OP05-005",
+      "printed": "Karasu",
+      "status": "exact",
+      "line": "Karasu [OP05] OP05-005",
+      "exact_set": [
+        {
+          "name": "Karasu",
+          "set": "OP05",
+          "number": "OP05-005",
+          "productId": 528536
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Karasu",
+          "set": "OP05",
+          "number": "OP05-005",
+          "productId": 528536
+        }
+      ]
+    },
+    {
+      "id": "OP05-021",
+      "printed": "Revolutionary Army HQ",
+      "status": "exact",
+      "line": "Revolutionary Army HQ [OP05] OP05-021",
+      "exact_set": [
+        {
+          "name": "Revolutionary Army HQ",
+          "set": "OP05",
+          "number": "OP05-021",
+          "productId": 528555
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Revolutionary Army HQ",
+          "set": "OP05",
+          "number": "OP05-021",
+          "productId": 528555
+        },
+        {
+          "name": "Revolutionary Army HQ",
+          "set": "OP05 ANN",
+          "number": "OP05-021",
+          "productId": 530900
+        },
+        {
+          "name": "Revolutionary Army HQ (Reprint)",
+          "set": "PRB-02",
+          "number": "OP05-021",
+          "productId": 656058
+        }
+      ]
+    },
+    {
+      "id": "OP06-003",
+      "printed": "Emporio Ivankov",
+      "status": "exact",
+      "line": "Emporio Ivankov [OP06] OP06-003",
+      "exact_set": [
+        {
+          "name": "Emporio.Ivankov",
+          "set": "OP06",
+          "number": "OP06-003",
+          "productId": 541567
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Emporio.Ivankov",
+          "set": "OP06",
+          "number": "OP06-003",
+          "productId": 541567
+        }
+      ]
+    },
+    {
+      "id": "OP12-020",
+      "printed": "Roronoa Zoro",
+      "status": "exact",
+      "line": "Roronoa Zoro [OP12] OP12-020",
+      "exact_set": [
+        {
+          "name": "Roronoa Zoro (020)",
+          "set": "OP12",
+          "number": "OP12-020",
+          "productId": 643747
+        },
+        {
+          "name": "Roronoa Zoro (020) (Alternate Art)",
+          "set": "OP12",
+          "number": "OP12-020",
+          "productId": 643748
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Roronoa Zoro - OP12-020 (Zoro Deck)",
+          "set": "LT-01",
+          "number": "OP12-020",
+          "productId": 656631
+        },
+        {
+          "name": "Roronoa Zoro - OP12-020 (Official Playmat Limited Edition Vol.4)",
+          "set": "OP-PR",
+          "number": "OP12-020",
+          "productId": 657221
+        },
+        {
+          "name": "Roronoa Zoro (OP12-020)",
+          "set": "ST-32",
+          "number": "OP12-020",
+          "productId": 706319
+        }
+      ]
+    },
+    {
+      "id": "OP12-026",
+      "printed": "Kuina",
+      "status": "exact",
+      "line": "Kuina [OP12] OP12-026",
+      "exact_set": [
+        {
+          "name": "Kuina",
+          "set": "OP12",
+          "number": "OP12-026",
+          "productId": 643754
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Kuina",
+          "set": "OP12",
+          "number": "OP12-026",
+          "productId": 643754
+        },
+        {
+          "name": "Kuina",
+          "set": "OP12 RE",
+          "number": "OP12-026",
+          "productId": 649303
+        }
+      ]
+    },
+    {
+      "id": "OP12-028",
+      "printed": "Kouzuki Hiyori",
+      "status": "exact",
+      "line": "Kouzuki Hiyori [OP12] OP12-028",
+      "exact_set": [
+        {
+          "name": "Kouzuki Hiyori",
+          "set": "OP12",
+          "number": "OP12-028",
+          "productId": 643756
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Kouzuki Hiyori",
+          "set": "OP12",
+          "number": "OP12-028",
+          "productId": 643756
+        },
+        {
+          "name": "Kouzuki Hiyori (Tournament Pack 2026 Vol. 1)",
+          "set": "OP-PR",
+          "number": "OP12-028",
+          "productId": 668164
+        },
+        {
+          "name": "Kouzuki Hiyori (Winner Pack 2026 Vol. 1)",
+          "set": "OP-PR",
+          "number": "OP12-028",
+          "productId": 668186
+        }
+      ]
+    },
+    {
+      "id": "OP12-029",
+      "printed": "Shimotsuki Kouzaburou",
+      "status": "exact",
+      "line": "Shimotsuki Kouzaburou [OP12] OP12-029",
+      "exact_set": [
+        {
+          "name": "Shimotsuki Kouzaburou",
+          "set": "OP12",
+          "number": "OP12-029",
+          "productId": 643757
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Shimotsuki Kouzaburou",
+          "set": "OP12",
+          "number": "OP12-029",
+          "productId": 643757
+        },
+        {
+          "name": "Shimotsuki Kouzaburou",
+          "set": "OP12 RE",
+          "number": "OP12-029",
+          "productId": 649305
+        }
+      ]
+    },
+    {
+      "id": "OP12-039",
+      "printed": "Luffy Is the Man Who Will Become the King of Pirates!!!",
+      "status": "exact",
+      "line": "Luffy Is the Man Who Will Become the King of Pirates!!! [OP12] OP12-039",
+      "exact_set": [
+        {
+          "name": "Luffy Is the Man Who Will Become the King of Pirates!!!",
+          "set": "OP12",
+          "number": "OP12-039",
+          "productId": 643771
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Luffy Is the Man Who Will Become the King of Pirates!!!",
+          "set": "ST-32",
+          "number": "OP12-039",
+          "productId": 706322
+        },
+        {
+          "name": "Luffy Is the Man Who Will Become the King of Pirates!!!",
+          "set": "OP12",
+          "number": "OP12-039",
+          "productId": 643771
+        },
+        {
+          "name": "Luffy Is the Man Who Will Become the King of Pirates!!! (Zoro Deck)",
+          "set": "LT-01",
+          "number": "OP12-039",
+          "productId": 656651
+        }
+      ]
+    },
+    {
+      "id": "OP12-086",
+      "printed": "Koala",
+      "status": "exact",
+      "line": "Koala [OP12] OP12-086",
+      "exact_set": [
+        {
+          "name": "Koala (086)",
+          "set": "OP12",
+          "number": "OP12-086",
+          "productId": 643828
+        },
+        {
+          "name": "Koala (086) (Alternate Art)",
+          "set": "OP12",
+          "number": "OP12-086",
+          "productId": 643829
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Koala (086)",
+          "set": "OP12",
+          "number": "OP12-086",
+          "productId": 643828
+        },
+        {
+          "name": "Koala (086) (Alternate Art)",
+          "set": "OP12",
+          "number": "OP12-086",
+          "productId": 643829
+        }
+      ]
+    },
+    {
+      "id": "OP12-089",
+      "printed": "Hack",
+      "status": "exact",
+      "line": "Hack [OP12] OP12-089",
+      "exact_set": [
+        {
+          "name": "Hack",
+          "set": "OP12",
+          "number": "OP12-089",
+          "productId": 643833
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Hack",
+          "set": "OP12",
+          "number": "OP12-089",
+          "productId": 643833
+        }
+      ]
+    },
+    {
+      "id": "OP12-094",
+      "printed": "Monkey D. Dragon",
+      "status": "exact",
+      "line": "Monkey D. Dragon [OP12] OP12-094",
+      "exact_set": [
+        {
+          "name": "Monkey.D.Dragon",
+          "set": "OP12",
+          "number": "OP12-094",
+          "productId": 643838
+        },
+        {
+          "name": "Monkey.D.Dragon (Alternate Art)",
+          "set": "OP12",
+          "number": "OP12-094",
+          "productId": 643839
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Monkey.D.Dragon",
+          "set": "OP12",
+          "number": "OP12-094",
+          "productId": 643838
+        },
+        {
+          "name": "Monkey.D.Dragon (Alternate Art)",
+          "set": "OP12",
+          "number": "OP12-094",
+          "productId": 643839
+        }
+      ]
+    },
+    {
+      "id": "OP12-097",
+      "printed": "Captains Assembled",
+      "status": "exact",
+      "line": "Captains Assembled [OP12] OP12-097",
+      "exact_set": [
+        {
+          "name": "Captains Assembled",
+          "set": "OP12",
+          "number": "OP12-097",
+          "productId": 643842
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Captains Assembled",
+          "set": "OP12",
+          "number": "OP12-097",
+          "productId": 643842
+        }
+      ]
+    },
+    {
+      "id": "OP12-098",
+      "printed": "Hair Removal Fist",
+      "status": "exact",
+      "line": "Hair Removal Fist [OP12] OP12-098",
+      "exact_set": [
+        {
+          "name": "Hair Removal Fist",
+          "set": "OP12",
+          "number": "OP12-098",
+          "productId": 643843
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Hair Removal Fist",
+          "set": "OP12",
+          "number": "OP12-098",
+          "productId": 643843
+        },
+        {
+          "name": "Hair Removal Fist",
+          "set": "OP12 RE",
+          "number": "OP12-098",
+          "productId": 649321
+        },
+        {
+          "name": "Hair Removal Fist (Premium Card Collection -Best Selection Vol. 5-)",
+          "set": "OP-PR",
+          "number": "OP12-098",
+          "productId": 657826
+        }
+      ]
+    },
+    {
+      "id": "OP13-004",
+      "printed": "Sabo",
+      "status": "number",
+      "line": "Sabo [OP13] OP13-004",
+      "exact_set": [],
+      "number_only": [
+        {
+          "name": "Sabo (OP13-004)",
+          "set": "ST-35",
+          "number": "OP13-004",
+          "productId": 706347
+        }
+      ],
+      "id_search": [
+        {
+          "name": "Sabo (OP13-004)",
+          "set": "ST-35",
+          "number": "OP13-004",
+          "productId": 706347
+        },
+        {
+          "name": "Sabo (004) (Alternate Art)",
+          "set": "OP13",
+          "number": "OP13-004",
+          "productId": 657257
+        },
+        {
+          "name": "Sabo (004)",
+          "set": "OP13",
+          "number": "OP13-004",
+          "productId": 657256
+        },
+        {
+          "name": "Sabo (Sound Loader Ace and Sabo Edition 2026)",
+          "set": "OP-PR",
+          "number": "OP13-004",
+          "productId": 710937
+        }
+      ]
+    },
+    {
+      "id": "OP13-120",
+      "printed": "Sabo",
+      "status": "exact",
+      "line": "Sabo [OP13] OP13-120",
+      "exact_set": [
+        {
+          "name": "Sabo (120)",
+          "set": "OP13",
+          "number": "OP13-120",
+          "productId": 657410
+        },
+        {
+          "name": "Sabo (120) (Parallel)",
+          "set": "OP13",
+          "number": "OP13-120",
+          "productId": 657413
+        },
+        {
+          "name": "Sabo (120) (Wanted Poster)",
+          "set": "OP13",
+          "number": "OP13-120",
+          "productId": 657414
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Sabo (120)",
+          "set": "OP13",
+          "number": "OP13-120",
+          "productId": 657410
+        },
+        {
+          "name": "Sabo (120) (Parallel)",
+          "set": "OP13",
+          "number": "OP13-120",
+          "productId": 657413
+        },
+        {
+          "name": "Sabo (120) (Wanted Poster)",
+          "set": "OP13",
+          "number": "OP13-120",
+          "productId": 657414
+        }
+      ]
+    },
+    {
+      "id": "OP16-035",
+      "printed": "Roronoa Zoro",
+      "status": "exact",
+      "line": "Roronoa Zoro [OP16] OP16-035",
+      "exact_set": [
+        {
+          "name": "Roronoa Zoro (035)",
+          "set": "OP16",
+          "number": "OP16-035",
+          "productId": 696021
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Roronoa Zoro (035)",
+          "set": "OP16",
+          "number": "OP16-035",
+          "productId": 696021
+        },
+        {
+          "name": "Roronoa Zoro (035)",
+          "set": "OP16 RE",
+          "number": "OP16-035",
+          "productId": 696724
+        }
+      ]
+    },
+    {
+      "id": "OP16-093",
+      "printed": "Bartholomew Kuma",
+      "status": "exact",
+      "line": "Bartholomew Kuma [OP16] OP16-093",
+      "exact_set": [
+        {
+          "name": "Bartholomew Kuma (093)",
+          "set": "OP16",
+          "number": "OP16-093",
+          "productId": 696076
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Bartholomew Kuma (093)",
+          "set": "OP16",
+          "number": "OP16-093",
+          "productId": 696076
+        },
+        {
+          "name": "Bartholomew Kuma (093)",
+          "set": "OP16 RE",
+          "number": "OP16-093",
+          "productId": 696760
+        }
+      ]
+    },
+    {
+      "id": "P-044",
+      "printed": "Sabo",
+      "status": "number",
+      "line": "Sabo [OP-PR] P-044",
+      "exact_set": [],
+      "number_only": [
+        {
+          "name": "Sabo - P-044 (Reprint)",
+          "set": "PRB-02",
+          "number": "P-044",
+          "productId": 656166
+        },
+        {
+          "name": "Sabo - P-044 (Pirate Foil)",
+          "set": "PRB-02",
+          "number": "P-044",
+          "productId": 656163
+        }
+      ],
+      "id_search": [
+        {
+          "name": "Sabo - P-044 (Reprint)",
+          "set": "PRB-02",
+          "number": "P-044",
+          "productId": 656166
+        },
+        {
+          "name": "Sabo - P-044 (Pirate Foil)",
+          "set": "PRB-02",
+          "number": "P-044",
+          "productId": 656163
+        },
+        {
+          "name": "Sabo (CS 2024 Event Pack)",
+          "set": "OP-PR",
+          "number": "P-044",
+          "productId": 579986
+        },
+        {
+          "name": "Sabo (Event Pack Vol. 4)",
+          "set": "OP-PR",
+          "number": "P-044",
+          "productId": 544795
+        }
+      ]
+    },
+    {
+      "id": "P-069",
+      "printed": "Koala",
+      "status": "exact",
+      "line": "Koala [OP-PR] P-069",
+      "exact_set": [
+        {
+          "name": "Koala (Event Pack Vol. 5)",
+          "set": "OP-PR",
+          "number": "P-069",
+          "productId": 583768
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Koala (Event Pack Vol. 5)",
+          "set": "OP-PR",
+          "number": "P-069",
+          "productId": 583768
+        }
+      ]
+    },
+    {
+      "id": "ST35-001",
+      "printed": "Hack",
+      "status": "exact",
+      "line": "Hack [ST-35] ST35-001",
+      "exact_set": [
+        {
+          "name": "Hack",
+          "set": "ST-35",
+          "number": "ST35-001",
+          "productId": 706351
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Hack",
+          "set": "ST-35",
+          "number": "ST35-001",
+          "productId": 706351
+        }
+      ]
+    },
+    {
+      "id": "ST35-002",
+      "printed": "Lindbergh",
+      "status": "exact",
+      "line": "Lindbergh [ST-35] ST35-002",
+      "exact_set": [
+        {
+          "name": "Lindbergh",
+          "set": "ST-35",
+          "number": "ST35-002",
+          "productId": 706352
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Lindbergh",
+          "set": "ST-35",
+          "number": "ST35-002",
+          "productId": 706352
+        }
+      ]
+    },
+    {
+      "id": "ST35-003",
+      "printed": "Karasu",
+      "status": "exact",
+      "line": "Karasu [ST-35] ST35-003",
+      "exact_set": [
+        {
+          "name": "Karasu",
+          "set": "ST-35",
+          "number": "ST35-003",
+          "productId": 706353
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Karasu",
+          "set": "ST-35",
+          "number": "ST35-003",
+          "productId": 706353
+        }
+      ]
+    },
+    {
+      "id": "ST35-004",
+      "printed": "Koala",
+      "status": "exact",
+      "line": "Koala [ST-35] ST35-004",
+      "exact_set": [
+        {
+          "name": "Koala",
+          "set": "ST-35",
+          "number": "ST35-004",
+          "productId": 706354
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Koala",
+          "set": "ST-35",
+          "number": "ST35-004",
+          "productId": 706354
+        }
+      ]
+    },
+    {
+      "id": "ST35-005",
+      "printed": "Bartholomew Kuma",
+      "status": "exact",
+      "line": "Bartholomew Kuma [ST-35] ST35-005",
+      "exact_set": [
+        {
+          "name": "Bartholomew Kuma",
+          "set": "ST-35",
+          "number": "ST35-005",
+          "productId": 706355
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Bartholomew Kuma",
+          "set": "ST-35",
+          "number": "ST35-005",
+          "productId": 706355
+        }
+      ]
+    },
+    {
+      "id": "OP05-002",
+      "printed": "Belo Betty",
+      "status": "exact",
+      "line": "Belo Betty [OP05] OP05-002",
+      "exact_set": [
+        {
+          "name": "Belo Betty (002)",
+          "set": "OP05",
+          "number": "OP05-002",
+          "productId": 528531
+        },
+        {
+          "name": "Belo Betty (002) (Alternate Art)",
+          "set": "OP05",
+          "number": "OP05-002",
+          "productId": 527008
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Belo Betty (002)",
+          "set": "OP05",
+          "number": "OP05-002",
+          "productId": 528531
+        },
+        {
+          "name": "Belo Betty (002) (Alternate Art)",
+          "set": "OP05",
+          "number": "OP05-002",
+          "productId": 527008
+        }
+      ]
+    },
+    {
+      "id": "OP05-011",
+      "printed": "Bartholomew Kuma",
+      "status": "exact",
+      "line": "Bartholomew Kuma [OP05] OP05-011",
+      "exact_set": [
+        {
+          "name": "Bartholomew Kuma",
+          "set": "OP05",
+          "number": "OP05-011",
+          "productId": 528540
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Bartholomew Kuma",
+          "set": "OP05",
+          "number": "OP05-011",
+          "productId": 528540
+        },
+        {
+          "name": "Bartholomew Kuma",
+          "set": "OP05 ANN",
+          "number": "OP05-011",
+          "productId": 530893
+        }
+      ]
+    },
+    {
+      "id": "EB05-005",
+      "printed": "Belo Betty",
+      "status": "fail",
+      "line": "Belo Betty [EB-05] EB05-005",
+      "exact_set": [],
+      "number_only": [],
+      "id_search": [
+        {
+          "name": "Belo Betty",
+          "set": "EB05",
+          "number": "EB05-005",
+          "productId": 715608
+        }
+      ]
+    },
+    {
+      "id": "EB05-051",
+      "printed": "Ahiru",
+      "status": "number",
+      "line": "Ahiru [EB-05] EB05-051",
+      "exact_set": [],
+      "number_only": [
+        {
+          "name": "Ahiru",
+          "set": "EB05",
+          "number": "EB05-051",
+          "productId": 715821
+        }
+      ],
+      "id_search": [
+        {
+          "name": "Ahiru",
+          "set": "EB05",
+          "number": "EB05-051",
+          "productId": 715821
+        }
+      ]
+    },
+    {
+      "id": "OP09-114",
+      "printed": "Lindbergh",
+      "status": "exact",
+      "line": "Lindbergh [OP09] OP09-114",
+      "exact_set": [
+        {
+          "name": "Lindbergh",
+          "set": "OP09",
+          "number": "OP09-114",
+          "productId": 597060
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Lindbergh",
+          "set": "OP09",
+          "number": "OP09-114",
+          "productId": 597060
+        },
+        {
+          "name": "Lindbergh",
+          "set": "OP09 ANN",
+          "number": "OP09-114",
+          "productId": 600757
+        }
+      ]
+    },
+    {
+      "id": "OP05-017",
+      "printed": "Lindbergh",
+      "status": "exact",
+      "line": "Lindbergh [OP05] OP05-017",
+      "exact_set": [
+        {
+          "name": "Lindbergh",
+          "set": "OP05",
+          "number": "OP05-017",
+          "productId": 528548
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Lindbergh",
+          "set": "OP05",
+          "number": "OP05-017",
+          "productId": 528548
+        }
+      ]
+    },
+    {
+      "id": "OP13-019",
+      "printed": "But Ace Here Said You Deserved It!!",
+      "status": "exact",
+      "line": "But Ace Here Said You Deserved It!! [OP13] OP13-019",
+      "exact_set": [
+        {
+          "name": "But Ace Here Said You Deserved It!!",
+          "set": "OP13",
+          "number": "OP13-019",
+          "productId": 657274
+        }
+      ],
+      "number_only": [
+        {
+          "name": "But Ace Here Said You Deserved It!!",
+          "set": "ST-35",
+          "number": "OP13-019",
+          "productId": 706349
+        },
+        {
+          "name": "But Ace Here Said You Deserved It!!",
+          "set": "OP13",
+          "number": "OP13-019",
+          "productId": 657274
+        }
+      ]
+    },
+    {
+      "id": "EB05-059",
+      "printed": "Charlotte Pudding",
+      "status": "fail",
+      "line": "Charlotte Pudding [EB-05] EB05-059",
+      "exact_set": [],
+      "number_only": [],
+      "id_search": [
+        {
+          "name": "Charlotte Pudding!!",
+          "set": "EB05",
+          "number": "EB05-059",
+          "productId": 723136
+        }
+      ]
+    },
+    {
+      "id": "OP05-018",
+      "printed": "Emporio Energy Hormone",
+      "status": "exact",
+      "line": "Emporio Energy Hormone [OP05] OP05-018",
+      "exact_set": [
+        {
+          "name": "Emporio Energy Hormone",
+          "set": "OP05",
+          "number": "OP05-018",
+          "productId": 528550
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Emporio Energy Hormone",
+          "set": "OP05 ANN",
+          "number": "OP05-018",
+          "productId": 530898
+        },
+        {
+          "name": "Emporio Energy Hormone",
+          "set": "OP05",
+          "number": "OP05-018",
+          "productId": 528550
+        }
+      ]
+    },
+    {
+      "id": "OP12-081",
+      "printed": "Koala",
+      "status": "fail",
+      "line": "Koala [OP12] OP12-081",
+      "exact_set": [],
+      "number_only": [],
+      "id_search": [
+        {
+          "name": "Koala (081)",
+          "set": "OP12",
+          "number": "OP12-081",
+          "productId": 643822
+        },
+        {
+          "name": "Koala (081) (Alternate Art)",
+          "set": "OP12",
+          "number": "OP12-081",
+          "productId": 643823
+        }
+      ]
+    },
+    {
+      "id": "EB04-045",
+      "printed": "Ginny",
+      "status": "fail",
+      "line": "Ginny [OP15-EB04] EB04-045",
+      "exact_set": [],
+      "number_only": [],
+      "id_search": [
+        {
+          "name": "Ginny",
+          "set": "OP15-EB04",
+          "number": "EB04-045",
+          "productId": 685314
+        },
+        {
+          "name": "Ginny",
+          "set": "OP15 RE",
+          "number": "EB04-045",
+          "productId": 686348
+        }
+      ]
+    },
+    {
+      "id": "OP12-093",
+      "printed": "Morley",
+      "status": "exact",
+      "line": "Morley [OP12] OP12-093",
+      "exact_set": [
+        {
+          "name": "Morley",
+          "set": "OP12",
+          "number": "OP12-093",
+          "productId": 643837
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Morley",
+          "set": "OP12",
+          "number": "OP12-093",
+          "productId": 643837
+        },
+        {
+          "name": "Morley",
+          "set": "OP12 RE",
+          "number": "OP12-093",
+          "productId": 649320
+        }
+      ]
+    },
+    {
+      "id": "OP12-085",
+      "printed": "Karasu",
+      "status": "exact",
+      "line": "Karasu [OP12] OP12-085",
+      "exact_set": [
+        {
+          "name": "Karasu",
+          "set": "OP12",
+          "number": "OP12-085",
+          "productId": 643827
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Karasu",
+          "set": "OP12",
+          "number": "OP12-085",
+          "productId": 643827
+        },
+        {
+          "name": "Karasu",
+          "set": "OP12 RE",
+          "number": "OP12-085",
+          "productId": 649261
+        }
+      ]
+    },
+    {
+      "id": "OP12-087",
+      "printed": "Nico Robin",
+      "status": "fail",
+      "line": "Nico Robin [OP12] OP12-087",
+      "exact_set": [],
+      "number_only": [],
+      "id_search": [
+        {
+          "name": "Nico Robin",
+          "set": "OP12",
+          "number": "OP12-087",
+          "productId": 643830
+        },
+        {
+          "name": "Nico Robin (Alternate Art)",
+          "set": "OP12",
+          "number": "OP12-087",
+          "productId": 643831
+        }
+      ]
+    },
+    {
+      "id": "OP09-108",
+      "printed": "Bartholomew Kuma",
+      "status": "exact",
+      "line": "Bartholomew Kuma [OP09] OP09-108",
+      "exact_set": [
+        {
+          "name": "Bartholomew Kuma",
+          "set": "OP09",
+          "number": "OP09-108",
+          "productId": 597054
+        }
+      ],
+      "number_only": [
+        {
+          "name": "Bartholomew Kuma",
+          "set": "OP09",
+          "number": "OP09-108",
+          "productId": 597054
+        },
+        {
+          "name": "Bartholomew Kuma",
+          "set": "OP09 ANN",
+          "number": "OP09-108",
+          "productId": 600786
+        }
+      ]
+    }
+  ],
+  "note": "Each line is the mass-entry text this site generates (name, bracket set, Bandai id). Match is TCGplayer product search, not the in-browser paste box. exact means a result has the same set code and the same number. number means the number exists under a different set code."
+}
