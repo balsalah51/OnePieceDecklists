@@ -1,0 +1,23 @@
+{
+  "amazon": {
+    "enabled": true,
+    "tag": "opdl07-20",
+    "oneLinkId": "",
+    "note": "Shop links are amzn.to short links for the Associates tag above. Leave oneLinkId empty until Amazon issues one. Do not invent an ID."
+  },
+  "tcgplayer": {
+    "enabled": true,
+    "partnerLink": "https://partner.tcgplayer.com/c/7670706/1780961/21018"
+  },
+  "adsense": {
+    "enabled": true,
+    "client": "ca-pub-1074015774205047",
+    "manualSlots": false,
+    "note": "Auto ads only. No manual ad unit slot IDs are configured."
+  },
+  "cmp": {
+    "enabled": false,
+    "provider": "",
+    "note": "Turn on Google's European regulations message in AdSense Privacy & messaging. Do not invent a CMP id."
+  }
+}

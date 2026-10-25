@@ -25,6 +25,8 @@ CSS = "/css/site.css?v=home-pro2"
 SITE = "https://onepiecedecklists.com"
 
 # Keep amzn.to URLs - they carry the Associates tag (opdl07-20).
+# Amazon OneLink is not enabled. data/affiliates.json and js/amazon-config.js
+# keep oneLinkId empty until Associates Central issues one.
 SLEEVES = [
     {
         "name": "Dragon Shield Matte Jet",

@@ -500,7 +500,7 @@ footer a{color:var(--accent);font-weight:700;text-decoration:none}
 .text-line .card-pop{
   position:absolute;left:48px;bottom:calc(100% + 8px);z-index:80;
   grid-column:1;grid-row:1;
-  width:220px;max-width:min(220px,72vw);height:auto;max-height:308px;border-radius:10px;background:#fff;
+  width:220px;max-width:min(220px,72vw);height:308px;max-height:308px;border-radius:10px;background:#fff;
   display:block;
   box-shadow:0 14px 32px rgba(16,22,26,0.28);border:1px solid rgba(0,0,0,0.08);
   visibility:hidden;opacity:0;pointer-events:none;transform:translateY(4px);
@@ -564,6 +564,10 @@ a.buy-tcg-inline:hover,.card-entry a.buy-tcg-inline:hover{text-decoration:underl
 .list-row > .copy-sim,.list-row > .buy-tcg{margin-left:0;align-self:center;flex-shrink:0}
 .section-title .buy-tcg{margin-left:0}
 .deck-stats{margin-top:16px;padding:12px 14px;border-radius:12px;border:1px solid rgba(0,0,0,0.06);background:#fff}
+.deck-stats-text{margin:8px 0 0;font-size:14px;line-height:1.45}
+.affiliate-note,.shop-note{font-size:13px;color:var(--muted);margin:8px 0 0}
+.event-pager{display:flex;flex-wrap:wrap;gap:8px 16px;margin:10px 0 0}
+.export-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .deck-stats .kicker{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:800}
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
 .curve{display:flex;align-items:end;gap:4px;height:72px}

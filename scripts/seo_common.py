@@ -16,8 +16,12 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "home-pro24"
-JS_VER = "nav-groups1"
+CSS_VER = "home-pro25"
+JS_VER = "deck-tools1"
+DISCLAIMER = (
+    "Fan site for the Bandai ONE PIECE CARD GAME (OPTCG). "
+    "Not affiliated with Bandai or Shueisha."
+)
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
 )
@@ -507,12 +511,15 @@ FOOTER_LINKS = (
     '<a href="/extra-grand-battle.html">Extra Grand Battle</a> · '
     '<a href="/guides/">Guides</a> · '
     '<a href="/decklists/op17.html">Leaders</a> · '
-    '<a href="/eb05-lists.html">EB05 lists</a> · '
-    '<a href="/eb05-spoilers.html">EB05</a> · '
+    '<a href="/eb05-lists.html">EB05 Lists</a> · '
+    '<a href="/eb05-spoilers.html">EB05 Spoilers</a> · '
     '<a href="/op18-spoilers.html">OP18</a> · '
     '<a href="/format.html">Format</a> · '
     '<a href="/search.html">Search</a> · '
     '<a href="/shop/">Shop</a> · '
+    '<a href="/about.html">About</a> · '
+    '<a href="/contact.html">Contact</a> · '
+    '<a href="/advertise.html">Advertise</a> · '
     '<a href="/privacy.html">Privacy</a>'
 )
 
@@ -540,7 +547,7 @@ def apply_theme_chrome(text: str) -> str:
 
 def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
     """Three menus so the bar stays Meta, Sets, and Resources."""
-    recent = "#recent" if home else "/recent.html"
+    recent = "/recent.html"
     leaders = "#leaders" if home else "/decklists/op17.html"
     groups: list[tuple[str, str, list[tuple[str, str, str]]]] = [
         (

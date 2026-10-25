@@ -80,6 +80,93 @@
     return textList(root);
   }
 
+  function lineRows(root) {
+    return Array.prototype.map.call(root.querySelectorAll(".text-line"), function (line) {
+      var qty = parseInt(((line.querySelector(".qty") || {}).textContent || "").replace(/\D/g, ""), 10);
+      var id = ((line.querySelector(".card-id") || {}).textContent || "").trim();
+      var name = ((line.querySelector(".card-title") || {}).textContent || "").trim();
+      if (!qty || !id) return null;
+      return {qty: qty, id: id, name: name};
+    }).filter(Boolean);
+  }
+
+  function copyButtonText(btn, text, emptyPrompt) {
+    if (!text) {
+      if (emptyPrompt) window.prompt(emptyPrompt, "");
+      return;
+    }
+    var done = function () {
+      var prev = btn.textContent;
+      btn.textContent = "Copied";
+      setTimeout(function () { btn.textContent = prev; }, 1400);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(function () {
+        window.prompt("Copy", text);
+      });
+    } else {
+      window.prompt("Copy", text);
+    }
+  }
+
+  function bindOnce(selector, handler) {
+    document.querySelectorAll(selector).forEach(function (btn) {
+      if (btn.dataset.bound) return;
+      btn.dataset.bound = "1";
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        handler(btn);
+      });
+    });
+  }
+
+  function initExports() {
+    bindOnce("[data-copy-plain]", function (btn) {
+      var root = btn.closest(".text-deck") || document;
+      var text = lineRows(root).map(function (row) {
+        return row.qty + " " + (row.name || row.id) + " (" + row.id + ")";
+      }).join("\n");
+      copyButtonText(btn, text, "No card list to copy");
+    });
+    bindOnce("[data-copy-builder]", function (btn) {
+      var root = btn.closest(".text-deck") || document;
+      var text = lineRows(root).map(function (row) {
+        return row.qty + " " + row.id;
+      }).join("\n");
+      copyButtonText(btn, text, "No card list to copy");
+    });
+    bindOnce("[data-copy-link]", function (btn) {
+      var canon = document.querySelector('link[rel="canonical"]');
+      var url = (canon && canon.href) || window.location.href.split("#")[0];
+      copyButtonText(btn, url, "");
+    });
+  }
+
+  function initCardPops() {
+    function arm(line) {
+      if (!line) return;
+      var pop = line.querySelector(".card-pop");
+      if (!pop) return;
+      var src = pop.getAttribute("data-src");
+      if (src && pop.getAttribute("src") !== src) pop.setAttribute("src", src);
+    }
+    if (document.documentElement.dataset.popBound) return;
+    document.documentElement.dataset.popBound = "1";
+    document.addEventListener("mouseenter", function (e) {
+      var line = e.target && e.target.closest ? e.target.closest(".text-line") : null;
+      arm(line);
+    }, true);
+    document.addEventListener("focusin", function (e) {
+      var line = e.target && e.target.closest ? e.target.closest(".text-line") : null;
+      arm(line);
+    }, true);
+    document.addEventListener("click", function (e) {
+      var line = e.target && e.target.closest ? e.target.closest(".text-line") : null;
+      arm(line);
+    }, true);
+  }
+
   function initCopy() {
     document.querySelectorAll("[data-copy-sim]").forEach(function (btn) {
       if (btn.dataset.bound) return;
@@ -445,6 +532,8 @@
     prefetchOnHover();
     ensureCopyButtons();
     initCopy();
+    initExports();
+    initCardPops();
     initFilters();
     initSiteSearch();
     initRecentMore();

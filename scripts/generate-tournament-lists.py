@@ -7,6 +7,7 @@ import html
 import importlib.util
 import json
 import re
+import threading
 import time
 import unicodedata
 import urllib.error
@@ -689,13 +690,55 @@ LEADERS = [
 ]
 
 
+_HTTP_CACHE: dict | None = None
+_HTTP_LOCK = threading.Lock()
+_HTTP_DIRTY = False
+HTTP_CACHE_PATH = ROOT / "data" / "limitless-http-cache.json"
+
+
+def load_http_cache() -> dict:
+    global _HTTP_CACHE
+    with _HTTP_LOCK:
+        if _HTTP_CACHE is None:
+            if HTTP_CACHE_PATH.exists():
+                _HTTP_CACHE = json.loads(HTTP_CACHE_PATH.read_text())
+            else:
+                _HTTP_CACHE = {}
+        return _HTTP_CACHE
+
+
+def flush_http_cache() -> None:
+    global _HTTP_DIRTY
+    with _HTTP_LOCK:
+        if not _HTTP_DIRTY or _HTTP_CACHE is None:
+            return
+        HTTP_CACHE_PATH.write_text(json.dumps(_HTTP_CACHE))
+        _HTTP_DIRTY = False
+
+
+def cached_json(url: str):
+    body = load_http_cache().get(url)
+    return body if isinstance(body, (dict, list)) else None
+
+
+def store_cached_json(url: str, body) -> None:
+    global _HTTP_DIRTY
+    with _HTTP_LOCK:
+        load_http_cache()
+        _HTTP_CACHE[url] = body
+        _HTTP_DIRTY = True
+
+
 def http_json(url: str, retries: int = 6):
+    """Fetch Limitless JSON. Successful bodies are cached for the next run."""
     last = None
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=45) as resp:
-                return json.loads(resp.read())
+                body = json.loads(resp.read())
+            store_cached_json(url, body)
+            return body
         except Exception as exc:  # noqa: BLE001
             last = exc
             wait = 0.5 * (attempt + 1)
@@ -870,15 +913,27 @@ def fetch_standings(tournaments: list[dict], target_ids: set[str]) -> dict[str, 
     skip_re = re.compile(r"\b(draft|sealed)\b", re.I)
     eligible = [t for t in tournaments if t.get("id") and not skip_re.search(t.get("name") or "")]
     lock = defaultdict(list)
+    failures: list[tuple[str, str]] = []
+    cached_ids: list[str] = []
+    fail_lock = threading.Lock()
 
     def one(tourney: dict) -> list[tuple[str, dict]]:
         tid = tourney["id"]
         time.sleep(0.03)
+        url = f"https://play.limitlesstcg.com/api/tournaments/{tid}/standings"
         try:
-            standings = http_json(f"https://play.limitlesstcg.com/api/tournaments/{tid}/standings")
+            standings = http_json(url)
         except Exception as exc:  # noqa: BLE001
-            print("standings fail", tid, exc)
-            return []
+            cached = cached_json(url)
+            print("STANDINGS FAIL", tid, tourney.get("name") or "", exc)
+            with fail_lock:
+                if cached is None:
+                    print("STANDINGS NO CACHE", tid, "- build will stop")
+                    failures.append((tid, str(exc)))
+                    return []
+                print("STANDINGS USED CACHE", tid)
+                cached_ids.append(tid)
+            standings = cached
         found = []
         for row in standings:
             dl = row.get("decklist") or {}
@@ -919,6 +974,15 @@ def fetch_standings(tournaments: list[dict], target_ids: set[str]) -> dict[str, 
                 print(f"  processed {done}/{len(eligible)} events")
     for lid, rows in lock.items():
         by_leader[lid].extend(rows)
+    flush_http_cache()
+    if failures or cached_ids:
+        print("LIMITLESS SCRAPE FAILED")
+        print(f"  live failures: {len(failures)}")
+        print(f"  served from cache: {len(cached_ids)}")
+        for tid, exc in failures[:30]:
+            print(f"  no cache {tid}: {exc}")
+        print("Build stopped so a broken Limitless scrape is not published as success.")
+        raise SystemExit(1)
     return by_leader
 
 
@@ -1200,7 +1264,7 @@ def render_card_entry(item: dict, meta: dict) -> str:
     types = meta.get("types") or ""
     text = meta.get("effect") or ""
     return f"""        <article class="card-entry">
-          <img src="{html.escape(img)}" alt="{html.escape(name)} {html.escape(cid)}" loading="lazy" />
+          <img src="{html.escape(img)}" alt="{html.escape(name)} {html.escape(cid)}" width="300" height="419" loading="lazy" decoding="async" />
           <div>
             <div class="id">{qty}{html.escape(cid)} · {html.escape(cat)}</div>
             <h4>{html.escape(name)}</h4>
@@ -1255,7 +1319,7 @@ def page_chrome(
 {canon}  <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro23" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro25" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -1282,8 +1346,8 @@ def page_chrome(
       </div>
     </main>
     <footer>
-      © <span id="year"></span> One Piece Decklists - Built with community in mind.
-      <a href="/tier-list.html">Tier List</a> · <a href="/extra-grand-battle.html">Extra Grand Battle</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/eb05-lists.html">EB05 lists</a> · <a href="/eb05-spoilers.html">EB05</a> · <a href="/op18-spoilers.html">OP18</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
+      © <span id="year"></span> One Piece Decklists - Fan site for the Bandai ONE PIECE CARD GAME (OPTCG). Not affiliated with Bandai or Shueisha.
+      <a href="/tier-list.html">Tier List</a> · <a href="/extra-grand-battle.html">Extra Grand Battle</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/eb05-lists.html">EB05 Lists</a> · <a href="/eb05-spoilers.html">EB05 Spoilers</a> · <a href="/op18-spoilers.html">OP18</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/advertise.html">Advertise</a> · <a href="/privacy.html">Privacy</a>
     </footer>
   </div>
   <script>
@@ -1337,7 +1401,7 @@ def page_chrome(
       }});
     }})();
   </script>
-  <script src="/js/site.js?v=home-cards5"></script>
+  <script src="/js/site.js?v=deck-tools1"></script>
 {tcg_scripts}</body>
 </html>
 """
@@ -1398,6 +1462,11 @@ def site_nav_html(*, current: str | None = None, home: bool = False) -> str:
 
 
 def card_image_url(cid: str) -> str:
+    """Local WebP when we already have the file. Otherwise the public CDN.
+
+    Limitless CDN files are not copied into this repo. Their terms for
+    rehosting card art were not clear, so new art stays hotlinked.
+    """
     set_code = cid.split("-")[0]
     local = ROOT / "img" / "cards" / set_code / f"{cid}.webp"
     if local.exists():
@@ -1485,6 +1554,15 @@ def event_bucket(name: str) -> str:
     return "other"
 
 
+def stats_sentence(curve: dict, counters: dict) -> str:
+    costs = [f"{curve[key]} at {key} DON!!" for key in [str(i) for i in range(1, 10)] + ["10+"] if curve.get(key)]
+    curve_text = ", ".join(costs) if costs else "no cost data"
+    return (
+        f"DON!! curve: {curve_text}. "
+        f"Counters: {counters['2k']}× 2k, {counters['1k']}× 1k, {counters['0']}× no counter."
+    )
+
+
 def counter_value(meta: dict) -> int:
     raw = meta.get("counter")
     if raw is None:
@@ -1543,6 +1621,7 @@ def render_deck_stats(items: list[dict], cache: dict) -> str:
               </div>
             </div>
           </div>
+          <p class="deck-stats-text">{html.escape(stats_sentence(curve, counters))}</p>
         </section>
         <!-- /DECK_STATS -->"""
 
@@ -1564,7 +1643,7 @@ def render_text_deck(grouped: dict, cache: dict, order: list[str], totals: dict)
               <span class="qty">{html.escape(str(item['count']))}x</span>
               <span class="card-title">{html.escape(name)}</span>
               <span class="muted card-id">{html.escape(item['id'])}</span>
-              <img class="card-pop" src="{html.escape(img)}" alt="{html.escape(name)}" />
+              <img class="card-pop" data-src="{html.escape(img)}" width="220" height="308" alt="{html.escape(name)}" />
             </li>"""
             )
         cols.append(
@@ -1579,6 +1658,9 @@ def render_text_deck(grouped: dict, cache: dict, order: list[str], totals: dict)
           <div class="section-title">
             <h3>Text list</h3>
             <button type="button" class="copy-sim" data-copy-sim>Copy to OP TCG SIM</button>
+            <button type="button" class="copy-sim" data-copy-plain>Copy plain text</button>
+            <button type="button" class="copy-sim" data-copy-builder>Copy deck-builder list</button>
+            <button type="button" class="copy-sim" data-copy-link>Copy link</button>
           </div>
           <div class="text-deck-cols">
 {chr(10).join(cols)}
@@ -1650,7 +1732,7 @@ def render_deck_page(leader: dict, entry: dict, cache: dict) -> str:
         "youtube": "List from a YouTube deck profile. English card text from Limitless One Piece.",
         "web": "Community list from a public deck builder. English card text from Limitless One Piece.",
         "x": "List copied from a public X/Twitter post. English card text from Limitless One Piece.",
-    }.get(entry.get("kind"), "List sourced from the One Piece TCG community. Not affiliated with Bandai.")
+    }.get(entry.get("kind"), "List sourced from the One Piece TCG community. Not affiliated with Bandai or Shueisha.")
     body = f"""        <div class="crumb"><a href="/">Home</a> / <a href="{html.escape(crumb_href)}">{html.escape(crumb_label)}</a> / <a href="{html.escape(parent_href)}">{html.escape(leader['name'])}</a> / Decklist</div>
         <h2>{html.escape(title)}</h2>
         <p>{html.escape(subtitle)}</p>
@@ -1658,11 +1740,42 @@ def render_deck_page(leader: dict, entry: dict, cache: dict) -> str:
 {stats}
 {text_list}
 {picture}
-        <p class="muted" style="margin-top:22px">{html.escape(kind_note)} Source: <a href="{html.escape(source)}">{html.escape(source)}</a>. Images hosted by Limitless. Not affiliated with Bandai.</p>"""
-    desc = f"{leader['name']} decklist - {subtitle}"[:160]
+        <p class="muted" style="margin-top:22px">{html.escape(kind_note)} Source: <a href="{html.escape(source)}">{html.escape(source)}</a>. Card text from Limitless. Fan site, not affiliated with Bandai or Shueisha.</p>"""
+    place = ordinal(entry.get("placing")) or ""
+    event_name = entry.get("tournament_name") or ""
+    day = (entry.get("date") or "")[:10]
+    bits = [part for part in (event_name, place) if part]
+    tail = " ".join(bits)
+    if day:
+        tail = f"{tail} ({day})" if tail else f"({day})"
+    seo_title = f"{leader['name']} Decklist - {tail}" if tail else f"{leader['name']} Decklist"
+    desc = f"{leader['name']} OPTCG decklist - {subtitle}. Full card list for the ONE PIECE CARD GAME."[:300]
     slug = entry.get("forced_slug") or entry.get("slug") or ""
     rel = f"{leader['dir']}/{slug}.html" if slug else ""
-    return page_chrome(f"{title}", desc, leader["color"], leader["nav_op17"], body, path=rel)
+    rows = []
+    for item in cards:
+        try:
+            qty = int(item.get("count") or 0)
+        except (TypeError, ValueError):
+            continue
+        cid = (item.get("id") or "").strip()
+        if qty and cid:
+            rows.append((qty, cid, item.get("name") or ""))
+    if rows:
+        import tcgplayer_links
+
+        href = tcgplayer_links.affiliate_url(tcgplayer_links.mass_entry_url(rows))
+        buy = (
+            f'<a class="buy-tcg" href="{html.escape(href, quote=True)}" target="_blank" '
+            'rel="noopener nofollow sponsored">Buy list on TCGplayer</a>\n'
+            '            <p class="affiliate-note">TCGplayer partner link. I earn from qualifying purchases.</p>\n          '
+        )
+        body = body.replace(
+            '<div class="text-deck-cols">',
+            buy + '<div class="text-deck-cols">',
+            1,
+        )
+    return page_chrome(seo_title, desc, leader["color"], leader["nav_op17"], body, path=rel)
 
 
 def render_pool_heading(leader: dict) -> str:
