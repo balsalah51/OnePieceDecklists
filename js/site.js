@@ -268,11 +268,17 @@
     if (isNaN(index)) index = 0;
     var timer = null;
     var faces = [
-      {name:"Nico Robin",href:"/decklists/nico-robin.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-062_EN.webp"},
-      {name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp"},
-      {name:"Sabo",href:"/decklists/sabo.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-004_EN.webp"},
-      {name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP13/OP13-001_EN.webp"},
-      {name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp"}
+      {name:"Nico Robin",href:"/decklists/nico-robin.html",img:"/img/cards/OP09/OP09-062.webp"},
+      {name:"Sabo",href:"/decklists/sabo.html",img:"/img/cards/OP13/OP13-004.webp"},
+      {name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"/img/cards/OP13/OP13-001.webp"},
+      {name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"/img/cards/OP17/OP17-079.webp"},
+      {name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"/img/cards/OP17/OP17-039.webp"},
+      {name:"Edward Newgate",href:"/decklists/op17/edward-newgate.html",img:"/img/cards/OP17/OP17-001.webp"},
+      {name:"Sabo",href:"/decklists/sabo.html",img:"/img/cards/OP13/OP13-004.webp"},
+      {name:"YG Robin",href:"/decklists/eb05-nico-robin.html",img:"/img/cards/EB05/EB05-010.webp"},
+      {name:"Shanks",href:"/decklists/op17/shanks.html",img:"/img/cards/OP17/OP17-020.webp"},
+      {name:"Mihawk",href:"/decklists/mihawk.html",img:"/img/cards/OP14/OP14-020.webp"},
+      {name:"OP05 Enel",href:"/decklists/op05-enel.html",img:"/img/cards/OP05/OP05-098.webp"}
     ];
 
     function setCard(i) {

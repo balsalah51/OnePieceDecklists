@@ -1343,6 +1343,35 @@ def plain_dash(text: str) -> str:
     return (text or "").replace("\u2014", "-").replace("&mdash;", "-")
 
 
+_event_mod = None
+
+# Source labels stored in the player field are not a person's name.
+GENERIC_PLAYERS = frozenset(
+    {
+        "youtube",
+        "onepiecedb",
+        "web",
+        "x",
+        "unknown",
+        "community",
+        "tcg portal",
+        "tcgportal",
+        "optcg.gg",
+        "optcg",
+        "opdeckguide",
+    }
+)
+
+
+def event_mod():
+    global _event_mod
+    if _event_mod is None:
+        spec = importlib.util.spec_from_file_location("eventdisplay", ROOT / "scripts/event_display.py")
+        _event_mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(_event_mod)
+    return _event_mod
+
+
 def list_heading(entry: dict, leader_name: str) -> tuple[str, str]:
     if entry.get("title_override"):
         title = entry["title_override"]
@@ -1358,6 +1387,36 @@ def list_heading(entry: dict, leader_name: str) -> tuple[str, str]:
     sub = event
     if bits:
         sub = f"{event} · {' · '.join(bits)}"
+    return plain_dash(title), plain_dash(sub)
+
+
+def hub_heading(entry: dict, leader_name: str) -> tuple[str, str]:
+    """One row shape for Limitless and community lists: title, event, date on the right."""
+    ev = event_mod()
+    player = display_name(entry.get("player") or "").strip()
+    generic = (not player) or player.lower() in GENERIC_PLAYERS
+    raw_event = entry.get("tournament_name") or entry.get("tournament") or entry.get("subtitle") or ""
+    event = ev.display_event(raw_event)
+    title_text = (entry.get("title_override") or entry.get("title") or "").strip()
+    title_text = ev.SOURCE_PREFIX_RE.sub("", title_text).strip()
+    if not event and title_text:
+        event = ev.display_event(title_text)
+    place = ordinal(entry.get("placing"))
+    rec = record_text(entry.get("record"))
+    bits = [b for b in (place, rec) if b]
+    if generic:
+        title = title_text or leader_name
+    else:
+        title = f"{player} - {leader_name}"
+    if event and event.lower() == plain_dash(title).lower():
+        event = ""
+    if not event and not generic and title_text and title_text.lower() != title.lower():
+        event = title_text
+    elif not event and generic and entry.get("kind") in ("youtube", "web", "x", "reddit"):
+        event = "Community list"
+    sub = event
+    if bits:
+        sub = f"{event} · {' · '.join(bits)}" if event else " · ".join(bits)
     return plain_dash(title), plain_dash(sub)
 
 
@@ -1800,6 +1859,7 @@ def render_hub_page(leader: dict, cache: dict) -> str:
 
 
 def render_index_section(leader: dict, lists: list[dict]) -> str:
+    lists = [entry for entry in lists if not event_mod().is_test_row(entry)]
     if not lists:
         return """        <!-- TOURNAMENT_DECKLISTS -->
         <section class="deck-index" style="margin-top:22px">
@@ -1811,25 +1871,26 @@ def render_index_section(leader: dict, lists: list[dict]) -> str:
         </section>
         <!-- /TOURNAMENT_DECKLISTS -->"""
     sample_only = all(x.get("kind") == "sample" for x in lists)
-    heading = "Sample decklists" if sample_only else "Tournament decklists"
+    heading = "Sample decklists" if sample_only else "Decklists"
     intro = (
         "No Limitless tournament results for this leader yet, so these are sample 50-card lists from the OP17 Red pool. Each row opens a full list."
         if sample_only
-        else "Newest Limitless events first. Each row opens a separate 50-card list."
+        else "Newest lists first. Limitless results and community lists use the same row: a title, the event, and the date on the right."
     )
     rows = []
     for entry in sorted(lists, key=date_sort_key, reverse=True):
         href = entry["href"]
-        title, subtitle = list_heading(entry, leader["name"])
-        right = entry.get("date") or ordinal(entry.get("placing")) or record_text(entry.get("record")) or "View"
+        title, subtitle = hub_heading(entry, leader["name"])
         if entry.get("kind") == "sample":
             right = "Sample"
-        elif entry.get("kind") in ("youtube", "web", "x") and not entry.get("date"):
-            right = "List"
+        else:
+            right = entry.get("date") or "List"
         placing = entry.get("placing")
         placing_s = "" if placing is None else str(placing)
         date_s = entry.get("date") or ""
-        bucket = event_bucket(entry.get("tournament_name") or entry.get("tournament") or "")
+        bucket = event_bucket(
+            entry.get("tournament_name") or entry.get("tournament") or entry.get("title") or ""
+        )
         copy_btn = copy_sim_button(sim_text_for_entry(leader, entry))
         rows.append(
             f"""            <li class="list-row" data-date="{html.escape(date_s)}" data-placing="{html.escape(placing_s)}" data-event="{html.escape(bucket)}">

@@ -11,7 +11,17 @@ TEST_RE = re.compile(
 )
 HREF_RE = re.compile(r"tournoi-test|test-tournament", re.I)
 SOURCE_PREFIX_RE = re.compile(
-    r"^(?:public\s+optcg\.gg\s+list|youtube\s+list|x\s+list|community\s+list)\s*·\s*",
+    r"^(?:public\s+(?:optcg\.gg|onepiecedb|tcg\s*portal)\s+list|"
+    r"youtube\s+(?:list|deck\s+profile)|x\s+list|community\s+list)\s*·\s*",
+    re.I,
+)
+SOURCE_TAIL_RE = re.compile(
+    r"(?:\s*·\s*)?(?:public\s+list(?:\s+from\s+[\w.]+)?|also\s+on\s+x\s+@\S+)\s*$",
+    re.I,
+)
+ISO_DATE_RE = re.compile(r"\b20\d{2}-\d{2}-\d{2}\b")
+SOURCE_PIECE_RE = re.compile(
+    r"^(?:public\s+list(?:\s+from\s+[\w.]+)?|optcg\.gg|onepiecedb|tcg\s*portal|youtube|web)$",
     re.I,
 )
 BRACKET_RE = re.compile(r"^\s*\[([^\]]+)\]\s*")
@@ -79,7 +89,14 @@ def _tidy_piece(text: str) -> str:
 
 def display_event(raw: str) -> str:
     """Turn a source event title into a short label for the homepage."""
-    original = SOURCE_PREFIX_RE.sub("", (raw or "").strip())
+    original = (raw or "").strip()
+    original = SOURCE_PREFIX_RE.sub("", original)
+    original = ISO_DATE_RE.sub("", original)
+    for _ in range(3):
+        cleaned = SOURCE_TAIL_RE.sub("", original).strip(" ·")
+        if cleaned == original:
+            break
+        original = cleaned
     if not original:
         return ""
     text = original
@@ -97,7 +114,7 @@ def display_event(raw: str) -> str:
     for piece in pieces:
         piece = _tidy_piece(piece)
         key = piece.lower()
-        if not piece or key in seen or SET_ONLY_RE.fullmatch(piece):
+        if not piece or key in seen or SET_ONLY_RE.fullmatch(piece) or SOURCE_PIECE_RE.fullmatch(piece):
             continue
         seen.add(key)
         cleaned.append(piece)

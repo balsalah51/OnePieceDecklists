@@ -484,46 +484,26 @@ def main() -> None:
             (out_dir / f"{item['slug']}.html").write_text(page)
             public.append(entry)
         community_index[lid] = [
-            {"slug": e["slug"], "href": e["href"], "title": e["title_override"], "source_url": e["source_url"], "kind": e["kind"]}
+            {
+                "slug": e["slug"],
+                "href": e["href"],
+                "title": e["title_override"],
+                "subtitle": e.get("subtitle") or "",
+                "source_url": e["source_url"],
+                "kind": e["kind"],
+                "player": e.get("player") or "",
+                "date": e.get("date") or "",
+            }
             for e in public
         ]
 
-        page_path = ROOT / leader["page"]
-        page_html = page_path.read_text()
-        if "<!-- COMMUNITY_DECKLISTS -->" in page_html:
-            page_html = re.sub(
-                r"        <!-- COMMUNITY_DECKLISTS -->.*?        <!-- /COMMUNITY_DECKLISTS -->\n?",
-                "",
-                page_html,
-                count=1,
-                flags=re.S,
-            )
-        # Match tournament markers only after community is stripped so indices stay valid.
-        m = re.search(
-            r"        <!-- TOURNAMENT_DECKLISTS -->.*?        <!-- /TOURNAMENT_DECKLISTS -->",
-            page_html,
-            re.S,
-        )
-        tournament_block = m.group(0) if m else ""
-        if lid == "OP17-001":
-            # replace sample-only block with a short note plus community lists
-            tournament_block = """        <!-- TOURNAMENT_DECKLISTS -->
-        <section class="deck-index" style="margin-top:22px">
-          <div class="section-title">
-            <h3>Tournament decklists</h3>
-            <div class="muted">0 lists</div>
-          </div>
-          <p class="muted">No Limitless standings for this leader yet. Community lists are above.</p>
-        </section>
-        <!-- /TOURNAMENT_DECKLISTS -->"""
-        combined = community_section(leader, public, tournament_block)
-        if m:
-            page_html = page_html[: m.start()] + combined + page_html[m.end() :]
-        else:
-            page_html = gen.insert_section(page_html, combined, gen.render_pool_heading(leader))
-        page_path.write_text(page_html)
-
     (ROOT / "data/community-decks.json").write_text(json.dumps(community_index, indent=2, ensure_ascii=False) + "\n")
+    more_spec = importlib.util.spec_from_file_location(
+        "morelists", str(ROOT / "scripts/add-more-tournament-lists.py")
+    )
+    more = importlib.util.module_from_spec(more_spec)
+    more_spec.loader.exec_module(more)
+    more.rebuild_hubs(index, only_ids=set(parsed))
     print("done")
 
 

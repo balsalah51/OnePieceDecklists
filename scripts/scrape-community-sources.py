@@ -454,6 +454,7 @@ def write_lists(found: list[dict]) -> set[str]:
                 "subtitle": item.get("subtitle") or "",
                 "source_url": item["source_url"],
                 "kind": item["kind"],
+                "player": item.get("player") or "",
             }
             if item.get("date"):
                 row["date"] = item["date"]

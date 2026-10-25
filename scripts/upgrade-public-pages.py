@@ -26,8 +26,22 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro25"
-JS_NEW = "/js/site.js?v=nav-groups1"
+CSS_NEW = "/css/site.css?v=home-pro26"
+JS_NEW = "/js/site.js?v=splash11"
+# Banner, card id, leader label, hub. Order is the carousel order.
+SPLASH_SLIDES = [
+    ("/img/home-banner-crew.jpg", "One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo", "Nico Robin", "/decklists/nico-robin.html", "OP09-062"),
+    ("/img/home-banner-crimson.jpg", "One Piece Decklists crimson banner with Sabo and Nico Robin", "Sabo", "/decklists/sabo.html", "OP13-004"),
+    ("/img/home-banner-luffy.jpg", "One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro", "RG Luffy", "/decklists/rg-luffy.html", "OP13-001"),
+    ("/img/home-banner-six.jpg", "One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace", "Black Luffy", "/decklists/op17/monkey-d-luffy.html", "OP17-079"),
+    ("/img/home-banner-rocks.jpg", "One Piece Decklists with Rocks D. Xebec", "Rocks D. Xebec", "/decklists/op17/rocks-d-xebec.html", "OP17-039"),
+    ("/img/home-banner-rocks-crew.jpg", "One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate", "Edward Newgate", "/decklists/op17/edward-newgate.html", "OP17-001"),
+    ("/img/home-banner-sabo.jpg", "Red and black Sabo banner", "Sabo", "/decklists/sabo.html", "OP13-004"),
+    ("/img/home-banner-robin-eb05.jpg", "Green and yellow EB05 Nico Robin banner", "YG Robin", "/decklists/eb05-nico-robin.html", "EB05-010"),
+    ("/img/home-banner-shanks.jpg", "Red and black Shanks banner", "Shanks", "/decklists/op17/shanks.html", "OP17-020"),
+    ("/img/home-banner-mihawk.jpg", "Green and gold Mihawk banner", "Mihawk", "/decklists/mihawk.html", "OP14-020"),
+    ("/img/home-banner-enel.jpg", "Gold and blue Enel banner", "OP05 Enel", "/decklists/op05-enel.html", "OP05-098"),
+]
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -268,11 +282,12 @@ def collect_home_lists() -> list[dict]:
             community_row = {
                     "slug": item.get("slug"),
                     "href": href,
-                    "player": item.get("player") or "Community",
+                    "player": item.get("player") or "",
                     "tournament_name": item.get("subtitle") or item.get("title") or "",
-                    "placing": None,
+                    "placing": item.get("placing"),
                     "date": item.get("date") or "",
                     "kind": item.get("kind") or "web",
+                    "title": item.get("title") or "",
                     "title_override": item.get("title"),
                     "subtitle": item.get("subtitle")
                     or {"youtube": "YouTube list", "x": "X list", "web": "Community list"}.get(
@@ -352,8 +367,8 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
     items = []
     for i, entry in enumerate(rows):
         leader = entry["leader"]
-        title, _subtitle = gen.list_heading(entry, leader["name"])
-        event = entry.get("tournament_name") or entry.get("subtitle") or ""
+        title, _subtitle = gen.hub_heading(entry, leader["name"])
+        event = entry.get("tournament_name") or entry.get("subtitle") or entry.get("title") or ""
         event_label = home_meta.event_display.display_event(event) or event
         event_html = html.escape(event_label)
         badge = home_meta.event_display.event_badge(event)
@@ -467,11 +482,33 @@ def render_home_body(data: dict | None = None) -> str:
     pie_block = home_meta.pie_html(pie)
     featured_block = home_meta.featured_html(data.get("featured") or [])
     notes_block = home_notes_html(data)
-    robin = gen.card_image_url("OP09-062")
-    rocks = gen.card_image_url("OP17-039")
-    sabo = gen.card_image_url("OP13-004")
-    rg = gen.card_image_url("OP13-001")
-    black = gen.card_image_url("OP17-079")
+    splash_imgs = []
+    splash_dots = []
+    splash_faces = []
+    for i, (src, alt, name, href, cid) in enumerate(SPLASH_SLIDES):
+        pri = ' fetchpriority="high"' if i == 0 else ""
+        extra = " home-splash-six" if "home-banner-six" in src else ""
+        extra = " home-splash-rocks" if "rocks" in src else extra
+        splash_imgs.append(
+            f'<img class="home-splash-bg{extra}" src="{src}" alt="{html.escape(alt)}" width="1280" height="720"{pri} decoding="async" />'
+        )
+        current = ' aria-current="true"' if i == 0 else ""
+        splash_dots.append(
+            f'<button type="button" data-splash-dot="{i}" aria-label="Banner {i + 1}"{current}></button>'
+        )
+        splash_faces.append(
+            {"name": name, "href": href, "img": gen.card_image_url(cid)}
+        )
+    splash_n = len(SPLASH_SLIDES)
+    first = splash_faces[0]
+    faces_js = ",".join(
+        "{{name:{name},href:{href},img:{img}}}".format(
+            name=json.dumps(face["name"]),
+            href=json.dumps(face["href"]),
+            img=json.dumps(face["img"]),
+        )
+        for face in splash_faces
+    )
     recent = data["recent_home"]
     visible = home_meta.HOME_RECENT_VISIBLE
     extra_n = max(0, len(recent) - visible)
@@ -486,48 +523,32 @@ def render_home_body(data: dict | None = None) -> str:
             <a class="recent-all-link" href="/recent.html">All recent lists →</a>
           </div>"""
     return f"""        <!-- HOME_BODY -->
-        <section class="home-splash" id="home-splash" aria-label="One Piece Decklists banners" style="--splash-i:0">
+        <section class="home-splash" id="home-splash" aria-label="One Piece Decklists banners" style="--splash-n:{splash_n};--splash-i:0">
           <div class="home-splash-viewport">
             <div class="home-splash-track">
-              <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo" width="1920" height="960" fetchpriority="high" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-six" src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
+              {chr(10).join("              " + img for img in splash_imgs)}
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
-          <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
-            <img src="{robin}" alt="Nico Robin leader card" width="300" height="419" />
-            <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
+          <a class="home-splash-card" data-splash-card href="{first["href"]}" aria-label="{html.escape(first["name"])} lists">
+            <img src="{html.escape(first["img"])}" alt="{html.escape(first["name"])} leader card" width="300" height="419" />
+            <span class="home-splash-card-label" data-splash-card-label>{html.escape(first["name"])} lists</span>
           </a>
           <div class="home-splash-nav">
             <button type="button" data-splash-prev aria-label="Previous banner">‹</button>
             <button type="button" data-splash-next aria-label="Next banner">›</button>
           </div>
           <div class="home-splash-dots" role="tablist" aria-label="Choose banner">
-            <button type="button" data-splash-dot="0" aria-label="Banner 1" aria-current="true"></button>
-            <button type="button" data-splash-dot="1" aria-label="Banner 2"></button>
-            <button type="button" data-splash-dot="2" aria-label="Banner 3"></button>
-            <button type="button" data-splash-dot="3" aria-label="Banner 4"></button>
-            <button type="button" data-splash-dot="4" aria-label="Banner 5"></button>
-            <button type="button" data-splash-dot="5" aria-label="Banner 6"></button>
+            {chr(10).join("            " + dot for dot in splash_dots)}
           </div>
         </section>
         <script>
         (function(){{
           var root=document.getElementById("home-splash");
           if(!root) return;
-          var faces=[
-            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"{robin}"}},
-            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"{rocks}"}},
-            {{name:"Sabo",href:"/decklists/sabo.html",img:"{sabo}"}},
-            {{name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"{rg}"}},
-            {{name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"{black}"}}
-          ];
-          var i=Math.floor(Math.random()*6);
-          var f=faces[i%faces.length];
+          var faces=[{faces_js}];
+          var i=Math.floor(Math.random()*faces.length);
+          var f=faces[i];
           root.style.setProperty("--splash-i", String(i));
           root.setAttribute("data-splash-i", String(i));
           var a=root.querySelector("[data-splash-card]");
