@@ -482,10 +482,10 @@ def render_home_body(data: dict | None = None) -> str:
           if(!root) return;
           var faces=[
             {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"{robin}"}},
-            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"{rocks}"}},
+            {{name:"Rocks D. Xebec",href:"/decklists/rocks-d-xebec.html",img:"{rocks}"}},
             {{name:"Sabo",href:"/decklists/sabo.html",img:"{sabo}"}},
             {{name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"{rg}"}},
-            {{name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"{black}"}}
+            {{name:"Black Luffy",href:"/decklists/monkey-d-luffy.html",img:"{black}"}}
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];

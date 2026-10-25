@@ -46,7 +46,7 @@ LEADERS: list[dict] = [
         "short": "Newgate",
         "color": "color-red",
         "meta": "op17",
-        "page": "/decklists/op17/edward-newgate.html",
+        "page": "/decklists/edward-newgate.html",
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-001_EN.webp",
         "search": ["whitebeard", "newgate", "edwardnewgate"],
         "take": (
@@ -61,7 +61,7 @@ LEADERS: list[dict] = [
         "short": "Shanks",
         "color": "color-green",
         "meta": "op17",
-        "page": "/decklists/op17/shanks.html",
+        "page": "/decklists/shanks.html",
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-020_EN.webp",
         "search": ["shanks", "redhair"],
         "take": (
@@ -76,7 +76,7 @@ LEADERS: list[dict] = [
         "short": "Xebec",
         "color": "color-blue",
         "meta": "op17",
-        "page": "/decklists/op17/rocks-d-xebec.html",
+        "page": "/decklists/rocks-d-xebec.html",
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-039_EN.webp",
         "search": ["xebec", "rocks"],
         "take": (
@@ -91,7 +91,7 @@ LEADERS: list[dict] = [
         "short": "Kaido",
         "color": "color-purple",
         "meta": "op17",
-        "page": "/decklists/op17/kaido.html",
+        "page": "/decklists/kaido.html",
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-058_EN.webp",
         "search": ["kaido"],
         "take": (
@@ -106,7 +106,7 @@ LEADERS: list[dict] = [
         "short": "OP17 Luffy",
         "color": "color-black",
         "meta": "op17",
-        "page": "/decklists/op17/monkey-d-luffy.html",
+        "page": "/decklists/monkey-d-luffy.html",
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-079_EN.webp",
         "search": ["luffy", "strawhat", "elbaph"],
         "take": (
@@ -121,7 +121,7 @@ LEADERS: list[dict] = [
         "short": "Linlin",
         "color": "color-yellow",
         "meta": "op17",
-        "page": "/decklists/op17/charlotte-linlin.html",
+        "page": "/decklists/charlotte-linlin.html",
         "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-099_EN.webp",
         "search": ["linlin", "bigmom", "big-mom"],
         "take": (

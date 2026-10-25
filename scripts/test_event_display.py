@@ -15,7 +15,7 @@ class EventDisplayTests(unittest.TestCase):
                 {
                     "player": "Player01",
                     "tournament_name": "Tournoi Test #0",
-                    "href": "/decklists/op17/rocks-d-xebec/3rd-player01-tournoi-test-0.html",
+                    "href": "/decklists/rocks-d-xebec/3rd-player01-tournoi-test-0.html",
                 }
             )
         )
@@ -33,7 +33,7 @@ class EventDisplayTests(unittest.TestCase):
                 {
                     "player": "Player02",
                     "tournament_name": "1st Test Tournament",
-                    "href": "/decklists/op17/kaido/3rd-player02-1st-test-tournament.html",
+                    "href": "/decklists/kaido/3rd-player02-1st-test-tournament.html",
                 }
             )
         )

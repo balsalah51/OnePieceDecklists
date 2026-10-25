@@ -25,12 +25,12 @@ def _primary_nav(current: str) -> str:
     return mod.primary_nav_html(current=current)
 
 LEADERS = [
-    ("Edward Newgate", "/decklists/op17/edward-newgate.html", "OP17 Red Whitebeard"),
-    ("Shanks", "/decklists/op17/shanks.html", "OP17 Green Red-Haired"),
-    ("Rocks D. Xebec", "/decklists/op17/rocks-d-xebec.html", "OP17 Blue Rocks Pirates"),
-    ("Kaido", "/decklists/op17/kaido.html", "OP17 Purple Animal Kingdom"),
-    ("Monkey D. Luffy", "/decklists/op17/monkey-d-luffy.html", "OP17 Black Straw Hat / Elbaph"),
-    ("Charlotte Linlin", "/decklists/op17/charlotte-linlin.html", "OP17 Yellow Big Mom"),
+    ("Edward Newgate", "/decklists/edward-newgate.html", "OP17 Red Whitebeard"),
+    ("Shanks", "/decklists/shanks.html", "OP17 Green Red-Haired"),
+    ("Rocks D. Xebec", "/decklists/rocks-d-xebec.html", "OP17 Blue Rocks Pirates"),
+    ("Kaido", "/decklists/kaido.html", "OP17 Purple Animal Kingdom"),
+    ("Monkey D. Luffy", "/decklists/monkey-d-luffy.html", "OP17 Black Straw Hat / Elbaph"),
+    ("Charlotte Linlin", "/decklists/charlotte-linlin.html", "OP17 Yellow Big Mom"),
     ("RG Luffy", "/decklists/rg-luffy.html", "Red/Green Monkey D. Luffy"),
     ("Nami", "/decklists/nami.html", "Blue/Yellow Nami"),
     ("Mihawk", "/decklists/mihawk.html", "Green Dracule Mihawk"),

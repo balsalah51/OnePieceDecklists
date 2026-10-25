@@ -8,6 +8,7 @@ import importlib.util
 import json
 import re
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 from collections import defaultdict
@@ -28,8 +29,8 @@ LEADERS = [
     {
         "id": "OP17-001",
         "key": "edward-newgate",
-        "page": "decklists/op17/edward-newgate.html",
-        "dir": "decklists/op17/edward-newgate",
+        "page": "decklists/edward-newgate.html",
+        "dir": "decklists/edward-newgate",
         "name": "Edward Newgate",
         "color": "color-red",
         "crumb": ("/decklists/op17.html", "OP17 decklists"),
@@ -40,8 +41,8 @@ LEADERS = [
     {
         "id": "OP17-020",
         "key": "shanks",
-        "page": "decklists/op17/shanks.html",
-        "dir": "decklists/op17/shanks",
+        "page": "decklists/shanks.html",
+        "dir": "decklists/shanks",
         "name": "Shanks",
         "color": "color-green",
         "crumb": ("/decklists/op17.html", "OP17 decklists"),
@@ -52,8 +53,8 @@ LEADERS = [
     {
         "id": "OP17-039",
         "key": "rocks-d-xebec",
-        "page": "decklists/op17/rocks-d-xebec.html",
-        "dir": "decklists/op17/rocks-d-xebec",
+        "page": "decklists/rocks-d-xebec.html",
+        "dir": "decklists/rocks-d-xebec",
         "name": "Rocks D. Xebec",
         "color": "color-blue",
         "crumb": ("/decklists/op17.html", "OP17 decklists"),
@@ -64,8 +65,8 @@ LEADERS = [
     {
         "id": "OP17-058",
         "key": "kaido",
-        "page": "decklists/op17/kaido.html",
-        "dir": "decklists/op17/kaido",
+        "page": "decklists/kaido.html",
+        "dir": "decklists/kaido",
         "name": "Kaido",
         "color": "color-purple",
         "crumb": ("/decklists/op17.html", "OP17 decklists"),
@@ -76,8 +77,8 @@ LEADERS = [
     {
         "id": "OP17-079",
         "key": "monkey-d-luffy",
-        "page": "decklists/op17/monkey-d-luffy.html",
-        "dir": "decklists/op17/monkey-d-luffy",
+        "page": "decklists/monkey-d-luffy.html",
+        "dir": "decklists/monkey-d-luffy",
         "name": "Monkey D. Luffy",
         "color": "color-black",
         "crumb": ("/decklists/op17.html", "OP17 decklists"),
@@ -88,8 +89,8 @@ LEADERS = [
     {
         "id": "OP17-099",
         "key": "charlotte-linlin",
-        "page": "decklists/op17/charlotte-linlin.html",
-        "dir": "decklists/op17/charlotte-linlin",
+        "page": "decklists/charlotte-linlin.html",
+        "dir": "decklists/charlotte-linlin",
         "name": "Charlotte Linlin",
         "color": "color-yellow",
         "crumb": ("/decklists/op17.html", "OP17 decklists"),
@@ -734,7 +735,10 @@ def ordinal(n) -> str | None:
 
 
 def slugify(text: str) -> str:
-    s = display_name(text).lower()
+    """ASCII slug. Accents transliterate (José -> jose), they are not dropped."""
+    s = unicodedata.normalize("NFKD", display_name(text))
+    s = "".join(ch for ch in s if not unicodedata.combining(ch))
+    s = s.lower()
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s[:70] or "list"
 

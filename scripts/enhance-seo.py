@@ -348,7 +348,7 @@ STRATEGY_RELATED = {
         ("/guides/portgas-d-ace-strategy.html", "Portgas D. Ace strategy", "Rush that races a slow Saul"),
     ],
     "rocks-d-xebec-strategy": [
-        ("/decklists/op17/rocks-d-xebec.html", "Rocks D. Xebec decklists", "Every hosted 50-card Rocks list"),
+        ("/decklists/rocks-d-xebec.html", "Rocks D. Xebec decklists", "Every hosted 50-card Rocks list"),
         ("/guides/op17-mihawk-matchups.html", "Which decks beat OP17 Mihawk", "Rocks is 33.6% in 149 games"),
         ("/guides/sabo-strategy.html", "Sabo strategy", "The other Tier 1 midrange"),
         ("/guides/portgas-d-ace-strategy.html", "Portgas D. Ace strategy", "Rush Newgate"),
