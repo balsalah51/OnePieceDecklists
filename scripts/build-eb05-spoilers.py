@@ -22,42 +22,100 @@ REPRINT_IMG = "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{s
 
 # Returning Leaders keep their original numbers. Pictures are the original
 # prints; Bandai has not posted the EB-05 illustrations to this CDN yet.
+REPRINT_NOTE = (
+    "EB-05 reprint with new art. Effect text is the original card. "
+    "The EB-05 illustration is not on the public card CDN yet, so this picture is the original print."
+)
 RETURNING_LEADERS = [
     {
         "id": "OP11-022",
         "name": "Shirahoshi",
         "colors": ["Green", "Yellow"],
-        "detail": "Green/Yellow · 4 life · reprint with new EB-05 art",
+        "kind": "leader",
+        "rarity": "Leader",
+        "life": "5",
+        "power": "5000",
+        "attribute": "Wisdom",
+        "types": ["Merfolk", "Fish-Man Island"],
+        "effect": "This Leader cannot attack. [Activate: Main] [Once Per Turn] You may rest 1 of your DON!! cards and turn 1 card from the top of your Life cards face-up: Play up to 1 {Neptunian} type Character card or [Megalo] with a cost equal to or less than the number of DON!! cards on your field from your hand.",
+        "reprint": True,
+        "detail": "Green/Yellow · 5 life · reprint with new EB-05 art",
+        "note": REPRINT_NOTE,
     },
     {
         "id": "OP11-041",
         "name": "Nami",
         "colors": ["Blue", "Yellow"],
-        "detail": "Blue/Yellow · reprint with new EB-05 art",
+        "kind": "leader",
+        "rarity": "Leader",
+        "life": "4",
+        "power": "5000",
+        "attribute": "Special",
+        "types": ["Straw Hat Crew"],
+        "effect": "[Your Turn] [Once Per Turn] This effect can be activated when a card is removed from your or your opponent's Life cards. If you have 7 or less cards in your hand, draw 1 card. [DON!! x1] [On Your Opponent's Attack] [Once Per Turn] You may trash 1 card from your hand: This Leader gains +2000 power during this turn.",
+        "reprint": True,
+        "detail": "Blue/Yellow · 4 life · reprint with new EB-05 art",
+        "note": REPRINT_NOTE,
     },
     {
         "id": "OP13-100",
         "name": "Jewelry Bonney",
         "colors": ["Yellow"],
-        "detail": "Yellow · reprint with new EB-05 art",
+        "kind": "leader",
+        "rarity": "Leader",
+        "life": "5",
+        "power": "5000",
+        "attribute": "Special",
+        "types": ["Egghead", "Bonney Pirates"],
+        "effect": "[Your Turn] [Once Per Turn] This effect can be activated when you play a Character with a [Trigger]. Give up to 2 rested DON!! cards to 1 of your Leader or Character cards.",
+        "reprint": True,
+        "detail": "Yellow · 5 life · reprint with new EB-05 art",
+        "note": REPRINT_NOTE,
     },
     {
         "id": "OP14-041",
         "name": "Boa Hancock",
         "colors": ["Blue", "Yellow"],
-        "detail": "Blue/Yellow · reprint with new EB-05 art",
+        "kind": "leader",
+        "rarity": "Leader",
+        "life": "4",
+        "power": "5000",
+        "attribute": "Special",
+        "types": ["The Seven Warlords of the Sea", "Kuja Pirates"],
+        "effect": "[Opponent's Turn] When you play a Character, draw 1 card. [DON!! x1] [Once Per Turn] When one of your {Amazon Lily} or {Kuja Pirates} type Characters with 5000 base power or more is K.O.'d, add up to 1 card from the top of your opponent's Life cards to the owner's hand.",
+        "reprint": True,
+        "detail": "Blue/Yellow · 4 life · reprint with new EB-05 art",
+        "note": REPRINT_NOTE,
     },
     {
         "id": "OP15-039",
         "name": "Rebecca",
         "colors": ["Blue"],
-        "detail": "Blue · reprint with new EB-05 art",
+        "kind": "leader",
+        "rarity": "Leader",
+        "life": "5",
+        "power": "5000",
+        "attribute": "Wisdom",
+        "types": ["Dressrosa"],
+        "effect": "This Leader cannot attack. [Activate: Main] You may rest this Leader and return 1 of your {Dressrosa} type Characters to the owner's hand: Play up to 1 {Dressrosa} type Character card with a cost of 3 from your hand.",
+        "reprint": True,
+        "detail": "Blue · 5 life · reprint with new EB-05 art",
+        "note": REPRINT_NOTE,
     },
     {
         "id": "EB03-001",
         "name": "Nefeltari Vivi",
         "colors": ["Red", "Blue"],
-        "detail": "Red/Blue · reprint with new EB-05 art",
+        "kind": "leader",
+        "rarity": "Leader",
+        "life": "4",
+        "power": "5000",
+        "attribute": "Slash",
+        "types": ["Alabasta"],
+        "effect": "[Once Per Turn] If your Character with a base cost of 4 or more would be K.O.'d, you may trash 1 card from your hand instead. [Activate: Main] You may rest this Leader: Give up to 1 of your opponent's Characters −2000 power during this turn. Then, up to 1 of your Characters without a [When Attacking] effect gains [Rush] during this turn.",
+        "reprint": True,
+        "detail": "Red/Blue · 4 life · reprint with new EB-05 art",
+        "note": REPRINT_NOTE,
     },
 ]
 
@@ -71,6 +129,66 @@ SP_CARDS = [
     {"id": "OP17-081", "name": "Gerd", "detail": "Reprint · Rare · magazine-cover SP"},
     {"id": "OP17-109", "name": "Charlotte Pudding", "detail": "Reprint · Rare · magazine-cover SP"},
 ]
+SP_PRINTS = {
+    "OP01-016": {
+        "name": "Nami",
+        "colors": ["Red"],
+        "kind": "character",
+        "cost": "1",
+        "power": "2000",
+        "counter": "+1000",
+        "attribute": "Special",
+        "types": ["Straw Hat Crew"],
+        "effect": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Straw Hat Crew} type card other than [Nami] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    },
+    "OP14-033": {
+        "name": "Perona",
+        "colors": ["Green"],
+        "kind": "character",
+        "cost": "5",
+        "power": "6000",
+        "counter": "+1000",
+        "attribute": "Special",
+        "types": ["Muggy Kingdom", "Thriller Bark Pirates"],
+        "effect": "[On Play] Up to 2 of your opponent's Characters with a cost of 5 or less cannot be rested until the end of your opponent's next End Phase. [On K.O.] You may rest 1 of your cards: Play up to 1 green Character card with a cost of 5 or less from your hand.",
+    },
+    "ST17-004": {
+        "name": "Boa Hancock",
+        "colors": ["Blue"],
+        "kind": "character",
+        "cost": "4",
+        "power": "6000",
+        "attribute": "Special",
+        "types": ["The Seven Warlords of the Sea", "Kuja Pirates"],
+        "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] Look at 3 cards from the top of your deck and place them at the top or bottom of your deck in any order. Then, give up to 1 rested DON!! card to 1 of your {The Seven Warlords of the Sea} type Leader or Character cards.",
+    },
+    "OP17-081": {
+        "name": "Gerd",
+        "colors": ["Black"],
+        "kind": "character",
+        "cost": "2",
+        "power": "3000",
+        "counter": "+2000",
+        "attribute": "Slash",
+        "types": ["Giant", "Elbaph", "New Giant Pirates"],
+        "effect": "If your Leader has the {Elbaph} type, this Character gains +12 cost. [On Play] You may trash 1 card from your hand: Add up to 1 Character card with a cost of 8 or less other than [Gerd] from your trash to your hand.",
+    },
+    "OP17-109": {
+        "name": "Charlotte Pudding",
+        "colors": ["Yellow"],
+        "kind": "character",
+        "cost": "3",
+        "power": "4000",
+        "counter": "+1000",
+        "attribute": "Wisdom",
+        "types": ["Big Mom Pirates"],
+        "effect": "[On Play] You may trash 1 card with a [Trigger] from your hand: Draw 3 cards.",
+    },
+}
+SP_NOTE = (
+    "Special card. The effect matches the base printing. "
+    "The magazine-cover or Heroines-frame illustration is not on the public CDN, so this picture is the base card."
+)
 
 
 def img_src(card_id: str, reprint: bool = False) -> str:
@@ -108,6 +226,7 @@ def stats(card: dict) -> str:
 def picture(card: dict, leader: bool = False, reprint: bool = False) -> str:
     cid = card["id"]
     label = f"{card['name']} {cid}"
+    reprint = reprint or bool(card.get("reprint"))
     if not card.get("image", True):
         return f'<div class="spoiler-missing" role="img" aria-label="{e(label)}">{e(cid)}</div>'
     img = (
@@ -133,6 +252,7 @@ def leader_tile(card: dict, href: str | None = None, extra: str = "", reprint: b
 
 
 def card_article(card: dict) -> str:
+    html_id = card.get("html_id") or card["id"]
     colors = " ".join(c.lower() for c in card["colors"])
     query = " ".join(
         [
@@ -150,7 +270,7 @@ def card_article(card: dict) -> str:
     note = ""
     if card.get("note"):
         note = f'<p class="spoiler-note">{e(card["note"])}</p>'
-    return f"""<article class="spoiler-card {color_class(card["colors"])}" id="{e(card["id"])}" data-spoiler-card data-kind="{e(card["kind"])}" data-colors="{e(colors)}" data-q="{e(query)}">
+    return f"""<article class="spoiler-card {color_class(card["colors"])}" id="{e(html_id)}" data-spoiler-card data-kind="{e(card["kind"])}" data-colors="{e(colors)}" data-q="{e(query)}">
             {picture(card)}
             <div class="spoiler-body">
               <div class="spoiler-kicker">
@@ -166,8 +286,31 @@ def card_article(card: dict) -> str:
           </article>"""
 
 
+def special_cards() -> list[dict]:
+    by_id = {c["id"]: c for c in CARDS}
+    out = []
+    for row in SP_CARDS:
+        if row["id"].startswith("EB05-"):
+            base = dict(by_id[row["id"]])
+            base["reprint"] = False
+        else:
+            base = dict(SP_PRINTS[row["id"]])
+            base["reprint"] = True
+        base["id"] = row["id"]
+        base["name"] = row["name"]
+        base["html_id"] = "SP-" + row["id"]
+        base["rarity"] = "SP"
+        base["kind"] = base.get("kind") or "character"
+        base["image"] = True
+        base["note"] = f"{row['detail']}. {SP_NOTE}"
+        out.append(base)
+    return out
+
+
 def render() -> str:
     count = len(CARDS)
+    specials = special_cards()
+    listed = count + len(RETURNING_LEADERS) + len(specials)
     new_leaders = [c for c in CARDS if c["kind"] == "leader"]
     leader_tiles = []
     for card in new_leaders:
@@ -177,34 +320,18 @@ def render() -> str:
         leader_tiles.append(
             leader_tile(
                 row,
-                href="#returning",
+                href=f"#{row['id']}",
                 extra=f"{e(row['name'])}<br>{e(row['id'])} reprint",
                 reprint=True,
             )
         )
     leaders = "\n          ".join(leader_tiles)
     articles = "\n          ".join(card_article(c) for c in CARDS)
-    returning_lis = "\n            ".join(
-        f'<li><span style="font-weight:800">{e(r["name"])}</span>'
-        f'<span class="muted">{e(r["id"])} · {e(r["detail"])}</span></li>'
-        for r in RETURNING_LEADERS
-    )
-    sp_lis = []
-    for row in SP_CARDS:
-        if row["id"].startswith("EB05-"):
-            sp_lis.append(
-                f'<li><a href="#{e(row["id"])}">{e(row["name"])}</a>'
-                f'<span class="muted">{e(row["id"])} · {e(row["detail"])}</span></li>'
-            )
-        else:
-            sp_lis.append(
-                f'<li><span style="font-weight:800">{e(row["name"])}</span>'
-                f'<span class="muted">{e(row["id"])} · {e(row["detail"])}</span></li>'
-            )
-    sp_html = "\n            ".join(sp_lis)
+    returning_html = "\n          ".join(card_article(c) for c in RETURNING_LEADERS)
+    sp_html = "\n          ".join(card_article(c) for c in specials)
     desc = (
         "EB05 spoilers for ONE PIECE CARD GAME Extra Booster Heroines Edition vol.2. "
-        f"{count} revealed cards, including Nico Robin's new Leader and Secret Rare Nami. "
+        f"{listed} cards: the EB05-001 through EB05-061 list, six reprint Leaders, and eight SP cards. "
         "English release 30 October 2026."
     )
     faq_when = (
@@ -223,9 +350,11 @@ def render() -> str:
         "(OP14-041), Rebecca (OP15-039), and Nefeltari Vivi (EB03-001)."
     )
     faq_full = (
-        f"The official numbered list opened on 23 October 2026: {count} cards, EB05-001 through EB05-061. "
-        "This page lists that run. The 75+2 product count also includes the SP cards and two DON!! cards. "
-        "Bandai's English card list is the wording used here. The purple 1-cost Nico Robin is EB05-033."
+        f"The official numbered list is EB05-001 through EB05-061 ({count} cards). "
+        f"This page also lists the six reprint Leaders and eight SP cards, {listed} card types in all. "
+        "Bandai's English list, still current on 25 October 2026, does not publish the two DON!! cards, so their art and text are not shown. "
+        "Numbered-card wording follows that official English list. Reprint and SP effects are the original cards. "
+        "The purple 1-cost Nico Robin is EB05-033."
     )
     return f"""<!doctype html>
 <html lang="en">
@@ -237,7 +366,7 @@ def render() -> str:
   <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=home-pro25" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro26" />
   <link rel="canonical" href="https://onepiecedecklists.com/eb05-spoilers.html" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -286,12 +415,12 @@ def render() -> str:
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / EB05 spoilers</div>
         <h2>EB05 spoilers</h2>
-        <p>EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05] is the second Heroines extra booster. English release is 30 October 2026. Bandai opened the official numbered list on 23 October 2026: these are all {count} cards from EB05-001 through EB05-061. The product is still 75+2 types once the SP cards and two DON!! cards are counted. Wording follows that official English list. <a href="/eb05-lists.html">EB05 lists</a> collects complete public decks that play these cards, including the <a href="/decklists/eb05-nico-robin.html">new green/yellow Nico Robin leader</a>.</p>
+        <p>EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05] is the second Heroines extra booster. English release is 30 October 2026. The numbered list is EB05-001 through EB05-061. This page also shows the six reprint Leaders and all eight SP cards, {listed} card types. The two DON!! cards are still unpublished on Bandai's English list as of 25 October 2026. Numbered wording follows that list. <a href="/eb05-lists.html">EB05 lists</a> collects complete public decks that play these cards, including the <a href="/decklists/eb05-nico-robin.html">new green/yellow Nico Robin leader</a>.</p>
         <div class="spoiler-facts">
           <div><strong>30 Oct 2026</strong><span>English release</span></div>
           <div><strong>$4.99</strong><span>Pack MSRP</span></div>
-          <div><strong>75+2</strong><span>Card types</span></div>
-          <div><strong>{count}</strong><span>Revealed here</span></div>
+          <div><strong>75+2</strong><span>Product count</span></div>
+          <div><strong>{listed}</strong><span>Listed here</span></div>
         </div>
         <p class="muted">Official product page: <a href="https://en.onepiece-cardgame.com/products/eb05.html">ONE PIECE HEROINES EDITION vol.2 [EB-05]</a>. Nico Robin debuts as a Leader. Six earlier heroine Leaders return with new art. Japan is 31 October 2026.</p>
 
@@ -310,10 +439,10 @@ def render() -> str:
             <h3>Returning leaders</h3>
             <div class="muted">Original numbers, new EB-05 illustrations</div>
           </div>
-          <ul class="text-leader-list">
-            {returning_lis}
-          </ul>
-          <p class="muted">The six reprints keep the card numbers already in Standard. The tiles above use the original prints because the EB-05 illustrations are not on the public card CDN yet. Effects are unchanged from those numbers.</p>
+          <p class="muted">The six reprints keep the card numbers already in Standard. Effects below are those original cards. Pictures are the original prints because the EB-05 illustrations are not on the public card CDN yet.</p>
+          <div class="spoiler-grid">
+          {returning_html}
+          </div>
         </section>
 
         <section style="margin-top:22px" id="chase">
@@ -335,16 +464,24 @@ def render() -> str:
             <h3>Special cards</h3>
             <div class="muted">All 8 SP treatments from the reveals</div>
           </div>
-          <ul class="text-leader-list">
-            {sp_html}
-          </ul>
-          <p class="muted">Five of the eight keep older numbers. The three new SPs are treatments of EB05-006, EB05-016, and EB05-031, already in the revealed list.</p>
+          <p class="muted">Five of the eight keep older numbers. The three new SPs are treatments of EB05-006, EB05-016, and EB05-031. Effects match the base cards. Pictures are the base printings.</p>
+          <div class="spoiler-grid">
+          {sp_html}
+          </div>
+        </section>
+
+        <section style="margin-top:22px" id="don">
+          <div class="section-title">
+            <h3>DON!! cards</h3>
+            <div class="muted">2 in the product, not on the English list yet</div>
+          </div>
+          <p class="muted">Bandai's product page counts two DON!! cards in the 75+2 total. The English card list checked on 25 October 2026 still does not publish their illustrations or text, so this page does not invent them.</p>
         </section>
 
         <section style="margin-top:22px" id="cards">
           <div class="section-title">
             <h3>Revealed cards</h3>
-            <div class="muted" id="spoiler-count">{count} cards</div>
+            <div class="muted" id="spoiler-count">{listed} cards</div>
           </div>
           <div class="spoiler-filters">
             <label class="site-search-label" for="spoiler-q">Filter the revealed list</label>
@@ -538,7 +675,7 @@ def render() -> str:
 def main() -> None:
     html = render()
     OUT.write_text(html, encoding="utf-8")
-    print(f"wrote {OUT} ({len(CARDS)} cards, {len(html)} bytes)")
+    print(f"wrote {OUT} ({len(CARDS)} numbered, {len(html)} bytes)")
 
 
 if __name__ == "__main__":

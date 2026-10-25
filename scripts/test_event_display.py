@@ -73,6 +73,26 @@ class EventDisplayTests(unittest.TestCase):
             display_event("Public OPTCG.GG list · Organized Play Events' London Regionals"),
             "Organized Play Events' London Regional",
         )
+        self.assertEqual(
+            display_event("Public TCG PORTAL list · 2026-09-26"),
+            "",
+        )
+        self.assertEqual(
+            display_event("Cardshop · public list from OPDeckGuide"),
+            "Cardshop",
+        )
+        self.assertEqual(
+            display_event("Public OnePieceDB list · 2026-08-28"),
+            "",
+        )
+        self.assertEqual(
+            display_event("YouTube deck profile · also on X @MarinefordTCG"),
+            "",
+        )
+        self.assertEqual(
+            display_event("Public OPTCG.GG list · Flame Flame Fruit Coliseum NA Block D  · 2026-09-20"),
+            "Flame Flame Fruit Coliseum NA Block D",
+        )
 
     def test_ranks_large_events_above_online_cups(self) -> None:
         self.assertGreater(

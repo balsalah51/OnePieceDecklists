@@ -108,8 +108,7 @@ def prune_duplicate_lists(index: dict) -> dict:
 
 
 def community_entries(leader: dict) -> list[dict]:
-    out = []
-    seen = set()
+    by_slug: dict[str, dict] = {}
     static = list(comm.COMMUNITY.get(leader["id"], []))
     extra_path = ROOT / "data/community-decks.json"
     if extra_path.exists():
@@ -118,21 +117,29 @@ def community_entries(leader: dict) -> list[dict]:
     for item in static:
         slug = item.get("slug") or ""
         href = item.get("href") or f"/{leader['dir']}/{slug}.html"
-        if slug in seen:
+        if not slug or not (ROOT / href.lstrip("/")).exists():
             continue
-        if not (ROOT / href.lstrip("/")).exists():
-            continue
-        seen.add(slug)
-        out.append(
-            {
+        row = by_slug.get(slug)
+        if row is None:
+            by_slug[slug] = {
                 "href": href,
                 "title": item.get("title") or slug,
                 "subtitle": item.get("subtitle") or "",
                 "kind": item.get("kind"),
                 "slug": slug,
                 "date": item.get("date") or "",
+                "player": item.get("player") or "",
+                "tournament_name": item.get("subtitle") or item.get("title") or "",
+                "placing": item.get("placing"),
+                "record": item.get("record") or {},
             }
-        )
+            continue
+        for key in ("date", "player", "subtitle", "title", "placing", "kind"):
+            if not row.get(key) and item.get(key):
+                row[key] = item.get(key)
+        if item.get("subtitle") or item.get("title"):
+            row["tournament_name"] = row.get("subtitle") or row.get("title") or ""
+    out = list(by_slug.values())
     out.sort(key=gen.date_sort_key, reverse=True)
     return out
 
@@ -165,15 +172,9 @@ def rebuild_hubs(index: dict, only_ids: set[str] | None = None) -> None:
         page = page_path.read_text()
         comm_lists = community_entries(leader)
         tour_lists = tournament_entries(leader, index.get(lid) or [])
-        tour_lists.sort(key=gen.date_sort_key, reverse=True)
-        if lid == "OP17-001" and not tour_lists:
-            tournament_html = NEWGATE_TOURNAMENT
-        else:
-            tournament_html = gen.render_index_section(leader, tour_lists)
-        if comm_lists:
-            combined = comm.community_section(leader, comm_lists, tournament_html)
-        else:
-            combined = tournament_html
+        merged = comm_lists + tour_lists
+        merged.sort(key=gen.date_sort_key, reverse=True)
+        combined = gen.render_index_section(leader, merged)
         page = re.sub(
             r"        <!-- COMMUNITY_DECKLISTS -->.*?        <!-- /COMMUNITY_DECKLISTS -->\n?",
             "",
@@ -190,6 +191,8 @@ def rebuild_hubs(index: dict, only_ids: set[str] | None = None) -> None:
         print(
             "hub",
             leader["page"],
+            "lists",
+            len(merged),
             "community",
             len(comm_lists),
             "tournament",
