@@ -16,7 +16,7 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "home-pro27"
+CSS_VER = "home-pro28"
 JS_VER = "deck-tools3"
 DISCLAIMER = (
     "Fan site for the Bandai ONE PIECE CARD GAME (OPTCG). "
