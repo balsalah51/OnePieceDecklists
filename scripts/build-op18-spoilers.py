@@ -17,7 +17,7 @@ def _primary_nav(current: str) -> str:
     return mod.primary_nav_html(current=current)
 IMG = "https://cards.oplaytcg.com/OP18/en/{id}.webp"
 
-# Public reveals as of 16 October 2026. English text follows spoiler
+# Public reveals as of 23 October 2026. English text follows spoiler
 # translations. Kokoro and Mr. 9 are translated from the Japanese list.
 CARDS = [
     {
@@ -76,6 +76,37 @@ CARDS = [
         "attribute": "Wisdom",
         "types": ["Alabasta"],
         "effect": "All of your Characters with both the {Animal} and {Alabasta} types gain +1000 power. [Opponent's Turn] This Character gains [Blocker] and +6000 power.",
+        "image": True,
+    },
+    {
+        "id": "OP18-013",
+        "name": "Pell",
+        "aliases": "ペル Alabasta",
+        "kind": "character",
+        "rarity": "Rare",
+        "colors": ["Red"],
+        "cost": "5",
+        "power": "6000",
+        "counter": "+1000",
+        "attribute": "Slash",
+        "types": ["Alabasta"],
+        "effect": "If your Leader has the {Alabasta} type, this Character gains [Rush]. [On Play] You may trash 1 Character card with 5000 power or less from your hand: Draw 2 cards and trash up to 1 of your opponent's Characters with 3000 base power or less.",
+        "image": True,
+    },
+    {
+        "id": "OP18-015",
+        "name": "Matsuge",
+        "aliases": "Eyelashes マツゲ",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Red"],
+        "cost": "1",
+        "power": "0",
+        "counter": "+2000",
+        "attribute": "Strike",
+        "types": ["Animal", "Alabasta"],
+        "effect": "[On Your Opponent's Attack] You may trash this Character: If your Leader has the {Alabasta} type, give up to 1 of your opponent's Leader or Characters −3000 power during this turn.",
+        "note": "The Japanese card name is マツゲ. The public English spoiler also lists this card as Eyelashes.",
         "image": True,
     },
     {
@@ -184,6 +215,21 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-029",
+        "name": "Tony Tony.Chopper",
+        "aliases": "Chopper Water Seven",
+        "kind": "character",
+        "rarity": "Rare",
+        "colors": ["Green"],
+        "cost": "9",
+        "power": "6000",
+        "counter": "+1000",
+        "attribute": "Strike",
+        "types": ["Animal", "Water Seven", "Straw Hat Crew"],
+        "effect": "[Rush] [When Attacking] [Once Per Turn] Give up to 3 rested DON!! cards to your Leader and set this Character as active. Then, this Character will not become active in your next Refresh Phase.",
+        "image": True,
+    },
+    {
         "id": "OP18-031",
         "name": "Nico Robin",
         "aliases": "Robin comic super parallel",
@@ -229,6 +275,21 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-036",
+        "name": "Monkey D. Luffy",
+        "aliases": "Monkey.D.Luffy Water Seven",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Green"],
+        "cost": "2",
+        "power": "0",
+        "counter": "+2000",
+        "attribute": "Strike",
+        "types": ["Water Seven", "Straw Hat Crew"],
+        "effect": "[End of Your Turn] You may trash this Character: Draw 1 card and set your Leader as active.",
+        "image": True,
+    },
+    {
         "id": "OP18-041",
         "name": "Ms. All Sunday",
         "aliases": "Ms. All Sunday Nico Robin Baroque Works",
@@ -269,6 +330,21 @@ CARDS = [
         "attribute": "Special / Wisdom",
         "types": ["The Seven Warlords of the Sea", "Baroque Works"],
         "effect": '[On Play] Draw 2 cards and give up to 2 rested DON!! cards to your Leader and all of your Characters. [On Your Opponent\'s Attack] You may trash 1 card from your hand: Your Leader with a type including "Baroque Works" becomes 7000 base power during this turn.',
+        "image": True,
+    },
+    {
+        "id": "OP18-047",
+        "name": "Mr. 1",
+        "aliases": "Daz Bonez Daz.Bonez Mr.1",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Blue"],
+        "cost": "2",
+        "power": "3000",
+        "counter": "+2000",
+        "attribute": "Slash",
+        "types": ["Cross Guild", "Former Baroque Works"],
+        "effect": '[On Play] Your Leader with the {Cross Guild} type or a type including "Baroque Works" gains [Unblockable] during this turn. (This card cannot be blocked.)',
         "image": True,
     },
     {
@@ -422,6 +498,18 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-075",
+        "name": "Thousand Sunny",
+        "aliases": "サウザンドサニー号 stage",
+        "kind": "stage",
+        "rarity": "Rare",
+        "colors": ["Purple"],
+        "cost": "5",
+        "types": ["Straw Hat Crew"],
+        "effect": "[On Play] Draw 1 card, then add up to 1 DON!! card as rested from your DON!! deck. [Activate: Main] DON!! −2, you may rest this Stage: Set up to 1 of your {Straw Hat Crew} type Characters with 7000 power or less as active.",
+        "image": True,
+    },
+    {
         "id": "OP18-076",
         "name": "Shark Submerge 3",
         "aliases": "Shark Submerge III stage",
@@ -431,6 +519,18 @@ CARDS = [
         "cost": "5",
         "types": ["Straw Hat Crew"],
         "effect": "[On Play] Draw 1 card, then add up to 1 DON!! card as rested from your DON!! deck. [On Your Opponent's Attack] You may rest this Stage: Your Leader with 5000 power or less and up to 2 of your Characters gain +1000 power during this turn.",
+        "image": True,
+    },
+    {
+        "id": "OP18-077",
+        "name": "White Hobby Horse",
+        "aliases": "Shiromokuba シロモクバ1号 stage",
+        "kind": "stage",
+        "rarity": "Uncommon",
+        "colors": ["Purple"],
+        "cost": "5",
+        "types": ["Straw Hat Crew"],
+        "effect": "[On Play] Draw 1 card, then add up to 1 DON!! card as rested from your DON!! deck. [Activate: Main] You may rest this Stage: Up to 1 of your {Straw Hat Crew} type Characters gains [Rush: Character] during this turn.",
         "image": True,
     },
     {
@@ -535,6 +635,21 @@ CARDS = [
         "image": True,
     },
     {
+        "id": "OP18-092",
+        "name": "Roronoa Zoro",
+        "aliases": "Zoro Elbaph",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Black"],
+        "cost": "2",
+        "power": "2000",
+        "counter": "+1000",
+        "attribute": "Slash",
+        "types": ["Elbaph", "Straw Hat Crew"],
+        "effect": "If there is a Character with a cost of 12 or more, this Character gains +3000 power. If you have 10 or more cards in your trash, this Character gains [Rush].",
+        "image": True,
+    },
+    {
         "id": "OP18-093",
         "name": "MMA",
         "aliases": "Elbaph",
@@ -591,6 +706,21 @@ CARDS = [
         "attribute": "Slash",
         "types": ["Vice Admiral", "Navy"],
         "effect": "[Double Attack] (This card deals 2 damage.)",
+        "image": True,
+    },
+    {
+        "id": "OP18-108",
+        "name": "Funkfreed",
+        "aliases": "Funkfreed CP9",
+        "kind": "character",
+        "rarity": "Uncommon",
+        "colors": ["Yellow"],
+        "cost": "1",
+        "power": "0",
+        "counter": "+1000",
+        "attribute": "Slash",
+        "types": ["CP9"],
+        "effect": '[On Play] You may trash 1 card with a type including "CP" from your hand: Draw 2 cards. [Activate: Main] You may rest this Character: Up to 1 of your [Spandam] gains +1000 power during this turn.',
         "image": True,
     },
     {
@@ -757,7 +887,7 @@ def render() -> str:
   <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=op18-spoilers1" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro25" />
   <link rel="canonical" href="https://onepiecedecklists.com/op18-spoilers.html" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -784,7 +914,7 @@ def render() -> str:
   <meta name="twitter:image" content="https://onepiecedecklists.com/img/opdl-hero.jpg" />
   <meta name="twitter:image:alt" content="OP18 spoilers | The Dominance of God" />
   <script type="application/ld+json">{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://onepiecedecklists.com/"}},{{"@type":"ListItem","position":2,"name":"OP18 spoilers","item":"https://onepiecedecklists.com/op18-spoilers.html"}}]}}</script>
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{"@type":"Question","name":"When does OP18 release?","acceptedAnswer":{{"@type":"Answer","text":"English OP-18 The Dominance of God releases 20 November 2026 at $4.99 a pack. Japan is later in November 2026. Cards become tournament legal 7 days after the release date in your region, and from the pre-release date at your store."}}}},{{"@type":"Question","name":"What is in OP18?","acceptedAnswer":{{"@type":"Answer","text":"OP-18 is BOOSTER PACK -THE DOMINANCE OF GOD-. Bandai lists 127 card types plus 1. The themes are Water Seven and the Holy Knights. Saint Gunko and Saint Shamrock debut, and Franky gets his first Leader card."}}}},{{"@type":"Question","name":"Which OP18 leaders are revealed?","acceptedAnswer":{{"@type":"Answer","text":"Six leaders are revealed: Karoo (OP18-001, red/blue), Franky (OP18-021, green/purple), Monkey D. Luffy (OP18-022, green), Ms. All Sunday (OP18-041, blue), Saint Gunko (OP18-060, purple/black), and Spandam (OP18-079, black/yellow)."}}}},{{"@type":"Question","name":"Is the full OP18 card list out?","acceptedAnswer":{{"@type":"Answer","text":"No. This page lists the cards revealed by 16 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list."}}}}]}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{"@type":"Question","name":"When does OP18 release?","acceptedAnswer":{{"@type":"Answer","text":"English OP-18 The Dominance of God releases 20 November 2026 at $4.99 a pack. Japan is later in November 2026. Cards become tournament legal 7 days after the release date in your region, and from the pre-release date at your store."}}}},{{"@type":"Question","name":"What is in OP18?","acceptedAnswer":{{"@type":"Answer","text":"OP-18 is BOOSTER PACK -THE DOMINANCE OF GOD-. Bandai lists 127 card types plus 1. The themes are Water Seven and the Holy Knights. Saint Gunko and Saint Shamrock debut, and Franky gets his first Leader card."}}}},{{"@type":"Question","name":"Which OP18 leaders are revealed?","acceptedAnswer":{{"@type":"Answer","text":"Six leaders are revealed: Karoo (OP18-001, red/blue), Franky (OP18-021, green/purple), Monkey D. Luffy (OP18-022, green), Ms. All Sunday (OP18-041, blue), Saint Gunko (OP18-060, purple/black), and Spandam (OP18-079, black/yellow)."}}}},{{"@type":"Question","name":"Is the full OP18 card list out?","acceptedAnswer":{{"@type":"Answer","text":"No. This page lists the cards revealed by 23 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list."}}}}]}}</script>
 </head>
 <body>
   <div class="wrap wrap-spoilers">
@@ -806,7 +936,7 @@ def render() -> str:
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / OP18 spoilers</div>
         <h2>OP18 spoilers</h2>
-        <p>BOOSTER PACK -THE DOMINANCE OF GOD- [OP-18] is the Water Seven and Holy Knights set. English release is 20 November 2026. These are the cards revealed by 16 October 2026, not the full 127+1 list. Wording follows the sample prints and can still change. Pictures are sample previews.</p>
+        <p>BOOSTER PACK -THE DOMINANCE OF GOD- [OP-18] is the Water Seven and Holy Knights set. English release is 20 November 2026. These are the cards revealed by 23 October 2026, not the full 127+1 list. Wording follows the sample prints and can still change. Pictures are sample previews.</p>
         <div class="spoiler-facts">
           <div><strong>20 Nov 2026</strong><span>English release</span></div>
           <div><strong>$4.99</strong><span>Pack MSRP</span></div>
@@ -888,7 +1018,7 @@ def render() -> str:
           </details>
           <details>
             <summary>Is the full OP18 card list out?</summary>
-            <p>No. This page lists the cards revealed by 16 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list.</p>
+            <p>No. This page lists the cards revealed by 23 October 2026. The full 127+1 list is not public yet, and English wording can still change before Bandai posts the official card list.</p>
           </details>
         </section>
 

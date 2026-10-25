@@ -223,9 +223,9 @@ def render() -> str:
         "(OP14-041), Rebecca (OP15-039), and Nefeltari Vivi (EB03-001)."
     )
     faq_full = (
-        f"No. This page lists the {count} EB05-numbered cards revealed by 16 October 2026. "
-        "Unrevealed numbers are omitted. English wording can still change before Bandai posts "
-        "the official card list. The purple 1-cost Nico Robin is EB05-033."
+        f"The official numbered list opened on 23 October 2026: {count} cards, EB05-001 through EB05-061. "
+        "This page lists that run. The 75+2 product count also includes the SP cards and two DON!! cards. "
+        "Bandai's English card list is the wording used here. The purple 1-cost Nico Robin is EB05-033."
     )
     return f"""<!doctype html>
 <html lang="en">
@@ -237,7 +237,7 @@ def render() -> str:
   <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=eb05-spoilers1" />
+  <link rel="stylesheet" href="/css/site.css?v=home-pro25" />
   <link rel="canonical" href="https://onepiecedecklists.com/eb05-spoilers.html" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -286,7 +286,7 @@ def render() -> str:
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / EB05 spoilers</div>
         <h2>EB05 spoilers</h2>
-        <p>EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05] is the second Heroines extra booster. English release is 30 October 2026. These are the {count} EB05-numbered cards revealed by 16 October 2026, not the full 75+2 list. Unrevealed numbers are left off. Wording follows the sample prints and can still change. Pictures are sample previews. <a href="/eb05-lists.html">EB05 lists</a> collects complete public decks that play these cards, including the <a href="/decklists/eb05-nico-robin.html">new green/yellow Nico Robin leader</a>.</p>
+        <p>EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05] is the second Heroines extra booster. English release is 30 October 2026. Bandai opened the official numbered list on 23 October 2026: these are all {count} cards from EB05-001 through EB05-061. The product is still 75+2 types once the SP cards and two DON!! cards are counted. Wording follows that official English list. <a href="/eb05-lists.html">EB05 lists</a> collects complete public decks that play these cards, including the <a href="/decklists/eb05-nico-robin.html">new green/yellow Nico Robin leader</a>.</p>
         <div class="spoiler-facts">
           <div><strong>30 Oct 2026</strong><span>English release</span></div>
           <div><strong>$4.99</strong><span>Pack MSRP</span></div>
