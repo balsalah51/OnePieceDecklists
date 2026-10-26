@@ -15,6 +15,8 @@ import time
 import urllib.request
 from pathlib import Path
 
+import source_meta
+
 ROOT = Path("/workspace")
 UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list scrape)"
 SITE = "https://onepiecedb.io"
@@ -138,7 +140,7 @@ def collect_lists(gen, commsrc) -> list[dict]:
         try:
             item = parse_page(url, hosted, gen, commsrc)
         except Exception as exc:  # noqa: BLE001
-            print("fail", url, exc, flush=True)
+            source_meta.note_failure("onepiecedb.io", exc, url)
             time.sleep(0.12)
             continue
         time.sleep(0.12)

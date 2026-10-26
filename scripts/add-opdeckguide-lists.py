@@ -16,6 +16,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+import source_meta
+
 ROOT = Path("/workspace")
 HUB = "https://opdeckguide.com/tournaments-decklists/"
 UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list scrape)"
@@ -83,7 +85,7 @@ def collect_paths() -> list[str]:
         try:
             body = fetch(page)
         except Exception as exc:  # noqa: BLE001
-            print("hub fail", page, exc, flush=True)
+            source_meta.note_failure("opdeckguide.com", exc, page)
             continue
         for href in HREF_RE.findall(body):
             tail = href.rstrip("/")

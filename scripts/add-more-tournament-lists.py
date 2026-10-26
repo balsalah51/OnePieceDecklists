@@ -10,6 +10,7 @@ import json
 import re
 from pathlib import Path
 
+import source_meta
 import importlib.util
 
 spec = importlib.util.spec_from_file_location("genlists", "/workspace/scripts/generate-tournament-lists.py")
@@ -122,6 +123,8 @@ def community_entries(leader: dict) -> list[dict]:
             continue
         if not (ROOT / href.lstrip("/")).exists():
             continue
+        if item.get("duplicate_of"):
+            continue
         seen.add(slug)
         out.append(
             {
@@ -131,6 +134,12 @@ def community_entries(leader: dict) -> list[dict]:
                 "kind": item.get("kind"),
                 "slug": slug,
                 "date": item.get("date") or "",
+                "player": item.get("player") or "",
+                "source_url": item.get("source_url") or "",
+                "source": item.get("source") or "",
+                "region": item.get("region") or "",
+                "format_era": item.get("format_era") or "",
+                "sources": item.get("sources") or [],
             }
         )
     out.sort(key=gen.date_sort_key, reverse=True)
@@ -146,6 +155,8 @@ def tournament_entries(leader: dict, items: list[dict]) -> list[dict]:
         slug = item.get("slug") or ""
         path = ROOT / leader["dir"] / f"{slug}.html"
         if not path.exists():
+            continue
+        if item.get("duplicate_of"):
             continue
         entry = dict(item)
         entry["tournament_name"] = entry.get("tournament_name") or entry.get("tournament") or "Limitless event"
@@ -198,7 +209,7 @@ def rebuild_hubs(index: dict, only_ids: set[str] | None = None) -> None:
 
 
 def index_row(entry: dict) -> dict:
-    return {
+    row = {
         "slug": entry["slug"],
         "href": entry["href"],
         "player": entry.get("player"),
@@ -209,6 +220,7 @@ def index_row(entry: dict) -> dict:
         "source_url": entry.get("source_url"),
         "format": entry.get("format") or "",
     }
+    return source_meta.apply_tags(row)
 
 
 def fetch_tournament_pages(pages: int = PAGES, per_page: int = PER_PAGE) -> list:

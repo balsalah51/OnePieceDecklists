@@ -16,6 +16,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import source_meta
+
 spec = importlib.util.spec_from_file_location("genlists", "/workspace/scripts/generate-tournament-lists.py")
 gen = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gen)
@@ -454,9 +456,12 @@ def write_lists(found: list[dict]) -> set[str]:
                 "subtitle": item.get("subtitle") or "",
                 "source_url": item["source_url"],
                 "kind": item["kind"],
+                "player": item.get("player") or "",
+                "event": item.get("title") or "",
             }
             if item.get("date"):
                 row["date"] = item["date"]
+            source_meta.apply_tags(row)
             rows.append(row)
         if src and source_host(src) in UNIQUE_PAGE_HOSTS:
             unique_urls.add(src)

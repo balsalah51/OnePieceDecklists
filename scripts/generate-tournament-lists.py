@@ -16,6 +16,8 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+import source_meta
+
 ROOT = Path("/workspace")
 UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com)"
 MAX_LISTS = 8
@@ -982,7 +984,10 @@ def fetch_standings(tournaments: list[dict], target_ids: set[str]) -> dict[str, 
         for tid, exc in failures[:30]:
             print(f"  no cache {tid}: {exc}")
         print("Build stopped so a broken Limitless scrape is not published as success.")
-        raise SystemExit(1)
+        sample = "; ".join(f"{tid}: {reason}" for tid, reason in failures[:5])
+        raise RuntimeError(
+            f"Limitless standings failed for {len(failures)} events with no cache. {sample}"
+        )
     return by_leader
 
 
@@ -1733,7 +1738,7 @@ def render_deck_page(leader: dict, entry: dict, cache: dict) -> str:
           </div>
 {chr(10).join(sections)}
         </section>"""
-    source = entry.get("source_url") or "https://play.limitlesstcg.com/"
+    source_meta.apply_tags(entry)
     kind_note = {
         "sample": "Sample 50-card list built from the OP17 Red card pool. Not taken from a tournament.",
         "featured": "Featured list and English card text from Limitless One Piece.",
@@ -1749,7 +1754,7 @@ def render_deck_page(leader: dict, entry: dict, cache: dict) -> str:
 {stats}
 {text_list}
 {picture}
-        <p class="muted" style="margin-top:22px">{html.escape(kind_note)} Source: <a href="{html.escape(source)}">{html.escape(source)}</a>. Card text from Limitless. Fan site, not affiliated with Bandai or Shueisha.</p>"""
+        <p class="muted" style="margin-top:22px">{html.escape(kind_note)} {source_meta.attribution_html(entry)} Card text from Limitless. Fan site, not affiliated with Bandai or Shueisha.</p>"""
     place = ordinal(entry.get("placing")) or ""
     event_name = entry.get("tournament_name") or ""
     day = (entry.get("date") or "")[:10]
@@ -1947,6 +1952,9 @@ def render_index_section(leader: dict, lists: list[dict]) -> str:
     for entry in sorted(lists, key=date_sort_key, reverse=True):
         href = entry["href"]
         title, subtitle = list_heading(entry, leader["name"])
+        credit = source_meta.credit_label(entry)
+        if credit:
+            subtitle = f"{subtitle} · {credit}" if subtitle else credit
         right = entry.get("date") or ordinal(entry.get("placing")) or record_text(entry.get("record")) or "View"
         if entry.get("kind") == "sample":
             right = "Sample"

@@ -15,6 +15,8 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
+import source_meta
+
 ROOT = Path("/workspace")
 UA = "OnePieceDecklists/1.0 (+https://onepiecedecklists.com; public OPTCG list scrape)"
 API = "https://tcg-portal.jp/api/onepiece/tournament-results"
@@ -108,7 +110,7 @@ def collect_lists(gen, commsrc) -> list[dict]:
         try:
             html = fetch(url)
         except Exception as exc:  # noqa: BLE001
-            print("fail", pid, exc, flush=True)
+            source_meta.note_failure("tcg-portal.jp", exc, str(pid))
             continue
         counts = counts_from_html(html)
         lids = [cid for cid, n in counts.items() if cid in hosted and n == 1]

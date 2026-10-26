@@ -19,6 +19,8 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import source_meta
+
 ROOT = Path("/workspace")
 RECENT_DAYS = int(os.environ.get("OPDL_RECENT_DAYS", "45"))
 DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})")
@@ -120,6 +122,40 @@ def newest_list_day(rows: list[dict]) -> str:
     return max(dated) if dated else ""
 
 
+def newest_list_meta(rows: list[dict]) -> dict:
+    """The newest dated list, plus how many other lists share that day."""
+    best_day = ""
+    same: list[dict] = []
+    for row in rows:
+        day = iso_date(row.get("date") or "")
+        if not day:
+            continue
+        if day > best_day:
+            best_day = day
+            same = [row]
+        elif day == best_day:
+            same.append(row)
+    if not same:
+        return {}
+    same.sort(key=lambda row: row.get("href") or "")
+    chosen = same[0]
+    event = (
+        chosen.get("tournament_name")
+        or chosen.get("tournament")
+        or chosen.get("event")
+        or chosen.get("title")
+        or ""
+    )
+    return {
+        "newest": best_day,
+        "newest_event": event,
+        "newest_region": chosen.get("region") or "",
+        "newest_source": chosen.get("source") or "",
+        "newest_href": chosen.get("href") or "",
+        "newest_same_day": len(same),
+    }
+
+
 def window_bounds(
     rows: list[dict],
     *,
@@ -138,7 +174,8 @@ def window_bounds(
         clock = datetime(today.year, today.month, today.day, 12, 0, tzinfo=ET)
     end = today or clock.date()
     start = end - timedelta(days=days)
-    newest = newest_list_day(rows)
+    meta = newest_list_meta(rows)
+    newest = meta.get("newest") or ""
     stale = True
     if newest:
         newest_start = datetime.fromisoformat(newest).replace(tzinfo=ET)
@@ -151,6 +188,11 @@ def window_bounds(
         "label": f"{pretty_date(start.isoformat())} through {pretty_date(end.isoformat())}",
         "newest": newest,
         "newest_label": newest_label,
+        "newest_event": meta.get("newest_event") or "",
+        "newest_region": meta.get("newest_region") or "",
+        "newest_source": meta.get("newest_source") or "",
+        "newest_href": meta.get("newest_href") or "",
+        "newest_same_day": meta.get("newest_same_day") or 0,
         "stale": stale,
         "timezone": "America/New_York",
     }
@@ -159,8 +201,20 @@ def window_bounds(
 def freshness_html(bounds: dict) -> str:
     """Visible stamp. The warning shows when the newest list is over 48 hours old."""
     newest = bounds.get("newest_label") or "an unknown date"
+    event = bounds.get("newest_event") or ""
+    region = source_meta.REGION_LABEL.get(bounds.get("newest_region") or "", "")
+    source = bounds.get("newest_source") or ""
+    detail = ""
+    if event:
+        where = ", ".join(part for part in (region, source) if part)
+        extra = ""
+        same_day = int(bounds.get("newest_same_day") or 0)
+        if same_day > 1:
+            extra = f" {same_day} lists share this date."
+        tail = f" ({where})" if where else ""
+        detail = f" Newest list: {html.escape(event)}{html.escape(tail)}.{extra}"
     lines = [
-        f'<p class="freshness" id="last-updated">Last updated {html.escape(newest)}.</p>'
+        f'<p class="freshness" id="last-updated">Last updated {html.escape(newest)}.{detail}</p>'
     ]
     if bounds.get("stale"):
         lines.append(
@@ -209,6 +263,8 @@ def hosted_rows() -> list[dict]:
             return
         if _event.is_test_row(row):
             return
+        if row.get("duplicate_of"):
+            return
         seen.add(href)
         rows.append(row)
 
@@ -219,13 +275,15 @@ def hosted_rows() -> list[dict]:
             row["leader"] = leader
             row["tournament_name"] = row.get("tournament_name") or row.get("tournament") or ""
             row["bucket"] = "tournament"
+            source_meta.apply_tags(row)
             add(leader, row)
         for item in community.get(lid) or []:
             row = {
                 "slug": item.get("slug"),
                 "href": item.get("href") or "",
                 "player": item.get("player") or "Community",
-                "tournament_name": item.get("subtitle") or item.get("title") or "",
+                "tournament_name": item.get("event") or item.get("subtitle") or item.get("title") or "",
+                "event": item.get("event") or "",
                 "placing": item.get("placing"),
                 "date": item.get("date") or "",
                 "kind": item.get("kind") or "web",
@@ -234,9 +292,16 @@ def hosted_rows() -> list[dict]:
                 or {"youtube": "YouTube list", "x": "X list", "web": "Community list"}.get(
                     item.get("kind"), "Community list"
                 ),
+                "source_url": item.get("source_url") or "",
+                "source": item.get("source") or "",
+                "region": item.get("region") or "",
+                "format_era": item.get("format_era") or "",
+                "sources": item.get("sources") or [],
+                "duplicate_of": item.get("duplicate_of") or "",
                 "leader": by_id.get(lid) or leader,
                 "bucket": "community",
             }
+            source_meta.apply_tags(row)
             add(leader, row)
     return rows
 

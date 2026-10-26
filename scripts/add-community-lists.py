@@ -9,6 +9,8 @@ import re
 import importlib.util
 from pathlib import Path
 
+import source_meta
+
 spec = importlib.util.spec_from_file_location(
     "genlists", "/workspace/scripts/generate-tournament-lists.py"
 )
@@ -389,6 +391,9 @@ def community_section(leader: dict, lists: list[dict], tournament_html: str) -> 
         href = entry["href"]
         title = entry.get("title_override") or entry.get("title")
         subtitle = entry.get("subtitle") or ""
+        credit = source_meta.credit_label(entry)
+        if credit and credit not in subtitle:
+            subtitle = f"{subtitle} · {credit}" if subtitle else credit
         badge = {"youtube": "YouTube", "x": "X"}.get(entry.get("kind"), "Web")
         copy_btn = gen.copy_sim_button(gen.sim_text_for_entry(leader, entry))
         rows.append(
@@ -409,7 +414,7 @@ def community_section(leader: dict, lists: list[dict], tournament_html: str) -> 
             <h3>YouTube and community decklists</h3>
             <div class="muted">{len(lists)} lists</div>
           </div>
-          <p class="muted">Public YouTube and web lists with a full 50-card ID list. Tournament tables below are from Limitless.</p>
+          <p class="muted">Each row names its source, region, and format. Tournament tables below are from Limitless.</p>
           <ul class="list" aria-label="YouTube and community decklists">
 {chr(10).join(rows)}
           </ul>
