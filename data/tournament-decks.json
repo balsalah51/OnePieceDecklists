@@ -11049,6 +11049,90 @@
           "url": "https://play.limitlesstcg.com/tournament/6ad09157115c12b73a5a4654/standings"
         }
       ]
+    },
+    {
+      "slug": "4th-yuree-egb-tournament-miniature-metropolis",
+      "href": "/decklists/rocks-d-xebec/4th-yuree-egb-tournament-miniature-metropolis.html",
+      "player": "Yuree",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 4,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "7th-prd-factor-egb-tournament-miniature-metropolis",
+      "href": "/decklists/rocks-d-xebec/7th-prd-factor-egb-tournament-miniature-metropolis.html",
+      "player": "PRD_Factor",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 7,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "14th-trollet-egb-tournament-miniature-metropolis",
+      "href": "/decklists/rocks-d-xebec/14th-trollet-egb-tournament-miniature-metropolis.html",
+      "player": "Trollet",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 14,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "17th-karlman-egb-tournament-miniature-metropolis",
+      "href": "/decklists/rocks-d-xebec/17th-karlman-egb-tournament-miniature-metropolis.html",
+      "player": "karlman",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 17,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
     }
   ],
   "OP17-058": [
@@ -15829,6 +15913,27 @@
           "url": "https://play.limitlesstcg.com/tournament/6ad092d98a8383117e3ec310/standings"
         }
       ]
+    },
+    {
+      "slug": "2nd-diego-s-egb-tournament-miniature-metropolis",
+      "href": "/decklists/kaido/2nd-diego-s-egb-tournament-miniature-metropolis.html",
+      "player": "Diego S",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 2,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
     }
   ],
   "OP17-079": [
@@ -20462,6 +20567,48 @@
         {
           "name": "Limitless",
           "url": "https://play.limitlesstcg.com/tournament/6ad092328a8383117e3ec30c/standings"
+        }
+      ]
+    },
+    {
+      "slug": "3rd-adnan132-egb-tournament-miniature-metropolis",
+      "href": "/decklists/monkey-d-luffy/3rd-adnan132-egb-tournament-miniature-metropolis.html",
+      "player": "adnan132",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 3,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "5th-elanka39-egb-tournament-miniature-metropolis",
+      "href": "/decklists/monkey-d-luffy/5th-elanka39-egb-tournament-miniature-metropolis.html",
+      "player": "elanka39",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 5,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
         }
       ]
     }
@@ -26438,6 +26585,27 @@
         {
           "name": "Limitless",
           "url": "https://play.limitlesstcg.com/tournament/6ad092328a8383117e3ec30c/standings"
+        }
+      ]
+    },
+    {
+      "slug": "8th-dejwono-egb-tournament-miniature-metropolis",
+      "href": "/decklists/rg-luffy/8th-dejwono-egb-tournament-miniature-metropolis.html",
+      "player": "Dejwono",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 8,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
         }
       ]
     }
@@ -44263,6 +44431,48 @@
         {
           "name": "Limitless",
           "url": "https://play.limitlesstcg.com/tournament/6ad092328a8383117e3ec30c/standings"
+        }
+      ]
+    },
+    {
+      "slug": "12th-spinnyartz-egb-tournament-miniature-metropolis",
+      "href": "/decklists/portgas-d-ace/12th-spinnyartz-egb-tournament-miniature-metropolis.html",
+      "player": "Spinnyartz",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 12,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "1-2-farjuan120-egb-tournament-miniature-metropolis",
+      "href": "/decklists/portgas-d-ace/1-2-farjuan120-egb-tournament-miniature-metropolis.html",
+      "player": "farjuan120",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": null,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
         }
       ]
     }
@@ -71872,6 +72082,27 @@
           "url": "https://play.limitlesstcg.com/tournament/6ad6412d8a8383117e3ef3e2/standings"
         }
       ]
+    },
+    {
+      "slug": "16th-yamatofan67-egb-tournament-miniature-metropolis",
+      "href": "/decklists/yamato/16th-yamatofan67-egb-tournament-miniature-metropolis.html",
+      "player": "yamatofan67",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 16,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
     }
   ],
   "OP11-001": [
@@ -84692,6 +84923,48 @@
           "url": "https://play.limitlesstcg.com/tournament/6ad092328a8383117e3ec30c/standings"
         }
       ]
+    },
+    {
+      "slug": "9th-enzaladriel-egb-tournament-miniature-metropolis",
+      "href": "/decklists/sabo/9th-enzaladriel-egb-tournament-miniature-metropolis.html",
+      "player": "Enzaladriel",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 9,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "13th-robz12-egb-tournament-miniature-metropolis",
+      "href": "/decklists/sabo/13th-robz12-egb-tournament-miniature-metropolis.html",
+      "player": "robz12",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 13,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
     }
   ],
   "OP09-062": [
@@ -89471,6 +89744,27 @@
           "url": "https://play.limitlesstcg.com/tournament/6ad092d98a8383117e3ec310/standings"
         }
       ]
+    },
+    {
+      "slug": "6th-tunasallad-egb-tournament-miniature-metropolis",
+      "href": "/decklists/nico-robin/6th-tunasallad-egb-tournament-miniature-metropolis.html",
+      "player": "Tunasallad",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 6,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
     }
   ],
   "OP14-080": [
@@ -92063,6 +92357,27 @@
         {
           "name": "Limitless",
           "url": "https://play.limitlesstcg.com/tournament/6ad092d98a8383117e3ec310/standings"
+        }
+      ]
+    },
+    {
+      "slug": "19th-lika-egb-tournament-miniature-metropolis",
+      "href": "/decklists/boa-hancock/19th-lika-egb-tournament-miniature-metropolis.html",
+      "player": "Lika",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 19,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
         }
       ]
     }
@@ -94689,6 +95004,69 @@
         {
           "name": "Limitless",
           "url": "https://play.limitlesstcg.com/tournament/6ad092328a8383117e3ec30c/standings"
+        }
+      ]
+    },
+    {
+      "slug": "1st-danielk-egb-tournament-miniature-metropolis",
+      "href": "/decklists/op05-enel/1st-danielk-egb-tournament-miniature-metropolis.html",
+      "player": "DanielK",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 1,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "15th-dehan69-egb-tournament-miniature-metropolis",
+      "href": "/decklists/op05-enel/15th-dehan69-egb-tournament-miniature-metropolis.html",
+      "player": "dehan69",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 15,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "18th-rey42-egb-tournament-miniature-metropolis",
+      "href": "/decklists/op05-enel/18th-rey42-egb-tournament-miniature-metropolis.html",
+      "player": "Rey42",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 18,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
         }
       ]
     }
@@ -98056,6 +98434,27 @@
         {
           "name": "Limitless",
           "url": "https://play.limitlesstcg.com/tournament/6a42736f83fd320299bd3e4f/standings"
+        }
+      ]
+    },
+    {
+      "slug": "11th-theiatiger-egb-tournament-miniature-metropolis",
+      "href": "/decklists/trafalgar-law/11th-theiatiger-egb-tournament-miniature-metropolis.html",
+      "player": "TheiaTiger",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 11,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
         }
       ]
     }
@@ -105526,6 +105925,48 @@
           "url": "https://play.limitlesstcg.com/tournament/6ad092d98a8383117e3ec310/standings"
         }
       ]
+    },
+    {
+      "slug": "10th-gabrielahdo-egb-tournament-miniature-metropolis",
+      "href": "/decklists/luffy-ace/10th-gabrielahdo-egb-tournament-miniature-metropolis.html",
+      "player": "Gabrielahdo",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 10,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
+    },
+    {
+      "slug": "0-3-mizutani-egb-tournament-miniature-metropolis",
+      "href": "/decklists/luffy-ace/0-3-mizutani-egb-tournament-miniature-metropolis.html",
+      "player": "Mizutani",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": null,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
+        }
+      ]
     }
   ],
   "OP13-100": [
@@ -106638,6 +107079,27 @@
         {
           "name": "Limitless",
           "url": "https://play.limitlesstcg.com/tournament/6a438fca83fd320299bd49ef/standings"
+        }
+      ]
+    },
+    {
+      "slug": "20th-edgar96-egb-tournament-miniature-metropolis",
+      "href": "/decklists/crocodile/20th-edgar96-egb-tournament-miniature-metropolis.html",
+      "player": "Edgar96",
+      "tournament": "EGB TOURNAMENT MINIATURE METROPOLIS",
+      "placing": 20,
+      "date": "2026-10-25",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
+      "format": "EXTRA",
+      "source": "Limitless",
+      "source_host": "play.limitlesstcg.com",
+      "region": "english",
+      "format_era": "EXTRA",
+      "sources": [
+        {
+          "name": "Limitless",
+          "url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings"
         }
       ]
     }

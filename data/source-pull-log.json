@@ -1,0 +1,60 @@
+{
+  "pulled_at": "2026-10-26T00:18:51-04:00",
+  "sources": [
+    {
+      "source": "optcg.gg",
+      "status": "ok",
+      "started": "2026-10-26T00:17:17-04:00",
+      "failures": [],
+      "added": 0
+    },
+    {
+      "source": "opdeckguide.com",
+      "status": "ok",
+      "started": "2026-10-26T00:17:26-04:00",
+      "failures": [],
+      "added": 0
+    },
+    {
+      "source": "tcg-portal.jp",
+      "status": "ok",
+      "started": "2026-10-26T00:17:51-04:00",
+      "failures": [],
+      "added": 0
+    },
+    {
+      "source": "onepiecedb.io",
+      "status": "ok",
+      "started": "2026-10-26T00:17:52-04:00",
+      "failures": [],
+      "added": 4
+    },
+    {
+      "source": "play.limitlesstcg.com",
+      "status": "ok",
+      "started": "2026-10-26T00:18:32-04:00",
+      "failures": [],
+      "added": 22
+    },
+    {
+      "source": "reddit.com",
+      "status": "skipped",
+      "reason": "robots.txt is User-agent: * / Disallow: /, and the Public Content Policy restricts reuse. No new Reddit pull."
+    },
+    {
+      "source": "youtube.com",
+      "status": "skipped",
+      "reason": "YouTube's terms prohibit automated access, and robots.txt disallows /results. The scheduled job never called the old search scraper. Existing YouTube pages stay attributed. No new pull."
+    },
+    {
+      "source": "x.com",
+      "status": "skipped",
+      "reason": "Not in the scheduled ingest. X restricts automated collection. Existing posts stay attributed. No new pull."
+    },
+    {
+      "source": "duckduckgo-jina",
+      "status": "skipped",
+      "reason": "The old community scraper searched DuckDuckGo and fetched pages through r.jina.ai. That is not a source feed, and it was not part of the scheduled job. Not run."
+    }
+  ]
+}

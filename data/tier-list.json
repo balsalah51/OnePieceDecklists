@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-23",
-  "newest_list": "2026-10-23",
-  "stale": true,
-  "recent_from": "2026-09-10",
-  "recent_through": "2026-10-25",
+  "updated": "2026-10-25",
+  "newest_list": "2026-10-25",
+  "stale": false,
+  "recent_from": "2026-09-11",
+  "recent_through": "2026-10-26",
   "recent_days": 45,
   "source_count": 25,
   "leaders": [
@@ -21,14 +21,14 @@
         "S": 13,
         "A": 3
       },
-      "lists": 521,
+      "lists": 496,
       "wins": 15,
-      "top8": 95,
-      "top4": 48,
-      "recent_lists": 305,
+      "top8": 97,
+      "top4": 49,
+      "recent_lists": 294,
       "recent_wins": 12,
-      "recent_top8": 66,
-      "community": 78,
+      "recent_top8": 67,
+      "community": 49,
       "best": 1
     },
     {
@@ -47,14 +47,14 @@
         "C": 1,
         "B": 1
       },
-      "lists": 916,
+      "lists": 880,
       "wins": 36,
       "top8": 243,
       "top4": 142,
-      "recent_lists": 270,
-      "recent_wins": 4,
-      "recent_top8": 27,
-      "community": 361,
+      "recent_lists": 250,
+      "recent_wins": 3,
+      "recent_top8": 23,
+      "community": 325,
       "best": 1
     },
     {
@@ -73,14 +73,14 @@
         "A": 2,
         "B": 1
       },
-      "lists": 402,
+      "lists": 385,
       "wins": 4,
       "top8": 45,
       "top4": 25,
-      "recent_lists": 213,
+      "recent_lists": 193,
       "recent_wins": 3,
-      "recent_top8": 29,
-      "community": 101,
+      "recent_top8": 28,
+      "community": 82,
       "best": 1
     },
     {
@@ -98,14 +98,14 @@
         "B": 2,
         "S": 4
       },
-      "lists": 468,
+      "lists": 455,
       "wins": 17,
       "top8": 178,
       "top4": 83,
-      "recent_lists": 156,
+      "recent_lists": 146,
       "recent_wins": 1,
-      "recent_top8": 13,
-      "community": 153,
+      "recent_top8": 11,
+      "community": 140,
       "best": 1
     },
     {
@@ -124,14 +124,14 @@
         "C": 1,
         "S": 1
       },
-      "lists": 281,
+      "lists": 274,
       "wins": 4,
-      "top8": 35,
-      "top4": 17,
-      "recent_lists": 161,
+      "top8": 37,
+      "top4": 18,
+      "recent_lists": 160,
       "recent_wins": 2,
       "recent_top8": 22,
-      "community": 55,
+      "community": 46,
       "best": 1
     },
     {
@@ -149,14 +149,14 @@
         "C": 3,
         "B": 1
       },
-      "lists": 232,
+      "lists": 226,
       "wins": 4,
       "top8": 41,
       "top4": 14,
-      "recent_lists": 52,
+      "recent_lists": 48,
       "recent_wins": 0,
       "recent_top8": 10,
-      "community": 63,
+      "community": 55,
       "best": 1
     },
     {
@@ -175,14 +175,14 @@
         "A": 5,
         "S": 1
       },
-      "lists": 299,
+      "lists": 290,
       "wins": 4,
-      "top8": 35,
-      "top4": 10,
-      "recent_lists": 140,
+      "top8": 36,
+      "top4": 11,
+      "recent_lists": 132,
       "recent_wins": 4,
       "recent_top8": 18,
-      "community": 65,
+      "community": 55,
       "best": 1
     },
     {
@@ -201,14 +201,14 @@
         "C": 3,
         "B": 3
       },
-      "lists": 317,
+      "lists": 310,
       "wins": 22,
-      "top8": 130,
+      "top8": 131,
       "top4": 78,
-      "recent_lists": 51,
+      "recent_lists": 49,
       "recent_wins": 3,
       "recent_top8": 11,
-      "community": 71,
+      "community": 63,
       "best": 1
     },
     {
@@ -227,14 +227,14 @@
         "A": 1,
         "S": 2
       },
-      "lists": 370,
+      "lists": 357,
       "wins": 5,
-      "top8": 53,
+      "top8": 54,
       "top4": 25,
-      "recent_lists": 203,
-      "recent_wins": 3,
-      "recent_top8": 30,
-      "community": 137,
+      "recent_lists": 192,
+      "recent_wins": 2,
+      "recent_top8": 26,
+      "community": 123,
       "best": 1
     },
     {
@@ -252,14 +252,14 @@
         "A": 3,
         "B": 4
       },
-      "lists": 65,
+      "lists": 61,
       "wins": 1,
       "top8": 6,
       "top4": 3,
       "recent_lists": 26,
       "recent_wins": 0,
       "recent_top8": 4,
-      "community": 16,
+      "community": 12,
       "best": 1
     },
     {
@@ -278,14 +278,14 @@
         "A": 1,
         "S": 1
       },
-      "lists": 137,
+      "lists": 129,
       "wins": 4,
       "top8": 35,
       "top4": 21,
-      "recent_lists": 82,
+      "recent_lists": 80,
       "recent_wins": 1,
       "recent_top8": 17,
-      "community": 43,
+      "community": 34,
       "best": 1
     },
     {
@@ -303,14 +303,14 @@
         "B": 3,
         "A": 2
       },
-      "lists": 70,
+      "lists": 63,
       "wins": 1,
       "top8": 13,
       "top4": 6,
-      "recent_lists": 54,
+      "recent_lists": 48,
       "recent_wins": 1,
       "recent_top8": 10,
-      "community": 17,
+      "community": 10,
       "best": 1
     },
     {
@@ -329,40 +329,14 @@
         "A": 2,
         "S": 3
       },
-      "lists": 200,
+      "lists": 194,
       "wins": 10,
       "top8": 80,
       "top4": 43,
-      "recent_lists": 49,
+      "recent_lists": 47,
       "recent_wins": 1,
       "recent_top8": 3,
-      "community": 66,
-      "best": 1
-    },
-    {
-      "id": "OP16-080",
-      "name": "Blackbeard",
-      "href": "/decklists/blackbeard.html",
-      "image": "/img/cards/OP16/OP16-080.webp",
-      "color": "color-black-yellow",
-      "color_label": "Black/Yellow",
-      "tier": "B",
-      "score": 13.17,
-      "sources": 7,
-      "votes": {
-        "C": 2,
-        "A": 2,
-        "B": 2,
-        "S": 1
-      },
-      "lists": 165,
-      "wins": 13,
-      "top8": 83,
-      "top4": 47,
-      "recent_lists": 23,
-      "recent_wins": 3,
-      "recent_top8": 10,
-      "community": 43,
+      "community": 60,
       "best": 1
     },
     {
@@ -380,14 +354,39 @@
         "S": 2,
         "A": 1
       },
-      "lists": 293,
+      "lists": 288,
       "wins": 10,
       "top8": 55,
       "top4": 31,
-      "recent_lists": 241,
+      "recent_lists": 231,
       "recent_wins": 6,
-      "recent_top8": 42,
-      "community": 59,
+      "recent_top8": 40,
+      "community": 52,
+      "best": 1
+    },
+    {
+      "id": "OP16-080",
+      "name": "Blackbeard",
+      "href": "/decklists/blackbeard.html",
+      "image": "/img/cards/OP16/OP16-080.webp",
+      "color": "color-black-yellow",
+      "color_label": "Black/Yellow",
+      "tier": "B",
+      "score": 11.3,
+      "sources": 7,
+      "votes": {
+        "C": 2,
+        "A": 3,
+        "B": 2
+      },
+      "lists": 162,
+      "wins": 13,
+      "top8": 83,
+      "top4": 47,
+      "recent_lists": 21,
+      "recent_wins": 2,
+      "recent_top8": 9,
+      "community": 40,
       "best": 1
     },
     {
@@ -415,31 +414,6 @@
       "best": 1
     },
     {
-      "id": "OP16-079",
-      "name": "Yamato",
-      "href": "/decklists/yamato.html",
-      "image": "/img/cards/OP16/OP16-079.webp",
-      "color": "color-black",
-      "color_label": "Black",
-      "tier": "B",
-      "score": 9.72,
-      "sources": 6,
-      "votes": {
-        "C": 3,
-        "B": 1,
-        "A": 2
-      },
-      "lists": 150,
-      "wins": 9,
-      "top8": 53,
-      "top4": 26,
-      "recent_lists": 31,
-      "recent_wins": 1,
-      "recent_top8": 3,
-      "community": 19,
-      "best": 1
-    },
-    {
       "id": "OP11-041",
       "name": "Nami",
       "href": "/decklists/nami.html",
@@ -454,14 +428,14 @@
         "B": 2,
         "A": 3
       },
-      "lists": 215,
+      "lists": 209,
       "wins": 21,
       "top8": 134,
       "top4": 98,
-      "recent_lists": 17,
+      "recent_lists": 15,
       "recent_wins": 0,
-      "recent_top8": 1,
-      "community": 52,
+      "recent_top8": 0,
+      "community": 46,
       "best": 1
     },
     {
@@ -478,14 +452,14 @@
         "B": 1,
         "S": 1
       },
-      "lists": 91,
-      "wins": 1,
-      "top8": 24,
-      "top4": 10,
-      "recent_lists": 68,
-      "recent_wins": 0,
-      "recent_top8": 17,
-      "community": 13,
+      "lists": 90,
+      "wins": 2,
+      "top8": 25,
+      "top4": 11,
+      "recent_lists": 66,
+      "recent_wins": 1,
+      "recent_top8": 18,
+      "community": 9,
       "best": 1
     },
     {
@@ -502,15 +476,40 @@
         "A": 2,
         "C": 1
       },
-      "lists": 37,
+      "lists": 36,
       "wins": 0,
       "top8": 3,
       "top4": 1,
       "recent_lists": 17,
       "recent_wins": 0,
       "recent_top8": 2,
-      "community": 6,
+      "community": 5,
       "best": 4
+    },
+    {
+      "id": "OP16-079",
+      "name": "Yamato",
+      "href": "/decklists/yamato.html",
+      "image": "/img/cards/OP16/OP16-079.webp",
+      "color": "color-black",
+      "color_label": "Black",
+      "tier": "B",
+      "score": 7.85,
+      "sources": 6,
+      "votes": {
+        "C": 3,
+        "B": 2,
+        "A": 1
+      },
+      "lists": 149,
+      "wins": 9,
+      "top8": 53,
+      "top4": 26,
+      "recent_lists": 30,
+      "recent_wins": 1,
+      "recent_top8": 2,
+      "community": 17,
+      "best": 1
     },
     {
       "id": "OP11-062",
@@ -528,14 +527,14 @@
         "B": 1,
         "D": 1
       },
-      "lists": 164,
+      "lists": 163,
       "wins": 2,
       "top8": 40,
       "top4": 17,
       "recent_lists": 1,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 25,
+      "community": 24,
       "best": 1
     },
     {
@@ -553,14 +552,14 @@
         "B": 1,
         "A": 1
       },
-      "lists": 92,
+      "lists": 90,
       "wins": 1,
       "top8": 7,
       "top4": 5,
-      "recent_lists": 78,
+      "recent_lists": 77,
       "recent_wins": 1,
-      "recent_top8": 7,
-      "community": 19,
+      "recent_top8": 6,
+      "community": 17,
       "best": 1
     },
     {
@@ -578,14 +577,14 @@
         "D": 1,
         "B": 2
       },
-      "lists": 52,
+      "lists": 48,
       "wins": 0,
       "top8": 8,
       "top4": 3,
       "recent_lists": 32,
       "recent_wins": 0,
       "recent_top8": 6,
-      "community": 13,
+      "community": 9,
       "best": 3
     },
     {
@@ -602,14 +601,14 @@
         "C": 2,
         "A": 1
       },
-      "lists": 34,
+      "lists": 33,
       "wins": 2,
       "top8": 19,
       "top4": 5,
-      "recent_lists": 3,
+      "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 11,
+      "community": 10,
       "best": 1
     },
     {
@@ -627,14 +626,14 @@
         "A": 1,
         "C": 2
       },
-      "lists": 86,
+      "lists": 83,
       "wins": 9,
       "top8": 50,
       "top4": 35,
       "recent_lists": 12,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 17,
+      "community": 14,
       "best": 1
     },
     {
@@ -651,14 +650,14 @@
         "D": 1,
         "B": 1
       },
-      "lists": 225,
+      "lists": 222,
       "wins": 24,
       "top8": 171,
       "top4": 102,
-      "recent_lists": 19,
+      "recent_lists": 18,
       "recent_wins": 0,
       "recent_top8": 5,
-      "community": 24,
+      "community": 21,
       "best": 1
     },
     {
@@ -676,14 +675,14 @@
         "A": 1,
         "C": 1
       },
-      "lists": 129,
+      "lists": 128,
       "wins": 11,
       "top8": 82,
       "top4": 45,
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 29,
+      "community": 28,
       "best": 1
     },
     {
@@ -706,7 +705,7 @@
       "recent_lists": 8,
       "recent_wins": 1,
       "recent_top8": 3,
-      "community": 1,
+      "community": 0,
       "best": 1
     },
     {
@@ -722,14 +721,14 @@
       "votes": {
         "B": 1
       },
-      "lists": 35,
+      "lists": 31,
       "wins": 0,
       "top8": 7,
       "top4": 2,
-      "recent_lists": 24,
+      "recent_lists": 20,
       "recent_wins": 0,
       "recent_top8": 3,
-      "community": 6,
+      "community": 2,
       "best": 4
     },
     {
@@ -746,14 +745,14 @@
         "A": 1,
         "C": 1
       },
-      "lists": 60,
+      "lists": 58,
       "wins": 1,
       "top8": 8,
       "top4": 6,
-      "recent_lists": 4,
+      "recent_lists": 3,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 7,
+      "community": 5,
       "best": 1
     },
     {
@@ -770,14 +769,14 @@
         "D": 1,
         "C": 1
       },
-      "lists": 31,
+      "lists": 30,
       "wins": 1,
       "top8": 16,
       "top4": 9,
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 10,
+      "community": 9,
       "best": 1
     },
     {
@@ -794,14 +793,14 @@
         "D": 1,
         "C": 1
       },
-      "lists": 102,
+      "lists": 103,
       "wins": 5,
       "top8": 33,
       "top4": 12,
       "recent_lists": 9,
       "recent_wins": 0,
       "recent_top8": 2,
-      "community": 7,
+      "community": 8,
       "best": 1
     },
     {
@@ -818,14 +817,14 @@
         "B": 1,
         "C": 1
       },
-      "lists": 91,
+      "lists": 89,
       "wins": 2,
       "top8": 21,
       "top4": 8,
       "recent_lists": 16,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 6,
+      "community": 4,
       "best": 1
     },
     {
@@ -864,14 +863,14 @@
       "votes": {
         "C": 1
       },
-      "lists": 89,
+      "lists": 88,
       "wins": 7,
       "top8": 57,
       "top4": 30,
       "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 3,
+      "community": 2,
       "best": 1
     },
     {
@@ -887,14 +886,14 @@
       "votes": {
         "C": 1
       },
-      "lists": 15,
+      "lists": 14,
       "wins": 0,
       "top8": 2,
       "top4": 1,
-      "recent_lists": 15,
+      "recent_lists": 14,
       "recent_wins": 0,
       "recent_top8": 2,
-      "community": 2,
+      "community": 1,
       "best": 2
     },
     {
@@ -933,14 +932,14 @@
       "votes": {
         "C": 1
       },
-      "lists": 30,
+      "lists": 29,
       "wins": 2,
       "top8": 7,
       "top4": 3,
-      "recent_lists": 9,
+      "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 3,
+      "community": 2,
       "best": 1
     },
     {
@@ -979,14 +978,14 @@
       "votes": {
         "C": 1
       },
-      "lists": 21,
+      "lists": 20,
       "wins": 0,
       "top8": 5,
       "top4": 0,
       "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 2,
+      "community": 1,
       "best": 6
     },
     {
@@ -1013,6 +1012,29 @@
       "best": 2
     },
     {
+      "id": "OP10-022",
+      "name": "Trafalgar Law",
+      "href": "/decklists/trafalgar-law.html",
+      "image": "/img/cards/OP10/OP10-022.webp",
+      "color": "color-green-yellow",
+      "color_label": "Green/Yellow",
+      "tier": "D",
+      "score": 1.25,
+      "sources": 1,
+      "votes": {
+        "C": 1
+      },
+      "lists": 8,
+      "wins": 0,
+      "top8": 0,
+      "top4": 0,
+      "recent_lists": 4,
+      "recent_wins": 0,
+      "recent_top8": 0,
+      "community": 0,
+      "best": 9
+    },
+    {
       "id": "OP13-100",
       "name": "Yellow Bonney",
       "href": "/decklists/yellow-bonney.html",
@@ -1025,14 +1047,14 @@
       "votes": {
         "C": 1
       },
-      "lists": 25,
+      "lists": 18,
       "wins": 0,
       "top8": 2,
       "top4": 2,
-      "recent_lists": 16,
+      "recent_lists": 8,
       "recent_wins": 0,
-      "recent_top8": 1,
-      "community": 12,
+      "recent_top8": 0,
+      "community": 5,
       "best": 3
     }
   ],
@@ -1467,9 +1489,9 @@
       "id": "opdl-lists",
       "name": "One Piece Decklists tournament tables",
       "url": "https://onepiecedecklists.com/",
-      "when": "through 25 October 2026",
+      "when": "through 26 October 2026",
       "weight": 1.25,
-      "note": "Rolling 45-day window, 10 September 2026 through 25 October 2026. Same hosted lists as the homepage share chart. Wins and top eights on lists hosted here.",
+      "note": "Rolling 45-day window, 11 September 2026 through 26 October 2026. English-format lists only, the same lists as the homepage share chart. Japanese-format lists are counted separately and do not move these letters.",
       "ranks": {
         "OP17-001": "B",
         "OP17-020": "A",
@@ -1486,10 +1508,10 @@
         "OP13-079": "B",
         "OP13-002": "C",
         "OP16-022": "A",
-        "OP16-080": "S",
+        "OP16-080": "A",
         "OP12-061": "S",
         "OP15-002": "C",
-        "OP16-079": "A",
+        "OP16-079": "B",
         "OP11-001": "C",
         "OP14-060": "C",
         "OP16-041": "D",
@@ -1511,7 +1533,7 @@
         "OP10-099": "C",
         "OP07-059": "C",
         "ST13-001": "D",
-        "OP05-060": "C",
+        "OP05-060": "D",
         "OP07-079": "D",
         "OP10-022": "C",
         "OP06-022": "C",

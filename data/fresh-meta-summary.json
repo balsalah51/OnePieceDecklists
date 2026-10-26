@@ -1,94 +1,208 @@
 {
   "window": {
-    "start": "2026-09-21",
-    "end": "2026-09-26"
+    "start": "2026-10-21",
+    "end": "2026-10-26",
+    "limitless_since": "2026-08-20"
   },
-  "community": 62,
-  "limitless": 0,
+  "community": 4,
+  "limitless": 22,
   "changed_leaders": [
-    "EB04-001",
-    "OP08-058",
+    "OP05-098",
+    "OP09-062",
+    "OP10-022",
     "OP11-001",
-    "OP11-041",
-    "OP12-020",
-    "OP12-061",
+    "OP12-040",
     "OP13-001",
-    "OP13-079",
-    "OP13-100",
+    "OP13-004",
     "OP14-020",
-    "OP14-060",
-    "OP15-002",
-    "OP15-058",
+    "OP14-041",
+    "OP14-079",
     "OP16-001",
     "OP16-022",
-    "OP16-060",
-    "OP16-080",
+    "OP16-079",
     "OP17-039",
     "OP17-058",
-    "OP17-079"
+    "OP17-079",
+    "ST30-001"
   ],
   "pages": [
-    "decklists/monkey-d-luffy/opdb-luffy-black-2699.html",
-    "decklists/zoro/opdb-zoro-shanks-2696.html",
-    "decklists/rocks-d-xebec/opdb-rocksdxebec-by-seven07-2630.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-jcms-left-bicep-2627.html",
-    "decklists/charlotte-pudding/opdb-charlotte-pudding-by-kz-2641.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-billy-2542.html",
-    "decklists/kaido/opdb-kaido-by-imran-2536.html",
-    "decklists/kaido/opdb-kaido-by-jacob-2492.html",
-    "decklists/rg-luffy/opdb-monkeydluffy-by-nour-2534.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-noobingitup-2640.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-chewwii-2639.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-t3-howie-tofu-2638.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-xtotx-2636.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-chris-sok-2635.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-jerry-2634.html",
-    "decklists/portgas-d-ace/opdb-portgasdace-by-matt-2493.html",
-    "decklists/enel/opdb-enel-by-xixo-2629.html",
-    "decklists/rg-luffy/opdb-monkeydluffy-by-flavio-villanueva-2622.html",
-    "decklists/rg-luffy/opdb-monkeydluffy-by-blizzard-2616.html",
-    "decklists/rg-luffy/opdb-monkeydluffy-by-katotb-2613.html",
-    "decklists/rg-luffy/opdb-monkeydluffy-by-dafit95-2603.html",
-    "decklists/rg-luffy/opdb-monkeydluffy-by-julius-schurhoff-2601.html",
-    "decklists/rg-luffy/opdb-redgreen-luffy-by-julius-schurhoff-1943.html",
-    "decklists/nami/opdb-nami-by-human-2618.html",
-    "decklists/nami/opdb-nami-by-phillip-vu-2395.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-fl-roker-2621.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-zelcom-night-2617.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-acqua-2612.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-longhin-2611.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-srebrenko-2608.html",
-    "decklists/mihawk/opdb-dracule-mihawk-by-zmazek-2607.html",
-    "decklists/portgas-d-ace/opdb-red-ace-by-long-le-2035.html",
-    "decklists/enel/opdb-enel-by-yonas-2628.html",
-    "decklists/enel/opdb-enel-by-soto-wl-2620.html",
-    "decklists/enel/opdb-enel-by-pain-2614.html",
-    "decklists/enel/opdb-enel-by-gionni-2606.html",
-    "decklists/enel/opdb-enel-by-hakun-2604.html",
-    "decklists/enel/opdb-enel-by-abyssausrede-2602.html",
-    "decklists/enel/opdb-enel-by-banana-2556.html",
-    "decklists/enel/opdb-enel-by-scarria-2546.html",
-    "decklists/enel/opdb-enel-by-kaido-wl-2544.html",
-    "decklists/enel/opdb-enel-by-hungry-2531.html",
-    "decklists/imu/opdb-black-imu-by-cardboardthuglife-150.html",
-    "decklists/imu/opdb-black-imu-by-alexander-gonzalez-133.html",
-    "decklists/imu/opdb-imu-by-stephen-iskandar-113.html",
-    "decklists/imu/opdb-imu-by-andree-aaron-orbea-sabando-76.html",
-    "decklists/gb-luffy/opdb-monkeydluffy-by-cia-2619.html",
-    "decklists/gb-luffy/opdb-monkeydluffy-by-zoronoa8-2609.html",
-    "decklists/gb-luffy/opdb-greenblue-luffy-by-sammy-wang-2339.html",
-    "decklists/blackbeard/opdb-marshalldteach-by-kevin-l-2599.html",
-    "decklists/blackbeard/opdb-blackyellow-blackbeard-by-tom-kaiser-1771.html",
-    "decklists/rosinante/opdb-donquixote-rosinante-by-mage-2600.html",
-    "decklists/rosinante/opdb-rosinante-2265.html",
-    "decklists/rosinante/opdb-purpleyellow-rosinante-by-jamie-2208.html",
-    "decklists/lucy/opdb-redblue-lucy-by-nadir-mouti-1775.html",
-    "decklists/lucy/opdb-redblue-lucy-by-magyo-1309.html",
-    "decklists/koby/opdb-redblack-koby-by-marc-at-at-at-1-2319.html",
-    "decklists/koby/opdb-koby-sword-antics-15.html",
-    "decklists/doffy/opdb-donquixote-doflamingo-by-fairplay-58.html",
-    "decklists/sengoku/opdb-in-the-navy-2509.html",
-    "decklists/yellow-bonney/opdb-yellow-jewelry-boney-2485.html",
-    "decklists/jewelry-bonney/opdb-bonney-1984.html"
-  ]
+    "decklists/mihawk/opdb-dracule-mihawk-by-marco-2811.html",
+    "decklists/kuzan/opdb-blue-kuzan-2852.html",
+    "decklists/gb-luffy/opdb-greenblue-luffy-by-sammy-wang-2317.html",
+    "decklists/koby/opdb-redblack-koby-by-marc-at-at-at-1-2211.html",
+    "decklists/rocks-d-xebec/4th-yuree-egb-tournament-miniature-metropolis.html",
+    "decklists/rocks-d-xebec/7th-prd-factor-egb-tournament-miniature-metropolis.html",
+    "decklists/rocks-d-xebec/14th-trollet-egb-tournament-miniature-metropolis.html",
+    "decklists/rocks-d-xebec/17th-karlman-egb-tournament-miniature-metropolis.html",
+    "decklists/kaido/2nd-diego-s-egb-tournament-miniature-metropolis.html",
+    "decklists/monkey-d-luffy/3rd-adnan132-egb-tournament-miniature-metropolis.html",
+    "decklists/monkey-d-luffy/5th-elanka39-egb-tournament-miniature-metropolis.html",
+    "decklists/rg-luffy/8th-dejwono-egb-tournament-miniature-metropolis.html",
+    "decklists/portgas-d-ace/12th-spinnyartz-egb-tournament-miniature-metropolis.html",
+    "decklists/portgas-d-ace/1-2-farjuan120-egb-tournament-miniature-metropolis.html",
+    "decklists/yamato/16th-yamatofan67-egb-tournament-miniature-metropolis.html",
+    "decklists/sabo/9th-enzaladriel-egb-tournament-miniature-metropolis.html",
+    "decklists/sabo/13th-robz12-egb-tournament-miniature-metropolis.html",
+    "decklists/nico-robin/6th-tunasallad-egb-tournament-miniature-metropolis.html",
+    "decklists/boa-hancock/19th-lika-egb-tournament-miniature-metropolis.html",
+    "decklists/op05-enel/1st-danielk-egb-tournament-miniature-metropolis.html",
+    "decklists/op05-enel/15th-dehan69-egb-tournament-miniature-metropolis.html",
+    "decklists/op05-enel/18th-rey42-egb-tournament-miniature-metropolis.html",
+    "decklists/trafalgar-law/11th-theiatiger-egb-tournament-miniature-metropolis.html",
+    "decklists/luffy-ace/10th-gabrielahdo-egb-tournament-miniature-metropolis.html",
+    "decklists/luffy-ace/0-3-mizutani-egb-tournament-miniature-metropolis.html",
+    "decklists/crocodile/20th-edgar96-egb-tournament-miniature-metropolis.html"
+  ],
+  "sources": [
+    {
+      "source": "optcg.gg",
+      "status": "ok",
+      "started": "2026-10-26T00:17:17-04:00",
+      "failures": [],
+      "added": 0
+    },
+    {
+      "source": "opdeckguide.com",
+      "status": "ok",
+      "started": "2026-10-26T00:17:26-04:00",
+      "failures": [],
+      "added": 0
+    },
+    {
+      "source": "tcg-portal.jp",
+      "status": "ok",
+      "started": "2026-10-26T00:17:51-04:00",
+      "failures": [],
+      "added": 0
+    },
+    {
+      "source": "onepiecedb.io",
+      "status": "ok",
+      "started": "2026-10-26T00:17:52-04:00",
+      "failures": [],
+      "added": 4
+    },
+    {
+      "source": "play.limitlesstcg.com",
+      "status": "ok",
+      "started": "2026-10-26T00:18:32-04:00",
+      "failures": [],
+      "added": 22
+    },
+    {
+      "source": "reddit.com",
+      "status": "skipped",
+      "reason": "robots.txt is User-agent: * / Disallow: /, and the Public Content Policy restricts reuse. No new Reddit pull."
+    },
+    {
+      "source": "youtube.com",
+      "status": "skipped",
+      "reason": "YouTube's terms prohibit automated access, and robots.txt disallows /results. The scheduled job never called the old search scraper. Existing YouTube pages stay attributed. No new pull."
+    },
+    {
+      "source": "x.com",
+      "status": "skipped",
+      "reason": "Not in the scheduled ingest. X restricts automated collection. Existing posts stay attributed. No new pull."
+    },
+    {
+      "source": "duckduckgo-jina",
+      "status": "skipped",
+      "reason": "The old community scraper searched DuckDuckGo and fetched pages through r.jina.ai. That is not a source feed, and it was not part of the scheduled job. Not run."
+    }
+  ],
+  "tags": {
+    "duplicates": 45,
+    "counts": {
+      "lists": 6886,
+      "by_source": {
+        "Limitless": 5258,
+        "OPDeckGuide": 644,
+        "OPTCG.GG": 532,
+        "OnePieceDB": 306,
+        "TCG Portal": 131,
+        "YouTube": 33,
+        "One Piece Decklists": 9,
+        "Reddit": 7,
+        "X": 5,
+        "Mabi TCG": 2,
+        "Mercari OP": 1,
+        "Card Kaizoku": 1
+      },
+      "by_region": {
+        "english": 6697,
+        "japanese": 133,
+        "other": 56
+      },
+      "by_source_region": [
+        {
+          "source": "Limitless",
+          "region": "english",
+          "lists": 5258
+        },
+        {
+          "source": "OPDeckGuide",
+          "region": "english",
+          "lists": 644
+        },
+        {
+          "source": "OPTCG.GG",
+          "region": "english",
+          "lists": 532
+        },
+        {
+          "source": "OnePieceDB",
+          "region": "english",
+          "lists": 306
+        },
+        {
+          "source": "TCG Portal",
+          "region": "japanese",
+          "lists": 131
+        },
+        {
+          "source": "YouTube",
+          "region": "other",
+          "lists": 33
+        },
+        {
+          "source": "One Piece Decklists",
+          "region": "other",
+          "lists": 9
+        },
+        {
+          "source": "Reddit",
+          "region": "other",
+          "lists": 7
+        },
+        {
+          "source": "X",
+          "region": "other",
+          "lists": 5
+        },
+        {
+          "source": "Mabi TCG",
+          "region": "other",
+          "lists": 2
+        },
+        {
+          "source": "Card Kaizoku",
+          "region": "japanese",
+          "lists": 1
+        },
+        {
+          "source": "Mercari OP",
+          "region": "japanese",
+          "lists": 1
+        }
+      ]
+    },
+    "unresolved": [
+      "P-141",
+      "P-143",
+      "P-146",
+      "P-147",
+      "P-149",
+      "P-159"
+    ]
+  }
 }

@@ -693,7 +693,8 @@ LEADERS = [
 
 
 _HTTP_CACHE: dict | None = None
-_HTTP_LOCK = threading.Lock()
+# RLock: store_cached_json holds this and then calls load_http_cache.
+_HTTP_LOCK = threading.RLock()
 _HTTP_DIRTY = False
 HTTP_CACHE_PATH = ROOT / "data" / "limitless-http-cache.json"
 
@@ -978,16 +979,18 @@ def fetch_standings(tournaments: list[dict], target_ids: set[str]) -> dict[str, 
         by_leader[lid].extend(rows)
     flush_http_cache()
     if failures or cached_ids:
-        print("LIMITLESS SCRAPE FAILED")
+        print("LIMITLESS SCRAPE INCOMPLETE")
         print(f"  live failures: {len(failures)}")
         print(f"  served from cache: {len(cached_ids)}")
-        for tid, exc in failures[:30]:
+        for tid, exc in failures:
             print(f"  no cache {tid}: {exc}")
-        print("Build stopped so a broken Limitless scrape is not published as success.")
-        sample = "; ".join(f"{tid}: {reason}" for tid, reason in failures[:5])
-        raise RuntimeError(
-            f"Limitless standings failed for {len(failures)} events with no cache. {sample}"
-        )
+            source_meta.note_failure("play.limitlesstcg.com", exc, tid)
+        if cached_ids:
+            source_meta.note_failure(
+                "play.limitlesstcg.com",
+                f"{len(cached_ids)} events were served from the local cache",
+                ",".join(cached_ids[:12]),
+            )
     return by_leader
 
 

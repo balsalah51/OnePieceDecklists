@@ -1,14 +1,14 @@
 {
-  "rows": 6905,
+  "rows": 6931,
   "duplicates": 45,
-  "unique": 6860,
+  "unique": 6886,
   "counts": {
-    "lists": 6860,
+    "lists": 6886,
     "by_source": {
-      "Limitless": 5236,
+      "Limitless": 5258,
       "OPDeckGuide": 644,
       "OPTCG.GG": 532,
-      "OnePieceDB": 302,
+      "OnePieceDB": 306,
       "TCG Portal": 131,
       "YouTube": 33,
       "One Piece Decklists": 9,
@@ -19,7 +19,7 @@
       "Card Kaizoku": 1
     },
     "by_region": {
-      "english": 6671,
+      "english": 6697,
       "japanese": 133,
       "other": 56
     },
@@ -27,7 +27,7 @@
       {
         "source": "Limitless",
         "region": "english",
-        "lists": 5236
+        "lists": 5258
       },
       {
         "source": "OPDeckGuide",
@@ -42,7 +42,7 @@
       {
         "source": "OnePieceDB",
         "region": "english",
-        "lists": 302
+        "lists": 306
       },
       {
         "source": "TCG Portal",

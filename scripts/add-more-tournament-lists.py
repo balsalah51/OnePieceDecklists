@@ -238,7 +238,7 @@ def fetch_tournament_pages(pages: int = PAGES, per_page: int = PER_PAGE) -> list
             ids.add(tid)
             seen.append(tourney)
             added += 1
-        print("page", page, "new", added, "unique", len(seen))
+        print("page", page, "new", added, "unique", len(seen), flush=True)
     return seen
 
 
