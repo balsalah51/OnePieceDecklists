@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-10-25",
+  "added": [],
+  "skipped": [
+    {
+      "source": "Bandai official event pages",
+      "url": "https://en.onepiece-cardgame.com/events/2026/championship/",
+      "offers": "Championship 26-27 structure, dates, and prizing. Decklists are not published as a file on this page.",
+      "access": "Public HTML pages. en.onepiece-cardgame.com/robots.txt and www.onepiece-cardgame.com/robots.txt both return 404.",
+      "terms": "The official deck builder is BANDAI TCG+ D (https://en.onepiece-cardgame.com/others/02_323.html). It requires a BANDAI TCG+ account. d.bandai-tcg-plus.com/robots.txt returns the app shell, not a robots policy. No public decklist API was found.",
+      "decision": "Skipped. Account-gated championship decks are not a grant to copy lists."
+    },
+    {
+      "source": "Egman Events",
+      "url": "https://egmanevents.com/",
+      "offers": "Event listings on a Squarespace site. Decklists, when they exist, are on https://deckbuilder.egmanevents.com/.",
+      "access": "egmanevents.com/robots.txt allows public pages and disallows /api/ plus several query formats. deckbuilder.egmanevents.com/robots.txt is Allow: / with a Cloudflare content signal search=yes, ai-train=no, use=reference.",
+      "terms": "use=reference does not grant republication of full decklists. No public decklist API was found.",
+      "decision": "Skipped. The deck builder does not clearly allow copying full lists."
+    },
+    {
+      "source": "Melee.gg",
+      "url": "https://melee.gg/",
+      "offers": "Tournament brackets and decklists for organized play, including One Piece events.",
+      "access": "A direct robots fetch returned 403. The published robots file disallows /Decklist/View/ and /Decklist/Index/. The API docs are at https://www.melee.gg/swagger/ui/index and https://help.melee.gg/docs/api-use/.",
+      "terms": "Terms of Service section 3.1 (updated 7 June 2023) prohibit reproducing the site or creating derivatives, and prohibit distributing site content. API access is limited to an organization's staff with Coverage clearance.",
+      "decision": "Skipped. Terms and robots both disallow taking decklists."
+    },
+    {
+      "source": "Tonamel",
+      "url": "https://tonamel.com/",
+      "offers": "Japanese tournament hosting: registration, brackets, and optional deck submission.",
+      "access": "robots.txt allows public pages and disallows /organize/ and /settings/. No public decklist feed was found.",
+      "terms": "https://tonamel.com/terms covers use of the platform. It does not grant a license to copy participant submissions. Organizers can mark deck answers private.",
+      "decision": "Skipped. No reuse license and no public decklist feed."
+    },
+    {
+      "source": "onepiecetopdecks.com",
+      "url": "https://www.onepiecetopdecks.com/",
+      "offers": "Community deck articles.",
+      "access": "robots.txt responds with a captcha interstitial.",
+      "terms": "Could not read a reuse policy.",
+      "decision": "Skipped. Automated access is blocked and the terms could not be checked."
+    },
+    {
+      "source": "Reddit r/OnePieceTCG",
+      "url": "https://www.reddit.com/r/OnePieceTCG/",
+      "offers": "Player-posted lists.",
+      "access": "https://www.reddit.com/robots.txt is User-agent: * Disallow: /.",
+      "terms": "https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy restricts reuse of public content.",
+      "decision": "Skipped for new pulls. Seven lists already hosted stay attributed."
+    },
+    {
+      "source": "YouTube",
+      "url": "https://www.youtube.com/",
+      "offers": "Deck-profile videos. The old scraper read text from watch pages. It did not OCR screenshots.",
+      "access": "robots.txt disallows /results and the private API paths. Watch pages are not in the disallow list.",
+      "terms": "YouTube's terms prohibit accessing the service by automated means.",
+      "decision": "Skipped for new pulls. The scheduled workflow never ran this scraper. Existing video pages stay attributed."
+    },
+    {
+      "source": "X",
+      "url": "https://x.com/",
+      "offers": "Posts that sometimes include a full card list.",
+      "access": "Not called by the scheduled ingest.",
+      "terms": "X restricts automated collection.",
+      "decision": "Skipped for new pulls. Existing posts stay attributed."
+    }
+  ],
+  "already_pulling": [
+    {
+      "source": "Limitless",
+      "url": "https://play.limitlesstcg.com/api/tournaments?game=OP",
+      "robots": "https://limitlesstcg.com/robots.txt and https://onepiece.limitlesstcg.com/robots.txt are User-agent: * with an empty Disallow. play.limitlesstcg.com/robots.txt returns 404.",
+      "note": "Public tournament API this site already uses. Continued."
+    },
+    {
+      "source": "OPTCG.GG",
+      "url": "https://www.optcg.gg/api/deck-lists",
+      "robots": "Allow: / and a deck-list sitemap.",
+      "note": "Continued."
+    },
+    {
+      "source": "OPDeckGuide",
+      "url": "https://opdeckguide.com/tournaments-decklists/",
+      "robots": "Allow: / plus a Cloudflare content signal ai-train=no, use=reference.",
+      "note": "Already a hosted source with attribution. The signal restricts AI training. The public pages stay allowed, so the existing pull continues and every list keeps the OPDeckGuide credit."
+    },
+    {
+      "source": "OnePieceDB",
+      "url": "https://onepiecedb.io/",
+      "robots": "Allow: / plus the same Cloudflare content signal as OPDeckGuide.",
+      "note": "Continued, with the OnePieceDB credit on each list."
+    },
+    {
+      "source": "TCG Portal",
+      "url": "https://tcg-portal.jp/api/onepiece/tournament-results",
+      "robots": "Allow: / except admin, profile, and auth. Crawl-delay: 1.",
+      "note": "Japanese shop results. Continued and tagged Japanese so they stay out of the English-format rates."
+    }
+  ]
+}

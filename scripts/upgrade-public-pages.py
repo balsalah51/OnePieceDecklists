@@ -12,6 +12,8 @@ import json
 import re
 from pathlib import Path
 
+import source_meta
+
 spec = importlib.util.spec_from_file_location("genlists", "/workspace/scripts/generate-tournament-lists.py")
 gen = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gen)
@@ -319,7 +321,9 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
         img = gen.card_image_url(leader["id"])
         place_html = f'<span class="recent-place">{html.escape(place)}</span>' if place else ""
         event_meta = f'<span class="recent-meta-event">{badge_html}{event_html}</span>' if event_label else ""
-        meta = place_html + event_meta
+        credit = source_meta.credit_label(entry)
+        credit_html = f'<span class="recent-source">{html.escape(credit)}</span>' if credit else ""
+        meta = place_html + event_meta + credit_html
         if not meta:
             meta = html.escape(leader["name"])
         extra_attrs = ""
@@ -345,14 +349,16 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
 
 def build_home_data() -> dict:
     rows = collect_home_lists()
+    english = [row for row in rows if row.get("region") == "english"]
     bounds = home_meta.fm.window_bounds(rows)
-    window_rows = home_meta.fm.in_window(rows, bounds)
+    window_rows = home_meta.fm.in_window(english, bounds)
     leaders = home_meta.ranked_leaders(window_rows, window=None)
     pie = home_meta.pie_slices(window_rows, only_set="", scan_limit=None)
     pie["lede"] = (
-        f"Share of hosted lists from {bounds['label']} "
+        f"Share of English-format lists from {bounds['label']} "
         f"(rolling {bounds['days']} days, {len(window_rows)} lists). "
-        "Every list in that window counts, including decks that play no OP17 card. "
+        "Japanese-format lists are labeled on the page and are not in this chart. "
+        "Decks that play no OP17 card still count. "
         "Tier letters match the tier list. The hole is the best first-place rate in this window."
     )
     home_meta.save_meta(leaders, pie, window=bounds)
@@ -405,6 +411,7 @@ def home_notes_html(data: dict) -> str:
           </div>
           <p class="home-notes-lede">{top_name} shows up on {top_n} hosted lists from {html.escape(window_label)}{share_bit}.{follow}{hole_bit}</p>
           {home_meta.fm.freshness_html(bounds)}
+          {source_meta.counts_html(data.get("rows") or [])}
           <div class="home-notes-grid">
             <a class="home-note" href="/guides/weekly-meta.html">
               <span class="kicker">Weekly meta</span>

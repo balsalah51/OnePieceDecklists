@@ -144,7 +144,7 @@ def weekly_body(meta: dict, tier: dict) -> str:
         <p>This note uses the same hosted lists and the same tier letters as the <a href="/tier-list.html">tier list</a> ({sources} published sources, rolling {html.escape(str(days))} days, {html.escape(label)}). The window ends today in America/New_York. It is not a copy of the Limitless or OPTCG.GG metagame page.</p>
         <section style="margin-top:22px">
           <div class="section-title"><h3>What the window is playing</h3><div class="muted">{html.escape(label)}</div></div>
-          <p>The homepage leaders in that window are {top_line}. An older chart counted only the newest 200 lists, and a separate pie counted only lists that played an OP17 card. Mihawk lists often play no OP17 card, so that pie left him off a page that still called him S tier. Both views now count every hosted list in the rolling window.</p>
+          <p>The homepage leaders in that window are {top_line}. An older chart counted only the newest 200 lists, and a separate pie counted only lists that played an OP17 card. Mihawk lists often play no OP17 card, so that pie left him off a page that still called him S tier. Both views now count every English-format hosted list in the rolling window. Japanese-format lists stay on their pages with a Japanese label and are not in this share.</p>
           <p>Share of the {meta.get('pie_lists') or 0} lists in the window: {share_line}.</p>
           {hole_line}
         </section>

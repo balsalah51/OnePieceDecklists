@@ -1,0 +1,97 @@
+{
+  "rows": 6931,
+  "duplicates": 45,
+  "unique": 6886,
+  "counts": {
+    "lists": 6886,
+    "by_source": {
+      "Limitless": 5258,
+      "OPDeckGuide": 644,
+      "OPTCG.GG": 532,
+      "OnePieceDB": 306,
+      "TCG Portal": 131,
+      "YouTube": 33,
+      "One Piece Decklists": 9,
+      "Reddit": 7,
+      "X": 5,
+      "Mabi TCG": 2,
+      "Mercari OP": 1,
+      "Card Kaizoku": 1
+    },
+    "by_region": {
+      "english": 6697,
+      "japanese": 133,
+      "other": 56
+    },
+    "by_source_region": [
+      {
+        "source": "Limitless",
+        "region": "english",
+        "lists": 5258
+      },
+      {
+        "source": "OPDeckGuide",
+        "region": "english",
+        "lists": 644
+      },
+      {
+        "source": "OPTCG.GG",
+        "region": "english",
+        "lists": 532
+      },
+      {
+        "source": "OnePieceDB",
+        "region": "english",
+        "lists": 306
+      },
+      {
+        "source": "TCG Portal",
+        "region": "japanese",
+        "lists": 131
+      },
+      {
+        "source": "YouTube",
+        "region": "other",
+        "lists": 33
+      },
+      {
+        "source": "One Piece Decklists",
+        "region": "other",
+        "lists": 9
+      },
+      {
+        "source": "Reddit",
+        "region": "other",
+        "lists": 7
+      },
+      {
+        "source": "X",
+        "region": "other",
+        "lists": 5
+      },
+      {
+        "source": "Mabi TCG",
+        "region": "other",
+        "lists": 2
+      },
+      {
+        "source": "Card Kaizoku",
+        "region": "japanese",
+        "lists": 1
+      },
+      {
+        "source": "Mercari OP",
+        "region": "japanese",
+        "lists": 1
+      }
+    ]
+  },
+  "unresolved_cards": [
+    "P-141",
+    "P-143",
+    "P-146",
+    "P-147",
+    "P-149",
+    "P-159"
+  ]
+}

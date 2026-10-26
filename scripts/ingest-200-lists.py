@@ -14,6 +14,8 @@ import time
 from datetime import date
 from pathlib import Path
 
+import source_meta
+
 ROOT = Path("/workspace")
 SITE = "https://onepiecedecklists.com"
 TARGET = 200
@@ -120,7 +122,7 @@ def collect_optcg(gen, commsrc, optcggg, found: list[dict], seen: set[str]) -> N
         try:
             deck = optcggg.get_json(f"{optcggg.API}/{did}")
         except Exception as exc:  # noqa: BLE001
-            print("fail", did, exc, flush=True)
+            source_meta.note_failure("optcg.gg", exc, str(did))
             continue
         counts = optcggg.counts_from_deck(deck)
         lid = optcggg.leader_id(row, counts, hosted)

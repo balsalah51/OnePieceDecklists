@@ -14,6 +14,8 @@ import re
 from collections import Counter
 from pathlib import Path
 
+import source_meta
+
 ROOT = Path("/workspace")
 HOME_LEADER_COUNT = 10
 POPULAR_WINDOW = 200
@@ -265,6 +267,9 @@ def featured_html(
         event = row.get("tournament_name") or row.get("subtitle") or ""
         when = row.get("date") or ""
         note = event_display.event_note_html(event, when) or html.escape(leader["name"])
+        credit = source_meta.credit_label(row)
+        if credit:
+            note = f"{note} · {html.escape(credit)}"
         major = " is-major" if event_display.event_weight(event) >= 2 else ""
         cards.append(
             f"""            <a class="featured-card {html.escape(leader['color'])}{major}" href="{html.escape(row['href'])}">

@@ -16,6 +16,8 @@ from collections import defaultdict
 from datetime import date
 from pathlib import Path
 
+import source_meta
+
 ROOT = Path("/workspace")
 # Kept so older notes can see what the fixed window used to be. Live counts
 # use format_meta.RECENT_DAYS, ending on today's date in America/New_York.
@@ -483,10 +485,13 @@ SOURCES = [
 
 
 def site_stats() -> tuple[dict[str, dict], dict]:
-    """Recent counts from the shared rolling window. All-time columns count every hosted list."""
+    """English-format lists only. Japanese lists stay labeled and out of these rates."""
     rows = fm.hosted_rows()
+    english = [row for row in rows if row.get("region") == "english"]
     bounds = fm.window_bounds(rows)
-    return fm.leader_stats(rows, bounds), bounds
+    bounds["english_lists"] = len(english)
+    bounds["list_counts"] = source_meta.count_rows(rows)
+    return fm.leader_stats(english, bounds), bounds
 
 
 def site_source(stats: dict[str, dict], bounds: dict) -> dict:
@@ -518,8 +523,8 @@ def site_source(stats: dict[str, dict], bounds: dict) -> dict:
         "weight": 1.25,
         "note": (
             f"Rolling {bounds['days']}-day window, {bounds['label']}. "
-            "Same hosted lists as the homepage share chart. "
-            "Wins and top eights on lists hosted here."
+            "English-format lists only, the same lists as the homepage share chart. "
+            "Japanese-format lists are counted separately and do not move these letters."
         ),
         "ranks": ranks,
     }
@@ -628,7 +633,7 @@ def render_table(rows: list[dict], bounds: dict | None = None) -> str:
     return f"""        <div class="tier-table">
           <div class="section-title">
             <h3>This site's lists in the mix</h3>
-            <div class="muted">Recent = rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days, {html.escape(bounds['label'] if bounds else '')}. Every hosted list in that window counts, including decks that play no OP17 card.</div>
+            <div class="muted">Recent = rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days, {html.escape(bounds['label'] if bounds else '')}. English-format lists only, including decks that play no OP17 card. Japanese-format lists are not in these columns.</div>
           </div>
           <table>
             <thead>
@@ -643,6 +648,29 @@ def render_table(rows: list[dict], bounds: dict | None = None) -> str:
             </tbody>
           </table>
         </div>"""
+
+
+def source_counts_block(bounds: dict) -> str:
+    counts = bounds.get("list_counts") or {}
+    by_source = counts.get("by_source") or {}
+    if not by_source:
+        return ""
+    by_region = counts.get("by_region") or {}
+    items = "\n".join(f"            <li>{html.escape(name)}: {n}</li>" for name, n in by_source.items())
+    regions = ", ".join(
+        f"{source_meta.REGION_LABEL[key]} {by_region.get(key, 0)}"
+        for key in ("english", "japanese", "other")
+    )
+    return f"""        <section class="tier-sources" id="list-sources">
+          <div class="section-title">
+            <h3>Hosted lists by source</h3>
+            <div class="muted">{counts.get("lists", 0)} lists after de-dupe</div>
+          </div>
+          <p class="muted">A list from two sources is counted under each. Regions: {html.escape(regions)}. English-format lists are the ones in the table above.</p>
+          <ul>
+{items}
+          </ul>
+        </section>"""
 
 
 def render_sources(sources: list[dict]) -> str:
@@ -738,7 +766,8 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         <h2>OP17 tier list</h2>
         <p>{html.escape(intro)}</p>
         {fm.freshness_html(bounds or {})}
-        <p class="muted">Recent columns use {html.escape(bounds['label'] if bounds else '')} (rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days), ending today in America/New_York. Same lists as the homepage share chart. OP09 Nico Robin and EB05 Nico Robin, OP15 Enel and OP05 Enel, and OP17 Shanks and OP09 Shanks are different cards and stay on separate pages.</p>
+        <p class="muted">Recent columns use {html.escape(bounds['label'] if bounds else '')} (rolling {bounds['days'] if bounds else fm.RECENT_DAYS} days), ending today in America/New_York. The letters use English-format lists, the same lists as the homepage share chart. Japanese-format lists stay labeled on their own pages and are not mixed into these rates. OP09 Nico Robin and EB05 Nico Robin, OP15 Enel and OP05 Enel, and OP17 Shanks and OP09 Shanks are different cards and stay on separate pages.</p>
+        {source_counts_block(bounds or {})}
         <div class="tier-board" aria-label="OP17 leader tier list">
 {board}
         </div>

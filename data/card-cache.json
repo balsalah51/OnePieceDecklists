@@ -20863,5 +20863,37 @@
     "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/*P/P-157_EN.webp",
     "source": "https://onepiece.limitlesstcg.com/cards/P-157",
     "tcgplayer_id": 717555
+  },
+  "OP07-010": {
+    "id": "OP07-010",
+    "name": "Baccarat",
+    "category": "Character",
+    "color": "Red",
+    "life": null,
+    "cost": "3",
+    "power": "4000",
+    "counter": "+1000",
+    "attribute": "Special",
+    "types": "FILM/Grantesoro",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Your Opponent's Attack] [Once Per Turn] You may trash 1 card from your hand: Up to 1 of your Leader or Character cards gains +2000 power during this battle.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP07/OP07-010_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP07-010",
+    "tcgplayer_id": 545789
+  },
+  "OP05-058": {
+    "id": "OP05-058",
+    "name": "It's a Waste of Human Life!!",
+    "category": "Event",
+    "color": "Blue",
+    "life": null,
+    "cost": "8",
+    "power": null,
+    "counter": null,
+    "attribute": null,
+    "types": "Navy",
+    "effect": "[Main] Place all Characters with a cost of 3 or less at the bottom of the owner's deck. Then, you and your opponent trash cards from your hands until you each have 5 cards in your hands. [Trigger] Place all Characters with a cost of 2 or less at the bottom of the owner's deck.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-058_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP05-058",
+    "tcgplayer_id": 528614
   }
 }
