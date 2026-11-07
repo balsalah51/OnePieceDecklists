@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-11-07",
   "recent_from": "2026-08-20",
   "source_count": 25,
   "leaders": [
@@ -17,14 +17,14 @@
         "S": 13,
         "A": 3
       },
-      "lists": 444,
+      "lists": 528,
       "wins": 15,
-      "top8": 96,
-      "top4": 49,
-      "recent_lists": 381,
+      "top8": 110,
+      "top4": 55,
+      "recent_lists": 465,
       "recent_wins": 13,
-      "recent_top8": 88,
-      "community": 78,
+      "recent_top8": 102,
+      "community": 100,
       "best": 1
     },
     {
@@ -50,7 +50,7 @@
       "recent_lists": 312,
       "recent_wins": 13,
       "recent_top8": 70,
-      "community": 361,
+      "community": 375,
       "best": 1
     },
     {
@@ -69,14 +69,14 @@
         "A": 2,
         "B": 1
       },
-      "lists": 301,
+      "lists": 313,
       "wins": 4,
-      "top8": 45,
+      "top8": 46,
       "top4": 25,
-      "recent_lists": 264,
+      "recent_lists": 276,
       "recent_wins": 3,
-      "recent_top8": 42,
-      "community": 101,
+      "recent_top8": 43,
+      "community": 104,
       "best": 1
     },
     {
@@ -95,14 +95,14 @@
         "B": 1,
         "S": 1
       },
-      "lists": 169,
+      "lists": 172,
       "wins": 4,
-      "top8": 41,
+      "top8": 42,
       "top4": 14,
-      "recent_lists": 72,
+      "recent_lists": 75,
       "recent_wins": 1,
-      "recent_top8": 16,
-      "community": 63,
+      "recent_top8": 17,
+      "community": 64,
       "best": 1
     },
     {
@@ -120,14 +120,14 @@
         "B": 2,
         "S": 4
       },
-      "lists": 315,
+      "lists": 325,
       "wins": 17,
-      "top8": 178,
-      "top4": 83,
-      "recent_lists": 118,
+      "top8": 181,
+      "top4": 84,
+      "recent_lists": 128,
       "recent_wins": 1,
-      "recent_top8": 18,
-      "community": 153,
+      "recent_top8": 21,
+      "community": 164,
       "best": 1
     },
     {
@@ -146,14 +146,14 @@
         "C": 1,
         "S": 1
       },
-      "lists": 226,
+      "lists": 239,
       "wins": 4,
-      "top8": 35,
-      "top4": 17,
-      "recent_lists": 210,
+      "top8": 38,
+      "top4": 19,
+      "recent_lists": 223,
       "recent_wins": 4,
-      "recent_top8": 34,
-      "community": 55,
+      "recent_top8": 37,
+      "community": 58,
       "best": 1
     },
     {
@@ -172,14 +172,14 @@
         "A": 5,
         "S": 1
       },
-      "lists": 235,
-      "wins": 4,
-      "top8": 36,
-      "top4": 11,
-      "recent_lists": 185,
-      "recent_wins": 4,
-      "recent_top8": 35,
-      "community": 65,
+      "lists": 261,
+      "wins": 5,
+      "top8": 43,
+      "top4": 16,
+      "recent_lists": 211,
+      "recent_wins": 5,
+      "recent_top8": 42,
+      "community": 74,
       "best": 1
     },
     {
@@ -198,14 +198,14 @@
         "C": 3,
         "B": 3
       },
-      "lists": 246,
-      "wins": 22,
-      "top8": 130,
-      "top4": 78,
-      "recent_lists": 42,
-      "recent_wins": 4,
-      "recent_top8": 14,
-      "community": 71,
+      "lists": 335,
+      "wins": 26,
+      "top8": 157,
+      "top4": 92,
+      "recent_lists": 131,
+      "recent_wins": 8,
+      "recent_top8": 41,
+      "community": 91,
       "best": 1
     },
     {
@@ -230,7 +230,7 @@
       "recent_lists": 34,
       "recent_wins": 1,
       "recent_top8": 6,
-      "community": 16,
+      "community": 19,
       "best": 1
     },
     {
@@ -249,14 +249,14 @@
         "A": 1,
         "S": 2
       },
-      "lists": 235,
+      "lists": 241,
       "wins": 6,
-      "top8": 55,
-      "top4": 27,
-      "recent_lists": 217,
+      "top8": 57,
+      "top4": 28,
+      "recent_lists": 223,
       "recent_wins": 6,
-      "recent_top8": 50,
-      "community": 137,
+      "recent_top8": 52,
+      "community": 145,
       "best": 1
     },
     {
@@ -275,14 +275,14 @@
         "A": 1,
         "S": 1
       },
-      "lists": 53,
-      "wins": 1,
-      "top8": 13,
-      "top4": 6,
-      "recent_lists": 49,
-      "recent_wins": 1,
-      "recent_top8": 13,
-      "community": 17,
+      "lists": 63,
+      "wins": 2,
+      "top8": 16,
+      "top4": 8,
+      "recent_lists": 59,
+      "recent_wins": 2,
+      "recent_top8": 16,
+      "community": 22,
       "best": 1
     },
     {
@@ -301,14 +301,14 @@
         "A": 1,
         "S": 1
       },
-      "lists": 94,
-      "wins": 4,
-      "top8": 35,
-      "top4": 21,
-      "recent_lists": 76,
-      "recent_wins": 1,
-      "recent_top8": 19,
-      "community": 43,
+      "lists": 115,
+      "wins": 5,
+      "top8": 41,
+      "top4": 25,
+      "recent_lists": 97,
+      "recent_wins": 2,
+      "recent_top8": 25,
+      "community": 46,
       "best": 1
     },
     {
@@ -327,14 +327,14 @@
         "A": 2,
         "S": 3
       },
-      "lists": 134,
+      "lists": 143,
       "wins": 10,
-      "top8": 80,
+      "top8": 81,
       "top4": 43,
-      "recent_lists": 36,
+      "recent_lists": 45,
       "recent_wins": 1,
-      "recent_top8": 4,
-      "community": 66,
+      "recent_top8": 5,
+      "community": 68,
       "best": 1
     },
     {
@@ -353,14 +353,14 @@
         "B": 2,
         "S": 1
       },
-      "lists": 122,
-      "wins": 13,
-      "top8": 83,
-      "top4": 47,
-      "recent_lists": 26,
-      "recent_wins": 4,
-      "recent_top8": 12,
-      "community": 43,
+      "lists": 130,
+      "wins": 14,
+      "top8": 87,
+      "top4": 49,
+      "recent_lists": 34,
+      "recent_wins": 5,
+      "recent_top8": 16,
+      "community": 44,
       "best": 1
     },
     {
@@ -378,14 +378,14 @@
         "S": 2,
         "A": 1
       },
-      "lists": 234,
-      "wins": 10,
-      "top8": 55,
-      "top4": 31,
-      "recent_lists": 218,
-      "recent_wins": 8,
-      "recent_top8": 45,
-      "community": 59,
+      "lists": 250,
+      "wins": 11,
+      "top8": 56,
+      "top4": 32,
+      "recent_lists": 234,
+      "recent_wins": 9,
+      "recent_top8": 46,
+      "community": 66,
       "best": 1
     },
     {
@@ -402,14 +402,14 @@
         "B": 3,
         "S": 2
       },
-      "lists": 153,
+      "lists": 170,
       "wins": 17,
-      "top8": 104,
-      "top4": 65,
-      "recent_lists": 55,
+      "top8": 108,
+      "top4": 66,
+      "recent_lists": 72,
       "recent_wins": 1,
-      "recent_top8": 14,
-      "community": 37,
+      "recent_top8": 18,
+      "community": 40,
       "best": 1
     },
     {
@@ -427,15 +427,39 @@
         "B": 1,
         "A": 2
       },
-      "lists": 131,
+      "lists": 134,
       "wins": 9,
-      "top8": 53,
+      "top8": 55,
       "top4": 26,
-      "recent_lists": 34,
+      "recent_lists": 37,
       "recent_wins": 2,
-      "recent_top8": 5,
-      "community": 19,
+      "recent_top8": 7,
+      "community": 22,
       "best": 1
+    },
+    {
+      "id": "OP14-080",
+      "name": "Gecko Moria",
+      "href": "/decklists/gecko-moria.html",
+      "image": "/img/cards/OP14/OP14-080.webp",
+      "color": "color-black-yellow",
+      "color_label": "Black/Yellow",
+      "tier": "B",
+      "score": 9.5,
+      "sources": 3,
+      "votes": {
+        "A": 2,
+        "B": 1
+      },
+      "lists": 32,
+      "wins": 0,
+      "top8": 4,
+      "top4": 2,
+      "recent_lists": 23,
+      "recent_wins": 0,
+      "recent_top8": 3,
+      "community": 7,
+      "best": 4
     },
     {
       "id": "OP11-041",
@@ -476,39 +500,15 @@
         "B": 1,
         "S": 1
       },
-      "lists": 79,
-      "wins": 2,
-      "top8": 25,
-      "top4": 11,
-      "recent_lists": 62,
-      "recent_wins": 1,
-      "recent_top8": 21,
-      "community": 13,
+      "lists": 117,
+      "wins": 5,
+      "top8": 37,
+      "top4": 16,
+      "recent_lists": 100,
+      "recent_wins": 4,
+      "recent_top8": 33,
+      "community": 21,
       "best": 1
-    },
-    {
-      "id": "OP14-080",
-      "name": "Gecko Moria",
-      "href": "/decklists/gecko-moria.html",
-      "image": "/img/cards/OP14/OP14-080.webp",
-      "color": "color-black-yellow",
-      "color_label": "Black/Yellow",
-      "tier": "B",
-      "score": 8.25,
-      "sources": 3,
-      "votes": {
-        "A": 2,
-        "C": 1
-      },
-      "lists": 31,
-      "wins": 0,
-      "top8": 3,
-      "top4": 1,
-      "recent_lists": 22,
-      "recent_wins": 0,
-      "recent_top8": 2,
-      "community": 6,
-      "best": 4
     },
     {
       "id": "OP11-062",
@@ -558,7 +558,7 @@
       "recent_lists": 39,
       "recent_wins": 0,
       "recent_top8": 8,
-      "community": 13,
+      "community": 14,
       "best": 3
     },
     {
@@ -576,14 +576,14 @@
         "B": 1,
         "A": 1
       },
-      "lists": 73,
+      "lists": 74,
       "wins": 1,
       "top8": 7,
       "top4": 5,
-      "recent_lists": 71,
+      "recent_lists": 72,
       "recent_wins": 1,
       "recent_top8": 7,
-      "community": 19,
+      "community": 22,
       "best": 1
     },
     {
@@ -600,15 +600,61 @@
         "B": 1,
         "A": 1
       },
-      "lists": 86,
+      "lists": 88,
       "wins": 2,
       "top8": 22,
       "top4": 9,
-      "recent_lists": 28,
+      "recent_lists": 30,
       "recent_wins": 1,
       "recent_top8": 4,
       "community": 6,
       "best": 1
+    },
+    {
+      "id": "EB05-010",
+      "name": "Nico Robin",
+      "href": "/decklists/eb05-nico-robin.html",
+      "image": "/img/cards/EB05/EB05-010.webp",
+      "color": "color-green-yellow",
+      "color_label": "Green/Yellow",
+      "tier": "C",
+      "score": 4.38,
+      "sources": 1,
+      "votes": {
+        "A": 1
+      },
+      "lists": 23,
+      "wins": 1,
+      "top8": 7,
+      "top4": 4,
+      "recent_lists": 23,
+      "recent_wins": 1,
+      "recent_top8": 7,
+      "community": 4,
+      "best": 1
+    },
+    {
+      "id": "ST10-002",
+      "name": "ST10 Luffy",
+      "href": "/decklists/st10-luffy.html",
+      "image": "/img/cards/ST10/ST10-002.webp",
+      "color": "color-red-purple",
+      "color_label": "Red/Purple",
+      "tier": "C",
+      "score": 4.38,
+      "sources": 1,
+      "votes": {
+        "A": 1
+      },
+      "lists": 34,
+      "wins": 0,
+      "top8": 9,
+      "top4": 2,
+      "recent_lists": 28,
+      "recent_wins": 0,
+      "recent_top8": 7,
+      "community": 6,
+      "best": 4
     },
     {
       "id": "OP12-040",
@@ -631,7 +677,7 @@
       "recent_lists": 6,
       "recent_wins": 0,
       "recent_top8": 3,
-      "community": 11,
+      "community": 12,
       "best": 1
     },
     {
@@ -673,11 +719,11 @@
         "D": 1,
         "B": 1
       },
-      "lists": 201,
+      "lists": 203,
       "wins": 24,
       "top8": 171,
       "top4": 102,
-      "recent_lists": 14,
+      "recent_lists": 16,
       "recent_wins": 0,
       "recent_top8": 5,
       "community": 24,
@@ -721,38 +767,15 @@
       "votes": {
         "B": 1
       },
-      "lists": 8,
+      "lists": 10,
       "wins": 1,
       "top8": 3,
       "top4": 2,
-      "recent_lists": 8,
+      "recent_lists": 10,
       "recent_wins": 1,
       "recent_top8": 3,
-      "community": 1,
+      "community": 2,
       "best": 1
-    },
-    {
-      "id": "ST10-002",
-      "name": "ST10 Luffy",
-      "href": "/decklists/st10-luffy.html",
-      "image": "/img/cards/ST10/ST10-002.webp",
-      "color": "color-red-purple",
-      "color_label": "Red/Purple",
-      "tier": "D",
-      "score": 2.5,
-      "sources": 1,
-      "votes": {
-        "B": 1
-      },
-      "lists": 29,
-      "wins": 0,
-      "top8": 7,
-      "top4": 2,
-      "recent_lists": 23,
-      "recent_wins": 0,
-      "recent_top8": 5,
-      "community": 6,
-      "best": 4
     },
     {
       "id": "OP10-099",
@@ -775,7 +798,7 @@
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 0,
-      "community": 10,
+      "community": 11,
       "best": 1
     },
     {
@@ -792,14 +815,14 @@
         "D": 1,
         "C": 1
       },
-      "lists": 95,
+      "lists": 98,
       "wins": 5,
       "top8": 33,
       "top4": 12,
-      "recent_lists": 9,
+      "recent_lists": 12,
       "recent_wins": 0,
       "recent_top8": 2,
-      "community": 7,
+      "community": 8,
       "best": 1
     },
     {
@@ -885,11 +908,11 @@
       "votes": {
         "C": 1
       },
-      "lists": 21,
+      "lists": 22,
       "wins": 0,
       "top8": 2,
       "top4": 1,
-      "recent_lists": 4,
+      "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
@@ -908,10 +931,33 @@
       "votes": {
         "C": 1
       },
-      "lists": 16,
+      "lists": 17,
       "wins": 1,
       "top8": 1,
       "top4": 1,
+      "recent_lists": 5,
+      "recent_wins": 0,
+      "recent_top8": 0,
+      "community": 2,
+      "best": 1
+    },
+    {
+      "id": "EB04-001",
+      "name": "Jewelry Bonney",
+      "href": "/decklists/jewelry-bonney.html",
+      "image": "/img/cards/EB04/EB04-001.webp",
+      "color": "color-red-yellow",
+      "color_label": "Red/Yellow",
+      "tier": "D",
+      "score": 1.25,
+      "sources": 1,
+      "votes": {
+        "C": 1
+      },
+      "lists": 20,
+      "wins": 1,
+      "top8": 5,
+      "top4": 3,
       "recent_lists": 4,
       "recent_wins": 0,
       "recent_top8": 0,
@@ -931,38 +977,15 @@
       "votes": {
         "C": 1
       },
-      "lists": 27,
+      "lists": 29,
       "wins": 2,
       "top8": 7,
       "top4": 3,
-      "recent_lists": 13,
+      "recent_lists": 15,
       "recent_wins": 0,
       "recent_top8": 2,
       "community": 3,
       "best": 1
-    },
-    {
-      "id": "EB05-010",
-      "name": "Nico Robin",
-      "href": "/decklists/eb05-nico-robin.html",
-      "image": "/img/cards/EB05/EB05-010.webp",
-      "color": "color-green-yellow",
-      "color_label": "Green/Yellow",
-      "tier": "D",
-      "score": 1.25,
-      "sources": 1,
-      "votes": {
-        "C": 1
-      },
-      "lists": 13,
-      "wins": 0,
-      "top8": 2,
-      "top4": 1,
-      "recent_lists": 13,
-      "recent_wins": 0,
-      "recent_top8": 2,
-      "community": 2,
-      "best": 2
     },
     {
       "id": "OP06-022",
@@ -984,7 +1007,7 @@
       "recent_lists": 2,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 1,
+      "community": 2,
       "best": 5
     },
     {
@@ -1000,11 +1023,11 @@
       "votes": {
         "C": 1
       },
-      "lists": 19,
+      "lists": 20,
       "wins": 0,
       "top8": 5,
       "top4": 0,
-      "recent_lists": 9,
+      "recent_lists": 10,
       "recent_wins": 0,
       "recent_top8": 1,
       "community": 2,
@@ -1023,11 +1046,11 @@
       "votes": {
         "C": 1
       },
-      "lists": 18,
+      "lists": 26,
       "wins": 0,
       "top8": 5,
       "top4": 4,
-      "recent_lists": 10,
+      "recent_lists": 18,
       "recent_wins": 0,
       "recent_top8": 2,
       "community": 0,
@@ -1046,11 +1069,11 @@
       "votes": {
         "C": 1
       },
-      "lists": 7,
+      "lists": 8,
       "wins": 0,
       "top8": 0,
       "top4": 0,
-      "recent_lists": 4,
+      "recent_lists": 5,
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 0,
@@ -1076,7 +1099,7 @@
       "recent_lists": 8,
       "recent_wins": 0,
       "recent_top8": 1,
-      "community": 12,
+      "community": 14,
       "best": 3
     }
   ],
@@ -1542,12 +1565,12 @@
         "OP08-058": "A",
         "OP13-004": "S",
         "OP09-062": "S",
-        "OP14-080": "C",
+        "OP14-080": "B",
         "OP14-041": "S",
         "OP12-081": "C",
         "OP09-001": "D",
         "OP05-098": "S",
-        "ST10-002": "B",
+        "ST10-002": "A",
         "OP09-061": "D",
         "OP12-040": "C",
         "OP05-002": "C",
@@ -1566,7 +1589,7 @@
         "OP12-020": "C",
         "ST30-001": "S",
         "OP13-100": "C",
-        "EB05-010": "C",
+        "EB05-010": "A",
         "OP14-079": "B"
       }
     }

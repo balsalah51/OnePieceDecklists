@@ -2,29 +2,29 @@
   "window": 200,
   "home_leaders": [
     {
+      "id": "OP13-001",
+      "name": "RG Luffy",
+      "count": 55
+    },
+    {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 38
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 19
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 18
+      "count": 40
     },
     {
       "id": "OP05-098",
       "name": "OP05 Enel",
-      "count": 17
+      "count": 15
     },
     {
-      "id": "OP17-020",
-      "name": "Shanks",
-      "count": 16
+      "id": "OP17-058",
+      "name": "Kaido",
+      "count": 14
+    },
+    {
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "count": 10
     },
     {
       "id": "OP12-061",
@@ -32,101 +32,101 @@
       "count": 10
     },
     {
-      "id": "EB05-010",
-      "name": "Nico Robin",
-      "count": 9
+      "id": "OP17-020",
+      "name": "Shanks",
+      "count": 7
     },
     {
-      "id": "OP17-058",
-      "name": "Kaido",
-      "count": 8
+      "id": "EB05-010",
+      "name": "Nico Robin",
+      "count": 7
     },
     {
       "id": "ST10-002",
       "name": "ST10 Luffy",
-      "count": 8
+      "count": 5
     },
     {
-      "id": "OP13-001",
-      "name": "RG Luffy",
-      "count": 7
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "count": 5
     }
   ],
   "set": "OP17",
   "pie_lists": 338,
   "pie": [
     {
+      "id": "OP13-001",
+      "name": "RG Luffy",
+      "count": 94,
+      "pct": 27.8
+    },
+    {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 73,
-      "pct": 21.6
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 44,
-      "pct": 13.0
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 40,
-      "pct": 11.8
+      "count": 86,
+      "pct": 25.4
     },
     {
       "id": "OP05-098",
       "name": "OP05 Enel",
-      "count": 28,
-      "pct": 8.3
-    },
-    {
-      "id": "ST10-002",
-      "name": "ST10 Luffy",
-      "count": 20,
-      "pct": 5.9
-    },
-    {
-      "id": "OP17-020",
-      "name": "Shanks",
-      "count": 18,
-      "pct": 5.3
-    },
-    {
-      "id": "EB05-010",
-      "name": "Nico Robin",
-      "count": 14,
-      "pct": 4.1
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 14,
-      "pct": 4.1
-    },
-    {
-      "id": "OP14-041",
-      "name": "Boa Hancock",
-      "count": 14,
-      "pct": 4.1
+      "count": 34,
+      "pct": 10.1
     },
     {
       "id": "OP17-058",
       "name": "Kaido",
-      "count": 13,
-      "pct": 3.8
+      "count": 26,
+      "pct": 7.7
+    },
+    {
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "count": 12,
+      "pct": 3.6
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 11,
+      "pct": 3.3
+    },
+    {
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "count": 11,
+      "pct": 3.3
+    },
+    {
+      "id": "OP17-020",
+      "name": "Shanks",
+      "count": 10,
+      "pct": 3.0
+    },
+    {
+      "id": "EB05-010",
+      "name": "Nico Robin",
+      "count": 10,
+      "pct": 3.0
+    },
+    {
+      "id": "OP12-061",
+      "name": "Rosinante",
+      "count": 10,
+      "pct": 3.0
     },
     {
       "id": "",
       "name": "Other",
-      "count": 60,
-      "pct": 17.8
+      "count": 34,
+      "pct": 10.1
     }
   ],
   "hole": {
-    "id": "OP17-039",
-    "name": "Rocks D. Xebec",
-    "wins": 6,
-    "lists": 45,
-    "win_pct": 13.3
+    "id": "OP13-001",
+    "name": "RG Luffy",
+    "wins": 4,
+    "lists": 50,
+    "win_pct": 8.0
   }
 }

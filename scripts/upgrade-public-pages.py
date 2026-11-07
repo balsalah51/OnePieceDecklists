@@ -469,9 +469,9 @@ def render_home_body(data: dict | None = None) -> str:
     notes_block = home_notes_html(data)
     robin = gen.card_image_url("OP09-062")
     rocks = gen.card_image_url("OP17-039")
-    sabo = gen.card_image_url("OP13-004")
+    enel = gen.card_image_url("OP05-098")
     rg = gen.card_image_url("OP13-001")
-    black = gen.card_image_url("OP17-079")
+    kaido = gen.card_image_url("OP17-058")
     recent = data["recent_home"]
     visible = home_meta.HOME_RECENT_VISIBLE
     extra_n = max(0, len(recent) - visible)
@@ -520,11 +520,11 @@ def render_home_body(data: dict | None = None) -> str:
           var root=document.getElementById("home-splash");
           if(!root) return;
           var faces=[
-            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"{robin}"}},
-            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"{rocks}"}},
-            {{name:"Sabo",href:"/decklists/sabo.html",img:"{sabo}"}},
             {{name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"{rg}"}},
-            {{name:"Black Luffy",href:"/decklists/op17/monkey-d-luffy.html",img:"{black}"}}
+            {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"{rocks}"}},
+            {{name:"Enel",href:"/decklists/op05-enel.html",img:"{enel}"}},
+            {{name:"Kaido",href:"/decklists/op17/kaido.html",img:"{kaido}"}},
+            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"{robin}"}}
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];

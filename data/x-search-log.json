@@ -1,277 +1,315 @@
 {
   "window": {
     "start": "2026-09-17",
-    "end": "2026-09-21",
+    "end": "2026-11-07",
     "tz": "UTC"
   },
   "profiles": [
     {
       "handle": "MarinefordTCG",
       "url": "https://r.jina.ai/https://x.com/MarinefordTCG",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 4324,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "StrawHatPecan",
       "url": "https://r.jina.ai/https://x.com/StrawHatPecan",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 1912,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "BenSchumi7",
       "url": "https://r.jina.ai/https://x.com/BenSchumi7",
-      "status": 403,
-      "chars": 619,
+      "status": 401,
+      "chars": 343,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from perfor"
     },
     {
       "handle": "CardKaizoku",
       "url": "https://r.jina.ai/https://x.com/CardKaizoku",
-      "status": 403,
-      "chars": 619,
-      "tweet_ids": [],
+      "status": 200,
+      "chars": 5964,
+      "tweet_ids": [
+        "cardkaizoku/2118467879746302201",
+        "cardkaizoku/2118073041557336511",
+        "cardkaizoku/2117698046129852904",
+        "cardkaizoku/2117542557655974051",
+        "cardkaizoku/1984412571953418310",
+        "cardkaizoku/2116323639704670328"
+      ],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "BlaisePlays",
       "url": "https://r.jina.ai/https://x.com/BlaisePlays",
-      "status": 403,
-      "chars": 619,
-      "tweet_ids": [],
+      "status": 200,
+      "chars": 2675,
+      "tweet_ids": [
+        "BlaisePlays/1623769368092868608"
+      ],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "BlaisePlaysTCG",
       "url": "https://r.jina.ai/https://x.com/BlaisePlaysTCG",
-      "status": 403,
-      "chars": 619,
-      "tweet_ids": [],
+      "status": 200,
+      "chars": 2081,
+      "tweet_ids": [
+        "BlaisePlaysTCG/2032863385402957948",
+        "sormiltcg/2032580368956575954"
+      ],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "NightingaleTCG",
       "url": "https://r.jina.ai/https://x.com/NightingaleTCG",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 1562,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "michaelartress",
       "url": "https://r.jina.ai/https://x.com/michaelartress",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 3297,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "ONEPIECE_tcg_EN",
       "url": "https://r.jina.ai/https://x.com/ONEPIECE_tcg_EN",
-      "status": 403,
-      "chars": 619,
+      "status": 401,
+      "chars": 343,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from perfor"
     },
     {
       "handle": "Silvers_D_Foxy",
       "url": "https://r.jina.ai/https://x.com/Silvers_D_Foxy",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 2872,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "LimitlessTCG",
       "url": "https://r.jina.ai/https://x.com/LimitlessTCG",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 2774,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "OPtopdecks",
       "url": "https://r.jina.ai/https://x.com/OPtopdecks",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 3158,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "OPTCGAlert",
       "url": "https://r.jina.ai/https://x.com/OPTCGAlert",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 2763,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "The_Egman",
       "url": "https://r.jina.ai/https://x.com/The_Egman",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 3425,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "Yonxlj",
       "url": "https://r.jina.ai/https://x.com/Yonxlj",
-      "status": 403,
-      "chars": 619,
-      "tweet_ids": [],
+      "status": 200,
+      "chars": 7689,
+      "tweet_ids": [
+        "Yonxlj/2091899489518829875",
+        "Yonxlj/2119059723786088655",
+        "Yonxlj/2118492607558844776",
+        "Yonxlj/2118449536372965705",
+        "Yonxlj/2116726979240108149",
+        "Yonxlj/2118426489645584403"
+      ],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "KuroKumaTCG",
       "url": "https://r.jina.ai/https://x.com/KuroKumaTCG",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 3022,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "Chinoize_",
       "url": "https://r.jina.ai/https://x.com/Chinoize_",
-      "status": 403,
-      "chars": 619,
-      "tweet_ids": [],
+      "status": 200,
+      "chars": 6780,
+      "tweet_ids": [
+        "Chinoize_/2096913649197551866",
+        "Chinoize_/2118468888182833244",
+        "Chinoize_/2118396905311043944",
+        "Chinoize_/2118110860342391009",
+        "Chinoize_/2118056205977293159"
+      ],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "sormiltcg",
       "url": "https://r.jina.ai/https://x.com/sormiltcg",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 2031,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "EgmanEvents",
       "url": "https://r.jina.ai/https://x.com/EgmanEvents",
-      "status": 403,
-      "chars": 619,
+      "status": 401,
+      "chars": 343,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from perfor"
     },
     {
       "handle": "JohnnyTCG",
       "url": "https://r.jina.ai/https://x.com/JohnnyTCG",
-      "status": 403,
-      "chars": 619,
-      "tweet_ids": [],
+      "status": 200,
+      "chars": 2966,
+      "tweet_ids": [
+        "JohnnyTCG/430214269271937024",
+        "JohnnyTCG/380595311019712512",
+        "JohnnyTCG/380589465707618304",
+        "JohnnyTCG/282398687991316480",
+        "JohnnyTCG/281998794843901952"
+      ],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "CapiamoOP",
       "url": "https://r.jina.ai/https://x.com/CapiamoOP",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 1527,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "LeeZ_1111",
       "url": "https://r.jina.ai/https://x.com/LeeZ_1111",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 2393,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "NBAPR",
       "url": "https://r.jina.ai/https://x.com/NBAPR",
-      "status": 403,
-      "chars": 619,
-      "tweet_ids": [],
+      "status": 200,
+      "chars": 8004,
+      "tweet_ids": [
+        "NBAPR/2118782237302985120",
+        "NBAPR/2118733470914556119",
+        "NBAPR/2118418561911882030",
+        "NBAPR/2118403244259221844",
+        "NBAPR/2118389138726535236",
+        "NBAPR/2118387851679187347"
+      ],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "BCGFest",
       "url": "https://r.jina.ai/https://x.com/BCGFest",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 1513,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "BandaiTCG",
       "url": "https://r.jina.ai/https://x.com/BandaiTCG",
-      "status": 403,
-      "chars": 619,
+      "status": 200,
+      "chars": 1527,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": ""
     },
     {
       "handle": "BandaiCardGames",
       "url": "https://r.jina.ai/https://x.com/BandaiCardGames",
-      "status": 403,
-      "chars": 619,
+      "status": 401,
+      "chars": 343,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0,
-      "note": "{\"data\":null,\"code\":403,\"name\":\"AbuseAlleviationError\",\"status\":40305,\"message\":\"Anonymous access to domain x.com blocke"
+      "note": "{\"data\":null,\"code\":401,\"name\":\"AuthenticationRequiredError\",\"status\":40103,\"message\":\"You have been blocked from perfor"
     }
   ],
   "searches": [
     {
       "kind": "ddg",
       "query": "site:x.com \"4xOP17\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14320,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -279,62 +317,62 @@
     {
       "kind": "ddg",
       "query": "site:x.com \"1xOP17-001\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14315,
       "tweet_ids": [],
-      "card_lines": 0,
+      "card_lines": 2,
       "complete_lists": 0
     },
     {
       "kind": "ddg",
       "query": "site:x.com \"1xOP17-039\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14328,
       "tweet_ids": [],
-      "card_lines": 0,
+      "card_lines": 2,
       "complete_lists": 0
     },
     {
       "kind": "ddg",
       "query": "site:x.com \"1xOP17-079\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14310,
       "tweet_ids": [],
-      "card_lines": 0,
+      "card_lines": 2,
       "complete_lists": 0
     },
     {
       "kind": "ddg",
       "query": "site:x.com \"1xOP11-040\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14314,
       "tweet_ids": [],
-      "card_lines": 0,
+      "card_lines": 2,
       "complete_lists": 0
     },
     {
       "kind": "ddg",
       "query": "site:x.com \"1xOP08-058\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14328,
       "tweet_ids": [],
-      "card_lines": 0,
+      "card_lines": 2,
       "complete_lists": 0
     },
     {
       "kind": "ddg",
       "query": "site:x.com \"1xOP16-001\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14316,
       "tweet_ids": [],
-      "card_lines": 0,
+      "card_lines": 2,
       "complete_lists": 0
     },
     {
       "kind": "ddg",
       "query": "site:x.com OP17 decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14310,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -342,8 +380,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com OPTCG decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14312,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -351,8 +389,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com ChinoizeCup since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14306,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -360,8 +398,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com The_Egman decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14300,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -369,8 +407,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com Yonxlj deck-list since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14304,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -378,8 +416,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com MarinefordTCG since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14298,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -387,8 +425,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com CardKaizoku since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14306,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -396,8 +434,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com ChinoizeCup #103 since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14304,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -405,8 +443,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com ChinoizeCup #102 since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14316,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -414,8 +452,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com NightingaleTCG decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14312,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -423,8 +461,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com StrawHatPecan decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14316,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -432,8 +470,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com BlaisePlays decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14318,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -441,8 +479,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com \"4xOP17\"",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14280,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -450,17 +488,17 @@
     {
       "kind": "ddg",
       "query": "site:twitter.com \"4xOP17-040\"",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14288,
       "tweet_ids": [],
-      "card_lines": 0,
+      "card_lines": 2,
       "complete_lists": 0
     },
     {
       "kind": "ddg",
       "query": "site:x.com ChinoizeCup #101 Winner",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14296,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -468,8 +506,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com ChinoizeCup #100 Winner",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14296,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -477,8 +515,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com ワンピカード デッキ since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14286,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -486,8 +524,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com Flame Flame decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14311,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -495,8 +533,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com \"Flame-Flame Fruit\" Utrecht since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14340,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -504,8 +542,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com BCG Fest Utrecht decklist since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14328,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -513,8 +551,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com Flame Flame Winner Robin since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14320,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -522,8 +560,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com \"4xOP17\" since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14308,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -531,8 +569,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com ワンピカード 優勝 デッキ since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14292,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -540,8 +578,8 @@
     {
       "kind": "ddg",
       "query": "site:x.com 紫黄ロビン デッキ since:2026-09-17",
-      "status": 0,
-      "chars": 71,
+      "status": 202,
+      "chars": 14296,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -550,7 +588,7 @@
       "kind": "bing",
       "query": "site:x.com \"4xOP17\" since:2026-09-17",
       "status": 200,
-      "chars": 115976,
+      "chars": 124118,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -558,8 +596,8 @@
     {
       "kind": "jina-google",
       "query": "site:x.com \"4xOP17\" since:2026-09-17",
-      "status": 200,
-      "chars": 2888,
+      "status": 403,
+      "chars": 1283,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -568,97 +606,97 @@
       "kind": "bing",
       "query": "site:x.com \"1xOP17-001\" since:2026-09-17",
       "status": 200,
-      "chars": 120404,
+      "chars": 111967,
       "tweet_ids": [],
-      "card_lines": 23,
+      "card_lines": 21,
       "complete_lists": 0
     },
     {
       "kind": "jina-google",
       "query": "site:x.com \"1xOP17-001\" since:2026-09-17",
-      "status": 200,
-      "chars": 1343,
+      "status": 403,
+      "chars": 1283,
       "tweet_ids": [],
-      "card_lines": 2,
+      "card_lines": 0,
       "complete_lists": 0
     },
     {
       "kind": "bing",
       "query": "site:x.com \"1xOP17-039\" since:2026-09-17",
       "status": 200,
-      "chars": 118664,
+      "chars": 139755,
+      "tweet_ids": [],
+      "card_lines": 23,
+      "complete_lists": 0
+    },
+    {
+      "kind": "jina-google",
+      "query": "site:x.com \"1xOP17-039\" since:2026-09-17",
+      "status": 403,
+      "chars": 1283,
+      "tweet_ids": [],
+      "card_lines": 0,
+      "complete_lists": 0
+    },
+    {
+      "kind": "bing",
+      "query": "site:x.com \"1xOP17-079\" since:2026-09-17",
+      "status": 200,
+      "chars": 124474,
       "tweet_ids": [],
       "card_lines": 22,
       "complete_lists": 0
     },
     {
       "kind": "jina-google",
-      "query": "site:x.com \"1xOP17-039\" since:2026-09-17",
-      "status": 200,
-      "chars": 2859,
-      "tweet_ids": [],
-      "card_lines": 7,
-      "complete_lists": 0
-    },
-    {
-      "kind": "bing",
       "query": "site:x.com \"1xOP17-079\" since:2026-09-17",
-      "status": 200,
-      "chars": 121429,
+      "status": 403,
+      "chars": 1283,
       "tweet_ids": [],
-      "card_lines": 23,
-      "complete_lists": 0
-    },
-    {
-      "kind": "jina-google",
-      "query": "site:x.com \"1xOP17-079\" since:2026-09-17",
-      "status": 200,
-      "chars": 1343,
-      "tweet_ids": [],
-      "card_lines": 2,
+      "card_lines": 0,
       "complete_lists": 0
     },
     {
       "kind": "bing",
       "query": "site:x.com \"1xOP11-040\" since:2026-09-17",
       "status": 200,
-      "chars": 128157,
+      "chars": 151090,
       "tweet_ids": [],
-      "card_lines": 23,
+      "card_lines": 22,
       "complete_lists": 0
     },
     {
       "kind": "jina-google",
       "query": "site:x.com \"1xOP11-040\" since:2026-09-17",
-      "status": 200,
-      "chars": 2635,
+      "status": 403,
+      "chars": 1283,
       "tweet_ids": [],
-      "card_lines": 7,
+      "card_lines": 0,
       "complete_lists": 0
     },
     {
       "kind": "bing",
       "query": "site:x.com \"1xOP08-058\" since:2026-09-17",
       "status": 200,
-      "chars": 118399,
+      "chars": 122789,
       "tweet_ids": [],
-      "card_lines": 18,
+      "card_lines": 22,
       "complete_lists": 0
     },
     {
       "kind": "jina-google",
       "query": "site:x.com \"1xOP08-058\" since:2026-09-17",
-      "status": 200,
-      "chars": 2859,
+      "status": 401,
+      "chars": 343,
       "tweet_ids": [],
-      "card_lines": 7,
+      "card_lines": 0,
       "complete_lists": 0
     },
     {
       "kind": "fx-user",
       "query": "Chinoize_",
-      "status": 200,
-      "chars": 1409,
+      "status": 404,
+      "chars": 39,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -712,7 +750,7 @@
       "kind": "fx-user",
       "query": "The_Egman",
       "status": 200,
-      "chars": 1073,
+      "chars": 1048,
       "tweet_ids": [],
       "card_lines": 0,
       "complete_lists": 0
@@ -748,7 +786,7 @@
       "kind": "yt-desc",
       "query": "Iy8USsETmBk",
       "status": 200,
-      "chars": 1166123,
+      "chars": 1274392,
       "tweet_ids": [],
       "card_lines": 45,
       "complete_lists": 3
@@ -757,7 +795,7 @@
       "kind": "yt-desc",
       "query": "x1bRKDLBD28",
       "status": 200,
-      "chars": 1195877,
+      "chars": 1252581,
       "tweet_ids": [],
       "card_lines": 48,
       "complete_lists": 3
@@ -766,7 +804,7 @@
       "kind": "yt-desc",
       "query": "-8n9oqREEYE",
       "status": 200,
-      "chars": 1218889,
+      "chars": 1345630,
       "tweet_ids": [],
       "card_lines": 51,
       "complete_lists": 3
@@ -1062,10 +1100,854 @@
       "photos": [
         "https://pbs.twimg.com/media/HM-tTXvXAAAp8ia.jpg?name=orig"
       ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2118467879746302201",
+      "url": "https://x.com/cardkaizoku/status/2118467879746302201",
+      "http": 200,
+      "text": "Top 10 EB05 card prices after almost a week\n\nI'm gonna beat up all you Shirahoshi haters",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWZOyN8boAATqO0.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2118073041557336511",
+      "url": "https://x.com/cardkaizoku/status/2118073041557336511",
+      "http": 200,
+      "text": "Current state of EB05",
+      "created": "2026-11-04",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWTkyKFaAAAU-Qj.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2117698046129852904",
+      "url": "https://x.com/cardkaizoku/status/2117698046129852904",
+      "http": 200,
+      "text": "EB05 Deck Prices For Every Budget!\n\nResponses that will answer the same replies I get every time I post one:\n-Prices and decklists are in the video\n-Cheapest version of each card\n-TCGPlayer prices as of 2026-11-02 morning\n-You haven't checked the price of your deck in a while",
+      "created": "2026-11-03",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWOR0thaMAA-z_Y.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2117542557655974051",
+      "url": "https://x.com/cardkaizoku/status/2117542557655974051",
+      "http": 200,
+      "text": "Laid off a year ago 😭",
+      "created": "2026-11-03",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "1984412571953418310",
+      "url": "https://x.com/cardkaizoku/status/1984412571953418310",
+      "http": 200,
+      "text": "Officially unemployed!!!\n\nContent about to go crazy!!!!!",
+      "created": "2025-11-01",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2116323639704670328",
+      "url": "https://x.com/cardkaizoku/status/2116323639704670328",
+      "http": 200,
+      "text": "They nearly trimmed parts of the card's attribute lol wtf\n\nOne Piece has baka centering now?",
+      "created": "2026-10-31",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HV6xIi8a0AALbpQ.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "BlaisePlays",
+      "id": "1623769368092868608",
+      "url": "https://x.com/BlaisePlays/status/1623769368092868608",
+      "http": 200,
+      "text": "Mmmmm",
+      "created": "2023-02-09",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "BlaisePlaysTCG",
+      "id": "2032863385402957948",
+      "url": "https://x.com/BlaisePlaysTCG/status/2032863385402957948",
+      "http": 200,
+      "text": "These “ban lists” getting more and more outta hand every day lmao",
+      "created": "2026-03-14",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "sormiltcg",
+      "id": "2032580368956575954",
+      "url": "https://x.com/sormiltcg/status/2032580368956575954",
+      "http": 200,
+      "text": "Okay I’m genuinely done with the game now. WTF was Bandai thinking with these bans???\n\nAnother game of theirs they just killed. Seriously great work 😔😔😔",
+      "created": "2026-03-13",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HDUtEmvaMAA5zkC.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2091899489518829875",
+      "url": "https://x.com/Yonxlj/status/2091899489518829875",
+      "http": 200,
+      "text": "https://mfy.gg/guides/view/red-ace-ultimate-guide-op17-ajBZ30QBKIm\n\nThe OP17 Update has finally dropped, go check it out and start cooking 🔥🙏\n\nThe Update \n⚜️ OP17 Leader Matchups.\n⚜️ New Deck-list and Options.\n⚜️ Deck Upgrades.\n⚜️ Fundamentals and Psychology to playing a Red Deck.\n\n#optcg #redace #op17 #onepiece",
+      "created": "2026-08-24",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2119059723786088655",
+      "url": "https://x.com/Yonxlj/status/2119059723786088655",
+      "http": 200,
+      "text": "Sheesh 🔥",
+      "created": "2026-11-07",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118492607558844776",
+      "url": "https://x.com/Yonxlj/status/2118492607558844776",
+      "http": 200,
+      "text": "Stream today was fun, thank you for tuning in!\n\nRecord : 13W 5L\n\nThis is the current list after some reworks, I think he has an unfortunate meta spread but he is fun as always and can get wins if pilot is extremely locked in.\n\nRG Luffy and Purple Enel 💀🏃‍♂️\n\n#EB05 #optcg #guffy",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWZly8vWQAAsZDM.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWZly8jWAAA8WlW.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118449536372965705",
+      "url": "https://x.com/Yonxlj/status/2118449536372965705",
+      "http": 200,
+      "text": "Currently 7-0 on eb05 ranked with guffy! \n\n👀 come thru",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2116726979240108149",
+      "url": "https://x.com/Yonxlj/status/2116726979240108149",
+      "http": 200,
+      "text": "Ranked EB05 with 🟢🔵 Luffy went good, RG Luffy & Rocks isn't great. \n\nThe matchup spread could be worse but the restand event seems to be way to reliant as a win con and it needs to be executed perfectly. \n\nWill probably stream more tomorrow! \n\n#eb05 #op17 #onepiece #luffy",
+      "created": "2026-11-01",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWAf99gWkAAajW0.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118426489645584403",
+      "url": "https://x.com/Yonxlj/status/2118426489645584403",
+      "http": 200,
+      "text": "https://www.twitch.tv/yonxlj",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2096913649197551866",
+      "url": "https://x.com/Chinoize_/status/2096913649197551866",
+      "http": 200,
+      "text": "Home from Flame Flame & Finals Utrecht Season 26–27, and what an absolute blast.\n\nIt was an honour to be your caster for the biggest One Piece event so far. I’ll keep working hard to improve wherever I can, and all feedback is always welcome. The goals are clear: Cast Worlds and ChinoizeCup Regionals.\n\nHuge congratulations to @LukaTCG  for taking it all, to @KDZMILLAN  for 2nd place and to @Zyrios",
+      "created": "2026-09-07",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HRmvQPvXQAAc4Y1.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118468888182833244",
+      "url": "https://x.com/Chinoize_/status/2118468888182833244",
+      "http": 200,
+      "text": "We found a way how you can lose with RG Luffy ! \n\nThankyou @MaGe_tcg & @Ryanredpanda 👀😆",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118396905311043944",
+      "url": "https://x.com/Chinoize_/status/2118396905311043944",
+      "http": 200,
+      "text": "📊EB05 Meta: Supernova Dominance! RG Luffy and EB05 Bonney are rising in popularity and win rate! Can anyone besides Black Teach challenge their throne?\n\nRocks, Kaido & Enel are still performing well, but is EB05 Robin already dead? What’s everyone playing in Porto/Bristol? 👀",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYOsrBWUAADziW.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118110860342391009",
+      "url": "https://x.com/Chinoize_/status/2118110860342391009",
+      "http": 200,
+      "text": "EGB EB05 ChinoizeCup #132\n\nWinner: @AdrinCanepa  - RG Luffy\nPlayers: 50\n\n🟩Sugar\n🟩RG Law\n🟩PY Rosinante\n🟩RG Luffy\n🟩Rocks\n🟩Kaido",
+      "created": "2026-11-04",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWUGQmfXQAAw0r0.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWUGRiIWEAA723u.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWUGSiIWAAAHOFF.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWUGTkOWwAAgT1E.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118056205977293159",
+      "url": "https://x.com/Chinoize_/status/2118056205977293159",
+      "http": 200,
+      "text": "EGB EB05 CHINOIZECUP is live! \n\nCasting with @SkepasG \n\nhttps://Www.Twitch.tv/Chinoize",
+      "created": "2026-11-04",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWTY1gzXoAAXjLE.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "JohnnyTCG",
+      "id": "430214269271937024",
+      "url": "https://x.com/JohnnyTCG/status/430214269271937024",
+      "http": 200,
+      "text": "Imma Be.",
+      "created": "2014-02-03",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "JohnnyTCG",
+      "id": "380595311019712512",
+      "url": "https://x.com/JohnnyTCG/status/380595311019712512",
+      "http": 200,
+      "text": "So I guess Insomnia Wins Again #sleepless #insomnia #bored",
+      "created": "2013-09-19",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "JohnnyTCG",
+      "id": "380589465707618304",
+      "url": "https://x.com/JohnnyTCG/status/380589465707618304",
+      "http": 200,
+      "text": "Girls With Glasses. Done Deal Ahaha #WomanCrushWednesday",
+      "created": "2013-09-19",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "JohnnyTCG",
+      "id": "282398687991316480",
+      "url": "https://x.com/JohnnyTCG/status/282398687991316480",
+      "http": 200,
+      "text": "Dubstep Makeing My Ears Bleed :)\n#Dubstep",
+      "created": "2012-12-22",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "JohnnyTCG",
+      "id": "281998794843901952",
+      "url": "https://x.com/JohnnyTCG/status/281998794843901952",
+      "http": 200,
+      "text": "Smells Like Padoozy! >_< Legs, Dick & Pussy Ahahaha!\n#Padoozy #SmellsLikeShit",
+      "created": "2012-12-21",
+      "in_window": false,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118782237302985120",
+      "url": "https://x.com/NBAPR/status/2118782237302985120",
+      "http": 200,
+      "text": "Portland leads the Western Conference at 6-1, its best start since 1999-00.\n\nThe @trailblazers open their @Emirates NBA Cup Group Play schedule tonight when they visit the @Lakers (7-2) at 10 PM ET on @NBAonPrime.",
+      "created": "2026-11-06",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWdq5IIW0AA3NdI.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118733470914556119",
+      "url": "https://x.com/NBAPR/status/2118733470914556119",
+      "http": 200,
+      "text": "Philadelphia can improve to 9-1 tonight, which would mark its best 10-game start since opening 10-0 in 2000-01.\n\nThe @sixers visit the @cavs at 7:30 PM ET on @NBAonPrime in @Emirates NBA Cup Group Play action.",
+      "created": "2026-11-06",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWdAYbrXsAAmkJZ.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118418561911882030",
+      "url": "https://x.com/NBAPR/status/2118418561911882030",
+      "http": 200,
+      "text": "Stephen Curry needs three points to pass Oscar Robertson (26,710) for 17th place on the NBA’s all-time scoring list.\n\nCurry and the @warriors seek their sixth straight win when they host the @MiamiHEAT tonight at 10 PM ET on @NBATV.",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYiR21XsAA30IO.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118403244259221844",
+      "url": "https://x.com/NBAPR/status/2118403244259221844",
+      "http": 200,
+      "text": "Luka Dončić is the first player since Michael Jordan in 1988 to score 300+ points through his first eight games of the season. \n\nDončić has scored 308 total points while shooting 49.5% from the field and 43.1% from three-point range.",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYTLcbW4AAXofJ.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118389138726535236",
+      "url": "https://x.com/NBAPR/status/2118389138726535236",
+      "http": 200,
+      "text": "Wembanyama also became the second-youngest player in NBA history to have 50+ points and 20+ rebounds in a game.\n\nFive youngest players with 50+ points, 20+ rebounds in a game:\n▪️Bob McAdoo, 22 years, 150 days\n▪️Victor Wembanyama, 22 years, 304 days\n▪️Anthony Davis, 22 years, 347 days\n▪️Elvin Hayes, 22 years, 362 days\n▪️Wilt Chamberlain, 23 years, 83 days",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118387851679187347",
+      "url": "https://x.com/NBAPR/status/2118387851679187347",
+      "http": 200,
+      "text": "With last night's performance, Victor Wembanyama became just the fifth player in NBA history to record multiple 50-point games before turning 23 years old.",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYDTPyWIAAfJc1.jpg?name=orig"
+      ]
     }
   ],
-  "in_window_tweets": [],
-  "in_window_photos": [],
+  "in_window_tweets": [
+    {
+      "handle": "cardkaizoku",
+      "id": "2118467879746302201",
+      "url": "https://x.com/cardkaizoku/status/2118467879746302201",
+      "http": 200,
+      "text": "Top 10 EB05 card prices after almost a week\n\nI'm gonna beat up all you Shirahoshi haters",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWZOyN8boAATqO0.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2118073041557336511",
+      "url": "https://x.com/cardkaizoku/status/2118073041557336511",
+      "http": 200,
+      "text": "Current state of EB05",
+      "created": "2026-11-04",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWTkyKFaAAAU-Qj.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2117698046129852904",
+      "url": "https://x.com/cardkaizoku/status/2117698046129852904",
+      "http": 200,
+      "text": "EB05 Deck Prices For Every Budget!\n\nResponses that will answer the same replies I get every time I post one:\n-Prices and decklists are in the video\n-Cheapest version of each card\n-TCGPlayer prices as of 2026-11-02 morning\n-You haven't checked the price of your deck in a while",
+      "created": "2026-11-03",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWOR0thaMAA-z_Y.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2117542557655974051",
+      "url": "https://x.com/cardkaizoku/status/2117542557655974051",
+      "http": 200,
+      "text": "Laid off a year ago 😭",
+      "created": "2026-11-03",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2116323639704670328",
+      "url": "https://x.com/cardkaizoku/status/2116323639704670328",
+      "http": 200,
+      "text": "They nearly trimmed parts of the card's attribute lol wtf\n\nOne Piece has baka centering now?",
+      "created": "2026-10-31",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HV6xIi8a0AALbpQ.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2119059723786088655",
+      "url": "https://x.com/Yonxlj/status/2119059723786088655",
+      "http": 200,
+      "text": "Sheesh 🔥",
+      "created": "2026-11-07",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118492607558844776",
+      "url": "https://x.com/Yonxlj/status/2118492607558844776",
+      "http": 200,
+      "text": "Stream today was fun, thank you for tuning in!\n\nRecord : 13W 5L\n\nThis is the current list after some reworks, I think he has an unfortunate meta spread but he is fun as always and can get wins if pilot is extremely locked in.\n\nRG Luffy and Purple Enel 💀🏃‍♂️\n\n#EB05 #optcg #guffy",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWZly8vWQAAsZDM.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWZly8jWAAA8WlW.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118449536372965705",
+      "url": "https://x.com/Yonxlj/status/2118449536372965705",
+      "http": 200,
+      "text": "Currently 7-0 on eb05 ranked with guffy! \n\n👀 come thru",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2116726979240108149",
+      "url": "https://x.com/Yonxlj/status/2116726979240108149",
+      "http": 200,
+      "text": "Ranked EB05 with 🟢🔵 Luffy went good, RG Luffy & Rocks isn't great. \n\nThe matchup spread could be worse but the restand event seems to be way to reliant as a win con and it needs to be executed perfectly. \n\nWill probably stream more tomorrow! \n\n#eb05 #op17 #onepiece #luffy",
+      "created": "2026-11-01",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWAf99gWkAAajW0.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118426489645584403",
+      "url": "https://x.com/Yonxlj/status/2118426489645584403",
+      "http": 200,
+      "text": "https://www.twitch.tv/yonxlj",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118468888182833244",
+      "url": "https://x.com/Chinoize_/status/2118468888182833244",
+      "http": 200,
+      "text": "We found a way how you can lose with RG Luffy ! \n\nThankyou @MaGe_tcg & @Ryanredpanda 👀😆",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118396905311043944",
+      "url": "https://x.com/Chinoize_/status/2118396905311043944",
+      "http": 200,
+      "text": "📊EB05 Meta: Supernova Dominance! RG Luffy and EB05 Bonney are rising in popularity and win rate! Can anyone besides Black Teach challenge their throne?\n\nRocks, Kaido & Enel are still performing well, but is EB05 Robin already dead? What’s everyone playing in Porto/Bristol? 👀",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYOsrBWUAADziW.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118110860342391009",
+      "url": "https://x.com/Chinoize_/status/2118110860342391009",
+      "http": 200,
+      "text": "EGB EB05 ChinoizeCup #132\n\nWinner: @AdrinCanepa  - RG Luffy\nPlayers: 50\n\n🟩Sugar\n🟩RG Law\n🟩PY Rosinante\n🟩RG Luffy\n🟩Rocks\n🟩Kaido",
+      "created": "2026-11-04",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWUGQmfXQAAw0r0.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWUGRiIWEAA723u.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWUGSiIWAAAHOFF.jpg?name=orig",
+        "https://pbs.twimg.com/media/HWUGTkOWwAAgT1E.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118056205977293159",
+      "url": "https://x.com/Chinoize_/status/2118056205977293159",
+      "http": 200,
+      "text": "EGB EB05 CHINOIZECUP is live! \n\nCasting with @SkepasG \n\nhttps://Www.Twitch.tv/Chinoize",
+      "created": "2026-11-04",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWTY1gzXoAAXjLE.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118782237302985120",
+      "url": "https://x.com/NBAPR/status/2118782237302985120",
+      "http": 200,
+      "text": "Portland leads the Western Conference at 6-1, its best start since 1999-00.\n\nThe @trailblazers open their @Emirates NBA Cup Group Play schedule tonight when they visit the @Lakers (7-2) at 10 PM ET on @NBAonPrime.",
+      "created": "2026-11-06",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWdq5IIW0AA3NdI.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118733470914556119",
+      "url": "https://x.com/NBAPR/status/2118733470914556119",
+      "http": 200,
+      "text": "Philadelphia can improve to 9-1 tonight, which would mark its best 10-game start since opening 10-0 in 2000-01.\n\nThe @sixers visit the @cavs at 7:30 PM ET on @NBAonPrime in @Emirates NBA Cup Group Play action.",
+      "created": "2026-11-06",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWdAYbrXsAAmkJZ.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118418561911882030",
+      "url": "https://x.com/NBAPR/status/2118418561911882030",
+      "http": 200,
+      "text": "Stephen Curry needs three points to pass Oscar Robertson (26,710) for 17th place on the NBA’s all-time scoring list.\n\nCurry and the @warriors seek their sixth straight win when they host the @MiamiHEAT tonight at 10 PM ET on @NBATV.",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYiR21XsAA30IO.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118403244259221844",
+      "url": "https://x.com/NBAPR/status/2118403244259221844",
+      "http": 200,
+      "text": "Luka Dončić is the first player since Michael Jordan in 1988 to score 300+ points through his first eight games of the season. \n\nDončić has scored 308 total points while shooting 49.5% from the field and 43.1% from three-point range.",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYTLcbW4AAXofJ.jpg?name=orig"
+      ]
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118389138726535236",
+      "url": "https://x.com/NBAPR/status/2118389138726535236",
+      "http": 200,
+      "text": "Wembanyama also became the second-youngest player in NBA history to have 50+ points and 20+ rebounds in a game.\n\nFive youngest players with 50+ points, 20+ rebounds in a game:\n▪️Bob McAdoo, 22 years, 150 days\n▪️Victor Wembanyama, 22 years, 304 days\n▪️Anthony Davis, 22 years, 347 days\n▪️Elvin Hayes, 22 years, 362 days\n▪️Wilt Chamberlain, 23 years, 83 days",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": []
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118387851679187347",
+      "url": "https://x.com/NBAPR/status/2118387851679187347",
+      "http": 200,
+      "text": "With last night's performance, Victor Wembanyama became just the fifth player in NBA history to record multiple 50-point games before turning 23 years old.",
+      "created": "2026-11-05",
+      "in_window": true,
+      "card_lines": 0,
+      "complete_lists": 0,
+      "photos": [
+        "https://pbs.twimg.com/media/HWYDTPyWIAAfJc1.jpg?name=orig"
+      ]
+    }
+  ],
+  "in_window_photos": [
+    {
+      "handle": "cardkaizoku",
+      "id": "2118467879746302201",
+      "url": "https://x.com/cardkaizoku/status/2118467879746302201",
+      "created": "2026-11-05",
+      "photo": "https://pbs.twimg.com/media/HWZOyN8boAATqO0.jpg?name=orig",
+      "saved": "/workspace/data/x-media/cardkaizoku-2118467879746302201-0.jpg",
+      "bytes": 285181
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2118073041557336511",
+      "url": "https://x.com/cardkaizoku/status/2118073041557336511",
+      "created": "2026-11-04",
+      "photo": "https://pbs.twimg.com/media/HWTkyKFaAAAU-Qj.jpg?name=orig",
+      "saved": "/workspace/data/x-media/cardkaizoku-2118073041557336511-0.jpg",
+      "bytes": 540255
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2117698046129852904",
+      "url": "https://x.com/cardkaizoku/status/2117698046129852904",
+      "created": "2026-11-03",
+      "photo": "https://pbs.twimg.com/media/HWOR0thaMAA-z_Y.jpg?name=orig",
+      "saved": "/workspace/data/x-media/cardkaizoku-2117698046129852904-0.jpg",
+      "bytes": 335531
+    },
+    {
+      "handle": "cardkaizoku",
+      "id": "2116323639704670328",
+      "url": "https://x.com/cardkaizoku/status/2116323639704670328",
+      "created": "2026-10-31",
+      "photo": "https://pbs.twimg.com/media/HV6xIi8a0AALbpQ.jpg?name=orig",
+      "saved": "/workspace/data/x-media/cardkaizoku-2116323639704670328-0.jpg",
+      "bytes": 1004548
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118492607558844776",
+      "url": "https://x.com/Yonxlj/status/2118492607558844776",
+      "created": "2026-11-05",
+      "photo": "https://pbs.twimg.com/media/HWZly8vWQAAsZDM.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Yonxlj-2118492607558844776-0.jpg",
+      "bytes": 364936
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2118492607558844776",
+      "url": "https://x.com/Yonxlj/status/2118492607558844776",
+      "created": "2026-11-05",
+      "photo": "https://pbs.twimg.com/media/HWZly8jWAAA8WlW.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Yonxlj-2118492607558844776-1.jpg",
+      "bytes": 579505
+    },
+    {
+      "handle": "Yonxlj",
+      "id": "2116726979240108149",
+      "url": "https://x.com/Yonxlj/status/2116726979240108149",
+      "created": "2026-11-01",
+      "photo": "https://pbs.twimg.com/media/HWAf99gWkAAajW0.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Yonxlj-2116726979240108149-0.jpg",
+      "bytes": 174741
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118396905311043944",
+      "url": "https://x.com/Chinoize_/status/2118396905311043944",
+      "created": "2026-11-05",
+      "photo": "https://pbs.twimg.com/media/HWYOsrBWUAADziW.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Chinoize_-2118396905311043944-0.jpg",
+      "bytes": 318896
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118110860342391009",
+      "url": "https://x.com/Chinoize_/status/2118110860342391009",
+      "created": "2026-11-04",
+      "photo": "https://pbs.twimg.com/media/HWUGQmfXQAAw0r0.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Chinoize_-2118110860342391009-0.jpg",
+      "bytes": 165751
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118110860342391009",
+      "url": "https://x.com/Chinoize_/status/2118110860342391009",
+      "created": "2026-11-04",
+      "photo": "https://pbs.twimg.com/media/HWUGRiIWEAA723u.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Chinoize_-2118110860342391009-1.jpg",
+      "bytes": 164126
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118110860342391009",
+      "url": "https://x.com/Chinoize_/status/2118110860342391009",
+      "created": "2026-11-04",
+      "photo": "https://pbs.twimg.com/media/HWUGSiIWAAAHOFF.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Chinoize_-2118110860342391009-2.jpg",
+      "bytes": 167170
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118110860342391009",
+      "url": "https://x.com/Chinoize_/status/2118110860342391009",
+      "created": "2026-11-04",
+      "photo": "https://pbs.twimg.com/media/HWUGTkOWwAAgT1E.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Chinoize_-2118110860342391009-3.jpg",
+      "bytes": 173898
+    },
+    {
+      "handle": "Chinoize_",
+      "id": "2118056205977293159",
+      "url": "https://x.com/Chinoize_/status/2118056205977293159",
+      "created": "2026-11-04",
+      "photo": "https://pbs.twimg.com/media/HWTY1gzXoAAXjLE.jpg?name=orig",
+      "saved": "/workspace/data/x-media/Chinoize_-2118056205977293159-0.jpg",
+      "bytes": 435867
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118782237302985120",
+      "url": "https://x.com/NBAPR/status/2118782237302985120",
+      "created": "2026-11-06",
+      "photo": "https://pbs.twimg.com/media/HWdq5IIW0AA3NdI.jpg?name=orig",
+      "saved": "/workspace/data/x-media/NBAPR-2118782237302985120-0.jpg",
+      "bytes": 1141763
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118733470914556119",
+      "url": "https://x.com/NBAPR/status/2118733470914556119",
+      "created": "2026-11-06",
+      "photo": "https://pbs.twimg.com/media/HWdAYbrXsAAmkJZ.jpg?name=orig",
+      "saved": "/workspace/data/x-media/NBAPR-2118733470914556119-0.jpg",
+      "bytes": 1205154
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118418561911882030",
+      "url": "https://x.com/NBAPR/status/2118418561911882030",
+      "created": "2026-11-05",
+      "photo": "https://pbs.twimg.com/media/HWYiR21XsAA30IO.jpg?name=orig",
+      "saved": "/workspace/data/x-media/NBAPR-2118418561911882030-0.jpg",
+      "bytes": 1047223
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118403244259221844",
+      "url": "https://x.com/NBAPR/status/2118403244259221844",
+      "created": "2026-11-05",
+      "photo": "https://pbs.twimg.com/media/HWYTLcbW4AAXofJ.jpg?name=orig",
+      "saved": "/workspace/data/x-media/NBAPR-2118403244259221844-0.jpg",
+      "bytes": 1342980
+    },
+    {
+      "handle": "NBAPR",
+      "id": "2118387851679187347",
+      "url": "https://x.com/NBAPR/status/2118387851679187347",
+      "created": "2026-11-05",
+      "photo": "https://pbs.twimg.com/media/HWYDTPyWIAAfJc1.jpg?name=orig",
+      "saved": "/workspace/data/x-media/NBAPR-2118387851679187347-0.jpg",
+      "bytes": 1426198
+    }
+  ],
   "complete_lists": [
     {
       "source": "Iy8USsETmBk",
@@ -1124,6 +2006,97 @@
   ],
   "partial_id_hits": [
     {
+      "source": "ddg:site:x.com \"1xOP17-001\" since:2026-09-17",
+      "hits": [
+        [
+          1,
+          "OP17-001"
+        ],
+        [
+          1,
+          "OP17-001"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP17-039\" since:2026-09-17",
+      "hits": [
+        [
+          1,
+          "OP17-039"
+        ],
+        [
+          1,
+          "OP17-039"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP17-079\" since:2026-09-17",
+      "hits": [
+        [
+          1,
+          "OP17-079"
+        ],
+        [
+          1,
+          "OP17-079"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP11-040\" since:2026-09-17",
+      "hits": [
+        [
+          1,
+          "OP11-040"
+        ],
+        [
+          1,
+          "OP11-040"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP08-058\" since:2026-09-17",
+      "hits": [
+        [
+          1,
+          "OP08-058"
+        ],
+        [
+          1,
+          "OP08-058"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:x.com \"1xOP16-001\" since:2026-09-17",
+      "hits": [
+        [
+          1,
+          "OP16-001"
+        ],
+        [
+          1,
+          "OP16-001"
+        ]
+      ]
+    },
+    {
+      "source": "ddg:site:twitter.com \"4xOP17-040\"",
+      "hits": [
+        [
+          4,
+          "OP17-040"
+        ],
+        [
+          4,
+          "OP17-040"
+        ]
+      ]
+    },
+    {
       "source": "bing:site:x.com \"1xOP17-001\" since:2026-09-17",
       "hits": [
         [
@@ -1171,19 +2144,6 @@
           "OP17-001"
         ],
         [
-          1,
-          "OP17-001"
-        ]
-      ]
-    },
-    {
-      "source": "jina-google:site:x.com \"1xOP17-001\" since:2026-09-17",
-      "hits": [
-        [
-          221,
-          "OP17-001"
-        ],
-        [
           221,
           "OP17-001"
         ]
@@ -1222,39 +2182,6 @@
         ],
         [
           1,
-          "OP17-039"
-        ],
-        [
-          221,
-          "OP17-039"
-        ],
-        [
-          221,
-          "OP17-039"
-        ],
-        [
-          221,
-          "OP17-039"
-        ],
-        [
-          1,
-          "OP17-039"
-        ]
-      ]
-    },
-    {
-      "source": "jina-google:site:x.com \"1xOP17-039\" since:2026-09-17",
-      "hits": [
-        [
-          221,
-          "OP17-039"
-        ],
-        [
-          221,
-          "OP17-039"
-        ],
-        [
-          221,
           "OP17-039"
         ],
         [
@@ -1329,19 +2256,6 @@
       ]
     },
     {
-      "source": "jina-google:site:x.com \"1xOP17-079\" since:2026-09-17",
-      "hits": [
-        [
-          221,
-          "OP17-079"
-        ],
-        [
-          221,
-          "OP17-079"
-        ]
-      ]
-    },
-    {
       "source": "bing:site:x.com \"1xOP11-040\" since:2026-09-17",
       "hits": [
         [
@@ -1373,10 +2287,6 @@
           "OP11-040"
         ],
         [
-          25221,
-          "OP11-040"
-        ],
-        [
           1,
           "OP11-040"
         ],
@@ -1391,38 +2301,9 @@
         [
           221,
           "OP11-040"
-        ]
-      ]
-    },
-    {
-      "source": "jina-google:site:x.com \"1xOP11-040\" since:2026-09-17",
-      "hits": [
-        [
-          221,
-          "OP11-040"
         ],
         [
-          221,
-          "OP11-040"
-        ],
-        [
-          221,
-          "OP11-040"
-        ],
-        [
-          221,
-          "OP11-040"
-        ],
-        [
-          221,
-          "OP11-040"
-        ],
-        [
-          221,
-          "OP11-040"
-        ],
-        [
-          221,
+          1,
           "OP11-040"
         ]
       ]
@@ -1475,40 +2356,7 @@
           "OP08-058"
         ],
         [
-          221,
-          "OP08-058"
-        ]
-      ]
-    },
-    {
-      "source": "jina-google:site:x.com \"1xOP08-058\" since:2026-09-17",
-      "hits": [
-        [
-          221,
-          "OP08-058"
-        ],
-        [
-          221,
-          "OP08-058"
-        ],
-        [
-          221,
-          "OP08-058"
-        ],
-        [
-          221,
-          "OP08-058"
-        ],
-        [
-          221,
-          "OP08-058"
-        ],
-        [
-          221,
-          "OP08-058"
-        ],
-        [
-          221,
+          1,
           "OP08-058"
         ]
       ]
@@ -1731,9 +2579,7 @@
       "text": "OP17 Luffy decklist based on all the support cards we have seen so far."
     }
   ],
-  "notes": [
-    "Zero in-window tweet IDs were discovered. ChinoizeCup #101 (Limitless, 2026-08-25) and #100 (2026-08-24) almost certainly have winner posts on @Chinoize_, but those status IDs are not in public search indexes from this environment."
-  ],
+  "notes": [],
   "hosted": [
     {
       "slug": "x-chinoize-101-mage-mihawk",
