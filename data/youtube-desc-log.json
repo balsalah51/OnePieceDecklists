@@ -1,4 +1,38 @@
 {
-  "found": [],
-  "tweets": []
+  "found": [
+    {
+      "leader": "OP17-079",
+      "kind": "youtube",
+      "player": "YouTube",
+      "title": "Monkey D Luffy YouTube list",
+      "subtitle": "YouTube deck profile from a public description · 2026-08-28",
+      "source_url": "https://www.youtube.com/watch?v=x1bRKDLBD28",
+      "slug": "yt-youtube-monkey-d-luffy-x1brkdlbd28",
+      "raw": "1xOP17-079 2xOP17-084 4xOP17-086 4xOP17-094 3xOP05-081 4xOP17-080 4xOP17-081 3xOP17-082 3xOP17-087 3xOP17-091 4xOP15-088 4xOP17-119 3xOP15-092 4xOP17-093 2xOP07-096 3xOP17-098",
+      "cards": 50,
+      "date": "2026-08-28"
+    },
+    {
+      "leader": "OP11-040",
+      "kind": "youtube",
+      "player": "NightingaleTCG",
+      "title": "OP17 UP Luffy gets TWO new 9 costs - Nightingale",
+      "subtitle": "YouTube deck profile · also on X @BenSchumi7",
+      "source_url": "https://www.youtube.com/watch?v=rlffBOdE4qs",
+      "slug": "yt-nightingale-up-luffy-rlffbode4qs",
+      "raw": "1xOP11-040 4xOP13-043 3xOP16-056 3xOP17-046 4xOP11-054 4xOP06-119 4xOP05-067 4xOP17-074 4xST18-001 4xEB01-061 4xP-107 2xOP17-064 2xOP17-065 4xOP09-078 4xOP11-080",
+      "cards": 50
+    },
+    {
+      "leader": "OP11-040",
+      "kind": "youtube",
+      "player": "ArtressTCG",
+      "title": "Mr.3 Brings Back UP Luffy - Artress",
+      "subtitle": "YouTube + EgmanEvents deck builder",
+      "source_url": "https://www.youtube.com/watch?v=-M5JW91P5BE",
+      "slug": "yt-artress-up-luffy-m5jw91p5be",
+      "raw": "1xOP11-040 1xOP15-047 4xOP06-119 4xP-107 4xOP07-051 2xOP07-064 4xST18-001 4xOP11-054 2xP-053 2xEB03-034 4xOP16-056 4xOP09-078 4xOP11-080 2xOP14-077 4xOP08-076 1xOP06-058 4xEB01-061",
+      "cards": 50
+    }
+  ]
 }
