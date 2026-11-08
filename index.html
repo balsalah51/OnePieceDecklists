@@ -9,7 +9,7 @@
     <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-<link rel="stylesheet" href="/css/site.css?v=home-pro25" />
+<link rel="stylesheet" href="/css/site.css?v=home-banner26" />
   <link rel="canonical" href="https://onepiecedecklists.com/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -99,18 +99,18 @@
         <section class="home-splash" id="home-splash" aria-label="One Piece Decklists banners" style="--splash-i:0">
           <div class="home-splash-viewport">
             <div class="home-splash-track">
-              <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo" width="1920" height="960" fetchpriority="high" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-six" src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-meta.jpg?v=nov8" alt="One Piece Decklists with RG Luffy, Rocks D. Xebec, Enel, and Kaido" width="1920" height="1080" fetchpriority="high" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg?v=nov8" alt="One Piece Decklists with RG Luffy" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-rocks.jpg?v=nov8" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-enel.jpg?v=nov8" alt="One Piece Decklists with Enel" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-kaido.jpg?v=nov8" alt="One Piece Decklists with Kaido" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-hancock.jpg?v=nov8" alt="One Piece Decklists with Boa Hancock" width="1920" height="1080" decoding="async" />
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
-          <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
-            <img src="/img/cards/OP09/OP09-062.webp" alt="Nico Robin leader card" width="300" height="419" />
-            <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
+          <a class="home-splash-card" data-splash-card href="/decklists/rg-luffy.html" aria-label="RG Luffy lists">
+            <img src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy leader card" width="300" height="419" />
+            <span class="home-splash-card-label" data-splash-card-label>RG Luffy lists</span>
           </a>
           <div class="home-splash-nav">
             <button type="button" data-splash-prev aria-label="Previous banner">‹</button>
@@ -131,10 +131,11 @@
           if(!root) return;
           var faces=[
             {name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"/img/cards/OP13/OP13-001.webp"},
+            {name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"/img/cards/OP13/OP13-001.webp"},
             {name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"/img/cards/OP17/OP17-039.webp"},
             {name:"Enel",href:"/decklists/op05-enel.html",img:"/img/cards/OP05/OP05-098.webp"},
             {name:"Kaido",href:"/decklists/op17/kaido.html",img:"/img/cards/OP17/OP17-058.webp"},
-            {name:"Nico Robin",href:"/decklists/nico-robin.html",img:"/img/cards/OP09/OP09-062.webp"}
+            {name:"Boa Hancock",href:"/decklists/boa-hancock.html",img:"/img/cards/OP14/OP14-041.webp"}
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];
@@ -159,355 +160,6 @@
             <button type="submit">Search</button>
           </div>
         </form>
-
-        <a class="events-banner" id="events" href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">
-          <div>
-            <div class="kicker">Official calendar</div>
-            <div class="title">ONE PIECE CARD GAME events</div>
-            <div class="muted" style="margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
-          </div>
-          <div class="go">Official events →</div>
-        </a>
-
-        <nav class="home-big3" aria-label="Main sections">
-          <a class="home-big home-big-tier" href="/tier-list.html">
-            <span class="home-big-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.1 13.85 5.2h-3.7L12 2.1Z"/>
-                <rect x="10.15" y="5.35" width="3.7" height="1.85" rx="0.4"/>
-                <path d="M9 20.6V8.9h6v11.7H9Z"/>
-                <path d="M3.6 20.6v-6.4H9v6.4H3.6Z" opacity=".88"/>
-                <path d="M15 20.6v-4.7h5.4v4.7H15Z" opacity=".72"/>
-              </svg>
-            </span>
-            <span class="home-big-title">Tier List</span>
-            <span class="home-big-note">OP17 S through D with leader pictures</span>
-          </a>
-          <a class="home-big home-big-egb" href="/extra-grand-battle.html">
-            <span class="home-big-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="8"/>
-                <path d="M12 8v8M8 12h8"/>
-              </svg>
-            </span>
-            <span class="home-big-title">Extra Grand Battle</span>
-            <span class="home-big-note">EXTRA cups with their own pie, tier, and recent lists</span>
-          </a>
-          <a class="home-big home-big-recent" href="#recent">
-            <span class="home-big-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-                <path d="M8 7h11M8 12h11M8 17h11M4 7h.01M4 12h.01M4 17h.01"/>
-              </svg>
-            </span>
-            <span class="home-big-title">Recent Lists</span>
-            <span class="home-big-note">Newest complete 50-card results</span>
-          </a>
-          <a class="home-big home-big-leaders" href="#leaders">
-            <span class="home-big-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="5" width="12" height="16" rx="2"/>
-                <rect x="9" y="3" width="12" height="16" rx="2"/>
-              </svg>
-            </span>
-            <span class="home-big-title">Leaders</span>
-            <span class="home-big-note">Top ten from the newest 200 lists</span>
-          </a>
-          <a class="home-big home-big-shop" href="/shop/">
-            <span class="home-big-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 8h12l-1 12H7L6 8Z"/>
-                <path d="M9 8V7a3 3 0 0 1 6 0v1"/>
-              </svg>
-            </span>
-            <span class="home-big-title">Shop</span>
-            <span class="home-big-note">Sleeves, dice, playmats, and deck boxes</span>
-          </a>
-          <a class="home-big home-big-discord" href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">
-            <span class="home-big-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.3 5.2A17.4 17.4 0 0 0 14.9 4l-.2.4a15.2 15.2 0 0 1 3.6 1.1c-3.3-1.5-6.6-1.5-9.8 0 .4-.2.9-.4 1.3-.6l-.2-.4A17.3 17.3 0 0 0 4.7 5.2C1.9 9.4 1.1 13.5 1.5 17.5a17.7 17.7 0 0 0 5.4 2.7l.7-1.1a11.5 11.5 0 0 1-2.1-1l.2-.1c1.6.7 3.3 1.2 5.1 1.2s3.5-.4 5.1-1.2l.2.1a11.5 11.5 0 0 1-2.1 1l.7 1.1a17.7 17.7 0 0 0 5.4-2.7c.5-4.6-.7-8.7-3.8-12.3ZM8.8 14.8c-1 0-1.9-.9-1.9-2s.8-2 1.9-2 1.9.9 1.9 2-.8 2-1.9 2Zm6.4 0c-1 0-1.9-.9-1.9-2s.8-2 1.9-2 1.9.9 1.9 2-.8 2-1.9 2Z"/>
-              </svg>
-            </span>
-            <span class="home-big-title">Discord</span>
-            <span class="home-big-note">Share lists and talk the meta</span>
-          </a>
-        </nav>
-
-        <section class="card home-panel home-featured" id="featured">
-          <p class="home-leaders-kicker">Top cuts</p>
-          <div class="section-title">
-            <h3>Featured results</h3>
-            <a href="/recent.html">All recent →</a>
-          </div>
-          <p class="muted home-recent-lede">First through fourth from hosted events. Regionals, championships, and finals sit ahead of online cups. One list per leader when we can.</p>
-          <div class="featured-grid">
-            <a class="featured-card color-red-green is-major" href="/decklists/luffy-ace/1st-shirohige06-grand-line-cyprus-season-2-finals.html">
-              <span class="featured-place">1st</span>
-              <img src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">shirohige06 - Luffy &amp; Ace</div>
-                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
-              </div>
-            </a>
-            <a class="featured-card color-purple-yellow is-major" href="/decklists/rosinante/2nd-thunderb8-grand-line-cyprus-season-2-finals.html">
-              <span class="featured-place">2nd</span>
-              <img src="/img/cards/OP12/OP12-061.webp" alt="Rosinante leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">thunderb8 - Rosinante</div>
-                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
-              </div>
-            </a>
-            <a class="featured-card color-purple is-major" href="/decklists/enel/3rd-mavros-grand-line-cyprus-season-2-finals.html">
-              <span class="featured-place">3rd</span>
-              <img src="/img/cards/OP15/OP15-058.webp" alt="Enel leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">Mavros - Enel</div>
-                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
-              </div>
-            </a>
-            <a class="featured-card color-black is-major" href="/decklists/op17/monkey-d-luffy/4th-salamander23-grand-line-cyprus-season-2-finals.html">
-              <span class="featured-place">4th</span>
-              <img src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">Salamander23 - Monkey D. Luffy</div>
-                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
-              </div>
-            </a>
-            <a class="featured-card color-purple" href="/decklists/op17/kaido/2nd-pio-cattoni-bokogod-liga-phoenix-2026-one-piece-mana-43.html">
-              <span class="featured-place">2nd</span>
-              <img src="/img/cards/OP17/OP17-058.webp" alt="Kaido leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">Pio Cattoni [Bokogod] - Kaido</div>
-                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 43 · 2026-11-03</div>
-              </div>
-            </a>
-            <a class="featured-card color-blue" href="/decklists/op17/rocks-d-xebec/2nd-jos-cuevas-southblue-liga-phoenix-2026-one-piece-mana-42.html">
-              <span class="featured-place">2nd</span>
-              <img src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">José Cuevas [SouthBlue] - Rocks D. Xebec</div>
-                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 42 · 2026-10-27</div>
-              </div>
-            </a>
-            <a class="featured-card color-red-black" href="/decklists/sabo/3rd-juli-n-piergiacomi-liga-phoenix-2026-one-piece-mana-41.html">
-              <span class="featured-place">3rd</span>
-              <img src="/img/cards/OP13/OP13-004.webp" alt="Sabo leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">Julián Piergiacomi - Sabo</div>
-                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 41 · 2026-10-20</div>
-              </div>
-            </a>
-            <a class="featured-card color-yellow" href="/decklists/op05-enel/4th-gonzalo-alonso-liga-phoenix-2026-one-piece-mana-41.html">
-              <span class="featured-place">4th</span>
-              <img src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel leader card" width="72" height="100" loading="lazy" decoding="async" />
-              <div class="featured-copy">
-                <div class="who">Gonzalo Alonso - OP05 Enel</div>
-                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 41 · 2026-10-20</div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="card home-panel home-notes" id="meta-notes">
-          <p class="home-leaders-kicker">Original notes</p>
-          <div class="section-title">
-            <h3>This week in the meta</h3>
-            <a href="/guides/weekly-meta.html">Full write-up →</a>
-          </div>
-          <p class="home-notes-lede">RG Luffy shows up on 55 of the newest 200 hosted lists, and 27.8% of lists that play an OP17 card. Rocks D. Xebec (40) and OP05 Enel (15) are the next names in that window. RG Luffy has the best first-place rate in the same slice: 4 firsts from 50 placed lists (8.0%). That is a first-place rate, not a game win rate.</p>
-          <div class="home-notes-grid">
-            <a class="home-note" href="/guides/weekly-meta.html">
-              <span class="kicker">Weekly meta</span>
-              <strong>What the hosted lists are actually playing</strong>
-              <span>A short read on the tier list, the share chart, and which names are filling recent events.</span>
-            </a>
-            <a class="home-note" href="/guides/matchups.html">
-              <span class="kicker">Matchup notes</span>
-              <strong>How the top leaders attack each other</strong>
-              <span>Printed leader text, plus the Mihawk pairing counts already on this site. No copied tier graphic.</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="card home-panel home-meta-pie" id="meta-share">
-          <p class="home-leaders-kicker">Format share</p>
-          <div class="section-title">
-            <h3>OP17 lists</h3>
-            <a href="/tier-list.html">Tier list →</a>
-          </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one OP17 card. The hole is the leader converting best among these lists. Names sit on every slice.</p>
-          <div class="meta-pie-board">
-            <div class="meta-pie-disk" style="background:conic-gradient(#b71c1c 0.00% 27.53%, #1565c0 28.09% 52.97%, #c9a227 53.53% 63.03%, #6a1b9a 63.59% 70.73%, #6096d4 71.29% 74.28%, #ce6565 74.84% 77.53%, #212121 78.09% 80.79%, #2e7d32 81.35% 83.74%, #71a774 84.30% 86.70%, #9a64ba 87.26% 89.66%, #8a8580 90.22% 100.00%)">
-              <a class="meta-pie-hole" href="/decklists/rg-luffy.html" aria-label="RG Luffy"><img class="meta-pie-hole-face" src="/img/cards/OP13/OP13-001.webp" alt="" width="220" height="220" /></a>
-              <a class="meta-pie-on" href="/decklists/rg-luffy.html" style="left:82.20%;top:23.04%">RG Luffy</a>
-              <a class="meta-pie-on" href="/decklists/op17/rocks-d-xebec.html" style="left:73.54%;top:84.79%">Rocks</a>
-              <a class="meta-pie-on" href="/decklists/op05-enel.html" style="left:29.11%;top:86.44%">OP05 Enel</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/op17/kaido.html" style="left:9.91%;top:71.52%">Kaido</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/boa-hancock.html" style="left:15.83%;top:54.79%">Boa</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/sabo.html" style="left:4.63%;top:46.62%">Sabo</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/op17/monkey-d-luffy.html" style="left:16.83%;top:40.50%">Luffy</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/op17/shanks.html" style="left:9.52%;top:29.23%">Shanks</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/eb05-nico-robin.html" style="left:22.74%;top:28.85%">Robin</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/rosinante.html" style="left:19.83%;top:15.94%">Rosinante</a>
-              <a class="meta-pie-on" href="/decklists/op17.html" style="left:36.95%;top:10.08%">Other</a>
-            </div>
-            <ul class="meta-pie-legend" aria-label="OP17 list share">
-            <li style="--slice:#b71c1c">
-              <span class="meta-pie-swatch" style="background:#b71c1c"></span>
-              <img class="meta-pie-face" src="/img/cards/OP13/OP13-001.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/rg-luffy.html">RG Luffy</a>
-                <span class="meta-pie-legend-tier">A · 24</span>
-              </span>
-              <span class="meta-pie-legend-pct">28%</span>
-            </li>
-            <li style="--slice:#1565c0">
-              <span class="meta-pie-swatch" style="background:#1565c0"></span>
-              <img class="meta-pie-face" src="/img/cards/OP17/OP17-039.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/op17/rocks-d-xebec.html">Rocks D. Xebec</a>
-                <span class="meta-pie-legend-tier">S · 62</span>
-              </span>
-              <span class="meta-pie-legend-pct">25%</span>
-            </li>
-            <li style="--slice:#c9a227">
-              <span class="meta-pie-swatch" style="background:#c9a227"></span>
-              <img class="meta-pie-face" src="/img/cards/OP05/OP05-098.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/op05-enel.html">OP05 Enel</a>
-                <span class="meta-pie-legend-tier">B · 9</span>
-              </span>
-              <span class="meta-pie-legend-pct">10%</span>
-            </li>
-            <li style="--slice:#6a1b9a">
-              <span class="meta-pie-swatch" style="background:#6a1b9a"></span>
-              <img class="meta-pie-face" src="/img/cards/OP17/OP17-058.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/op17/kaido.html">Kaido</a>
-                <span class="meta-pie-legend-tier">A · 27</span>
-              </span>
-              <span class="meta-pie-legend-pct">7.7%</span>
-            </li>
-            <li style="--slice:#6096d4">
-              <span class="meta-pie-swatch" style="background:#6096d4"></span>
-              <img class="meta-pie-face" src="/img/cards/OP14/OP14-041.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/boa-hancock.html">Boa Hancock</a>
-                <span class="meta-pie-legend-tier">A · 17</span>
-              </span>
-              <span class="meta-pie-legend-pct">3.6%</span>
-            </li>
-            <li style="--slice:#ce6565">
-              <span class="meta-pie-swatch" style="background:#ce6565"></span>
-              <img class="meta-pie-face" src="/img/cards/OP13/OP13-004.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/sabo.html">Sabo</a>
-                <span class="meta-pie-legend-tier">S · 35</span>
-              </span>
-              <span class="meta-pie-legend-pct">3.3%</span>
-            </li>
-            <li style="--slice:#212121">
-              <span class="meta-pie-swatch" style="background:#212121"></span>
-              <img class="meta-pie-face" src="/img/cards/OP17/OP17-079.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/op17/monkey-d-luffy.html">Monkey D. Luffy</a>
-                <span class="meta-pie-legend-tier">A · 30</span>
-              </span>
-              <span class="meta-pie-legend-pct">3.3%</span>
-            </li>
-            <li style="--slice:#2e7d32">
-              <span class="meta-pie-swatch" style="background:#2e7d32"></span>
-              <img class="meta-pie-face" src="/img/cards/OP17/OP17-020.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/op17/shanks.html">Shanks</a>
-                <span class="meta-pie-legend-tier">A · 17</span>
-              </span>
-              <span class="meta-pie-legend-pct">3.0%</span>
-            </li>
-            <li style="--slice:#71a774">
-              <span class="meta-pie-swatch" style="background:#71a774"></span>
-              <img class="meta-pie-face" src="/img/cards/EB05/EB05-010.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/eb05-nico-robin.html">Nico Robin</a>
-                <span class="meta-pie-legend-tier">C · 4</span>
-              </span>
-              <span class="meta-pie-legend-pct">3.0%</span>
-            </li>
-            <li style="--slice:#9a64ba">
-              <span class="meta-pie-swatch" style="background:#9a64ba"></span>
-              <img class="meta-pie-face" src="/img/cards/OP12/OP12-061.webp" alt="" width="48" height="48" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/rosinante.html">Rosinante</a>
-                <span class="meta-pie-legend-tier">B · 11</span>
-              </span>
-              <span class="meta-pie-legend-pct">3.0%</span>
-            </li>
-            <li style="--slice:#8a8580">
-              <span class="meta-pie-swatch" style="background:#8a8580"></span>
-              <span class="meta-pie-face meta-pie-face-empty" aria-hidden="true"></span>
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/op17.html">Other</a>
-                <span class="meta-pie-legend-tier">Unranked</span>
-              </span>
-              <span class="meta-pie-legend-pct">10%</span>
-            </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="home-leaders-flow" id="leaders">
-          <div class="home-leaders-intro">
-            <p class="home-leaders-kicker">Popular now</p>
-            <div class="home-leaders-intro-row">
-              <h3>Leaders</h3>
-              <a href="/decklists/op17.html">All leader pages →</a>
-            </div>
-          </div>
-          <div class="card home-panel home-leaders-grid">
-            <div class="leader-cards home-cards" aria-label="Popular leader card pictures">
-            <a class="leader-card-link" href="/decklists/rg-luffy.html">
-              <img src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">RG Luffy</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/op17/rocks-d-xebec.html">
-              <img src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">Rocks D. Xebec</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/op05-enel.html">
-              <img src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">OP05 Enel</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/op17/kaido.html">
-              <img src="/img/cards/OP17/OP17-058.webp" alt="Kaido leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">Kaido</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/boa-hancock.html">
-              <img src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">Boa Hancock</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/rosinante.html">
-              <img src="/img/cards/OP12/OP12-061.webp" alt="Rosinante leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">Rosinante</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/op17/shanks.html">
-              <img src="/img/cards/OP17/OP17-020.webp" alt="Shanks leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">Shanks</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/eb05-nico-robin.html">
-              <img src="/img/cards/EB05/EB05-010.webp" alt="Nico Robin leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">Nico Robin</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/st10-luffy.html">
-              <img src="/img/cards/ST10/ST10-002.webp" alt="ST10 Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">ST10 Luffy</div>
-            </a>
-            <a class="leader-card-link" href="/decklists/luffy-ace.html">
-              <img src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace leader card" width="300" height="419" loading="lazy" decoding="async" />
-              <div class="caption">Luffy &amp; Ace</div>
-            </a>
-            </div>
-          </div>
-        </section>
 
         <section class="card home-panel home-recent" id="recent">
           <p class="home-leaders-kicker">Results</p>
@@ -1079,6 +731,355 @@
             <a class="recent-all-link" href="/recent.html">All recent lists →</a>
           </div>
         </section>
+
+        <a class="events-banner" id="events" href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">
+          <div>
+            <div class="kicker">Official calendar</div>
+            <div class="title">ONE PIECE CARD GAME events</div>
+            <div class="muted" style="margin-top:4px">Championships, regionals, Treasure Cups, and store tournaments</div>
+          </div>
+          <div class="go">Official events →</div>
+        </a>
+
+        <nav class="home-big3" aria-label="Main sections">
+          <a class="home-big home-big-tier" href="/tier-list.html">
+            <span class="home-big-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.1 13.85 5.2h-3.7L12 2.1Z"/>
+                <rect x="10.15" y="5.35" width="3.7" height="1.85" rx="0.4"/>
+                <path d="M9 20.6V8.9h6v11.7H9Z"/>
+                <path d="M3.6 20.6v-6.4H9v6.4H3.6Z" opacity=".88"/>
+                <path d="M15 20.6v-4.7h5.4v4.7H15Z" opacity=".72"/>
+              </svg>
+            </span>
+            <span class="home-big-title">Tier List</span>
+            <span class="home-big-note">OP17 S through D with leader pictures</span>
+          </a>
+          <a class="home-big home-big-egb" href="/extra-grand-battle.html">
+            <span class="home-big-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8"/>
+                <path d="M12 8v8M8 12h8"/>
+              </svg>
+            </span>
+            <span class="home-big-title">Extra Grand Battle</span>
+            <span class="home-big-note">EXTRA cups with their own pie, tier, and recent lists</span>
+          </a>
+          <a class="home-big home-big-recent" href="#recent">
+            <span class="home-big-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                <path d="M8 7h11M8 12h11M8 17h11M4 7h.01M4 12h.01M4 17h.01"/>
+              </svg>
+            </span>
+            <span class="home-big-title">Recent Lists</span>
+            <span class="home-big-note">Newest complete 50-card results</span>
+          </a>
+          <a class="home-big home-big-leaders" href="#leaders">
+            <span class="home-big-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="12" height="16" rx="2"/>
+                <rect x="9" y="3" width="12" height="16" rx="2"/>
+              </svg>
+            </span>
+            <span class="home-big-title">Leaders</span>
+            <span class="home-big-note">Top ten from the newest 200 lists</span>
+          </a>
+          <a class="home-big home-big-shop" href="/shop/">
+            <span class="home-big-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 8h12l-1 12H7L6 8Z"/>
+                <path d="M9 8V7a3 3 0 0 1 6 0v1"/>
+              </svg>
+            </span>
+            <span class="home-big-title">Shop</span>
+            <span class="home-big-note">Sleeves, dice, playmats, and deck boxes</span>
+          </a>
+          <a class="home-big home-big-discord" href="https://discord.gg/adZ2WUQ3D" target="_blank" rel="noopener">
+            <span class="home-big-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.3 5.2A17.4 17.4 0 0 0 14.9 4l-.2.4a15.2 15.2 0 0 1 3.6 1.1c-3.3-1.5-6.6-1.5-9.8 0 .4-.2.9-.4 1.3-.6l-.2-.4A17.3 17.3 0 0 0 4.7 5.2C1.9 9.4 1.1 13.5 1.5 17.5a17.7 17.7 0 0 0 5.4 2.7l.7-1.1a11.5 11.5 0 0 1-2.1-1l.2-.1c1.6.7 3.3 1.2 5.1 1.2s3.5-.4 5.1-1.2l.2.1a11.5 11.5 0 0 1-2.1 1l.7 1.1a17.7 17.7 0 0 0 5.4-2.7c.5-4.6-.7-8.7-3.8-12.3ZM8.8 14.8c-1 0-1.9-.9-1.9-2s.8-2 1.9-2 1.9.9 1.9 2-.8 2-1.9 2Zm6.4 0c-1 0-1.9-.9-1.9-2s.8-2 1.9-2 1.9.9 1.9 2-.8 2-1.9 2Z"/>
+              </svg>
+            </span>
+            <span class="home-big-title">Discord</span>
+            <span class="home-big-note">Share lists and talk the meta</span>
+          </a>
+        </nav>
+
+        <section class="card home-panel home-featured" id="featured">
+          <p class="home-leaders-kicker">Top cuts</p>
+          <div class="section-title">
+            <h3>Featured results</h3>
+            <a href="/recent.html">All recent →</a>
+          </div>
+          <p class="muted home-recent-lede">First through fourth from hosted events. Regionals, championships, and finals sit ahead of online cups. One list per leader when we can.</p>
+          <div class="featured-grid">
+            <a class="featured-card color-red-green is-major" href="/decklists/luffy-ace/1st-shirohige06-grand-line-cyprus-season-2-finals.html">
+              <span class="featured-place">1st</span>
+              <img src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">shirohige06 - Luffy &amp; Ace</div>
+                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
+              </div>
+            </a>
+            <a class="featured-card color-purple-yellow is-major" href="/decklists/rosinante/2nd-thunderb8-grand-line-cyprus-season-2-finals.html">
+              <span class="featured-place">2nd</span>
+              <img src="/img/cards/OP12/OP12-061.webp" alt="Rosinante leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">thunderb8 - Rosinante</div>
+                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
+              </div>
+            </a>
+            <a class="featured-card color-purple is-major" href="/decklists/enel/3rd-mavros-grand-line-cyprus-season-2-finals.html">
+              <span class="featured-place">3rd</span>
+              <img src="/img/cards/OP15/OP15-058.webp" alt="Enel leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">Mavros - Enel</div>
+                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
+              </div>
+            </a>
+            <a class="featured-card color-black is-major" href="/decklists/op17/monkey-d-luffy/4th-salamander23-grand-line-cyprus-season-2-finals.html">
+              <span class="featured-place">4th</span>
+              <img src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">Salamander23 - Monkey D. Luffy</div>
+                <div class="muted"><span class="event-rank event-rank-major">Finals</span> Season 2 Finals · Grand Line Cyprus · 2026-11-01</div>
+              </div>
+            </a>
+            <a class="featured-card color-purple" href="/decklists/op17/kaido/2nd-pio-cattoni-bokogod-liga-phoenix-2026-one-piece-mana-43.html">
+              <span class="featured-place">2nd</span>
+              <img src="/img/cards/OP17/OP17-058.webp" alt="Kaido leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">Pio Cattoni [Bokogod] - Kaido</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 43 · 2026-11-03</div>
+              </div>
+            </a>
+            <a class="featured-card color-blue" href="/decklists/op17/rocks-d-xebec/2nd-jos-cuevas-southblue-liga-phoenix-2026-one-piece-mana-42.html">
+              <span class="featured-place">2nd</span>
+              <img src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">José Cuevas [SouthBlue] - Rocks D. Xebec</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 42 · 2026-10-27</div>
+              </div>
+            </a>
+            <a class="featured-card color-red-black" href="/decklists/sabo/3rd-juli-n-piergiacomi-liga-phoenix-2026-one-piece-mana-41.html">
+              <span class="featured-place">3rd</span>
+              <img src="/img/cards/OP13/OP13-004.webp" alt="Sabo leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">Julián Piergiacomi - Sabo</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 41 · 2026-10-20</div>
+              </div>
+            </a>
+            <a class="featured-card color-yellow" href="/decklists/op05-enel/4th-gonzalo-alonso-liga-phoenix-2026-one-piece-mana-41.html">
+              <span class="featured-place">4th</span>
+              <img src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <div class="featured-copy">
+                <div class="who">Gonzalo Alonso - OP05 Enel</div>
+                <div class="muted"><span class="event-rank event-rank-league">League</span> Liga Phoenix 2026 · Mana 41 · 2026-10-20</div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="card home-panel home-notes" id="meta-notes">
+          <p class="home-leaders-kicker">Original notes</p>
+          <div class="section-title">
+            <h3>This week in the meta</h3>
+            <a href="/guides/weekly-meta.html">Full write-up →</a>
+          </div>
+          <p class="home-notes-lede">RG Luffy shows up on 55 of the newest 200 hosted lists, and 27.8% of lists that play an OP17 card. Rocks D. Xebec (40) and OP05 Enel (15) are the next names in that window. RG Luffy has the best first-place rate in the same slice: 4 firsts from 50 placed lists (8.0%). That is a first-place rate, not a game win rate.</p>
+          <div class="home-notes-grid">
+            <a class="home-note" href="/guides/weekly-meta.html">
+              <span class="kicker">Weekly meta</span>
+              <strong>What the hosted lists are actually playing</strong>
+              <span>A short read on the tier list, the share chart, and which names are filling recent events.</span>
+            </a>
+            <a class="home-note" href="/guides/matchups.html">
+              <span class="kicker">Matchup notes</span>
+              <strong>How the top leaders attack each other</strong>
+              <span>Printed leader text, plus the Mihawk pairing counts already on this site. No copied tier graphic.</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="card home-panel home-meta-pie" id="meta-share">
+          <p class="home-leaders-kicker">Format share</p>
+          <div class="section-title">
+            <h3>OP17 lists</h3>
+            <a href="/tier-list.html">Tier list →</a>
+          </div>
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one OP17 card. The hole is the leader converting best among these lists. Names sit on every slice.</p>
+          <div class="meta-pie-board">
+            <div class="meta-pie-disk" style="background:conic-gradient(#b71c1c 0.00% 27.53%, #1565c0 28.09% 52.97%, #c9a227 53.53% 63.03%, #6a1b9a 63.59% 70.73%, #6096d4 71.29% 74.28%, #ce6565 74.84% 77.53%, #212121 78.09% 80.79%, #2e7d32 81.35% 83.74%, #71a774 84.30% 86.70%, #9a64ba 87.26% 89.66%, #8a8580 90.22% 100.00%)">
+              <a class="meta-pie-hole" href="/decklists/rg-luffy.html" aria-label="RG Luffy"><img class="meta-pie-hole-face" src="/img/cards/OP13/OP13-001.webp" alt="" width="220" height="220" /></a>
+              <a class="meta-pie-on" href="/decklists/rg-luffy.html" style="left:82.20%;top:23.04%">RG Luffy</a>
+              <a class="meta-pie-on" href="/decklists/op17/rocks-d-xebec.html" style="left:73.54%;top:84.79%">Rocks</a>
+              <a class="meta-pie-on" href="/decklists/op05-enel.html" style="left:29.11%;top:86.44%">OP05 Enel</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/op17/kaido.html" style="left:9.91%;top:71.52%">Kaido</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/boa-hancock.html" style="left:15.83%;top:54.79%">Boa</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/sabo.html" style="left:4.63%;top:46.62%">Sabo</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/op17/monkey-d-luffy.html" style="left:16.83%;top:40.50%">Luffy</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/op17/shanks.html" style="left:9.52%;top:29.23%">Shanks</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/eb05-nico-robin.html" style="left:22.74%;top:28.85%">Robin</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/rosinante.html" style="left:19.83%;top:15.94%">Rosinante</a>
+              <a class="meta-pie-on" href="/decklists/op17.html" style="left:36.95%;top:10.08%">Other</a>
+            </div>
+            <ul class="meta-pie-legend" aria-label="OP17 list share">
+            <li style="--slice:#b71c1c">
+              <span class="meta-pie-swatch" style="background:#b71c1c"></span>
+              <img class="meta-pie-face" src="/img/cards/OP13/OP13-001.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/rg-luffy.html">RG Luffy</a>
+                <span class="meta-pie-legend-tier">A · 24</span>
+              </span>
+              <span class="meta-pie-legend-pct">28%</span>
+            </li>
+            <li style="--slice:#1565c0">
+              <span class="meta-pie-swatch" style="background:#1565c0"></span>
+              <img class="meta-pie-face" src="/img/cards/OP17/OP17-039.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/op17/rocks-d-xebec.html">Rocks D. Xebec</a>
+                <span class="meta-pie-legend-tier">S · 62</span>
+              </span>
+              <span class="meta-pie-legend-pct">25%</span>
+            </li>
+            <li style="--slice:#c9a227">
+              <span class="meta-pie-swatch" style="background:#c9a227"></span>
+              <img class="meta-pie-face" src="/img/cards/OP05/OP05-098.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/op05-enel.html">OP05 Enel</a>
+                <span class="meta-pie-legend-tier">B · 9</span>
+              </span>
+              <span class="meta-pie-legend-pct">10%</span>
+            </li>
+            <li style="--slice:#6a1b9a">
+              <span class="meta-pie-swatch" style="background:#6a1b9a"></span>
+              <img class="meta-pie-face" src="/img/cards/OP17/OP17-058.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/op17/kaido.html">Kaido</a>
+                <span class="meta-pie-legend-tier">A · 27</span>
+              </span>
+              <span class="meta-pie-legend-pct">7.7%</span>
+            </li>
+            <li style="--slice:#6096d4">
+              <span class="meta-pie-swatch" style="background:#6096d4"></span>
+              <img class="meta-pie-face" src="/img/cards/OP14/OP14-041.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/boa-hancock.html">Boa Hancock</a>
+                <span class="meta-pie-legend-tier">A · 17</span>
+              </span>
+              <span class="meta-pie-legend-pct">3.6%</span>
+            </li>
+            <li style="--slice:#ce6565">
+              <span class="meta-pie-swatch" style="background:#ce6565"></span>
+              <img class="meta-pie-face" src="/img/cards/OP13/OP13-004.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/sabo.html">Sabo</a>
+                <span class="meta-pie-legend-tier">S · 35</span>
+              </span>
+              <span class="meta-pie-legend-pct">3.3%</span>
+            </li>
+            <li style="--slice:#212121">
+              <span class="meta-pie-swatch" style="background:#212121"></span>
+              <img class="meta-pie-face" src="/img/cards/OP17/OP17-079.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/op17/monkey-d-luffy.html">Monkey D. Luffy</a>
+                <span class="meta-pie-legend-tier">A · 30</span>
+              </span>
+              <span class="meta-pie-legend-pct">3.3%</span>
+            </li>
+            <li style="--slice:#2e7d32">
+              <span class="meta-pie-swatch" style="background:#2e7d32"></span>
+              <img class="meta-pie-face" src="/img/cards/OP17/OP17-020.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/op17/shanks.html">Shanks</a>
+                <span class="meta-pie-legend-tier">A · 17</span>
+              </span>
+              <span class="meta-pie-legend-pct">3.0%</span>
+            </li>
+            <li style="--slice:#71a774">
+              <span class="meta-pie-swatch" style="background:#71a774"></span>
+              <img class="meta-pie-face" src="/img/cards/EB05/EB05-010.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/eb05-nico-robin.html">Nico Robin</a>
+                <span class="meta-pie-legend-tier">C · 4</span>
+              </span>
+              <span class="meta-pie-legend-pct">3.0%</span>
+            </li>
+            <li style="--slice:#9a64ba">
+              <span class="meta-pie-swatch" style="background:#9a64ba"></span>
+              <img class="meta-pie-face" src="/img/cards/OP12/OP12-061.webp" alt="" width="48" height="48" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/rosinante.html">Rosinante</a>
+                <span class="meta-pie-legend-tier">B · 11</span>
+              </span>
+              <span class="meta-pie-legend-pct">3.0%</span>
+            </li>
+            <li style="--slice:#8a8580">
+              <span class="meta-pie-swatch" style="background:#8a8580"></span>
+              <span class="meta-pie-face meta-pie-face-empty" aria-hidden="true"></span>
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/op17.html">Other</a>
+                <span class="meta-pie-legend-tier">Unranked</span>
+              </span>
+              <span class="meta-pie-legend-pct">10%</span>
+            </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="home-leaders-flow" id="leaders">
+          <div class="home-leaders-intro">
+            <p class="home-leaders-kicker">Popular now</p>
+            <div class="home-leaders-intro-row">
+              <h3>Leaders</h3>
+              <a href="/decklists/op17.html">All leader pages →</a>
+            </div>
+          </div>
+          <div class="card home-panel home-leaders-grid">
+            <div class="leader-cards home-cards" aria-label="Popular leader card pictures">
+            <a class="leader-card-link" href="/decklists/rg-luffy.html">
+              <img src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">RG Luffy</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/op17/rocks-d-xebec.html">
+              <img src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">Rocks D. Xebec</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/op05-enel.html">
+              <img src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">OP05 Enel</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/op17/kaido.html">
+              <img src="/img/cards/OP17/OP17-058.webp" alt="Kaido leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">Kaido</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/boa-hancock.html">
+              <img src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">Boa Hancock</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/rosinante.html">
+              <img src="/img/cards/OP12/OP12-061.webp" alt="Rosinante leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">Rosinante</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/op17/shanks.html">
+              <img src="/img/cards/OP17/OP17-020.webp" alt="Shanks leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">Shanks</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/eb05-nico-robin.html">
+              <img src="/img/cards/EB05/EB05-010.webp" alt="Nico Robin leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">Nico Robin</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/st10-luffy.html">
+              <img src="/img/cards/ST10/ST10-002.webp" alt="ST10 Luffy leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">ST10 Luffy</div>
+            </a>
+            <a class="leader-card-link" href="/decklists/luffy-ace.html">
+              <img src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <div class="caption">Luffy &amp; Ace</div>
+            </a>
+            </div>
+          </div>
+        </section>
         <!-- /HOME_BODY -->
     </main>
     <footer>
@@ -1089,6 +1090,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <script src="/js/site.js?v=nav-groups2"></script>
+  <script src="/js/site.js?v=banner26"></script>
 </body>
 </html>

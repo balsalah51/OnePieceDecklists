@@ -26,8 +26,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-pro25"
-JS_NEW = "/js/site.js?v=nav-groups2"
+CSS_NEW = "/css/site.css?v=home-banner26"
+JS_NEW = "/js/site.js?v=banner26"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -467,11 +467,11 @@ def render_home_body(data: dict | None = None) -> str:
     pie_block = home_meta.pie_html(pie)
     featured_block = home_meta.featured_html(data.get("featured") or [])
     notes_block = home_notes_html(data)
-    robin = gen.card_image_url("OP09-062")
     rocks = gen.card_image_url("OP17-039")
     enel = gen.card_image_url("OP05-098")
     rg = gen.card_image_url("OP13-001")
     kaido = gen.card_image_url("OP17-058")
+    hancock = gen.card_image_url("OP14-041")
     recent = data["recent_home"]
     visible = home_meta.HOME_RECENT_VISIBLE
     extra_n = max(0, len(recent) - visible)
@@ -489,18 +489,18 @@ def render_home_body(data: dict | None = None) -> str:
         <section class="home-splash" id="home-splash" aria-label="One Piece Decklists banners" style="--splash-i:0">
           <div class="home-splash-viewport">
             <div class="home-splash-track">
-              <img class="home-splash-bg" src="/img/home-banner-crew.jpg" alt="One Piece Decklists, with Nico Robin, Elbaph Luffy, and Sabo" width="1920" height="960" fetchpriority="high" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-crimson.jpg" alt="One Piece Decklists crimson banner with Sabo and Nico Robin" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg" alt="One Piece Decklists with Elbaph Luffy, Sabo, and Roronoa Zoro" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-six" src="/img/home-banner-six.jpg" alt="One Piece Decklists with Luffy, Nico Robin, Rocks D. Xebec, Sabo, Charlotte Linlin, and Portgas D. Ace" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks.jpg" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="960" decoding="async" />
-              <img class="home-splash-bg home-splash-rocks" src="/img/home-banner-rocks-crew.jpg" alt="One Piece Decklists with Rocks D. Xebec, Shiki, Captain John, and Edward Newgate" width="1920" height="960" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-meta.jpg?v=nov8" alt="One Piece Decklists with RG Luffy, Rocks D. Xebec, Enel, and Kaido" width="1920" height="1080" fetchpriority="high" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-luffy.jpg?v=nov8" alt="One Piece Decklists with RG Luffy" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-rocks.jpg?v=nov8" alt="One Piece Decklists with Rocks D. Xebec" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-enel.jpg?v=nov8" alt="One Piece Decklists with Enel" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-kaido.jpg?v=nov8" alt="One Piece Decklists with Kaido" width="1920" height="1080" decoding="async" />
+              <img class="home-splash-bg" src="/img/home-banner-hancock.jpg?v=nov8" alt="One Piece Decklists with Boa Hancock" width="1920" height="1080" decoding="async" />
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
-          <a class="home-splash-card" data-splash-card href="/decklists/nico-robin.html" aria-label="Nico Robin lists">
-            <img src="{robin}" alt="Nico Robin leader card" width="300" height="419" />
-            <span class="home-splash-card-label" data-splash-card-label>Nico Robin lists</span>
+          <a class="home-splash-card" data-splash-card href="/decklists/rg-luffy.html" aria-label="RG Luffy lists">
+            <img src="{rg}" alt="RG Luffy leader card" width="300" height="419" />
+            <span class="home-splash-card-label" data-splash-card-label>RG Luffy lists</span>
           </a>
           <div class="home-splash-nav">
             <button type="button" data-splash-prev aria-label="Previous banner">‹</button>
@@ -521,10 +521,11 @@ def render_home_body(data: dict | None = None) -> str:
           if(!root) return;
           var faces=[
             {{name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"{rg}"}},
+            {{name:"RG Luffy",href:"/decklists/rg-luffy.html",img:"{rg}"}},
             {{name:"Rocks D. Xebec",href:"/decklists/op17/rocks-d-xebec.html",img:"{rocks}"}},
             {{name:"Enel",href:"/decklists/op05-enel.html",img:"{enel}"}},
             {{name:"Kaido",href:"/decklists/op17/kaido.html",img:"{kaido}"}},
-            {{name:"Nico Robin",href:"/decklists/nico-robin.html",img:"{robin}"}}
+            {{name:"Boa Hancock",href:"/decklists/boa-hancock.html",img:"{hancock}"}}
           ];
           var i=Math.floor(Math.random()*6);
           var f=faces[i%faces.length];
@@ -549,6 +550,25 @@ def render_home_body(data: dict | None = None) -> str:
             <button type="submit">Search</button>
           </div>
         </form>
+
+        <section class="card home-panel home-recent" id="recent">
+          <p class="home-leaders-kicker">Results</p>
+          <div class="section-title">
+            <h3>Recent lists</h3>
+            <div class="muted">{count_label}</div>
+          </div>
+          <p class="muted home-recent-lede">Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
+          <div class="recent-cols" aria-hidden="true">
+            <span></span>
+            <span>List</span>
+            <span>Event</span>
+            <span>Date</span>
+          </div>
+          <ul class="recent-list" aria-label="Recent decklists">
+{recent_rows_html(recent, hide_after=visible)}
+          </ul>
+{more_btn}
+        </section>
 
         <a class="events-banner" id="events" href="https://en.onepiece-cardgame.com/events/" target="_blank" rel="noopener">
           <div>
@@ -639,25 +659,6 @@ def render_home_body(data: dict | None = None) -> str:
 {cards}
             </div>
           </div>
-        </section>
-
-        <section class="card home-panel home-recent" id="recent">
-          <p class="home-leaders-kicker">Results</p>
-          <div class="section-title">
-            <h3>Recent lists</h3>
-            <div class="muted">{count_label}</div>
-          </div>
-          <p class="muted home-recent-lede">Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
-          <div class="recent-cols" aria-hidden="true">
-            <span></span>
-            <span>List</span>
-            <span>Event</span>
-            <span>Date</span>
-          </div>
-          <ul class="recent-list" aria-label="Recent decklists">
-{recent_rows_html(recent, hide_after=visible)}
-          </ul>
-{more_btn}
         </section>
         <!-- /HOME_BODY -->"""
 
