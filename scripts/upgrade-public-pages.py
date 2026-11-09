@@ -27,8 +27,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-banner29"
-JS_NEW = "/js/site.js?v=banner27"
+CSS_NEW = "/css/site.css?v=older-lists1"
+JS_NEW = "/js/site.js?v=older-lists1"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -362,16 +362,20 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
             f'<span class="event-rank">{html.escape(badge)}</span>' if badge else ""
         )
         place = gen.ordinal(entry.get("placing")) or ""
-        when = entry.get("date") or place or "List"
+        date_s = entry.get("date") or ""
+        when = date_s or place or "List"
         img = gen.card_image_url(leader["id"])
         place_html = f'<span class="recent-place">{html.escape(place)}</span>' if place else ""
         event_meta = f'<span class="recent-meta-event">{badge_html}{event_html}</span>' if event_label else ""
         meta = place_html + event_meta
         if not meta:
             meta = html.escape(leader["name"])
-        extra_attrs = ""
+        attrs = []
         if hide_after is not None and i >= hide_after:
-            extra_attrs = ' class="recent-more" hidden'
+            attrs.append('class="recent-more" hidden')
+        if date_s:
+            attrs.append(f'data-date="{html.escape(date_s)}"')
+        extra_attrs = (" " + " ".join(attrs)) if attrs else ""
         major = " is-major" if home_meta.event_display.event_weight(event) >= 2 else ""
         lazy = "" if i < 6 else ' loading="lazy" decoding="async"'
         items.append(
@@ -474,16 +478,8 @@ def render_home_body(data: dict | None = None) -> str:
     kaido = gen.card_image_url("OP17-058")
     hancock = gen.card_image_url("OP14-041")
     recent = data["recent_home"]
-    visible = home_meta.HOME_RECENT_VISIBLE
-    extra_n = max(0, len(recent) - visible)
-    count_label = f"{visible} of {len(recent)}" if extra_n else f"{len(recent)} lists"
-    if extra_n:
-        more_btn = f"""          <div class="recent-more-row">
-            <button type="button" class="recent-more-btn" data-recent-more>Show {extra_n} more</button>
-            <a class="recent-all-link" href="/recent.html">All recent lists →</a>
-          </div>"""
-    else:
-        more_btn = """          <div class="recent-more-row">
+    count_label = f"{len(recent)} lists"
+    more_btn = """          <div class="recent-more-row">
             <a class="recent-all-link" href="/recent.html">All recent lists →</a>
           </div>"""
     return f"""        <!-- HOME_BODY -->
@@ -571,7 +567,7 @@ def render_home_body(data: dict | None = None) -> str:
             <span>Date</span>
           </div>
           <ul class="recent-list" aria-label="Recent decklists">
-{recent_rows_html(recent, hide_after=visible)}
+{recent_rows_html(recent)}
           </ul>
 {more_btn}
         </section>
