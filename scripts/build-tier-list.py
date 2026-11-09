@@ -16,8 +16,10 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path("/workspace")
-RECENT_FROM = "2026-08-20"
-TIER_PTS = {"S": 5.0, "A": 3.5, "B": 2.0, "C": 1.0, "D": 0.4}
+RECENT_FROM = "2026-11-01"
+TIER_PTS = {"S+": 6.5, "S": 5.0, "A": 3.5, "B": 2.0, "C": 1.0, "D": 0.4}
+TIER_ORDER = ["S+", "S", "A", "B", "C", "D"]
+TIER_OVERRIDE = {"OP13-001": "S+"}  # RG Luffy: most recent EB-05 top cuts
 COLOR_NAMES = {
     "color-red": "Red",
     "color-green": "Green",
@@ -53,7 +55,7 @@ HOME_TIER_TILE = """          <a class="home-big home-big-tier" href="/tier-list
               </svg>
             </span>
             <span class="home-big-title">Tier List</span>
-            <span class="home-big-note">OP17 S through D with leader pictures</span>
+            <span class="home-big-note">EB-05 S through D with leader pictures</span>
           </a>
 """
 
@@ -519,7 +521,9 @@ def site_source(stats: dict[str, dict]) -> dict:
             + s["recent_top8"] * 1.4
             + min(s["recent_lists"], 80) * 0.09
         )
-        if score >= 28:
+        if score >= 40:
+            ranks[lid] = "S+"
+        elif score >= 28:
             ranks[lid] = "S"
         elif score >= 12:
             ranks[lid] = "A"
@@ -569,6 +573,8 @@ def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
             tier = "C"
         else:
             tier = "D"
+        if lid in TIER_OVERRIDE:
+            tier = TIER_OVERRIDE[lid]
         ranked.append(
             {
                 "id": lid,
@@ -584,14 +590,16 @@ def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
                 **s,
             }
         )
-    ranked.sort(key=lambda r: (r["tier"], -r["score"], -r["recent_top8"], -r["recent_lists"], r["name"]))
-    order = {"S": 0, "A": 1, "B": 2, "C": 3, "D": 4}
-    ranked.sort(key=lambda r: (order[r["tier"]], -r["score"], r["name"]))
+    order = {letter: i for i, letter in enumerate(TIER_ORDER)}
+    ranked.sort(
+        key=lambda r: (order.get(r["tier"], 99), -r["score"], -r["recent_top8"], -r["recent_lists"], r["name"])
+    )
     return sources, {r["id"]: r for r in ranked}
 
 
 def render_board(rows: list[dict]) -> str:
     labels = {
+        "S+": "The deck of the format. Most recent top cuts.",
         "S": "Format defining. Show up in top cuts every week.",
         "A": "Wins cups and converts. A step behind the default decks.",
         "B": "Real, but you have to know the room.",
@@ -599,7 +607,7 @@ def render_board(rows: list[dict]) -> str:
         "D": "Rogues and leftovers still on this site.",
     }
     chunks = []
-    for letter in "SABCD":
+    for letter in TIER_ORDER:
         group = [r for r in rows if r["tier"] == letter]
         if not group:
             continue
@@ -614,7 +622,7 @@ def render_board(rows: list[dict]) -> str:
             </a>"""
             )
         chunks.append(
-            f"""        <div class="tier-row tier-{letter.lower()}">
+            f"""        <div class="tier-row tier-{"splus" if letter == "S+" else letter.lower()}">
           <div class="tier-label" title="{html.escape(labels[letter])}">{letter}</div>
           <div class="tier-leaders">
 {chr(10).join(cards)}
@@ -643,7 +651,7 @@ def render_table(rows: list[dict]) -> str:
     return f"""        <div class="tier-table">
           <div class="section-title">
             <h3>This site's lists in the mix</h3>
-            <div class="muted">Recent = {RECENT_FROM} onward, covering the OP17 English window</div>
+            <div class="muted">Recent = {RECENT_FROM} onward, covering the EB-05 English window</div>
           </div>
           <table>
             <thead>
@@ -684,23 +692,32 @@ def render_sources(sources: list[dict]) -> str:
 
 
 def page_html(board: str, table: str, sources_html: str, rows: list[dict], sources: list[dict]) -> str:
-    title = "OP17 One Piece TCG tier list | One Piece Decklists"
+    title = "EB-05 Meta One Piece TCG tier list | One Piece Decklists"
     desc = (
-        "Aggregated OP17 One Piece TCG tier list with leader pictures. "
+        "Aggregated EB-05 One Piece TCG tier list with leader pictures. "
         "Built from 20+ public meta pages plus the tournament lists on this site."
     )
     url = seo.canonical_url("tier-list.html")
+    splus_names = [r["name"] for r in rows if r["tier"] == "S+"]
     s_names = [r["name"] for r in rows if r["tier"] == "S"]
     intro = (
-        "Early OP17 is still Mihawk's room, with Rocks D. Xebec as the new deck people copy "
-        "and Sabo converting in the West. This board averages more than twenty public tier lists "
-        "and meta reports, then leans on the lists actually hosted here: recent top eights, wins, "
-        "and how often a leader is posting."
+        "This board averages more than twenty public tier lists and meta reports, then leans on the "
+        "lists actually hosted here: recent top eights, wins, and how often a leader is posting."
     )
     if s_names:
         intro = (
             f"{', '.join(s_names[:-1]) + ' and ' + s_names[-1] if len(s_names) > 1 else s_names[0]} "
             f"sit in S. {intro}"
+        )
+    if splus_names:
+        who = (
+            ", ".join(splus_names[:-1] + ["and " + splus_names[-1]])
+            if len(splus_names) > 1
+            else splus_names[0]
+        )
+        verb = "sit" if len(splus_names) > 1 else "sits"
+        intro = (
+            f"{who} {verb} in S+ with the most recent EB-05 top eights of any hosted leader. {intro}"
         )
     items = [(r["name"], r["href"]) for r in rows]
     faq = seo.faq_jsonld(
@@ -711,7 +728,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
             ),
             (
                 "What format is the tier list?",
-                "Standard constructed OP17, The World's Strongest Warriors, after the 28 August 2026 English release.",
+                "Standard constructed, EB-05 Extra Booster era after the 30 October 2026 English release.",
             ),
             (
                 "Why is Green Mihawk still S tier?",
@@ -742,7 +759,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         {seo.BRAND_LOGO_HTML}
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">OPTCG decklists</div>
+          <div class="subtitle">EB-05 Meta</div>
         </div>
       </a>
 {seo.THEME_TOGGLE_HTML}{seo.primary_nav_html(current="tier")}
@@ -750,10 +767,10 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
     <main class="single">
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / Tier List</div>
-        <h2>OP17 tier list</h2>
+        <h2>EB-05 Meta tier list</h2>
         <p>{html.escape(intro)}</p>
         <p class="muted">Updated {date.today().isoformat()}. Leader pictures link to the 50-card lists on this site.</p>
-        <div class="tier-board" aria-label="OP17 leader tier list">
+        <div class="tier-board" aria-label="EB-05 leader tier list">
 {board}
         </div>
 {table}
@@ -950,7 +967,7 @@ def main() -> None:
     patch_sitemap()
     print("sources", len(sources))
     print("leaders on board", len(rows))
-    for letter in "SABCD":
+    for letter in TIER_ORDER:
         names = [r["name"] for r in rows if r["tier"] == letter]
         print(letter, ",", ", ".join(names) if names else "(empty)")
     print("patched html", changed)

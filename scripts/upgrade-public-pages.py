@@ -10,6 +10,7 @@ import html
 import importlib.util
 import json
 import re
+from datetime import date
 from pathlib import Path
 
 spec = importlib.util.spec_from_file_location("genlists", "/workspace/scripts/generate-tournament-lists.py")
@@ -26,8 +27,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=home-banner26"
-JS_NEW = "/js/site.js?v=banner26"
+CSS_NEW = "/css/site.css?v=home-banner29"
+JS_NEW = "/js/site.js?v=banner27"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -376,7 +377,7 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
         items.append(
             f"""            <li{extra_attrs}>
               <a class="recent-item {html.escape(leader['color'])}{major}" href="{html.escape(entry['href'])}">
-                <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}"{lazy} />
+                <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}"{lazy} onerror="{gen.IMG_ONERROR}" />
                 <div class="recent-copy">
                   <div class="who">{html.escape(title)}</div>
                   <div class="muted meta">{meta}</div>
@@ -392,7 +393,7 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
 def build_home_data() -> dict:
     rows = collect_home_lists()
     leaders = home_meta.ranked_leaders(rows)
-    pie = home_meta.pie_slices(rows)
+    pie = home_meta.pie_slices(rows, latest_set=home_meta.detect_latest_set(rows))
     home_meta.save_meta(leaders, pie)
     return {
         "rows": rows,
@@ -496,10 +497,15 @@ def render_home_body(data: dict | None = None) -> str:
               <img class="home-splash-bg" src="/img/home-banner-kaido.jpg?v=nov8" alt="One Piece Decklists with Kaido" width="1920" height="1080" decoding="async" />
               <img class="home-splash-bg" src="/img/home-banner-hancock.jpg?v=nov8" alt="One Piece Decklists with Boa Hancock" width="1920" height="1080" decoding="async" />
             </div>
+            <div class="home-splash-copy">
+              <p class="home-splash-kicker">EB-05 Meta</p>
+              <p class="home-splash-title">One Piece Decklists</p>
+              <p class="home-splash-lede">Tournament lists, tier list, and meta chart for the current EB-05 format.</p>
+            </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
           <a class="home-splash-card" data-splash-card href="/decklists/rg-luffy.html" aria-label="RG Luffy lists">
-            <img src="{rg}" alt="RG Luffy leader card" width="300" height="419" />
+            <img src="{rg}" alt="RG Luffy leader card" width="300" height="419" onerror="{gen.IMG_ONERROR}" />
             <span class="home-splash-card-label" data-splash-card-label>RG Luffy lists</span>
           </a>
           <div class="home-splash-nav">
@@ -557,7 +563,7 @@ def render_home_body(data: dict | None = None) -> str:
             <h3>Recent lists</h3>
             <div class="muted">{count_label}</div>
           </div>
-          <p class="muted home-recent-lede">Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
+          <p class="muted home-recent-lede">Updated {date.today().isoformat()}. Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
           <div class="recent-cols" aria-hidden="true">
             <span></span>
             <span>List</span>

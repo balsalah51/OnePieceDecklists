@@ -238,6 +238,7 @@ def pick_fresh(
     per_event: int = PER_EVENT,
     require_op17: bool = False,
     max_placing: int | None = None,
+    require_legal: bool = False,
 ) -> list[dict]:
     have = existing_stems(leader)
     known = known_results(leader, index)
@@ -252,7 +253,10 @@ def pick_fresh(
         if entry.get("kind") == "sample":
             continue
         dl = entry.get("decklist") or {}
-        if gen.count_cards(dl) < gen.MIN_CARDS:
+        if require_legal:
+            if not gen.deck_is_legal(dl):
+                continue
+        elif gen.count_cards(dl) < gen.MIN_CARDS:
             continue
         if gen.deck_has_banned(dl):
             continue
@@ -296,6 +300,7 @@ def fetch_more(
     until: str | None = None,
     require_op17: bool = False,
     max_placing: int | None = None,
+    require_legal: bool = False,
 ) -> dict:
     target_ids = only_ids or {L["id"] for L in gen.LEADERS}
     leaders = [L for L in gen.LEADERS if L["id"] in target_ids]
@@ -314,6 +319,8 @@ def fetch_more(
         until,
         "max_placing",
         max_placing,
+        "require_legal",
+        require_legal,
     )
     tournaments = fetch_tournament_pages(pages=pages)
     if since:
@@ -337,6 +344,7 @@ def fetch_more(
             per_event=event_cap,
             require_op17=require_op17,
             max_placing=max_placing,
+            require_legal=require_legal,
         )
         planned[lid] = fresh
         for entry in fresh:

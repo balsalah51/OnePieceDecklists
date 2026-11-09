@@ -688,6 +688,28 @@ LEADERS = [
 ]
 
 
+def _load_extra_leaders() -> None:
+    path = ROOT / "data/extra-leaders.json"
+    if not path.exists():
+        return
+    known = {L["id"] for L in LEADERS}
+    try:
+        rows = json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return
+    for row in rows or []:
+        lid = row.get("id")
+        if lid and lid not in known and row.get("page") and row.get("dir"):
+            crumb = row.get("crumb")
+            if isinstance(crumb, list) and len(crumb) == 2:
+                row["crumb"] = (crumb[0], crumb[1])
+            LEADERS.append(row)
+            known.add(lid)
+
+
+_load_extra_leaders()
+
+
 def http_json(url: str, retries: int = 6):
     last = None
     for attempt in range(retries):
@@ -777,6 +799,30 @@ def deck_has_banned(dl: dict) -> bool:
 
 def deck_has_op17(dl: dict) -> bool:
     return any((item.get("id") or "").startswith("OP17-") for item in flatten_cards(dl))
+
+
+def deck_is_legal(dl: dict) -> bool:
+    """Constructed legal: 1 leader, 50 main-deck cards, max 4 copies, no bans."""
+    leader = dl.get("leader") or {}
+    if not leader.get("set"):
+        return False
+    if count_cards(dl) != 50:
+        return False
+    if deck_has_banned(dl):
+        return False
+    for item in flatten_cards(dl):
+        try:
+            n = int(item.get("count") or 0)
+        except (TypeError, ValueError):
+            return False
+        group = (item.get("group") or "").lower()
+        if group == "leader":
+            if n != 1:
+                return False
+            continue
+        if n < 1 or n > 4:
+            return False
+    return True
 
 
 def page_has_banned(text: str) -> bool:
@@ -1196,7 +1242,7 @@ def render_card_entry(item: dict, meta: dict) -> str:
     types = meta.get("types") or ""
     text = meta.get("effect") or ""
     return f"""        <article class="card-entry">
-          <img src="{html.escape(img)}" alt="{html.escape(name)} {html.escape(cid)}" loading="lazy" />
+          <img src="{html.escape(img)}" alt="{html.escape(name)} {html.escape(cid)}" loading="lazy" onerror="{IMG_ONERROR}" />
           <div>
             <div class="id">{qty}{html.escape(cid)} · {html.escape(cat)}</div>
             <h4>{html.escape(name)}</h4>
@@ -1262,7 +1308,7 @@ def page_chrome(
         <img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">OPTCG decklists</div>
+          <div class="subtitle">EB-05 Meta</div>
         </div>
       </a>
       <div class="theme-toggle" role="group" aria-label="Color theme">
@@ -1402,6 +1448,9 @@ def card_image_url(cid: str) -> str:
     if set_code in {"EB05", "OP18"}:
         return f"https://cards.oplaytcg.com/{set_code}/en/{cid}.webp"
     return f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{cid}_EN.webp"
+
+
+IMG_ONERROR = "this.onerror=null;this.src='/img/cards/placeholder.svg'"
 
 
 TEXT_QTY_RE = re.compile(
@@ -1560,7 +1609,7 @@ def render_text_deck(grouped: dict, cache: dict, order: list[str], totals: dict)
               <span class="qty">{html.escape(str(item['count']))}x</span>
               <span class="card-title">{html.escape(name)}</span>
               <span class="muted card-id">{html.escape(item['id'])}</span>
-              <img class="card-pop" src="{html.escape(img)}" alt="{html.escape(name)}" />
+              <img class="card-pop" src="{html.escape(img)}" alt="{html.escape(name)}" onerror="{IMG_ONERROR}" />
             </li>"""
             )
         cols.append(
@@ -1767,7 +1816,7 @@ def render_hub_page(leader: dict, cache: dict) -> str:
     crumb_href, crumb_label = leader["crumb"]
     body = f"""        <div class="crumb"><a href="/">Home</a> / <a href="{html.escape(crumb_href)}">{html.escape(crumb_label)}</a> / {html.escape(leader["name"])}</div>
         <div class="leader-hero">
-          <img src="{html.escape(img)}" alt="{html.escape(leader["name"])} leader" />
+          <img src="{html.escape(img)}" alt="{html.escape(leader["name"])} leader" onerror="{IMG_ONERROR}" />
           <div>
             <h2>{html.escape(leader["name"])}</h2>
             <p>{html.escape(intro)}</p>

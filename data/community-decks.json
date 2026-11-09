@@ -16392,5 +16392,67 @@
       "kind": "web",
       "date": "2026-10-24"
     }
+  ],
+  "OP08-098": [
+    {
+      "slug": "optcggg-1st-prince-williams-ikailacup-eb05-cup",
+      "href": "/decklists/kalgara-op08-098/optcggg-1st-prince-williams-ikailacup-eb05-cup.html",
+      "title": "Prince Williams - iKailaCup EB05 Cup",
+      "subtitle": "Public OPTCG.GG list · iKailaCup EB05 Cup · 2026-11-02",
+      "source_url": "https://www.optcg.gg/deck-lists/014e7124-a756-4b8a-98f5-b8a13a83913e",
+      "kind": "web",
+      "date": "2026-11-02"
+    }
+  ],
+  "OP09-042": [
+    {
+      "slug": "optcggg-3rd-gyan-chinoizecup-131",
+      "href": "/decklists/buggy-op09-042/optcggg-3rd-gyan-chinoizecup-131.html",
+      "title": "Gyan - ChinoizeCup #131",
+      "subtitle": "Public OPTCG.GG list · ChinoizeCup #131 · 2026-11-03",
+      "source_url": "https://www.optcg.gg/deck-lists/2221e01d-dfcb-4f0c-ae69-1c2d1f2a0e65",
+      "kind": "web",
+      "date": "2026-11-03"
+    },
+    {
+      "slug": "optcggg-5th-hayden-langley-egman-events-eb05-triple-win-a-box",
+      "href": "/decklists/buggy-op09-042/optcggg-5th-hayden-langley-egman-events-eb05-triple-win-a-box.html",
+      "title": "hayden langley - Egman Events EB05 Triple Win-A-Box",
+      "subtitle": "Public OPTCG.GG list · Egman Events EB05 Triple Win-A-Box · 2026-11-03",
+      "source_url": "https://www.optcg.gg/deck-lists/42eeb5db-3c29-467d-b66d-8768e08ac742",
+      "kind": "web",
+      "date": "2026-11-03"
+    },
+    {
+      "slug": "optcggg-7th-nikolaybaydanov-chinoizecup-131",
+      "href": "/decklists/buggy-op09-042/optcggg-7th-nikolaybaydanov-chinoizecup-131.html",
+      "title": "NikolayBaydanov - ChinoizeCup #131",
+      "subtitle": "Public OPTCG.GG list · ChinoizeCup #131 · 2026-11-03",
+      "source_url": "https://www.optcg.gg/deck-lists/27f6faa9-b8f1-4094-92f4-015359b9be5f",
+      "kind": "web",
+      "date": "2026-11-03"
+    }
+  ],
+  "OP09-081": [
+    {
+      "slug": "optcggg-1st-penguino-s-chinoizecup-130",
+      "href": "/decklists/marshall-d-teach-op09-081/optcggg-1st-penguino-s-chinoizecup-130.html",
+      "title": "penguino s - ChinoizeCup #130",
+      "subtitle": "Public OPTCG.GG list · ChinoizeCup #130 · 2026-11-02",
+      "source_url": "https://www.optcg.gg/deck-lists/02072f15-ec06-4f65-bcdb-0369dec4aaed",
+      "kind": "web",
+      "date": "2026-11-02"
+    }
+  ],
+  "OP14-001": [
+    {
+      "slug": "optcggg-4th-jansuko-x3-invitational",
+      "href": "/decklists/trafalgar-law-op14-001/optcggg-4th-jansuko-x3-invitational.html",
+      "title": "Jansuko - X3 Invitational",
+      "subtitle": "Public OPTCG.GG list · X3 Invitational · 2026-11-01",
+      "source_url": "https://www.optcg.gg/deck-lists/d15ecd5d-3d9c-4cb6-bbd9-82d1316623da",
+      "kind": "web",
+      "date": "2026-11-01"
+    }
   ]
 }

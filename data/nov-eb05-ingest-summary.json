@@ -1,0 +1,21 @@
+{
+  "window": {
+    "start": "2026-11-01",
+    "end": "2026-11-09"
+  },
+  "sources": {
+    "limitless": 35,
+    "optcg.gg": 6,
+    "portal": 0,
+    "opdb": 0,
+    "opdeck": 0,
+    "reddit": 0
+  },
+  "community_legal": 6,
+  "images": {
+    "saved": 61,
+    "failed": [],
+    "ids": 61
+  },
+  "new_total": 41
+}
