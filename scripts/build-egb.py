@@ -160,16 +160,8 @@ def chrome(title: str, desc: str, rel: str, current: str, crumbs: list[tuple[str
 
 def write_hub(rows: list[dict], pie: dict, featured: list[dict], leaders: list[dict]) -> None:
     recent = home_meta.newest_rows(rows, EGB_RECENT_HOME)
-    visible = 20
-    extra_n = max(0, len(recent) - visible)
-    count_label = f"{visible} of {len(recent)}" if extra_n else f"{len(recent)} lists"
-    if extra_n:
-        more_btn = f"""          <div class="recent-more-row">
-            <button type="button" class="recent-more-btn" data-recent-more>Show {extra_n} more</button>
-            <a class="recent-all-link" href="/extra-grand-battle-recent.html">All Extra Grand Battle lists →</a>
-          </div>"""
-    else:
-        more_btn = """          <div class="recent-more-row">
+    count_label = f"{len(recent)} lists"
+    more_btn = """          <div class="recent-more-row">
             <a class="recent-all-link" href="/extra-grand-battle-recent.html">All Extra Grand Battle lists →</a>
           </div>"""
     pie_block = home_meta.pie_html(
@@ -239,7 +231,7 @@ def write_hub(rows: list[dict], pie: dict, featured: list[dict], leaders: list[d
             <span>Date</span>
           </div>
           <ul class="recent-list" aria-label="Recent Extra Grand Battle decklists">
-{up.recent_rows_html(recent, hide_after=visible)}
+{up.recent_rows_html(recent)}
           </ul>
 {more_btn}
         </section>

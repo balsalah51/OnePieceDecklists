@@ -389,10 +389,15 @@ def community_section(leader: dict, lists: list[dict], tournament_html: str) -> 
         href = entry["href"]
         title = entry.get("title_override") or entry.get("title")
         subtitle = entry.get("subtitle") or ""
+        date_s = entry.get("date") or ""
+        if not date_s:
+            found = re.search(r"\d{4}-\d{2}-\d{2}", subtitle)
+            date_s = found.group(0) if found else ""
+        date_attr = f' data-date="{html.escape(date_s)}"' if date_s else ""
         badge = {"youtube": "YouTube", "x": "X"}.get(entry.get("kind"), "Web")
         copy_btn = gen.copy_sim_button(gen.sim_text_for_entry(leader, entry))
         rows.append(
-            f"""            <li class="list-row">
+            f"""            <li class="list-row"{date_attr}>
               <a class="item" href="{html.escape(href)}">
                 <div>
                   <div style="font-weight:700">{html.escape(title)}</div>
