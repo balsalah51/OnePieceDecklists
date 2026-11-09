@@ -154,47 +154,10 @@ def tournament_entries(leader: dict, items: list[dict]) -> list[dict]:
 
 
 def rebuild_hubs(index: dict, only_ids: set[str] | None = None) -> None:
-    for leader in gen.LEADERS:
-        if only_ids is not None and leader["id"] not in only_ids:
-            continue
-        lid = leader["id"]
-        page_path = ROOT / leader["page"]
-        if not page_path.exists():
-            print("skip missing hub", page_path)
-            continue
-        page = page_path.read_text()
-        comm_lists = community_entries(leader)
-        tour_lists = tournament_entries(leader, index.get(lid) or [])
-        tour_lists.sort(key=gen.date_sort_key, reverse=True)
-        if lid == "OP17-001" and not tour_lists:
-            tournament_html = NEWGATE_TOURNAMENT
-        else:
-            tournament_html = gen.render_index_section(leader, tour_lists)
-        if comm_lists:
-            combined = comm.community_section(leader, comm_lists, tournament_html)
-        else:
-            combined = tournament_html
-        page = re.sub(
-            r"        <!-- COMMUNITY_DECKLISTS -->.*?        <!-- /COMMUNITY_DECKLISTS -->\n?",
-            "",
-            page,
-            count=1,
-            flags=re.S,
-        )
-        m = HUB_BLOCK_RE.search(page)
-        if m:
-            page = page[: m.start()] + combined + page[m.end() :]
-        else:
-            page = gen.insert_section(page, combined, gen.render_pool_heading(leader))
-        page_path.write_text(page)
-        print(
-            "hub",
-            leader["page"],
-            "community",
-            len(comm_lists),
-            "tournament",
-            len(tour_lists),
-        )
+    hub_spec = importlib.util.spec_from_file_location("rebuildhubs", ROOT / "scripts/rebuild-leader-hubs.py")
+    rh = importlib.util.module_from_spec(hub_spec)
+    hub_spec.loader.exec_module(rh)
+    rh.rebuild(only_ids=only_ids)
 
 
 def index_row(entry: dict) -> dict:

@@ -10,7 +10,7 @@
   <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=older-lists1" />
+  <link rel="stylesheet" href="/css/site.css?v=leader-hub1" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -83,29 +83,22 @@
             <p class="muted" style="margin-top:12px">Roronoa Zoro · OP12-020</p>
           </div>
         </div>
-
-
-
-
-
-
-
         <!-- LEADER_ANALYSIS -->
         <section class="leader-analysis" style="margin-top:22px">
           <div class="section-title">
             <h3>How it plays</h3>
             <div class="muted">Staples from lists on this page</div>
           </div>
-          <p class="leader-take">Roronoa Zoro (OP12-020) lists on this site are hosted because they include OP17 cards.</p>
+          <p class="leader-take">Roronoa Zoro (OP12-020) lists on this site are hosted public constructed lists.</p>
         </section>
         <!-- /LEADER_ANALYSIS -->
         <!-- CONSENSUS_LIST -->
         <section class="text-deck">
           <div class="section-title">
-            <h3>Consensus list</h3>
+            <h3>Top aggregate list: built from all 22 decks (2026-06-21 to 2026-10-27)</h3>
             <button type="button" class="copy-sim" data-copy-sim>Copy to OP TCG SIM</button>
           </div>
-          <p class="muted">Averaged from 22 lists on this page, using the 3 that play OP17 so the 50-card core includes the new set, then filled to 50 cards.</p>
+          <p class="muted">Legal 50-card list from inclusion rate and average copies. Updates as newer lists land. Hover or tap a card name to see the picture.</p>
           <div class="text-deck-cols">
           <div class="text-deck-leader">
             <h4>Leader</h4>
@@ -234,274 +227,457 @@
         </section>
         <!-- /CONSENSUS_LIST -->
 
-        <!-- COMMUNITY_DECKLISTS -->
-        <section class="deck-index" style="margin-top:22px">
+        <!-- LEADER_LISTS -->
+        <section class="deck-index" data-leader-lists style="margin-top:22px">
           <div class="section-title">
-            <h3>YouTube and community decklists</h3>
-            <div class="muted">2 lists</div>
+            <h3>Decklists</h3>
+            <div class="muted">22 lists</div>
           </div>
-          <p class="muted">Public YouTube and web lists with a full 50-card ID list. Tournament tables below are from Limitless.</p>
-          <ul class="list" aria-label="YouTube and community decklists">
-            <li class="list-row" data-date="2026-09-12">
-              <a class="item" href="/decklists/zoro/opdb-zoro-shanks-2696.html">
-                <div>
-                  <div style="font-weight:700">Zoro shanks</div>
-                  <div class="muted" style="font-size:13px">Public OnePieceDB list · 2026-09-12</div>
-                </div>
-                <div class="link">Web →</div>
-              </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 2xST32-001 2xST32-005 2xOP16-027 3xOP12-027 1xOP06-033 1xOP17-029 4xOP12-026 2xOP10-036 4xST32-004 4xOP12-023 4xST32-002 4xOP12-031 3xOP17-031 2xST32-003 3xOP15-036 3xOP16-035 3xOP17-022 3xOP12-039">Copy to OP TCG SIM</button>
-            </li>
-            <li class="list-row" data-date="2026-08-26">
-              <a class="item" href="/decklists/zoro/tcgportal-2026-08-26-mint-p062vk.html">
-                <div>
-                  <div style="font-weight:700">緑ゾロ スタンダードバトル winner - MINT 新宿店</div>
-                  <div class="muted" style="font-size:13px">Public TCG PORTAL list · 2026-08-26</div>
-                </div>
-                <div class="link">Web →</div>
-              </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP15-035 4xOP12-034 4xST12-003 2xOP15-023 4xOP14-026 4xOP13-037 3xOP07-026 4xST32-002 4xOP12-031 3xST32-003 4xOP13-031 2xOP12-037 4xOP12-039">Copy to OP TCG SIM</button>
-            </li>
-          </ul>
-        </section>
-        <!-- /COMMUNITY_DECKLISTS -->
-        <!-- TOURNAMENT_DECKLISTS -->
-        <section class="deck-index" style="margin-top:22px">
-          <div class="section-title">
-            <h3>Tournament decklists</h3>
-            <div class="muted">20 lists</div>
-          </div>
-          <p class="muted">Newest Limitless events first. Each row opens a separate 50-card list.</p>
-          <div class="list-filters" data-hub-filters>
-            <input type="search" data-filter="q" placeholder="Filter player or event" aria-label="Filter lists" />
-            <select data-filter="when" aria-label="Date">
-              <option value="">Any date</option>
-              <option value="jul">Since July 2026</option>
-              <option value="aug">Since August 2026</option>
-            </select>
-            <select data-filter="place" aria-label="Placing">
-              <option value="">Any placing</option>
-              <option value="top8">Top 8</option>
-              <option value="win">1st only</option>
-            </select>
-            <select data-filter="event" aria-label="Event type">
-              <option value="">Any event</option>
-              <option value="regional">Regional</option>
-              <option value="treasure">Treasure Cup</option>
-              <option value="championship">Championship / Flagship</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <ul class="list" aria-label="Tournament decklists">
-            <li class="list-row" data-date="2026-10-27" data-placing="" data-event="other">
+          <p class="muted">Tournament and web lists in one list, newest first. Dates are the event or posted day, not the scrape day.</p>
+          <ul class="list" data-leader-lists aria-label="Roronoa Zoro decklists">
+            <li class="list-row" data-date="2026-10-27" data-placing="" data-source="tournament">
               <a class="item" href="/decklists/zoro/1-3-traumis-eb05-chinoizecup-128-tuesday.html">
                 <div>
-                  <div style="font-weight:700">Traumis - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[EB05] ChinoizeCup #128 TUESDAY · 2026-10-27</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Traumis - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[EB05] ChinoizeCup #128 TUESDAY · 2026-10-27 · Limitless</div>
                 </div>
                 <div class="link">2026-10-27 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 4xST32-005 4xST12-003 4xOP14-024 4xOP13-037 3xST32-004 4xEB01-012 4xST32-002 4xOP12-031 4xST32-003 3xOP12-037 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-10-15" data-placing="19" data-event="other">
+            <li class="list-row" data-date="2026-10-15" data-placing="19" data-source="tournament">
               <a class="item" href="/decklists/zoro/19th-vimax19-op17-5-win-a-box-rumble-league-13.html">
                 <div>
-                  <div style="font-weight:700">ViMax19 - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[OP17.5] Win a box | Rumble league #13 · 19th · 2026-10-15</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> ViMax19 - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[OP17.5] Win a box | Rumble league #13 · 19th · 2026-10-15 · Limitless</div>
                 </div>
                 <div class="link">2026-10-15 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 4xST32-005 2xOP12-027 4xST12-003 2xOP12-026 3xOP13-037 4xEB01-012 4xST32-002 4xOP12-031 3xST32-003 4xOP13-031 2xOP12-037 2xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-10-08" data-placing="14" data-event="other">
+            <li class="list-row" data-date="2026-10-08" data-placing="14" data-source="tournament">
               <a class="item" href="/decklists/zoro/14th-brokenballad-glc-op17-post-ban.html">
                 <div>
-                  <div style="font-weight:700">brokenballad - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">GLC OP17 Post-Ban · 14th · 2026-10-08</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> brokenballad - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">GLC OP17 Post-Ban · 14th · 2026-10-08 · Limitless</div>
                 </div>
                 <div class="link">2026-10-08 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 1xST32-001 3xOP12-028 2xOP12-034 2xST32-005 4xOP12-027 3xOP12-026 3xOP10-036 2xOP13-037 1xEB03-018 2xEB01-012 3xOP12-023 1xST32-002 4xOP12-031 4xST24-005 2xST32-003 2xOP13-031 2xOP16-035 3xOP17-022 2xOP13-040 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-10-05" data-placing="6" data-event="other">
+            <li class="list-row" data-date="2026-10-05" data-placing="6" data-source="tournament">
               <a class="item" href="/decklists/zoro/6th-lykoi763-ger-dressrosa-tournament-op17.html">
                 <div>
-                  <div style="font-weight:700">Lykoi763 - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[GER] Dressrosa Tournament-OP17 · 6th · 2026-10-05</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Lykoi763 - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[GER] Dressrosa Tournament-OP17 · 6th · 2026-10-05 · Limitless</div>
                 </div>
                 <div class="link">2026-10-05 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 1xST32-005 4xST12-003 3xOP15-023 2xOP14-026 3xOP12-026 4xOP13-037 3xPRB02-006 2xEB01-012 4xST32-002 4xOP12-031 3xST32-003 3xOP13-031 2xOP12-037 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-10-01" data-placing="24" data-event="other">
+            <li class="list-row" data-date="2026-10-01" data-placing="24" data-source="tournament">
               <a class="item" href="/decklists/zoro/24th-perryagentep-op17-new-banned-win-a-box-rumble-league-11.html">
                 <div>
-                  <div style="font-weight:700">PerryAgenteP - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[OP17 NEW BANNED] Win a box | Rumble league #11 · 24th · 2026-10-01</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> PerryAgenteP - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[OP17 NEW BANNED] Win a box | Rumble league #11 · 24th · 2026-10-01 · Limitless</div>
                 </div>
                 <div class="link">2026-10-01 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 4xST32-005 4xOP06-033 4xST12-003 3xOP15-023 4xOP13-037 3xOP12-023 3xST32-002 4xOP12-031 3xST32-003 3xOP13-031 1xOP12-037 2xOP13-040 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-09-30" data-placing="" data-event="other">
+            <li class="list-row" data-date="2026-09-30" data-placing="" data-source="tournament">
               <a class="item" href="/decklists/zoro/2-3-d-knightridah97-egb-chinoizecup-117-wednesday.html">
                 <div>
-                  <div style="font-weight:700">D_knightridah97 - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[EGB] ChinoizeCup #117 Wednesday · 2026-09-30</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> D_knightridah97 - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[EGB] ChinoizeCup #117 Wednesday · 2026-09-30 · Limitless</div>
                 </div>
                 <div class="link">2026-09-30 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 3xST32-001 4xOP12-028 4xOP12-034 2xST32-005 4xST12-003 4xOP15-023 3xOP14-024 4xOP14-026 2xOP12-026 2xEB01-012 4xOP12-031 4xST32-003 4xOP13-031 2xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-09-28" data-placing="" data-event="other">
+            <li class="list-row" data-date="2026-09-28" data-placing="" data-source="tournament">
               <a class="item" href="/decklists/zoro/1-1-aconite-op17-chinoizecup-115-monday.html">
                 <div>
-                  <div style="font-weight:700">Aconite - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[OP17] ChinoizeCup #115 Monday · 2026-09-28</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Aconite - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[OP17] ChinoizeCup #115 Monday · 2026-09-28 · Limitless</div>
                 </div>
                 <div class="link">2026-09-28 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 4xST12-003 2xOP10-032 2xOP15-023 4xOP15-027 3xOP12-026 4xOP13-037 4xEB01-012 2xOP10-030 4xOP12-031 2xST32-003 3xOP13-031 2xOP12-030 2xOP12-037 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-09-16" data-placing="18" data-event="other">
+            <li class="list-row" data-date="2026-09-16" data-placing="18" data-source="tournament">
               <a class="item" href="/decklists/zoro/18th-tattoojoey-egb-chinoizecup-111-wednesday.html">
                 <div>
-                  <div style="font-weight:700">Tattoojoey - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[EGB] ChinoizeCup #111 Wednesday · 18th · 2026-09-16</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Tattoojoey - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[EGB] ChinoizeCup #111 Wednesday · 18th · 2026-09-16 · Limitless</div>
                 </div>
                 <div class="link">2026-09-16 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP14-023 4xST32-001 4xOP07-022 4xOP12-034 3xOP14-024 3xEB01-012 4xOP12-023 3xST32-002 4xOP12-031 3xST32-003 3xOP17-038 4xOP14-038 1xOP01-057 2xOP01-055 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-09-01" data-placing="13" data-event="other">
+            <li class="list-row" data-date="2026-09-12" data-placing="" data-source="web">
+              <a class="item" href="/decklists/zoro/opdb-zoro-shanks-2696.html">
+                <div>
+                  <div class="list-row-title"><span class="list-tag list-tag-web">Web</span> Zoro shanks</div>
+                  <div class="muted" style="font-size:13px">Public OnePieceDB list · 2026-09-12</div>
+                </div>
+                <div class="link">2026-09-12 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 2xST32-001 2xST32-005 2xOP16-027 3xOP12-027 1xOP06-033 1xOP17-029 4xOP12-026 2xOP10-036 4xST32-004 4xOP12-023 4xST32-002 4xOP12-031 3xOP17-031 2xST32-003 3xOP15-036 3xOP16-035 3xOP17-022 3xOP12-039">Copy to OP TCG SIM</button>
+            </li>
+            <li class="list-row" data-date="2026-09-01" data-placing="13" data-source="tournament">
               <a class="item" href="/decklists/zoro/13th-emiliano-pilquinao-liga-phoenix-2026-one-piece-mana-34.html">
                 <div>
-                  <div style="font-weight:700">Emiliano Pilquinao - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">Liga Phoenix 2026 -  ONE PIECE - MANA 34° · 13th · 2026-09-01</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Emiliano Pilquinao - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">Liga Phoenix 2026 -  ONE PIECE - MANA 34° · 13th · 2026-09-01 · Limitless</div>
                 </div>
                 <div class="link">2026-09-01 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 3xEB01-015 4xOP12-027 4xST12-003 2xOP10-032 4xOP12-026 4xOP13-037 3xEB01-012 3xOP12-023 4xOP12-031 4xOP13-031 1xOP13-028 1xOP05-037 1xOP12-037 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-08-27" data-placing="" data-event="other">
+            <li class="list-row" data-date="2026-08-27" data-placing="" data-source="tournament">
               <a class="item" href="/decklists/zoro/2-1-slavkomon-ger-dressrosa-tournament-op17.html">
                 <div>
-                  <div style="font-weight:700">slavkomon - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">[GER] Dressrosa Tournament-OP17 · 2026-08-27</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> slavkomon - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">[GER] Dressrosa Tournament-OP17 · 2026-08-27 · Limitless</div>
                 </div>
                 <div class="link">2026-08-27 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 3xST32-001 4xOP12-028 4xOP12-034 4xST32-005 4xST12-003 4xOP13-037 2xEB01-012 4xST32-002 4xOP12-031 1xST24-005 3xST32-003 3xOP13-031 1xOP13-028 1xOP05-037 1xOP12-037 3xOP13-040 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-08-12" data-placing="" data-event="other">
+            <li class="list-row" data-date="2026-08-26" data-placing="" data-source="web">
+              <a class="item" href="/decklists/zoro/tcgportal-2026-08-26-mint-p062vk.html">
+                <div>
+                  <div class="list-row-title"><span class="list-tag list-tag-web">Web</span> 緑ゾロ スタンダードバトル winner - MINT 新宿店</div>
+                  <div class="muted" style="font-size:13px">Public TCG PORTAL list · 2026-08-26</div>
+                </div>
+                <div class="link">2026-08-26 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP15-035 4xOP12-034 4xST12-003 2xOP15-023 4xOP14-026 4xOP13-037 3xOP07-026 4xST32-002 4xOP12-031 3xST32-003 4xOP13-031 2xOP12-037 4xOP12-039">Copy to OP TCG SIM</button>
+            </li>
+            <li class="list-row" data-date="2026-08-12" data-placing="" data-source="tournament">
               <a class="item" href="/decklists/zoro/1-3-hisoak-chinoizecup-96-wednesday.html">
                 <div>
-                  <div style="font-weight:700">Hisoak - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">ChinoizeCup #96 Wednesday · 2026-08-12</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Hisoak - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">ChinoizeCup #96 Wednesday · 2026-08-12 · Limitless</div>
                 </div>
                 <div class="link">2026-08-12 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 4xST12-003 4xOP15-023 4xOP12-026 4xPRB02-006 3xEB01-012 3xST32-002 4xOP12-031 3xST32-003 3xOP12-030 2xOP05-037 1xOP12-037 3xOP13-040 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-07-27" data-placing="13" data-event="other">
+            <li class="list-row" data-date="2026-07-27" data-placing="13" data-source="tournament">
               <a class="item" href="/decklists/zoro/13th-fritz02-club-tv-24-simulador-op16-5.html">
                 <div>
-                  <div style="font-weight:700">Fritz02 - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">Club TV #24 Simulador (OP16.5) · 13th · 2026-07-27</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Fritz02 - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">Club TV #24 Simulador (OP16.5) · 13th · 2026-07-27 · Limitless</div>
                 </div>
                 <div class="link">2026-07-27 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 2xOP15-035 4xOP12-034 4xST32-005 4xST12-003 4xOP13-037 2xST32-004 4xST32-002 2xOP10-030 4xOP12-031 4xST32-003 2xOP13-031 2xOP16-035 2xOP12-037 2xOP13-040 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-07-23" data-placing="17" data-event="other">
+            <li class="list-row" data-date="2026-07-23" data-placing="17" data-source="tournament">
               <a class="item" href="/decklists/zoro/17th-vimax19-rumble-league-vol-1-op16-st31-36.html">
                 <div>
-                  <div style="font-weight:700">ViMax19 - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">Rumble league | Vol. 1 |OP16+ST31-36 · 17th · 2026-07-23</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> ViMax19 - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">Rumble league | Vol. 1 |OP16+ST31-36 · 17th · 2026-07-23 · Limitless</div>
                 </div>
                 <div class="link">2026-07-23 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 2xST32-001 4xOP12-028 4xOP12-034 4xST32-005 4xST12-003 4xOP13-037 4xEB01-012 4xST32-002 4xOP12-031 3xST32-003 4xOP13-031 1xOP13-028 1xOP12-037 3xOP13-040 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-07-20" data-placing="" data-event="other">
+            <li class="list-row" data-date="2026-07-20" data-placing="" data-source="tournament">
               <a class="item" href="/decklists/zoro/1-3-ajiin-chinoizecup-85-monday.html">
                 <div>
-                  <div style="font-weight:700">aJiiN - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">ChinoizeCup #85 Monday · 2026-07-20</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> aJiiN - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">ChinoizeCup #85 Monday · 2026-07-20 · Limitless</div>
                 </div>
                 <div class="link">2026-07-20 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 4xST32-005 4xST12-003 3xOP13-037 2xPRB02-006 4xEB01-012 4xST32-002 2xOP10-030 4xOP12-031 4xST32-003 2xOP13-031 1xOP05-037 2xOP12-037 2xOP13-040 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-07-11" data-placing="18" data-event="other">
+            <li class="list-row" data-date="2026-07-11" data-placing="18" data-source="tournament">
               <a class="item" href="/decklists/zoro/18th-pablo-bertola-phoenix-la-plata-one-piece-mini-open.html">
                 <div>
-                  <div style="font-weight:700">Pablo Bertola - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">PHOENIX LA PLATA - ONE PIECE - MINI OPEN · 18th · 2026-07-11</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Pablo Bertola - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">PHOENIX LA PLATA - ONE PIECE - MINI OPEN · 18th · 2026-07-11 · Limitless</div>
                 </div>
                 <div class="link">2026-07-11 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 2xOP12-027 4xST12-003 4xOP12-029 2xOP15-023 2xOP12-026 4xOP13-037 2xEB01-012 1xOP14-033 4xOP12-031 4xOP13-031 2xOP16-032 1xOP16-035 2xOP12-037 1xOP13-040 3xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-07-09" data-placing="7" data-event="other">
+            <li class="list-row" data-date="2026-07-09" data-placing="7" data-source="tournament">
               <a class="item" href="/decklists/zoro/7th-russo9-skl-supreme-king-league-free-entry.html">
                 <div>
-                  <div style="font-weight:700">Russo9 - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">SKL -  Supreme King League| FREE ENTRY · 7th · 2026-07-09</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Russo9 - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">SKL -  Supreme King League| FREE ENTRY · 7th · 2026-07-09 · Limitless</div>
                 </div>
                 <div class="link">2026-07-09 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 3xOP12-028 4xOP12-034 3xEB01-015 4xOP12-027 4xST12-003 3xOP10-032 3xOP14-026 3xOP12-026 3xOP13-037 4xOP12-031 3xOP13-031 4xOP16-035 2xOP12-037 3xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-07-07" data-placing="6" data-event="other">
+            <li class="list-row" data-date="2026-07-07" data-placing="6" data-source="tournament">
               <a class="item" href="/decklists/zoro/6th-kenan-bayrakli-saiyajazz-league-op16-tournament-series-x-lonetcg.html">
                 <div>
-                  <div style="font-weight:700">Kenan Bayrakli - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">SAIYAJAZZ LEAGUE- OP16 TOURNAMENT SERIES x lonetcg · 6th · 2026-07-07</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Kenan Bayrakli - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">SAIYAJAZZ LEAGUE- OP16 TOURNAMENT SERIES x lonetcg · 6th · 2026-07-07 · Limitless</div>
                 </div>
                 <div class="link">2026-07-07 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 3xOP12-027 4xST12-003 2xOP10-032 4xOP14-026 1xOP12-026 4xOP13-037 3xEB01-012 4xOP12-031 4xOP13-031 4xOP12-030 2xOP12-037 3xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-06-30" data-placing="24" data-event="other">
+            <li class="list-row" data-date="2026-06-30" data-placing="24" data-source="tournament">
               <a class="item" href="/decklists/zoro/24th-yansolo-chinoizecup-77-tuesday.html">
                 <div>
-                  <div style="font-weight:700">Yansolo - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">ChinoizeCup #77 Tuesday · 24th · 2026-06-30</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Yansolo - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">ChinoizeCup #77 Tuesday · 24th · 2026-06-30 · Limitless</div>
                 </div>
                 <div class="link">2026-06-30 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 2xOP15-035 4xOP12-034 4xST12-003 2xOP15-023 4xOP15-027 4xOP14-024 4xOP14-026 2xEB01-012 4xOP12-031 4xOP13-031 4xOP16-035 4xOP12-037 4xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-06-23" data-placing="7" data-event="other">
+            <li class="list-row" data-date="2026-06-23" data-placing="7" data-source="tournament">
               <a class="item" href="/decklists/zoro/7th-sakb1639-saiyajazz-league-op16-tournament-series-x-lonetcg.html">
                 <div>
-                  <div style="font-weight:700">Sakb1639 - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">SAIYAJAZZ LEAGUE- OP16 TOURNAMENT SERIES x lonetcg · 7th · 2026-06-23</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Sakb1639 - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">SAIYAJAZZ LEAGUE- OP16 TOURNAMENT SERIES x lonetcg · 7th · 2026-06-23 · Limitless</div>
                 </div>
                 <div class="link">2026-06-23 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 4xOP12-028 4xOP12-034 2xOP12-027 4xST12-003 2xOP10-032 2xOP15-023 4xOP14-026 1xOP12-026 4xOP13-037 3xEB01-012 4xOP12-031 4xOP13-031 3xOP16-032 2xOP12-037 3xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
-            <li class="list-row" data-date="2026-06-21" data-placing="6" data-event="other">
+            <li class="list-row" data-date="2026-06-21" data-placing="6" data-source="tournament">
               <a class="item" href="/decklists/zoro/6th-sodu-optcg-india-op16-tournament-21st-june.html">
                 <div>
-                  <div style="font-weight:700">Sodu - Roronoa Zoro</div>
-                  <div class="muted" style="font-size:13px">OPTCG India OP16 Tournament - 21st June · 6th · 2026-06-21</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Sodu - Roronoa Zoro</div>
+                  <div class="muted" style="font-size:13px">OPTCG India OP16 Tournament - 21st June · 6th · 2026-06-21 · Limitless</div>
                 </div>
                 <div class="link">2026-06-21 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-020 2xOP12-028 4xOP12-034 4xST12-003 4xOP14-032 2xOP15-023 2xOP14-024 2xPRB02-006 3xEB01-012 2xEB03-017 3xOP14-033 4xOP12-031 4xOP16-032 4xOP16-035 3xOP12-037 3xOP08-036 4xOP12-039">Copy to OP TCG SIM</button>
             </li>
           </ul>
-        </section>
-        <!-- /TOURNAMENT_DECKLISTS -->
-        <!-- CARD_POOL_HEADING -->
-        <div class="section-title" style="margin-top:28px">
-          <h3>Card pictures</h3>
-          <div class="muted">English names and art from Limitless</div>
+        <div class="leader-actions" role="group" aria-label="Leader list controls">
+          <button type="button" class="leader-action-btn" data-show-card-pictures aria-expanded="false" aria-controls="leader-card-pictures"><span class="leader-action-label">Show card pictures and descriptions</span></button>
+          <a class="leader-action-btn leader-action-link" href="/leader/zoro/all/">View all lists</a>
         </div>
-        <!-- /CARD_POOL_HEADING -->
+        </section>
+        <!-- /LEADER_LISTS -->
+        <!-- CARD_PICTURES -->
+        <div id="leader-card-pictures" class="leader-card-pictures" hidden>
+          <div class="section-title" style="margin-top:8px">
+            <h3>Card pictures and descriptions</h3>
+            <div class="muted">Top aggregate list: built from all 22 decks (2026-06-21 to 2026-10-27)</div>
+          </div>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Leader</h3>
+            <div class="muted">1 card</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="/img/cards/OP12/OP12-020.webp" alt="Roronoa Zoro OP12-020" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">1x</span>OP12-020 · Leader</div>
+            <h4>Roronoa Zoro</h4>
+            <div class="stats">5 Life · 5000 Power · Slash · Green</div>
+            <div class="stats">Supernovas/Straw Hat Crew</div>
+            <div class="text">[DON!! x3] [Activate: Main] [Once Per Turn] If this Leader battles your opponent&#x27;s Character during this turn, set this Leader as active. Then, this Leader cannot attack your opponent&#x27;s Characters with a base cost of 7 or less during this turn.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Characters</h3>
+            <div class="muted">15 cards</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-023_EN.webp" alt="Kikunojo OP14-023" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP14-023 · Character</div>
+            <h4>Kikunojo</h4>
+            <div class="stats">Cost 1 · 2000 Power · +2000 Counter · Slash · Green</div>
+            <div class="stats">Land of Wano/The Akazaya Nine</div>
+            <div class="text">[End of Your Turn] Set this Character as active.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST32/ST32-001_EN.webp" alt="Kin&#x27;emon ST32-001" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>ST32-001 · Character</div>
+            <h4>Kin&#x27;emon</h4>
+            <div class="stats">Cost 1 · 2000 Power · +1000 Counter · Slash · Green</div>
+            <div class="stats">Land of Wano/The Akazaya Nine</div>
+            <div class="text">[On Play] You may rest your &lt;slash&gt; attribute Leader or 1 of your DON!! cards: Draw 2 cards and trash 1 card from your hand.&lt;/slash&gt;</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-034_EN.webp" alt="Perona OP12-034" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">3x</span>OP12-034 · Character</div>
+            <h4>Perona</h4>
+            <div class="stats">Cost 1 · 2000 Power · +1000 Counter · Special · Green</div>
+            <div class="stats">Muggy Kingdom/Thriller Bark Pirates</div>
+            <div class="text">[On Play] If your Leader has the &lt;Slash&gt; attribute, look at 5 cards from the top of your deck; reveal up to 1 &lt;Slash&gt; attribute card or green Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST32/ST32-005_EN.webp" alt="Roronoa Zoro ST32-005" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>ST32-005 · Character</div>
+            <h4>Roronoa Zoro</h4>
+            <div class="stats">Cost 1 · 2000 Power · +2000 Counter · Slash · Green</div>
+            <div class="stats">Supernovas/Straw Hat Crew</div>
+            <div class="text">[Rush: Character] (This card can attack Characters on the turn in which it is played.)
+[On Play] If your Leader has the &lt;slash&gt; attribute, rest up to 1 of your opponent&#x27;s Characters with a cost of 2 or less.&lt;/slash&gt;</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-027_EN.webp" alt="Koushirou OP12-027" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-027 · Character</div>
+            <h4>Koushirou</h4>
+            <div class="stats">Cost 2 · 1000 Power · +1000 Counter · Slash · Green</div>
+            <div class="stats">East Blue/Frost Moon Village</div>
+            <div class="text">If your &amp;lt;Slash&amp;gt; attribute Character with a cost of 5 or less other than this Character would be K.O.&#x27;d by your opponent&#x27;s effect, you may rest this Character instead.
+[Blocker]</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-026_EN.webp" alt="Kuina OP12-026" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-026 · Character</div>
+            <h4>Kuina</h4>
+            <div class="stats">Cost 4 · 1000 Power · +1000 Counter · Slash · Green</div>
+            <div class="stats">East Blue/Frost Moon Village</div>
+            <div class="text">[Activate: Main] You may rest this Character: Rest up to 1 of your opponent&#x27;s Characters with a base cost of 4 or less. Then, give up to 3 rested DON!! cards to your [Roronoa Zoro] Leader.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP10/OP10-036_EN.webp" alt="Perona OP10-036" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>OP10-036 · Character</div>
+            <h4>Perona</h4>
+            <div class="stats">Cost 4 · 5000 Power · +1000 Counter · Special · Green</div>
+            <div class="stats">ODYSSEY/Muggy Kingdom/Thriller Bark Pirates</div>
+            <div class="text">[Your Turn] [Once Per Turn] If a Character is rested by your effect, set up to 1 of your DON!! cards as active.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB01/EB01-012_EN.webp" alt="Cavendish EB01-012" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>EB01-012 · Character</div>
+            <h4>Cavendish</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Slash · Green</div>
+            <div class="stats">Supernovas/Beautiful Pirates</div>
+            <div class="text">[On Play]/[When Attacking] If your Leader has the {Supernovas} type and you have no other [Cavendish] Characters, set up to 2 of your DON!! cards as active.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-023_EN.webp" alt="Kawamatsu OP12-023" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-023 · Character</div>
+            <h4>Kawamatsu</h4>
+            <div class="stats">Cost 5 · 6000 Power · +2000 Counter · Slash · Green</div>
+            <div class="stats">Fish-Man/Land of Wano/The Akazaya Nine</div>
+            
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST32/ST32-002_EN.webp" alt="Kouzuki Oden ST32-002" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">3x</span>ST32-002 · Character</div>
+            <h4>Kouzuki Oden</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Slash · Green</div>
+            <div class="stats">Land of Wano/Kouzuki Clan</div>
+            <div class="text">[On Play] Draw 1 card and up to 1 of your opponent&#x27;s Characters with a base cost of 6 or less cannot be rested until the end of your opponent&#x27;s next End Phase.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-031_EN.webp" alt="Tashigi OP12-031" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-031 · Character</div>
+            <h4>Tashigi</h4>
+            <div class="stats">Cost 5 · 7000 Power · Slash · Green</div>
+            <div class="stats">East Blue/Navy</div>
+            <div class="text">[On Play] Rest up to 1 of your opponent&#x27;s Characters with a base cost of 6 or less. Then, give up to 3 rested DON!! cards to your [Roronoa Zoro] Leader.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-031_EN.webp" alt="Yasopp OP17-031" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">3x</span>OP17-031 · Character</div>
+            <h4>Yasopp</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Ranged · Green</div>
+            <div class="stats">Red-Haired Pirates</div>
+            <div class="text">[On Play] Draw 1 card and rest up to 1 of your opponent&#x27;s Characters with a cost of 8 or less. [End of Your Turn] Set up to 1 of your Characters with a type including &quot;Red-Haired Pirates&quot; as active.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST32/ST32-003_EN.webp" alt="Dracule Mihawk ST32-003" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>ST32-003 · Character</div>
+            <h4>Dracule Mihawk</h4>
+            <div class="stats">Cost 6 · 7000 Power · Slash · Green</div>
+            <div class="stats">Muggy Kingdom/The Seven Warlords of the Sea</div>
+            <div class="text">[Your Turn] When this Character becomes rested, draw 1 card and trash 1 card from your hand.
+[On Play] If your Leader has the &lt;slash&gt; attribute, play up to 1 Character card with a cost of 5 or less that is either [Perona] or has the &lt;slash&gt; attribute from your hand.&lt;/slash&gt;&lt;/slash&gt;</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP16/OP16-035_EN.webp" alt="Roronoa Zoro OP16-035" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>OP16-035 · Character</div>
+            <h4>Roronoa Zoro</h4>
+            <div class="stats">Cost 7 · 9000 Power · Slash · Green</div>
+            <div class="stats">Straw Hat Crew</div>
+            <div class="text">[On Play] Rest up to 1 of your opponent&#x27;s cards. Then, you may trash 1 card from your hand. If you do, give up to 3 rested DON!! cards to your Leader.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-022_EN.webp" alt="Shanks OP17-022" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP17-022 · Character</div>
+            <h4>Shanks</h4>
+            <div class="stats">Cost 10 · 12000 Power · Slash · Green</div>
+            <div class="stats">The Four Emperors/Red-Haired Pirates</div>
+            <div class="text">[Rush] (This card can attack on the turn in which it is played.) [On Play] Set up to 2 of your DON!! cards as active. Then, rest all of your opponent&#x27;s Characters.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Events</h3>
+            <div class="muted">2 cards</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-038_EN.webp" alt="I Think He&#x27;s Seen an Ugly Future OP17-038" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">1x</span>OP17-038 · Event</div>
+            <h4>I Think He&#x27;s Seen an Ugly Future</h4>
+            <div class="stats">Cost 0 · Green</div>
+            <div class="stats">Red-Haired Pirates</div>
+            <div class="text">[Main] You may rest 4 of your cards: Rest up to 1 of your opponent&#x27;s Characters. [Counter] You may trash 1 card from your hand: Up to 1 of your Leader or Characters gains +3000 power during this battle.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-039_EN.webp" alt="Luffy Is the Man Who Will Become the King of Pirates!!! OP12-039" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-039 · Event</div>
+            <h4>Luffy Is the Man Who Will Become the King of Pirates!!!</h4>
+            <div class="stats">Cost 3 · Green</div>
+            <div class="stats">Straw Hat Crew</div>
+            <div class="text">[Main] Set your [Roronoa Zoro] Leader as active. [Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        </div>
+        <!-- /CARD_PICTURES -->
+
       </div>
     </main>
     <footer>
@@ -560,7 +736,7 @@
       });
     })();
   </script>
-  <script src="/js/site.js?v=older-lists1"></script>
+  <script src="/js/site.js?v=leader-hub1"></script>
   <script src="/js/tcgplayer-config.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-ids.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>
