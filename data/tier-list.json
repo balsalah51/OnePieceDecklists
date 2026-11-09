@@ -4,6 +4,33 @@
   "source_count": 25,
   "leaders": [
     {
+      "id": "OP13-001",
+      "name": "RG Luffy",
+      "href": "/decklists/rg-luffy.html",
+      "image": "/img/cards/OP13/OP13-001.webp",
+      "color": "color-red-green",
+      "color_label": "Red/Green",
+      "tier": "S+",
+      "score": 25.4,
+      "sources": 11,
+      "votes": {
+        "S": 2,
+        "A": 2,
+        "C": 3,
+        "B": 3,
+        "S+": 1
+      },
+      "lists": 335,
+      "wins": 26,
+      "top8": 157,
+      "top4": 92,
+      "recent_lists": 47,
+      "recent_wins": 4,
+      "recent_top8": 15,
+      "community": 91,
+      "best": 1
+    },
+    {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
       "href": "/decklists/op17/rocks-d-xebec.html",
@@ -179,32 +206,6 @@
       "recent_wins": 0,
       "recent_top8": 4,
       "community": 75,
-      "best": 1
-    },
-    {
-      "id": "OP13-001",
-      "name": "RG Luffy",
-      "href": "/decklists/rg-luffy.html",
-      "image": "/img/cards/OP13/OP13-001.webp",
-      "color": "color-red-green",
-      "color_label": "Red/Green",
-      "tier": "A",
-      "score": 23.52,
-      "sources": 11,
-      "votes": {
-        "S": 3,
-        "A": 2,
-        "C": 3,
-        "B": 3
-      },
-      "lists": 335,
-      "wins": 26,
-      "top8": 157,
-      "top4": 92,
-      "recent_lists": 47,
-      "recent_wins": 4,
-      "recent_top8": 15,
-      "community": 91,
       "best": 1
     },
     {
@@ -770,29 +771,6 @@
       "best": 6
     },
     {
-      "id": "OP13-079",
-      "name": "Imu",
-      "href": "/decklists/imu.html",
-      "image": "/img/cards/OP13/OP13-079.webp",
-      "color": "color-black",
-      "color_label": "Black",
-      "tier": "D",
-      "score": 0.98,
-      "sources": 2,
-      "votes": {
-        "D": 2
-      },
-      "lists": 203,
-      "wins": 24,
-      "top8": 171,
-      "top4": 102,
-      "recent_lists": 1,
-      "recent_wins": 0,
-      "recent_top8": 0,
-      "community": 24,
-      "best": 1
-    },
-    {
       "id": "OP11-001",
       "name": "Koby",
       "href": "/decklists/koby.html",
@@ -813,6 +791,29 @@
       "recent_wins": 0,
       "recent_top8": 0,
       "community": 8,
+      "best": 1
+    },
+    {
+      "id": "OP13-079",
+      "name": "Imu",
+      "href": "/decklists/imu.html",
+      "image": "/img/cards/OP13/OP13-079.webp",
+      "color": "color-black",
+      "color_label": "Black",
+      "tier": "D",
+      "score": 0.98,
+      "sources": 2,
+      "votes": {
+        "D": 2
+      },
+      "lists": 203,
+      "wins": 24,
+      "top8": 171,
+      "top4": 102,
+      "recent_lists": 1,
+      "recent_wins": 0,
+      "recent_top8": 0,
+      "community": 24,
       "best": 1
     },
     {
@@ -1279,7 +1280,7 @@
         "OP17-039": "A",
         "OP17-058": "B",
         "OP17-079": "C",
-        "OP13-001": "S",
+        "OP13-001": "S+",
         "OP16-001": "D",
         "OP15-058": "C",
         "OP13-079": "D",

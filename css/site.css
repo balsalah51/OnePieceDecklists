@@ -801,7 +801,7 @@ a.shop-card:hover{border-color:rgba(183,28,28,0.28);box-shadow:var(--shadow)}
 .home-search input[type="search"]{flex:1;min-width:0}
 .tier-board{display:flex;flex-direction:column;gap:10px;margin-top:18px}
 .tier-row{
-  display:grid;grid-template-columns:64px minmax(0,1fr);
+  display:grid;grid-template-columns:72px minmax(0,1fr);
   border-radius:14px;overflow:hidden;border:1px solid rgba(0,0,0,0.06);
   box-shadow:0 2px 10px rgba(16,22,26,0.04);background:#fff
 }
@@ -809,6 +809,7 @@ a.shop-card:hover{border-color:rgba(183,28,28,0.28);box-shadow:var(--shadow)}
   display:flex;align-items:center;justify-content:center;
   font-weight:900;font-size:26px;letter-spacing:.02em;color:#1b1b1b
 }
+.tier-splus .tier-label{background:#f0c419;color:#3a2200;font-size:22px}
 .tier-s .tier-label{background:#ff6b6b;color:#fff}
 .tier-a .tier-label{background:#ffb347}
 .tier-b .tier-label{background:#ffe566}
@@ -835,8 +836,9 @@ a.tier-leader .meta{font-size:11px;color:var(--muted);font-weight:700;margin-top
 .tier-sources li{line-height:1.45}
 .tier-sources a{color:var(--accent);font-weight:700;text-decoration:none}
 @media (max-width:880px){
-  .tier-row{grid-template-columns:44px minmax(0,1fr)}
+  .tier-row{grid-template-columns:52px minmax(0,1fr)}
   .tier-label{font-size:18px}
+  .tier-splus .tier-label{font-size:15px;letter-spacing:0}
   a.tier-leader{width:70px}
   a.tier-leader img{width:70px;height:98px}
 }
@@ -1105,6 +1107,7 @@ html,body{
   border-radius:18px;border:1px solid color-mix(in srgb, var(--accent) 10%, var(--line));
   box-shadow:0 8px 22px rgba(16,22,26,.06)
 }
+.tier-splus .tier-label{background:linear-gradient(180deg,#ffe36a,#e0b000);color:#3a2200}
 .tier-s .tier-label{background:linear-gradient(180deg,#ff7a7a,#e53935)}
 .tier-a .tier-label{background:linear-gradient(180deg,#ffc56b,#f0a202)}
 .tier-b .tier-label{background:linear-gradient(180deg,#ffe98a,#e6c84a)}
