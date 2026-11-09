@@ -1,0 +1,137 @@
+[
+  {
+    "id": "OP09-042",
+    "key": "buggy-op09-042",
+    "page": "decklists/buggy-op09-042.html",
+    "dir": "decklists/buggy-op09-042",
+    "name": "Buggy",
+    "color": "color-blue",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP09-081",
+    "key": "marshall-d-teach-op09-081",
+    "page": "decklists/marshall-d-teach-op09-081.html",
+    "dir": "decklists/marshall-d-teach-op09-081",
+    "name": "Marshall.D.Teach",
+    "color": "color-black",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP01-002",
+    "key": "trafalgar-law-op01-002",
+    "page": "decklists/trafalgar-law-op01-002.html",
+    "dir": "decklists/trafalgar-law-op01-002",
+    "name": "Trafalgar Law",
+    "color": "color-red-green",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP10-003",
+    "key": "sugar-op10-003",
+    "page": "decklists/sugar-op10-003.html",
+    "dir": "decklists/sugar-op10-003",
+    "name": "Sugar",
+    "color": "color-red-purple",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP14-001",
+    "key": "trafalgar-law-op14-001",
+    "page": "decklists/trafalgar-law-op14-001.html",
+    "dir": "decklists/trafalgar-law-op14-001",
+    "name": "Trafalgar Law",
+    "color": "color-red",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "P-117",
+    "key": "nami-p-117",
+    "page": "decklists/nami-p-117.html",
+    "dir": "decklists/nami-p-117",
+    "name": "Nami",
+    "color": "color-blue",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP08-098",
+    "key": "kalgara-op08-098",
+    "page": "decklists/kalgara-op08-098.html",
+    "dir": "decklists/kalgara-op08-098",
+    "name": "Kalgara",
+    "color": "color-yellow",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "ST29-001",
+    "key": "monkey-d-luffy-st29-001",
+    "page": "decklists/monkey-d-luffy-st29-001.html",
+    "dir": "decklists/monkey-d-luffy-st29-001",
+    "name": "Monkey.D.Luffy",
+    "color": "color-yellow",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP12-001",
+    "key": "silvers-rayleigh-op12-001",
+    "page": "decklists/silvers-rayleigh-op12-001.html",
+    "dir": "decklists/silvers-rayleigh-op12-001",
+    "name": "Silvers Rayleigh",
+    "color": "color-red",
+    "crumb": [
+      "/eb05-lists.html",
+      "EB05 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  }
+]

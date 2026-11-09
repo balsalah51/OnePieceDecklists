@@ -87,6 +87,7 @@ QTY_ID_RE = re.compile(
     re.S,
 )
 OP_SET_RE = re.compile(r"^OP(\d{2})-")
+CURRENT_META_SET = "EB05"
 
 spec = importlib.util.spec_from_file_location("genlists", ROOT / "scripts/generate-tournament-lists.py")
 gen = importlib.util.module_from_spec(spec)
@@ -161,16 +162,7 @@ def _card_ids(path: Path) -> list[str]:
 
 
 def detect_latest_set(rows: list[dict]) -> str:
-    best = 17
-    for row in newest_rows(rows, PIE_SCAN_LIMIT):
-        href = (row.get("href") or "").lstrip("/")
-        if not href:
-            continue
-        for cid in _card_ids(ROOT / href):
-            m = OP_SET_RE.match(cid)
-            if m:
-                best = max(best, int(m.group(1)))
-    return f"OP{best:02d}"
+    return CURRENT_META_SET
 
 
 def placing_of(row: dict) -> int | None:
@@ -253,7 +245,7 @@ def featured_html(
         cards.append(
             f"""            <a class="featured-card {html.escape(leader['color'])}{major}" href="{html.escape(row['href'])}">
               <span class="featured-place">{html.escape(place)}</span>
-              <img src="{html.escape(img)}" alt="{html.escape(leader['name'])} leader card" width="72" height="100" loading="lazy" decoding="async" />
+              <img src="{html.escape(img)}" alt="{html.escape(leader['name'])} leader card" width="72" height="100" loading="lazy" decoding="async" onerror="{gen.IMG_ONERROR}" />
               <div class="featured-copy">
                 <div class="who">{html.escape(title)}</div>
                 <div class="muted">{note}</div>
@@ -302,7 +294,7 @@ def pie_slices(
             m = OP_SET_RE.match(cid)
             if m:
                 best = max(best, int(m.group(1)))
-    latest_set = latest_set or f"OP{best:02d}"
+    latest_set = latest_set or CURRENT_META_SET
     prefix = latest_set + "-"
     counts: Counter[str] = Counter()
     placed: Counter[str] = Counter()
@@ -532,8 +524,8 @@ def pie_html(
     slices = pie.get("slices") or []
     if not slices:
         return ""
-    latest = pie.get("set") or "OP17"
-    heading = heading or f"{latest} lists"
+    latest = pie.get("set") or CURRENT_META_SET
+    heading = heading or ("EB-05 Meta" if latest.upper().startswith("EB05") else f"{latest} lists")
     lede = lede or (
         f"Share of the newest hosted lists that play at least one {latest} card. "
         "The hole is the leader converting best among these lists. Names sit on every slice."
@@ -557,7 +549,7 @@ def pie_html(
             f'<a class="meta-pie-hole" href="{html.escape(hole["href"])}" '
             f'aria-label="{html.escape(hole["name"])}">'
             f'<img class="meta-pie-hole-face" src="{html.escape(hole["image"])}" '
-            f'alt="" width="220" height="220" />'
+            f'alt="" width="220" height="220" onerror="{gen.IMG_ONERROR}" />'
             f"</a>"
         )
     else:
@@ -580,7 +572,7 @@ def pie_html(
         if row.get("image"):
             face = (
                 f'<img class="meta-pie-face" src="{html.escape(row["image"])}" '
-                f'alt="" width="48" height="48" />'
+                f'alt="" width="48" height="48" onerror="{gen.IMG_ONERROR}" />'
             )
         else:
             face = '<span class="meta-pie-face meta-pie-face-empty" aria-hidden="true"></span>'
@@ -621,7 +613,7 @@ def leader_cards_html(leaders: list[dict]) -> str:
         img = gen.card_image_url(leader["id"])
         cards.append(
             f"""            <a class="leader-card-link" href="/{leader["page"]}">
-              <img src="{img}" alt="{html.escape(leader["name"])} leader card" width="300" height="419" loading="lazy" decoding="async" />
+              <img src="{img}" alt="{html.escape(leader["name"])} leader card" width="300" height="419" loading="lazy" decoding="async" onerror="{gen.IMG_ONERROR}" />
               <div class="caption">{html.escape(leader["name"])}</div>
             </a>"""
         )
@@ -692,7 +684,7 @@ def write_recent_page(rows_html: str, count: int) -> None:
         {seo.BRAND_LOGO_HTML}
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">OPTCG decklists</div>
+          <div class="subtitle">EB-05 Meta</div>
         </div>
       </a>
       <div class="theme-toggle" role="group" aria-label="Color theme">

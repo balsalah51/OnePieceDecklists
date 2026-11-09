@@ -16,8 +16,8 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "home-banner26"
-JS_VER = "banner26"
+CSS_VER = "home-banner27"
+JS_VER = "banner27"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
 )
@@ -589,7 +589,7 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
     for href, item_label, key in pins:
         cur = ' aria-current="page"' if key == current else ""
         lines.append(f'          <a class="nav-pin" href="{href}"{cur}>{item_label}</a>')
-    lines.append('          <span class="nav-chip">OP17 Standard</span>')
+    lines.append('          <span class="nav-chip">EB-05 Meta</span>')
     lines.append("        </div>")
     for label, _key, items in groups:
         current_group = any(key == current for _href, _label, key in items)

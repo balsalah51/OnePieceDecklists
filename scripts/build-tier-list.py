@@ -16,7 +16,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path("/workspace")
-RECENT_FROM = "2026-08-20"
+RECENT_FROM = "2026-11-01"
 TIER_PTS = {"S": 5.0, "A": 3.5, "B": 2.0, "C": 1.0, "D": 0.4}
 COLOR_NAMES = {
     "color-red": "Red",
@@ -53,7 +53,7 @@ HOME_TIER_TILE = """          <a class="home-big home-big-tier" href="/tier-list
               </svg>
             </span>
             <span class="home-big-title">Tier List</span>
-            <span class="home-big-note">OP17 S through D with leader pictures</span>
+            <span class="home-big-note">EB-05 S through D with leader pictures</span>
           </a>
 """
 
@@ -643,7 +643,7 @@ def render_table(rows: list[dict]) -> str:
     return f"""        <div class="tier-table">
           <div class="section-title">
             <h3>This site's lists in the mix</h3>
-            <div class="muted">Recent = {RECENT_FROM} onward, covering the OP17 English window</div>
+            <div class="muted">Recent = {RECENT_FROM} onward, covering the EB-05 English window</div>
           </div>
           <table>
             <thead>
@@ -684,15 +684,15 @@ def render_sources(sources: list[dict]) -> str:
 
 
 def page_html(board: str, table: str, sources_html: str, rows: list[dict], sources: list[dict]) -> str:
-    title = "OP17 One Piece TCG tier list | One Piece Decklists"
+    title = "EB-05 Meta One Piece TCG tier list | One Piece Decklists"
     desc = (
-        "Aggregated OP17 One Piece TCG tier list with leader pictures. "
+        "Aggregated EB-05 One Piece TCG tier list with leader pictures. "
         "Built from 20+ public meta pages plus the tournament lists on this site."
     )
     url = seo.canonical_url("tier-list.html")
     s_names = [r["name"] for r in rows if r["tier"] == "S"]
     intro = (
-        "Early OP17 is still Mihawk's room, with Rocks D. Xebec as the new deck people copy "
+        "EB-05 Standard is still Mihawk's room, with Rocks D. Xebec as the deck people copy "
         "and Sabo converting in the West. This board averages more than twenty public tier lists "
         "and meta reports, then leans on the lists actually hosted here: recent top eights, wins, "
         "and how often a leader is posting."
@@ -711,7 +711,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
             ),
             (
                 "What format is the tier list?",
-                "Standard constructed OP17, The World's Strongest Warriors, after the 28 August 2026 English release.",
+                "Standard constructed, EB-05 Extra Booster era after the 30 October 2026 English release.",
             ),
             (
                 "Why is Green Mihawk still S tier?",
@@ -742,7 +742,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         {seo.BRAND_LOGO_HTML}
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">OPTCG decklists</div>
+          <div class="subtitle">EB-05 Meta</div>
         </div>
       </a>
 {seo.THEME_TOGGLE_HTML}{seo.primary_nav_html(current="tier")}
@@ -750,7 +750,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
     <main class="single">
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / Tier List</div>
-        <h2>OP17 tier list</h2>
+        <h2>EB-05 Meta tier list</h2>
         <p>{html.escape(intro)}</p>
         <p class="muted">Updated {date.today().isoformat()}. Leader pictures link to the 50-card lists on this site.</p>
         <div class="tier-board" aria-label="OP17 leader tier list">

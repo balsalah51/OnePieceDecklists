@@ -448,6 +448,19 @@
     });
   }
 
+  function bindCardImageFallback() {
+    var placeholder = "/img/cards/placeholder.svg";
+    document.querySelectorAll("img").forEach(function (img) {
+      if (img.dataset.fallbackBound) return;
+      img.dataset.fallbackBound = "1";
+      img.addEventListener("error", function onErr() {
+        img.removeEventListener("error", onErr);
+        if (!img.src || img.src.indexOf("placeholder.svg") !== -1) return;
+        img.src = placeholder;
+      });
+    });
+  }
+
   function prefetchOnHover() {
     if (document.documentElement.dataset.prefetchBound) return;
     document.documentElement.dataset.prefetchBound = "1";
@@ -501,6 +514,7 @@
     initSiteSearch();
     initRecentMore();
     initHomeSplash();
+    bindCardImageFallback();
     markVignetteLinks(document);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready);

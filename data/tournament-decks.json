@@ -58575,5 +58575,408 @@
       "source_url": "https://play.limitlesstcg.com/tournament/6adc5e8691617679e849fa55/standings",
       "format": "EXTRA"
     }
+  ],
+  "OP09-042": [
+    {
+      "slug": "16th-bmkid-eb05-chinoizecup-130-monday",
+      "href": "/decklists/buggy-op09-042/16th-bmkid-eb05-chinoizecup-130-monday.html",
+      "player": "BMKid",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": 16,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    },
+    {
+      "slug": "19th-cicciopal-eb05-chinoizecup-130-monday",
+      "href": "/decklists/buggy-op09-042/19th-cicciopal-eb05-chinoizecup-130-monday.html",
+      "player": "cicciopal",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": 19,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    },
+    {
+      "slug": "2nd-left-d-chat-ger-dressrosa-tournament-op17-5",
+      "href": "/decklists/buggy-op09-042/2nd-left-d-chat-ger-dressrosa-tournament-op17-5.html",
+      "player": "Left_D_Chat",
+      "tournament": "[GER] Dressrosa Tournament-OP17.5",
+      "placing": 2,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae755f3ae67092a40740b4f/standings",
+      "format": ""
+    },
+    {
+      "slug": "3rd-gyan-eb05-chinoizecup-131-tuesday",
+      "href": "/decklists/buggy-op09-042/3rd-gyan-eb05-chinoizecup-131-tuesday.html",
+      "player": "Gyan",
+      "tournament": "[EB05] ChinoizeCup #131 TUESDAY",
+      "placing": 3,
+      "date": "2026-11-03",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3115f80a8f79408d20af6/standings",
+      "format": ""
+    },
+    {
+      "slug": "3rd-left-d-chat-ger-dressrosa-tournament-op17-5",
+      "href": "/decklists/buggy-op09-042/3rd-left-d-chat-ger-dressrosa-tournament-op17-5.html",
+      "player": "Left_D_Chat",
+      "tournament": "[GER] Dressrosa Tournament-OP17.5",
+      "placing": 3,
+      "date": "2026-11-05",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae7565e0d00101b48bf3efd/standings",
+      "format": ""
+    },
+    {
+      "slug": "3rd-versus-versus-cup",
+      "href": "/decklists/buggy-op09-042/3rd-versus-versus-cup.html",
+      "player": "Versus",
+      "tournament": "Versus Cup",
+      "placing": 3,
+      "date": "2026-11-05",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aec9ca80c463890f304be5b/standings",
+      "format": ""
+    },
+    {
+      "slug": "4th-santos-versus-cup",
+      "href": "/decklists/buggy-op09-042/4th-santos-versus-cup.html",
+      "player": "Santos",
+      "tournament": "Versus Cup",
+      "placing": 4,
+      "date": "2026-11-05",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aec9ca80c463890f304be5b/standings",
+      "format": ""
+    },
+    {
+      "slug": "7th-nikolaybaydanov-eb05-chinoizecup-131-tuesday",
+      "href": "/decklists/buggy-op09-042/7th-nikolaybaydanov-eb05-chinoizecup-131-tuesday.html",
+      "player": "NikolayBaydanov",
+      "tournament": "[EB05] ChinoizeCup #131 TUESDAY",
+      "placing": 7,
+      "date": "2026-11-03",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3115f80a8f79408d20af6/standings",
+      "format": ""
+    },
+    {
+      "slug": "14th-ghosthd97-eb05-win-a-box-rumble-league-16",
+      "href": "/decklists/buggy-op09-042/14th-ghosthd97-eb05-win-a-box-rumble-league-16.html",
+      "player": "GhostHD97",
+      "tournament": "[EB05] Win a box | Rumble league #16",
+      "placing": 14,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae444410d00101b48bf20e9/standings",
+      "format": ""
+    },
+    {
+      "slug": "18th-matzel0307-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/buggy-op09-042/18th-matzel0307-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "Matzel0307",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": 18,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    },
+    {
+      "slug": "1-2-gringoloco-eb05-chinoizecup-130-monday",
+      "href": "/decklists/buggy-op09-042/1-2-gringoloco-eb05-chinoizecup-130-monday.html",
+      "player": "Gringoloco",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": null,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    },
+    {
+      "slug": "0-3-nytrex-eb05-chinoizecup-130-monday",
+      "href": "/decklists/buggy-op09-042/0-3-nytrex-eb05-chinoizecup-130-monday.html",
+      "player": "nytrex",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": null,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    }
+  ],
+  "OP09-081": [
+    {
+      "slug": "1st-penguino-s-eb05-chinoizecup-130-monday",
+      "href": "/decklists/marshall-d-teach-op09-081/1st-penguino-s-eb05-chinoizecup-130-monday.html",
+      "player": "penguino s",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": 1,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    },
+    {
+      "slug": "4th-jaaz-ger-dressrosa-tournament-op17-5",
+      "href": "/decklists/marshall-d-teach-op09-081/4th-jaaz-ger-dressrosa-tournament-op17-5.html",
+      "player": "Jaaz",
+      "tournament": "[GER] Dressrosa Tournament-OP17.5",
+      "placing": 4,
+      "date": "2026-11-05",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae7565e0d00101b48bf3efd/standings",
+      "format": ""
+    },
+    {
+      "slug": "6th-smile-versus-cup",
+      "href": "/decklists/marshall-d-teach-op09-081/6th-smile-versus-cup.html",
+      "player": "Smile",
+      "tournament": "Versus Cup",
+      "placing": 6,
+      "date": "2026-11-05",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6aec9ca80c463890f304be5b/standings",
+      "format": ""
+    },
+    {
+      "slug": "11th-xevi-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/marshall-d-teach-op09-081/11th-xevi-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "Xevi",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": 11,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    },
+    {
+      "slug": "14th-imscreex-eb05-chinoizecup-131-tuesday",
+      "href": "/decklists/marshall-d-teach-op09-081/14th-imscreex-eb05-chinoizecup-131-tuesday.html",
+      "player": "ImScreex",
+      "tournament": "[EB05] ChinoizeCup #131 TUESDAY",
+      "placing": 14,
+      "date": "2026-11-03",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3115f80a8f79408d20af6/standings",
+      "format": ""
+    },
+    {
+      "slug": "1-2-xevi-eb05-chinoizecup-130-monday",
+      "href": "/decklists/marshall-d-teach-op09-081/1-2-xevi-eb05-chinoizecup-130-monday.html",
+      "player": "Xevi",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": null,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    },
+    {
+      "slug": "0-1-simpiii-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/marshall-d-teach-op09-081/0-1-simpiii-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "Simpiii",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    }
+  ],
+  "OP01-002": [
+    {
+      "slug": "6th-bahiaehbh-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/trafalgar-law-op01-002/6th-bahiaehbh-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "BahiaehBH",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": 6,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    },
+    {
+      "slug": "12th-halox-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/trafalgar-law-op01-002/12th-halox-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "Halox",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": 12,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    },
+    {
+      "slug": "2-3-lordrafa-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/trafalgar-law-op01-002/2-3-lordrafa-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "lordRafa",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    },
+    {
+      "slug": "2-2-jan-birkemeyer-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/trafalgar-law-op01-002/2-2-jan-birkemeyer-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "Jan Birkemeyer",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    },
+    {
+      "slug": "0-3-jrdkale-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/trafalgar-law-op01-002/0-3-jrdkale-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "Jrdkale",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    }
+  ],
+  "OP10-003": [
+    {
+      "slug": "3-2-solmyr-eb05-chinoizecup-131-tuesday",
+      "href": "/decklists/sugar-op10-003/3-2-solmyr-eb05-chinoizecup-131-tuesday.html",
+      "player": "Solmyr",
+      "tournament": "[EB05] ChinoizeCup #131 TUESDAY",
+      "placing": null,
+      "date": "2026-11-03",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3115f80a8f79408d20af6/standings",
+      "format": ""
+    },
+    {
+      "slug": "1-2-jellybeanzs-eb05-chinoizecup-130-monday",
+      "href": "/decklists/sugar-op10-003/1-2-jellybeanzs-eb05-chinoizecup-130-monday.html",
+      "player": "Jellybeanzs",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": null,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    },
+    {
+      "slug": "0-1-aarton1-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/sugar-op10-003/0-1-aarton1-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "aarton1",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    }
+  ],
+  "OP14-001": [
+    {
+      "slug": "10th-yaroyarodaze-eb05-chinoizecup-131-tuesday",
+      "href": "/decklists/trafalgar-law-op14-001/10th-yaroyarodaze-eb05-chinoizecup-131-tuesday.html",
+      "player": "yaroyarodaze",
+      "tournament": "[EB05] ChinoizeCup #131 TUESDAY",
+      "placing": 10,
+      "date": "2026-11-03",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3115f80a8f79408d20af6/standings",
+      "format": ""
+    },
+    {
+      "slug": "21st-cyranorock-eb05-chinoizecup-130-monday",
+      "href": "/decklists/trafalgar-law-op14-001/21st-cyranorock-eb05-chinoizecup-130-monday.html",
+      "player": "Cyranorock",
+      "tournament": "[EB05] ChinoizeCup #130 MONDAY",
+      "placing": 21,
+      "date": "2026-11-02",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae310ff22fd412b92a4f355/standings",
+      "format": ""
+    },
+    {
+      "slug": "0-2-sanatah-eb05-chinoizecup-131-tuesday",
+      "href": "/decklists/trafalgar-law-op14-001/0-2-sanatah-eb05-chinoizecup-131-tuesday.html",
+      "player": "Sanatah",
+      "tournament": "[EB05] ChinoizeCup #131 TUESDAY",
+      "placing": null,
+      "date": "2026-11-03",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3115f80a8f79408d20af6/standings",
+      "format": ""
+    }
+  ],
+  "P-117": [
+    {
+      "slug": "20th-thepieoverlord-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/nami-p-117/20th-thepieoverlord-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "ThePieOverlord",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": 20,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    },
+    {
+      "slug": "1-3-ttp-voly-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/nami-p-117/1-3-ttp-voly-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "TTP Voly",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    }
+  ],
+  "OP08-098": [
+    {
+      "slug": "0-2-jellybeanzs-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/kalgara-op08-098/0-2-jellybeanzs-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "Jellybeanzs",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    }
+  ],
+  "ST29-001": [
+    {
+      "slug": "1-2-coasterjit-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/monkey-d-luffy-st29-001/1-2-coasterjit-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "CoasterJit",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": null,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    }
+  ],
+  "OP12-001": [
+    {
+      "slug": "24th-plaze777-eb05-egb-chinoizecup-132-wednesday",
+      "href": "/decklists/silvers-rayleigh-op12-001/24th-plaze777-eb05-egb-chinoizecup-132-wednesday.html",
+      "player": "PlaZe777",
+      "tournament": "[EB05+EGB] ChinoizeCup #132 WEDNESDAY",
+      "placing": 24,
+      "date": "2026-11-04",
+      "kind": "tournament",
+      "source_url": "https://play.limitlesstcg.com/tournament/6ae3127680a8f79408d20afb/standings",
+      "format": "EXTRA"
+    }
   ]
 }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 419" role="img" aria-label="Card image unavailable">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1a1a"/>
+      <stop offset="100%" stop-color="#8b1010"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="419" rx="18" fill="url(#bg)"/>
+  <rect x="14" y="14" width="272" height="391" rx="12" fill="none" stroke="#f4d7a8" stroke-width="3"/>
+  <text x="150" y="200" text-anchor="middle" fill="#f4d7a8" font-family="Georgia, serif" font-size="28" font-weight="700">OPDL</text>
+  <text x="150" y="236" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14">Card art unavailable</text>
+</svg>
