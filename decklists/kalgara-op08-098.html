@@ -10,7 +10,7 @@
   <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=older-lists1" />
+  <link rel="stylesheet" href="/css/site.css?v=leader-hub1" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -89,16 +89,16 @@
             <h3>How it plays</h3>
             <div class="muted">Staples from lists on this page</div>
           </div>
-          <p class="leader-take">Kalgara (OP08-098) lists on this site are hosted because they include OP17 cards.</p>
+          <p class="leader-take">Kalgara (OP08-098) lists on this site are hosted public constructed lists.</p>
         </section>
         <!-- /LEADER_ANALYSIS -->
         <!-- CONSENSUS_LIST -->
         <section class="text-deck">
           <div class="section-title">
-            <h3>Consensus list</h3>
+            <h3>Top aggregate list: built from all 2 decks (2026-11-02 to 2026-11-04)</h3>
             <button type="button" class="copy-sim" data-copy-sim>Copy to OP TCG SIM</button>
           </div>
-          <p class="muted">Averaged from 2 lists on this page, then folding in OP17 cards from the 2 current-format lists, then filled to 50 cards.</p>
+          <p class="muted">Legal 50-card list from inclusion rate and average copies. Updates as newer lists land. Hover or tap a card name to see the picture.</p>
           <div class="text-deck-cols">
           <div class="text-deck-leader">
             <h4>Leader</h4>
@@ -220,54 +220,243 @@
         </section>
         <!-- /CONSENSUS_LIST -->
 
-        <!-- COMMUNITY_DECKLISTS -->
-        <section class="deck-index" style="margin-top:22px">
+        <!-- LEADER_LISTS -->
+        <section class="deck-index" data-leader-lists style="margin-top:22px">
           <div class="section-title">
-            <h3>YouTube and community decklists</h3>
-            <div class="muted">1 lists</div>
+            <h3>Decklists</h3>
+            <div class="muted">2 lists</div>
           </div>
-          <p class="muted">Public YouTube and web lists with a full 50-card ID list. Tournament tables below are from Limitless.</p>
-          <ul class="list" aria-label="YouTube and community decklists">
-            <li class="list-row" data-date="2026-11-02">
-              <a class="item" href="/decklists/kalgara-op08-098/optcggg-1st-prince-williams-ikailacup-eb05-cup.html">
-                <div>
-                  <div style="font-weight:700">Prince Williams - iKailaCup EB05 Cup</div>
-                  <div class="muted" style="font-size:13px">Public OPTCG.GG list · iKailaCup EB05 Cup · 2026-11-02</div>
-                </div>
-                <div class="link">Web →</div>
-              </a>
-              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP08-098 2xOP15-108 2xOP11-106 4xOP15-101 4xOP08-110 4xEB04-058 4xOP12-099 2xOP15-119 3xOP08-109 3xEB03-053 4xOP15-114 1xOP08-099 3xOP17-114 4xOP12-114 3xOP08-115 2xOP14-118 1xEB01-059 4xOP05-117">Copy to OP TCG SIM</button>
-            </li>
-          </ul>
-        </section>
-        <!-- /COMMUNITY_DECKLISTS -->
-        <!-- TOURNAMENT_DECKLISTS -->
-        <section class="deck-index" style="margin-top:22px">
-          <div class="section-title">
-            <h3>Tournament decklists</h3>
-            <div class="muted">1 lists</div>
-          </div>
-          <p class="muted">Newest Limitless events first. Each row opens a separate 50-card list.</p>
-          <ul class="list" aria-label="Tournament decklists">
-            <li class="list-row" data-date="2026-11-04" data-placing="" data-event="other">
+          <p class="muted">Tournament and web lists in one list, newest first. Dates are the event or posted day, not the scrape day.</p>
+          <ul class="list" data-leader-lists aria-label="Kalgara decklists">
+            <li class="list-row" data-date="2026-11-04" data-placing="" data-source="tournament">
               <a class="item" href="/decklists/kalgara-op08-098/0-2-jellybeanzs-eb05-egb-chinoizecup-132-wednesday.html">
                 <div>
-                  <div style="font-weight:700">Jellybeanzs - Kalgara</div>
-                  <div class="muted" style="font-size:13px">[EB05+EGB] ChinoizeCup #132 WEDNESDAY · 2026-11-04</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> Jellybeanzs - Kalgara</div>
+                  <div class="muted" style="font-size:13px">[EB05+EGB] ChinoizeCup #132 WEDNESDAY · 2026-11-04 · Limitless</div>
                 </div>
                 <div class="link">2026-11-04 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP08-098 2xOP15-108 2xOP11-106 4xOP15-101 4xOP08-110 4xEB04-058 4xOP12-099 1xOP15-119 3xOP08-109 4xEB03-053 4xOP15-114 2xOP08-099 3xOP17-114 4xOP12-114 4xOP08-115 1xEB01-059 4xOP05-117">Copy to OP TCG SIM</button>
             </li>
+            <li class="list-row" data-date="2026-11-02" data-placing="" data-source="web">
+              <a class="item" href="/decklists/kalgara-op08-098/optcggg-1st-prince-williams-ikailacup-eb05-cup.html">
+                <div>
+                  <div class="list-row-title"><span class="list-tag list-tag-web">Web</span> Prince Williams - iKailaCup EB05 Cup</div>
+                  <div class="muted" style="font-size:13px">Public OPTCG.GG list · iKailaCup EB05 Cup · 2026-11-02</div>
+                </div>
+                <div class="link">2026-11-02 →</div>
+              </a>
+              <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP08-098 2xOP15-108 2xOP11-106 4xOP15-101 4xOP08-110 4xEB04-058 4xOP12-099 2xOP15-119 3xOP08-109 3xEB03-053 4xOP15-114 1xOP08-099 3xOP17-114 4xOP12-114 3xOP08-115 2xOP14-118 1xEB01-059 4xOP05-117">Copy to OP TCG SIM</button>
+            </li>
           </ul>
-        </section>
-        <!-- /TOURNAMENT_DECKLISTS -->
-        <!-- CARD_POOL_HEADING -->
-        <div class="section-title" style="margin-top:28px">
-          <h3>Card pictures</h3>
-          <div class="muted">English names and art from Limitless</div>
+        <div class="leader-actions" role="group" aria-label="Leader list controls">
+          <button type="button" class="leader-action-btn" data-show-card-pictures aria-expanded="false" aria-controls="leader-card-pictures"><span class="leader-action-label">Show card pictures and descriptions</span></button>
+          <a class="leader-action-btn leader-action-link" href="/leader/kalgara-op08-098/all/">View all lists</a>
         </div>
-        <!-- /CARD_POOL_HEADING -->
+        </section>
+        <!-- /LEADER_LISTS -->
+        <!-- CARD_PICTURES -->
+        <div id="leader-card-pictures" class="leader-card-pictures" hidden>
+          <div class="section-title" style="margin-top:8px">
+            <h3>Card pictures and descriptions</h3>
+            <div class="muted">Top aggregate list: built from all 2 decks (2026-11-02 to 2026-11-04)</div>
+          </div>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Leader</h3>
+            <div class="muted">1 card</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-098_EN.webp" alt="Kalgara OP08-098" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">1x</span>OP08-098 · Leader</div>
+            <h4>Kalgara</h4>
+            <div class="stats">5 Life · 5000 Power · Slash · Yellow</div>
+            <div class="stats">Jaya/Sky Island/Shandian Warrior</div>
+            <div class="text">[DON!! x1] [When Attacking] Play up to 1 {Shandian Warrior} type Character card from your hand with a cost equal to or less than the number of DON!! cards on your field. If you do, add 1 card from the top of your Life cards to your hand.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Characters</h3>
+            <div class="muted">13 cards</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-108_EN.webp" alt="Nami OP15-108" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>OP15-108 · Character</div>
+            <h4>Nami</h4>
+            <div class="stats">Cost 1 · 2000 Power · +2000 Counter · Special · Yellow</div>
+            <div class="stats">Sky Island/Straw Hat Crew</div>
+            <div class="text">[On Play] Look at 3 cards from the top of your deck; reveal up to 1 {Sky Island} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP11/OP11-106_EN.webp" alt="Zeus OP11-106" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>OP11-106 · Character</div>
+            <h4>Zeus</h4>
+            <div class="stats">Cost 2 · 2000 Power · +2000 Counter · Special · Yellow</div>
+            <div class="stats">Homies/Big Mom Pirates</div>
+            <div class="text">[On Play] You may add 1 card from the top or bottom of your Life cards to your hand: K.O. up to 1 of your opponent&#x27;s Characters with a cost of 5 or less.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-101_EN.webp" alt="Kalgara OP15-101" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP15-101 · Character</div>
+            <h4>Kalgara</h4>
+            <div class="stats">Cost 3 · 5000 Power · Slash · Yellow</div>
+            <div class="stats">Jaya/Sky Island/Shandian Warrior</div>
+            <div class="text">[On Play] You may trash 1 card from your hand: Look at 5 cards from the top of your deck; reveal up to a total of 2 [Mont Blanc Noland] or {Shandian Warrior} type cards and add them to your hand. Then, place the rest at the bottom of your deck in any order.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-110_EN.webp" alt="Wyper OP08-110" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP08-110 · Character</div>
+            <h4>Wyper</h4>
+            <div class="stats">Cost 4 · 5000 Power · +2000 Counter · Ranged · Yellow</div>
+            <div class="stats">Sky Island/Shandian Warrior</div>
+            <div class="text">[On Play] Look at 5 cards from the top of your deck; reveal up to 1 [Upper Yard] and add it to your hand. Then, place the rest at the bottom of your deck in any order and play up to 1 [Upper Yard] from your hand.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB04/EB04-058_EN.webp" alt="Borsalino EB04-058" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>EB04-058 · Character</div>
+            <h4>Borsalino</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Special · Yellow</div>
+            <div class="stats">Egghead/Navy</div>
+            <div class="text">[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] If you have 2 or less Life cards, add up to 1 card from the top of your deck to the top of your Life cards.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-099_EN.webp" alt="Kalgara OP12-099" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-099 · Character</div>
+            <h4>Kalgara</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Slash · Yellow</div>
+            <div class="stats">Jaya/Sky Island/Shandian Warrior</div>
+            <div class="text">[Your Turn] When a card is removed from your or your opponent&#x27;s Life cards, draw 1 card. Then, you cannot draw cards using your own effects during this turn.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-119_EN.webp" alt="Monkey D. Luffy OP15-119" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>OP15-119 · Character</div>
+            <h4>Monkey D. Luffy</h4>
+            <div class="stats">Cost 5 · 7000 Power · Strike · Yellow</div>
+            <div class="stats">Sky Island/Straw Hat Crew</div>
+            <div class="text">If you have 6 or more DON!! cards on your field, this Character gains [Rush].
+When your opponent activates an Event or [Blocker], reveal up to 1 card from the top of your Life cards. This Character gains +1000 power during this turn per 1 cost on the revealed card.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-109_EN.webp" alt="Mont Blanc Noland OP08-109" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">3x</span>OP08-109 · Character</div>
+            <h4>Mont Blanc Noland</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Slash · Yellow</div>
+            <div class="stats">Jaya/Botanist</div>
+            <div class="text">[On Play] If your Leader has the {Shandian Warrior} type and you have a [Kalgara] Character, add up to 1 card from the top of your deck to the top of your Life cards.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB03/EB03-053_EN.webp" alt="Nami EB03-053" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>EB03-053 · Character</div>
+            <h4>Nami</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Special · Yellow</div>
+            <div class="stats">Straw Hat Crew</div>
+            <div class="text">[On Play] Give up to 1 rested DON!! card to your Leader. Then, if your opponent has 3 or more Life cards, add up to 1 card from the top of your opponent&#x27;s Life cards to the owner&#x27;s hand. [On K.O.] You may turn 1 card from the top of your Life cards face-up: Play up to 1 Character card with 6000 power or less from your hand.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/OP15-114_EN.webp" alt="Wyper OP15-114" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP15-114 · Character</div>
+            <h4>Wyper</h4>
+            <div class="stats">Cost 5 · 6000 Power · +1000 Counter · Ranged · Yellow</div>
+            <div class="stats">Sky Island/Shandian Warrior</div>
+            <div class="text">[On Play] You may turn 1 card from the top of your Life cards face-up: Give all of your opponent&#x27;s Characters −2000 power during this turn. Then, K.O. all of your opponent&#x27;s Characters with 0 power or less. [Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to 1 of your {Sky Island} type Leader or Character cards.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-099_EN.webp" alt="Kalgara OP08-099" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">1x</span>OP08-099 · Character</div>
+            <h4>Kalgara</h4>
+            <div class="stats">Cost 6 · 8000 Power · +1000 Counter · Slash · Yellow</div>
+            <div class="stats">Jaya/Sky Island/Shandian Warrior</div>
+            
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-114_EN.webp" alt="Sweet 3 Generals OP17-114" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP17-114 · Character</div>
+            <h4>Sweet 3 Generals</h4>
+            <div class="stats">Cost 6 · 4000 Power · +1000 Counter · Slash/Strike · Yellow</div>
+            <div class="stats">Big Mom Pirates</div>
+            <div class="text">[Your Turn] [On Play] You may rest 2 of your DON!! cards: Draw 1 card and add up to 1 card from the top of your deck to the top of your Life cards. Then, give up to 2 of your opponent&#x27;s Characters −3000 power during this turn. [Trigger] Play this card.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-114_EN.webp" alt="Wyper OP12-114" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-114 · Character</div>
+            <h4>Wyper</h4>
+            <div class="stats">Cost 6 · 7000 Power · +2000 Counter · Ranged · Yellow</div>
+            <div class="stats">Sky Island/Shandian Warrior</div>
+            
+          </div>
+        </article>
+          </div>
+        </section>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Events</h3>
+            <div class="muted">1 card</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP08/OP08-115_EN.webp" alt="The Earth Will Not Lose! OP08-115" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP08-115 · Event</div>
+            <h4>The Earth Will Not Lose!</h4>
+            <div class="stats">Cost 1 · Yellow</div>
+            <div class="stats">Sky Island/Shandian Warrior</div>
+            <div class="text">[Counter] If your Leader has the {Shandian Warrior} type, up to 1 of your Leader or Character cards gains +3000 power during this battle. Then, play up to 1 [Upper Yard] from your hand. [Trigger] Draw 2 cards and trash 1 card from your hand.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Stages</h3>
+            <div class="muted">1 card</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-117_EN.webp" alt="Upper Yard OP05-117" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP05-117 · Stage</div>
+            <h4>Upper Yard</h4>
+            <div class="stats">Cost 1 · Yellow</div>
+            <div class="stats">Sky Island</div>
+            <div class="text">[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Sky Island} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        </div>
+        <!-- /CARD_PICTURES -->
+
       </div>
     </main>
     <footer>
@@ -326,7 +515,7 @@
       });
     })();
   </script>
-  <script src="/js/site.js?v=older-lists1"></script>
+  <script src="/js/site.js?v=leader-hub1"></script>
   <script src="/js/tcgplayer-config.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-ids.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>

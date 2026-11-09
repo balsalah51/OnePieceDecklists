@@ -16,8 +16,8 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "older-lists1"
-JS_VER = "older-lists1"
+CSS_VER = "leader-hub1"
+JS_VER = "leader-hub1"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
 )

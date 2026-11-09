@@ -10,7 +10,7 @@
   <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=older-lists1" />
+  <link rel="stylesheet" href="/css/site.css?v=leader-hub1" />
   <meta name="google-adsense-account" content="ca-pub-1074015774205047" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
@@ -90,16 +90,16 @@
             <h3>How it plays</h3>
             <div class="muted">Staples from lists on this page</div>
           </div>
-          <p class="leader-take">Silvers Rayleigh (OP12-001) lists on this site are hosted because they include OP17 cards.</p>
+          <p class="leader-take">Silvers Rayleigh (OP12-001) lists on this site are hosted public constructed lists.</p>
         </section>
         <!-- /LEADER_ANALYSIS -->
         <!-- CONSENSUS_LIST -->
         <section class="text-deck">
           <div class="section-title">
-            <h3>Consensus list</h3>
+            <h3>Top aggregate list: built from all 1 decks (2026-11-04)</h3>
             <button type="button" class="copy-sim" data-copy-sim>Copy to OP TCG SIM</button>
           </div>
-          <p class="muted">Averaged from 1 lists on this page, then filled to 50 cards.</p>
+          <p class="muted">Legal 50-card list from inclusion rate and average copies. Updates as newer lists land. Hover or tap a card name to see the picture.</p>
           <div class="text-deck-cols">
           <div class="text-deck-leader">
             <h4>Leader</h4>
@@ -210,33 +210,220 @@
         </section>
         <!-- /CONSENSUS_LIST -->
 
-        <!-- TOURNAMENT_DECKLISTS -->
-        <section class="deck-index" style="margin-top:22px">
+        <!-- LEADER_LISTS -->
+        <section class="deck-index" data-leader-lists style="margin-top:22px">
           <div class="section-title">
-            <h3>Tournament decklists</h3>
+            <h3>Decklists</h3>
             <div class="muted">1 lists</div>
           </div>
-          <p class="muted">Newest Limitless events first. Each row opens a separate 50-card list.</p>
-          <ul class="list" aria-label="Tournament decklists">
-            <li class="list-row" data-date="2026-11-04" data-placing="24" data-event="other">
+          <p class="muted">Tournament and web lists in one list, newest first. Dates are the event or posted day, not the scrape day.</p>
+          <ul class="list" data-leader-lists aria-label="Silvers Rayleigh decklists">
+            <li class="list-row" data-date="2026-11-04" data-placing="24" data-source="tournament">
               <a class="item" href="/decklists/silvers-rayleigh-op12-001/24th-plaze777-eb05-egb-chinoizecup-132-wednesday.html">
                 <div>
-                  <div style="font-weight:700">PlaZe777 - Silvers Rayleigh</div>
-                  <div class="muted" style="font-size:13px">[EB05+EGB] ChinoizeCup #132 WEDNESDAY · 24th · 2026-11-04</div>
+                  <div class="list-row-title"><span class="list-tag list-tag-tournament">Tournament</span> PlaZe777 - Silvers Rayleigh</div>
+                  <div class="muted" style="font-size:13px">[EB05+EGB] ChinoizeCup #132 WEDNESDAY · 24th · 2026-11-04 · Limitless</div>
                 </div>
                 <div class="link">2026-11-04 →</div>
               </a>
               <button type="button" class="copy-sim" data-copy-sim data-sim="1xOP12-001 4xOP03-008 4xOP12-006 4xOP12-014 2xOP10-016 2xOP12-009 4xEB05-061 4xOP10-005 4xEB05-004 4xOP12-015 4xOP12-017 4xOP12-018 4xOP12-016 4xEB05-008 2xST21-017">Copy to OP TCG SIM</button>
             </li>
           </ul>
-        </section>
-        <!-- /TOURNAMENT_DECKLISTS -->
-        <!-- CARD_POOL_HEADING -->
-        <div class="section-title" style="margin-top:28px">
-          <h3>Card pictures</h3>
-          <div class="muted">English names and art from Limitless</div>
+        <div class="leader-actions" role="group" aria-label="Leader list controls">
+          <button type="button" class="leader-action-btn" data-show-card-pictures aria-expanded="false" aria-controls="leader-card-pictures"><span class="leader-action-label">Show card pictures and descriptions</span></button>
+          <a class="leader-action-btn leader-action-link" href="/leader/silvers-rayleigh-op12-001/all/">View all lists</a>
         </div>
-        <!-- /CARD_POOL_HEADING -->
+        </section>
+        <!-- /LEADER_LISTS -->
+        <!-- CARD_PICTURES -->
+        <div id="leader-card-pictures" class="leader-card-pictures" hidden>
+          <div class="section-title" style="margin-top:8px">
+            <h3>Card pictures and descriptions</h3>
+            <div class="muted">Top aggregate list: built from all 1 decks (2026-11-04)</div>
+          </div>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Leader</h3>
+            <div class="muted">1 card</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-001_EN.webp" alt="Silvers Rayleigh OP12-001" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">1x</span>OP12-001 · Leader</div>
+            <h4>Silvers Rayleigh</h4>
+            <div class="stats">5 Life · 5000 Power · Slash · Red</div>
+            <div class="stats">Former Roger Pirates</div>
+            <div class="text">Under the rules of this game, you cannot include cards with a cost of 5 or more in your deck.
+[Activate: Main] [Once Per Turn] You may reveal 2 Events from your hand: Up to 1 of your Characters with 4000 base power or less gains +2000 power during this turn.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Characters</h3>
+            <div class="muted">9 cards</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP03/OP03-008_EN.webp" alt="Buggy OP03-008" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP03-008 · Character</div>
+            <h4>Buggy</h4>
+            <div class="stats">Cost 1 · 3000 Power · Slash · Red</div>
+            <div class="stats">Buggy Pirates</div>
+            <div class="text">This Character cannot be K.O.&#x27;d in battle by &amp;lt;Slash&amp;gt; attribute cards.
+[On Play] Look at 5 cards from the top of your deck; reveal up to 1 red Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-006_EN.webp" alt="Shakuyaku OP12-006" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-006 · Character</div>
+            <h4>Shakuyaku</h4>
+            <div class="stats">Cost 1 · 2000 Power · +1000 Counter · Wisdom · Red</div>
+            <div class="stats">Amazon Lily</div>
+            <div class="text">[On Play] Look at 5 cards from the top of your deck; reveal up to 1 [Monkey.D.Luffy] or 1 red Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-014_EN.webp" alt="Boa Hancock OP12-014" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-014 · Character</div>
+            <h4>Boa Hancock</h4>
+            <div class="stats">Cost 2 · 3000 Power · Special · Red</div>
+            <div class="stats">The Seven Warlords of the Sea/Kuja Pirates</div>
+            <div class="text">[On Play] Look at 5 cards from the top of your deck; reveal up to 1 [Monkey.D.Luffy] or red Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.
+[Activate: Main] You may trash this Character: Give up to 2 rested DON!! cards to your Leader or 1 of your Characters.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP10/OP10-016_EN.webp" alt="Monet OP10-016" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>OP10-016 · Character</div>
+            <h4>Monet</h4>
+            <div class="stats">Cost 2 · 3000 Power · +1000 Counter · Special · Red</div>
+            <div class="stats">Punk Hazard/Donquixote Pirates</div>
+            <div class="text">[Activate: Main] You may rest this Character: Give up to 2 rested DON!! cards to your Leader or 1 of your Characters. Then, give up to 1 of your opponent&#x27;s Characters −1000 power during this turn.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-009_EN.webp" alt="Jinbe OP12-009" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>OP12-009 · Character</div>
+            <h4>Jinbe</h4>
+            <div class="stats">Cost 3 · 4000 Power · +1000 Counter · Strike · Red</div>
+            <div class="stats">Fish-Man/The Sun Pirates</div>
+            <div class="text">[On Play] You may reveal 2 Events from your hand: This Character gains [Rush] during this turn. Then, this Character gains +1000 power until the end of your opponent&#x27;s next End Phase.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="/img/cards/EB05/EB05-061.webp" alt="Nami EB05-061" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>EB05-061 · Character</div>
+            <h4>Nami</h4>
+            <div class="stats">Cost 3 · 4000 Power · +2000 Counter · Special · Red</div>
+            <div class="stats">Straw Hat Crew</div>
+            <div class="text">[Once Per Turn] If your Character with 6000 base power or less would be removed from the field by your opponent, you may add 1 card from the top of your Life cards to your hand instead. [On Play] Play up to 1 red Character card with a cost of 2 or less from your hand.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP10/OP10-005_EN.webp" alt="Sanji OP10-005" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP10-005 · Character</div>
+            <h4>Sanji</h4>
+            <div class="stats">Cost 3 · 3000 Power · +1000 Counter · Special · Red</div>
+            <div class="stats">Punk Hazard/Straw Hat Crew</div>
+            <div class="text">[Your Turn] This Character gains +3000 power.
+[On K.O.] Draw 1 card.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="/img/cards/EB05/EB05-004.webp" alt="Baby 5 EB05-004" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>EB05-004 · Character</div>
+            <h4>Baby 5</h4>
+            <div class="stats">Cost 4 · 6000 Power · Special · Red</div>
+            <div class="stats">Donquixote Pirates / Punk Hazard</div>
+            <div class="text">[On Play] You may reveal 2 Event cards from your hand: Draw 2 cards. [On K.O.] Play up to 1 Character card with 6000 power or less from your hand rested.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-015_EN.webp" alt="Monkey D. Luffy OP12-015" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-015 · Character</div>
+            <h4>Monkey D. Luffy</h4>
+            <div class="stats">Cost 4 · 4000 Power · +1000 Counter · Strike · Red</div>
+            <div class="stats">Supernovas/Straw Hat Crew</div>
+            <div class="text">If you have a total of 2 or more given DON!! cards, this Character gains +2000 power.
+[On Play] You may reveal 2 Events from your hand: Play up to 1 red Character card with 3000 power or less from your hand. Then, give up to 1 rested DON!! card to your Leader or 1 of your Characters.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        <section style="margin-top:22px">
+          <div class="section-title">
+            <h3>Events</h3>
+            <div class="muted">5 cards</div>
+          </div>
+          <div class="card-grid">
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-017_EN.webp" alt="Color of Observation Haki OP12-017" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-017 · Event</div>
+            <h4>Color of Observation Haki</h4>
+            <div class="stats">Cost 0 · Red</div>
+            <div class="stats">Former Roger Pirates</div>
+            <div class="text">[Main] You may give 1 active DON!! card to 1 of your [Silvers Rayleigh]: Look at 4 cards from the top of your deck; reveal up to 1 red Event or up to 1 Character card with a cost of 3 or more and add it to your hand. Then, place the rest at the bottom of your deck in any order.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-018_EN.webp" alt="Color of the Supreme King Haki OP12-018" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-018 · Event</div>
+            <h4>Color of the Supreme King Haki</h4>
+            <div class="stats">Cost 0 · Red</div>
+            <div class="stats">Former Roger Pirates</div>
+            <div class="text">[Counter] Up to 1 of your Characters or [Silvers Rayleigh] gains +2000 power during this battle. Then, you may rest 1 of your DON!! cards. If you do, give your opponent&#x27;s Leader and all of their Characters −1000 power during this turn.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP12/OP12-016_EN.webp" alt="To Never Doubt--That Is Power! OP12-016" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>OP12-016 · Event</div>
+            <h4>To Never Doubt--That Is Power!</h4>
+            <div class="stats">Cost 0 · Red</div>
+            <div class="stats">Former Roger Pirates</div>
+            <div class="text">[Main] You may give 2 active DON!! cards to 1 of your [Silvers Rayleigh]: Your opponent cannot activate [Blocker] when the card given these DON!! cards attacks during this turn.
+[Counter] Up to 1 of your Characters or [Silvers Rayleigh] gains +2000 power during this battle.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="/img/cards/EB05/EB05-008.webp" alt="Luffy, Now&#x27;s Your Chance EB05-008" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">4x</span>EB05-008 · Event</div>
+            <h4>Luffy, Now&#x27;s Your Chance</h4>
+            <div class="stats">Cost 1 · Red</div>
+            <div class="stats">Kuja Pirates / The Seven Warlords of the Sea</div>
+            <div class="text">[Main] You may give 1 active DON!! card to 1 of your Leader and reveal 2 red Event cards from your hand: Give up to 1 of your opponent&#x27;s rested Characters -7000 power during this turn. Counter If you have no Characters with a cost of 5 or more, up to 1 of your Leader or up to 1 of your Characters gains +4000 power during this battle.</div>
+          </div>
+        </article>
+        <article class="card-entry">
+          <img data-src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST21/ST21-017_EN.webp" alt="Gum-Gum Mole Pistol ST21-017" loading="lazy" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+          <div>
+            <div class="id"><span class="qty">2x</span>ST21-017 · Event</div>
+            <h4>Gum-Gum Mole Pistol</h4>
+            <div class="stats">Cost 4 · Red</div>
+            <div class="stats">The Four Emperors/Straw Hat Crew</div>
+            <div class="text">[Main] Give up to 1 of your opponent&#x27;s Characters −5000 power during this turn. Then, if you have a Character with 6000 power or more, K.O. up to 1 of your opponent&#x27;s Characters with 2000 power or less. [Trigger] Activate this card&#x27;s [Main] effect.</div>
+          </div>
+        </article>
+          </div>
+        </section>
+        </div>
+        <!-- /CARD_PICTURES -->
+
       </div>
     </main>
     <footer>
@@ -295,7 +482,7 @@
       });
     })();
   </script>
-  <script src="/js/site.js?v=older-lists1"></script>
+  <script src="/js/site.js?v=leader-hub1"></script>
   <script src="/js/tcgplayer-config.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-ids.js?v=tcg-quiet"></script>
   <script src="/js/tcgplayer-names.js?v=tcg-quiet"></script>

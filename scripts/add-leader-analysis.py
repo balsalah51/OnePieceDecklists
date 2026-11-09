@@ -27,6 +27,7 @@ BLOCK_RE = re.compile(
 TARGET = 50
 MIN_OP17_COPIES = 8
 OP17_SUBSET_MIN = 3
+AGGREGATE_WINDOW = 60
 
 # Leader-hub links to handwritten strategy pages. Shown under the archetype,
 # immediately above the consensus list.
@@ -609,7 +610,9 @@ def ensure_popup_js(page: str) -> str:
 
 def inject(page: str, block: str) -> str:
     page = BLOCK_RE.sub("", page)
-    marker = "        <!-- COMMUNITY_DECKLISTS -->"
+    marker = "        <!-- LEADER_LISTS -->"
+    if marker not in page:
+        marker = "        <!-- COMMUNITY_DECKLISTS -->"
     if marker not in page:
         marker = "        <!-- TOURNAMENT_DECKLISTS -->"
     if marker not in page:
@@ -617,17 +620,25 @@ def inject(page: str, block: str) -> str:
     return page.replace(marker, block + "\n" + marker, 1)
 
 
+def _deck_date(path: Path) -> str:
+    text = path.read_text(errors="ignore")
+    found = re.search(r"\d{4}-\d{2}-\d{2}", text)
+    return found.group(0) if found else "0000-00-00"
+
+
 def main() -> None:
     cache = gen.load_card_cache()
     index = {}
     for leader in gen.LEADERS:
         lid = leader["id"]
-        decks = []
-        for path in sorted((ROOT / leader["dir"]).glob("*.html")):
+        dated = []
+        for path in (ROOT / leader["dir"]).glob("*.html"):
             parsed = parse_deck(path, lid)
             if parsed:
-                decks.append({"slug": path.stem, "cards": parsed})
-        raw_decks = [d["cards"] for d in decks]
+                dated.append((_deck_date(path), path.stem, parsed))
+        dated.sort(key=lambda row: row[0], reverse=True)
+        window = dated[:AGGREGATE_WINDOW]
+        raw_decks = [d[2] for d in window]
         if not raw_decks:
             print(lid, "no decks")
             continue
@@ -635,14 +646,14 @@ def main() -> None:
         picks = consensus_list(raw_decks)
         total = sum(c for _i, c, _r in picks)
         op17_c = sum(c for i, c, _r in picks if i.startswith("OP17-"))
-        used = op17_n if op17_n >= OP17_SUBSET_MIN else len(raw_decks)
-        print(lid, "from", used, "of", len(raw_decks), "lists", "cards", total, "op17", op17_c)
+        used = len(raw_decks)
+        print(lid, "from", used, "of", len(dated), "lists", "cards", total, "op17", op17_c)
         grouped, totals = grouped_from_picks(leader, picks, cache)
         text_deck = gen.render_text_deck(grouped, cache, ["Leader", "Characters", "Events", "Stages"], totals)
         take = TAKES.get(lid) or (
             f"{leader['name']} ({lid}) lists on this site are hosted because they include OP17 cards."
         )
-        block = analysis_block(leader, len(raw_decks), take, text_deck, op17_n)
+        block = analysis_block(leader, used, take, text_deck, op17_n)
         page_path = ROOT / leader["page"]
         page = inject(page_path.read_text(), block)
         page = ensure_popup_js(page)

@@ -1930,7 +1930,15 @@ def render_index_section(leader: dict, lists: list[dict]) -> str:
 
 
 def insert_section(page_html: str, section: str, pool: str) -> str:
-    if "<!-- TOURNAMENT_DECKLISTS -->" in page_html:
+    if "<!-- LEADER_LISTS -->" in page_html:
+        page_html = re.sub(
+            r"        <!-- LEADER_LISTS -->.*?        <!-- /LEADER_LISTS -->",
+            section,
+            page_html,
+            count=1,
+            flags=re.S,
+        )
+    elif "<!-- TOURNAMENT_DECKLISTS -->" in page_html:
         page_html = re.sub(
             r"        <!-- TOURNAMENT_DECKLISTS -->.*?        <!-- /TOURNAMENT_DECKLISTS -->",
             section,

@@ -1360,3 +1360,58 @@ header > nav[aria-label="Primary"]{align-items:center;gap:8px 10px}
 }
 [data-theme="dark"] .nav-menu{background:var(--panel)}
 [data-theme="dark"] .home-note{background:var(--panel)}
+.list-row-title{font-weight:700;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.list-tag{
+  display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;
+  font-size:11px;font-weight:800;letter-spacing:.02em;line-height:1.3;
+  border:1px solid var(--line);white-space:nowrap
+}
+.list-tag-tournament{background:color-mix(in srgb, var(--accent) 12%, var(--surface));color:var(--accent)}
+.list-tag-web{background:var(--panel);color:var(--muted)}
+.leader-actions{
+  display:flex;flex-direction:column;gap:8px;margin:14px 0 8px;width:100%
+}
+.leader-action-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  margin:0;padding:11px 16px;border-radius:999px;cursor:pointer;
+  border:1px solid var(--line);
+  background:color-mix(in srgb, var(--accent) 6%, var(--surface));
+  color:var(--text);font:inherit;font-size:14px;font-weight:800;text-align:center;
+  text-decoration:none
+}
+.leader-action-btn:hover{
+  border-color:color-mix(in srgb, var(--accent) 35%, var(--line));
+  background:color-mix(in srgb, var(--accent) 10%, var(--surface))
+}
+.leader-action-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.leader-action-btn[hidden]{display:none !important}
+.leader-card-pictures[hidden]{display:none !important}
+.leader-back{margin:0 0 10px}
+.leader-back a{color:var(--accent);font-weight:800;text-decoration:none}
+.leader-back a:hover{text-decoration:underline}
+.filter-date{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--muted)}
+.filter-date input{font-weight:500;color:var(--text)}
+.filter-clear{
+  margin:0;padding:8px 12px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--panel);color:var(--text);
+  font:inherit;font-size:13px;font-weight:800
+}
+.filter-clear:hover{border-color:var(--accent)}
+.filter-clear:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:880px){
+  .leader-action-btn{padding:12px 14px;font-size:13px}
+  .filter-date{width:100%}
+  .filter-date input{flex:1;min-width:0}
+}
+[data-theme="dark"] .list-tag-tournament{
+  background:color-mix(in srgb, var(--accent) 18%, var(--panel));color:#ffb4b0
+}
+[data-theme="dark"] .list-tag-web{background:var(--panel);color:var(--muted)}
+[data-theme="dark"] .leader-action-btn{
+  background:color-mix(in srgb, var(--accent) 12%, var(--panel));
+  border-color:var(--line);color:var(--text)
+}
+[data-theme="dark"] .leader-action-btn:hover{
+  background:color-mix(in srgb, var(--accent) 18%, var(--panel))
+}
+[data-theme="dark"] .filter-clear{background:var(--panel);color:var(--text);border-color:var(--line)}

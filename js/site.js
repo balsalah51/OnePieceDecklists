@@ -334,9 +334,159 @@
   }
 
   function initOlderLists() {
-    document.querySelectorAll("ul.recent-list, .deck-index ul.list").forEach(bindOlderList);
+    document.querySelectorAll("ul.recent-list, .deck-index ul.list").forEach(function (list) {
+      if (list.hasAttribute("data-leader-lists") || list.hasAttribute("data-leader-all-lists")) return;
+      if (list.closest("[data-leader-lists]") || list.closest(".leader-all")) return;
+      bindOlderList(list);
+    });
     document.querySelectorAll("[data-recent-more]").forEach(function (btn) {
       btn.hidden = true;
+    });
+  }
+
+  function escapeHtml(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function leaderRowHtml(row) {
+    var source = row.source === "tournament" ? "tournament" : "web";
+    var tag = source === "tournament" ? "Tournament" : "Web";
+    var tagCls = source === "tournament" ? "list-tag-tournament" : "list-tag-web";
+    var subtitle = row.subtitle || "";
+    var origin = row.origin || "";
+    if (origin && subtitle.toLowerCase().indexOf(origin.toLowerCase()) < 0) {
+      subtitle = subtitle ? subtitle + " · " + origin : origin;
+    }
+    var copy = "";
+    if (row.sim) {
+      copy = '<button type="button" class="copy-sim" data-copy-sim data-sim="' +
+        escapeHtml(row.sim) + '">Copy to OP TCG SIM</button>';
+    }
+    return (
+      '<li class="list-row" data-date="' + escapeHtml(row.date || "") +
+      '" data-placing="' + escapeHtml(row.placing == null ? "" : String(row.placing)) +
+      '" data-source="' + source + '">' +
+        '<a class="item" href="' + escapeHtml(row.href || "") + '">' +
+          "<div>" +
+            '<div class="list-row-title"><span class="list-tag ' + tagCls + '">' + tag +
+            "</span> " + escapeHtml(row.title || "") + "</div>" +
+            '<div class="muted" style="font-size:13px">' + escapeHtml(subtitle) + "</div>" +
+          "</div>" +
+          '<div class="link">' + escapeHtml(row.right || "View") + " →</div>" +
+        "</a>" +
+        copy +
+      "</li>"
+    );
+  }
+
+  function initLeaderMore() {
+    document.querySelectorAll("[data-show-more-lists]").forEach(function (btn) {
+      if (btn.dataset.bound) return;
+      btn.dataset.bound = "1";
+      btn.addEventListener("click", function () {
+        var hold = document.getElementById("leader-lists-more");
+        var list = document.querySelector("ul[data-leader-lists]");
+        if (!hold || !list) {
+          btn.hidden = true;
+          return;
+        }
+        var remaining = [];
+        try { remaining = JSON.parse(hold.textContent || "[]"); } catch (e) { remaining = []; }
+        if (!remaining.length) {
+          btn.hidden = true;
+          return;
+        }
+        var take = remaining.splice(0, 30);
+        var html = take.map(leaderRowHtml).join("");
+        list.insertAdjacentHTML("beforeend", html);
+        hold.textContent = JSON.stringify(remaining);
+        if (!remaining.length) btn.hidden = true;
+        initCopy();
+        markVignetteLinks(list);
+      });
+    });
+  }
+
+  function initCardPictures() {
+    document.querySelectorAll("[data-show-card-pictures]").forEach(function (btn) {
+      if (btn.dataset.bound) return;
+      btn.dataset.bound = "1";
+      var id = btn.getAttribute("aria-controls");
+      var panel = id ? document.getElementById(id) : document.querySelector(".leader-card-pictures");
+      if (!panel) {
+        btn.hidden = true;
+        return;
+      }
+      function setOpen(open) {
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+        btn.classList.toggle("is-open", open);
+        panel.hidden = !open;
+        var label = btn.querySelector(".leader-action-label") || btn;
+        if (open) {
+          label.textContent = "Hide card pictures and descriptions";
+          panel.querySelectorAll("img[data-src]").forEach(function (img) {
+            if (!img.getAttribute("src")) img.setAttribute("src", img.getAttribute("data-src"));
+            img.removeAttribute("data-src");
+          });
+          bindCardImageFallback();
+        } else {
+          label.textContent = "Show card pictures and descriptions";
+        }
+      }
+      btn.addEventListener("click", function () {
+        setOpen(btn.getAttribute("aria-expanded") !== "true");
+      });
+    });
+  }
+
+  function initAllListFilters() {
+    document.querySelectorAll("[data-all-filters]").forEach(function (bar) {
+      if (bar.dataset.bound) return;
+      bar.dataset.bound = "1";
+      var section = bar.closest(".deck-index");
+      if (!section) return;
+      var items = section.querySelectorAll("li.list-row");
+      var countEl = section.querySelector(".section-title .muted");
+      var total = items.length;
+      function apply() {
+        var q = ((bar.querySelector("[data-filter=q]") || {}).value || "").toLowerCase();
+        var from = (bar.querySelector("[data-filter=from]") || {}).value || "";
+        var to = (bar.querySelector("[data-filter=to]") || {}).value || "";
+        var source = (bar.querySelector("[data-filter=source]") || {}).value || "";
+        var place = (bar.querySelector("[data-filter=place]") || {}).value || "";
+        var shown = 0;
+        items.forEach(function (li) {
+          var hay = (li.textContent || "").toLowerCase();
+          var date = li.getAttribute("data-date") || "";
+          var placing = parseInt(li.getAttribute("data-placing") || "9999", 10);
+          var src = li.getAttribute("data-source") || "";
+          var ok = true;
+          if (q && hay.indexOf(q) < 0) ok = false;
+          if (from && date && date < from) ok = false;
+          if (from && !date) ok = false;
+          if (to && date && date > to) ok = false;
+          if (to && !date) ok = false;
+          if (source && src !== source) ok = false;
+          if (place === "top8" && placing > 8) ok = false;
+          if (place === "win" && placing !== 1) ok = false;
+          li.hidden = !ok;
+          if (ok) shown += 1;
+        });
+        if (countEl) countEl.textContent = shown === total ? total + " lists" : shown + " of " + total;
+      }
+      bar.addEventListener("input", apply);
+      bar.addEventListener("change", apply);
+      var clear = bar.querySelector("[data-filter-clear]");
+      if (clear) {
+        clear.addEventListener("click", function () {
+          bar.querySelectorAll("input, select").forEach(function (el) { el.value = ""; });
+          apply();
+        });
+      }
     });
   }
 
@@ -428,6 +578,8 @@
     "a.buy-tcg",
     "a.buy-tcg-inline",
     "a.recent-all-link",
+    "a.leader-action-link",
+    "a.leader-back a",
     "a.brand",
     "a.discord",
     "a.skip-link"
@@ -593,7 +745,10 @@
     ensureCopyButtons();
     initCopy();
     initOlderLists();
+    initLeaderMore();
+    initCardPictures();
     initFilters();
+    initAllListFilters();
     initSiteSearch();
     initHomeSplash();
     bindCardImageFallback();
