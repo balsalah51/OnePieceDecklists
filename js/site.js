@@ -132,7 +132,7 @@
       bar.dataset.bound = "1";
       var section = bar.closest(".deck-index");
       if (!section) return;
-      var items = section.querySelectorAll("ul.list > li");
+      var items = section.querySelectorAll("li.list-row");
       var countEl = section.querySelector(".section-title .muted");
       var total = items.length;
       function apply() {
@@ -140,6 +140,7 @@
         var when = (bar.querySelector("[data-filter=when]") || {}).value || "";
         var place = (bar.querySelector("[data-filter=place]") || {}).value || "";
         var event = (bar.querySelector("[data-filter=event]") || {}).value || "";
+        var filtering = Boolean(q || when || place || event);
         var shown = 0;
         items.forEach(function (li) {
           var hay = (li.textContent || "").toLowerCase();
@@ -156,6 +157,10 @@
           li.hidden = !ok;
           if (ok) shown += 1;
         });
+        if (filtering) {
+          var olderBtn = section.querySelector(".older-lists-btn[aria-expanded='false']");
+          if (olderBtn) olderBtn.click();
+        }
         if (countEl) countEl.textContent = shown === total ? total + " lists" : shown + " of " + total;
       }
       bar.addEventListener("input", apply);
@@ -243,17 +248,94 @@
     }
   }
 
-  function initRecentMore() {
-    var btn = document.querySelector("[data-recent-more]");
-    if (!btn || btn.dataset.bound) return;
-    btn.dataset.bound = "1";
-    btn.addEventListener("click", function () {
-      document.querySelectorAll("li.recent-more").forEach(function (li) {
-        li.hidden = false;
+  var OLDER_DAYS = 30;
+  var OLDER_FALLBACK = 10;
+  var DATE_RE = /(\d{4}-\d{2}-\d{2})/;
+  var olderListId = 0;
+
+  function parseItemDate(el) {
+    var raw = el.getAttribute("data-date") || "";
+    var match = DATE_RE.exec(raw);
+    if (!match) {
+      var when = el.querySelector(".when");
+      match = DATE_RE.exec((when && when.textContent) || "");
+    }
+    if (!match) match = DATE_RE.exec(el.textContent || "");
+    if (!match) return null;
+    var parts = match[1].split("-");
+    return new Date(+parts[0], +parts[1] - 1, +parts[2]);
+  }
+
+  function olderCutoff(now) {
+    now = now || new Date();
+    var cut = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    cut.setDate(cut.getDate() - OLDER_DAYS);
+    return cut;
+  }
+
+  function listDeckItems(list) {
+    return Array.prototype.filter.call(list.children, function (el) {
+      return el.tagName === "LI" && !el.classList.contains("older-lists-block");
+    });
+  }
+
+  function bindOlderList(list) {
+    if (list.dataset.olderBound) return;
+    list.dataset.olderBound = "1";
+    list.querySelectorAll("li.recent-more").forEach(function (li) {
+      li.hidden = false;
+      li.classList.remove("recent-more");
+    });
+    var items = listDeckItems(list);
+    if (!items.length) return;
+    var cut = olderCutoff();
+    var freshDated = 0;
+    items.forEach(function (li) {
+      var d = parseItemDate(li);
+      if (d && d >= cut) freshDated += 1;
+    });
+    var older;
+    if (freshDated) {
+      older = items.filter(function (li) {
+        var d = parseItemDate(li);
+        return d && d < cut;
       });
-      var count = document.querySelector("#recent .section-title .muted");
-      var visible = document.querySelectorAll("#recent .recent-list > li").length;
-      if (count) count.textContent = visible + " lists";
+    } else {
+      older = items.length > OLDER_FALLBACK ? items.slice(OLDER_FALLBACK) : [];
+    }
+    if (!older.length) return;
+    var id = "older-lists-" + (++olderListId);
+    var wrap = document.createElement("li");
+    wrap.className = "older-lists-block";
+    wrap.innerHTML =
+      '<button type="button" class="older-lists-btn" aria-expanded="false" aria-controls="' + id + '">' +
+        '<svg class="older-lists-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+          '<path fill="currentColor" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>' +
+        "</svg>" +
+        '<span class="older-lists-label">Older lists (' + older.length + ")</span>" +
+      "</button>" +
+      '<ul class="older-lists-group" id="' + id + '" hidden></ul>';
+    var group = wrap.querySelector(".older-lists-group");
+    var btn = wrap.querySelector(".older-lists-btn");
+    var label = wrap.querySelector(".older-lists-label");
+    older.forEach(function (li) {
+      group.appendChild(li);
+    });
+    list.appendChild(wrap);
+    function setOpen(open) {
+      wrap.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      group.hidden = !open;
+      label.textContent = open ? "Hide older lists" : "Older lists (" + older.length + ")";
+    }
+    btn.addEventListener("click", function () {
+      setOpen(!wrap.classList.contains("is-open"));
+    });
+  }
+
+  function initOlderLists() {
+    document.querySelectorAll("ul.recent-list, .deck-index ul.list").forEach(bindOlderList);
+    document.querySelectorAll("[data-recent-more]").forEach(function (btn) {
       btn.hidden = true;
     });
   }
@@ -510,9 +592,9 @@
     prefetchOnHover();
     ensureCopyButtons();
     initCopy();
+    initOlderLists();
     initFilters();
     initSiteSearch();
-    initRecentMore();
     initHomeSplash();
     bindCardImageFallback();
     markVignetteLinks(document);
