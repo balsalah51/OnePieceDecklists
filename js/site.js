@@ -366,6 +366,7 @@
       copy = '<button type="button" class="copy-sim" data-copy-sim data-sim="' +
         escapeHtml(row.sim) + '">Copy to OP TCG SIM</button>';
     }
+    var star = row.star ? '<span class="new-list-mark" title="New" aria-label="New">*</span>' : "";
     return (
       '<li class="list-row" data-date="' + escapeHtml(row.date || "") +
       '" data-placing="' + escapeHtml(row.placing == null ? "" : String(row.placing)) +
@@ -373,7 +374,7 @@
         '<a class="item" href="' + escapeHtml(row.href || "") + '">' +
           "<div>" +
             '<div class="list-row-title"><span class="list-tag ' + tagCls + '">' + tag +
-            "</span> " + escapeHtml(row.title || "") + "</div>" +
+            "</span> " + escapeHtml(row.title || "") + star + "</div>" +
             '<div class="muted" style="font-size:13px">' + escapeHtml(subtitle) + "</div>" +
           "</div>" +
           '<div class="link">' + escapeHtml(row.right || "View") + " →</div>" +

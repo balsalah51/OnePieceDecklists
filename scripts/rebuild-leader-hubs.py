@@ -139,6 +139,19 @@ def load_json(name: str) -> dict:
         return {}
 
 
+def load_starred() -> set[str]:
+    path = ROOT / "data/starred-lists.json"
+    if not path.exists():
+        return set()
+    try:
+        rows = json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return set()
+    if not isinstance(rows, list):
+        return set()
+    return {norm_href(href) for href in rows if isinstance(href, str)}
+
+
 def community_raw(leader: dict) -> list[dict]:
     rows = list(comm.COMMUNITY.get(leader["id"]) or [])
     extra = load_json("community-decks.json").get(leader["id"]) or []
@@ -261,10 +274,11 @@ def sim_for(leader: dict, row: dict, cache: dict[str, str]) -> str:
     return text
 
 
-def row_payload(leader: dict, row: dict, sim_cache: dict[str, str]) -> dict:
+def row_payload(leader: dict, row: dict, sim_cache: dict[str, str], starred: set[str]) -> dict:
     placing = row.get("placing")
+    href = row.get("href") or ""
     return {
-        "href": row["href"],
+        "href": href,
         "title": row["title"],
         "subtitle": row["subtitle"],
         "date": row.get("date") or "",
@@ -273,6 +287,7 @@ def row_payload(leader: dict, row: dict, sim_cache: dict[str, str]) -> dict:
         "origin": row.get("origin") or "",
         "right": row.get("right") or "View",
         "sim": gen.sim_compact(sim_for(leader, row, sim_cache)),
+        "star": norm_href(href) in starred,
     }
 
 
@@ -287,10 +302,15 @@ def row_html(payload: dict) -> str:
     copy_btn = gen.copy_sim_button(payload.get("sim") or "")
     placing = payload.get("placing") or ""
     date_s = payload.get("date") or ""
+    star = (
+        '<span class="new-list-mark" title="New" aria-label="New">*</span>'
+        if payload.get("star")
+        else ""
+    )
     return f"""            <li class="list-row" data-date="{html.escape(date_s)}" data-placing="{html.escape(placing)}" data-source="{html.escape(source)}">
               <a class="item" href="{html.escape(payload.get('href') or '')}">
                 <div>
-                  <div class="list-row-title"><span class="list-tag {tag_cls}">{tag}</span> {html.escape(payload.get('title') or '')}</div>
+                  <div class="list-row-title"><span class="list-tag {tag_cls}">{tag}</span> {html.escape(payload.get('title') or '')}{star}</div>
                   <div class="muted" style="font-size:13px">{html.escape(subtitle)}</div>
                 </div>
                 <div class="link">{html.escape(str(payload.get('right') or 'View'))} →</div>
@@ -613,13 +633,20 @@ def strip_old_blocks(page: str) -> str:
     return page
 
 
-def rebuild_one(leader: dict, tour_index: dict, cache: dict, sim_cache: dict[str, str], consensus_out: dict) -> dict:
+def rebuild_one(
+    leader: dict,
+    tour_index: dict,
+    cache: dict,
+    sim_cache: dict[str, str],
+    consensus_out: dict,
+    starred: set[str],
+) -> dict:
     page_path = ROOT / leader["page"]
     if not page_path.exists():
         print("skip missing hub", page_path)
         return {"page": leader["page"], "lists": 0, "deduped": 0}
     rows = collect_lists(leader, tour_index)
-    payloads = [row_payload(leader, row, sim_cache) for row in rows]
+    payloads = [row_payload(leader, row, sim_cache, starred) for row in rows]
     parsed, used_rows, dmin, dmax = window_decks(leader, rows)
     label = aggregate_label(len(parsed), len(rows), dmin, dmax)
     picks = ana.consensus_list(parsed) if parsed else []
@@ -679,12 +706,18 @@ def rebuild(only_ids: set[str] | None = None) -> None:
     tour_index = load_json("tournament-decks.json")
     sim_cache: dict[str, str] = {}
     consensus_out: dict = {}
+    starred = load_starred()
     leaders = [L for L in gen.LEADERS if only_ids is None or L["id"] in only_ids]
     for leader in leaders:
-        info = rebuild_one(leader, tour_index, cache, sim_cache, consensus_out)
+        info = rebuild_one(leader, tour_index, cache, sim_cache, consensus_out, starred)
         print("hub", info["page"], "lists", info.get("lists"), "agg", info.get("window"), flush=True)
-    if only_ids is None:
-        (ROOT / "data/consensus-decks.json").write_text(json.dumps(consensus_out, indent=2) + "\n")
+    path = ROOT / "data/consensus-decks.json"
+    if only_ids is None or not path.exists():
+        path.write_text(json.dumps(consensus_out, indent=2) + "\n")
+    else:
+        current = load_json("consensus-decks.json")
+        current.update(consensus_out)
+        path.write_text(json.dumps(current, indent=2) + "\n")
     print("done", len(leaders), "hubs")
 
 

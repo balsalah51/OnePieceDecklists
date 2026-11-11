@@ -1368,6 +1368,11 @@ header > nav[aria-label="Primary"]{align-items:center;gap:8px 10px}
 }
 .list-tag-tournament{background:color-mix(in srgb, var(--accent) 12%, var(--surface));color:var(--accent)}
 .list-tag-web{background:var(--panel);color:var(--muted)}
+.new-list-mark{
+  color:#c62828;font-weight:900;font-size:15px;margin-left:3px;
+  line-height:1;vertical-align:super
+}
+[data-theme="dark"] .new-list-mark{color:#ff5252}
 .leader-actions{
   display:flex;flex-direction:column;gap:8px;margin:14px 0 8px;width:100%
 }

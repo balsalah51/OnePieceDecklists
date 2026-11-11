@@ -349,7 +349,21 @@ def pick_recent_lists(rows: list[dict], limit: int = RECENT_LIMIT) -> list[dict]
     return picked[:limit]
 
 
+def load_starred_hrefs() -> set[str]:
+    path = ROOT / "data/starred-lists.json"
+    if not path.exists():
+        return set()
+    try:
+        rows = json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return set()
+    if not isinstance(rows, list):
+        return set()
+    return {(href or "").split("?")[0].rstrip("/") for href in rows if isinstance(href, str)}
+
+
 def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
+    starred = load_starred_hrefs()
     items = []
     for i, entry in enumerate(rows):
         leader = entry["leader"]
@@ -378,12 +392,18 @@ def recent_rows_html(rows: list[dict], hide_after: int | None = None) -> str:
         extra_attrs = (" " + " ".join(attrs)) if attrs else ""
         major = " is-major" if home_meta.event_display.event_weight(event) >= 2 else ""
         lazy = "" if i < 6 else ' loading="lazy" decoding="async"'
+        href = entry.get("href") or ""
+        star = (
+            '<span class="new-list-mark" title="New" aria-label="New">*</span>'
+            if href.split("?")[0].rstrip("/") in starred
+            else ""
+        )
         items.append(
             f"""            <li{extra_attrs}>
-              <a class="recent-item {html.escape(leader['color'])}{major}" href="{html.escape(entry['href'])}">
+              <a class="recent-item {html.escape(leader['color'])}{major}" href="{html.escape(href)}">
                 <img class="recent-leader" src="{html.escape(img)}" alt="{html.escape(leader['name'])}"{lazy} onerror="{gen.IMG_ONERROR}" />
                 <div class="recent-copy">
-                  <div class="who">{html.escape(title)}</div>
+                  <div class="who">{html.escape(title)}{star}</div>
                   <div class="muted meta">{meta}</div>
                 </div>
                 <div class="recent-event">{badge_html}{event_html}</div>
