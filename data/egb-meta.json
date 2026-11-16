@@ -1,124 +1,124 @@
 {
-  "updated": "2026-10-16",
-  "lists": 410,
+  "updated": "2026-11-16",
+  "lists": 615,
   "leaders": [
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 40
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 25
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 19
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 14
-    },
-    {
-      "id": "OP16-022",
-      "name": "GB Luffy",
-      "count": 12
-    },
-    {
-      "id": "OP08-058",
-      "name": "Charlotte Pudding",
-      "count": 12
+      "count": 41
     },
     {
       "id": "OP13-001",
       "name": "RG Luffy",
-      "count": 9
+      "count": 34
     },
     {
-      "id": "OP17-099",
-      "name": "Charlotte Linlin",
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "count": 11
+    },
+    {
+      "id": "OP05-098",
+      "name": "OP05 Enel",
+      "count": 11
+    },
+    {
+      "id": "OP12-041",
+      "name": "Sanji",
+      "count": 10
+    },
+    {
+      "id": "OP01-002",
+      "name": "Trafalgar Law",
       "count": 9
     },
     {
       "id": "OP17-058",
       "name": "Kaido",
-      "count": 8
-    },
-    {
-      "id": "OP15-058",
-      "name": "Enel",
-      "count": 7
-    }
-  ],
-  "pie": [
-    {
-      "id": "OP17-039",
-      "name": "Rocks D. Xebec",
-      "count": 46,
-      "pct": 14.4
-    },
-    {
-      "id": "ST30-001",
-      "name": "Luffy & Ace",
-      "count": 43,
-      "pct": 13.5
-    },
-    {
-      "id": "OP17-079",
-      "name": "Monkey D. Luffy",
-      "count": 33,
-      "pct": 10.3
+      "count": 9
     },
     {
       "id": "OP13-004",
       "name": "Sabo",
-      "count": 25,
-      "pct": 7.8
+      "count": 8
     },
     {
-      "id": "OP14-020",
-      "name": "Mihawk",
-      "count": 23,
-      "pct": 7.2
+      "id": "OP17-079",
+      "name": "Monkey D. Luffy",
+      "count": 7
     },
     {
-      "id": "OP09-062",
-      "name": "Nico Robin",
-      "count": 19,
-      "pct": 6.0
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "count": 6
+    }
+  ],
+  "pie": [
+    {
+      "id": "OP13-001",
+      "name": "RG Luffy",
+      "count": 32,
+      "pct": 26.7
     },
     {
-      "id": "OP08-058",
-      "name": "Charlotte Pudding",
-      "count": 17,
-      "pct": 5.3
+      "id": "OP12-041",
+      "name": "Sanji",
+      "count": 10,
+      "pct": 8.3
     },
     {
-      "id": "OP17-001",
-      "name": "Edward Newgate",
-      "count": 15,
-      "pct": 4.7
+      "id": "OP17-039",
+      "name": "Rocks D. Xebec",
+      "count": 9,
+      "pct": 7.5
+    },
+    {
+      "id": "OP01-002",
+      "name": "Trafalgar Law",
+      "count": 9,
+      "pct": 7.5
+    },
+    {
+      "id": "OP14-041",
+      "name": "Boa Hancock",
+      "count": 9,
+      "pct": 7.5
     },
     {
       "id": "OP17-058",
       "name": "Kaido",
-      "count": 14,
-      "pct": 4.4
+      "count": 8,
+      "pct": 6.7
     },
     {
-      "id": "OP17-099",
-      "name": "Charlotte Linlin",
-      "count": 14,
-      "pct": 4.4
+      "id": "EB05-010",
+      "name": "Nico Robin",
+      "count": 7,
+      "pct": 5.8
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 5,
+      "pct": 4.2
+    },
+    {
+      "id": "P-117",
+      "name": "Nami",
+      "count": 4,
+      "pct": 3.3
+    },
+    {
+      "id": "ST10-002",
+      "name": "ST10 Luffy",
+      "count": 4,
+      "pct": 3.3
     },
     {
       "id": "",
       "name": "Other",
-      "count": 70,
-      "pct": 21.9
+      "count": 23,
+      "pct": 19.2
     }
   ]
 }
