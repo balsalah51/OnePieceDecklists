@@ -133,5 +133,95 @@
     "nav_op17": false,
     "pool_heading": "Card pictures",
     "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP18-001",
+    "key": "karoo",
+    "page": "decklists/karoo.html",
+    "dir": "decklists/karoo",
+    "name": "Karoo",
+    "color": "color-red-blue",
+    "crumb": [
+      "/op18-lists.html",
+      "OP18 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP18-021",
+    "key": "franky-op18",
+    "page": "decklists/franky-op18.html",
+    "dir": "decklists/franky-op18",
+    "name": "Franky",
+    "color": "color-green-purple",
+    "crumb": [
+      "/op18-lists.html",
+      "OP18 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP18-022",
+    "key": "op18-luffy",
+    "page": "decklists/op18-luffy.html",
+    "dir": "decklists/op18-luffy",
+    "name": "OP18 Luffy",
+    "color": "color-green",
+    "crumb": [
+      "/op18-lists.html",
+      "OP18 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP18-041",
+    "key": "ms-all-sunday",
+    "page": "decklists/ms-all-sunday.html",
+    "dir": "decklists/ms-all-sunday",
+    "name": "Ms. All Sunday",
+    "color": "color-blue",
+    "crumb": [
+      "/op18-lists.html",
+      "OP18 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP18-060",
+    "key": "saint-gunko",
+    "page": "decklists/saint-gunko.html",
+    "dir": "decklists/saint-gunko",
+    "name": "Saint Gunko",
+    "color": "color-purple-black",
+    "crumb": [
+      "/op18-lists.html",
+      "OP18 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
+  },
+  {
+    "id": "OP18-079",
+    "key": "spandam",
+    "page": "decklists/spandam.html",
+    "dir": "decklists/spandam",
+    "name": "Spandam",
+    "color": "color-black-yellow",
+    "crumb": [
+      "/op18-lists.html",
+      "OP18 lists"
+    ],
+    "nav_op17": false,
+    "pool_heading": "Card pictures",
+    "pool_note": "English names and art from Limitless"
   }
 ]

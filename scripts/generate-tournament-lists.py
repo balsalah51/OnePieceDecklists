@@ -23,6 +23,8 @@ TOURNAMENT_LIMIT = 80
 # Other Pudding prints stay legal: OP17-109, ST20-004, EB03-035, OP12-071,
 # OP08-067, OP11-070, PRB02-010.
 BANNED_CARDS = {"OP06-047"}
+# Official card text: "you may have any number of this card in your deck."
+UNLIMITED_CARDS = {"OP18-093"}
 
 LEADERS = [
     {
@@ -801,6 +803,31 @@ def deck_has_op17(dl: dict) -> bool:
     return any((item.get("id") or "").startswith("OP17-") for item in flatten_cards(dl))
 
 
+def copies_ok(cid: str, n: int, *, leader: bool = False) -> bool:
+    if leader:
+        return n == 1
+    if n < 1:
+        return False
+    if cid in UNLIMITED_CARDS:
+        return True
+    return n <= 4
+
+
+def counts_are_legal(counts: dict[str, int], lid: str | None) -> bool:
+    if not lid or counts.get(lid) != 1:
+        return False
+    if any(cid in BANNED_CARDS for cid in counts):
+        return False
+    main = 0
+    for cid, n in counts.items():
+        if cid == lid:
+            continue
+        if not copies_ok(cid, n):
+            return False
+        main += n
+    return main == 50
+
+
 def deck_is_legal(dl: dict) -> bool:
     """Constructed legal: 1 leader, 50 main-deck cards, max 4 copies, no bans."""
     leader = dl.get("leader") or {}
@@ -816,11 +843,8 @@ def deck_is_legal(dl: dict) -> bool:
         except (TypeError, ValueError):
             return False
         group = (item.get("group") or "").lower()
-        if group == "leader":
-            if n != 1:
-                return False
-            continue
-        if n < 1 or n > 4:
+        cid = item.get("id") or ""
+        if not copies_ok(cid, n, leader=group == "leader"):
             return False
     return True
 
@@ -1325,7 +1349,7 @@ def page_chrome(
     </main>
     <footer>
       © <span id="year"></span> One Piece Decklists - Built with community in mind.
-      <a href="/tier-list.html">Tier List</a> · <a href="/extra-grand-battle.html">Extra Grand Battle</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/eb05-lists.html">EB05 lists</a> · <a href="/eb05-spoilers.html">EB05</a> · <a href="/op18-spoilers.html">OP18</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
+      <a href="/tier-list.html">Tier List</a> · <a href="/extra-grand-battle.html">Extra Grand Battle</a> · <a href="/guides/">Guides</a> · <a href="/decklists/op17.html">Leaders</a> · <a href="/eb05-lists.html">EB05 lists</a> · <a href="/eb05-spoilers.html">EB05</a> · <a href="/op18-lists.html">OP18 lists</a> · <a href="/op18-spoilers.html">OP18</a> · <a href="/format.html">Format</a> · <a href="/search.html">Search</a> · <a href="/shop/">Shop</a> · <a href="/privacy.html">Privacy</a>
     </footer>
   </div>
   <script>
@@ -1444,8 +1468,8 @@ def card_image_url(cid: str) -> str:
     local = ROOT / "img" / "cards" / set_code / f"{cid}.webp"
     if local.exists():
         return f"/img/cards/{set_code}/{cid}.webp"
-    # EB05 and OP18 are not on the Limitless CDN yet. OPlay hosts the sample art.
-    if set_code in {"EB05", "OP18"}:
+    # EB05 sample art is still on OPlay. OP18 is on the Limitless CDN.
+    if set_code == "EB05":
         return f"https://cards.oplaytcg.com/{set_code}/en/{cid}.webp"
     return f"https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/{set_code}/{cid}_EN.webp"
 

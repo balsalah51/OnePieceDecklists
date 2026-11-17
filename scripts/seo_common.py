@@ -16,8 +16,8 @@ LOGO_SVG = f"{SITE}/img/opdl-logo.svg"
 LOGO_48 = f"{SITE}/img/opdl-logo-48.png"
 LOGO_192 = f"{SITE}/img/opdl-logo-192.png"
 LOGO_512 = f"{SITE}/img/opdl-logo-512.png"
-CSS_VER = "leader-hub2"
-JS_VER = "leader-hub2"
+CSS_VER = "op18-1"
+JS_VER = "op18-1"
 BRAND_LOGO_HTML = (
     '<img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />'
 )
@@ -509,6 +509,7 @@ FOOTER_LINKS = (
     '<a href="/decklists/op17.html" data-google-vignette="false">Leaders</a> · '
     '<a href="/eb05-lists.html" data-google-vignette="false">EB05 lists</a> · '
     '<a href="/eb05-spoilers.html" data-google-vignette="false">EB05</a> · '
+    '<a href="/op18-lists.html" data-google-vignette="false">OP18 lists</a> · '
     '<a href="/op18-spoilers.html" data-google-vignette="false">OP18</a> · '
     '<a href="/format.html" data-google-vignette="false">Format</a> · '
     '<a href="/search.html" data-google-vignette="false">Search</a> · '
@@ -562,6 +563,7 @@ def primary_nav_html(*, current: str | None = None, home: bool = False) -> str:
             [
                 ("/eb05-lists.html", "EB05 lists", "eb05-lists"),
                 ("/eb05-spoilers.html", "EB05 spoilers", "eb05"),
+                ("/op18-lists.html", "OP18 lists", "op18-lists"),
                 ("/op18-spoilers.html", "OP18 spoilers", "op18"),
             ],
         ),
