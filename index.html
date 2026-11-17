@@ -9,7 +9,7 @@
     <script id="opdl-theme-boot">
     (function(){try{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   </script>
-<link rel="stylesheet" href="/css/site.css?v=op18-1" />
+<link rel="stylesheet" href="/css/site.css?v=op18-2" />
   <link rel="canonical" href="https://onepiecedecklists.com/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -46,7 +46,7 @@
         <img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">EB-05 Meta</div>
+          <div class="subtitle">OP-18 Meta</div>
         </div>
       </a>
       <div class="theme-toggle" role="group" aria-label="Color theme">
@@ -58,7 +58,7 @@
           <a class="nav-pin" href="/tier-list.html">Tier List</a>
           <a class="nav-pin" href="#recent">Recent</a>
           <a class="nav-pin" href="/search.html">Search</a>
-          <span class="nav-chip">EB-05 Meta</span>
+          <span class="nav-chip">OP-18 Meta</span>
         </div>
         <details class="nav-group">
           <summary>Meta</summary>
@@ -108,9 +108,9 @@
               <img class="home-splash-bg" src="/img/home-banner-hancock.jpg?v=nov8" alt="One Piece Decklists with Boa Hancock" width="1920" height="1080" decoding="async" />
             </div>
             <div class="home-splash-copy">
-              <p class="home-splash-kicker">EB-05 Meta</p>
+              <p class="home-splash-kicker">OP-18 Meta</p>
               <p class="home-splash-title">One Piece Decklists</p>
-              <p class="home-splash-lede">Tournament lists, tier list, and meta chart for the current EB-05 format.</p>
+              <p class="home-splash-lede">Tournament lists, tier list, and meta chart for The Dominance of God.</p>
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
@@ -171,7 +171,7 @@
           <p class="home-leaders-kicker">Results</p>
           <div class="section-title">
             <h3>Recent lists</h3>
-            <div class="muted">50 lists</div>
+            <div class="muted">10 of 50</div>
           </div>
           <p class="muted home-recent-lede">Updated 2026-11-17. Newest first. Championships, regionals, and finals are marked so they stand out from online cups.</p>
           <div class="recent-cols" aria-hidden="true">
@@ -180,7 +180,7 @@
             <span>Event</span>
             <span>Date</span>
           </div>
-          <ul class="recent-list" aria-label="Recent decklists">
+          <ul class="recent-list" id="home-recent-list" data-recent-collapse aria-label="Recent decklists">
             <li data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/1st-flyestraven-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
@@ -291,7 +291,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/11th-loremassa-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -302,7 +302,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/12th-ninjatrain-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -313,7 +313,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-red" href="/decklists/trafalgar-law-op14-001/13th-yaroyarodaze-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-001_EN.webp" alt="Trafalgar Law" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -324,7 +324,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/14th-r0xtar-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -335,7 +335,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-green-purple" href="/decklists/eb02-luffy/15th-divalol-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/EB02/EB02-010.webp" alt="EB02 Luffy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -346,7 +346,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-red-green" href="/decklists/luffy-ace/16th-cloudman-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -357,7 +357,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/buggy-op09-042/17th-kereminator-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-042_EN.webp" alt="Buggy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -368,7 +368,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/18th-jan-birkemeyer-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -379,7 +379,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/buggy-op09-042/19th-gyan-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-042_EN.webp" alt="Buggy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -390,7 +390,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/ms-all-sunday/20th-deniz-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-041_EN.webp" alt="Ms. All Sunday" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -401,7 +401,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/21st-mblawluffy-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -412,7 +412,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-black-yellow" href="/decklists/spandam/23rd-jerocad1701-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-079_EN.webp" alt="Spandam" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -423,7 +423,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-red-purple" href="/decklists/st10-luffy/24th-kondoriano98-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/ST10/ST10-002.webp" alt="ST10 Luffy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -434,7 +434,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-red-black" href="/decklists/sabo/25th-tzaf-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP13/OP13-004.webp" alt="Sabo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -445,7 +445,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-green-yellow" href="/decklists/eb05-nico-robin/26th-snorlax1cynda-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/EB05/EB05-010.webp" alt="Nico Robin" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -456,7 +456,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-yellow" href="/decklists/rosinante/27th-lukas123-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP12/OP12-061.webp" alt="Rosinante" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -467,7 +467,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-green-purple" href="/decklists/franky-op18/28th-trocheesy-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-021_EN.webp" alt="Franky" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -478,7 +478,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/29th-liltommy-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -489,7 +489,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/30th-roko-zoric-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -500,7 +500,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-green" href="/decklists/op18-luffy/31st-cinnas-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-022_EN.webp" alt="OP18 Luffy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -511,7 +511,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue-yellow" href="/decklists/boa-hancock/32nd-mrupperhand-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -522,7 +522,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/33rd-mi-co-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -533,7 +533,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/34th-simpiii-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -544,7 +544,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-green" href="/decklists/op18-luffy/35th-gornik2201-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-022_EN.webp" alt="OP18 Luffy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -555,7 +555,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-red-blue" href="/decklists/karoo/36th-dipper-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-001_EN.webp" alt="Karoo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -566,7 +566,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/37th-tadomari-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -577,7 +577,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/38th-kemosabe40k-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -588,7 +588,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/buggy-op09-042/40th-krabbys-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-042_EN.webp" alt="Buggy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -599,7 +599,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/41st-solmyr-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -610,7 +610,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/42nd-goroseibest-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -621,7 +621,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/43rd-freajski-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -632,7 +632,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/op17/rocks-d-xebec/44th-nickgame809-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -643,7 +643,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-yellow" href="/decklists/rosinante/45th-pjetren-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP12/OP12-061.webp" alt="Rosinante" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -654,7 +654,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-green-yellow" href="/decklists/eb05-nico-robin/46th-filipipirat-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/EB05/EB05-010.webp" alt="Nico Robin" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -665,7 +665,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-yellow" href="/decklists/op05-enel/47th-insearchfor1-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP05/OP05-098.webp" alt="OP05 Enel" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -676,7 +676,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-black" href="/decklists/saint-gunko/48th-drcommodore-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -687,7 +687,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-purple-yellow" href="/decklists/rosinante/49th-coolpleb-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="/img/cards/OP12/OP12-061.webp" alt="Rosinante" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -698,7 +698,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-black-yellow" href="/decklists/spandam/50th-nytrex-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-079_EN.webp" alt="Spandam" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -709,7 +709,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-green" href="/decklists/op18-luffy/51st-anbornsky-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-022_EN.webp" alt="OP18 Luffy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -720,7 +720,7 @@
                 <div class="when">2026-11-16</div>
               </a>
             </li>
-            <li data-date="2026-11-16">
+            <li class="recent-more" hidden data-date="2026-11-16">
               <a class="recent-item color-blue" href="/decklists/buggy-op09-042/52nd-stoneinspace-op18-chinoizecup-136-monday.html">
                 <img class="recent-leader" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-042_EN.webp" alt="Buggy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
                 <div class="recent-copy">
@@ -733,6 +733,7 @@
             </li>
           </ul>
           <div class="recent-more-row">
+            <button type="button" class="recent-more-btn" data-recent-more="#home-recent-list">Show more lists</button>
             <a class="recent-all-link" href="/recent.html">All recent lists →</a>
           </div>
         </section>
@@ -758,7 +759,7 @@
               </svg>
             </span>
             <span class="home-big-title">Tier List</span>
-            <span class="home-big-note">OP17 S through D with leader pictures</span>
+            <span class="home-big-note">OP-18 S through D with leader pictures</span>
           </a>
           <a class="home-big home-big-egb" href="/extra-grand-battle.html">
             <span class="home-big-icon" aria-hidden="true">
@@ -891,7 +892,7 @@
             <h3>This week in the meta</h3>
             <a href="/guides/weekly-meta.html">Full write-up →</a>
           </div>
-          <p class="home-notes-lede">Rocks D. Xebec shows up on 42 of the newest 200 hosted lists, and 20.9% of lists that play an EB05 card. RG Luffy (31) and Saint Gunko (23) are the next names in that window. Nico Robin has the best first-place rate in the same slice: 1 firsts from 20 placed lists (5.0%). That is a first-place rate, not a game win rate.</p>
+          <p class="home-notes-lede">Rocks D. Xebec shows up on 42 of the newest 200 hosted lists. RG Luffy (31) and Saint Gunko (23) are the next names in that window. Saint Gunko has the best first-place rate in the same slice: 1 firsts from 23 placed lists (4.3%). That is a first-place rate, not a game win rate.</p>
           <div class="home-notes-grid">
             <a class="home-note" href="/guides/weekly-meta.html">
               <span class="kicker">Weekly meta</span>
@@ -906,118 +907,259 @@
           </div>
         </section>
 
+        <section class="card home-panel home-tier" id="tier">
+          <p class="home-leaders-kicker">Current format</p>
+          <div class="section-title">
+            <h3>Tier list</h3>
+            <a href="/tier-list.html">Full board →</a>
+          </div>
+          <p class="muted home-recent-lede">Rebuilt from hosted lists dated 2026-11-08 onward, plus public meta pages. S+ through B on this page; C and D on the full board.</p>
+          <div class="tier-board" aria-label="Current format tier list">
+        <div class="tier-row tier-splus">
+          <div class="tier-label">S+</div>
+          <div class="tier-leaders">
+            <a class="tier-leader color-red-green" href="/decklists/rg-luffy.html">
+              <img src="/img/cards/OP13/OP13-001.webp" alt="RG Luffy leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">RG Luffy</div>
+              <div class="meta">29 recent top 8s</div>
+            </a>
+          </div>
+        </div>
+        <div class="tier-row tier-s">
+          <div class="tier-label">S</div>
+          <div class="tier-leaders">
+            <a class="tier-leader color-blue" href="/decklists/op17/rocks-d-xebec.html">
+              <img src="/img/cards/OP17/OP17-039.webp" alt="Rocks D. Xebec leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Rocks D. Xebec</div>
+              <div class="meta">18 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-green" href="/decklists/mihawk.html">
+              <img src="/img/cards/OP14/OP14-020.webp" alt="Mihawk leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Mihawk</div>
+              <div class="meta">0 recent lists</div>
+            </a>
+          </div>
+        </div>
+        <div class="tier-row tier-a">
+          <div class="tier-label">A</div>
+          <div class="tier-leaders">
+            <a class="tier-leader color-red-black" href="/decklists/sabo.html">
+              <img src="/img/cards/OP13/OP13-004.webp" alt="Sabo leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Sabo</div>
+              <div class="meta">8 recent lists</div>
+            </a>
+            <a class="tier-leader color-purple" href="/decklists/enel.html">
+              <img src="/img/cards/OP15/OP15-058.webp" alt="Enel leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Enel</div>
+              <div class="meta">2 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-red" href="/decklists/portgas-d-ace.html">
+              <img src="/img/cards/OP16/OP16-001.webp" alt="Portgas D. Ace leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Portgas D. Ace</div>
+              <div class="meta">1 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-black" href="/decklists/op17/monkey-d-luffy.html">
+              <img src="/img/cards/OP17/OP17-079.webp" alt="Monkey D. Luffy leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Monkey D. Luffy</div>
+              <div class="meta">1 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-purple" href="/decklists/op17/kaido.html">
+              <img src="/img/cards/OP17/OP17-058.webp" alt="Kaido leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Kaido</div>
+              <div class="meta">4 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-blue" href="/decklists/buggy-op09-042.html">
+              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-042_EN.webp" alt="Buggy leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Buggy</div>
+              <div class="meta">8 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-green-yellow" href="/decklists/eb05-nico-robin.html">
+              <img src="/img/cards/EB05/EB05-010.webp" alt="Nico Robin leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Nico Robin</div>
+              <div class="meta">6 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-black" href="/decklists/marshall-d-teach-op09-081.html">
+              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-081_EN.webp" alt="Marshall.D.Teach leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Marshall.D.Teach</div>
+              <div class="meta">4 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-purple-black" href="/decklists/saint-gunko.html">
+              <img src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="Saint Gunko leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Saint Gunko</div>
+              <div class="meta">4 recent top 8s</div>
+            </a>
+          </div>
+        </div>
+        <div class="tier-row tier-b">
+          <div class="tier-label">B</div>
+          <div class="tier-leaders">
+            <a class="tier-leader color-green" href="/decklists/op17/shanks.html">
+              <img src="/img/cards/OP17/OP17-020.webp" alt="Shanks leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Shanks</div>
+              <div class="meta">4 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-yellow" href="/decklists/op17/charlotte-linlin.html">
+              <img src="/img/cards/OP17/OP17-099.webp" alt="Charlotte Linlin leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Charlotte Linlin</div>
+              <div class="meta">0 recent lists</div>
+            </a>
+            <a class="tier-leader color-blue-yellow" href="/decklists/boa-hancock.html">
+              <img src="/img/cards/OP14/OP14-041.webp" alt="Boa Hancock leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Boa Hancock</div>
+              <div class="meta">4 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-purple-yellow" href="/decklists/nico-robin.html">
+              <img src="/img/cards/OP09/OP09-062.webp" alt="Nico Robin leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Nico Robin</div>
+              <div class="meta">1 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-green-blue" href="/decklists/gb-luffy.html">
+              <img src="/img/cards/OP16/OP16-022.webp" alt="GB Luffy leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">GB Luffy</div>
+              <div class="meta">3 recent lists</div>
+            </a>
+            <a class="tier-leader color-blue-yellow" href="/decklists/nami.html">
+              <img src="/img/cards/OP11/OP11-041.webp" alt="Nami leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Nami</div>
+              <div class="meta">2 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-red-green" href="/decklists/luffy-ace.html">
+              <img src="/img/cards/ST30/ST30-001.webp" alt="Luffy &amp; Ace leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Luffy &amp; Ace</div>
+              <div class="meta">1 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-black-yellow" href="/decklists/blackbeard.html">
+              <img src="/img/cards/OP16/OP16-080.webp" alt="Blackbeard leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Blackbeard</div>
+              <div class="meta">2 recent top 8s</div>
+            </a>
+            <a class="tier-leader color-black-yellow" href="/decklists/gecko-moria.html">
+              <img src="/img/cards/OP14/OP14-080.webp" alt="Gecko Moria leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">Gecko Moria</div>
+              <div class="meta">1 recent lists</div>
+            </a>
+            <a class="tier-leader color-red-purple" href="/decklists/st10-luffy.html">
+              <img src="/img/cards/ST10/ST10-002.webp" alt="ST10 Luffy leader card" width="86" height="120" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <div class="name">ST10 Luffy</div>
+              <div class="meta">3 recent top 8s</div>
+            </a>
+          </div>
+        </div>
+          </div>
+        </section>
+
         <section class="card home-panel home-meta-pie" id="meta-share">
           <p class="home-leaders-kicker">Format share</p>
           <div class="section-title">
-            <h3>EB-05 Meta</h3>
+            <h3>OP-18 Meta</h3>
             <a href="/tier-list.html">Tier list →</a>
           </div>
-          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one EB05 card. The hole is the leader converting best among these lists. Names sit on every slice.</p>
+          <p class="muted home-recent-lede">Share of the newest hosted lists that play at least one OP18 card. The hole is the leader converting best among these lists. Names sit on every slice.</p>
           <div class="meta-pie-board">
-            <div class="meta-pie-disk" style="background:conic-gradient(#b71c1c 0.00% 33.38%, #1565c0 33.94% 54.30%, #6096d4 54.86% 63.12%, #2e7d32 63.68% 71.29%, #6a1b9a 71.85% 75.21%, #9a64ba 75.77% 78.15%, #4f7bae 78.71% 80.44%, #ce6565 81.00% 82.40%, #a95353 82.96% 84.03%, #a95353 84.59% 85.67%, #8a8580 86.23% 100.00%)">
-              <a class="meta-pie-hole" href="/decklists/eb05-nico-robin.html" aria-label="Nico Robin"><img class="meta-pie-hole-face" src="/img/cards/EB05/EB05-010.webp" alt="" width="220" height="220" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" /></a>
-              <a class="meta-pie-on" href="/decklists/rg-luffy.html" style="left:86.59%;top:29.37%">RG Luffy</a>
-              <a class="meta-pie-on" href="/decklists/op17/rocks-d-xebec.html" style="left:65.17%;top:89.16%">Rocks</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/buggy-op09-042.html" style="left:27.52%;top:85.48%">Buggy</a>
-              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/eb05-nico-robin.html" style="left:12.60%;top:69.11%">Robin</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/op17/kaido.html" style="left:4.69%;top:54.20%">Kaido</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/rosinante.html" style="left:15.76%;top:45.76%">Rosinante</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/boa-hancock.html" style="left:6.37%;top:37.10%">Boa</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/st10-luffy.html" style="left:18.51%;top:35.90%">ST10 Luffy</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/trafalgar-law-op14-001.html" style="left:10.83%;top:26.85%">Law</a>
-              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/trafalgar-law-op01-002.html" style="left:22.26%;top:29.49%">Law</a>
-              <a class="meta-pie-on" href="/decklists/op17.html" style="left:32.05%;top:12.03%">Other</a>
+            <div class="meta-pie-disk" style="background:conic-gradient(#6a1b9a 0.00% 29.59%, #1565c0 30.15% 39.98%, #6096d4 40.54% 50.37%, #212121 50.93% 59.46%, #2e7d32 60.02% 67.25%, #b71c1c 67.81% 72.45%, #ce6565 73.01% 76.34%, #71a774 76.90% 80.24%, #5d895f 80.80% 84.14%, #686868 84.70% 86.73%, #8a8580 87.29% 100.00%)">
+              <a class="meta-pie-hole" href="/decklists/saint-gunko.html" aria-label="Saint Gunko"><img class="meta-pie-hole-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="" width="220" height="220" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" /></a>
+              <a class="meta-pie-on" href="/decklists/saint-gunko.html" style="left:83.88%;top:25.17%">Gunko</a>
+              <a class="meta-pie-on" href="/decklists/ms-all-sunday.html" style="left:83.88%;top:74.83%">Sunday</a>
+              <a class="meta-pie-on" href="/decklists/buggy-op09-042.html" style="left:61.83%;top:90.30%">Buggy</a>
+              <a class="meta-pie-on" href="/decklists/spandam.html" style="left:36.53%;top:89.78%">Spandam</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/op18-luffy.html" style="left:15.61%;top:79.80%">OP18 Luffy</a>
+              <a class="meta-pie-on meta-pie-on-tight" href="/decklists/karoo.html" style="left:17.10%;top:60.39%">Karoo</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/sabo.html" style="left:4.51%;top:50.93%">Sabo</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/eb05-nico-robin.html" style="left:16.36%;top:42.32%">Robin</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/franky-op18.html" style="left:9.42%;top:29.43%">Franky</a>
+              <a class="meta-pie-on meta-pie-on-tiny" href="/decklists/koala.html" style="left:23.03%;top:28.49%">Koala</a>
+              <a class="meta-pie-on" href="/decklists/op17.html" style="left:33.34%;top:11.45%">Other</a>
             </div>
-            <ul class="meta-pie-legend" aria-label="EB05 list share">
-            <li style="--slice:#b71c1c">
-              <span class="meta-pie-swatch" style="background:#b71c1c"></span>
-              <img class="meta-pie-face" src="/img/cards/OP13/OP13-001.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+            <ul class="meta-pie-legend" aria-label="OP18 list share">
+            <li style="--slice:#6a1b9a">
+              <span class="meta-pie-swatch" style="background:#6a1b9a"></span>
+              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-060_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/rg-luffy.html">RG Luffy</a>
-                <span class="meta-pie-legend-tier">S+ · 25</span>
+                <a href="/decklists/saint-gunko.html">Saint Gunko</a>
+                <span class="meta-pie-legend-tier">A · 4</span>
               </span>
-              <span class="meta-pie-legend-pct">34%</span>
+              <span class="meta-pie-legend-pct">30%</span>
             </li>
             <li style="--slice:#1565c0">
               <span class="meta-pie-swatch" style="background:#1565c0"></span>
-              <img class="meta-pie-face" src="/img/cards/OP17/OP17-039.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-041_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/op17/rocks-d-xebec.html">Rocks D. Xebec</a>
-                <span class="meta-pie-legend-tier">S · 60</span>
+                <a href="/decklists/ms-all-sunday.html">Ms. All Sunday</a>
+                <span class="meta-pie-legend-tier">C · 1</span>
               </span>
-              <span class="meta-pie-legend-pct">21%</span>
+              <span class="meta-pie-legend-pct">10%</span>
             </li>
             <li style="--slice:#6096d4">
               <span class="meta-pie-swatch" style="background:#6096d4"></span>
               <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP09/OP09-042_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
                 <a href="/decklists/buggy-op09-042.html">Buggy</a>
-                <span class="meta-pie-legend-tier">D · 2</span>
+                <span class="meta-pie-legend-tier">A · 4</span>
               </span>
-              <span class="meta-pie-legend-pct">8.8%</span>
+              <span class="meta-pie-legend-pct">10%</span>
+            </li>
+            <li style="--slice:#212121">
+              <span class="meta-pie-swatch" style="background:#212121"></span>
+              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-079_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/spandam.html">Spandam</a>
+                <span class="meta-pie-legend-tier">C · 1</span>
+              </span>
+              <span class="meta-pie-legend-pct">9.1%</span>
             </li>
             <li style="--slice:#2e7d32">
               <span class="meta-pie-swatch" style="background:#2e7d32"></span>
-              <img class="meta-pie-face" src="/img/cards/EB05/EB05-010.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-022_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/eb05-nico-robin.html">Nico Robin</a>
-                <span class="meta-pie-legend-tier">C · 4</span>
+                <a href="/decklists/op18-luffy.html">OP18 Luffy</a>
+                <span class="meta-pie-legend-tier">C · 1</span>
               </span>
-              <span class="meta-pie-legend-pct">8.2%</span>
+              <span class="meta-pie-legend-pct">7.8%</span>
             </li>
-            <li style="--slice:#6a1b9a">
-              <span class="meta-pie-swatch" style="background:#6a1b9a"></span>
-              <img class="meta-pie-face" src="/img/cards/OP17/OP17-058.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+            <li style="--slice:#b71c1c">
+              <span class="meta-pie-swatch" style="background:#b71c1c"></span>
+              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-001_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/op17/kaido.html">Kaido</a>
-                <span class="meta-pie-legend-tier">A · 24</span>
+                <a href="/decklists/karoo.html">Karoo</a>
+                <span class="meta-pie-legend-tier">C · 1</span>
               </span>
-              <span class="meta-pie-legend-pct">3.9%</span>
-            </li>
-            <li style="--slice:#9a64ba">
-              <span class="meta-pie-swatch" style="background:#9a64ba"></span>
-              <img class="meta-pie-face" src="/img/cards/OP12/OP12-061.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/rosinante.html">Rosinante</a>
-                <span class="meta-pie-legend-tier">C · 7</span>
-              </span>
-              <span class="meta-pie-legend-pct">2.9%</span>
-            </li>
-            <li style="--slice:#4f7bae">
-              <span class="meta-pie-swatch" style="background:#4f7bae"></span>
-              <img class="meta-pie-face" src="/img/cards/OP14/OP14-041.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
-              <span class="meta-pie-legend-copy">
-                <a href="/decklists/boa-hancock.html">Boa Hancock</a>
-                <span class="meta-pie-legend-tier">B · 13</span>
-              </span>
-              <span class="meta-pie-legend-pct">2.3%</span>
+              <span class="meta-pie-legend-pct">5.2%</span>
             </li>
             <li style="--slice:#ce6565">
               <span class="meta-pie-swatch" style="background:#ce6565"></span>
-              <img class="meta-pie-face" src="/img/cards/ST10/ST10-002.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <img class="meta-pie-face" src="/img/cards/OP13/OP13-004.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/st10-luffy.html">ST10 Luffy</a>
-                <span class="meta-pie-legend-tier">D · 1</span>
+                <a href="/decklists/sabo.html">Sabo</a>
+                <span class="meta-pie-legend-tier">A · 30</span>
               </span>
-              <span class="meta-pie-legend-pct">2.0%</span>
+              <span class="meta-pie-legend-pct">3.9%</span>
             </li>
-            <li style="--slice:#a95353">
-              <span class="meta-pie-swatch" style="background:#a95353"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP14/OP14-001_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+            <li style="--slice:#71a774">
+              <span class="meta-pie-swatch" style="background:#71a774"></span>
+              <img class="meta-pie-face" src="/img/cards/EB05/EB05-010.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/trafalgar-law-op14-001.html">Trafalgar Law</a>
+                <a href="/decklists/eb05-nico-robin.html">Nico Robin</a>
+                <span class="meta-pie-legend-tier">A · 4</span>
+              </span>
+              <span class="meta-pie-legend-pct">3.9%</span>
+            </li>
+            <li style="--slice:#5d895f">
+              <span class="meta-pie-swatch" style="background:#5d895f"></span>
+              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-021_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+              <span class="meta-pie-legend-copy">
+                <a href="/decklists/franky-op18.html">Franky</a>
                 <span class="meta-pie-legend-tier">Unranked</span>
               </span>
-              <span class="meta-pie-legend-pct">1.6%</span>
+              <span class="meta-pie-legend-pct">3.9%</span>
             </li>
-            <li style="--slice:#a95353">
-              <span class="meta-pie-swatch" style="background:#a95353"></span>
-              <img class="meta-pie-face" src="https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP01/OP01-002_EN.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
+            <li style="--slice:#686868">
+              <span class="meta-pie-swatch" style="background:#686868"></span>
+              <img class="meta-pie-face" src="/img/cards/OP12/OP12-081.webp" alt="" width="48" height="48" onerror="this.onerror=null;this.src='/img/cards/placeholder.svg'" />
               <span class="meta-pie-legend-copy">
-                <a href="/decklists/trafalgar-law-op01-002.html">Trafalgar Law</a>
-                <span class="meta-pie-legend-tier">D · 1</span>
+                <a href="/decklists/koala.html">Koala</a>
+                <span class="meta-pie-legend-tier">C · 1</span>
               </span>
-              <span class="meta-pie-legend-pct">1.6%</span>
+              <span class="meta-pie-legend-pct">2.6%</span>
             </li>
             <li style="--slice:#8a8580">
               <span class="meta-pie-swatch" style="background:#8a8580"></span>
@@ -1026,7 +1168,7 @@
                 <a href="/decklists/op17.html">Other</a>
                 <span class="meta-pie-legend-tier">Unranked</span>
               </span>
-              <span class="meta-pie-legend-pct">14%</span>
+              <span class="meta-pie-legend-pct">13%</span>
             </li>
             </ul>
           </div>
@@ -1095,6 +1237,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <script src="/js/site.js?v=op18-1"></script>
+  <script src="/js/site.js?v=op18-2"></script>
 </body>
 </html>

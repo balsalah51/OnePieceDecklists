@@ -55,7 +55,7 @@ HOME_TIER_TILE = """          <a class="home-big home-big-tier" href="/tier-list
               </svg>
             </span>
             <span class="home-big-title">Tier List</span>
-            <span class="home-big-note">EB-05 S through D with leader pictures</span>
+            <span class="home-big-note">OP-18 S through D with leader pictures</span>
           </a>
 """
 
@@ -545,7 +545,9 @@ def site_source(stats: dict[str, dict]) -> dict:
 
 
 def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
-    sources = SOURCES + [site_source(stats)]
+    site = site_source(stats)
+    sources = SOURCES + [site]
+    site_ranks = site.get("ranks") or {}
     scores: dict[str, float] = defaultdict(float)
     hits: dict[str, int] = defaultdict(int)
     by_tier_votes: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
@@ -558,6 +560,7 @@ def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
             hits[lid] += 1
             by_tier_votes[lid][tier] += 1
     ranked = []
+    order = {letter: i for i, letter in enumerate(TIER_ORDER)}
     for lid, L in BY_ID.items():
         s = stats.get(lid) or {}
         score = scores.get(lid, 0.0)
@@ -573,6 +576,11 @@ def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
             tier = "C"
         else:
             tier = "D"
+        # New leaders (OP18) have no public tier-page votes yet. Use this
+        # site's recent window so they are not stuck in C/D by default.
+        if hits.get(lid, 0) < 2 and lid in site_ranks:
+            if order.get(site_ranks[lid], 99) < order.get(tier, 99):
+                tier = site_ranks[lid]
         if lid in TIER_OVERRIDE:
             tier = TIER_OVERRIDE[lid]
         ranked.append(
@@ -590,7 +598,6 @@ def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
                 **s,
             }
         )
-    order = {letter: i for i, letter in enumerate(TIER_ORDER)}
     ranked.sort(
         key=lambda r: (order.get(r["tier"], 99), -r["score"], -r["recent_top8"], -r["recent_lists"], r["name"])
     )
@@ -651,7 +658,7 @@ def render_table(rows: list[dict]) -> str:
     return f"""        <div class="tier-table">
           <div class="section-title">
             <h3>This site's lists in the mix</h3>
-            <div class="muted">Recent = {RECENT_FROM} onward, covering the EB-05 English window</div>
+            <div class="muted">Recent = {RECENT_FROM} onward, covering the OP-18 English window</div>
           </div>
           <table>
             <thead>
@@ -692,10 +699,10 @@ def render_sources(sources: list[dict]) -> str:
 
 
 def page_html(board: str, table: str, sources_html: str, rows: list[dict], sources: list[dict]) -> str:
-    title = "EB-05 Meta One Piece TCG tier list | One Piece Decklists"
+    title = "OP-18 Meta One Piece TCG tier list | One Piece Decklists"
     desc = (
-        "Aggregated EB-05 One Piece TCG tier list with leader pictures. "
-        "Built from 20+ public meta pages plus the tournament lists on this site."
+        "Aggregated OP-18 One Piece TCG tier list with leader pictures. "
+        "Built from public meta pages plus the tournament lists on this site."
     )
     url = seo.canonical_url("tier-list.html")
     splus_names = [r["name"] for r in rows if r["tier"] == "S+"]
@@ -717,7 +724,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         )
         verb = "sit" if len(splus_names) > 1 else "sits"
         intro = (
-            f"{who} {verb} in S+ with the most recent EB-05 top eights of any hosted leader. {intro}"
+            f"{who} {verb} in S+ with the most recent OP-18 top eights of any hosted leader. {intro}"
         )
     items = [(r["name"], r["href"]) for r in rows]
     faq = seo.faq_jsonld(
@@ -728,7 +735,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
             ),
             (
                 "What format is the tier list?",
-                "Standard constructed, EB-05 Extra Booster era after the 30 October 2026 English release.",
+                "Standard constructed, OP-18 The Dominance of God era around the 20 November 2026 English release.",
             ),
             (
                 "Why is Green Mihawk still S tier?",
@@ -759,7 +766,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         {seo.BRAND_LOGO_HTML}
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">EB-05 Meta</div>
+          <div class="subtitle">OP-18 Meta</div>
         </div>
       </a>
 {seo.THEME_TOGGLE_HTML}{seo.primary_nav_html(current="tier")}
@@ -767,10 +774,10 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
     <main class="single">
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / Tier List</div>
-        <h2>EB-05 Meta tier list</h2>
+        <h2>OP-18 Meta tier list</h2>
         <p>{html.escape(intro)}</p>
         <p class="muted">Updated {date.today().isoformat()}. Leader pictures link to the 50-card lists on this site.</p>
-        <div class="tier-board" aria-label="EB-05 leader tier list">
+        <div class="tier-board" aria-label="OP-18 leader tier list">
 {board}
         </div>
 {table}

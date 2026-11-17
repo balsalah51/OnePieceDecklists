@@ -27,8 +27,8 @@ hspec.loader.exec_module(home_meta)
 
 ROOT = gen.ROOT
 LINE_RE = ana.LINE_RE
-CSS_NEW = "/css/site.css?v=older-lists1"
-JS_NEW = "/js/site.js?v=older-lists1"
+CSS_NEW = f"/css/site.css?v={home_meta.seo.CSS_VER}"
+JS_NEW = f"/js/site.js?v={home_meta.seo.JS_VER}"
 TCG_VER = "tcg-quiet"
 TCG_SCRIPTS = (
     f'  <script src="/js/tcgplayer-config.js?v={TCG_VER}"></script>\n'
@@ -490,6 +490,7 @@ def render_home_body(data: dict | None = None) -> str:
     pie = data["pie"]
     cards = home_meta.leader_cards_html(leaders)
     pie_block = home_meta.pie_html(pie)
+    tier_block = home_meta.home_tier_html()
     featured_block = home_meta.featured_html(data.get("featured") or [])
     notes_block = home_notes_html(data)
     rocks = gen.card_image_url("OP17-039")
@@ -498,8 +499,10 @@ def render_home_body(data: dict | None = None) -> str:
     kaido = gen.card_image_url("OP17-058")
     hancock = gen.card_image_url("OP14-041")
     recent = data["recent_home"]
-    count_label = f"{len(recent)} lists"
+    visible = min(home_meta.HOME_RECENT_VISIBLE, len(recent))
+    count_label = f"{visible} of {len(recent)}"
     more_btn = """          <div class="recent-more-row">
+            <button type="button" class="recent-more-btn" data-recent-more="#home-recent-list">Show more lists</button>
             <a class="recent-all-link" href="/recent.html">All recent lists →</a>
           </div>"""
     return f"""        <!-- HOME_BODY -->
@@ -514,9 +517,9 @@ def render_home_body(data: dict | None = None) -> str:
               <img class="home-splash-bg" src="/img/home-banner-hancock.jpg?v=nov8" alt="One Piece Decklists with Boa Hancock" width="1920" height="1080" decoding="async" />
             </div>
             <div class="home-splash-copy">
-              <p class="home-splash-kicker">EB-05 Meta</p>
+              <p class="home-splash-kicker">OP-18 Meta</p>
               <p class="home-splash-title">One Piece Decklists</p>
-              <p class="home-splash-lede">Tournament lists, tier list, and meta chart for the current EB-05 format.</p>
+              <p class="home-splash-lede">Tournament lists, tier list, and meta chart for The Dominance of God.</p>
             </div>
           </div>
           <div class="home-splash-fade" aria-hidden="true"></div>
@@ -586,8 +589,8 @@ def render_home_body(data: dict | None = None) -> str:
             <span>Event</span>
             <span>Date</span>
           </div>
-          <ul class="recent-list" aria-label="Recent decklists">
-{recent_rows_html(recent)}
+          <ul class="recent-list" id="home-recent-list" data-recent-collapse aria-label="Recent decklists">
+{recent_rows_html(recent, hide_after=home_meta.HOME_RECENT_VISIBLE)}
           </ul>
 {more_btn}
         </section>
@@ -613,7 +616,7 @@ def render_home_body(data: dict | None = None) -> str:
               </svg>
             </span>
             <span class="home-big-title">Tier List</span>
-            <span class="home-big-note">OP17 S through D with leader pictures</span>
+            <span class="home-big-note">OP-18 S through D with leader pictures</span>
           </a>
           <a class="home-big home-big-egb" href="/extra-grand-battle.html">
             <span class="home-big-icon" aria-hidden="true">
@@ -667,6 +670,7 @@ def render_home_body(data: dict | None = None) -> str:
 
 {featured_block}
 {notes_block}
+{tier_block}
 {pie_block}
         <section class="home-leaders-flow" id="leaders">
           <div class="home-leaders-intro">
@@ -756,6 +760,7 @@ def patch_home() -> None:
         flags=re.S,
     )
     text = home_meta.patch_home_jsonld(text, data["leaders"])
+    text = text.replace('<div class="subtitle">EB-05 Meta</div>', '<div class="subtitle">OP-18 Meta</div>')
     if 'class="wrap wrap-home"' not in text:
         text = text.replace('<div class="wrap">', '<div class="wrap wrap-home">', 1)
     path.write_text(text)

@@ -17,8 +17,8 @@ from pathlib import Path
 ROOT = Path("/workspace")
 HOME_LEADER_COUNT = 10
 POPULAR_WINDOW = 200
-HOME_RECENT_VISIBLE = 25
-HOME_RECENT_EXTRA = 25
+HOME_RECENT_VISIBLE = 10
+HOME_RECENT_EXTRA = 40
 FEATURED_LIMIT = 8
 FEATURED_MAX_PLACE = 4
 RECENT_PAGE_LIMIT = 250
@@ -87,7 +87,8 @@ QTY_ID_RE = re.compile(
     re.S,
 )
 OP_SET_RE = re.compile(r"^OP(\d{2})-")
-CURRENT_META_SET = "EB05"
+CURRENT_META_SET = "OP18"
+HOME_TIER_LETTERS = ("S+", "S", "A", "B")
 
 spec = importlib.util.spec_from_file_location("genlists", ROOT / "scripts/generate-tournament-lists.py")
 gen = importlib.util.module_from_spec(spec)
@@ -467,6 +468,10 @@ def _short_pie_name(name: str) -> str:
         "Yellow Bonney": "Y.Bonney",
         "Gecko Moria": "Moria",
         "Rob Lucci": "Lucci",
+        "Saint Gunko": "Gunko",
+        "Ms. All Sunday": "Sunday",
+        "OP18 Luffy": "OP18 Luffy",
+        "Spandam": "Spandam",
     }
     if name in short:
         return short[name]
@@ -525,7 +530,14 @@ def pie_html(
     if not slices:
         return ""
     latest = pie.get("set") or CURRENT_META_SET
-    heading = heading or ("EB-05 Meta" if latest.upper().startswith("EB05") else f"{latest} lists")
+    if heading is None:
+        up = latest.upper()
+        if up.startswith("OP18"):
+            heading = "OP-18 Meta"
+        elif up.startswith("EB05"):
+            heading = "EB-05 Meta"
+        else:
+            heading = f"{latest} lists"
     lede = lede or (
         f"Share of the newest hosted lists that play at least one {latest} card. "
         "The hole is the leader converting best among these lists. Names sit on every slice."
@@ -602,6 +614,66 @@ def pie_html(
             <ul class="meta-pie-legend" aria-label="{html.escape(latest)} list share">
 {chr(10).join(legend)}
             </ul>
+          </div>
+        </section>
+"""
+
+
+def home_tier_html(letters: tuple[str, ...] = HOME_TIER_LETTERS) -> str:
+    data = load_tier_lookup()
+    if not data:
+        return ""
+    rows = sorted(
+        data.values(),
+        key=lambda r: (
+            {"S+": 0, "S": 1, "A": 2, "B": 3, "C": 4, "D": 5}.get(r.get("tier") or "", 9),
+            -(r.get("score") or 0),
+            -(r.get("recent_top8") or 0),
+            r.get("name") or "",
+        ),
+    )
+    chunks = []
+    shown = 0
+    for letter in letters:
+        group = [r for r in rows if r.get("tier") == letter]
+        if not group:
+            continue
+        cards = []
+        for r in group:
+            shown += 1
+            href = r.get("href") or "#"
+            img = r.get("image") or gen.card_image_url(r.get("id") or "")
+            note = (
+                f"{r.get('recent_top8') or 0} recent top 8s"
+                if r.get("recent_top8")
+                else f"{r.get('recent_lists') or 0} recent lists"
+            )
+            cards.append(
+                f"""            <a class="tier-leader {html.escape(r.get('color') or '')}" href="{html.escape(href)}">
+              <img src="{html.escape(img)}" alt="{html.escape(r.get('name') or '')} leader card" width="86" height="120" loading="lazy" decoding="async" onerror="{gen.IMG_ONERROR}" />
+              <div class="name">{html.escape(r.get('name') or '')}</div>
+              <div class="meta">{html.escape(note)}</div>
+            </a>"""
+            )
+        chunks.append(
+            f"""        <div class="tier-row tier-{"splus" if letter == "S+" else letter.lower()}">
+          <div class="tier-label">{html.escape(letter)}</div>
+          <div class="tier-leaders">
+{chr(10).join(cards)}
+          </div>
+        </div>"""
+        )
+    if not chunks:
+        return ""
+    return f"""        <section class="card home-panel home-tier" id="tier">
+          <p class="home-leaders-kicker">Current format</p>
+          <div class="section-title">
+            <h3>Tier list</h3>
+            <a href="/tier-list.html">Full board →</a>
+          </div>
+          <p class="muted home-recent-lede">Rebuilt from hosted lists dated 2026-11-08 onward, plus public meta pages. S+ through B on this page; C and D on the full board.</p>
+          <div class="tier-board" aria-label="Current format tier list">
+{chr(10).join(chunks)}
           </div>
         </section>
 """
@@ -684,7 +756,7 @@ def write_recent_page(rows_html: str, count: int) -> None:
         {seo.BRAND_LOGO_HTML}
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">EB-05 Meta</div>
+          <div class="subtitle">OP-18 Meta</div>
         </div>
       </a>
       <div class="theme-toggle" role="group" aria-label="Color theme">
