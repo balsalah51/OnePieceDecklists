@@ -44,8 +44,13 @@ class LayoutTests(unittest.TestCase):
         )
         gen = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(gen)
-        self.assertEqual({L["id"] for L in LEADERS}, {L["id"] for L in gen.LEADERS})
-        self.assertEqual({L["key"] for L in LEADERS}, {L["key"] for L in gen.LEADERS})
+        # Discord tracks 14 featured leaders. The site also hosts extra
+        # leaders (OP18, EB05, and others) via data/extra-leaders.json.
+        site_by_id = {L["id"]: L["key"] for L in gen.LEADERS}
+        missing = [L["id"] for L in LEADERS if L["id"] not in site_by_id]
+        self.assertEqual(missing, [], f"Discord leaders missing from site: {missing}")
+        for leader in LEADERS:
+            self.assertEqual(leader["key"], site_by_id[leader["id"]])
 
     def test_op17_meta_has_six_set_leaders(self):
         op17 = leaders_for_meta("op17")
