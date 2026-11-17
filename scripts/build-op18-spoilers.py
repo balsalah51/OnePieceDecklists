@@ -16,6 +16,7 @@ def _primary_nav(current: str) -> str:
     spec.loader.exec_module(mod)
     return mod.primary_nav_html(current=current)
 IMG = "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/{id}_EN.webp"
+BANDAI_IMG = "https://en.onepiece-cardgame.com/images/cardlist/card/{id}.png"
 CARDS_PATH = ROOT / "data/op18-cards.json"
 
 
@@ -71,33 +72,8 @@ def stats(card: dict) -> str:
     return " · ".join(parts)
 
 
-def picture(card: dict, leader: bool = False) -> str:
-    label = f"{card['name']} {card['id']}"
-    if not card["image"]:
-        return f'<div class="spoiler-missing" role="img" aria-label="{e(label)}">{e(card["id"])}</div>'
-    img = (
-        f'<img src="{IMG.format(id=card["id"])}" alt="{e(label)}" '
-        f'width="300" height="419" loading="lazy" decoding="async" referrerpolicy="no-referrer" />'
-    )
-    if leader:
-        return img
-    return (
-        f'<button type="button" class="spoiler-shot" data-spoiler-open '
-        f'aria-label="Enlarge {e(label)}">{img}</button>'
-    )
-
-
-def leader_tile(card: dict) -> str:
-    return (
-        f'<a class="spoiler-leader {color_class(card["colors"])}" href="#{e(card["id"])}">'
-        f"{picture(card, leader=True)}"
-        f"<span>{e(card['name'])}<br>{e(card['id'])}</span></a>"
-    )
-
-
-def card_article(card: dict) -> str:
-    colors = " ".join(c.lower() for c in card["colors"])
-    query = " ".join(
+def card_query(card: dict) -> str:
+    return " ".join(
         [
             card["id"],
             card["name"],
@@ -110,6 +86,55 @@ def card_article(card: dict) -> str:
             card.get("note", ""),
         ]
     ).lower()
+
+
+def picture(card: dict, leader: bool = False, eager: bool = False) -> str:
+    label = f"{card['name']} {card['id']}"
+    if not card["image"]:
+        return f'<div class="spoiler-missing" role="img" aria-label="{e(label)}">{e(card["id"])}</div>'
+    loading = "" if eager else ' loading="lazy"'
+    src = IMG.format(id=card["id"])
+    bandai = BANDAI_IMG.format(id=card["id"])
+    img = (
+        f'<img src="{src}" alt="{e(label)}" width="300" height="419"{loading} '
+        f'decoding="async" referrerpolicy="no-referrer" '
+        f"onerror=\"this.onerror=null;this.src='{bandai}'\" />"
+    )
+    if leader:
+        return img
+    return (
+        f'<button type="button" class="spoiler-shot" data-spoiler-open '
+        f'aria-label="Enlarge {e(label)}">{img}</button>'
+    )
+
+
+def gallery_tile(card: dict, index: int) -> str:
+    label = f"{card['name']} {card['id']}"
+    colors = " ".join(c.lower() for c in card["colors"])
+    img_html = picture(card, eager=True)
+    if img_html.startswith("<button"):
+        inner = img_html[img_html.find(">") + 1 : img_html.rfind("</button>")]
+    else:
+        inner = img_html
+    return (
+        f'<button type="button" class="spoiler-gallery-shot" data-spoiler-open data-spoiler-pic '
+        f'data-kind="{e(card["kind"])}" data-colors="{e(colors)}" data-q="{e(card_query(card))}" '
+        f'aria-label="Enlarge {e(label)}">{inner}'
+        f'<span class="spoiler-gallery-cap">{e(card["name"])}<br>{e(card["id"])}</span></button>'
+    )
+
+
+def leader_tile(card: dict) -> str:
+    return (
+        f'<a class="spoiler-leader {color_class(card["colors"])}" href="#{e(card["id"])}">'
+        f"{picture(card, leader=True, eager=True)}"
+        f"<span>{e(card['name'])}<br>{e(card['id'])}</span></a>"
+    )
+
+
+def card_article(card: dict) -> str:
+    colors = " ".join(c.lower() for c in card["colors"])
+    query = card_query(card)
     note = ""
     if card.get("note"):
         note = f'<p class="spoiler-note">{e(card["note"])}</p>'
@@ -134,6 +159,7 @@ def render() -> str:
     count = len(cards)
     leader_n = sum(1 for c in cards if c["kind"] == "leader")
     leaders = "\n          ".join(leader_tile(c) for c in cards if c["kind"] == "leader")
+    gallery = "\n          ".join(gallery_tile(c, i) for i, c in enumerate(cards))
     articles = "\n          ".join(card_article(c) for c in cards)
     desc = (
         "OP18 card list for ONE PIECE CARD GAME booster The Dominance of God. "
@@ -150,7 +176,7 @@ def render() -> str:
   <script id="opdl-theme-boot">
     (function(){{try{{var m=document.cookie.match(/(?:^|; )opdl-theme=([^;]*)/);var t=m&&decodeURIComponent(m[1]);if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=op18-1" />
+  <link rel="stylesheet" href="/css/site.css?v=op18-2" />
   <link rel="canonical" href="https://onepiecedecklists.com/op18-spoilers.html" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -186,7 +212,7 @@ def render() -> str:
         <img class="logo" src="/img/opdl-avatar.png" width="56" height="56" alt="One Piece Decklists" />
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">OPTCG decklists</div>
+          <div class="subtitle">OP-18 spoilers</div>
         </div>
       </a>
       <div class="theme-toggle" role="group" aria-label="Color theme">
@@ -199,7 +225,7 @@ def render() -> str:
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / OP18 spoilers</div>
         <h2>OP18 spoilers</h2>
-        <p>BOOSTER PACK -THE DOMINANCE OF GOD- [OP-18] is the Water Seven and Holy Knights set. English release is 20 November 2026. Bandai published the numbered card list. This page shows those {count} cards with English names, stats, and effects. Pictures are official/sample art from Limitless.</p>
+        <p>BOOSTER PACK -THE DOMINANCE OF GOD- [OP-18] is the Water Seven and Holy Knights set. English release is 20 November 2026. Bandai published the numbered card list. This page shows those {count} cards with pictures, English names, stats, and effects. Pictures are official/sample art from Limitless, with Bandai cardlist art as a fallback.</p>
         <div class="spoiler-facts">
           <div><strong>20 Nov 2026</strong><span>English release</span></div>
           <div><strong>$4.99</strong><span>Pack MSRP</span></div>
@@ -258,6 +284,9 @@ def render() -> str:
             </div>
           </div>
           <p class="spoiler-empty muted" id="spoiler-empty" hidden>No revealed card matches that filter.</p>
+          <div class="spoiler-gallery" aria-label="OP18 card pictures">
+          {gallery}
+          </div>
           <div class="spoiler-grid">
           {articles}
           </div>
@@ -356,27 +385,32 @@ def render() -> str:
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script src="/js/site.js?v=op18-1"></script>
+  <script src="/js/site.js?v=op18-2"></script>
   <script>
     (function () {{
       var cards = Array.prototype.slice.call(document.querySelectorAll("[data-spoiler-card]"));
+      var pics = Array.prototype.slice.call(document.querySelectorAll("[data-spoiler-pic]"));
       var q = document.getElementById("spoiler-q");
       var count = document.getElementById("spoiler-count");
       var empty = document.getElementById("spoiler-empty");
       var color = "";
       var kind = "";
+      function match(el) {{
+        var ok = true;
+        var colors = " " + (el.getAttribute("data-colors") || "") + " ";
+        if (color && colors.indexOf(" " + color + " ") < 0) ok = false;
+        if (kind && el.getAttribute("data-kind") !== kind) ok = false;
+        if ((q.value || "").trim() && (el.getAttribute("data-q") || "").indexOf((q.value || "").trim().toLowerCase()) < 0) ok = false;
+        return ok;
+      }}
       function apply() {{
-        var needle = (q.value || "").trim().toLowerCase();
         var n = 0;
         cards.forEach(function (card) {{
-          var ok = true;
-          var colors = " " + (card.getAttribute("data-colors") || "") + " ";
-          if (color && colors.indexOf(" " + color + " ") < 0) ok = false;
-          if (kind && card.getAttribute("data-kind") !== kind) ok = false;
-          if (needle && (card.getAttribute("data-q") || "").indexOf(needle) < 0) ok = false;
+          var ok = match(card);
           card.hidden = !ok;
           if (ok) n += 1;
         }});
+        pics.forEach(function (pic) {{ pic.hidden = !match(pic); }});
         count.textContent = n + (n === 1 ? " card" : " cards");
         empty.hidden = n !== 0;
       }}
