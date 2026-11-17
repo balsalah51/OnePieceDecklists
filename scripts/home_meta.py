@@ -88,7 +88,7 @@ QTY_ID_RE = re.compile(
 )
 OP_SET_RE = re.compile(r"^OP(\d{2})-")
 CURRENT_META_SET = "OP18"
-HOME_TIER_LETTERS = ("S+", "S", "A", "B")
+HOME_TIER_LETTERS = ("S+", "S", "A", "B", "Unranked")
 
 spec = importlib.util.spec_from_file_location("genlists", ROOT / "scripts/generate-tournament-lists.py")
 gen = importlib.util.module_from_spec(spec)
@@ -509,6 +509,8 @@ def _label_xy(mid: float, radius: float) -> tuple[str, str]:
 def _tier_label(slice_row: dict) -> str:
     letter = slice_row.get("tier") or ""
     score = slice_row.get("score")
+    if letter == "Unranked":
+        return "Banned"
     if letter and score is not None:
         return f"{html.escape(str(letter))} · {score:.0f}"
     if letter:
@@ -626,7 +628,7 @@ def home_tier_html(letters: tuple[str, ...] = HOME_TIER_LETTERS) -> str:
     rows = sorted(
         data.values(),
         key=lambda r: (
-            {"S+": 0, "S": 1, "A": 2, "B": 3, "C": 4, "D": 5}.get(r.get("tier") or "", 9),
+            {"S+": 0, "S": 1, "A": 2, "B": 3, "C": 4, "D": 5, "Unranked": 8}.get(r.get("tier") or "", 9),
             -(r.get("score") or 0),
             -(r.get("recent_top8") or 0),
             r.get("name") or "",
@@ -643,11 +645,12 @@ def home_tier_html(letters: tuple[str, ...] = HOME_TIER_LETTERS) -> str:
             shown += 1
             href = r.get("href") or "#"
             img = r.get("image") or gen.card_image_url(r.get("id") or "")
-            note = (
-                f"{r.get('recent_top8') or 0} recent top 8s"
-                if r.get("recent_top8")
-                else f"{r.get('recent_lists') or 0} recent lists"
-            )
+            if letter == "Unranked":
+                note = "Banned"
+            elif r.get("recent_top8"):
+                note = f"{r.get('recent_top8') or 0} recent top 8s"
+            else:
+                note = f"{r.get('recent_lists') or 0} recent lists"
             cards.append(
                 f"""            <a class="tier-leader {html.escape(r.get('color') or '')}" href="{html.escape(href)}">
               <img src="{html.escape(img)}" alt="{html.escape(r.get('name') or '')} leader card" width="86" height="120" loading="lazy" decoding="async" onerror="{gen.IMG_ONERROR}" />
@@ -655,9 +658,11 @@ def home_tier_html(letters: tuple[str, ...] = HOME_TIER_LETTERS) -> str:
               <div class="meta">{html.escape(note)}</div>
             </a>"""
             )
+        label_txt = "Unr." if letter == "Unranked" else letter
+        row_class = "unranked" if letter == "Unranked" else ("splus" if letter == "S+" else letter.lower())
         chunks.append(
-            f"""        <div class="tier-row tier-{"splus" if letter == "S+" else letter.lower()}">
-          <div class="tier-label">{html.escape(letter)}</div>
+            f"""        <div class="tier-row tier-{row_class}">
+          <div class="tier-label">{html.escape(label_txt)}</div>
           <div class="tier-leaders">
 {chr(10).join(cards)}
           </div>
@@ -671,7 +676,7 @@ def home_tier_html(letters: tuple[str, ...] = HOME_TIER_LETTERS) -> str:
             <h3>Tier list</h3>
             <a href="/tier-list.html">Full board →</a>
           </div>
-          <p class="muted home-recent-lede">Rebuilt from hosted lists dated 2026-11-08 onward, plus public meta pages. S+ through B on this page; C and D on the full board.</p>
+          <p class="muted home-recent-lede">Rebuilt from hosted lists dated 2026-11-08 onward, plus public meta pages. S+ through B on this page; banned leaders sit unranked. C and D on the full board.</p>
           <div class="tier-board" aria-label="Current format tier list">
 {chr(10).join(chunks)}
           </div>
