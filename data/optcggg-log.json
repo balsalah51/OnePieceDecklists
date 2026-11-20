@@ -1,3 +1,100 @@
 {
-  "hosted": []
+  "hosted": [
+    {
+      "leader": "OP13-001",
+      "kind": "web",
+      "player": "Walter",
+      "title": "Walter - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/cf389a70-0788-450b-9003-937800190238",
+      "slug": "optcggg-1st-walter-carta-magica-niagara-regionals",
+      "raw": "4xOP14-013 4xOP14-031 4xOP13-029 3xPRB02-006 3xST31-005 4xOP14-019 3xOP13-031 4xEB05-001 4xST32-002 4xEB01-013 3xOP17-022 4xOP13-016 4xOP06-033 2xOP08-019 1xOP13-001",
+      "cards": 50,
+      "date": "2026-11-14"
+    },
+    {
+      "leader": "OP13-001",
+      "kind": "web",
+      "player": "Choas",
+      "title": "Choas - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/8dac80e6-2346-4fc6-9bcb-7bba3f5f9a30",
+      "slug": "optcggg-2nd-choas-carta-magica-niagara-regionals",
+      "raw": "2xOP17-022 4xST32-002 4xOP14-031 4xOP13-031 4xOP13-016 4xOP06-033 4xOP12-023 4xOP07-022 4xEB05-001 4xEB01-013 4xOP01-055 4xST32-001 2xOP10-040 2xOP14-037 1xOP13-001",
+      "cards": 50,
+      "date": "2026-11-14"
+    },
+    {
+      "leader": "OP13-001",
+      "kind": "web",
+      "player": "Chewwii",
+      "title": "Chewwii - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/7340ecc2-6268-469f-8fc6-c32f86f3904b",
+      "slug": "optcggg-3rd-chewwii-carta-magica-niagara-regionals",
+      "raw": "4xOP07-022 4xEB01-013 4xST32-002 4xOP12-023 4xOP13-031 3xOP01-055 2xOP13-029 4xEB05-001 4xOP06-033 4xOP13-016 4xST30-004 1xOP10-040 1xOP14-037 3xOP17-022 4xOP14-031 1xOP13-001",
+      "cards": 50,
+      "date": "2026-11-14"
+    },
+    {
+      "leader": "OP17-039",
+      "kind": "web",
+      "player": "Nobu",
+      "title": "Nobu - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/eaa6b838-3bcc-406f-a654-efc9b9878770",
+      "slug": "optcggg-4th-nobu-carta-magica-niagara-regionals",
+      "raw": "1xOP17-039 3xOP08-051 3xOP17-050 4xOP17-045 4xOP17-052 4xOP17-054 2xOP17-042 1xOP17-044 4xOP17-046 1xEB05-028 4xOP17-049 4xOP17-040 4xOP17-048 4xOP17-118 4xOP17-055 4xOP17-056",
+      "cards": 50,
+      "date": "2026-11-14"
+    },
+    {
+      "leader": "OP17-039",
+      "kind": "web",
+      "player": "Caleb",
+      "title": "Caleb - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/da5b180e-e892-41d9-a5ba-ce84749906d8",
+      "slug": "optcggg-5th-caleb-carta-magica-niagara-regionals",
+      "raw": "4xOP17-050 4xOP17-045 4xOP17-054 4xOP17-052 2xOP17-044 1xOP17-042 4xOP17-046 4xOP17-049 4xOP17-040 4xOP17-048 4xOP17-118 1xEB05-028 2xOP08-051 4xOP17-055 4xOP17-056 1xOP17-039",
+      "cards": 50,
+      "date": "2026-11-14"
+    },
+    {
+      "leader": "OP17-039",
+      "kind": "web",
+      "player": "Majd",
+      "title": "Majd - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/c31c4bfb-1576-4ad9-9bc5-80ff63e7f4c0",
+      "slug": "optcggg-6th-majd-carta-magica-niagara-regionals",
+      "raw": "4xOP17-040 3xOP17-042 1xOP17-044 4xOP17-048 4xOP17-055 4xOP17-056 4xOP17-118 4xOP17-045 4xOP17-046 2xOP17-050 4xOP17-052 4xOP17-054 4xOP17-049 3xOP08-051 1xEB05-028 1xOP17-039",
+      "cards": 50,
+      "date": "2026-11-14"
+    },
+    {
+      "leader": "OP13-001",
+      "kind": "web",
+      "player": "Lafinte",
+      "title": "Lafinte - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/abeb8b25-1a39-4ceb-8e12-73ae59a29320",
+      "slug": "optcggg-7th-lafinte-carta-magica-niagara-regionals",
+      "raw": "1xOP13-001 2xST30-004 2xST32-001 4xOP07-022 4xOP13-016 4xOP06-033 4xOP14-031 4xEB01-013 4xST32-002 4xOP12-023 4xEB05-001 4xOP13-031 3xOP17-022 3xOP01-055 2xOP14-037 1xOP08-019 1xOP10-040",
+      "cards": 50,
+      "date": "2026-11-14"
+    },
+    {
+      "leader": "OP13-001",
+      "kind": "web",
+      "player": "Yost",
+      "title": "Yost - Carta Magica Niagara Regionals",
+      "subtitle": "Public OPTCG.GG list · Carta Magica Niagara Regionals · 2026-11-14",
+      "source_url": "https://www.optcg.gg/deck-lists/e169cd2b-df88-441b-86e1-031336b7ee9c",
+      "slug": "optcggg-8th-yost-carta-magica-niagara-regionals",
+      "raw": "1xOP13-001 4xOP13-016 4xOP14-013 4xST24-002 4xOP06-033 4xOP14-031 4xEB01-013 3xPRB02-006 4xST32-002 4xEB05-001 4xOP13-029 2xOP13-031 4xOP17-022 3xEB01-020 1xOP08-019 1xST31-005",
+      "cards": 50,
+      "date": "2026-11-14"
+    }
+  ]
 }
