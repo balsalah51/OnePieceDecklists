@@ -4,129 +4,129 @@
     {
       "id": "OP17-039",
       "name": "Rocks D. Xebec",
-      "count": 42
-    },
-    {
-      "id": "OP13-001",
-      "name": "RG Luffy",
-      "count": 31
+      "count": 32
     },
     {
       "id": "OP18-060",
       "name": "Saint Gunko",
-      "count": 23
+      "count": 27
     },
     {
       "id": "OP09-042",
       "name": "Buggy",
-      "count": 19
-    },
-    {
-      "id": "EB05-010",
-      "name": "Nico Robin",
-      "count": 12
-    },
-    {
-      "id": "OP18-041",
-      "name": "Ms. All Sunday",
-      "count": 8
-    },
-    {
-      "id": "OP18-079",
-      "name": "Spandam",
-      "count": 7
+      "count": 22
     },
     {
       "id": "ST10-002",
       "name": "ST10 Luffy",
-      "count": 6
+      "count": 12
     },
     {
-      "id": "OP18-022",
-      "name": "OP18 Luffy",
-      "count": 6
-    },
-    {
-      "id": "OP18-001",
-      "name": "Karoo",
-      "count": 4
-    }
-  ],
-  "set": "OP18",
-  "pie_lists": 77,
-  "pie": [
-    {
-      "id": "OP18-060",
-      "name": "Saint Gunko",
-      "count": 23,
-      "pct": 29.9
-    },
-    {
-      "id": "OP18-041",
-      "name": "Ms. All Sunday",
-      "count": 8,
-      "pct": 10.4
-    },
-    {
-      "id": "OP09-042",
-      "name": "Buggy",
-      "count": 8,
-      "pct": 10.4
-    },
-    {
-      "id": "OP18-079",
-      "name": "Spandam",
-      "count": 7,
-      "pct": 9.1
-    },
-    {
-      "id": "OP18-022",
-      "name": "OP18 Luffy",
-      "count": 6,
-      "pct": 7.8
-    },
-    {
-      "id": "OP18-001",
-      "name": "Karoo",
-      "count": 4,
-      "pct": 5.2
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 3,
-      "pct": 3.9
+      "id": "OP13-001",
+      "name": "RG Luffy",
+      "count": 10
     },
     {
       "id": "EB05-010",
       "name": "Nico Robin",
-      "count": 3,
-      "pct": 3.9
+      "count": 10
+    },
+    {
+      "id": "OP18-079",
+      "name": "Spandam",
+      "count": 8
+    },
+    {
+      "id": "OP17-020",
+      "name": "Shanks",
+      "count": 7
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 7
+    },
+    {
+      "id": "OP17-058",
+      "name": "Kaido",
+      "count": 5
+    }
+  ],
+  "set": "OP18",
+  "pie_lists": 182,
+  "pie": [
+    {
+      "id": "OP18-060",
+      "name": "Saint Gunko",
+      "count": 50,
+      "pct": 27.5
+    },
+    {
+      "id": "OP09-042",
+      "name": "Buggy",
+      "count": 18,
+      "pct": 9.9
+    },
+    {
+      "id": "OP18-079",
+      "name": "Spandam",
+      "count": 15,
+      "pct": 8.2
+    },
+    {
+      "id": "OP18-041",
+      "name": "Ms. All Sunday",
+      "count": 12,
+      "pct": 6.6
+    },
+    {
+      "id": "OP13-001",
+      "name": "RG Luffy",
+      "count": 10,
+      "pct": 5.5
+    },
+    {
+      "id": "EB05-010",
+      "name": "Nico Robin",
+      "count": 8,
+      "pct": 4.4
+    },
+    {
+      "id": "OP18-022",
+      "name": "OP18 Luffy",
+      "count": 8,
+      "pct": 4.4
+    },
+    {
+      "id": "OP13-004",
+      "name": "Sabo",
+      "count": 8,
+      "pct": 4.4
     },
     {
       "id": "OP18-021",
       "name": "Franky",
-      "count": 3,
-      "pct": 3.9
+      "count": 7,
+      "pct": 3.8
     },
     {
-      "id": "OP12-081",
-      "name": "Koala",
-      "count": 2,
-      "pct": 2.6
+      "id": "ST30-001",
+      "name": "Luffy & Ace",
+      "count": 5,
+      "pct": 2.7
     },
     {
       "id": "",
       "name": "Other",
-      "count": 10,
-      "pct": 13.0
+      "count": 41,
+      "pct": 22.5
     }
   ],
   "hole": {
     "id": "OP18-060",
     "name": "Saint Gunko",
-    "wins": 1,
-    "lists": 23,
-    "win_pct": 4.3
+    "wins": 3,
+    "lists": 47,
+    "win_pct": 6.4
   }
 }
