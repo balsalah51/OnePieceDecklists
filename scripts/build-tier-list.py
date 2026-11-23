@@ -18,8 +18,11 @@ from pathlib import Path
 ROOT = Path("/workspace")
 RECENT_FROM = "2026-11-01"
 TIER_PTS = {"S+": 6.5, "S": 5.0, "A": 3.5, "B": 2.0, "C": 1.0, "D": 0.4}
-TIER_ORDER = ["S+", "S", "A", "B", "C", "D"]
-TIER_OVERRIDE = {"OP13-001": "S+"}  # RG Luffy: most recent EB-05 top cuts
+TIER_ORDER = ["S+", "S", "A", "B", "C", "D", "Unranked"]
+BANNED_LEADERS = {
+    "OP13-001": "RG Luffy",
+    "OP14-020": "Mihawk",
+}
 COLOR_NAMES = {
     "color-red": "Red",
     "color-green": "Green",
@@ -55,7 +58,7 @@ HOME_TIER_TILE = """          <a class="home-big home-big-tier" href="/tier-list
               </svg>
             </span>
             <span class="home-big-title">Tier List</span>
-            <span class="home-big-note">EB-05 S through D with leader pictures</span>
+            <span class="home-big-note">OP-18 S through D with leader pictures</span>
           </a>
 """
 
@@ -516,6 +519,8 @@ def site_stats() -> dict[str, dict]:
 def site_source(stats: dict[str, dict]) -> dict:
     ranks = {}
     for lid, s in stats.items():
+        if lid in BANNED_LEADERS:
+            continue
         score = (
             s["recent_wins"] * 6
             + s["recent_top8"] * 1.4
@@ -545,36 +550,45 @@ def site_source(stats: dict[str, dict]) -> dict:
 
 
 def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
-    sources = SOURCES + [site_source(stats)]
+    site = site_source(stats)
+    sources = SOURCES + [site]
+    site_ranks = site.get("ranks") or {}
     scores: dict[str, float] = defaultdict(float)
     hits: dict[str, int] = defaultdict(int)
     by_tier_votes: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     for src in sources:
         w = float(src["weight"])
         for lid, tier in (src.get("ranks") or {}).items():
-            if lid not in BY_ID:
+            if lid not in BY_ID or lid in BANNED_LEADERS:
                 continue
             scores[lid] += w * TIER_PTS.get(tier, 0)
             hits[lid] += 1
             by_tier_votes[lid][tier] += 1
     ranked = []
+    order = {letter: i for i, letter in enumerate(TIER_ORDER)}
     for lid, L in BY_ID.items():
         s = stats.get(lid) or {}
         score = scores.get(lid, 0.0)
-        if hits.get(lid, 0) < 2 and s.get("recent_top8", 0) == 0 and s.get("recent_lists", 0) < 4:
-            continue
-        if score >= 32:
-            tier = "S"
-        elif score >= 16:
-            tier = "A"
-        elif score >= 7.5:
-            tier = "B"
-        elif score >= 2.8:
-            tier = "C"
+        if lid in BANNED_LEADERS:
+            tier = "Unranked"
         else:
-            tier = "D"
-        if lid in TIER_OVERRIDE:
-            tier = TIER_OVERRIDE[lid]
+            if hits.get(lid, 0) < 2 and s.get("recent_top8", 0) == 0 and s.get("recent_lists", 0) < 4:
+                continue
+            if score >= 32:
+                tier = "S"
+            elif score >= 16:
+                tier = "A"
+            elif score >= 7.5:
+                tier = "B"
+            elif score >= 2.8:
+                tier = "C"
+            else:
+                tier = "D"
+            # New leaders (OP18) have no public tier-page votes yet. Use this
+            # site's recent window so they are not stuck in C/D by default.
+            if hits.get(lid, 0) < 2 and lid in site_ranks:
+                if order.get(site_ranks[lid], 99) < order.get(tier, 99):
+                    tier = site_ranks[lid]
         ranked.append(
             {
                 "id": lid,
@@ -590,7 +604,6 @@ def aggregate(stats: dict[str, dict]) -> tuple[list[dict], dict[str, dict]]:
                 **s,
             }
         )
-    order = {letter: i for i, letter in enumerate(TIER_ORDER)}
     ranked.sort(
         key=lambda r: (order.get(r["tier"], 99), -r["score"], -r["recent_top8"], -r["recent_lists"], r["name"])
     )
@@ -605,6 +618,7 @@ def render_board(rows: list[dict]) -> str:
         "B": "Real, but you have to know the room.",
         "C": "Posts lists. Not the plan unless the table is soft.",
         "D": "Rogues and leftovers still on this site.",
+        "Unranked": "Banned in constructed. Not part of the current ranking.",
     }
     chunks = []
     for letter in TIER_ORDER:
@@ -613,7 +627,12 @@ def render_board(rows: list[dict]) -> str:
             continue
         cards = []
         for r in group:
-            note = f"{r['recent_top8']} recent top 8s" if r["recent_top8"] else f"{r['recent_lists']} recent lists"
+            if letter == "Unranked":
+                note = "Banned"
+            elif r["recent_top8"]:
+                note = f"{r['recent_top8']} recent top 8s"
+            else:
+                note = f"{r['recent_lists']} recent lists"
             cards.append(
                 f"""            <a class="tier-leader {html.escape(r['color'])}" href="{html.escape(r['href'], quote=True)}">
               <img src="{html.escape(r['image'], quote=True)}" alt="{html.escape(r['name'])} leader card" width="86" height="120" loading="lazy" />
@@ -621,9 +640,11 @@ def render_board(rows: list[dict]) -> str:
               <div class="meta">{html.escape(note)}</div>
             </a>"""
             )
+        label_txt = "Unr." if letter == "Unranked" else letter
+        row_class = "unranked" if letter == "Unranked" else ("splus" if letter == "S+" else letter.lower())
         chunks.append(
-            f"""        <div class="tier-row tier-{"splus" if letter == "S+" else letter.lower()}">
-          <div class="tier-label" title="{html.escape(labels[letter])}">{letter}</div>
+            f"""        <div class="tier-row tier-{row_class}">
+          <div class="tier-label" title="{html.escape(labels[letter])}">{html.escape(label_txt)}</div>
           <div class="tier-leaders">
 {chr(10).join(cards)}
           </div>
@@ -651,7 +672,7 @@ def render_table(rows: list[dict]) -> str:
     return f"""        <div class="tier-table">
           <div class="section-title">
             <h3>This site's lists in the mix</h3>
-            <div class="muted">Recent = {RECENT_FROM} onward, covering the EB-05 English window</div>
+            <div class="muted">Recent = {RECENT_FROM} onward, covering the OP-18 English window</div>
           </div>
           <table>
             <thead>
@@ -692,10 +713,10 @@ def render_sources(sources: list[dict]) -> str:
 
 
 def page_html(board: str, table: str, sources_html: str, rows: list[dict], sources: list[dict]) -> str:
-    title = "EB-05 Meta One Piece TCG tier list | One Piece Decklists"
+    title = "OP-18 Meta One Piece TCG tier list | One Piece Decklists"
     desc = (
-        "Aggregated EB-05 One Piece TCG tier list with leader pictures. "
-        "Built from 20+ public meta pages plus the tournament lists on this site."
+        "Aggregated OP-18 One Piece TCG tier list with leader pictures. "
+        "Built from public meta pages plus the tournament lists on this site."
     )
     url = seo.canonical_url("tier-list.html")
     splus_names = [r["name"] for r in rows if r["tier"] == "S+"]
@@ -705,10 +726,13 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         "lists actually hosted here: recent top eights, wins, and how often a leader is posting."
     )
     if s_names:
-        intro = (
-            f"{', '.join(s_names[:-1]) + ' and ' + s_names[-1] if len(s_names) > 1 else s_names[0]} "
-            f"sit in S. {intro}"
+        who_s = (
+            ", ".join(s_names[:-1]) + " and " + s_names[-1]
+            if len(s_names) > 1
+            else s_names[0]
         )
+        verb_s = "sit" if len(s_names) > 1 else "sits"
+        intro = f"{who_s} {verb_s} in S. {intro}"
     if splus_names:
         who = (
             ", ".join(splus_names[:-1] + ["and " + splus_names[-1]])
@@ -717,7 +741,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         )
         verb = "sit" if len(splus_names) > 1 else "sits"
         intro = (
-            f"{who} {verb} in S+ with the most recent EB-05 top eights of any hosted leader. {intro}"
+            f"{who} {verb} in S+ with the most recent OP-18 top eights of any hosted leader. {intro}"
         )
     items = [(r["name"], r["href"]) for r in rows]
     faq = seo.faq_jsonld(
@@ -728,11 +752,11 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
             ),
             (
                 "What format is the tier list?",
-                "Standard constructed, EB-05 Extra Booster era after the 30 October 2026 English release.",
+                "Standard constructed, OP-18 The Dominance of God era around the 20 November 2026 English release.",
             ),
             (
-                "Why is Green Mihawk still S tier?",
-                "Public meta pages still give Mihawk the largest OP17 top-cut share, and this site has more recent Mihawk lists and top eights than any other leader.",
+                "Why are RG Luffy and Mihawk unranked?",
+                "Both leaders are banned in constructed, so they sit in an unranked section instead of S through D.",
             ),
         ]
     )
@@ -759,7 +783,7 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
         {seo.BRAND_LOGO_HTML}
         <div>
           <h1>One Piece Decklists</h1>
-          <div class="subtitle">EB-05 Meta</div>
+          <div class="subtitle">OP-18 Meta</div>
         </div>
       </a>
 {seo.THEME_TOGGLE_HTML}{seo.primary_nav_html(current="tier")}
@@ -767,10 +791,10 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
     <main class="single">
       <div class="card hero">
         <div class="crumb"><a href="/">Home</a> / Tier List</div>
-        <h2>EB-05 Meta tier list</h2>
+        <h2>OP-18 Meta tier list</h2>
         <p>{html.escape(intro)}</p>
         <p class="muted">Updated {date.today().isoformat()}. Leader pictures link to the 50-card lists on this site.</p>
-        <div class="tier-board" aria-label="EB-05 leader tier list">
+        <div class="tier-board" aria-label="OP-18 leader tier list">
 {board}
         </div>
 {table}
@@ -787,6 +811,10 @@ def page_html(board: str, table: str, sources_html: str, rows: list[dict], sourc
           <details>
             <summary>Where are the lists?</summary>
             <p>Tap a leader picture. Recent tables also live on <a href="/#recent">the homepage</a> and the <a href="/format.html">format</a> page.</p>
+          </details>
+          <details>
+            <summary>Why are RG Luffy and Mihawk unranked?</summary>
+            <p>RG Luffy (OP13-001) and Mihawk (OP14-020) are banned in constructed. They stay on the board in an unranked row so you can still open their hosted lists, but they are not part of the current ranking.</p>
           </details>
         </section>
       </div>

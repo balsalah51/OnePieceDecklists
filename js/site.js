@@ -337,10 +337,45 @@
     document.querySelectorAll("ul.recent-list, .deck-index ul.list").forEach(function (list) {
       if (list.hasAttribute("data-leader-lists") || list.hasAttribute("data-leader-all-lists")) return;
       if (list.closest("[data-leader-lists]") || list.closest(".leader-all")) return;
+      if (list.hasAttribute("data-recent-collapse")) return;
       bindOlderList(list);
     });
+  }
+
+  var RECENT_MORE_STEP = 10;
+
+  function initRecentMore() {
     document.querySelectorAll("[data-recent-more]").forEach(function (btn) {
-      btn.hidden = true;
+      if (btn.dataset.bound) return;
+      btn.dataset.bound = "1";
+      var sel = btn.getAttribute("data-recent-more") || "#recent .recent-list";
+      var list = document.querySelector(sel);
+      if (!list) {
+        btn.hidden = true;
+        return;
+      }
+      function hiddenItems() {
+        return Array.prototype.filter.call(list.children, function (el) {
+          return el.tagName === "LI" && el.classList.contains("recent-more") && el.hidden;
+        });
+      }
+      function update() {
+        var left = hiddenItems();
+        if (!left.length) {
+          btn.hidden = true;
+          return;
+        }
+        btn.hidden = false;
+        btn.textContent = "Show more lists (" + left.length + ")";
+      }
+      btn.addEventListener("click", function () {
+        hiddenItems().slice(0, RECENT_MORE_STEP).forEach(function (li) {
+          li.hidden = false;
+          li.classList.remove("recent-more");
+        });
+        update();
+      });
+      update();
     });
   }
 
@@ -689,8 +724,17 @@
       if (img.dataset.fallbackBound) return;
       img.dataset.fallbackBound = "1";
       img.addEventListener("error", function onErr() {
+        var src = img.getAttribute("src") || "";
+        if (src.indexOf("placeholder.svg") !== -1) {
+          img.removeEventListener("error", onErr);
+          return;
+        }
+        var op18 = src.match(/OP18-\d{3}/i);
+        if (op18 && src.indexOf("onepiece-cardgame.com") === -1) {
+          img.src = "https://en.onepiece-cardgame.com/images/cardlist/card/" + op18[0].toUpperCase() + ".png";
+          return;
+        }
         img.removeEventListener("error", onErr);
-        if (!img.src || img.src.indexOf("placeholder.svg") !== -1) return;
         img.src = placeholder;
       });
     });
@@ -746,6 +790,7 @@
     ensureCopyButtons();
     initCopy();
     initOlderLists();
+    initRecentMore();
     initLeaderMore();
     initCardPictures();
     initFilters();

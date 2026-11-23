@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-20",
   "lists": 615,
   "leaders": [
     {
@@ -53,72 +53,5 @@
       "count": 6
     }
   ],
-  "pie": [
-    {
-      "id": "OP13-001",
-      "name": "RG Luffy",
-      "count": 32,
-      "pct": 26.7
-    },
-    {
-      "id": "OP12-041",
-      "name": "Sanji",
-      "count": 10,
-      "pct": 8.3
-    },
-    {
-      "id": "OP17-039",
-      "name": "Rocks D. Xebec",
-      "count": 9,
-      "pct": 7.5
-    },
-    {
-      "id": "OP01-002",
-      "name": "Trafalgar Law",
-      "count": 9,
-      "pct": 7.5
-    },
-    {
-      "id": "OP14-041",
-      "name": "Boa Hancock",
-      "count": 9,
-      "pct": 7.5
-    },
-    {
-      "id": "OP17-058",
-      "name": "Kaido",
-      "count": 8,
-      "pct": 6.7
-    },
-    {
-      "id": "EB05-010",
-      "name": "Nico Robin",
-      "count": 7,
-      "pct": 5.8
-    },
-    {
-      "id": "OP13-004",
-      "name": "Sabo",
-      "count": 5,
-      "pct": 4.2
-    },
-    {
-      "id": "P-117",
-      "name": "Nami",
-      "count": 4,
-      "pct": 3.3
-    },
-    {
-      "id": "ST10-002",
-      "name": "ST10 Luffy",
-      "count": 4,
-      "pct": 3.3
-    },
-    {
-      "id": "",
-      "name": "Other",
-      "count": 23,
-      "pct": 19.2
-    }
-  ]
+  "pie": []
 }

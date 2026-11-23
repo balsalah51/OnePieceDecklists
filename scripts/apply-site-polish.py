@@ -87,6 +87,7 @@ def current_for(path: Path) -> tuple[str | None, bool]:
         "eb05-lists.html": "eb05-lists",
         "eb05-spoilers.html": "eb05",
         "op18-spoilers.html": "op18",
+        "op18-lists.html": "op18-lists",
         "guides/weekly-meta.html": "weekly",
         "guides/matchups.html": "matchups",
         "guides/index.html": "guides",
