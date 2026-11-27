@@ -23999,5 +23999,53 @@
     "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-037_EN.webp",
     "source": "https://onepiece.limitlesstcg.com/cards/OP18-037",
     "tcgplayer_id": 732971
+  },
+  "P-068": {
+    "id": "P-068",
+    "name": "Sanji",
+    "category": "Character",
+    "color": "Blue",
+    "life": null,
+    "cost": "3",
+    "power": "4000",
+    "counter": "+2000",
+    "attribute": "Strike",
+    "types": "Kingdom of GERMA/The Vinsmoke Family",
+    "effect": "[Activate: Main] You may trash this Character: Look at 5 cards from the top of your deck and place them at the top or bottom of the deck in any order.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/*P/P-068_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/P-068",
+    "tcgplayer_id": 548442
+  },
+  "EB05-026": {
+    "id": "EB05-026",
+    "name": "Hina",
+    "category": "Character",
+    "color": "Blue",
+    "life": null,
+    "cost": "7",
+    "power": "8000",
+    "counter": "+2000",
+    "attribute": "Special",
+    "types": "Navy",
+    "effect": "",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB05/EB05-026_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/EB05-026",
+    "tcgplayer_id": 725855
+  },
+  "ST21-016": {
+    "id": "ST21-016",
+    "name": "Gum-Gum Dawn Whip",
+    "category": "Event",
+    "color": "Red",
+    "life": null,
+    "cost": "2",
+    "power": null,
+    "counter": null,
+    "attribute": null,
+    "types": "The Four Emperors/Straw Hat Crew",
+    "effect": "[Main] Up to 1 of your Leader or Character cards gains +1000 power during this turn. Then, up to 1 of your opponent's Characters with 4000 power or less cannot activate [Blocker] during this turn. [Trigger] K.O. up to 1 of your opponent's Characters with 4000 power or less.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/ST21/ST21-016_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/ST21-016",
+    "tcgplayer_id": 615594
   }
 }
