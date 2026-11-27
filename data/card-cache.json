@@ -23967,5 +23967,37 @@
     "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-082_EN.webp",
     "source": "https://onepiece.limitlesstcg.com/cards/OP18-082",
     "tcgplayer_id": null
+  },
+  "EB04-005": {
+    "id": "EB04-005",
+    "name": "Trafalgar Law",
+    "category": "Character",
+    "color": "Red",
+    "life": null,
+    "cost": "3",
+    "power": "5000",
+    "counter": "+2000",
+    "attribute": "Slash",
+    "types": "The Seven Warlords of the Sea/Supernovas/Heart Pirates",
+    "effect": "This Character cannot attack unless your opponent has 2 or more Characters with a base power of 5000 or more.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP15/EB04-005_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/EB04-005",
+    "tcgplayer_id": 685301
+  },
+  "OP18-037": {
+    "id": "OP18-037",
+    "name": "Yokozuna",
+    "category": "Character",
+    "color": "Green",
+    "life": null,
+    "cost": "4",
+    "power": "2000",
+    "counter": "+1000",
+    "attribute": "Strike",
+    "types": "Animal/Water Seven",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On K.O.] Rest up to 1 of your opponent's cards.",
+    "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP18/OP18-037_EN.webp",
+    "source": "https://onepiece.limitlesstcg.com/cards/OP18-037",
+    "tcgplayer_id": 732971
   }
 }
